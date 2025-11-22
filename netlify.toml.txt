@@ -1,0 +1,8 @@
+briksurvival-site/
+  index.html
+  netlify.toml
+  README.md
+  assets/
+    brik-logo.png
+    noise.png         (if you use one)
+    og-image.png      (social preview, optional)
