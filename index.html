@@ -12,14 +12,14 @@
   <meta property="og:title" content="Preparedness for normal people">
   <meta property="og:description" content="No politics. No panic. Just tested steps for families to stay steady when the lights go out.">
   <meta property="og:url" content="https://briksurvival.com/">
-  <meta property="og:image" content="Assets/og-image-wide.png">
+  <meta property="og:image" content="https://briksurvival.com/Assets/og-image-wide.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Preparedness for normal people">
   <meta name="twitter:description" content="No politics. No panic. Clear steps that help you stay steady.">
-  <meta name="twitter:image" content="Assets/og-image-wide.png">
+  <meta name="twitter:image" content="https://briksurvival.com/Assets/og-image-wide.png">
 
   <link rel="preconnect" href="https://assets.mlcdn.com">
   <link rel="preconnect" href="https://groot.mailerlite.com">
@@ -29,6 +29,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
+      --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      --font-display: "Sora", "Inter", system-ui, sans-serif;
+
       --bg: #050806;
       --bg-soft: #0b1410;
       --card: rgba(12, 18, 14, 0.9);
@@ -90,10 +93,7 @@
       100% { transform: translate3d(-2%, 5%, 0) scale(1.04); }
     }
 
-    .page {
-      min-height: 100vh;
-      padding: 14px 12px 70px;
-    }
+    .page { min-height: 100vh; padding: 0 12px 70px; }
 
     .shell {
       margin: 0 auto;
@@ -206,9 +206,10 @@
     }
 
     .hero-title {
-      font-size: clamp(28px, 5.6vw, 40px);
-      letter-spacing: -0.02em;
-      line-height: 1.12;
+      font-family: var(--font-display);
+      font-size: clamp(30px, 5.8vw, 44px);
+      letter-spacing: -0.025em;
+      line-height: 1.08;
       margin: 10px 0 8px;
       font-weight: 800;
     }
@@ -221,12 +222,13 @@
     }
 
     .hero-text {
-      font-size: 16px;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin: 8px 0 14px;
-      max-width: var(--maxw-tight);
-    }
+  font-size: 16.5px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  letter-spacing: 0.002em;
+  margin: 8px 0 14px;
+  max-width: var(--maxw-tight);
+}
 
     .hero-cta-row{
       display: grid;
@@ -432,6 +434,7 @@
       justify-items:center;
     }
 
+    
     .social-row{
       display:flex;
       gap:10px;
@@ -456,13 +459,18 @@
       border-color: rgba(242,193,79,0.35);
       background: rgba(8,12,10,0.9);
     }
-    .social-dot{
-      width:8px;height:8px;border-radius:50%;
-      background: linear-gradient(90deg, var(--accent-3), var(--accent-2));
-      box-shadow:0 0 8px rgba(87,194,122,0.8);
+    .social-icon{
+      width:16px;height:16px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
     }
-
-    @media (max-width: 420px){
+    .social-icon svg{
+      width:16px;height:16px;
+      fill: currentColor;
+      opacity: 0.9;
+    }
+@media (max-width: 420px){
       .hero-inner{ padding: 22px 18px; }
       .hero-logo{ height: 42px; }
       .hero-title{ font-size: 26px; }
@@ -607,7 +615,814 @@
     }
     #mlb2-33676718 .ml-form-fieldRow{ margin:0 0 10px 0!important; }
 
+
+
+    /* ===== Phase 2: Motion + small-screen + gradient fallback ===== */
+    @media (prefers-reduced-motion: reduce){
+      body::before,
+      body::after,
+      .hero-bg-orb,
+      .hero-scroll-line,
+      .hero-scroll-arrow,
+      [data-float]{
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    @supports not (-webkit-background-clip: text){
+      .hero-highlight{
+        background: none;
+        color: var(--accent-2);
+      }
+    }
+
+    @media (max-width: 420px){
+      .hero-title{
+        font-size: clamp(26px, 7.2vw, 34px);
+        line-height: 1.14;
+      }
+      .hero-text{
+        font-size: 15px;
+      }
+      .hero-cta-row{
+        gap: 10px;
+      }
+      .hero-cta-row .btn-primary,
+      .hero-cta-row .btn{
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    @media (max-height: 700px){
+      .hero-card{
+        padding-bottom: 16px;
+      }
+      .hero-scroll{
+        margin-top: 10px;
+      }
+    }
+
+
+
+/* === Visual Polish Pass v9 === */
+
+/* Typography hierarchy */
+.section-title{
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.12;
+  margin-bottom: 4px;
+}
+.section-subtext{
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+/* Card tiers */
+.card-tier-a{
+  padding: 22px 18px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(8,12,10,0.65);
+}
+.card-tier-b{
+  padding: 18px 16px;
+  background: rgba(8,12,10,0.5);
+}
+
+/* Background polish */
+body::before,
+body::after{
+  filter: blur(32px) saturate(120%);
+  opacity: 0.65;
+}
+.hero-bg-orb{
+  opacity: 0.12;
+}
+
+/* Buttons */
+.btn:active,
+.btn-primary:active{
+  transform: scale(0.98);
+}
+.btn-secondary:hover{
+  background: rgba(20,28,24,0.9);
+  border-color: rgba(255,255,255,0.15);
+}
+
+/* Lists */
+ul li{
+  margin-bottom: 8px !important;
+}
+ul{
+  margin-top: 10px !important;
+}
+
+/* Hero tweaks */
+.hero-subtext{
+  margin-bottom: 18px;
+}
+.hero-highlight{
+  text-shadow: 0 0 6px rgba(255,180,90,0.25);
+}
+.hero-scroll{
+  opacity: 0.8;
+}
+
+/* Form trust line */
+.form-trust{
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* Input focus */
+input[type="email"]:focus{
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Footer polish */
+footer{
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 14px;
+}
+
+
+/* === Visual Round 2 Pass v10 === */
+
+/* Section breathing + dividers */
+.section{
+  margin-top: 26px;
+  position: relative;
+}
+.section::before{
+  content:"";
+  position:absolute;
+  top:-14px; left:0; right:0;
+  height:1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+}
+.section-kicker{
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+/* Card hover shine */
+.card{
+  position: relative;
+  overflow: hidden;
+}
+.card::after{
+  content:"";
+  position:absolute; inset:-40%;
+  background: radial-gradient(60% 60% at 20% 0%, rgba(255,255,255,0.06), transparent 55%);
+  opacity:0;
+  transition: opacity 180ms ease;
+  pointer-events:none;
+}
+.card:hover::after{
+  opacity:1;
+}
+.card:hover{
+  border-color: rgba(255,255,255,0.16);
+  transform: translateY(-2px);
+}
+
+/* Light grain overlay */
+.page::after{
+  content:"";
+  position: fixed;
+  inset:0;
+  pointer-events:none;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 3px 3px;
+  opacity: 0.12;
+  mix-blend-mode: soft-light;
+  z-index: 0;
+}
+
+/* Heading micro polish */
+.section-title{
+  letter-spacing: -0.02em;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.35);
+}
+.section-title .accent-title{
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* FAQ upgrades (visual only) */
+.faq-item{
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.faq-q{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-weight:700;
+}
+.faq-q::before{
+  content:"›";
+  opacity:0.7;
+  transform: translateY(-1px);
+}
+
+/* Signup card glow focus */
+#mlb2-33676718 input[type="email"]{
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  transition: box-shadow 160ms ease, border-color 160ms ease;
+}
+#mlb2-33676718 input[type="email"]:focus{
+  box-shadow: 0 0 0 3px rgba(242,193,79,0.12);
+}
+
+/* Ambient vignette behind key sections */
+.section-spotlight{
+  position: relative;
+}
+.section-spotlight::after{
+  content:"";
+  position:absolute;
+  inset:-20px -10px;
+  background: radial-gradient(60% 60% at 50% 0%, rgba(242,193,79,0.10), transparent 65%);
+  filter: blur(22px);
+  z-index:-1;
+}
+
+/* Footer layout */
+.social-row{
+  gap:12px;
+}
+footer .footer-note{
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align:center;
+}
+
+
+/* === Visual Round 3 Pass v11 (Mobile spacing + viewport polish) === */
+
+/* Global mobile spacing */
+@media (max-width: 520px){
+  .page{
+    padding: 0 10px 60px;
+  }
+  .stack{
+    gap: 12px;
+  }
+  .section{
+    margin-top: 18px;
+  }
+  .section::before{
+    top: -10px;
+    opacity: 0.7;
+  }
+  .card{
+    padding: 16px 14px;
+    border-radius: 16px;
+  }
+  .card-tier-a{
+    padding: 18px 14px;
+    border-radius: 18px;
+  }
+  .card-tier-b{
+    padding: 15px 13px;
+  }
+
+  .section-title{
+    font-size: 21px;
+    margin-bottom: 6px;
+  }
+  .section-subtext{
+    font-size: 14.5px;
+    margin-bottom: 10px;
+  }
+  .section-kicker{
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+
+  ul{
+    margin-top: 8px !important;
+  }
+  ul li{
+    margin-bottom: 7px !important;
+  }
+
+  /* CTA + form */
+  .hero-cta-row,
+  #mlb2-33676718 .ml-form-embedSubmit,
+  #mlb2-33676718 .ml-form-embedSubmit button{
+    width: 100%;
+  }
+  .btn,
+  .btn-primary{
+    width: 100%;
+    justify-content: center;
+    padding: 12px 14px;
+    border-radius: 12px;
+  }
+  #mlb2-33676718 input[type="email"]{
+    width: 100%;
+    font-size: 16px; /* prevent iOS zoom */
+    padding: 12px 12px;
+    border-radius: 12px;
+  }
+  .form-trust{
+    font-size: 11.5px;
+    margin-top: 5px;
+  }
+
+  /* Hero spacing */
+  .hero-title{
+    margin-top: 6px;
+  }
+  .hero-text{
+    margin-top: 6px;
+    margin-bottom: 12px;
+  }
+  .hero-scroll{
+    margin-top: 8px;
+  }
+
+  /* Footer */
+  footer{
+    padding-top: 12px;
+  }
+  .social-row{
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+  .social-link{
+    flex: 1 1 auto;
+    justify-content: center;
+    min-width: 110px;
+  }
+
+  /* Background cost trim on mobile */
+  body::before,
+  body::after{
+    filter: blur(26px) saturate(115%);
+    opacity: 0.55;
+  }
+  .page::after{
+    opacity: 0.08;
+  }
+}
+
+/* Short viewport polish */
+@media (max-height: 640px){
+  .hero-card{
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
+  .hero-cta-row{
+    margin-top: 4px;
+  }
+}
+
+/* Touch devices: disable hover lift to avoid jump */
+@media (pointer: coarse){
+  .card:hover{
+    transform: none;
+  }
+  .card:hover::after{
+    opacity: 0;
+  }
+}
+
+    body{
+      font-family: var(--font-body);
+      font-optical-sizing: auto;
+      font-kerning: normal;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    li{
+      line-height: 1.6;
+      letter-spacing: 0.002em;
+    }
+
+    .btn, .btn-primary, .social-link{
+      font-family: var(--font-body);
+      letter-spacing: 0.06em;
+    }
+
+    input, button, textarea, select{
+      font-family: var(--font-body);
+    }
+
+
+/* === Typography Tightening Pass v12 === */
+
+/* Bigger, more title-like card headings */
+.card h2,
+.card h3{
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.018em;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+.card h2 + p,
+.card h3 + p{
+  margin-top: 2px;
+}
+
+/* Tighter paragraph rhythm inside cards */
+.card p{
+  font-size: 15.5px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Slightly tighter lists inside cards */
+.card ul{
+  margin-top: 8px !important;
+}
+.card li{
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+
+/* Card header spacing */
+.card-header{
+  padding-bottom: 6px;
+}
+
+/* Mobile scale for card titles */
+@media (max-width: 520px){
+  .card h2,
+  .card h3{
+    font-size: 19px;
+    margin-bottom: 6px;
+  }
+  .card p,
+  .card li{
+    font-size: 15px;
+  }
+}
+
+.section-title + p{
+  margin-top: 4px !important;
+}
+
+
+/* === Section title overrides (fix no-change issue) === */
+/* Section titles live inside cards, so we must beat the .card h2 rule. */
+.card .section-title,
+.card h2.section-title,
+.card h3.section-title{
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.026em;
+  line-height: 1.1;
+  margin: 0 0 2px !important;
+}
+
+/* Tighten kicker-to-title and title-to-body spacing */
+.card .section-kicker{
+  margin-bottom: 2px !important;
+}
+.card .section-title + p,
+.card h2.section-title + p,
+.card h3.section-title + p{
+  margin-top: 2px !important;
+}
+
+/* Reduce header padding to reclaim vertical space */
+.card-header{
+  padding: 14px 16px 4px !important;
+}
+
+/* If a card uses a header wrapper, pull content up slightly */
+.card-header + .card-body,
+.card-header + .card-content{
+  margin-top: 0 !important;
+}
+
+
+/* === Final authoritative overrides (post-audit) === */
+body{
+  font-family: var(--font-body) !important;
+}
+
+.card-header{
+  padding: 14px 16px 6px !important;
+}
+
+.card-kicker{
+  margin-bottom: 2px !important;
+  letter-spacing: 0.14em;
+}
+
+.card-header h2{
+  font-family: var(--font-display);
+  font-size: 30px !important;
+  line-height: 1.1;
+  letter-spacing: -0.026em;
+  margin: 0 0 4px !important;
+}
+
+.card-header h2 + p,
+.card-header h2 + .muted,
+.card-header h2 + ul,
+.card-header h2 + div{
+  margin-top: 4px !important;
+}
+
+.card-body.stack{
+  gap: 10px;
+}
+
+.inside-kicker{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+/* Scope FAQ visuals to the real FAQ section only */
+#faq .faq-item,
+section#faq .faq-item{
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+#faq .faq-q,
+section#faq .faq-q{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-weight:700;
+}
+#faq .faq-q::before,
+section#faq .faq-q::before{
+  content:"›";
+  opacity:0.7;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 520px){
+  .card-header h2{
+    font-size: 26px !important;
+  }
+  .card-header{
+    padding: 12px 14px 6px !important;
+  }
+}
+
+
+/* === Email signup premium pass v12 === */
+#early-access .signup-card{
+  gap: 12px;
+  padding: 22px 20px;
+  border-radius: 18px;
+  background:
+    radial-gradient(120% 120% at 0% 0%, rgba(242,193,79,0.06), transparent 55%),
+    linear-gradient(180deg, rgba(8,12,10,0.7), rgba(8,12,10,0.55));
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.04),
+    0 10px 30px rgba(0,0,0,0.45);
+}
+
+#early-access .signup-title{
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  font-weight: 800;
+}
+
+#early-access .signup-sub{
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: -2px;
+}
+
+#early-access .signup-bonus{
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.signup-trust-row{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 8px;
+}
+.trust-item{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding: 6px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+  border: 1px dashed rgba(255,255,255,0.08);
+  background: rgba(6,9,7,0.6);
+}
+
+/* Form layout */
+#mlb2-33676718 .ml-form-formContent{
+  display: grid;
+  gap: 10px;
+}
+
+#mlb2-33676718 .ml-form-fieldRow{
+  margin: 0 !important;
+}
+#mlb2-33676718 .ml-form-fieldRow input{
+  width: 100%;
+  background: rgba(6,9,7,0.9);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 12px;
+  padding: 12px 12px;
+  color: var(--text);
+  font-size: 15.5px;
+  line-height: 1.2;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+  transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+#mlb2-33676718 .ml-form-fieldRow input::placeholder{
+  color: rgba(230,240,234,0.45);
+}
+#mlb2-33676718 .ml-form-fieldRow input:focus{
+  border-color: rgba(242,193,79,0.55);
+  box-shadow:
+    0 0 0 3px rgba(242,193,79,0.14),
+    inset 0 1px 0 rgba(255,255,255,0.03);
+  background: rgba(6,9,7,1);
+  outline: none;
+}
+
+/* Labels and helper text */
+#mlb2-33676718 .ml-form-fieldRow label{
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display:block;
+}
+#mlb2-33676718 .ml-form-fieldRow .ml-error{
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+/* Submit button */
+#mlb2-33676718 .ml-form-embedSubmit button{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  box-shadow:
+    0 6px 16px rgba(240,154,88,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+}
+#mlb2-33676718 .ml-form-embedSubmit button:hover{
+  transform: translateY(-1px);
+}
+
+/* Success and error cards */
+.form-status{
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+.form-status.success{
+  border-color: rgba(76, 209, 121, 0.35);
+  box-shadow: 0 0 0 3px rgba(76,209,121,0.08);
+}
+.form-status.error{
+  border-color: rgba(255, 120, 120, 0.35);
+  box-shadow: 0 0 0 3px rgba(255,120,120,0.08);
+}
+
+/* Mobile tuning */
+@media (max-width: 520px){
+  #early-access .signup-card{
+    padding: 18px 14px;
+  }
+  #early-access .signup-title{
+    font-size: 22px;
+  }
+  .signup-trust-row{
+    grid-template-columns: 1fr;
+  }
+  .trust-item{
+    justify-content:flex-start;
+    padding: 8px 10px;
+  }
+  #mlb2-33676718 .ml-form-fieldRow input{
+    font-size: 16px; /* prevent iOS zoom */
+  }
+}
+
+
+/* FAQ cleaned design */
+.faq-list{
+  display:grid;
+  gap:14px;
+}
+.faq-item{
+  padding-bottom:10px;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.faq-q{
+  font-weight:700;
+  margin-bottom:2px;
+}
+.faq-a{
+  line-height:1.5;
+}
+
+/* Center submit button text */
+#mlb2-33676718 .ml-form-embedSubmit button{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:var(--font-display);
+}
+
+
+/* === Callout title font consistency === */
+.callout-strong{
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+
+/* Hero CTA enhancement */
+.hero-cta-row .btn-primary{
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  padding: 14px 22px;
+  border-radius: 14px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  box-shadow: 0 6px 20px rgba(228,106,58,0.25), inset 0 1px 0 rgba(255,255,255,0.25);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+.hero-cta-row .btn-primary:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(228,106,58,0.32), inset 0 1px 0 rgba(255,255,255,0.30);
+}
+
+
+/* === Even section spacing override === */
+.section{
+  margin-top: 22px !important;
+}
+.section:first-of-type{
+  margin-top: 0 !important;
+}
+@media (max-width: 520px){
+  .section{
+    margin-top: 18px !important;
+  }
+}
+
+
+/* Hero should not show section divider */
+.hero.section::before{
+  display:none !important;
+}
 </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -615,17 +1430,17 @@
     <div class="shell">
 
       <!-- HERO starts immediately -->
-      <section class="hero" aria-label="BRIK Survival introduction">
+      <section class="hero section" aria-label="BRIK Survival introduction">
         <div class="hero-bg-orb hero-bg-orb-1"></div>
         <div class="hero-bg-orb hero-bg-orb-2"></div>
 
         <div class="hero-inner">
           <div class="hero-top">
-            <img class="hero-logo" src="Assets/brik-logo.png" alt="BRIK Survival logo" onerror="this.onerror=null; this.src='Assets/brik-logo.png';" />
+            <img class="hero-logo" src="Assets/brik-logo.png" alt="BRIK Survival logo" onerror="this.classList.add('is-hidden');" />
         <span class="hero-logo-text">BRIK Survival</span>
             <div class="hero-tag">
               <div class="hero-tag-dot"></div>
-              <span>For real families in a shaky world</span>
+              <span>For people who want a calm plan before they need one</span>
             </div>
           </div>
 
@@ -634,13 +1449,14 @@
             Preparedness for <span class="hero-highlight">normal people</span> who feel the world shifting.
           </h1>
 
-          <p class="hero-text">
-            No politics. No panic. No fear tactics. Just clear steps that help you stay steady when the lights go out, stores empty, or streets turn unstable.
-          </p>
+          <p class="hero-text">You’re not imagining it. Things feel less stable than they used to.
+Most people wait for a headline to tell them it’s time. That’s the trap.
+BRIK Survival shows you how to set up a simple, calm bug‑in plan for your home now, so you’re not scrambling later.
+No politics. No panic. Just real preparedness for normal people.</p>
 
           <div class="hero-cta-row">
             <a href="#early-access" class="btn-primary">
-              Join the early list <span aria-hidden="true">↗</span>
+              Join Early Access <span aria-hidden="true">↗</span>
             </a>
             <p class="hero-note">
               Get updates on the coming bug-in guide and a free 3 Day Blackout Checklist.
@@ -657,31 +1473,31 @@
 
       <div class="card card-tight">
         <div class="callout">
-          <div class="callout-strong">No politics. No panic. No doom.</div>
-          <div>Just honest, tested steps that make your home and family harder to shake when the world feels fragile.</div>
+          <div class="callout-strong">YOU’RE IN THE RIGHT PLACE.</div>
+          <div>If you’ve had that quiet thought — “we should probably be a little more ready” — listen to it. A small head start makes a big difference when everyone else is reacting.</div>
         </div>
       </div>
 
-      <section class="card">
+      <section class="card section">
         <div class="card-header">
           <div class="card-kicker">What we are all seeing</div>
           <h2>Why so many people feel on edge</h2>
         </div>
         <div class="card-body">
-          <p class="muted">
-            In the last few years we have watched how fast normal can disappear. Not hypotheticals, but real events that hit regular people:
-          </p>
+          <p class="muted">In the last decade, we’ve seen how quickly daily life can shift.
+Not predictions — real moments when whole cities, systems, or communities were caught off‑guard:</p>
           <ul class="list">
-            <li>Cities lit up with protests and riots after high profile incidents, with police stretched thin and streets shut down.</li>
-            <li>Supply chains breaking during the pandemic and later disruptions, leaving shelves bare and prices spiking.</li>
-            <li>Grid failures in places like Texas that left families freezing in their own homes.</li>
-            <li>Wildfires and hurricanes forcing whole neighborhoods to evacuate with little warning.</li>
-            <li>Ongoing conflicts overseas raising concern about sleeper cells, cyber attacks, and spillover effects here.</li>
-          </ul>
+              <li>Unrest that spread through places like Ferguson, Minneapolis, Portland, and Kenosha, showing how fast streets can change overnight.</li>
+              <li>Supply chain shocks during and after the pandemic that left shelves bare across the U.S. and parts of Europe.</li>
+              <li>Power failures on a huge scale, from Texas in the deep freeze to rolling blackouts in parts of South Africa and India.</li>
+              <li>Industrial accidents and infrastructure failures, like the East Palestine derailment and the Baltimore bridge collapse, that disrupted lives and travel in hours.</li>
+              <li>Cyber incidents overseas, including attacks on Ukraine’s grid, proving blackouts can start with a keyboard.</li>
+              <li>Repeated warnings from U.S. agencies about lone‑actor threats and foreign influence campaigns designed to stir division online.</li>
+            </ul>
         </div>
       </section>
 
-      <section class="card">
+      <section class="card section">
         <div class="card-header">
           <div class="card-kicker">What we can control</div>
           <h2>Preparedness without fear</h2>
@@ -692,51 +1508,56 @@
             Preparedness is not about hiding in a bunker. It is about protecting the people you love and being the calm house on the block when others are lost.
           </p>
           <ul class="list">
-            <li>Clean water stored safely, even in small spaces.</li>
-            <li>Food that actually fits in a normal kitchen.</li>
-            <li>Heat, light, and power options when the grid goes down.</li>
-            <li>Basic communications and contact plans.</li>
-            <li>Simple steps for kids, pets, and relatives who are not into prepping at all.</li>
+            <li>Water and food for 7–14 days, stored the smart way.</li>
+            <li>Simple cooking, light, and temperature options when power drops.</li>
+            <li>Checklists that work for kids, pets, and anyone new to this.</li>
+            <li>A plan built for apartments and normal homes — not survival fantasy.</li>
           </ul>
         </div>
       </section>
 
-      <section class="card">
+      <section class="card section">
         <div class="card-header">
           <div class="card-kicker">Coming soon</div>
-          <h2>The Everyday bug-in guide</h2>
+          <h2>The Everyday Bug‑In Guide</h2>
         </div>
         <div class="card-body stack">
-          <p>
-            We are building a practical bug-in guide for real households. Think the best guides on the market, but written for normal families, apartments, and small homes.
-            This is still in development. The early list gets first access, sample pages, and launch pricing.
-          </p>
+          <p>We’re building a bug‑in guide for real households.
+Small spaces. Busy schedules. Kids and pets.
+It’s step‑by‑step, with zero fluff.
+Join Early Access and you’ll get sample pages first, launch updates, and early supporter pricing.</p>
           <div class="badge-soft">Launch price under $20. Early list under $10.</div>
-          <div>
-            <strong>Inside the guide:</strong>
+          <div class="inside-kicker">Inside the guide:</div>
             <ul class="list">
-              <li>Bugging in during blackouts, curfews, and unrest.</li>
-              <li>Water storage and safe access in tight spaces.</li>
-              <li>Food systems that do not require a garage or a bunker.</li>
-              <li>Heating, cooling, and light without the grid.</li>
-              <li>Comms basics, including simple radio setups.</li>
-              <li>Planning for kids, pets, elderly family, and non preppers.</li>
+              <li>The 7‑day home blackout plan most families never build until it’s too late.</li>
+              <li>Real water hacks for apartments: tub bladders, hidden building taps, and safe reuse when pressure drops.</li>
+              <li>How to spot a situation turning bad early, so you stay home before roads lock down.</li>
+              <li>Low‑profile home security upgrades that don’t scream “prepper,” but work when police are overwhelmed.</li>
+              <li>Food systems that don’t need power: shelf‑stable meal templates, rotation tricks, and no‑waste cooking.</li>
+              <li>Simple comms for normal people: quick radio presets, family check‑in rules, and when to go silent.</li>
+              <li>When staying put isn’t safe: a clear, last‑resort bug‑out trigger list and a simple get‑out plan.</li>
+              <li>What most “official” guides skip: realistic run‑throughs of curfews, shortages, and information gaps.</li>
+              <li>Plans for kids, pets, older family, and total beginners, so everyone knows their role.</li>
             </ul>
-          </div>
-          <p class="muted">
-            Most serious survival books sell for $50 or more. We are keeping this one affordable because the mission is to get solid information into as many hands as possible.
-          </p>
-        </div>
-      </section>
 
-      <section id="early-access" class="card">
+          <p class="muted">We’re keeping it affordable because everyone deserves a real plan — not just people with extra money.</p>
+        </div>
+</section>
+
+      <section id="early-access" class="card section">
         <div class="signup-card">
           <div class="signup-title">Join the early access list</div>
-          <div class="signup-sub">Get launch updates and early pricing. Plus a free 3 Day Blackout Checklist.</div>
+          <div class="signup-sub">Get sample pages, launch updates, and early supporter pricing. Your free 3‑Day Blackout Checklist is included.</div>
 
           <div class="signup-bonus">Free checklist on signup</div>
 
-          <!-- Replace this simple form with your MailerLite embed form -->
+          
+          <div class="signup-trust-row" aria-label="Signup benefits">
+            <div class="trust-item">Free checklist</div>
+            <div class="trust-item">Early supporter price</div>
+            <div class="trust-item">Unsubscribe anytime</div>
+          </div>
+<!-- Replace this simple form with your MailerLite embed form -->
           
 <div id="mlb2-33676718" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-33676718">
   <div class="ml-form-align-center">
@@ -757,6 +1578,7 @@
               <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
                 <input aria-label="email" aria-required="true" type="email" class="form-control input"
                        name="fields[email]" placeholder="Email address" autocomplete="email" required>
+<div class="form-trust">No spam. No noise. Just launch updates.</div>
               </div>
             </div>
 
@@ -766,7 +1588,7 @@
           <input type="hidden" name="anticsrf" value="true">
 
           <div class="ml-form-embedSubmit">
-            <button type="submit" class="primary btn-primary w-full">Join the list</button>
+            <button type="submit" class="primary btn-primary w-full">Join Early Access</button>
             <button disabled="disabled" style="display:none;" type="button" class="loading">
               <div class="ml-form-embedSubmitLoad"></div>
               <span class="sr-only">Loading...</span>
@@ -793,157 +1615,104 @@
       
 
 
-          <div class="signup-footnote">
-            No spam. No scare tactics. Just preparedness you can trust.
-          </div>
+          <div class="signup-footnote">We’ll only email when there’s something worth your time. You can leave anytime.</div>
         </div>
       </section>
 
-      <section class="card">
-        <div class="card-header">
-          <div class="card-kicker">Quick FAQ</div>
-        </div>
-        <div class="card-body stack">
-          <div>
-            <strong>Is this political?</strong>
-            <div class="muted">No. Preparedness is about safety and stability, not politics.</div>
-          </div>
-          <div>
-            <strong>Is this just for hardcore preppers?</strong>
-            <div class="muted">No. This is for normal families who want peace of mind.</div>
-          </div>
-          <div>
-            <strong>When does the guide release?</strong>
-            <div class="muted">Still in development. The early list gets updates first.</div>
-          </div>
-          <div>
-            <strong>Why price it so low?</strong>
-            <div class="muted">Because preparedness should not be a luxury. If more of us are ready, more of us make it.</div>
-          </div>
-        </div>
-      </section>
+      
+<section class="card section" id="faq">
+  <div class="card-header">
+    <div class="card-kicker">Quick FAQ</div>
+  </div>
+  <div class="card-body stack faq-list">
+    <div class="faq-item"><div class="faq-q">Is this political?</div><div class="faq-a muted">No. Preparedness is about safety and stability, not politics.</div></div>
+    <div class="faq-item"><div class="faq-q">Is this just for hardcore preppers?</div><div class="faq-a muted">No. It’s for anyone who wants a simple plan and less stress.</div></div>
+    <div class="faq-item"><div class="faq-q">When does the guide release?</div><div class="faq-a muted">It’s in development now. Early list members get first updates.</div></div>
+    <div class="faq-item"><div class="faq-q">Why price it so low?</div><div class="faq-a muted">Because being ready shouldn’t be a luxury. We want this in as many homes as possible.</div></div>
+  </div>
+</section>
+
 
       <footer>
         <div>Start where you are. Use what you have. Prepare one brick at a time.</div>
 
         <div class="social-row" aria-label="BRIK Survival channels">
-          <a class="social-link" href="https://www.instagram.com/brik.clips/" target="_blank" rel="noopener">
-            <span class="social-dot"></span> Instagram
+          <a class="social-link" href="https://www.instagram.com/brik.survival/" target="_blank" rel="noopener" aria-label="Instagram">
+            <span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3C4.79 3 3 4.79 3 7v10c0 2.21 1.79 4 4 4h10c2.21 0 4-1.79 4-4V7c0-2.21-1.79-4-4-4H7zm10 2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h10zm-5 3.5A5.5 5.5 0 1 0 17.5 14 5.51 5.51 0 0 0 12 8.5zm0 2A3.5 3.5 0 1 1 8.5 14 3.5 3.5 0 0 1 12 10.5zM18 7.25a1.25 1.25 0 1 0 1.25 1.25A1.25 1.25 0 0 0 18 7.25z"/></svg></span> Instagram
           </a>
-          <a class="social-link" href="https://www.youtube.com/@Brik_Clips" target="_blank" rel="noopener">
-            <span class="social-dot"></span> YouTube
+          <a class="social-link" href="https://www.tiktok.com/@official_brik" target="_blank" rel="noopener" aria-label="TikTok">
+            <span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.7 5.2c.9 1.1 2.1 1.8 3.5 1.9v3.1c-1.6-.1-3.1-.6-4.4-1.6v6.1c0 3.2-2.6 5.8-5.8 5.8s-5.8-2.6-5.8-5.8S6.8 9 10 9c.3 0 .7 0 1 .1v3.3c-.3-.1-.6-.2-1-.2-1.4 0-2.5 1.1-2.5 2.5S8.6 17.2 10 17.2s2.5-1.1 2.5-2.5V3h3.2c0 .8.3 1.6 1 2.2z"/></svg></span> TikTok
           </a>
-        </div>
+          <a class="social-link" href="https://www.youtube.com/@Brik_Clips" target="_blank" rel="noopener" aria-label="YouTube">
+            <span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 8.001c-.2-1.502-1.2-2.6-2.7-2.8C16.9 5 12 5 12 5s-4.9 0-7.1.201c-1.5.2-2.5 1.298-2.7 2.8C2 9.9 2 12 2 12s0 2.1.2 3.999c.2 1.502 1.2 2.6 2.7 2.8C7.1 19 12 19 12 19s4.9 0 7.1-.201c1.5-.2 2.5-1.298 2.7-2.8.2-1.899.2-3.999.2-3.999s0-2.1-.2-3.999zM10 15.5v-7l6 3.5-6 3.5z"/></svg></span> YouTube
+          </a>
+</div>
       </footer>
 
     </div>
   </div>
 
-<script>
-  // MailerLite embed hook. Adjust selectors if your embed differs.
-  (function(){
-    const form = document.querySelector('form');
-    if(!form) return;
-
-    const successEl = document.getElementById('formSuccess');
-    const errorEl = document.getElementById('formError');
-
-        function clearStates(){
-      if(successEl){
-        successEl.classList.remove('success');
-        successEl.style.display = 'none';
-      }
-      if(errorEl){
-        errorEl.classList.remove('error');
-        errorEl.style.display = 'none';
-      }
-    }
-    function showSuccess(){
-      clearStates();
-      if(successEl) {
-        successEl.classList.add('success');
-        successEl.style.display = 'block';
-      }
-    }
-    function showError(){
-      clearStates();
-      if(errorEl) {
-        errorEl.classList.add('error');
-        errorEl.style.display = 'block';
-      }
-    }
-    }
-
-    // Generic listener for MailerLite (if they set data-ml-submit)
-    form.addEventListener('submit', function(){
-      if(successEl) successEl.style.display = 'none';
-      if(errorEl) errorEl.style.display = 'none';
-    });
-
-    // If MailerLite triggers custom events, you can wire them here:
-    document.addEventListener('ml-success', showSuccess);
-    document.addEventListener('ml-error', showError);
-
-    // Fallback: if redirect or inline success happens, detect it
-    const observer = new MutationObserver(function(){
-      const text = form.textContent || '';
-      if(/thank you|success|you're in/i.test(text)) showSuccess();
-    });
-    observer.observe(form, {childList:true, subtree:true});
-  })();
-</script>
 
 
-<script>
-  function ml_webform_success_33676718() {
-    // MailerLite calls this on success
-    document.dispatchEvent(new Event('ml-success'));
-  }
-</script>
+
+
 <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
-<script>
-  fetch("https://assets.mailerlite.com/jsonp/1936886/forms/171727937579517014/takel");
-</script>
-
-
 
 
 
 <script>
 (function() {
+  const mlForm = document.querySelector('#mlb2-33676718 form');
+  if (!mlForm) return;
+
   const successEl = document.getElementById('formSuccess');
   const errorEl = document.getElementById('formError');
 
-  function hide(el){
-    if(!el) return;
-    el.classList.remove('success','error');
+  function hide(el) {
+    if (!el) return;
+    el.classList.remove('success', 'error');
     el.style.display = 'none';
   }
-  function showSuccess(){
+
+  function showSuccess() {
     hide(errorEl);
-    if(successEl){
+    if (successEl) {
       successEl.classList.add('success');
       successEl.style.display = 'block';
     }
   }
-  function showError(){
+
+  function showError() {
     hide(successEl);
-    if(errorEl){
+    if (errorEl) {
       errorEl.classList.add('error');
       errorEl.style.display = 'block';
     }
   }
 
-  // MailerLite fires ml_webform_success_33676718() on success.
-  document.addEventListener('ml-success', showSuccess);
-  document.addEventListener('ml-error', showError);
+  mlForm.addEventListener('submit', function() {
+    hide(successEl);
+    hide(errorEl);
+  });
 
-  // Also hide both on fresh submit
-  const mlForm = document.querySelector('#mlb2-33676718 form');
-  if(mlForm){
-    mlForm.addEventListener('submit', function(){ hide(successEl); hide(errorEl); });
-  }
+  window.addEventListener('ml-success', showSuccess);
+  window.addEventListener('ml-error', showError);
+
+  const observer = new MutationObserver(function() {
+    const t = (mlForm.textContent || '');
+    if (/thank you|success|you.?re in/i.test(t)) showSuccess();
+  });
+  observer.observe(mlForm, { childList: true, subtree: true });
 })();
+</script>
+<script>
+function ml_webform_error_33676718() {
+  window.dispatchEvent(new Event('ml-error'));
+}
+
+function ml_webform_success_33676718() {
+  window.dispatchEvent(new Event('ml-success'));
+}
 </script>
 
 </body>
