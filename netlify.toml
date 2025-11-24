@@ -3,6 +3,16 @@
 command = ""
 
 [[redirects]]
+  from = "/blackout-checklist-confirmed.html"
+  to = "/blackout-checklist-confirmed.html"
+  status = 200
+
+[[redirects]]
+  from = "/downloads/*"
+  to = "/downloads/:splat"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
@@ -17,7 +27,11 @@ command = ""
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
 [[headers]]
-  for = "/Assets/*"
+  for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+[[headers]]
+  for = "/downloads/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

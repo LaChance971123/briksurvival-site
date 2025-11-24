@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===== Housekeeping / SEO / social preview ===== -->
+  <title>BRIK Survival — Your blackout checklist is ready</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Your subscription is confirmed. Download your free 3 Day Blackout Checklist and start building a calm, simple plan for your home.">
+  <link rel="canonical" href="https://briksurvival.com/blackout-checklist-confirmed.html">
+
+  <!-- Favicons (same set as index) -->
+  <link rel="icon" href="/assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#0b0f0c">
+  <meta name="theme-color" content="#0b0f0c">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BRIK Survival">
+  <meta property="og:title" content="Your Blackout Checklist is Ready">
+  <meta property="og:description" content="Your subscription is confirmed. Download your free 3 Day Blackout Checklist.">
+  <meta property="og:url" content="https://briksurvival.com/blackout-checklist-confirmed.html">
+  <meta property="og:image" content="https://briksurvival.com/og-image-wide.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Your Blackout Checklist is Ready">
+  <meta name="twitter:description" content="Your subscription is confirmed. Download your free 3 Day Blackout Checklist.">
+  <meta name="twitter:image" content="https://briksurvival.com/og-image-wide.png">
+
+  <!-- MailerLite infra preconnect (safe to keep, even though no form here) -->
+  <link rel="preconnect" href="https://assets.mlcdn.com">
+  <link rel="preconnect" href="https://groot.mailerlite.com">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles (copied from index for full visual consistency) -->
+  <style>
+  :root {
+    --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    --font-display: "Sora", "Inter", system-ui, sans-serif;
+    --bg: #050806;
+    --bg-soft: #0b1410;
+    --card: rgba(12, 18, 14, 0.9);
+    --card-strong: rgba(8, 12, 10, 0.95);
+    --accent: #e46a3a;
+    --accent-2: #f2c14f;
+    --accent-3: #57c27a;
+    --accent-soft: rgba(228,106,58,0.14);
+    --text-main: #f8fafc;
+    --text: var(--text-main);
+    --text-muted: #b2bbb2;
+    --radius: 20px;
+    --radius-lg: 26px;
+    --radius-full: 999px;
+    --shadow-soft: 0 10px 40px rgba(0,0,0,0.45);
+    --shadow-glow: 0 0 0 1px rgba(242,193,79,0.08), 0 12px 50px rgba(0,0,0,0.6);
+    --maxw: 980px;
+    --maxw-tight: 820px;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font-family: var(--font-body) !important;
+    color: var(--text-main);
+    background: var(--bg);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-optical-sizing: auto;
+    font-kerning: normal;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  body::before,
+  body::after {
+    content: "";
+    position: fixed;
+    inset: -20%;
+    z-index: -2;
+    background:
+      radial-gradient(40% 35% at 10% 10%, rgba(87,194,122,0.30), transparent 60%),
+      radial-gradient(45% 40% at 85% 15%, rgba(228,106,58,0.35), transparent 62%),
+      radial-gradient(50% 45% at 25% 85%, rgba(242,193,79,0.30), transparent 64%),
+      radial-gradient(55% 50% at 85% 80%, rgba(71,107,85,0.55), transparent 66%);
+    filter: blur(40px) saturate(1.2);
+    animation: brikGradient 12s ease-in-out infinite alternate;
+    opacity: 0.98;
+  }
+  body::after {
+    z-index: -3;
+    filter: blur(80px) saturate(1.35);
+    animation-duration: 18s;
+    opacity: 0.8;
+  }
+
+  @keyframes brikGradient {
+    0%   { transform: translate3d(-3%, -2%, 0) scale(1.02); }
+    50%  { transform: translate3d(4%, 3%, 0) scale(1.08); }
+    100% { transform: translate3d(-2%, 5%, 0) scale(1.04); }
+  }
+
+  .page {
+    min-height: 100vh;
+    padding: 36px 12px 70px;
+  }
+  .shell {
+    margin: 0 auto;
+    max-width: var(--maxw);
+    display: grid;
+    gap: 18px;
+  }
+  .stack { display: grid; gap: 10px; }
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    padding: 0 0 8px;
+    margin-top: 0;
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 26px 22px 22px;
+    background:
+      radial-gradient(120% 120% at 0% 0%, rgba(242,193,79,0.08), transparent 55%),
+      radial-gradient(120% 120% at 100% 0%, rgba(228,106,58,0.10), transparent 60%),
+      linear-gradient(180deg, rgba(8,12,10,0.96), rgba(12,18,14,0.92));
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-glow);
+    backdrop-filter: blur(10px);
+    text-align: left;
+  }
+  .hero-inner::before {
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:inherit;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0) 35%);
+    pointer-events:none;
+    mix-blend-mode:screen;
+    opacity:.6;
+  }
+
+  .hero-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .hero-logo {
+    height: 46px;
+    width: auto;
+    display: block;
+    flex: 0 0 auto;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.55));
+  }
+  .hero-logo.is-hidden { display: none !important; }
+  .hero-logo-text {
+    display: none;
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: var(--text-main);
+  }
+  .hero-logo.is-hidden + .hero-logo-text {
+    display: inline-block;
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    border-radius: var(--radius-full);
+    background: rgba(8,12,10,0.7);
+    border: 1px solid rgba(255,255,255,0.08);
+    font-size: 12px;
+    color: #cbd5e1;
+    letter-spacing: 0.02em;
+  }
+  .hero-tag-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, var(--accent-3), var(--accent-2));
+    box-shadow: 0 0 10px rgba(87,194,122,0.9);
+  }
+
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(30px, 5.8vw, 44px);
+    letter-spacing: -0.025em;
+    line-height: 1.08;
+    margin: 8px 0 8px;
+    font-weight: 800;
+  }
+  .hero-highlight {
+    background: linear-gradient(90deg, var(--accent-2), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 6px rgba(255,180,90,0.25);
+  }
+  .hero-text {
+    font-size: 16.5px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    letter-spacing: 0.002em;
+    margin: 8px 0 14px;
+    max-width: var(--maxw-tight);
+  }
+  .hero-cta-row {
+    display: grid;
+    gap: 8px;
+    margin-top: 6px;
+  }
+  .hero-note {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .hero-bg-orb {
+    z-index: 0;
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 999px;
+    filter: blur(70px);
+    opacity: 0.09;
+    animation: orbFloat 10s ease-in-out infinite alternate;
+    pointer-events: none;
+  }
+  .hero-bg-orb-1 {
+    left: -140px;
+    top: -160px;
+    background: radial-gradient(circle, rgba(87,194,122,0.9), transparent 60%);
+  }
+  .hero-bg-orb-2 {
+    right: -160px;
+    bottom: -180px;
+    background: radial-gradient(circle, rgba(228,106,58,0.9), transparent 62%);
+    animation-duration: 14s;
+  }
+  @keyframes orbFloat {
+    0% { transform: translateY(0) translateX(0) scale(1); }
+    100% { transform: translateY(18px) translateX(12px) scale(1.06); }
+  }
+
+  .btn-primary {
+    width: fit-content;
+    padding: 14px 22px;
+    border-radius: 14px;
+    background: linear-gradient(180deg, #f09a58, var(--accent));
+    color: #0b0f0c;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 6px 20px rgba(228,106,58,0.25), inset 0 1px 0 rgba(255,255,255,0.25);
+    transform: translateZ(0);
+    transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+    cursor: pointer;
+    border: none;
+    font-family: var(--font-display);
+    font-size: 17px;
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 26px rgba(228,106,58,0.32), inset 0 1px 0 rgba(255,255,255,0.30);
+    filter: saturate(1.05);
+  }
+  .btn-primary:active {
+    transform: scale(0.98);
+  }
+
+  .card {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.00)),
+      var(--card);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+    position: relative;
+    transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    padding: 18px 16px;
+  }
+  .card::before {
+    content:"";
+    position:absolute;
+    inset:-1px;
+    border-radius: inherit;
+    padding:1px;
+    background: linear-gradient(135deg, rgba(140,255,170,0.55), rgba(105,230,255,0.45), rgba(140,255,170,0.15));
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    opacity:.35;
+    pointer-events:none;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255,255,255,0.16);
+    box-shadow: 0 14px 55px rgba(0,0,0,0.65);
+  }
+  .card:hover::before { opacity:.55; }
+
+  .card h2 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.018em;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    background: linear-gradient(90deg, #ffffff 0%, rgba(255,255,255,0.75) 75%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .card p {
+    font-size: 15.5px;
+    line-height: 1.6;
+    margin: 0 0 8px;
+    color: rgba(255,255,255,0.88);
+  }
+  .muted { color: var(--text-muted); }
+
+  ul {
+    margin: 10px 0 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  li {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 8px;
+    font-size: 15.5px;
+    line-height: 1.55;
+    letter-spacing: 0.002em;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background: rgba(242,193,79,0.75);
+  }
+
+  footer {
+    margin-top: 6px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 12px;
+    padding: 8px 0 0;
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 14px;
+  }
+  .social-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 12px;
+    background: rgba(8,12,10,0.7);
+    border: 1px solid rgba(255,255,255,0.08);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
+  }
+  .social-link:hover {
+    transform: translateY(-1px);
+    border-color: rgba(242,193,79,0.35);
+    background: rgba(8,12,10,0.9);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.6), 0 0 0 1px rgba(105,230,255,0.18);
+  }
+  .social-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-icon svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    opacity: 0.9;
+  }
+
+  .callout-strong {
+    font-size: 18px;
+    font-weight: 800;
+    color: #fbbf24;
+    margin-bottom: 4px;
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  @media (max-width: 520px) {
+    .page { padding: 28px 10px 60px; }
+    .shell { gap: 16px; }
+    .hero-inner { padding: 22px 18px 20px; }
+    .hero-logo { height: 42px; }
+    .hero-logo-text { font-size: 18px; }
+    .hero-title {
+      font-size: clamp(26px, 7.2vw, 34px);
+      line-height: 1.14;
+    }
+    .hero-text { font-size: 15px; margin-bottom: 12px; }
+    .hero-cta-row { gap: 10px; }
+    .btn-primary {
+      width: 100%;
+      justify-content: center;
+      border-radius: 12px;
+    }
+    .card {
+      padding: 16px 14px;
+      border-radius: 16px;
+    }
+    .card h2 { font-size: 20px; }
+    footer { padding-top: 12px; }
+    .social-row {
+      width: 100%;
+      justify-content: center;
+      gap: 8px;
+    }
+    .social-link {
+      flex: 1 1 auto;
+      justify-content: center;
+      min-width: 110px;
+    }
+    body::before,
+    body::after {
+      filter: blur(26px) saturate(115%);
+      opacity: 0.55;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    body::before,
+    body::after,
+    .hero-bg-orb {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="shell">
+      <!-- HERO: confirmation + download -->
+      <section class="hero" aria-label="Blackout checklist download">
+        <div class="hero-bg-orb hero-bg-orb-1"></div>
+        <div class="hero-bg-orb hero-bg-orb-2"></div>
+        <div class="hero-inner">
+          <div class="hero-top">
+            <img
+              src="/assets/brik-logo.png"
+              alt="BRIK Survival logo"
+              class="hero-logo"
+              onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='/assets/brik-logo.png';}else{this.classList.add('is-hidden');}"
+            />
+            <span class="hero-logo-text">BRIK Survival</span>
+            <div class="hero-tag">
+              <div class="hero-tag-dot"></div>
+              <span>Subscription confirmed</span>
+            </div>
+          </div>
+          <h1 class="hero-title">
+            You are in. Here is your
+            <span class="hero-highlight">3 Day Blackout Checklist</span>.
+          </h1>
+          <p class="hero-text">
+            Your email is confirmed and your free checklist is ready.
+            This is the simple starter pack that helps you cover water, food, light, and warmth for a short grid outage without stress.
+          </p>
+          <div class="hero-cta-row">
+            <!-- Update this href if your PDF lives somewhere else -->
+            <a class="btn-primary" href="/downloads/blackout-checklist.pdf" target="_blank" rel="noopener">
+              Download the checklist (PDF) <span aria-hidden="true">↗</span>
+            </a>
+            <p class="hero-note">
+              We also sent the link to your inbox so you can find it later.
+              If it does not show up, check spam and mark it as safe.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card: how to use the checklist -->
+      <section class="card">
+        <div class="callout-strong">How to put this to work today</div>
+        <p class="muted">Use the checklist now while things are calm. It works best when you walk your space with it in hand.</p>
+        <ul>
+          <li>Save the PDF to your phone and cloud storage so you can reach it if one device fails.</li>
+          <li>Print one copy for the fridge and one for your go folder or binder.</li>
+          <li>Walk each room and mark what you already have, then highlight the gaps.</li>
+          <li>Pick one or two items to fix this week so you build readiness in small steps.</li>
+        </ul>
+      </section>
+
+      <!-- Card: what is coming next -->
+      <section class="card">
+        <h2>What you will get next</h2>
+        <p>
+          Over the next weeks we will share short, practical emails on blackout prep and bugging in that fit normal homes and apartments.
+        </p>
+        <ul>
+          <li>Simple gear setups that do not need a garage or spare room.</li>
+          <li>Water and food ideas that work when power and fridges are out.</li>
+          <li>Calm checklists for kids and pets so the whole house knows the plan.</li>
+          <li>Updates on the Everyday Bug In Guide and early supporter pricing.</li>
+        </ul>
+        <p class="muted">
+          If you ever feel it is not useful, you can leave with a single click at the bottom of any email.
+        </p>
+      </section>
+
+      <!-- Footer reused from index -->
+      <footer>
+        <div>Start where you are. Use what you have. Prepare one brik at a time.</div>
+        <div class="footer-micro">Calm preparedness for normal people.</div>
+        <div class="social-row" aria-label="BRIK Survival channels">
+          <a
+            class="social-link"
+            href="https://www.instagram.com/brik.survival/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+          >
+            <span class="social-icon">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 3C4.79 3 3 4.79 3 7v10c0 2.21 1.79 4 4 4h10c2.21 0 4-1.79 4-4V7c0-2.21-1.79-4-4-4H7zm10 2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h10zm-5 3.5A5.5 5.5 0 1 0 17.5 14 5.51 5.51 0 0 0 12 8.5zm0 2A3.5 3.5 0 1 1 8.5 14 3.5 3.5 0 0 1 12 10.5zM18 7.25a1.25 1.25 0 1 0 1.25 1.25A1.25 1.25 0 0 0 18 7.25z"></path>
+              </svg>
+            </span>
+            Instagram
+          </a>
+
+          <a
+            class="social-link"
+            href="https://www.tiktok.com/@official_brik"
+            target="_blank"
+            rel="noopener"
+            aria-label="TikTok"
+          >
+            <span class="social-icon">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M16.7 5.2c.9 1.1 2.1 1.8 3.5 1.9v3.1c-1.6-.1-3.1-.6-4.4-1.6v6.1c0 3.2-2.6 5.8-5.8 5.8s-5.8-2.6-5.8-5.8S6.8 9 10 9c.3 0 .7 0 1 .1v3.3c-.3-.1-.6-.2-1-.2-1.4 0-2.5 1.1-2.5 2.5S8.6 17.2 10 17.2s2.5-1.1 2.5-2.5V3h3.2c0 .8.3 1.6 1 2.2z"></path>
+              </svg>
+            </span>
+            TikTok
+          </a>
+
+          <a
+            class="social-link"
+            href="https://www.youtube.com/@Brik_Clips"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube"
+          >
+            <span class="social-icon">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M21.8 8.001c-.2-1.502-1.2-2.6-2.7-2.8C16.9 5 12 5 12 5s-4.9 0-7.1.201c-1.5.2-2.5 1.298-2.7 2.8C2 9.9 2 12 2 12s0 2.1.2 3.999c.2 1.502 1.2 2.6 2.7 2.8C7.1 19 12 19 12 19s4.9 0 7.1-.201c1.5-.2 2.5-1.298 2.7-2.8.2-1.899.2-3.999.2-3.999s0-2.1-.2-3.999zM10 15.5v-7l6 3.5-6 3.5z"></path>
+              </svg>
+            </span>
+            YouTube
+          </a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
