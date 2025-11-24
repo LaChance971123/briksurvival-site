@@ -1,22 +1,37 @@
 [build]
   publish = "."
-command = ""
+  command = ""
 
+# --- Redirects (order matters) ---
+
+# Serve confirm page directly
 [[redirects]]
   from = "/blackout-checklist-confirmed.html"
   to = "/blackout-checklist-confirmed.html"
   status = 200
+  force = true
 
+# Handle pretty URL version too
+[[redirects]]
+  from = "/blackout-checklist-confirmed"
+  to = "/blackout-checklist-confirmed.html"
+  status = 301
+  force = true
+
+# Allow direct access to PDFs and other files in /downloads
 [[redirects]]
   from = "/downloads/*"
   to = "/downloads/:splat"
   status = 200
+  force = true
 
+# SPA catch-all LAST
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
+# --- Security headers ---
 [[headers]]
   for = "/*"
   [headers.values]
@@ -26,12 +41,15 @@ command = ""
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
+# Cache static assets hard
 [[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Cache downloads hard + make sure browsers treat them as PDFs
 [[headers]]
   for = "/downloads/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "application/pdf"
