@@ -1,27 +1,24 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
 const code=fs.readFileSync('app.js','utf8');
-function fixture(path,storage={}) {
- const elements=[],scripts=[];
- const element=tag=>({tag,dataset:{},children:[],events:{},classList:{add(){}},contains(target){return target===this},append(...x){this.children.push(...x)},appendChild(x){this.children.push(x)},setAttribute(k,v){this[k]=v},addEventListener(k,f){this.events[k]=f}});
- const main=element('main'),body=element('body');body.appendChild=s=>scripts.push(s);
- const store={getItem:k=>storage[k]??null,setItem:(k,v)=>storage[k]=v};
- const document={body,querySelector:s=>s==='main'?main:null,querySelectorAll:()=>[],createElement:tag=>{const e=element(tag);elements.push(e);return e}};
- const events={};let reloads=0; const window={location:{pathname:path,reload:()=>reloads++},localStorage:store,sessionStorage:store,addEventListener:(name,handler)=>events[name]=handler};
- vm.runInNewContext(code,{document,window,Date});
- return {elements,scripts,main,events,reloads:()=>reloads};
+function fixture(path) {
+ const scripts=[];
+ const document={body:{appendChild:s=>scripts.push(s)},querySelector:s=>s==='script[data-oz-ad]'?scripts.find(e=>e.dataset.ozAd):null,querySelectorAll:()=>[],createElement:tag=>({tag,dataset:{}})};
+ // Deliberately omit storage and interaction APIs: automatic ads must need neither.
+ const context={document,window:{location:{pathname:path}},Date};
+ vm.runInNewContext(code,context);
+ return {scripts,rerun:()=>vm.runInNewContext(code,{...context})};
 }
-for(const p of ['/','/index.html','/index','/indexv3.html','/search/','/emergencies/tornado/','/emergencies/cpr/','/emergencies/armed-conflict/','/privacy/','/thanks/','/unknown']) {
- const x=fixture(p);assert.equal(x.scripts.length,0,p);assert.equal(x.main.children.length,0,p);
+for(const p of ['/','/index.html','/index','/indexv3.html','/search/','/search/index.html','/emergencies/','/emergencies/tornado/','/emergencies/cpr/index.html','/emergencies/armed-conflict/','/privacy/','/privacy/index.html','/thanks/','/unknown']) {
+ assert.equal(fixture(p).scripts.length,0,p);
 }
-for(const p of ['/library/','/preparedness/go-bag/','/guides/water-purification/','/topics/','/resources/','/about/']) {
- const x=fixture(p);assert.equal(x.scripts.length,0,'No ads before user choice: '+p);
- const enable=x.elements.find(e=>e.textContent==='Continue with ads');assert(enable,p);enable.events.click();
- assert.equal(x.scripts.length,1,p);assert.equal(x.scripts[0].async,true);
- assert(p.startsWith('/guides/')?x.scripts[0].dataset.zone==='11941449':x.scripts[0].src.endsWith('11941494'));
- enable.events.click();assert.equal(x.scripts.length,1,'No duplicate zones');
- x.elements.find(e=>e.textContent==='Use focus mode').events.click();assert.equal(x.reloads(),1);
+for(const p of ['/library/','/library/index.html','/library/conflict/','/preparedness/go-bag/','/guides/','/guides/water-purification/index.html','/topics/','/topics/index.html','/resources/','/about/']) {
+ const x=fixture(p);assert.equal(x.scripts.length,1,'Automatic ads: '+p);
+ const script=x.scripts[0];assert.equal(script.async,true);assert.equal(script.dataset.ozAd,'true');
+ if(p.startsWith('/guides/')) {assert.equal(script.dataset.zone,'11941449');assert.equal(script.src,'https://n6wxm.com/vignette.min.js');}
+ else {assert.equal(script.dataset.cfasync,'false');assert.equal(script.src,'https://5gvci.com/act/files/tag.min.js?z=11941494');}
+ x.rerun();assert.equal(x.scripts.length,1,'No duplicate zones: '+p);
+ assert.equal(fixture(p).scripts.length,1,'Next document loads without session cooldown: '+p);
 }
-const capped=fixture('/library/',{'oz-ad-start':String(Date.now())});capped.elements.find(e=>e.textContent==='Continue with ads').events.click();assert.equal(capped.scripts.length,0);
-const escape=fixture('/library/');escape.elements.find(e=>e.textContent==='Continue with ads').events.click();escape.events.keydown({key:'Escape',preventDefault(){},stopImmediatePropagation(){}});assert.equal(escape.reloads(),1);
+assert(!/oz-focus|oz-ad-start|Continue with ads|ad-stop-button|createElement\('button'\)/.test(code));
 assert(fs.readFileSync('sw.js','utf8').includes('11941494'));
-console.log('PASS: homepage/search/response exclusions, explicit ad choice, both zones, no stacking, focus reload and session cap.');
+console.log('PASS: automatic advertising, important-page exclusions and index aliases, both zones, no stacking, no opt-in/control/cooldown.');
