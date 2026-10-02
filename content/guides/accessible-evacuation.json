@@ -29,8 +29,8 @@
   "next": "Practise the plan with the person’s consent and revise it when equipment or care needs change. Keep an alternative plan for power loss and an unavailable caregiver.",
   "watch": "Do not separate a person from essential equipment or a necessary caregiver if avoidable. An untrained lifting attempt can injure both the person and the helper.",
   "without_help": "Use your confirmed private support network and a destination suited to care needs. If transport cannot be arranged, identify the safest available refuge and communicate the precise assistance required through a safe channel.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Practice the route using the actual mobility and communication aids. Keep chargers, essential medicines and written instructions together. Ask the person what works for them before moving them or their equipment.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
   "sources": "accessibility",
   "category": "evacuation-shelter",
   "subcategory": "Evacuation",
@@ -49,5 +49,29 @@
     "mobility emergency"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked editorial review; not independent expert certification"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Practise the plan with the person’s consent and revise it when equipment or care needs change. Keep an alternative plan for power loss and an unavailable caregiver."
+    ],
+    [
+      "When the first option is unavailable",
+      "Use your confirmed private support network and a destination suited to care needs. If transport cannot be arranged, identify the safest available refuge and communicate the precise assistance required through a safe channel."
+    ]
+  ],
+  "faqs": [
+    [
+      "What specific assistance is required?",
+      "Describe actions rather than only a diagnosis: stairs, transfers, communication, oxygen, charging, medication or a service animal. Make this information available to a trusted helper without publishing private medical details."
+    ],
+    [
+      "What if the planned helper cannot come?",
+      "Identify a second reachable support option and a safe waiting location suited to the hazard. Check it directly when possible. A generic shelter label does not establish accessibility, medical capability or permission to bring needed equipment."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

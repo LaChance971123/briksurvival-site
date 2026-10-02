@@ -419,6 +419,10 @@
     [
       "CDC · Diabetes care during emergencies",
       "https://www.cdc.gov/diabetes/articles/diabetes-care-emergencies.html"
+    ],
+    [
+      "FDA - Insulin storage during an emergency",
+      "https://www.fda.gov/drugs/emergency-preparedness-drugs/information-regarding-insulin-storage-and-switching-between-products-emergency"
     ]
   ],
   "accessibility": [
@@ -473,6 +477,138 @@
     [
       "National Park Service · Hiking safety",
       "https://www.nps.gov/articles/hiking-safety.htm"
+    ]
+  ],
+  "stroke": [
+    [
+      "American Red Cross - Stroke",
+      "https://www.redcross.org/take-a-class/resources/learn-first-aid/stroke"
+    ],
+    [
+      "AHA / Red Cross - 2024 first-aid guidelines",
+      "https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines"
+    ]
+  ],
+  "heart-attack": [
+    [
+      "American Red Cross - Heart Attack",
+      "https://www.redcross.org/take-a-class/resources/learn-first-aid/heart-attack"
+    ],
+    [
+      "AHA / Red Cross - 2024 first-aid guidelines",
+      "https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines"
+    ]
+  ],
+  "anaphylaxis": [
+    [
+      "American Red Cross - Allergic Reaction Anaphylaxis",
+      "https://www.redcross.org/take-a-class/resources/learn-first-aid/allergic-reaction-anaphylaxis"
+    ],
+    [
+      "AHA / Red Cross - 2024 first-aid guidelines",
+      "https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines"
+    ]
+  ],
+  "infant-choking": [
+    [
+      "American Red Cross - Infant Choking",
+      "https://www.redcross.org/take-a-class/resources/learn-first-aid/infant-choking"
+    ],
+    [
+      "AHA - 2025 choking update",
+      "https://newsroom.heart.org/facts/cpr-cardiopulmonary-resuscitation-and-updated-guidelines-2025"
+    ]
+  ],
+  "child-infant-cpr": [
+    [
+      "AHA / AAP - 2025 pediatric basic life support",
+      "https://publications.aap.org/pediatrics/article/157/1/e2025074350/205235/Part-6-Pediatric-Basic-Life-Support-2025-American"
+    ],
+    [
+      "American Red Cross - Child Cardiac Arrest",
+      "https://www.redcross.org/take-a-class/resources/learn-first-aid/child-cardiac-arrest"
+    ],
+    [
+      "American Red Cross - Infant Cardiac Arrest",
+      "https://www.redcross.org/take-a-class/resources/learn-first-aid/infant-cardiac-arrest"
+    ],
+    [
+      "AHA - 2025 CPR guidance",
+      "https://newsroom.heart.org/facts/cpr-cardiopulmonary-resuscitation-and-updated-guidelines-2025"
+    ]
+  ],
+  "burns": [
+    [
+      "American Red Cross - Burns",
+      "https://www.redcross.org/take-a-class/resources/learn-first-aid/burns"
+    ],
+    [
+      "AHA / Red Cross - 2024 first-aid guidelines",
+      "https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines"
+    ]
+  ],
+  "seizures": [
+    [
+      "American Red Cross - Seizures",
+      "https://www.redcross.org/take-a-class/resources/learn-first-aid/seizures"
+    ],
+    [
+      "AHA / Red Cross - 2024 first-aid guidelines",
+      "https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines"
+    ]
+  ],
+  "opioid-overdose": [
+    [
+      "American Red Cross - Opioid Overdose",
+      "https://www.redcross.org/take-a-class/resources/learn-first-aid/opioid-overdose"
+    ],
+    [
+      "AHA / Red Cross - 2024 first-aid guidelines",
+      "https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines"
+    ]
+  ],
+  "lost-outdoors": [
+    [
+      "NPS - Outdoor emergency plan",
+      "https://www.nps.gov/articles/gtgemergencyplan.htm"
+    ],
+    [
+      "NPS - Hiking safety",
+      "https://www.nps.gov/articles/hiking-safety.htm"
+    ]
+  ],
+  "apartment-fire": [
+    [
+      "USFA - High-rise fire safety",
+      "https://www.usfa.fema.gov/downloads/pdf/publications/high-rise-fire-safety-infographic.pdf"
+    ],
+    [
+      "USFA - High-rise protection",
+      "https://www.usfa.fema.gov/blog/protecting-people-who-live-or-work-in-high-rises/"
+    ]
+  ],
+  "flood-cleanup": [
+    [
+      "CDC - Disaster cleanup safety",
+      "https://www.cdc.gov/natural-disasters/safety/index.html"
+    ],
+    [
+      "CDC - Reentering a flooded home",
+      "https://www.cdc.gov/floods/safety/reentering-your-flooded-home-safety.html"
+    ],
+    [
+      "CDC - Mold cleanup supplies",
+      "https://www.cdc.gov/mold-health/communication-resources/shopping-list-for-cleaning-mold.html"
+    ]
+  ],
+  "budget-preparedness": [
+    [
+      "Ready.gov - Low and no-cost preparedness",
+      "https://www.ready.gov/low-and-no-cost"
+    ],
+    [
+      "Ready.gov - Build a kit",
+      "https://www.ready.gov/kit"
     ]
   ]
 }

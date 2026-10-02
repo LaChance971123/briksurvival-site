@@ -1,0 +1,68 @@
+{
+  "slug": "seizures",
+  "title": "Seizures",
+  "category": "medical",
+  "subcategory": "Neurological",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "seizure",
+    "convulsions",
+    "epilepsy seizure",
+    "someone is fitting"
+  ],
+  "keywords": [],
+  "tldr": "Keep the person away from injury, time the seizure and do not restrain them or put anything in their mouth. Seek urgent help for a first seizure, one lasting over 5 minutes, repeated seizures without recovery, injury or breathing difficulty.",
+  "steps": [
+    [
+      "Make space",
+      "Move dangerous objects away. Protect the head gently if possible, without holding the person down."
+    ],
+    [
+      "Time and observe",
+      "Note the start and stop times and whether there are repeated seizures. Ask someone to contact help when urgent criteria apply."
+    ],
+    [
+      "Protect breathing afterward",
+      "When safe, position on their side if breathing but not fully awake. Stay with them and monitor responsiveness."
+    ],
+    [
+      "Act if normal breathing stops",
+      "If unresponsive and not breathing normally, begin CPR and use an AED. Do not assume abnormal breathing is simply a normal recovery."
+    ]
+  ],
+  "without_help": "Continue protecting from hazards and observing breathing while a helper seeks medical access. Use prescribed rescue medicine only under the existing care plan and appropriate training. If urgent criteria apply, keep seeking care rather than leaving the person alone to recover.",
+  "household": "Reduce noise and spectators and give the person privacy. Afterward, speak calmly and explain what happened. Assign dependents to another adult and prepare the care plan, medication list and seizure timeline for a trusted receiving clinician.",
+  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "next": "Seek urgent help for seizures in water, during pregnancy, in a baby under 6 months or without return to baseline within 5-10 minutes. A known condition does not remove new warning signs.",
+  "watch": "Never force something into the mouth, give food or drink before fully alert, or restrain movements.",
+  "sources": "seizures",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "scope": "First-aid summary based on U.S. references. Use the local emergency number; this is not a diagnosis or a substitute for hands-on training.",
+  "decisions": [
+    [
+      "An established epilepsy plan exists",
+      "Follow the person’s prescribed plan and note medicine times. New or unusually prolonged symptoms still need assessment."
+    ],
+    [
+      "In a hazardous location",
+      "Move only as needed to escape immediate danger. Do not create a second casualty by entering water, traffic or electrical hazards."
+    ]
+  ],
+  "faqs": [
+    [
+      "Can they swallow their tongue?",
+      "No. Putting an object in the mouth can cause choking, dental injury or a bite injury to the helper."
+    ]
+  ],
+  "worksheet": [
+    "Incident / symptom onset / location",
+    "Help requested / response confirmed",
+    "Actions / times / next handover"
+  ],
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-01-02"
+}

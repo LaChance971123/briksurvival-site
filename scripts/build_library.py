@@ -14,8 +14,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab import rl_config
 rl_config.invariant = True
 ROOT=Path(__file__).resolve().parents[1]
-pdfmetrics.registerFont(TTFont('OZ',str(ROOT/'Assets/fonts/DejaVuSans.ttf')))
-pdfmetrics.registerFont(TTFont('OZ-Bold',str(ROOT/'Assets/fonts/DejaVuSans-Bold.ttf')))
+from document_design import make_document
 GUIDES=sorted((json.loads(p.read_text()) for p in (ROOT/'content/guides').glob('*.json')),key=lambda g:g['title'].lower())
 CATS=json.loads((ROOT/'content/taxonomy.json').read_text());CAT={c['id']:c for c in CATS}
 SOURCES=json.loads((ROOT/'content/sources.json').read_text())
@@ -44,27 +43,7 @@ def page(path,title,desc,main):
  write(path.strip('/')+'/index.html',html)
 
 def pdf(g,shopping=False):
- slug=g['slug'];suffix='shopping-list' if shopping else 'checklist';path=ROOT/f'downloads/{slug}-{suffix}.pdf'
- path.parent.mkdir(exist_ok=True)
- styles=getSampleStyleSheet(); styles.add(ParagraphStyle(name='Brand',fontName='OZ-Bold',fontSize=10,textColor=colors.HexColor('#be431b'),spaceAfter=10));styles.add(ParagraphStyle(name='Quick',fontName='OZ-Bold',fontSize=11,leading=15,spaceAfter=15)); styles['Title'].fontName='OZ-Bold';styles['Title'].fontSize=22;styles['Title'].leading=26;styles['Title'].alignment=TA_LEFT
- styles['BodyText'].fontName='OZ';styles['Heading3'].fontName='OZ-Bold';styles['BodyText'].fontSize=10;styles['BodyText'].leading=14;styles['Heading3'].spaceBefore=7;styles['Heading3'].spaceAfter=4
- def clean(s): return e(s.replace('’',"'").replace('–','-').replace('—','-').replace('“','"').replace('”','"'))
- story=[Paragraph('OSPREY ZERO / SKILL BEATS PANIC. EVERY TIME.',styles['Brand']),Paragraph(clean(g['title']),styles['Title']),Paragraph('SHOPPING LIST' if shopping else 'ACTION CHECKLIST',styles['Brand'])]
- if shopping:
-  story.append(Paragraph('Check what you already own. Adapt quantities to your household; these supplies are for preparation, not a reason to delay urgent action.',styles['BodyText']));story.append(Spacer(1,12))
-  items=[(x,'Quantity needed: __________  Already have: __________') for x in g['shopping']]
- else:
-  story.append(Paragraph(clean(g['tldr']),styles['Quick']));items=g['steps']
- for h,p in items:
-  story.append(KeepTogether([Paragraph('[  ] '+clean(h),styles['Heading3']),Paragraph(clean(p),styles['BodyText']),Spacer(1,5)]))
- if not shopping:story.extend([Paragraph('WATCH FOR',styles['Brand']),Paragraph(clean(g['watch']),styles['BodyText'])])
- if not shopping:story.extend([Paragraph('IF HELP IS UNAVAILABLE',styles['Brand']),Paragraph(clean(g['without_help']),styles['BodyText'])])
- story.extend([Spacer(1,16),Paragraph('Updated '+g['updated']+' | Civilian educational guidance. Seek qualified help when reachable and safe; do not delay immediate protective action.',styles['BodyText']),Spacer(1,8),Paragraph('Full guide: https://ospreyzero.com'+route(g),styles['BodyText'])])
- for label,url in SOURCES[g['sources']]:story.append(Paragraph('<link href="'+e(url,quote=True)+'">'+clean(label)+'</link>',styles['BodyText']))
- def footer(c,d):
-  c.setFont('OZ',8);c.setFillColor(colors.HexColor('#666666'));c.drawString(42,25,'OSPREY ZERO | '+slug+' | '+str(d.page))
- SimpleDocTemplate(str(path),pagesize=(612,792),rightMargin=42,leftMargin=42,topMargin=38,bottomMargin=42,title=g['title']+' '+suffix,author='Osprey Zero').build(story,onFirstPage=footer,onLaterPages=footer)
- return '/downloads/'+path.name
+ return make_document(g,SOURCES[g['sources']],route(g),'shopping' if shopping else 'checklist')
 
 def resource_keys(g):
  if g['category']=='field-skills':return ['water','army'] if g['subcategory']=='Water' else ['fema']
@@ -79,7 +58,10 @@ for g in GUIDES:
  assert g['category'] in CAT and g['subcategory'] in CAT[g['category']]['subcategories']
  for key in ['title','tldr','steps','next','watch','sources','updated']:assert g.get(key), (g['slug'],key)
  cat=CAT[g['category']];title=e(g['title']);url=route(g)
+ fullpdf=make_document(g,SOURCES[g['sources']],route(g),'guide')
  checklist=pdf(g);resources=f'<a class="resource-button" href="{checklist}" download>Download checklist <small>PDF · Osprey Zero</small></a>'
+ resources+=f'<a class="resource-button" href="{fullpdf}" download>Download full guide <small>PDF · All sections & planning sheet</small></a><a class="resource-button" href="/offline/">Save the offline library <small>Guides · Browser-local access</small></a>'
+ INDEX.append(dict(title=g['title']+' full guide PDF',url=fullpdf,category=cat['title'],category_id=cat['id'],subcategory=g['subcategory'],content_type='Full guide PDF',aliases=[],summary='Complete branded field guide and household planning sheets for '+g['title']+'.',text=g['tldr'],priority=0))
  INDEX.append(dict(title=g['title']+' checklist',url=checklist,category=cat['title'],category_id=cat['id'],subcategory=g['subcategory'],content_type='Checklist',aliases=[],summary='Printable action checklist for '+g['title']+'.',text=g['tldr'],priority=0))
  if g.get('shopping'):
   shopping=pdf(g,True);resources+=f'<a class="resource-button" href="{shopping}" download>Download shopping list <small>PDF · Osprey Zero</small></a>'
@@ -88,6 +70,8 @@ for g in GUIDES:
   r=MANUALS[k];resources+=f'<a class="resource-button" href="{e(r["url"],quote=True)}" target="_blank" rel="noopener noreferrer">{e(r["title"])}<small>Published reference · external</small></a>'
  label,source=SOURCES[g['sources']][0];resources+=f'<a class="resource-button resource-official" href="{e(source,quote=True)}" target="_blank" rel="noopener noreferrer">Trusted reference <small>{e(label)}</small></a>'
  steps=''.join(f'<li><span class="step-num">{n:02}</span><div><h3>{e(h)}</h3><p>{e(p)}</p></div></li>' for n,(h,p) in enumerate(g['steps'],1))
+ decisions=''.join(f'<div class="decision-card"><h3>{e(h)}</h3><p>{e(p)}</p></div>' for h,p in g.get('decisions',[]))
+ faqs=''.join(f'<details class="guide-faq"><summary>{e(h)}</summary><p>{e(p)}</p></details>' for h,p in g.get('faqs',[]))
  sources=''.join(f'<li><a href="{e(u,quote=True)}" target="_blank" rel="noopener noreferrer">{e(l)}</a></li>' for l,u in SOURCES[g['sources']])
  related=[x for x in GUIDES if x['slug']!=g['slug'] and x['category']==g['category'] and x['subcategory']==g['subcategory']][:3]
  extra={
@@ -129,7 +113,7 @@ for g in GUIDES:
  main=f'''<main id="main" class="subpage guide-page"><nav class="wrap guide-breadcrumb" aria-label="Breadcrumb"><a href="/library/">Encyclopedia</a><span>/</span><a href="/library/{cat['id']}/">{e(cat['title'])}</a><span>/</span><span>{e(g['subcategory'])}</span></nav>
  <article class="wrap guide-layout"><div class="guide-main"><header class="guide-heading"><span class="kicker">{e(g['content_type'])}</span><h1>{title}</h1></header>
  <section class="quick-answer" id="quick-answer" aria-labelledby="quick-title"><h2 class="quick-label" id="quick-title">QUICK ANSWER · START HERE</h2><p>{e(g['tldr'])}</p></section>
- <section class="guide-resources" aria-label="Downloads and trusted resources"><h2>Save the essentials.</h2><div class="resource-grid">{resources}</div><p class="resource-note">Free downloads. No signup. Save the checklist or use Print full guide to save this page as a PDF before service fails.</p></section>
+ <section class="guide-resources" aria-label="Downloads and trusted resources"><h2>Save the essentials.</h2><div class="resource-grid">{resources}</div><p class="resource-note">Free downloads. No signup. Branded guides, checklists and supply worksheets. Save a copy before service fails; external references need a connection.</p></section>
  <div class="guide-meta"><span>UPDATED {g['updated']}</span><button type="button" class="print-link" data-print>Print full guide</button></div>
  <div class="guide-alert"><span>!</span><p>Act on immediate danger. Seek qualified help when reachable and safe, but do not make your first protective step depend on a response. This page is general guidance, not a live alert.</p></div>
  <nav class="guide-jumps" aria-label="Skip to a section"><a href="#do-now">Do now</a><a href="#without-help">Without help</a><a href="#household">Family plan</a><a href="#next">Next</a><a href="#watch">Watch for</a><a href="#sources">Sources</a></nav>
@@ -137,13 +121,14 @@ for g in GUIDES:
  {diagram(g.get('diagram'))}
  <section class="guide-section no-help-panel" id="without-help"><p class="kicker">PLAN AROUND WHAT YOU HAVE</p><h2>If help is unavailable.</h2><p>{e(g['without_help'])}</p></section>
  <section class="guide-section" id="household"><h2>People & practical needs.</h2><p>{e(g['household'])}</p><details class="pack-details"><summary>Keep essentials within reach</summary><p>{e(g['pack_now'])}</p></details></section>
- <section class="guide-section" id="next"><h2>Next steps.</h2><p>{e(g['next'])}</p></section>
+ <section class="guide-section" id="next"><h2>Next steps.</h2><p>{e(g['next'])}</p><div class="decision-grid">{decisions}</div></section>
+ <section class="guide-section"><h2>Questions in the field.</h2>{faqs}</section>
  <section class="guide-section guide-caution" id="watch"><h2>Watch for.</h2><p>{e(g['watch'])}</p></section>
  <section class="guide-section guide-sources" id="sources"><h2>Sources & context.</h2><p>Osprey Zero combines source-based protective guidance with practical household planning. References provide context, not a promise of assistance. Some standards are U.S.-based; local risks, laws and services differ.</p><ul>{sources}</ul><p>Updated {g['updated']}. {'First-aid summaries support immediate response and training; they have not received independent clinical review.' if g['category']=='medical' else 'Editorially reviewed against linked references; not independently certified by a subject-matter expert. Verify changing conditions through sources safe for you to contact.'}</p></section></div>
  <aside class="guide-rail" aria-label="Guide contents"><div class="rail-panel"><span>FIND IT FAST</span><a href="#quick-answer">Quick answer</a><a href="#do-now">Do now</a><a href="#without-help">If help is unavailable</a><a href="#household">People & practical needs</a><a href="#next">Next steps</a><a href="#watch">Watch for</a><a href="#sources">Sources</a><a href="/search/">Search another situation</a></div></aside></article>
  <section class="wrap guide-end"><h2>Related guidance.</h2><div class="related-links">{links}</div></section></main>'''
  page(url,g['title'],g['tldr'],main)
- INDEX.append(dict(title=g['title'],url=url,category=cat['title'],category_id=cat['id'],subcategory=g['subcategory'],content_type=g['content_type'],aliases=g.get('aliases',[]),summary=g['tldr'],text=' '.join([g.get('deck',''),g['next'],g['watch'],g['without_help'],g['household'],*g.get('keywords',[]),*[h+' '+p for h,p in g['steps']]]),priority=10))
+ INDEX.append(dict(title=g['title'],url=url,category=cat['title'],category_id=cat['id'],subcategory=g['subcategory'],content_type=g['content_type'],aliases=g.get('aliases',[]),summary=g['tldr'],text=' '.join([g.get('deck',''),' '.join(h+' '+p for h,p in g.get('decisions',[])+g.get('faqs',[])),g['next'],g['watch'],g['without_help'],g['household'],*g.get('keywords',[]),*[h+' '+p for h,p in g['steps']]]),priority=10))
 
 # Category and subcategory pages remain usable without JavaScript.
 def card(g):return f'<a class="library-card" href="{route(g)}"><span>{e(g["content_type"])}</span><h3>{e(g["title"])}</h3><p>{e(g["tldr"].split(". ")[0]+".")}</p><small>{e(g["subcategory"])}</small></a>'
@@ -167,7 +152,7 @@ def browse(path,title,selected):
  directory=''.join(f'<a class="subject-card" href="/library/{c["id"]}/"><h2>{e(c["title"])}</h2><p>{e(", ".join(s for s in c["subcategories"] if any(g["category"]==c["id"] and g["subcategory"]==s for g in selected)))}</p><span>{sum(g["category"]==c["id"] for g in selected)} {"guide" if sum(g["category"]==c["id"] for g in selected)==1 else "guides"}</span></a>' for c in CATS if any(g['category']==c['id'] for g in selected))
  if path=='/library/':groups='<div class="subject-grid">'+directory+'</div>'
  main=f'<main id="main" class="subpage"><section class="wrap library-heading"><p class="kicker">OSPREY ZERO ENCYCLOPEDIA</p><h1>{e(title)}</h1><p>Choose a subject or search a few words. Every guide starts with what matters now and includes a plan for when help is unavailable.</p>{searchform()}<div class="library-meta">{len(selected)} guides · Free checklists · No signup needed</div><div class="browse-tools"><a href="/topics/">All topics A–Z</a><a href="/search/?type=Checklist">Printable checklists</a><a href="/search/?type=Shopping%20list">Shopping lists</a></div><nav class="subcategory-chips" aria-label="Jump to a subcategory">{"".join(chips) if len({g["category"] for g in selected})==1 else ""}</nav></section><div class="wrap library-layout"><nav class="category-nav" aria-label="Browse categories"><h2>Browse by subject</h2>{nav}<a href="/library/">All subjects</a></nav><div>{groups}</div></div></main>'
- page(path,title,'Browse original quick-answer guides, checklists and official references by subject.',main)
+ page(path,title,f'{title.rstrip(chr(46))}: '+', '.join(g['title'] for g in selected[:4])+f'. Browse {len(selected)} guides, practical checklists and references.',main)
 browse('/library/','Find information. Fast.',GUIDES)
 browse('/emergencies/','Emergency guides.',[g for g in GUIDES if g['content_type']=='Emergency guide'])
 browse('/preparedness/','Prepare before you need it.',[g for g in GUIDES if g['content_type']=='Preparedness guide'])
@@ -180,7 +165,7 @@ page('/topics/','All topics A–Z','A complete alphabetical index of Osprey Zero
 # Replace the broad weather guide with a browse page, preserving the URL.
 browse('/emergencies/severe-weather/','Weather: choose the specific hazard.',[g for g in GUIDES if g['category']=='natural-hazards' and g['subcategory'] in ['Severe storms','Tropical weather','Winter','Heat & dry conditions','Flooding']])
 filters=''.join(f'<option value="{c["id"]}">{e(c["title"])}</option>' for c in CATS)
-types=['Emergency guide','Preparedness guide','Field guide','Checklist','Shopping list','Published reference']
+types=['Emergency guide','Preparedness guide','Field guide','Checklist','Shopping list','Full guide PDF','Published reference']
 main=f'''<main id="main" class="subpage"><section class="wrap library-heading"><p class="kicker">SEARCH THE ENCYCLOPEDIA</p><h1>What happened?</h1><p>Use a topic or a few words. Try “lights out”, “smell gas” or “water unsafe”.</p><form id="global-search-form" class="library-search" role="search"><label for="global-search">Search all guides and downloads</label><div><input id="global-search" name="q" type="search" autocomplete="off" aria-controls="search-results" placeholder="Find the next step"><button class="button button-primary">Search</button></div><div class="search-filters"><label for="search-category">Subject<select id="search-category"><option value="">All subjects</option>{filters}</select></label><label for="search-type">Resource type<select id="search-type"><option value="">All types</option>{''.join(f'<option>{x}</option>' for x in types)}</select></label><button type="button" id="search-reset">Clear filters</button></div></form><p id="search-status" role="status" aria-live="polite">Loading the library…</p><div id="search-results" class="search-results"></div><noscript><p>Search needs JavaScript. <a href="/library/">Browse all topics here</a>; guides and downloads work without JavaScript.</p></noscript></section></main>'''
 page('/search/','Search','Search the entire Osprey Zero library by topic, common phrase or keyword.',main)
 for k,r in MANUALS.items():
@@ -206,3 +191,6 @@ for p in [ROOT/'index.html',ROOT/'about/index.html',ROOT/'privacy/index.html',RO
 paths=sorted({'/','/about/','/privacy/','/resources/','/library/','/topics/','/search/','/emergencies/','/preparedness/','/guides/','/emergencies/severe-weather/',*[route(g) for g in GUIDES],*['/library/'+c['id']+'/' for c in CATS]})
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>https://ospreyzero.com{x}</loc><lastmod>2026-10-02</lastmod></url>' for x in paths)+'</urlset>')
 print(f'Built {len(GUIDES)} guides, {len(CATS)} categories, {len(INDEX)} indexed resources.')
+# The offline reader is intentionally ad-free and owns a separate worker scope.
+page('/offline/','Save the offline library','Save 86 complete Osprey Zero guides in this browser or download refined PDF packs and a portable offline library.',f'''<main id="main" class="subpage"><section class="wrap library-heading"><p class="kicker">KNOWLEDGE WITHOUT A CONNECTION</p><h1>Keep the next step<br>within reach.</h1><p>Save the complete guide text and site fonts in this browser, or keep a portable copy on your device. Free access. No account. Saved content cannot provide live alerts.</p><div class="offline-actions"><button id="offline-save" class="button button-primary" type="button">Save for offline</button><button id="offline-remove" class="button button-outline" type="button">Remove saved reader</button><a class="button button-outline" href="/downloads/osprey-zero-offline-library.zip" download>Download portable library ZIP</a></div><p id="offline-status" role="status" aria-live="polite">Loading the library…</p><p>After saving, bookmark this page and test reopening it before relying on it. Browser storage can be cleared or evicted. PDF packs and an extracted ZIP are useful backups. The ZIP contains relative links and local fonts; open START-HERE.html after extracting the whole folder.</p><div class="pack-grid"><article class="pack-card"><p class="kicker">COLLECTION / 01</p><h2>Power & water.</h2><p>Eight complete guides for outages, safe backup power, food, drinking water and sanitation.</p><a href="/downloads/power-water-offline-pack.pdf" download>Download power & water PDF</a></article><article class="pack-card"><p class="kicker">COLLECTION / 02</p><h2>Household readiness.</h2><p>Eight guides for kits, budgets, children, medication, pets and access needs.</p><a href="/downloads/household-offline-pack.pdf" download>Download household PDF</a></article><article class="pack-card"><p class="kicker">COLLECTION / 03</p><h2>First aid.</h2><p>Twelve immediate-response summaries and planning sheets. Source-linked; not independently clinically reviewed.</p><a href="/downloads/first-aid-offline-pack.pdf" download>Download first-aid PDF</a></article></div><noscript><p>The browser reader requires JavaScript. Download a PDF pack or the portable ZIP for complete guidance without JavaScript.</p></noscript><div class="offline-reader"><div><label for="offline-query">Find a saved topic</label><input id="offline-query" type="search" placeholder="Topic or common phrase"><div id="offline-list" class="offline-list"></div></div><article id="offline-article" aria-label="Selected offline guide"><h2>Choose a guide.</h2><p>Read the complete guide here. External references need a connection. Personal worksheets are in the PDF downloads; the reader does not submit household notes.</p></article></div></section></main>''')
+p=ROOT/'offline/index.html';p.write_text(p.read_text().replace('<script src="/app.js?v=oz7" defer></script>','').replace('<script src="/search.js?v=oz7" defer></script>','').replace('<script src="/ads.js?v=oz8" async></script>','').replace('</head>','<script src="/offline/reader.js" defer></script></head>'))

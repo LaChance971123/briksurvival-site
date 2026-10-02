@@ -38,6 +38,38 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Choose the room for the hazard, not the phrase: lowest sturdy interior area for tornadoes, protective interior mass for fallout, and a room with few outside openings for an airborne chemical threat. Leave a shelter that is burning, flooding or collapsing rather than following a generic stay-inside rule.",
-  "household": "Keep the group together with a named adult responsible for each child or person needing assistance. Count people at every departure and arrival. Write contact details on paper, retain necessary medicines and agree what to do if one person cannot travel.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Keep the group together with a named adult responsible for each child or person needing assistance. Count people at every departure and arrival. Write contact details on paper, retain necessary medicines and agree what to do if one person cannot travel. For this situation, brief every person on the first action: identify the hazard. Agree who will manage children, pets or mobility needs while that action happens. Do not apply chemical room-sealing instructions to every hazard or remain in a burning building.",
+  "pack_now": "For shelter-in-place, prioritize only items needed for the first action and the fallback: Choose the room for the hazard, not the phrase: lowest sturdy interior area for tornadoes, protective interior mass for fallout, and a room with few outside openings for an airborne chemical threat. Leave a shelter that is burning, flooding or collapsing rather than following a generic stay-inside rule. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
+  "decisions": [
+    [
+      "First decision: Identify the hazard",
+      "Read the actual shelter instruction and affected area. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "Choose the room for the hazard, not the phrase: lowest sturdy interior area for tornadoes, protective interior mass for fallout, and a room with few outside openings for an airborne chemical threat. Leave a shelter that is burning, flooding or collapsing rather than following a generic stay-inside rule. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "Do not apply chemical room-sealing instructions to every hazard or remain in a burning building. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Get inside if the outdoor hazard makes travel more dangerous, and choose the room for that hazard: a lowest-floor sturdy interior area for a tornado, protective interior mass for fallout, or few outside openings for an airborne chemical release. Close openings and control ventilation only as the hazard requires. Do not remain in a burning, flooding or collapsing building, and do not wait for a message when immediate danger is visible. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For shelter-in-place, keep the specific hazard in view: Do not apply chemical room-sealing instructions to every hazard or remain in a burning building."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Stay informed. Remain until officials advise otherwise, unless fire or another immediate danger makes the building unsafe. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

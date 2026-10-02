@@ -41,7 +41,11 @@
     "subcategories": [
       "Resuscitation",
       "Airway",
-      "Injury"
+      "Injury",
+      "Circulation",
+      "Allergy",
+      "Neurological",
+      "Poisoning"
     ]
   },
   {
@@ -105,7 +109,8 @@
     "title": "Field & survival skills",
     "subcategories": [
       "Water",
-      "Food & hygiene"
+      "Food & hygiene",
+      "Navigation & shelter"
     ]
   },
   {
@@ -121,7 +126,8 @@
     "subcategories": [
       "Food & water",
       "Reentry",
-      "Fraud & documents"
+      "Fraud & documents",
+      "Cleanup"
     ]
   }
 ]

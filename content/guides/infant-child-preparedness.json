@@ -29,8 +29,8 @@
   "next": "Plan quantities for the actual feeding and care routine, and ask a qualified clinician for special dietary or medical needs. Include medications and transport or sleeping arrangements.",
   "watch": "Infants can deteriorate quickly with dehydration, temperature exposure or illness. Seek qualified care for concerning symptoms; do not rely on adult treatment advice.",
   "without_help": "Use the caregiver plan and safe supplies already available while seeking verified medical or feeding support. Do not stretch formula with extra water or leave a child alone to find supplies.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: name the caregiver. Agree who will manage children, pets or mobility needs while that action happens. Infants can deteriorate quickly with dehydration, temperature exposure or illness. Seek qualified care for concerning symptoms; do not rely on adult treatment advice.",
+  "pack_now": "For infants & children during disruption, prioritize only items needed for the first action and the fallback: Use the caregiver plan and safe supplies already available while seeking verified medical or feeding support. Do not stretch formula with extra water or leave a child alone to find supplies. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "sources": "children",
   "category": "preparedness",
   "subcategory": "Care & accessibility",
@@ -49,5 +49,37 @@
     "formula outage"
   ],
   "urgency": "planning",
-  "review_status": "source-linked editorial review; not independent expert certification"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "decisions": [
+    [
+      "First decision: Name the caregiver",
+      "Decide who stays with each child during sheltering and travel. Use a familiar trusted backup; do not hand children to unverified helpers. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "Use the caregiver plan and safe supplies already available while seeking verified medical or feeding support. Do not stretch formula with extra water or leave a child alone to find supplies. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "Infants can deteriorate quickly with dehydration, temperature exposure or illness. Seek qualified care for concerning symptoms; do not rely on adult treatment advice. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Keep children with a trusted caregiver and plan safe feeding, water, hygiene, medicines and warmth around their age and needs. Put written contacts with each child and agree a reunion plan. Use age-appropriate feeding guidance; do not dilute formula or use unsafe water to stretch supplies. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For infants & children during disruption, keep the specific hazard in view: Infants can deteriorate quickly with dehydration, temperature exposure or illness. Seek qualified care for concerning symptoms; do not rely on adult treatment advice."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Use simple explanations. Explain the next action calmly and specifically. Familiar routines and a comfort item can help; avoid promising that you know when danger will end. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

@@ -1,0 +1,73 @@
+{
+  "slug": "child-infant-cpr",
+  "title": "Child & infant CPR",
+  "category": "medical",
+  "subcategory": "Resuscitation",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "baby not breathing",
+    "infant CPR",
+    "child CPR",
+    "baby unconscious",
+    "child not breathing"
+  ],
+  "keywords": [],
+  "tldr": "If a child or infant is unresponsive and not breathing normally, call the local emergency number, begin CPR and get an AED. Compressions plus breaths are important for children and infants. Follow dispatcher coaching and current hands-on training.",
+  "steps": [
+    [
+      "Check quickly",
+      "Check responsiveness and normal breathing for no more than 10 seconds. Gasping is not normal breathing. Place on a firm, flat surface."
+    ],
+    [
+      "Call and get an AED",
+      "Use speakerphone or send someone. If alone without a reachable phone after an unwitnessed pediatric collapse, give about 2 minutes of CPR before leaving to call and get an AED; follow dispatcher guidance."
+    ],
+    [
+      "Give compressions",
+      "For a single rescuer, give 30 compressions at 100-120 per minute, about one-third chest depth: about 2 inches in a child and 1.5 inches in an infant. Use one or two hands for a child; current AHA infant CPR uses one hand or two-thumb encircling hands."
+    ],
+    [
+      "Add 2 breaths and repeat",
+      "Open the airway and give 2 breaths, each about 1 second with visible chest rise. Use a neutral head position for infants. If unable or unwilling to give breaths, provide compressions rather than no CPR."
+    ],
+    [
+      "Use the AED",
+      "Follow device prompts and pediatric pad instructions. Pads must not touch; use front-and-back placement when needed. Continue until normal signs of life, takeover, exhaustion or an unsafe scene."
+    ]
+  ],
+  "without_help": "Continue CPR while another person seeks help if possible. If breathing returns, watch continuously; be ready to restart if normal breathing stops. Do not stop simply because the expected ambulance time has passed. Rescuer safety and exhaustion can limit what is possible.",
+  "household": "Plan for two roles: caller/AED finder and rescuer. Rotate compressions with minimal interruption if another capable person is present. Keep the child’s age, collapse circumstances and known medical needs ready for handover; new birth resuscitation needs a different protocol.",
+  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "next": "Arrange urgent medical care after resuscitation. Enroll caregivers in current pediatric CPR training before an emergency.",
+  "watch": "This is a single-rescuer summary, not neonatal resuscitation. Two trained rescuers may use a different compression-to-breath ratio. Follow the dispatcher and current course guidance.",
+  "sources": "child-infant-cpr",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "scope": "First-aid summary based on U.S. references. Use the local emergency number; this is not a diagnosis or a substitute for hands-on training.",
+  "decisions": [
+    [
+      "Breathing normally",
+      "Do not give compressions to a normally breathing child. Monitor closely and request urgent assessment for unresponsiveness."
+    ],
+    [
+      "No pediatric AED pads",
+      "Follow the AED instructions for available pads. Do not delay all resuscitation while looking for specialist equipment."
+    ]
+  ],
+  "faqs": [
+    [
+      "Is adult hands-only CPR enough?",
+      "Breaths are especially important in pediatric arrest. Give compressions if breaths are not possible, and seek dispatcher coaching."
+    ]
+  ],
+  "worksheet": [
+    "Incident / symptom onset / location",
+    "Help requested / response confirmed",
+    "Actions / times / next handover"
+  ],
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-01-02"
+}

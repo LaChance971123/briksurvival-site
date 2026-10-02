@@ -29,8 +29,8 @@
   "next": "Where you face detention or abuse risk, seek trusted local legal or humanitarian protection advice before travel when possible. Keep a private record of events only when doing so is safe.",
   "watch": "This is civilian safety planning, not advice to evade checkpoints or legal restrictions. Never assume passage based on a map, an insignia or an unverified promise.",
   "without_help": "If nobody can verify a route and travel is not immediately necessary, remain in the safer available place while reassessing. Do not assume a public convoy or unofficial driver has secured protection.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: decide whether travel is necessary. Agree who will manage children, pets or mobility needs while that action happens. This is civilian safety planning, not advice to evade checkpoints or legal restrictions. Never assume passage based on a map, an insignia or an unverified promise.",
+  "pack_now": "For checkpoints & interrupted travel, prioritize only items needed for the first action and the fallback: If nobody can verify a route and travel is not immediately necessary, remain in the safer available place while reassessing. Do not assume a public convoy or unofficial driver has secured protection. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "sources": "displacement",
   "category": "conflict",
   "subcategory": "Civilian protection",
@@ -49,5 +49,37 @@
     "road closed conflict"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked editorial review; not independent expert certification"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "decisions": [
+    [
+      "First decision: Decide whether travel is necessary",
+      "Compare the danger of staying with the risks of the route. Do not travel only to investigate a closure. Have a known destination and another option. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "If nobody can verify a route and travel is not immediately necessary, remain in the safer available place while reassessing. Do not assume a public convoy or unofficial driver has secured protection. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "This is civilian safety planning, not advice to evade checkpoints or legal restrictions. Never assume passage based on a map, an insignia or an unverified promise. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Avoid unnecessary travel through active fighting or uncertain checkpoints. Check the route and requirements as recently as possible, keep identification and essential medical information accessible, and avoid confrontation. A uniform, posted order or claimed safe corridor does not guarantee safe passage. Rules and protection risks differ by place. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For checkpoints & interrupted travel, keep the specific hazard in view: This is civilian safety planning, not advice to evade checkpoints or legal restrictions. Never assume passage based on a map, an insignia or an unverified promise."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Keep the household together. Have an agreed check-in and separation plan. Do not send a child or vulnerable person ahead alone to test a route. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

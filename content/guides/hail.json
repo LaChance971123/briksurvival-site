@@ -37,6 +37,38 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Remain under substantial shelter while hail continues. Keep shoes on and avoid glazing. Afterward, assess damage from the ground; loose roofing and hidden electrical damage can be more dangerous than the hail itself.",
-  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: leave the open. Agree who will manage children, pets or mobility needs while that action happens. Do not climb a wet or damaged roof to inspect it.",
+  "pack_now": "For hail, prioritize only items needed for the first action and the fallback: Remain under substantial shelter while hail continues. Keep shoes on and avoid glazing. Afterward, assess damage from the ground; loose roofing and hidden electrical damage can be more dangerous than the hail itself. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
+  "decisions": [
+    [
+      "First decision: Leave the open",
+      "Move into a sturdy building before collecting possessions. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "Remain under substantial shelter while hail continues. Keep shoes on and avoid glazing. Afterward, assess damage from the ground; loose roofing and hidden electrical damage can be more dangerous than the hail itself. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "Do not climb a wet or damaged roof to inspect it. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Get indoors and stay away from windows during hail. If driving, stop in a safe place out of traffic when you can; stay inside the vehicle and protect yourself from broken glass. Do not stop beneath a highway overpass. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For hail, keep the specific hazard in view: Do not climb a wet or damaged roof to inspect it."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Follow other warnings. Hail can accompany tornadoes, lightning and strong wind; act on those warnings as well. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

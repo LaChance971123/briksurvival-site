@@ -1,0 +1,68 @@
+{
+  "slug": "apartment-fire",
+  "title": "Apartment & high-rise fire",
+  "category": "home-building",
+  "subcategory": "Fire",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "apartment fire",
+    "high rise fire",
+    "fire in apartment",
+    "apartment evacuation"
+  ],
+  "keywords": [],
+  "tldr": "If fire is in your apartment, leave by a safe route and close doors behind you. Use stairs, not elevators. If smoke or heat blocks the exit, keep the door closed, call the local emergency number and give your exact building, floor and apartment location.",
+  "steps": [
+    [
+      "Assess the exit",
+      "Do not open a hot door or enter a smoke-filled corridor. Follow the building’s verified fire plan and announcements when safe to do so."
+    ],
+    [
+      "Leave when the route is safe",
+      "Take keys if immediately reachable, close doors and use the stairs. Do not stop for belongings or return after leaving."
+    ],
+    [
+      "If trapped, keep smoke out",
+      "Close doors between you and smoke and seal gaps if possible without delaying the emergency call. Move to a room with a window and signal your location."
+    ],
+    [
+      "Give a precise location",
+      "Tell responders the building address, floor, apartment and access needs. Do not break windows or jump; conditions outside may worsen smoke entry."
+    ]
+  ],
+  "without_help": "Choose the immediate lower-risk location based on heat and smoke; do not force a blocked stairwell because help is delayed. Make your location visible and keep communicating if possible. Improvised high-rise descent is not a safe substitute for an escape route.",
+  "household": "Plan for stairs, mobility limitations, children and pets before an incident. Learn the building’s refuge and evacuation procedures directly rather than assuming another building’s policy applies. Record access needs and a safe neighbor contact when that can be done privately.",
+  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "next": "Meet at the household assembly point once outside and report missing people without reentering. Review the escape plan after every move or building change.",
+  "watch": "Smoke can spread through corridors and stairs. Never wedge fire doors open. Stay-put policies are building-specific and do not override immediate fire or smoke in your location.",
+  "sources": "apartment-fire",
+  "shopping": [],
+  "urgency": "situational",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "scope": "Civilian household planning. U.S. references; local conditions, services and building procedures differ.",
+  "decisions": [
+    [
+      "A stairwell fills with smoke",
+      "Do not continue into worsening smoke. Seek a protected location and tell responders exactly where you are."
+    ],
+    [
+      "Cannot use stairs independently",
+      "Follow the building’s prearranged access plan when reachable and safe. Give responders specific mobility needs; do not assume an elevator is available in a fire."
+    ]
+  ],
+  "faqs": [
+    [
+      "Should I follow a generic stay-put rule?",
+      "No universal rule fits every high-rise. Learn the building’s fire plan, and act on fire, heat and smoke at your actual location."
+    ]
+  ],
+  "worksheet": [
+    "Incident / symptom onset / location",
+    "Help requested / response confirmed",
+    "Actions / times / next handover"
+  ],
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
+}

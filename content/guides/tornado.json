@@ -39,6 +39,30 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Go to your identified shelter without waiting for confirmation when a warning or nearby clear danger is present. Keep shoes, a light and head protection close. If in a mobile home, use a nearby sturdy shelter before conditions worsen; never attempt to outrun a tornado in traffic.",
-  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Choose a shelter that can actually fit and be reached by everyone. Keep shoes, a light and necessary mobility aids nearby; supervise children and secure pets without blocking the route. Rehearse how a person who cannot hear warnings will be notified.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Afterward, avoid damaged buildings, broken glass and downed lines. Check for injuries and use text to let your contact know you are safe."
+    ],
+    [
+      "When the first option is unavailable",
+      "Go to your identified shelter without waiting for confirmation when a warning or nearby clear danger is present. Keep shoes, a light and head protection close. If in a mobile home, use a nearby sturdy shelter before conditions worsen; never attempt to outrun a tornado in traffic."
+    ]
+  ],
+  "faqs": [
+    [
+      "What if there is no basement?",
+      "Identify an interior room on the lowest usable floor of a substantial building, away from windows. Plan the shortest route there before a warning. Protect the head and neck with available protection; equipment retrieval must not delay shelter."
+    ],
+    [
+      "What if I am in a mobile home?",
+      "A mobile home is not a tornado shelter even when tied down. Arrange a nearby substantial shelter before storms arrive and move while there is safe time. Do not wait for visible damage to decide that a different location is needed."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

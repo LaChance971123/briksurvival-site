@@ -47,6 +47,30 @@
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "If shops close today, inventory water, shelf-stable food, medicine and batteries already at home. Put them together and write down gaps. Build a usable kit in stages; a partly stocked kit is more useful than waiting for an expensive perfect one.",
-  "household": "Build the plan around the least mobile person and the shortest critical supply. Try carrying the kit, opening containers and using the light in the dark. Spend first on safe water, essential medicines, basic food and communication rather than specialised gear you cannot use.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Start with the people in the home: drinking water, medicines, infant feeding, sensory access, safe light and pet care. Choose who will carry shared items. A 72-hour kit is a planning starting point, not a guarantee that a disruption ends after three days.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Build longer-duration supplies as space and budget allow. Keep an evacuation bag separate enough to carry."
+    ],
+    [
+      "When the first option is unavailable",
+      "If shops close today, inventory water, shelf-stable food, medicine and batteries already at home. Put them together and write down gaps. Build a usable kit in stages; a partly stocked kit is more useful than waiting for an expensive perfect one."
+    ]
+  ],
+  "faqs": [
+    [
+      "How much can the household carry?",
+      "Separate supplies stored at home from a bag intended for evacuation. Test carrying the bag with the actual caregiver and mobility needs. Heavy water and duplicate tools can make a complete-looking kit unusable when movement matters."
+    ],
+    [
+      "What if a supply expires?",
+      "Use normal household rotation where suitable and record refill dates. Check battery and device compatibility before relying on them. Medicine quantities and replacements require a clinician or pharmacist rather than an improvised rationing plan."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

@@ -1,0 +1,75 @@
+{
+  "slug": "lost-outdoors",
+  "title": "Lost outdoors",
+  "category": "field-skills",
+  "subcategory": "Navigation & shelter",
+  "content_type": "Field guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "lost hiking",
+    "lost in woods",
+    "lost outdoors",
+    "lost on trail"
+  ],
+  "keywords": [],
+  "tldr": "Stop moving, stay together and assess your last known position. If there is no immediate threat, stay put, protect yourself from weather and signal for help. Share your location if communication works; do not wander in search of a shortcut.",
+  "steps": [
+    [
+      "Stop and assess",
+      "Check injury, weather, daylight and remaining supplies. Mark your location and the last reliable landmark on an offline map if available."
+    ],
+    [
+      "Choose a safe waiting place",
+      "Move only enough to escape immediate hazards such as floodwater, falling trees or exposed severe weather. Keep the group together and tell contacts if your location changes."
+    ],
+    [
+      "Protect from exposure",
+      "Use available layers and shelter to reduce wet, wind, cold or sun exposure. Avoid hazardous terrain while trying to improve a shelter."
+    ],
+    [
+      "Signal and conserve",
+      "Use a whistle, bright material or light when appropriate. Call or send a location message if possible; conserve phone power between attempts."
+    ]
+  ],
+  "without_help": "Use the supplies and shelter you already have; do not assume a rescue is underway until communication confirms it. Leave a clear note of time, direction and destination only if immediate danger forces a move. Avoid dividing the party or attempting unverified routes in darkness.",
+  "household": "Keep children and less mobile companions beside an adult. Check everyone for cold, heat and exhaustion and inventory each person’s supplies. Before a trip, leave a route, return time and overdue plan with a trusted contact.",
+  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "next": "Give rescuers coordinates, last known location, group size, injuries and equipment. When a location is shared, stay there unless a direct threat forces a move.",
+  "watch": "A phone compass or GPS reading is not a safe route by itself. Do not climb hazardous ridges for a signal or enter moving water.",
+  "sources": "lost-outdoors",
+  "shopping": [
+    "Whistle",
+    "Offline map and compass you know how to use",
+    "Weather-appropriate layers",
+    "Emergency shelter",
+    "Light and spare power",
+    "Water and food for the route"
+  ],
+  "urgency": "situational",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "scope": "Civilian household planning. U.S. references; local conditions, services and building procedures differ.",
+  "decisions": [
+    [
+      "No signal",
+      "Prepare a short location message, reduce battery use and use visible or audible signals. Do not wander solely to make the phone work."
+    ],
+    [
+      "Immediate threat at the waiting place",
+      "Relocate the shortest practical distance to lower danger and record the new location. Staying put is conditional on the site being safe."
+    ]
+  ],
+  "faqs": [
+    [
+      "Should someone go for help?",
+      "Splitting up can create additional lost people. Use communication or a trusted passing person where possible; avoid an unplanned solo search for a road."
+    ]
+  ],
+  "worksheet": [
+    "Incident / symptom onset / location",
+    "Help requested / response confirmed",
+    "Actions / times / next handover"
+  ],
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
+}

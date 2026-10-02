@@ -29,8 +29,8 @@
   "next": "Qualified local advice matters because legal protections, detention risks and available services differ. Independent support may also be unavailable; build the plan around the resources you actually have.",
   "watch": "This page cannot guarantee privacy, legal protection or safe passage. Do not record, photograph or document an incident if doing so increases immediate danger.",
   "without_help": "If no safe support channel is available, keep the family together in the safest reachable place and reduce unnecessary travel and disclosure. Reassess opportunities using verified information rather than a promised rescue.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: assess the actual threat. Agree who will manage children, pets or mobility needs while that action happens. This page cannot guarantee privacy, legal protection or safe passage. Do not record, photograph or document an incident if doing so increases immediate danger.",
+  "pack_now": "For when authorities are unsafe to approach, prioritize only items needed for the first action and the fallback: If no safe support channel is available, keep the family together in the safest reachable place and reduce unnecessary travel and disclosure. Reassess opportunities using verified information rather than a promised rescue. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "sources": "privacy",
   "category": "preparedness",
   "subcategory": "Documents & support",
@@ -52,5 +52,37 @@
     "hostile authorities"
   ],
   "urgency": "planning",
-  "review_status": "source-linked editorial review; not independent expert certification"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "decisions": [
+    [
+      "First decision: Assess the actual threat",
+      "Separate verified incidents and direct threats from rumours. Think about who can access your location or information and whether a call, visit or public post could increase exposure. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "If no safe support channel is available, keep the family together in the safest reachable place and reduce unnecessary travel and disclosure. Reassess opportunities using verified information rather than a promised rescue. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "This page cannot guarantee privacy, legal protection or safe passage. Do not record, photograph or document an incident if doing so increases immediate danger. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "If contacting an official could expose you or your family to harm, prioritise immediate physical safety and use trusted private contacts or independently verified humanitarian and local legal support when safe. Do not publish sensitive locations or confront armed personnel. Keep essential documents and a realistic shelter or relocation plan. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For when authorities are unsafe to approach, keep the specific hazard in view: This page cannot guarantee privacy, legal protection or safe passage. Do not record, photograph or document an incident if doing so increases immediate danger."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Choose a practical safety plan. Agree where the household can shelter, who can host you and how to reconnect if separated. Avoid confrontational actions that increase immediate danger. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

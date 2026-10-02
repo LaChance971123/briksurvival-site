@@ -29,8 +29,8 @@
   "next": "Replenish safe water when a verified source becomes available. Keep a routine that the household can sustain; a simple clean station is more useful than occasional improvised deep cleaning.",
   "watch": "Surface disinfectant is not drinking-water treatment. Do not apply household bleach to skin or mix bleach with ammonia or other cleaners.",
   "without_help": "Use the smallest workable clean-water station and protect it from contamination. Reduce nonessential washing before cutting drinking water or essential handwashing.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Make the hygiene plan usable for children, mobility needs and caregivers changing diapers or handling wounds. Keep gloves, cleaning tools and drinking-water supplies distinct. Tell everyone where the clean handwashing area is and who manages waste.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
   "sources": "hygiene",
   "category": "field-skills",
   "subcategory": "Food & hygiene",
@@ -57,5 +57,29 @@
     "Leak-resistant waste bags",
     "Menstrual or infant supplies",
     "Clean cloths and gloves"
-  ]
+  ],
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Replenish safe water when a verified source becomes available. Keep a routine that the household can sustain; a simple clean station is more useful than occasional improvised deep cleaning."
+    ],
+    [
+      "When the first option is unavailable",
+      "Use the smallest workable clean-water station and protect it from contamination. Reduce nonessential washing before cutting drinking water or essential handwashing."
+    ]
+  ],
+  "faqs": [
+    [
+      "How do I separate clean and dirty handling?",
+      "Choose a clean area for drinking water, food and medicine and a different area for waste and dirty tools. Make the clean-water container easy to identify. Use safe water and follow public-health guidance for handwashing after waste handling."
+    ],
+    [
+      "Can a temporary toilet go anywhere?",
+      "No. Local sanitation and disposal rules, soil, water sources and household access affect the plan. Keep waste away from drinking supplies and floodwater exposure. A temporary container must be stable, covered and managed without contaminating a living area."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

@@ -1,0 +1,69 @@
+{
+  "slug": "stroke",
+  "title": "Suspected stroke",
+  "category": "medical",
+  "subcategory": "Neurological",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "stroke",
+    "face drooping",
+    "slurred speech",
+    "one arm weak",
+    "TIA"
+  ],
+  "keywords": [],
+  "tldr": "Sudden facial droop, arm weakness or speech trouble may be a stroke. Call the local emergency number immediately, note when symptoms began or the person was last well, and stay with them. Symptoms that disappear still need urgent medical evaluation.",
+  "steps": [
+    [
+      "Recognize sudden changes",
+      "Use FAST: Face droop, Arm weakness, Speech difficulty, Time to act. Sudden loss of balance, vision changes or severe headache can also matter."
+    ],
+    [
+      "Record the time",
+      "Write down symptom onset or the last time the person was known well. Do not delay seeking care while completing a checklist."
+    ],
+    [
+      "Protect breathing",
+      "Keep them comfortable. If not fully awake but breathing, place on their side when safe. Do not give food, drink or medication to someone with swallowing difficulty."
+    ],
+    [
+      "Watch responsiveness",
+      "If unresponsive and not breathing normally, begin CPR and use an AED. Follow dispatcher instructions when available."
+    ]
+  ],
+  "without_help": "Keep attempting to reach urgent medical care while watching breathing and responsiveness. Tell a trusted person the exact location and last-known-well time. Do not make the affected person walk or drive. An inaccessible ambulance service does not make home observation a treatment.",
+  "household": "Speech difficulty can prevent a person from telling others what they need. Use short questions, allow time and avoid asking them to repeat a long history. Keep children with another adult, clear access and prepare the medication list for handover.",
+  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "next": "Pass the symptom timeline to the receiving clinician. Even a brief episode or apparent recovery needs urgent assessment.",
+  "watch": "Do not assume FAST rules out stroke; children and some adults have other symptoms. Do not use aspirin as stroke treatment without clinical direction.",
+  "sources": "stroke",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "scope": "First-aid summary based on U.S. references. Use the local emergency number; this is not a diagnosis or a substitute for hands-on training.",
+  "decisions": [
+    [
+      "If symptoms stop",
+      "Keep the request for urgent evaluation active; write when symptoms resolved. Do not cancel care based on improvement alone."
+    ],
+    [
+      "If communication fails",
+      "Use a written location and symptom timeline for a trusted relay. Keep the patient accompanied rather than sending them alone to find a signal."
+    ]
+  ],
+  "faqs": [
+    [
+      "Is this heat stroke?",
+      "This page concerns a sudden neurological emergency. Heat illness needs immediate cooling; see Extreme heat. Search results cannot distinguish the cause of confusion."
+    ]
+  ],
+  "worksheet": [
+    "Incident / symptom onset / location",
+    "Help requested / response confirmed",
+    "Actions / times / next handover"
+  ],
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-01-02"
+}

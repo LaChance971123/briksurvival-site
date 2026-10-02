@@ -39,6 +39,38 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Maintain firm pressure and have another person arrange the safest reachable medical care. A tourniquet, if indicated and used, must stay in place until a medical professional takes over; note its application time. Do not keep releasing pressure to check whether bleeding has stopped.",
-  "household": "Give someone the specific task of calling or locating care while another person provides first aid. Keep the patient warm or cool as the condition requires and record what happened and when. Do not put yourself into the same hazard or assume an ambulance has been dispatched until confirmed.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Give someone the specific task of calling or locating care while another person provides first aid. Keep the patient warm or cool as the condition requires and record what happened and when. Do not put yourself into the same hazard or assume an ambulance has been dispatched until confirmed. For this situation, brief every person on the first action: protect and call. Agree who will manage children, pets or mobility needs while that action happens. Do not pull an embedded object out; press around it and get help.",
+  "pack_now": "For severe bleeding, prioritize only items needed for the first action and the fallback: Maintain firm pressure and have another person arrange the safest reachable medical care. A tourniquet, if indicated and used, must stay in place until a medical professional takes over; note its application time. Do not keep releasing pressure to check whether bleeding has stopped. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
+  "decisions": [
+    [
+      "First decision: Protect and call",
+      "Check scene safety, use gloves if available and get emergency help. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "Maintain firm pressure and have another person arrange the safest reachable medical care. A tourniquet, if indicated and used, must stay in place until a medical professional takes over; note its application time. Do not keep releasing pressure to check whether bleeding has stopped. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "Do not pull an embedded object out; press around it and get help. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Call emergency services and press firmly directly on the bleeding wound with a dressing or clean cloth. Maintain pressure. For life-threatening bleeding from an arm or leg, use a commercial tourniquet if trained; follow dispatcher instructions. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For severe bleeding, keep the specific hazard in view: Do not pull an embedded object out; press around it and get help."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Monitor the person. Keep them from getting cold, check breathing and remain until responders arrive. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-01-02"
 }

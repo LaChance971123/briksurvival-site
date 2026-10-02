@@ -29,8 +29,8 @@
   "next": "Warn trusted people privately about confirmed scams without circulating sensitive victim information. If payment or credentials were compromised, contact the relevant bank or provider through a known channel.",
   "watch": "An offer of transport or shelter may also carry exploitation risk. Do not surrender documents or separate from family because a stranger promises priority assistance.",
   "without_help": "If reporting channels are unavailable, stop contact, protect remaining money and accounts, and retain the records for later. A promised refund is not a reason to make another payment.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: find an independent contact. Agree who will manage children, pets or mobility needs while that action happens. An offer of transport or shelter may also carry exploitation risk. Do not surrender documents or separate from family because a stranger promises priority assistance.",
+  "pack_now": "For disaster scams & false aid offers, prioritize only items needed for the first action and the fallback: If reporting channels are unavailable, stop contact, protect remaining money and accounts, and retain the records for later. A promised refund is not a reason to make another payment. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "sources": "scams",
   "category": "recovery",
   "subcategory": "Fraud & documents",
@@ -49,5 +49,37 @@
     "fake contractor"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked editorial review; not independent expert certification"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "decisions": [
+    [
+      "First decision: Find an independent contact",
+      "Use the organisation’s known website or an existing trusted number rather than the contact in an unsolicited message. Confirm the specific programme or provider. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "If reporting channels are unavailable, stop contact, protect remaining money and accounts, and retain the records for later. A promised refund is not a reason to make another payment. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "An offer of transport or shelter may also carry exploitation risk. Do not surrender documents or separate from family because a stranger promises priority assistance. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Pause before paying, sharing identification or following an urgent aid message. Verify the organisation using a contact you find independently, ask for written terms and avoid pressure to pay immediately. Keep emergency funds for verified essentials. A logo, uniform or forwarded link does not establish trust. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For disaster scams & false aid offers, keep the specific hazard in view: An offer of transport or shelter may also carry exploitation risk. Do not surrender documents or separate from family because a stranger promises priority assistance."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Preserve evidence safely. Keep receipts and message details without engaging further. Use verified consumer-protection or legal support when safe and available. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

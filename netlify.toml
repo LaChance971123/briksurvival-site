@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "pip install -r requirements-build.txt && python scripts/build_library.py && python scripts/refine_site.py && python scripts/verify_library.py && node scripts/verify_search.cjs && node scripts/verify_ads.cjs && python scripts/stage_site.py"
+  command = "pip install -r requirements-build.txt && python scripts/build_library.py && python scripts/build_offline.py && python scripts/refine_site.py && python scripts/polish_release.py && python scripts/verify_library.py && node scripts/verify_search.cjs && node scripts/verify_ads.cjs && node --check app.js && node --check search.js && node --check ads.js && node --check offline/reader.js && node --check offline/sw.js && python scripts/stage_site.py && python scripts/verify_release.py"
 
 [[headers]]
   for = "/*"
@@ -45,3 +45,19 @@
   to = "/"
   status = 301
   force = true
+
+[[headers]]
+  for = "/offline/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+    Service-Worker-Allowed = "/offline/"
+
+[[headers]]
+  for = "/offline/guides.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/search-index.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

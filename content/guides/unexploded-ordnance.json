@@ -29,8 +29,8 @@
   "next": "Teach children a simple rule: do not touch, move away from the hazard without approaching it, tell a trusted adult. Use routes confirmed safe by qualified local assessment; no appearance-based test proves ground is clear.",
   "watch": "Never burn, bury, throw, transport or disturb an object. This guide cannot determine a safe distance or a safe escape path through mined ground.",
   "without_help": "If no qualified contact answers, keep the area avoided and warn trusted people from a safe location. Do not treat the lack of an official sign or report as proof that it is safe.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: stop approaching. Agree who will manage children, pets or mobility needs while that action happens. Never burn, bury, throw, transport or disturb an object. This guide cannot determine a safe distance or a safe escape path through mined ground.",
+  "pack_now": "For mines & unexploded ordnance, prioritize only items needed for the first action and the fallback: If no qualified contact answers, keep the area avoided and warn trusted people from a safe location. Do not treat the lack of an official sign or report as proof that it is safe. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "sources": "explosive-hazards",
   "category": "conflict",
   "subcategory": "Explosive hazards",
@@ -51,5 +51,37 @@
     "minefield"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked editorial review; not independent expert certification"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "decisions": [
+    [
+      "First decision: Stop approaching",
+      "Do not move closer to inspect, photograph or identify the object. Small fragments and abandoned everyday objects can conceal explosive hazards. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "If no qualified contact answers, keep the area avoided and warn trusted people from a safe location. Do not treat the lack of an official sign or report as proof that it is safe. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "Never burn, bury, throw, transport or disturb an object. This guide cannot determine a safe distance or a safe escape path through mined ground. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Do not approach, touch, move, collect or attempt to dismantle a suspicious object, munition or wire. Keep other people away from a safe position. Avoid abandoned positions, disturbed ground and routes that have not been assessed after fighting. Report only through a safe verified channel; do not enter a hazardous area to identify an object. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For mines & unexploded ordnance, keep the specific hazard in view: Never burn, bury, throw, transport or disturb an object. This guide cannot determine a safe distance or a safe escape path through mined ground."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Do not attempt a rescue into suspect ground. Call specialist help when reachable. Entering a suspected mined area can create additional casualties; do not improvise a clearance or dismantling method. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

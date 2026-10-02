@@ -1,0 +1,68 @@
+{
+  "slug": "infant-choking",
+  "title": "Infant choking",
+  "category": "medical",
+  "subcategory": "Airway",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "baby choking",
+    "my baby is choking",
+    "infant choking",
+    "baby cant breathe eating"
+  ],
+  "keywords": [],
+  "tldr": "For a baby under one year who cannot cry, cough effectively or breathe, request emergency help and alternate 5 back blows with 5 chest thrusts. Support the head and neck; never give abdominal thrusts to an infant. If unresponsive, begin infant CPR.",
+  "steps": [
+    [
+      "Check for an effective cough",
+      "A baby who can cough or cry should be watched closely. Do not begin thrusts while the cough remains effective."
+    ],
+    [
+      "Give 5 back blows",
+      "Support the baby face-down on your forearm, braced on your thigh, with the head lower than the chest. Give 5 firm blows between the shoulder blades with the heel of your hand."
+    ],
+    [
+      "Give 5 chest thrusts",
+      "Turn face-up while supporting the head and neck, keeping the head lower. The 2025 AHA update uses the heel of one hand for infant chest thrusts. Alternate with back blows until relieved or unresponsive."
+    ],
+    [
+      "Change to CPR if unresponsive",
+      "Place on a firm flat surface and begin infant CPR. Before breaths, remove an object only if clearly visible. Never sweep the mouth blindly."
+    ]
+  ],
+  "without_help": "Begin the sequence immediately while a helper calls. If alone, use speakerphone if reachable without delay. If the infant becomes unresponsive, change to CPR rather than continuing responsive choking care. A delayed responder is not a reason to pause.",
+  "household": "Have a second caregiver locate help and open access while the first provides care. Teach every regular caregiver the infant sequence using hands-on training; older-child abdominal thrusts are not appropriate for babies. Keep small objects and age-inappropriate food out of reach.",
+  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "next": "Seek medical assessment after thrusts, persistent cough, breathing changes or any loss of responsiveness. Review what caused the blockage and safe feeding practices.",
+  "watch": "An infant is under one year. AHA’s 2025 heel-of-hand update differs from older two-finger choking materials; use current training. Do not hang a baby upside down or shake them.",
+  "sources": "infant-choking",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "scope": "First-aid summary based on U.S. references. Use the local emergency number; this is not a diagnosis or a substitute for hands-on training.",
+  "decisions": [
+    [
+      "Blockage clears",
+      "Stop thrusts when effective coughing, crying or breathing returns. Continue observing and obtain assessment after serious symptoms."
+    ],
+    [
+      "An infant is unresponsive",
+      "Use Child & infant CPR. Responsive choking thrusts are not the CPR technique."
+    ]
+  ],
+  "faqs": [
+    [
+      "Can I put a finger in the mouth?",
+      "Only remove an object that is clearly visible. A blind sweep can push it further in."
+    ]
+  ],
+  "worksheet": [
+    "Incident / symptom onset / location",
+    "Help requested / response confirmed",
+    "Actions / times / next handover"
+  ],
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-01-02"
+}

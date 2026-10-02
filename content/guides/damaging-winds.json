@@ -39,6 +39,38 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Wait for winds to ease in the best shelter you can reach without exposure. Keep a torch and shoes nearby for broken glass. If the building is failing, move to a safer reachable space without going beneath trees, loose roofing or wires.",
-  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: secure items beforehand. Agree who will manage children, pets or mobility needs while that action happens. Do not attempt to clear a tree from a power line.",
+  "pack_now": "For damaging winds, prioritize only items needed for the first action and the fallback: Wait for winds to ease in the best shelter you can reach without exposure. Keep a torch and shoes nearby for broken glass. If the building is failing, move to a safer reachable space without going beneath trees, loose roofing or wires. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
+  "decisions": [
+    [
+      "First decision: Secure items beforehand",
+      "Bring loose items inside while conditions are calm; do not go out once winds are dangerous. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "Wait for winds to ease in the best shelter you can reach without exposure. Keep a torch and shoes nearby for broken glass. If the building is failing, move to a safer reachable space without going beneath trees, loose roofing or wires. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "Do not attempt to clear a tree from a power line. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Shelter inside a sturdy building away from windows when damaging winds threaten. Avoid trees, power lines and lightweight structures. Follow tornado warnings separately; straight-line winds can also cause severe damage. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For damaging winds, keep the specific hazard in view: Do not attempt to clear a tree from a power line."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Keep clear afterward. Assume downed lines are live and report them from a safe distance. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

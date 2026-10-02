@@ -39,6 +39,30 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Choose a reachable destination with someone you trust, identify a second route, and agree on a check-in. Do not wait for transport that has not been confirmed. If the route is actively dangerous, compare the specific hazard of staying with the hazard of moving; shelter while reassessing if no safer route is available.",
-  "household": "Keep the group together with a named adult responsible for each child or person needing assistance. Count people at every departure and arrival. Write contact details on paper, retain necessary medicines and agree what to do if one person cannot travel.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Give dependents a written contact card and agree who stays with each person. Keep essential medicine and mobility equipment accessible. A pet carrier or heavy bag must not block a caregiver from helping someone move.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Make two destinations and more than one route in advance. Keep a small grab list by the door, especially for medications, pets, and items that cannot be prepacked."
+    ],
+    [
+      "When the first option is unavailable",
+      "Choose a reachable destination with someone you trust, identify a second route, and agree on a check-in. Do not wait for transport that has not been confirmed. If the route is actively dangerous, compare the specific hazard of staying with the hazard of moving; shelter while reassessing if no safer route is available."
+    ]
+  ],
+  "faqs": [
+    [
+      "Is the destination usable?",
+      "Confirm the place can be reached and used by the people traveling: opening, access, medical power, pets and sleeping needs. A location on a map is not a promise of admission. Keep a second realistic option and a meeting point if the group separates."
+    ],
+    [
+      "The vehicle is unavailable — what changes?",
+      "Reassess safe reachable shelter, a trusted transport contact or a checked pedestrian route. Do not walk into floodwater, smoke or other moving hazards to preserve the original destination. Carry only what the least mobile person and helpers can manage."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

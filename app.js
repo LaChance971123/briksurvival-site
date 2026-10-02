@@ -31,3 +31,15 @@ if (year) year.textContent = new Date().getFullYear();
 
 for (const button of document.querySelectorAll("[data-print]")) button.addEventListener("click", () => window.print());
 
+// Netlify collection remains truthful until the selected email form is fully configured.
+for (const form of document.querySelectorAll('form[data-signup]')) {
+ form.addEventListener('submit',async event=>{
+  if(!form.reportValidity())return;event.preventDefault();const button=form.querySelector('button[type="submit"]'),status=form.querySelector('[data-form-status]');
+  if(form.querySelector('[name="bot-field"]')?.value)return;
+  button.disabled=true;status.textContent='Submitting your request…';
+  try {const response=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()});if(!response.ok)throw Error();location.assign('/thanks/?request='+encodeURIComponent(form.dataset.signup));}
+  catch {status.textContent='The request could not be submitted. Check your connection and try again. The free guides and downloads are available without signup.';button.disabled=false;}
+ });
+}
+const thanks=document.querySelector('.thanks-page h1');
+if(thanks){const type=new URLSearchParams(location.search).get('request');if(type==='guide-early-access')thanks.textContent='Guide update request received.';else if(type==='field-notes-newsletter')thanks.textContent='Field Notes request received.';}

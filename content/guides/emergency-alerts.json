@@ -39,6 +39,38 @@
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Treat direct signs of danger as a reason to act even if an alert has not arrived. Compare a battery-radio bulletin with another independently obtained source when possible. Record the place and time; an old screenshot can be dangerously misleading.",
-  "household": "Use one agreed check-in message and time so several people do not drain batteries repeating the same search. Share updates privately and include the time and location. Keep essential contacts on paper and teach children which trusted people they can approach.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Use one agreed check-in message and time so several people do not drain batteries repeating the same search. Share updates privately and include the time and location. Keep essential contacts on paper and teach children which trusted people they can approach. For this situation, brief every person on the first action: enable phone alerts. Agree who will manage children, pets or mobility needs while that action happens. Alerts can be delayed or missed. Act on obvious immediate danger and natural warning signs.",
+  "pack_now": "For emergency alerts, prioritize only items needed for the first action and the fallback: Treat direct signs of danger as a reason to act even if an alert has not arrived. Compare a battery-radio bulletin with another independently obtained source when possible. Record the place and time; an old screenshot can be dangerously misleading. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
+  "decisions": [
+    [
+      "First decision: Enable phone alerts",
+      "Review emergency notification settings and keep the phone charged. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "Treat direct signs of danger as a reason to act even if an alert has not arrived. Compare a battery-radio bulletin with another independently obtained source when possible. Record the place and time; an old screenshot can be dangerously misleading. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "Alerts can be delayed or missed. Act on obvious immediate danger and natural warning signs. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Check an official alert for your exact location, hazard, timing and required action. Enable emergency alerts on your phone and add local emergency management notifications. Keep a battery radio as backup rather than relying on one app. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For emergency alerts, keep the specific hazard in view: Alerts can be delayed or missed. Act on obvious immediate danger and natural warning signs."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Read the action. Distinguish preparation notices from instructions to shelter or evacuate. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

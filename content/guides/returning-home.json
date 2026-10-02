@@ -29,8 +29,8 @@
   "next": "After qualified clearance, plan protective equipment and safe cleanup for the specific hazard. Flood, fire and conflict damage require different precautions. Verify contractors before paying.",
   "watch": "Do not remove load-bearing debris, enter a confined space or approach explosive debris. Personal inspection cannot certify structural safety.",
   "without_help": "Remain in the safest available temporary shelter if inspection services are not operating. Delayed assessment is not permission to occupy a visibly unsafe home.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Keep children, pets and people vulnerable to dust or mold outside the work area. Agree who assesses access, who manages dependents and where the clean sleeping and drinking-water space will be. Returning together does not mean every person should enter at once.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
   "sources": "reentry",
   "category": "recovery",
   "subcategory": "Reentry",
@@ -49,5 +49,29 @@
     "home after bombing"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked editorial review; not independent expert certification"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "decisions": [
+    [
+      "Check the next usable option",
+      "After qualified clearance, plan protective equipment and safe cleanup for the specific hazard. Flood, fire and conflict damage require different precautions. Verify contractors before paying."
+    ],
+    [
+      "When the first option is unavailable",
+      "Remain in the safest available temporary shelter if inspection services are not operating. Delayed assessment is not permission to occupy a visibly unsafe home."
+    ]
+  ],
+  "faqs": [
+    [
+      "Does an open road mean the building is safe?",
+      "No. Access and building safety are separate. Check structural damage, water, gas and electrical hazards from a safe position before entering. Where assessment is needed, waiting outside is safer than treating an official access reopening as a building inspection."
+    ],
+    [
+      "What should be documented first?",
+      "When safe, record damage and needed repairs before disturbing materials. Keep financial and identity records private and verify anyone offering inspection or cleanup services. Documentation must not delay escape from an immediate hazard."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

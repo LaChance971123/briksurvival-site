@@ -29,8 +29,8 @@
   "next": "Prepare for loss of water, power and communications. Choose a reunion contact and a second shelter option. Use recently verified humanitarian or local information to judge whether movement is safer than staying.",
   "watch": "No ordinary room is guaranteed protection against weapons. Do not travel through active fighting or assume a claimed safe corridor has been secured.",
   "without_help": "If broadcasts and emergency numbers fail, keep sheltering while it remains intact and safer than movement. Check essential supplies, agree on short check-ins and use trusted neighbours without sending people into exposed areas.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: get out of exposed space. Agree who will manage children, pets or mobility needs while that action happens. No ordinary room is guaranteed protection against weapons. Do not travel through active fighting or assume a claimed safe corridor has been secured.",
+  "pack_now": "For explosions & nearby shelling, prioritize only items needed for the first action and the fallback: If broadcasts and emergency numbers fail, keep sheltering while it remains intact and safer than movement. Check essential supplies, agree on short check-ins and use trusted neighbours without sending people into exposed areas. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "sources": "civilian-safety",
   "category": "conflict",
   "subcategory": "Civilian protection",
@@ -55,5 +55,37 @@
     "missile attack"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked editorial review; not independent expert certification"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "decisions": [
+    [
+      "First decision: Get out of exposed space",
+      "Use a designated protective shelter if it is safely reachable. Otherwise choose the most protective intact interior space available, away from glazing. Consider fire, collapse, flooding and escape access; a basement is not safe if these hazards are present. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "If broadcasts and emergency numbers fail, keep sheltering while it remains intact and safer than movement. Check essential supplies, agree on short check-ins and use trusted neighbours without sending people into exposed areas. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "No ordinary room is guaranteed protection against weapons. Do not travel through active fighting or assume a claimed safe corridor has been secured. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Move away from windows and exposed areas into the most protective intact shelter you can reach safely. Stay clear of damaged buildings and unfamiliar debris. Keep family members together and shoes, a light and medicines close. A pause in explosions is not an all-clear; do not go out to film, investigate or collect fragments. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For explosions & nearby shelling, keep the specific hazard in view: No ordinary room is guaranteed protection against weapons. Do not travel through active fighting or assume a claimed safe corridor has been secured."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Keep debris untouched. Never handle suspicious fragments, wires, containers or munitions. Keep children and pets away. Do not approach to take a photograph. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

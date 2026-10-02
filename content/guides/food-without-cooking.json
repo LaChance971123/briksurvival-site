@@ -29,8 +29,8 @@
   "next": "Replenish through a verified reachable source before supplies become critical. Set aside easy-to-carry food for movement and avoid creating a plan that depends entirely on fuel or refrigeration.",
   "watch": "Food that looks and smells normal can still be unsafe. Do not salvage leaking, swollen or flood-contaminated packaging.",
   "without_help": "Use known safe shelf-stable food already present and a written meal inventory. If no safe cooking position exists, choose food that does not need cooking rather than improvising an indoor flame.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Assign portions around actual dietary needs and available safe drinking water. A manual opener should be usable by the person preparing food. Keep pet food and special feeding supplies included rather than assuming a generic emergency meal works for everyone.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
   "sources": "food-safety-outage",
   "category": "field-skills",
   "subcategory": "Food & hygiene",
@@ -57,5 +57,29 @@
     "Clean utensils",
     "Soap",
     "Food matching dietary needs"
-  ]
+  ],
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Replenish through a verified reachable source before supplies become critical. Set aside easy-to-carry food for movement and avoid creating a plan that depends entirely on fuel or refrigeration."
+    ],
+    [
+      "When the first option is unavailable",
+      "Use known safe shelf-stable food already present and a written meal inventory. If no safe cooking position exists, choose food that does not need cooking rather than improvising an indoor flame."
+    ]
+  ],
+  "faqs": [
+    [
+      "Can everyone eat the stored food?",
+      "Check allergies, chewing or swallowing limitations, infant feeding and the need for safe water. Prefer foods the household already eats. A no-cook food still needs safe storage and handling after opening."
+    ],
+    [
+      "What if there is no safe refrigeration?",
+      "Choose shelf-stable portions that can be used without keeping unsafe leftovers. Keep opened food away from heat, insects and contamination. Do not make a meal plan depend on a working refrigerator when power is uncertain."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

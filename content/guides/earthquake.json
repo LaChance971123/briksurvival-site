@@ -38,6 +38,30 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "After shaking, account for people, put on shoes and check from a safe position for fire, gas smell, damaged wiring and instability. Do not reenter a seriously damaged building while waiting for inspection. Expect aftershocks and keep clear of masonry and power lines.",
-  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Practice how each person protects their head and body with their actual mobility device or sleeping location. Keep shoes and a light accessible for broken glass afterward. Establish a reunion point without depending on elevators or a working mobile network.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Check injuries and use texts to communicate. Leave a damaged building by stairs when safe and follow official reentry instructions."
+    ],
+    [
+      "When the first option is unavailable",
+      "After shaking, account for people, put on shoes and check from a safe position for fire, gas smell, damaged wiring and instability. Do not reenter a seriously damaged building while waiting for inspection. Expect aftershocks and keep clear of masonry and power lines."
+    ]
+  ],
+  "faqs": [
+    [
+      "Should I run outside during shaking?",
+      "Use Drop, Cover and Hold On where you are when the shaking starts, adapting to mobility needs. Moving through falling objects, glass or stairs can add risk. Once shaking stops, assess the safe route rather than rushing automatically."
+    ],
+    [
+      "What if I am near the coast?",
+      "Strong or prolonged shaking or sudden unusual sea behavior can be a natural tsunami warning. After shaking, follow the tsunami route to higher ground or inland when safe, without waiting for an electronic alert. Check the separate Tsunami guide."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

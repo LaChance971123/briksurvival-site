@@ -29,8 +29,8 @@
   "next": "Keep a short record of where the household stayed, contacts and assistance received. Use UNHCR or Red Cross channels relevant to the country for protection and family tracing; availability varies.",
   "watch": "Pressure to surrender documents, pay unexpected fees, separate from children or keep a journey secret is a warning sign. A logo or social post is not verification.",
   "without_help": "If official shelter is unavailable, contact trusted relatives or community members and agree on water, sleeping, hygiene and check-in arrangements. Avoid an unverified ride or address simply because it promises immediate help.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: confirm the destination. Agree who will manage children, pets or mobility needs while that action happens. Pressure to surrender documents, pay unexpected fees, separate from children or keep a journey secret is a warning sign. A logo or social post is not verification.",
+  "pack_now": "For displacement & temporary shelter, prioritize only items needed for the first action and the fallback: If official shelter is unavailable, contact trusted relatives or community members and agree on water, sleeping, hygiene and check-in arrangements. Avoid an unverified ride or address simply because it promises immediate help. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "sources": "displacement",
   "category": "evacuation-shelter",
   "subcategory": "Displacement",
@@ -51,5 +51,37 @@
     "fleeing war"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked editorial review; not independent expert certification"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "decisions": [
+    [
+      "First decision: Confirm the destination",
+      "Check that the address exists, is accepting people and can provide accessible shelter. Ask about water, sanitation, medication storage, pets and transport. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "If official shelter is unavailable, contact trusted relatives or community members and agree on water, sleeping, hygiene and check-in arrangements. Avoid an unverified ride or address simply because it promises immediate help. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "Pressure to surrender documents, pay unexpected fees, separate from children or keep a journey secret is a warning sign. A logo or social post is not verification. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Choose a reachable place away from the immediate hazard, keep the family together and retain medicines, identification and contacts. Confirm shelter and transport directly before moving. Ask who operates the shelter, what is required and whether it meets access needs. Aid may be delayed or unavailable; have a second destination. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For displacement & temporary shelter, keep the specific hazard in view: Pressure to surrender documents, pay unexpected fees, separate from children or keep a journey secret is a warning sign. A logo or social post is not verification."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Protect personal information. Give only necessary information to verified providers. Avoid public posts showing children, exact sleeping locations or live routes without consent. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

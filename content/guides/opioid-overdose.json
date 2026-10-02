@@ -1,0 +1,68 @@
+{
+  "slug": "opioid-overdose",
+  "title": "Suspected opioid overdose",
+  "category": "medical",
+  "subcategory": "Poisoning",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "opioid overdose",
+    "overdose",
+    "narcan",
+    "fentanyl overdose"
+  ],
+  "keywords": [],
+  "tldr": "Unresponsiveness with slow, abnormal or absent breathing may be an opioid overdose. Call the local emergency number, give naloxone according to the product instructions if available, and begin CPR with breaths if not breathing normally. Do not delay CPR or an AED for naloxone.",
+  "steps": [
+    [
+      "Check scene and breathing",
+      "Avoid needles, powders and traffic hazards. Check responsiveness and normal breathing quickly; gasping or gurgling is not reassuring."
+    ],
+    [
+      "Request help and equipment",
+      "Send someone to call and bring naloxone and an AED when available. Share the exact location and breathing status."
+    ],
+    [
+      "Support breathing and circulation",
+      "If unresponsive and not breathing normally, start CPR with breaths if able and trained; use an AED promptly. Give compressions if breaths are not possible."
+    ],
+    [
+      "Use naloxone and observe",
+      "Follow the actual device instructions, including repeat dosing. Do not interrupt CPR to wait for a response. If normal breathing returns, place on their side as appropriate and keep monitoring."
+    ]
+  ],
+  "without_help": "Give available naloxone and resuscitation promptly while a helper seeks care. Keep monitoring after improvement: opioids can outlast naloxone and breathing can worsen again. Stay until a capable person takes over or the scene becomes unsafe.",
+  "household": "Keep naloxone accessible wherever overdose risk exists and learn how the supplied product works. Share emergency roles without stigma; the immediate objective is breathing and medical care. Keep children and bystanders away from needles and unverified substances.",
+  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "next": "Medical evaluation is still needed after naloxone. Note dose times and changes in breathing and give this information during handover.",
+  "watch": "Do not let the person “sleep it off,” put them in a cold shower or give food or drink. Naloxone is not a substitute for breathing support or urgent care.",
+  "sources": "opioid-overdose",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "scope": "First-aid summary based on U.S. references. Use the local emergency number; this is not a diagnosis or a substitute for hands-on training.",
+  "decisions": [
+    [
+      "They begin breathing normally",
+      "Continue monitoring, use a recovery position when appropriate and be prepared to restart CPR if normal breathing stops."
+    ],
+    [
+      "No naloxone available",
+      "Continue resuscitation and seek urgent care. Do not delay CPR while searching distant locations for medicine."
+    ]
+  ],
+  "faqs": [
+    [
+      "Does naloxone replace CPR?",
+      "No. CPR and AED use remain essential when the person is unresponsive and not breathing normally."
+    ]
+  ],
+  "worksheet": [
+    "Incident / symptom onset / location",
+    "Help requested / response confirmed",
+    "Actions / times / next handover"
+  ],
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-01-02"
+}

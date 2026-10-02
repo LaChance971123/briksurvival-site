@@ -1,0 +1,68 @@
+{
+  "slug": "burns",
+  "title": "Burns & scalds",
+  "category": "medical",
+  "subcategory": "Injury",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "burn",
+    "scald",
+    "burned hand",
+    "hot water burn"
+  ],
+  "keywords": [],
+  "tldr": "Stop contact with the heat source safely. Cool a thermal burn promptly with clean running water for 5-20 minutes while preventing whole-body chilling, then loosely cover it with a clean nonadherent dressing. Seek urgent help for deep, large, sensitive-area burns or breathing trouble.",
+  "steps": [
+    [
+      "Stop the exposure",
+      "Move away from the heat safely. Do not touch an electrically injured person until the power source is safely isolated."
+    ],
+    [
+      "Cool the burned area",
+      "Use clean running water promptly for 5-20 minutes. Keep the rest of the person warm, especially children; stop whole-body chilling."
+    ],
+    [
+      "Remove tight items",
+      "Remove jewelry and tight items before swelling if they are not stuck. Do not pull away material adhering to the skin."
+    ],
+    [
+      "Cover and seek assessment",
+      "After cooling, loosely cover with a clean nonadherent dressing. Get prompt care for deep burns, burns larger than the person’s palm or those involving face, hands, feet or genitals."
+    ]
+  ],
+  "without_help": "Use clean available water to cool the thermal burn while seeking assessment; keep the unburned body warm. Breathing difficulty or smoke around the mouth or nose requires urgent help. Do not turn lack of specialist access into a reason to apply household remedies.",
+  "household": "A child can cool too quickly during whole-body showers. One caregiver should watch temperature and breathing while another manages water and contact with care. Keep labels or exposure details when chemicals or electricity were involved, without carrying contaminated items into a clean area.",
+  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "next": "Seek professional assessment for serious burns and worsening pain, redness or fever. Chemical and electrical injuries need their own assessment even when skin damage looks small.",
+  "watch": "Do not apply ice directly, butter or toothpaste. Do not break blisters. This cooling sequence is for thermal burns, not every chemical exposure.",
+  "sources": "burns",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "scope": "First-aid summary based on U.S. references. Use the local emergency number; this is not a diagnosis or a substitute for hands-on training.",
+  "decisions": [
+    [
+      "No running water",
+      "Use clean available water and seek clinical guidance; do not use floodwater or contaminated water. Avoid improvised creams while awaiting assessment."
+    ],
+    [
+      "Smoke inhalation",
+      "Breathing trouble, facial burns or soot around nose or mouth needs urgent medical help, even if the skin burn seems limited."
+    ]
+  ],
+  "faqs": [
+    [
+      "Should I wrap it tightly?",
+      "No. Use a loose clean nonadherent covering after cooling; swelling can make a tight wrap dangerous."
+    ]
+  ],
+  "worksheet": [
+    "Incident / symptom onset / location",
+    "Help requested / response confirmed",
+    "Actions / times / next handover"
+  ],
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-01-02"
+}

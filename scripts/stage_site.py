@@ -6,8 +6,8 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'dist'
 if OUT.exists():shutil.rmtree(OUT)
 OUT.mkdir()
-for folder in ['Assets','downloads']:
- shutil.copytree(ROOT/folder,OUT/folder)
+for folder in ['Assets','downloads','offline']:
+ shutil.copytree(ROOT/folder,OUT/folder,ignore=shutil.ignore_patterns('*.ttf','*source*','DejaVu*','brik-logo.png','og-image.png'))
 for p in ROOT.rglob('*.html'):
  if any(x in p.relative_to(ROOT).parts for x in ['dist','templates','.git','node_modules']) or p.name=='indexv3.html':continue
  dest=OUT/p.relative_to(ROOT);dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,dest)

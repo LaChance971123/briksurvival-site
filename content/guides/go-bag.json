@@ -46,6 +46,30 @@
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "If you have minutes rather than days, grab essential medicines, documents, shoes, water and a phone charger first. Divide necessary supplies among people who can carry them, without giving children or a person with limited mobility an unmanageable load.",
-  "household": "Build the plan around the least mobile person and the shortest critical supply. Try carrying the kit, opening containers and using the light in the dark. Spend first on safe water, essential medicines, basic food and communication rather than specialised gear you cannot use.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Pack for actual infants, pets, access needs and the likely transport mode. Agree which adult carries shared items and who stays with each dependent. Include a destination plan; a bag does not establish that a shelter will admit or support the household.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Keep bags accessible and plan for pets, infants and mobility equipment."
+    ],
+    [
+      "When the first option is unavailable",
+      "If you have minutes rather than days, grab essential medicines, documents, shoes, water and a phone charger first. Divide necessary supplies among people who can carry them, without giving children or a person with limited mobility an unmanageable load."
+    ]
+  ],
+  "faqs": [
+    [
+      "Does a stocked bag make leaving easier?",
+      "Only if it can be reached and carried while managing dependents. Test the load and remove duplication. Keep essential medicine, documents and mobility aids accessible; do not bury a critical item beneath optional equipment."
+    ],
+    [
+      "What if I cannot take the bag?",
+      "Leave when immediate danger requires it. Reaching safety takes priority over retrieving supplies. Keep a short written contact plan with each person and identify an alternate source of essential support ahead of time where possible."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

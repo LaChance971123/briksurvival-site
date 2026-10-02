@@ -29,8 +29,8 @@
   "next": "When water returns, sewer service may still be damaged. Resume plumbing only once its use and disposal route are safe; arrange qualified cleanup for significant sewage contamination.",
   "watch": "Bleach does not make sewage floodwater safe to enter. Never mix cleaning chemicals. Contamination and infection risks are greater for children and immunocompromised people.",
   "without_help": "If no collection is operating, contain waste securely in a protected place away from living, food and water areas while seeking a verified disposal option. Do not improvise an open discharge that endangers neighbours.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: check for backup. Agree who will manage children, pets or mobility needs while that action happens. Bleach does not make sewage floodwater safe to enter. Never mix cleaning chemicals. Contamination and infection risks are greater for children and immunocompromised people.",
+  "pack_now": "For sewer failure & toilets without service, prioritize only items needed for the first action and the fallback: If no collection is operating, contain waste securely in a protected place away from living, food and water areas while seeking a verified disposal option. Do not improvise an open discharge that endangers neighbours. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "sources": "hygiene",
   "category": "utilities",
   "subcategory": "Sanitation",
@@ -51,5 +51,37 @@
     "sewage outage"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked editorial review; not independent expert certification"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "decisions": [
+    [
+      "First decision: Check for backup",
+      "If drains or toilets back up, stop adding water and keep clear of the affected area. Do not operate electrical equipment in standing water. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "If no collection is operating, contain waste securely in a protected place away from living, food and water areas while seeking a verified disposal option. Do not improvise an open discharge that endangers neighbours. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "Bleach does not make sewage floodwater safe to enter. Never mix cleaning chemicals. Contamination and infection risks are greater for children and immunocompromised people. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Stop using plumbing that is backing up or may discharge sewage into living areas. Keep children and pets away from contaminated water. Separate toilet waste from drinking water, food and washing areas, and use a contained temporary toilet arrangement until safe disposal and service are established. Do not flush blindly during a sewer disruption. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For sewer failure & toilets without service, keep the specific hazard in view: Bleach does not make sewage floodwater safe to enter. Never mix cleaning chemicals. Contamination and infection risks are greater for children and immunocompromised people."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Confirm disposal. Use an established safe disposal service or locally appropriate sanitation guidance. Do not dump waste into streets, rivers, storm drains or open ground. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

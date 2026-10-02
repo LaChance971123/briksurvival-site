@@ -41,6 +41,30 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Create one cleaner-air room using safe filtration if available, reduce indoor smoke sources and avoid strenuous activity. Do not overheat a sealed home; move to a safer breathable and cooler place if you cannot maintain both air quality and safe temperature.",
-  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Check people with lung or heart disease, pregnancy-related needs and infants more often. Plan low-exposure activities and keep prescribed medicines accessible. A designated cleaner room must still be comfortable, reachable and usable for the people inside.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Keep checking changing wind, fire perimeter, and air-quality conditions. People with heart or lung disease, children, older adults, and pregnant people may need added precautions or clinical advice."
+    ],
+    [
+      "When the first option is unavailable",
+      "Create one cleaner-air room using safe filtration if available, reduce indoor smoke sources and avoid strenuous activity. Do not overheat a sealed home; move to a safer breathable and cooler place if you cannot maintain both air quality and safe temperature."
+    ]
+  ],
+  "faqs": [
+    [
+      "What if closing windows makes the home too hot?",
+      "Smoke reduction must be balanced with safe temperature. Check a cooler location with cleaner air and the ability to meet medical or access needs. Do not keep a vulnerable person in dangerous heat simply to preserve a closed room."
+    ],
+    [
+      "Can any mask filter smoke?",
+      "Loose face coverings do not provide the same particle protection as a well-fitting approved respirator. Particle respirators do not remove gases and may not fit children or everyone who needs one. Reduce exposure and seek medical guidance for breathing problems."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

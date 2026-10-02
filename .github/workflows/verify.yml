@@ -1,0 +1,23 @@
+name: Verify Osprey Zero
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r requirements-build.txt
+      - run: python scripts/build_library.py && python scripts/build_offline.py && python scripts/refine_site.py && python scripts/polish_release.py
+      - run: python scripts/verify_library.py && node scripts/verify_search.cjs && node scripts/verify_ads.cjs
+      - run: node --check app.js && node --check search.js && node --check ads.js && node --check offline/reader.js && node --check offline/sw.js
+      - run: python scripts/stage_site.py && python scripts/verify_release.py

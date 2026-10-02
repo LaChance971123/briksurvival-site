@@ -29,8 +29,8 @@
   "next": "Before a disruption, agree a refill and storage plan with the prescriber or pharmacist, within local rules. If you use insulin or powered equipment, keep its specific emergency instructions with the kit.",
   "watch": "A medicine can be unsafe after heat or flood exposure even when its package looks normal. Product-specific advice matters; there is no universal safe unrefrigerated storage period.",
   "without_help": "Use the written list to seek qualified advice through a reachable pharmacy or verified clinic. Preserve safe storage and track supply. If a life-critical treatment cannot be maintained, prioritise relocation to care before the last dose or battery is used.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Write names, strengths, schedules, allergies, prescriber and pharmacy contacts and any storage needs. Keep that information private and accessible to a trusted caregiver. Include supplies needed to administer the medicine, not only the package itself.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
   "sources": "medication",
   "category": "preparedness",
   "subcategory": "Care & accessibility",
@@ -42,7 +42,9 @@
     "insulin blackout",
     "prescription emergency",
     "out of medicine",
-    "need medication"
+    "need medication",
+    "insulin getting warm",
+    "medicine refrigerator failed"
   ],
   "keywords": [
     "medication shortage",
@@ -51,5 +53,29 @@
     "prescription emergency"
   ],
   "urgency": "planning",
-  "review_status": "source-linked editorial review; not independent expert certification"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Before a disruption, agree a refill and storage plan with the prescriber or pharmacist, within local rules. If you use insulin or powered equipment, keep its specific emergency instructions with the kit."
+    ],
+    [
+      "When the first option is unavailable",
+      "Use the written list to seek qualified advice through a reachable pharmacy or verified clinic. Preserve safe storage and track supply. If a life-critical treatment cannot be maintained, prioritise relocation to care before the last dose or battery is used."
+    ]
+  ],
+  "faqs": [
+    [
+      "Can a warm medicine still be used?",
+      "Storage limits depend on the exact product and whether it has been opened. Record the name, time and temperature if known and contact a pharmacist or clinician. Do not apply a generic insulin rule to every medicine or throw away an essential supply without checking safe replacement options."
+    ],
+    [
+      "What if the usual pharmacy is closed?",
+      "Keep the current prescription and medication list ready and seek a reachable licensed pharmacy or care team. Verify the source before accepting donated medicine. Do not change doses, share prescriptions or use unverified substitutes to extend supply."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

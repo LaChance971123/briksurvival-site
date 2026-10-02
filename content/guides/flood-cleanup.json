@@ -1,0 +1,68 @@
+{
+  "slug": "flood-cleanup",
+  "title": "Flood cleanup & mold",
+  "category": "recovery",
+  "subcategory": "Cleanup",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "flood cleanup",
+    "mold after flood",
+    "flooded house cleanup",
+    "sewage cleanup"
+  ],
+  "keywords": [],
+  "tldr": "Do not enter an unsafe flooded building. Check structural, electrical, gas and contamination hazards before cleanup. Keep children and vulnerable people away, use suitable protection and stop if the work exceeds what can be done safely.",
+  "steps": [
+    [
+      "Confirm safe entry",
+      "Do not enter standing water near electrical equipment or a structurally damaged building. Qualified assessment may be needed before work begins."
+    ],
+    [
+      "Separate clean and dirty areas",
+      "Create a clean place for drinking water, first aid and rest outside the work area. Keep flood-contaminated shoes and tools away from household supplies."
+    ],
+    [
+      "Use suitable protection",
+      "Wear protective boots, gloves and eye protection. Mold cleanup may need a properly fitting NIOSH-approved N95 or better respirator; it does not protect against gases."
+    ],
+    [
+      "Dry and clean safely",
+      "When safe, remove contaminated porous materials that cannot be cleaned and dry affected areas promptly. Follow product labels; never mix bleach with ammonia or other cleaners."
+    ]
+  ],
+  "without_help": "Keep the area isolated if equipment, clean water or safe entry cannot be obtained. Document damage from a safe location and prioritize drinking water, sanitation and a clean sleeping space. Delaying unsafe cleanup can be safer than entering without protection.",
+  "household": "People with asthma, lung disease or weakened immunity should avoid mold cleanup when possible. Keep children, pets and food away from contaminated materials. Assign shorter work sessions, rest and clean handwashing; a dust mask cannot resolve every exposure.",
+  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "next": "Seek specialist advice for major contamination, sewage, structural damage or persistent mold. Keep disposal rules and insurer documentation in mind without delaying urgent protective action.",
+  "watch": "Do not run a generator indoors or in a garage during cleanup. Avoid working alone in unstable structures. Respirators need correct fit and do not make an unsafe building safe.",
+  "sources": "flood-cleanup",
+  "shopping": [],
+  "urgency": "situational",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "scope": "Civilian household planning. U.S. references; local conditions, services and building procedures differ.",
+  "decisions": [
+    [
+      "Electricity or gas is uncertain",
+      "Stay out and request qualified assessment. Do not operate a breaker while standing in water."
+    ],
+    [
+      "Cleanup causes breathing symptoms",
+      "Leave exposure, seek appropriate care and reconsider who can safely do the work."
+    ]
+  ],
+  "faqs": [
+    [
+      "Can I mix cleaners to make them stronger?",
+      "No. Mixing bleach with ammonia or other cleaning products can produce dangerous gases. Follow a single product’s label."
+    ]
+  ],
+  "worksheet": [
+    "Incident / symptom onset / location",
+    "Help requested / response confirmed",
+    "Actions / times / next handover"
+  ],
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
+}

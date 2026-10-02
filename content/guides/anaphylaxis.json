@@ -1,0 +1,68 @@
+{
+  "slug": "anaphylaxis",
+  "title": "Severe allergy & anaphylaxis",
+  "category": "medical",
+  "subcategory": "Allergy",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "anaphylaxis",
+    "severe allergic reaction",
+    "epipen",
+    "throat swelling allergy"
+  ],
+  "keywords": [],
+  "tldr": "Trouble breathing, throat or tongue swelling, faintness or collapse after an allergen may be anaphylaxis. Use the person’s prescribed epinephrine promptly according to its instructions and seek emergency care. Antihistamines do not replace epinephrine.",
+  "steps": [
+    [
+      "Act on serious symptoms",
+      "Breathing trouble, swelling or collapse needs immediate care; a rash is not required. Get the prescribed epinephrine and request emergency assistance."
+    ],
+    [
+      "Follow the actual device",
+      "Assist with prescribed epinephrine according to the label, care plan or dispatcher. Different auto-injectors and nasal products have different instructions. Note the time."
+    ],
+    [
+      "Keep them accompanied",
+      "Use a comfortable position; lie down if showing shock when tolerated. Do not make the person stand or walk."
+    ],
+    [
+      "Monitor and reassess",
+      "If symptoms persist, follow the prescribed plan, product instructions or dispatcher for a repeat dose. If unresponsive and not breathing normally, begin CPR and use an AED."
+    ]
+  ],
+  "without_help": "Give prescribed epinephrine without waiting for a callback. Keep requesting urgent care and monitor breathing. Record the dose time and keep the used device for handover. Do not treat improvement as proof that the reaction has ended.",
+  "household": "Ask caregivers where the prescribed medicine is kept before an outing. Practice with the correct trainer device, explain who will fetch it and who will stay with the person, and check storage and expiry instructions. A school or childcare plan should travel with the child.",
+  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "next": "Urgent medical assessment is needed after epinephrine, including when symptoms improve. Replace used supplies and review the allergy action plan with a clinician.",
+  "watch": "Do not substitute an antihistamine, food or drink for urgent treatment. Avoid a universal device hold-time: follow the product label.",
+  "sources": "anaphylaxis",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "scope": "First-aid summary based on U.S. references. Use the local emergency number; this is not a diagnosis or a substitute for hands-on training.",
+  "decisions": [
+    [
+      "No epinephrine available",
+      "Request urgent medical assistance immediately, stay with the person and monitor breathing. Do not improvise an injection or medication dose."
+    ],
+    [
+      "A second device is available",
+      "Check the person’s action plan and current device instructions. Record each administration separately for the clinician."
+    ]
+  ],
+  "faqs": [
+    [
+      "Can anaphylaxis happen without hives?",
+      "Yes. Serious breathing or circulation symptoms after a possible allergen need urgent action even without visible skin changes."
+    ]
+  ],
+  "worksheet": [
+    "Incident / symptom onset / location",
+    "Help requested / response confirmed",
+    "Actions / times / next handover"
+  ],
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-01-02"
+}

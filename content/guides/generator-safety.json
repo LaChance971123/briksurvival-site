@@ -38,6 +38,30 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "If there is no safe outdoor position, do not run the generator. Use battery lights and ration stored electrical power for medical needs and communications. Do not improvise a connection to household wiring or operate it indoors because the weather is bad.",
-  "household": "Choose an outside meeting place and check that every person can use the escape route. Keep keys, mobility aids and shoes accessible. Tell neighbours about a hazard from a safe location; do not organise an untrained entry or rescue.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Keep children and pets away from the running equipment and fuel. Check working carbon-monoxide alarms near sleeping areas. One adult should control refueling and keep fuel storage separate from occupied rooms and escape routes.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Read the manufacturer instructions before a crisis. Plan weather protection that does not enclose the generator or obstruct exhaust."
+    ],
+    [
+      "When the first option is unavailable",
+      "If there is no safe outdoor position, do not run the generator. Use battery lights and ration stored electrical power for medical needs and communications. Do not improvise a connection to household wiring or operate it indoors because the weather is bad."
+    ]
+  ],
+  "faqs": [
+    [
+      "Where is the exhaust going?",
+      "Check the generator’s position relative to every nearby opening, not just your own back door. Outdoor exhaust can enter neighboring buildings. Keep the required separation and point exhaust away; a garage with its door open is still an unsafe location."
+    ],
+    [
+      "Can I connect it to a household outlet?",
+      "Never feed power into a wall outlet. Backfeeding can endanger utility workers and others. Household circuit connections need appropriate installed transfer equipment and qualified electrical work. Use equipment and cords according to the actual manufacturer’s instructions."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

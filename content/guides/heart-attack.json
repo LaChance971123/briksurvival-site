@@ -1,0 +1,68 @@
+{
+  "slug": "heart-attack",
+  "title": "Chest pain & suspected heart attack",
+  "category": "medical",
+  "subcategory": "Circulation",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "heart attack",
+    "chest pain",
+    "chest pressure",
+    "pain in chest"
+  ],
+  "keywords": [],
+  "tldr": "New chest pressure, squeezing or unexplained discomfort with shortness of breath, sweating, nausea or pain in the jaw, back or arm can be a heart attack. Stop activity, call the local emergency number and rest. Do not drive yourself.",
+  "steps": [
+    [
+      "Stop and seek urgent care",
+      "Help the person rest in a comfortable position. Request emergency medical assistance and an AED if someone can bring one."
+    ],
+    [
+      "Stay nearby",
+      "Monitor breathing and responsiveness. Symptoms can be subtle or come and go; do not wait for a textbook pattern."
+    ],
+    [
+      "Use medicines carefully",
+      "Assist with the person’s own prescribed medication as directed. Ask a dispatcher or clinician about aspirin; avoid it if contraindicated, allergic, unable to swallow, or uncertain."
+    ],
+    [
+      "If they collapse",
+      "If unresponsive and not breathing normally, begin CPR and use an AED promptly. A heart attack can lead to cardiac arrest."
+    ]
+  ],
+  "without_help": "Keep contacting reachable medical care and a trusted local helper while the person rests. Confirm whether assistance is actually coming and ask a clinician about transport when ambulance access fails. The affected person must not drive; household planning cannot replace urgent treatment.",
+  "household": "Choose one person to remain with the patient and one to communicate. Prepare a concise medication and allergy list, leave room for first aid and keep dependents supervised. If alone, put the call on speaker and share the location before giving a long history.",
+  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "next": "Arrange urgent evaluation even if pain eases. Record symptom onset and any medicine taken, including dose and time.",
+  "watch": "Chest discomfort is not always a heart attack, and absence of chest pain does not exclude one. Do not diagnose it using an online checklist or exertion test.",
+  "sources": "heart-attack",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "scope": "First-aid summary based on U.S. references. Use the local emergency number; this is not a diagnosis or a substitute for hands-on training.",
+  "decisions": [
+    [
+      "Unresponsive but breathing",
+      "Continue watching breathing. Use a recovery position if appropriate and safe; do not give oral medication."
+    ],
+    [
+      "No AED nearby",
+      "Do not leave CPR to search for distant equipment. Send another person when possible."
+    ]
+  ],
+  "faqs": [
+    [
+      "Can the person wait until morning?",
+      "Suspected heart attack needs urgent medical evaluation. Improvement is not proof that the risk has passed."
+    ]
+  ],
+  "worksheet": [
+    "Incident / symptom onset / location",
+    "Help requested / response confirmed",
+    "Actions / times / next handover"
+  ],
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-01-02"
+}

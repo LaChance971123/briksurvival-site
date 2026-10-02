@@ -29,8 +29,8 @@
   "next": "Keep a short list of known sources saved offline, including non-government humanitarian sources. Choose information based on reliability and relevance, not simply whether it is official or unofficial.",
   "watch": "Verification should not delay escape from visible fire, rising water or another immediate hazard. No source can guarantee that conditions remain unchanged.",
   "without_help": "If connectivity fails, use the observations you can obtain safely and your written plans. Do not travel into danger to confirm a rumour or follow a single anonymous message.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: check the original. Agree who will manage children, pets or mobility needs while that action happens. Verification should not delay escape from visible fire, rising water or another immediate hazard. No source can guarantee that conditions remain unchanged.",
+  "pack_now": "For verify emergency information, prioritize only items needed for the first action and the fallback: If connectivity fails, use the observations you can obtain safely and your written plans. Do not travel into danger to confirm a rumour or follow a single anonymous message. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "sources": "emergency-alerts",
   "category": "communications",
   "subcategory": "Verification & privacy",
@@ -51,5 +51,37 @@
     "verify evacuation"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked editorial review; not independent expert certification"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "decisions": [
+    [
+      "First decision: Check the original",
+      "Find the actual organisation or person through an independently known channel. A familiar-looking account or copied badge can be fake. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "If connectivity fails, use the observations you can obtain safely and your written plans. Do not travel into danger to confirm a rumour or follow a single anonymous message. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "Verification should not delay escape from visible fire, rising water or another immediate hazard. No source can guarantee that conditions remain unchanged. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Check the source, time, exact location and evidence before acting on or sharing an emergency message. Compare independent sources when possible. A forwarded screenshot, logo or urgent voice note is not verification. Act on obvious immediate danger without waiting for a post to be confirmed. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For verify emergency information, keep the specific hazard in view: Verification should not delay escape from visible fire, rising water or another immediate hazard. No source can guarantee that conditions remain unchanged."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Share carefully. Forward only necessary verified information with its time and source. Protect live locations and personal information. Correct earlier messages if they prove wrong. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

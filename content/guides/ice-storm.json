@@ -38,6 +38,38 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Preserve heat in a dry room, keep lights battery powered and avoid unnecessary travel. If you must move because of dangerous cold, do it before people become weak and use a route you know is passable; a car is not reliable shelter if exhaust or roads are blocked.",
-  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: postpone travel. Agree who will manage children, pets or mobility needs while that action happens. Never touch or approach a fallen wire, even if it appears inactive.",
+  "pack_now": "For ice storm, prioritize only items needed for the first action and the fallback: Preserve heat in a dry room, keep lights battery powered and avoid unnecessary travel. If you must move because of dangerous cold, do it before people become weak and use a route you know is passable; a car is not reliable shelter if exhaust or roads are blocked. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
+  "decisions": [
+    [
+      "First decision: Postpone travel",
+      "Even thin ice can make roads and sidewalks unsafe. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+    ],
+    [
+      "When the original plan fails",
+      "Preserve heat in a dry room, keep lights battery powered and avoid unnecessary travel. If you must move because of dangerous cold, do it before people become weak and use a route you know is passable; a car is not reliable shelter if exhaust or roads are blocked. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
+    ],
+    [
+      "Before changing location",
+      "Never touch or approach a fallen wire, even if it appears inactive. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+    ]
+  ],
+  "faqs": [
+    [
+      "What matters before collecting supplies?",
+      "Avoid travel on icy roads and keep away from ice-laden trees and power lines. Prepare for a long outage using safe heat and battery lights. Stay indoors until conditions improve unless your shelter is unsafe. Collect items only if doing so does not delay this action."
+    ],
+    [
+      "What should another household member do?",
+      "Use a second person to handle communication or dependents while the first carries out the immediate action. For ice storm, keep the specific hazard in view: Never touch or approach a fallen wire, even if it appears inactive."
+    ],
+    [
+      "What should be written down?",
+      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Check vulnerable people. Plan safe transport to a warm location if heat or essential medical power fails. Keep personal notes private; they are not submitted to Osprey Zero."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

@@ -8,7 +8,9 @@
   "aliases": [
     "house fire",
     "apartment fire",
-    "smoke in building"
+    "smoke in building",
+    "there is a fire in my kitchen",
+    "kitchen fire"
   ],
   "keywords": [
     "Fire"
@@ -39,6 +41,30 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Escape immediately, gather outside and keep the exit area clear. If trapped, close the door between you and smoke, signal from a window and send your exact location if possible. Do not reenter because the fire seems quiet or because firefighters have not arrived.",
-  "household": "Choose an outside meeting place and check that every person can use the escape route. Keep keys, mobility aids and shoes accessible. Tell neighbours about a hazard from a safe location; do not organise an untrained entry or rescue.",
-  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
+  "household": "Practice the route with children and anyone needing movement assistance. Agree on a nearby meeting point and who will supervise dependents once outside. Include a second safe way out when the building permits it; never block an exit with stored supplies.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Install and test smoke alarms and practice two ways out with the household. Plan assistance for children and people with mobility needs."
+    ],
+    [
+      "When the first option is unavailable",
+      "Escape immediately, gather outside and keep the exit area clear. If trapped, close the door between you and smoke, signal from a window and send your exact location if possible. Do not reenter because the fire seems quiet or because firefighters have not arrived."
+    ]
+  ],
+  "faqs": [
+    [
+      "Can I retrieve a phone or a pet?",
+      "Do not delay escape or reenter for belongings or animals. Once outside, tell responders where anyone may remain. Keep the household assembly point clear so missing people can be identified without people searching inside."
+    ],
+    [
+      "The exit is blocked — what then?",
+      "Do not force a hot door or a route filling with smoke. Close doors between you and the fire, call and signal your exact location. A high-rise needs its building-specific plan; use the Apartment & high-rise fire guide rather than guessing at an elevator or window escape."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

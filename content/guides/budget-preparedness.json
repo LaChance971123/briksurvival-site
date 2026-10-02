@@ -1,0 +1,75 @@
+{
+  "slug": "budget-preparedness",
+  "title": "Preparedness on a limited budget",
+  "category": "preparedness",
+  "subcategory": "Kits & supplies",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "cheap emergency kit",
+    "budget preparedness",
+    "low cost kit",
+    "cant afford kit"
+  ],
+  "keywords": [],
+  "tldr": "Start with a household plan, written contacts and supplies you already own. Prioritize drinking water, essential medicines, food you normally eat and safe light. Build gradually without taking money away from urgent household needs.",
+  "steps": [
+    [
+      "Inventory before buying",
+      "Check usable water containers, lights, batteries, food, clothing and charging options. Record quantities, expiry dates and gaps."
+    ],
+    [
+      "Choose one realistic priority",
+      "Match the first purchase to a likely disruption and a person’s essential need. A medicine or water gap matters more than specialist gadgets."
+    ],
+    [
+      "Build into normal routines",
+      "Add a small amount of shelf-stable food or water when affordable. Rotate what the household actually uses and can prepare safely."
+    ],
+    [
+      "Make free planning changes",
+      "Write emergency contacts, choose meeting places, save guides and learn safe shutoffs. Practice an exit route and check warning access."
+    ]
+  ],
+  "without_help": "Plan around actual carrying capacity, storage, transport and money. Identify safe mutual support before a crisis, but confirm what a neighbor or group can provide. A borrowed item is only useful when it will be accessible during the disruption.",
+  "household": "Ask each person what they need to function without power or transport. Include sensory access, infant feeding, pets and medical routines. Keep a written priority list so shared household purchases solve a real problem rather than duplicating equipment.",
+  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "next": "Revisit one gap at a time. Check a kit when food or medication rotates, after household changes and before the local hazard season.",
+  "watch": "Do not buy unsafe used safety equipment, store fuel improperly or ration essential medication to build a kit. No shopping list guarantees survival.",
+  "sources": "budget-preparedness",
+  "shopping": [
+    "Safe drinking-water containers",
+    "Food the household normally eats without cooking",
+    "Safe battery light and compatible batteries",
+    "Essential prescription refills arranged with a clinician",
+    "Copies of contact and household plans",
+    "Basic hygiene supplies"
+  ],
+  "urgency": "situational",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "scope": "Civilian household planning. U.S. references; local conditions, services and building procedures differ.",
+  "decisions": [
+    [
+      "Little storage space",
+      "Choose compact supplies that are useful in daily life, keep exits clear and identify a safe storage location."
+    ],
+    [
+      "No purchase is affordable now",
+      "Complete contacts, escape planning, guide saving and a household inventory first. Ask a trusted local support group about verified resources when safe."
+    ]
+  ],
+  "faqs": [
+    [
+      "Do I need a large commercial kit?",
+      "No. Start with practical needs and equipment the household can use. Compare an actual inventory with the likely disruption before buying."
+    ]
+  ],
+  "worksheet": [
+    "Incident / symptom onset / location",
+    "Help requested / response confirmed",
+    "Actions / times / next handover"
+  ],
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
+}

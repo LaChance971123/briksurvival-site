@@ -29,8 +29,8 @@
   "next": "Share safe tasks and checked information with trusted neighbours. Charge essential devices when safe power is available and use brief scheduled check-ins. Do not rely on an internet-only plan.",
   "watch": "An announced restoration time is an estimate. Carbon monoxide, unsafe improvised wiring, dehydration and dangerous temperatures can be more urgent than the outage itself.",
   "without_help": "Build a daily plan from current supplies and reachable shelter options. Do not wait for a food distribution, public generator or rescue transport that has not been confirmed.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
-  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "household": "Plan shifts for checking vulnerable people and essential equipment so one caregiver is not awake continuously. Keep infant feeding, safe sleep, medicine storage and pet water on the same written daily inventory.",
+  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
   "sources": "power",
   "category": "utilities",
   "subcategory": "Electricity",
@@ -57,5 +57,29 @@
     "Charged power bank",
     "Battery radio",
     "Working carbon monoxide alarms"
-  ]
+  ],
+  "decisions": [
+    [
+      "Check the next usable option",
+      "Share safe tasks and checked information with trusted neighbours. Charge essential devices when safe power is available and use brief scheduled check-ins. Do not rely on an internet-only plan."
+    ],
+    [
+      "When the first option is unavailable",
+      "Build a daily plan from current supplies and reachable shelter options. Do not wait for a food distribution, public generator or rescue transport that has not been confirmed."
+    ]
+  ],
+  "faqs": [
+    [
+      "What runs out first?",
+      "List the current water, food, medicine and battery supply in usable quantities. Compare these with actual household consumption. Check the next refill or relocation option while reserves still exist; counting unopened items is not enough when they need power or water to use."
+    ],
+    [
+      "Which room should the household use?",
+      "Choose the safest available room for temperature and accessible movement. Do not use a garage, fuel-burning appliance or a vehicle in an enclosed area for warmth or charging. Keep the exit and sanitation route clear."
+    ]
+  ],
+  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
+  "source_checked": "2026-10-02",
+  "published": "2026-10-02",
+  "next_review": "2027-04-02"
 }

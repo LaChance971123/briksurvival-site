@@ -28,7 +28,8 @@ for g in guides:
 for g in index:
  if g['url'].startswith('/downloads/'):
   r=PdfReader(ROOT/g['url'].lstrip('/'));text=''.join(p.extract_text() for p in r.pages)
-  assert g['title'].split(' checklist')[0].split(' shopping list')[0] in text
+  def norm(t):return ' '.join(t.replace('’',"'").replace('–','-').replace('—','-').split())
+  assert norm(g['title'].split(' checklist')[0].split(' shopping list')[0].split(' full guide PDF')[0]) in norm(text),(g['title'],g['url'])
 assert not errors,errors
 home=(ROOT/'index.html').read_text()
 assert home.count('type="search"')==1,'Homepage must have exactly one search input'
