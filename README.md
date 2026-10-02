@@ -1,34 +1,19 @@
-# BRIK Survival Website
+# Osprey Zero website migration draft
 
-Static site for BRIK Survival, deployed automatically through Netlify on every push to the main branch.
+Static, multi-page website draft for the Osprey Zero emergency-first knowledge platform. The existing Brik Survival Netlify project and repository are being retained so the draft can be reviewed through a deploy preview before any production/domain cutover.
 
-## Structure
-/
-├── index.html
-├── netlify.toml
-├── Assets/
-│   ├── brik-logo.png
-│   ├── favicon.ico
-│   ├── favicon-16x16.png
-│   ├── favicon-32x32.png
-│   ├── apple-touch-icon.png
-│   ├── android-chrome-512x512.png
-│   ├── site.webmanifest
-│   └── og-image.png
+## Pages
 
-## Deployment
-Pushing to main triggers an automatic Netlify deploy.
+- `/` — emergency-first home and topic search
+- `/emergencies/` — topic directory linking to current official sources
+- `/preparedness/` — household planning pathway
+- `/guides/` — curated public resources and guide-library framing
+- `/about/` — mission and editorial principles
 
-Live site: https://briksurvival.com
+## Local preview
 
-## Local Editing
-Make changes, then:
+Serve this folder with any static HTTP server. No build step or client-side framework is required. The emergency-topic search and mobile navigation use `app.js`.
 
-git add .
-git commit -m "Update site"
-git push
+## Launch requirements
 
-Netlify redeploys automatically.
-
-## Domain
-briksurvival.com is connected through Netlify DNS.
+The exact approved logo/social assets, MailerLite form design and embed, initial Osprey Zero-owned emergency guides, privacy content, domain/DNS verification, and redirects remain launch-gated. The current `downloads/blackout-checklist.pdf` remains the original BRIK resource until a reviewed Osprey Zero replacement is ready.
