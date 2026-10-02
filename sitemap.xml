@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://briksurvival.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://ospreyzero.com/</loc></url>
+  <url><loc>https://ospreyzero.com/emergencies/</loc></url>
+  <url><loc>https://ospreyzero.com/preparedness/</loc></url>
+  <url><loc>https://ospreyzero.com/guides/</loc></url>
+  <url><loc>https://ospreyzero.com/resources/</loc></url>
+  <url><loc>https://ospreyzero.com/about/</loc></url>
+  <url><loc>https://ospreyzero.com/emergencies/power-outage/</loc></url>
+  <url><loc>https://ospreyzero.com/emergencies/severe-weather/</loc></url>
+  <url><loc>https://ospreyzero.com/emergencies/wildfire-smoke/</loc></url>
+  <url><loc>https://ospreyzero.com/emergencies/flooding/</loc></url>
+  <url><loc>https://ospreyzero.com/emergencies/evacuation/</loc></url>
+  <url><loc>https://ospreyzero.com/emergencies/water-disruption/</loc></url>
+  <url><loc>https://ospreyzero.com/emergencies/armed-conflict/</loc></url>
+  <url><loc>https://ospreyzero.com/emergencies/civil-unrest/</loc></url>
+  <url><loc>https://ospreyzero.com/emergencies/nuclear-detonation/</loc></url>
+  <url><loc>https://ospreyzero.com/emergencies/emergency-restrictions/</loc></url>
 </urlset>

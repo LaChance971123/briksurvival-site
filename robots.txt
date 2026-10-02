@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://briksurvival.com/sitemap.xml
+Sitemap: https://ospreyzero.com/sitemap.xml

@@ -2,36 +2,6 @@
   publish = "."
   command = ""
 
-# --- Redirects (order matters) ---
-
-# Serve confirm page directly
-[[redirects]]
-  from = "/blackout-checklist-confirmed.html"
-  to = "/blackout-checklist-confirmed.html"
-  status = 200
-  force = true
-
-# Handle pretty URL version too
-[[redirects]]
-  from = "/blackout-checklist-confirmed"
-  to = "/blackout-checklist-confirmed.html"
-  status = 301
-  force = true
-
-# Allow direct access to PDFs and other files in /downloads
-[[redirects]]
-  from = "/downloads/*"
-  to = "/downloads/:splat"
-  status = 200
-  force = true
-
-# SPA catch-all LAST
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-# --- Security headers ---
 [[headers]]
   for = "/*"
   [headers.values]
@@ -39,17 +9,34 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
-    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self' https://assets.mailerlite.com; frame-ancestors 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://groot.mailerlite.com; connect-src 'self' https://assets.mailerlite.com https://groot.mailerlite.com"
 
-# Cache static assets hard
 [[headers]]
-  for = "/assets/*"
+  for = "/Assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=86400"
 
-# Cache downloads hard + make sure browsers treat them as PDFs
 [[headers]]
-  for = "/downloads/*"
+  for = "/styles.css"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-    Content-Type = "application/pdf"
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/app.js"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# The old Brik checklist URL remains accessible during content conversion.
+[[redirects]]
+  from = "/blackout-checklist-confirmed"
+  to = "/blackout-checklist-confirmed.html"
+  status = 301
+  force = true
+
+# Retire the abandoned Brik homepage experiment without exposing stale branding.
+[[redirects]]
+  from = "/indexv3.html"
+  to = "/"
+  status = 301
+  force = true
