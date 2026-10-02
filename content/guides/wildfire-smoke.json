@@ -43,16 +43,7 @@
   "without_help": "Create one cleaner-air room using safe filtration if available, reduce indoor smoke sources and avoid strenuous activity. Do not overheat a sealed home; move to a safer breathable and cooler place if you cannot maintain both air quality and safe temperature.",
   "household": "Check people with lung or heart disease, pregnancy-related needs and infants more often. Plan low-exposure activities and keep prescribed medicines accessible. A designated cleaner room must still be comfortable, reachable and usable for the people inside.",
   "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
-  "decisions": [
-    [
-      "Check the next usable option",
-      "Keep checking changing wind, fire perimeter, and air-quality conditions. People with heart or lung disease, children, older adults, and pregnant people may need added precautions or clinical advice."
-    ],
-    [
-      "When the first option is unavailable",
-      "Create one cleaner-air room using safe filtration if available, reduce indoor smoke sources and avoid strenuous activity. Do not overheat a sealed home; move to a safer breathable and cooler place if you cannot maintain both air quality and safe temperature."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What if closing windows makes the home too hot?",

@@ -41,16 +41,7 @@
   "without_help": "Choose a reachable destination with someone you trust, identify a second route, and agree on a check-in. Do not wait for transport that has not been confirmed. If the route is actively dangerous, compare the specific hazard of staying with the hazard of moving; shelter while reassessing if no safer route is available.",
   "household": "Give dependents a written contact card and agree who stays with each person. Keep essential medicine and mobility equipment accessible. A pet carrier or heavy bag must not block a caregiver from helping someone move.",
   "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
-  "decisions": [
-    [
-      "Check the next usable option",
-      "Make two destinations and more than one route in advance. Keep a small grab list by the door, especially for medications, pets, and items that cannot be prepacked."
-    ],
-    [
-      "When the first option is unavailable",
-      "Choose a reachable destination with someone you trust, identify a second route, and agree on a check-in. Do not wait for transport that has not been confirmed. If the route is actively dangerous, compare the specific hazard of staying with the hazard of moving; shelter while reassessing if no safer route is available."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "Is the destination usable?",

@@ -50,16 +50,7 @@
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "Check the next usable option",
-      "After qualified clearance, plan protective equipment and safe cleanup for the specific hazard. Flood, fire and conflict damage require different precautions. Verify contractors before paying."
-    ],
-    [
-      "When the first option is unavailable",
-      "Remain in the safest available temporary shelter if inspection services are not operating. Delayed assessment is not permission to occupy a visibly unsafe home."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "Does an open road mean the building is safe?",

@@ -8,6 +8,11 @@ assert (O/'offline/sw.js').exists()
 assert not (O/'content').exists() and not (O/'scripts').exists()
 assert not list(O.rglob('*.ttf')) and not (O/'Assets/brik-logo.png').exists()
 assert (O/'Assets/oz-share.png').exists()
+for p in (R/'content/guides').glob('*.json'):
+ g=json.loads(p.read_text());bodies={g.get(k,'').strip() for k in ['tldr','next','watch','without_help','household','pack_now']};bodies.update(b.strip() for _,b in g['steps'])
+ for key in ['decisions','faqs']:
+  for _,body in g.get(key,[]):
+   assert body.strip() not in bodies,(p,'Repeated section');bodies.add(body.strip())
 seen=[]
 for p in O.rglob('*.html'):
  h=html.fromstring(p.read_text());assert len(h.xpath('//h1'))==1,p

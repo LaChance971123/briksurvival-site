@@ -48,16 +48,7 @@
   "without_help": "If you have minutes rather than days, grab essential medicines, documents, shoes, water and a phone charger first. Divide necessary supplies among people who can carry them, without giving children or a person with limited mobility an unmanageable load.",
   "household": "Pack for actual infants, pets, access needs and the likely transport mode. Agree which adult carries shared items and who stays with each dependent. Include a destination plan; a bag does not establish that a shelter will admit or support the household.",
   "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
-  "decisions": [
-    [
-      "Check the next usable option",
-      "Keep bags accessible and plan for pets, infants and mobility equipment."
-    ],
-    [
-      "When the first option is unavailable",
-      "If you have minutes rather than days, grab essential medicines, documents, shoes, water and a phone charger first. Divide necessary supplies among people who can carry them, without giving children or a person with limited mobility an unmanageable load."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "Does a stocked bag make leaving easier?",

@@ -54,16 +54,7 @@
   ],
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "Check the next usable option",
-      "Before a disruption, agree a refill and storage plan with the prescriber or pharmacist, within local rules. If you use insulin or powered equipment, keep its specific emergency instructions with the kit."
-    ],
-    [
-      "When the first option is unavailable",
-      "Use the written list to seek qualified advice through a reachable pharmacy or verified clinic. Preserve safe storage and track supply. If a life-critical treatment cannot be maintained, prioritise relocation to care before the last dose or battery is used."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "Can a warm medicine still be used?",

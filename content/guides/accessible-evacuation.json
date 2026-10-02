@@ -50,16 +50,7 @@
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "Check the next usable option",
-      "Practise the plan with the person’s consent and revise it when equipment or care needs change. Keep an alternative plan for power loss and an unavailable caregiver."
-    ],
-    [
-      "When the first option is unavailable",
-      "Use your confirmed private support network and a destination suited to care needs. If transport cannot be arranged, identify the safest available refuge and communicate the precise assistance required through a safe channel."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What specific assistance is required?",

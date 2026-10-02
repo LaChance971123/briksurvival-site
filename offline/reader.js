@@ -1,6 +1,6 @@
 /* Explicit local saving; scoped separately from the advertising worker. */
 (async()=>{
-'use strict';const version='2026-10-02.1',cacheName='oz-offline-'+version;
+'use strict';const version='2026-10-02.2',cacheName='oz-offline-'+version;
 const status=document.querySelector('#offline-status'),list=document.querySelector('#offline-list'),article=document.querySelector('#offline-article'),input=document.querySelector('#offline-query');let data;
 const say=t=>{status.textContent=t;};const node=(tag,text)=>{const n=document.createElement(tag);n.textContent=text;return n;};
 function render(){list.replaceChildren();if(!data)return;const q=input.value.toLowerCase().trim();for(const g of data.guides.filter(g=>!q||[g.title,...g.aliases].join(' ').toLowerCase().includes(q))){const b=node('button',g.title);b.type='button';b.className='offline-guide';b.addEventListener('click',()=>open(g));list.append(b);}}

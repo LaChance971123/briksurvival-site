@@ -10,7 +10,7 @@ S=json.loads((R/'content/sources.json').read_text())
 def route(g):return '/'+('preparedness' if g['content_type']=='Preparedness guide' else 'guides' if g['content_type']=='Field guide' else 'emergencies')+'/'+g['slug']+'/'
 for g in G:g['url']=route(g);g['references']=S[g['sources']]
 (R/'offline').mkdir(exist_ok=True)
-(R/'offline/guides.json').write_text(json.dumps({'version':'2026-10-02.1','updated':'2026-10-02','guides':G},separators=(',',':')))
+(R/'offline/guides.json').write_text(json.dumps({'version':'2026-10-02.2','updated':'2026-10-02','guides':G},separators=(',',':')))
 packs={'power-water':('Power & water',['power-outage','long-blackout','generator-safety','food-safety-outage','water-outage','water-storage','boil-water-advisory','sewer-failure']), 'household':('Household readiness',['household-emergency-plan','72-hour-kit','go-bag','budget-preparedness','infant-child-preparedness','medication-continuity','accessible-evacuation','pet-evacuation']), 'first-aid':('First aid',['cpr','aed','severe-bleeding','choking','infant-choking','child-infant-cpr','stroke','heart-attack','anaphylaxis','burns','seizures','opioid-overdose'])}
 for key,(title,slugs) in packs.items():
  cover=R/'downloads'/f'{key}-cover.pdf';story=[para('OSPREY ZERO / OFFLINE COLLECTION','label'),para(title+'.','title'),panel('SAVE BEFORE SERVICE FAILS','A practical collection of complete guides and private planning worksheets. No signup required. This saved edition cannot provide current alerts.'),Spacer(1,18),para('Inside the collection.','h2')]

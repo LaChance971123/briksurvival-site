@@ -58,16 +58,7 @@
     "Menstrual or infant supplies",
     "Clean cloths and gloves"
   ],
-  "decisions": [
-    [
-      "Check the next usable option",
-      "Replenish safe water when a verified source becomes available. Keep a routine that the household can sustain; a simple clean station is more useful than occasional improvised deep cleaning."
-    ],
-    [
-      "When the first option is unavailable",
-      "Use the smallest workable clean-water station and protect it from contamination. Reduce nonessential washing before cutting drinking water or essential handwashing."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "How do I separate clean and dirty handling?",

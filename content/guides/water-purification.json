@@ -44,16 +44,7 @@
   "without_help": "Choose the least contaminated available source and establish whether the problem is microbial or chemical. If the source may contain fuel, industrial chemicals or radioactive material, find another source; a camping filter or boiling is not a universal solution.",
   "household": "Keep untreated and treated water in different labeled containers. Use clean utensils and teach each person how safe water is dispensed. Plan extra care for infant feeding and people with weakened immunity; a field filter is not automatically suitable for every medical use.",
   "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
-  "decisions": [
-    [
-      "Check the next usable option",
-      "Store treated water in clean covered containers and prevent recontamination."
-    ],
-    [
-      "When the first option is unavailable",
-      "Choose the least contaminated available source and establish whether the problem is microbial or chemical. If the source may contain fuel, industrial chemicals or radioactive material, find another source; a camping filter or boiling is not a universal solution."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "Does clear water mean safe water?",

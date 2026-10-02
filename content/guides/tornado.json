@@ -41,16 +41,7 @@
   "without_help": "Go to your identified shelter without waiting for confirmation when a warning or nearby clear danger is present. Keep shoes, a light and head protection close. If in a mobile home, use a nearby sturdy shelter before conditions worsen; never attempt to outrun a tornado in traffic.",
   "household": "Choose a shelter that can actually fit and be reached by everyone. Keep shoes, a light and necessary mobility aids nearby; supervise children and secure pets without blocking the route. Rehearse how a person who cannot hear warnings will be notified.",
   "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
-  "decisions": [
-    [
-      "Check the next usable option",
-      "Afterward, avoid damaged buildings, broken glass and downed lines. Check for injuries and use text to let your contact know you are safe."
-    ],
-    [
-      "When the first option is unavailable",
-      "Go to your identified shelter without waiting for confirmation when a warning or nearby clear danger is present. Keep shoes, a light and head protection close. If in a mobile home, use a nearby sturdy shelter before conditions worsen; never attempt to outrun a tornado in traffic."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What if there is no basement?",

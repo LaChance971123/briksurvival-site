@@ -41,16 +41,7 @@
   "without_help": "Use one dry room, layered clothing, blankets and insulation beneath you. Keep fuel-burning outdoor equipment outside. If you cannot keep people warm, identify a reachable warm place before they become confused or weak; do not wait for a warming centre to open.",
   "household": "Check children, older adults and people with limited movement rather than relying only on their report that they feel fine. Keep dry layers and a reachable warmer location in the plan. Protect medicine and mobility equipment from temperature damage according to their instructions.",
   "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
-  "decisions": [
-    [
-      "Check the next usable option",
-      "Keep medicines, transport and backup plans ready. Watch for numb, pale or waxy skin that may signal frostbite."
-    ],
-    [
-      "When the first option is unavailable",
-      "Use one dry room, layered clothing, blankets and insulation beneath you. Keep fuel-burning outdoor equipment outside. If you cannot keep people warm, identify a reachable warm place before they become confused or weak; do not wait for a warming centre to open."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "Why does wet clothing matter?",

@@ -58,16 +58,7 @@
     "Battery radio",
     "Working carbon monoxide alarms"
   ],
-  "decisions": [
-    [
-      "Check the next usable option",
-      "Share safe tasks and checked information with trusted neighbours. Charge essential devices when safe power is available and use brief scheduled check-ins. Do not rely on an internet-only plan."
-    ],
-    [
-      "When the first option is unavailable",
-      "Build a daily plan from current supplies and reachable shelter options. Do not wait for a food distribution, public generator or rescue transport that has not been confirmed."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What runs out first?",

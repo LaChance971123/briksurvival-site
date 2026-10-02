@@ -40,16 +40,7 @@
   "without_help": "Leave before the only usable route is threatened. If no official update is reachable, act on visible nearby fire, rapidly worsening conditions and verified local information rather than waiting for an order. Do not drive into smoke with unknown visibility or through flames.",
   "household": "Assign one person to dependents and pets and another to transport and contacts. Keep essential medicine, access aids and car keys together. Agree on a reunion place that is outside the threatened area, with a second option if access changes.",
   "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
-  "decisions": [
-    [
-      "Check the next usable option",
-      "Return only when reentry is allowed. Check for damaged utilities, hot debris and continuing smoke."
-    ],
-    [
-      "When the first option is unavailable",
-      "Leave before the only usable route is threatened. If no official update is reachable, act on visible nearby fire, rapidly worsening conditions and verified local information rather than waiting for an order. Do not drive into smoke with unknown visibility or through flames."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "When should a household with access needs leave?",

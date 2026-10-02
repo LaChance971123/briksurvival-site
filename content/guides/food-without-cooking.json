@@ -58,16 +58,7 @@
     "Soap",
     "Food matching dietary needs"
   ],
-  "decisions": [
-    [
-      "Check the next usable option",
-      "Replenish through a verified reachable source before supplies become critical. Set aside easy-to-carry food for movement and avoid creating a plan that depends entirely on fuel or refrigeration."
-    ],
-    [
-      "When the first option is unavailable",
-      "Use known safe shelf-stable food already present and a written meal inventory. If no safe cooking position exists, choose food that does not need cooking rather than improvising an indoor flame."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "Can everyone eat the stored food?",
