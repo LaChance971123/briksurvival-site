@@ -31,20 +31,3 @@ if (year) year.textContent = new Date().getFullYear();
 
 for (const button of document.querySelectorAll("[data-print]")) button.addEventListener("click", () => window.print());
 
-// Load one advertising zone per eligible document; urgent response stays ad-free.
-(() => {
-  const path = window.location.pathname.replace(/\/index\.html$/, '').replace(/\/+$/, '') || '/';
-  const eligible = /^\/(library|preparedness|guides)(\/|$)/.test(path) || ['/topics', '/resources', '/about'].includes(path);
-  if (!eligible || document.querySelector('script[data-oz-ad]')) return;
-  const script = document.createElement('script');
-  script.async = true;
-  script.dataset.ozAd = 'true';
-  if (/^\/guides(\/|$)/.test(path)) {
-    script.dataset.zone = '11941449';
-    script.src = 'https://n6wxm.com/vignette.min.js';
-  } else {
-    script.dataset.cfasync = 'false';
-    script.src = 'https://5gvci.com/act/files/tag.min.js?z=11941494';
-  }
-  (document.body || document.documentElement).appendChild(script);
-})();
