@@ -102,11 +102,29 @@ for g in GUIDES:
   'food-safety-outage':['power-outage','water-outage','72-hour-kit'],
   'nuclear-detonation':['shelter-in-place','water-disruption','emergency-alerts'],
   'cpr':['aed','choking','severe-bleeding'],
+  'severe-bleeding':['cpr','aed','medication-continuity'],
+  'choking':['cpr','aed','infant-child-preparedness'],
+  'aed':['cpr','choking','severe-bleeding'],
+  'armed-conflict':['explosions-shelling','unexploded-ordnance','displacement','family-reunification'],
+  'civil-unrest':['checkpoint-safety','unsafe-authorities','verify-information','evacuation'],
+  'emergency-restrictions':['unsafe-authorities','checkpoint-safety','verify-information'],
+  'explosions-shelling':['armed-conflict','unexploded-ordnance','severe-bleeding','displacement'],
+  'unexploded-ordnance':['armed-conflict','explosions-shelling','returning-home'],
+  'displacement':['family-reunification','accessible-evacuation','pet-evacuation','go-bag'],
+  'family-reunification':['displacement','communications-outage','infant-child-preparedness'],
+  'sewer-failure':['water-outage','emergency-hygiene','water-storage'],
+  'heating-failure':['extreme-cold','carbon-monoxide','long-blackout'],
+  'medication-continuity':['accessible-evacuation','long-blackout','go-bag'],
+  'returning-home':['downed-power-lines','disaster-scams','unexploded-ordnance'],
+  'unsafe-authorities':['checkpoint-safety','verify-information','displacement'],
   'vehicle-breakdown':['winter-storm','extreme-heat','communications-outage']
  }.get(g['slug'],['emergency-alerts','72-hour-kit','evacuation'])
  for slug in extra:
   x=next(x for x in GUIDES if x['slug']==slug)
   if x not in related and slug!=g['slug'] and len(related)<4:related.append(x)
+ # Explicit practical companions take precedence over alphabetical neighbours.
+ preferred=[next(x for x in GUIDES if x['slug']==slug) for slug in extra if slug!=g['slug']]
+ if extra!=['emergency-alerts','72-hour-kit','evacuation']:related=list(dict((x['slug'],x) for x in preferred+related).values())[:4]
  links=''.join(f'<a href="{route(x)}">{e(x["title"])}</a>' for x in related)
  main=f'''<main id="main" class="subpage guide-page"><nav class="wrap guide-breadcrumb" aria-label="Breadcrumb"><a href="/library/">Encyclopedia</a><span>/</span><a href="/library/{cat['id']}/">{e(cat['title'])}</a><span>/</span><span>{e(g['subcategory'])}</span></nav>
  <article class="wrap guide-layout"><div class="guide-main"><header class="guide-heading"><span class="kicker">{e(g['content_type'])}</span><h1>{title}</h1></header>
@@ -137,7 +155,7 @@ def browse(path,title,selected):
   gs=[g for g in selected if g['category']==cat['id']]
   if not gs:continue
   collapsible=path in ['/emergencies/','/preparedness/','/guides/']
-  groups+=(f'<details class="browse-group"><summary>{e(cat["title"])}<small>{len(gs)} guides</small></summary>' if collapsible else f'<section class="library-group"><h2><a href="/library/{cat["id"]}/">{e(cat["title"])}</a><small>{len(gs)} guides</small></h2>')
+  groups+=(f'<details class="browse-group"><summary>{e(cat["title"])}<small>{len(gs)} {"guide" if len(gs)==1 else "guides"}</small></summary>' if collapsible else f'<section class="library-group"><h2><a href="/library/{cat["id"]}/">{e(cat["title"])}</a><small>{len(gs)} {"guide" if len(gs)==1 else "guides"}</small></h2>')
   for sub in cat['subcategories']:
    members=[g for g in gs if g['subcategory']==sub]
    if not members:continue
@@ -146,7 +164,7 @@ def browse(path,title,selected):
    groups+=f'<section id="{cat["id"]}-{subid}" class="library-subgroup"><h3>{e(sub)}</h3><div class="library-grid">'+''.join(card(g) for g in members)+'</div></section>'
   groups+='</details>' if collapsible else '</section>'
  nav=''.join(f'<a href="/library/{c["id"]}/"'+(' aria-current="page"' if path=='/library/'+c['id']+'/' else '')+f'>{e(c["title"])}</a>' for c in CATS)
- directory=''.join(f'<a class="subject-card" href="/library/{c["id"]}/"><h2>{e(c["title"])}</h2><p>{e(", ".join(s for s in c["subcategories"] if any(g["category"]==c["id"] and g["subcategory"]==s for g in selected)))}</p><span>{sum(g["category"]==c["id"] for g in selected)} guides</span></a>' for c in CATS if any(g['category']==c['id'] for g in selected))
+ directory=''.join(f'<a class="subject-card" href="/library/{c["id"]}/"><h2>{e(c["title"])}</h2><p>{e(", ".join(s for s in c["subcategories"] if any(g["category"]==c["id"] and g["subcategory"]==s for g in selected)))}</p><span>{sum(g["category"]==c["id"] for g in selected)} {"guide" if sum(g["category"]==c["id"] for g in selected)==1 else "guides"}</span></a>' for c in CATS if any(g['category']==c['id'] for g in selected))
  if path=='/library/':groups='<div class="subject-grid">'+directory+'</div>'
  main=f'<main id="main" class="subpage"><section class="wrap library-heading"><p class="kicker">OSPREY ZERO ENCYCLOPEDIA</p><h1>{e(title)}</h1><p>Choose a subject or search a few words. Every guide starts with what matters now and includes a plan for when help is unavailable.</p>{searchform()}<div class="library-meta">{len(selected)} guides · Free checklists · No signup needed</div><div class="browse-tools"><a href="/topics/">All topics A–Z</a><a href="/search/?type=Checklist">Printable checklists</a><a href="/search/?type=Shopping%20list">Shopping lists</a></div><nav class="subcategory-chips" aria-label="Jump to a subcategory">{"".join(chips) if len({g["category"] for g in selected})==1 else ""}</nav></section><div class="wrap library-layout"><nav class="category-nav" aria-label="Browse categories"><h2>Browse by subject</h2>{nav}<a href="/library/">All subjects</a></nav><div>{groups}</div></div></main>'
  page(path,title,'Browse original quick-answer guides, checklists and official references by subject.',main)
@@ -171,6 +189,8 @@ write('search-index.json',json.dumps(INDEX,separators=(',',':')))
 # Source shelf includes published references and direct resource downloads.
 refs=''.join(f'<article class="library-card"><h3>{e(r["title"])}</h3><p>{e(r["description"])}</p><a href="{e(r["url"],quote=True)}" target="_blank" rel="noopener noreferrer">Open published PDF</a></article>' for r in MANUALS.values())
 page('/resources/','Reference shelf','Published manuals, official information and Osprey Zero downloads.',f'<main id="main" class="subpage"><section class="wrap library-heading"><p class="kicker">REFERENCE SHELF</p><h1>Published knowledge.</h1><p>Original quick answers remain in the encyclopedia. These published references provide deeper context; check their date and follow current local guidance.</p><div class="library-grid">{refs}</div><h2>Checklists & shopping lists.</h2><p>Every guide includes its own printable action checklist. Supply-oriented guides also include shopping lists.</p><a class="button button-primary" href="/search/?type=Checklist">Find a checklist</a><a class="button" href="/search/?type=Shopping%20list">Find a shopping list</a><h2>Current official information.</h2><div class="related-links"><a href="https://www.weather.gov/">National Weather Service</a><a href="https://www.ready.gov/">Ready.gov</a><a href="https://www.cdc.gov/">CDC</a><a href="https://www.redcross.org/get-help.html">American Red Cross</a></div></section></main>')
+rp=ROOT/'resources/index.html'
+rp.write_text(rp.read_text().replace('<h2>Current official information.</h2>','<h2>Independent humanitarian & civilian support.</h2><p>Verify contacts directly and share personal information only when safe. These services may have limited access or capacity and do not guarantee assistance.</p><div class="related-links"><a href="https://www.icrc.org/en/where-we-work">ICRC · Find a country operation</a><a href="https://help.unhcr.org/">UNHCR · Country-specific help</a><a href="https://www.icrc.org/en/what-we-do/reconnecting-families">Red Cross · Family reunification</a><a href="https://www.accessnow.org/help/">Access Now · Digital Security Helpline</a></div><h2>Official hazard & health references.</h2>'))
 # Add global navigation to preserved pages and make homepage search global.
 for p in [ROOT/'index.html',ROOT/'about/index.html',ROOT/'privacy/index.html',ROOT/'thanks/index.html']:
  html=p.read_text();html=html.replace('/styles.css?v=oz5','/styles.css?v=oz6').replace('/app.js?v=oz4','/app.js?v=oz6')
@@ -181,6 +201,7 @@ for p in [ROOT/'index.html',ROOT/'about/index.html',ROOT/'privacy/index.html',RO
   if 'id="home-search-results"' not in html:html=html.replace('<div class="topic-grid"','<div id="home-search-results" class="search-results" hidden></div><div class="topic-grid"')
   html=re.sub(r'(?:\d+|TEN) ORIGINAL GUIDES',str(len(GUIDES))+' ORIGINAL GUIDES',html)
   html=re.sub(r'All \d+ guides start',f'All {len(GUIDES)} guides start',html)
+  html=re.sub(r'ENCYCLOPEDIA / \d+ GUIDES',f'ENCYCLOPEDIA / {len(GUIDES)} GUIDES',html)
  p.write_text(html)
 paths=sorted({'/','/about/','/privacy/','/resources/','/library/','/topics/','/search/','/emergencies/','/preparedness/','/guides/','/emergencies/severe-weather/',*[route(g) for g in GUIDES],*['/library/'+c['id']+'/' for c in CATS]})
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>https://ospreyzero.com{x}</loc><lastmod>2026-10-02</lastmod></url>' for x in paths)+'</urlset>')
