@@ -37,5 +37,8 @@
   "sources": "nuclear-plant-emergency",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Seek zone-specific radiation information by radio or another verified channel. Radiation cannot be measured by smell or sight. Indoors, close openings and reduce outside-air intake while you establish whether your zone must evacuate; do not self-dose potassium iodide or improvise a route through a suspected release.",
+  "household": "Keep the family together in the correct shelter for the hazard and separate potentially contaminated items from the living area. Use covered food and safe water. Prepare a bag for relocation, but do not send someone outside for it during an active release.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

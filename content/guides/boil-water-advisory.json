@@ -36,5 +36,8 @@
   "sources": "boil-water-advisory",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "If fuel or electricity is unavailable, use sealed drinking water first. A treatment tablet is an option only for microbial risk and only when its label covers the conditions. If you cannot establish whether chemicals are involved, change the water source rather than experimenting.",
+  "household": "Write down water, food, battery and medication needs for each person. Keep clean and dirty containers separate and preserve essential power before entertainment. Agree on the point at which lack of water, medical support or safe temperature means you must relocate.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

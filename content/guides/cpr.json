@@ -13,7 +13,7 @@
   "keywords": [
     "Resuscitation"
   ],
-  "tldr": "If an adult suddenly collapses, is unresponsive and is not breathing normally or is only gasping, call emergency services, get an AED and start chest compressions. Push hard and fast in the center of the chest at 100\u2013120 compressions per minute; follow dispatcher instructions.",
+  "tldr": "If an adult suddenly collapses, is unresponsive and is not breathing normally or is only gasping, call emergency services, get an AED and start chest compressions. Push hard and fast in the center of the chest at 100–120 compressions per minute; follow dispatcher instructions.",
   "steps": [
     [
       "Check safely",
@@ -37,5 +37,8 @@
   "sources": "cpr",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked; independent clinical review pending"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "If a call will not connect, start or continue compressions. Ask another person to keep trying and bring an AED. If alone, use speakerphone while starting CPR rather than waiting for an answer. Do not leave an unresponsive person just to seek better reception.",
+  "household": "Give someone the specific task of calling or locating care while another person provides first aid. Keep the patient warm or cool as the condition requires and record what happened and when. Do not put yourself into the same hazard or assume an ambulance has been dispatched until confirmed.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

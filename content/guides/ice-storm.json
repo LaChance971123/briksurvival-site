@@ -36,5 +36,8 @@
   "sources": "ice-storm",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Preserve heat in a dry room, keep lights battery powered and avoid unnecessary travel. If you must move because of dangerous cold, do it before people become weak and use a route you know is passable; a car is not reliable shelter if exhaust or roads are blocked.",
+  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

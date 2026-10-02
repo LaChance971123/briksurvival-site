@@ -1,0 +1,55 @@
+{
+  "slug": "verify-information",
+  "title": "Verify emergency information",
+  "label": "VERIFICATION & PRIVACY",
+  "deck": "Check the source, time, exact location and evidence before acting on or sharing an emergency message. Compare independent sources when possible. A forwarded screenshot, logo or urgent voice note is not verification. Act on obvious immediate danger without waiting for a post to be confirmed.",
+  "tldr": "Check the source, time, exact location and evidence before acting on or sharing an emergency message. Compare independent sources when possible. A forwarded screenshot, logo or urgent voice note is not verification. Act on obvious immediate danger without waiting for a post to be confirmed.",
+  "steps": [
+    [
+      "Check the original",
+      "Find the actual organisation or person through an independently known channel. A familiar-looking account or copied badge can be fake."
+    ],
+    [
+      "Check place and time",
+      "Confirm the affected street, region and date. Old footage and information from another country can appear current when forwarded."
+    ],
+    [
+      "Compare independent information",
+      "Use radio, direct trusted observations and verified humanitarian or official sources as appropriate. Several reposts of the same claim are not independent confirmation."
+    ],
+    [
+      "Separate facts from guesses",
+      "Write what is confirmed and what remains uncertain. Do not treat a claimed ceasefire, route, water safety notice or aid offer as certain without recent verification."
+    ],
+    [
+      "Share carefully",
+      "Forward only necessary verified information with its time and source. Protect live locations and personal information. Correct earlier messages if they prove wrong."
+    ]
+  ],
+  "next": "Keep a short list of known sources saved offline, including non-government humanitarian sources. Choose information based on reliability and relevance, not simply whether it is official or unofficial.",
+  "watch": "Verification should not delay escape from visible fire, rising water or another immediate hazard. No source can guarantee that conditions remain unchanged.",
+  "without_help": "If connectivity fails, use the observations you can obtain safely and your written plans. Do not travel into danger to confirm a rumour or follow a single anonymous message.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "emergency-alerts",
+  "category": "communications",
+  "subcategory": "Verification & privacy",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "rumours",
+    "fake alert",
+    "misinformation",
+    "is this true",
+    "verify evacuation"
+  ],
+  "keywords": [
+    "rumours",
+    "fake alert",
+    "misinformation",
+    "is this true",
+    "verify evacuation"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

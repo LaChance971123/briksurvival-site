@@ -1,0 +1,53 @@
+{
+  "slug": "returning-home",
+  "title": "Returning to a damaged home",
+  "label": "REENTRY",
+  "deck": "Do not enter a building with gas smell, floodwater, unstable walls, damaged wiring or other serious hazards. A quiet street or an opened road is not proof that a home is safe. Inspect only from a safe outside position and arrange qualified assessment for structural and utility damage. Keep children and pets away.",
+  "tldr": "Do not enter a building with gas smell, floodwater, unstable walls, damaged wiring or other serious hazards. A quiet street or an opened road is not proof that a home is safe. Inspect only from a safe outside position and arrange qualified assessment for structural and utility damage. Keep children and pets away.",
+  "steps": [
+    [
+      "Check the approach",
+      "Avoid debris, unstable trees, wires, floodwater and suspicious remnants after conflict. Do not cross a hazard to inspect a property."
+    ],
+    [
+      "Look from outside",
+      "Check for leaning walls, sagging roof, fire, gas smell and water around electrical equipment. Do not enter to locate the source of a hazard."
+    ],
+    [
+      "Keep utilities untouched if unsafe",
+      "Do not turn on damaged power, gas or flooded equipment. Qualified personnel must assess these systems; do not test them yourself."
+    ],
+    [
+      "Document only when safe",
+      "Photograph visible damage from a safe position and retain receipts. Property records are less urgent than staying out of danger."
+    ],
+    [
+      "Use a temporary safe base",
+      "Keep sleeping, food and water in safe accommodation while assessment and cleanup are arranged. Separate clean belongings from contaminated items."
+    ]
+  ],
+  "next": "After qualified clearance, plan protective equipment and safe cleanup for the specific hazard. Flood, fire and conflict damage require different precautions. Verify contractors before paying.",
+  "watch": "Do not remove load-bearing debris, enter a confined space or approach explosive debris. Personal inspection cannot certify structural safety.",
+  "without_help": "Remain in the safest available temporary shelter if inspection services are not operating. Delayed assessment is not permission to occupy a visibly unsafe home.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "reentry",
+  "category": "recovery",
+  "subcategory": "Reentry",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "reentry",
+    "return home disaster",
+    "damaged house",
+    "home after bombing"
+  ],
+  "keywords": [
+    "reentry",
+    "return home disaster",
+    "damaged house",
+    "home after bombing"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

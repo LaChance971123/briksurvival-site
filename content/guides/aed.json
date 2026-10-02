@@ -35,5 +35,8 @@
   "sources": "aed",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked; independent clinical review pending"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "If nobody can bring an AED, continue CPR rather than leaving the person to search alone. If another person is present, ask them to locate the nearest accessible AED while you continue compressions. Follow the device prompts when it arrives.",
+  "household": "Give someone the specific task of calling or locating care while another person provides first aid. Keep the patient warm or cool as the condition requires and record what happened and when. Do not put yourself into the same hazard or assume an ambulance has been dispatched until confirmed.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

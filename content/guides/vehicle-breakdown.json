@@ -36,5 +36,8 @@
   "sources": "vehicle-breakdown",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Record your exact location, stay visible without standing in traffic and conserve your phone. Do not begin walking along a dangerous road or into remote terrain without a known reachable refuge. In heat or cold, watch occupants closely and reassess whether the vehicle remains safe.",
+  "household": "Count occupants, monitor temperature and keep children away from traffic. Preserve medicines, water and a light within reach. Do not split the group without a clear safe destination and a reliable way to reconnect.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

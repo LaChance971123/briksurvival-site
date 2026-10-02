@@ -37,5 +37,8 @@
   "sources": "choking",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked; independent clinical review pending"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Begin the first-aid sequence immediately while another person calls if possible. If the person becomes unresponsive, lower them safely and begin CPR. Look for a visible object before breaths; never sweep blindly inside the mouth. A delayed ambulance is not a reason to delay first aid.",
+  "household": "Give someone the specific task of calling or locating care while another person provides first aid. Keep the patient warm or cool as the condition requires and record what happened and when. Do not put yourself into the same hazard or assume an ambulance has been dispatched until confirmed.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

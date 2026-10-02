@@ -21,7 +21,9 @@
     "subcategories": [
       "Fire",
       "Air & gas",
-      "Backup power"
+      "Backup power",
+      "Heating",
+      "Electrical hazards"
     ]
   },
   {
@@ -29,7 +31,8 @@
     "title": "Utilities & infrastructure",
     "subcategories": [
       "Electricity",
-      "Water"
+      "Water",
+      "Sanitation"
     ]
   },
   {
@@ -61,7 +64,9 @@
     "title": "Conflict & civil disruption",
     "subcategories": [
       "Conflict",
-      "Civil disruption"
+      "Civil disruption",
+      "Explosive hazards",
+      "Civilian protection"
     ]
   },
   {
@@ -69,7 +74,9 @@
     "title": "Evacuation & shelter",
     "subcategories": [
       "Evacuation",
-      "Shelter"
+      "Shelter",
+      "Family reunification",
+      "Displacement"
     ]
   },
   {
@@ -78,7 +85,9 @@
     "subcategories": [
       "Planning",
       "Kits & supplies",
-      "Water & food"
+      "Water & food",
+      "Care & accessibility",
+      "Documents & support"
     ]
   },
   {
@@ -86,14 +95,17 @@
     "title": "Communications & information",
     "subcategories": [
       "Warnings & information",
-      "Connectivity"
+      "Connectivity",
+      "Verification & privacy",
+      "Offline information"
     ]
   },
   {
     "id": "field-skills",
     "title": "Field & survival skills",
     "subcategories": [
-      "Water"
+      "Water",
+      "Food & hygiene"
     ]
   },
   {
@@ -107,7 +119,9 @@
     "id": "recovery",
     "title": "Recovery & aftermath",
     "subcategories": [
-      "Food & water"
+      "Food & water",
+      "Reentry",
+      "Fraud & documents"
     ]
   }
 ]

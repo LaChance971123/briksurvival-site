@@ -1,0 +1,53 @@
+{
+  "slug": "offline-maps",
+  "title": "Offline maps & route planning",
+  "label": "OFFLINE INFORMATION",
+  "deck": "Save maps before service fails, write down your destination and at least one alternative, and check the actual route against current hazards. An offline map does not show live closures, fighting, damaged bridges or flooding. GPS position may still work without data, but accuracy and battery life are not guaranteed.",
+  "tldr": "Save maps before service fails, write down your destination and at least one alternative, and check the actual route against current hazards. An offline map does not show live closures, fighting, damaged bridges or flooding. GPS position may still work without data, but accuracy and battery life are not guaranteed.",
+  "steps": [
+    [
+      "Download before the outage",
+      "Use the map app’s offline feature for the whole journey, not just the destination. Test it with mobile data off."
+    ],
+    [
+      "Keep a paper backup",
+      "Write addresses, landmarks, route choices and emergency contacts. Carry a paper map if available."
+    ],
+    [
+      "Check route suitability",
+      "Consider flood zones, damaged structures, access needs and transport restrictions. The fastest app route is not necessarily the safest."
+    ],
+    [
+      "Conserve device power",
+      "Reduce unnecessary screen use and keep a power bank available. Know how to view the downloaded map without needing a new connection."
+    ],
+    [
+      "Reassess as conditions change",
+      "Stop in a safe place to compare the route with visible conditions and recent trusted reports. Do not enter an uncertain road simply because the map displays it."
+    ]
+  ],
+  "next": "Practise following a short route with the backup information. Include a destination you can reach on foot only if that is realistic for the household and conditions.",
+  "watch": "Maps and position tools are aids, not proof of safe passage. Avoid unfamiliar shortcuts through hazardous or recently fought-over ground.",
+  "without_help": "Use known routes and written landmarks while checking conditions from safe positions. If you cannot identify a safe onward route, reassess rather than consuming the last battery on repeated rerouting.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "navigation",
+  "category": "communications",
+  "subcategory": "Offline information",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "offline navigation",
+    "no internet maps",
+    "gps without data",
+    "evacuation map"
+  ],
+  "keywords": [
+    "offline navigation",
+    "no internet maps",
+    "gps without data",
+    "evacuation map"
+  ],
+  "urgency": "planning",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

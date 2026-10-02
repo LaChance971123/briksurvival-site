@@ -1,0 +1,53 @@
+{
+  "slug": "disaster-scams",
+  "title": "Disaster scams & false aid offers",
+  "label": "FRAUD & DOCUMENTS",
+  "deck": "Pause before paying, sharing identification or following an urgent aid message. Verify the organisation using a contact you find independently, ask for written terms and avoid pressure to pay immediately. Keep emergency funds for verified essentials. A logo, uniform or forwarded link does not establish trust.",
+  "tldr": "Pause before paying, sharing identification or following an urgent aid message. Verify the organisation using a contact you find independently, ask for written terms and avoid pressure to pay immediately. Keep emergency funds for verified essentials. A logo, uniform or forwarded link does not establish trust.",
+  "steps": [
+    [
+      "Find an independent contact",
+      "Use the organisation’s known website or an existing trusted number rather than the contact in an unsolicited message. Confirm the specific programme or provider."
+    ],
+    [
+      "Protect personal information",
+      "Share only what the verified process needs. Never give account passwords, one-time codes or a full identity document to an unverified caller."
+    ],
+    [
+      "Check payment demands",
+      "Unexpected upfront fees, gift cards, cryptocurrency or pressure to pay immediately are warning signs. Ask for written terms and time to review."
+    ],
+    [
+      "Check repair offers",
+      "Verify relevant credentials, references and a written scope before hiring. Do not let a door-to-door offer rush you into unsafe entry or a large advance payment."
+    ],
+    [
+      "Preserve evidence safely",
+      "Keep receipts and message details without engaging further. Use verified consumer-protection or legal support when safe and available."
+    ]
+  ],
+  "next": "Warn trusted people privately about confirmed scams without circulating sensitive victim information. If payment or credentials were compromised, contact the relevant bank or provider through a known channel.",
+  "watch": "An offer of transport or shelter may also carry exploitation risk. Do not surrender documents or separate from family because a stranger promises priority assistance.",
+  "without_help": "If reporting channels are unavailable, stop contact, protect remaining money and accounts, and retain the records for later. A promised refund is not a reason to make another payment.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "scams",
+  "category": "recovery",
+  "subcategory": "Fraud & documents",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "fake aid",
+    "disaster fraud",
+    "scam relief",
+    "fake contractor"
+  ],
+  "keywords": [
+    "fake aid",
+    "disaster fraud",
+    "scam relief",
+    "fake contractor"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

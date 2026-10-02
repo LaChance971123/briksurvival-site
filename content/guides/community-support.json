@@ -1,0 +1,53 @@
+{
+  "slug": "community-support",
+  "title": "A trusted neighbourhood support plan",
+  "label": "DOCUMENTS & SUPPORT",
+  "deck": "Build a small support network with people you already trust: agree check-ins, practical tasks and boundaries before a crisis. Share verified information and safe assistance without advertising stockpiles or exposing vulnerable people’s locations. Do not organise untrained rescues or assume outside supplies will arrive.",
+  "tldr": "Build a small support network with people you already trust: agree check-ins, practical tasks and boundaries before a crisis. Share verified information and safe assistance without advertising stockpiles or exposing vulnerable people’s locations. Do not organise untrained rescues or assume outside supplies will arrive.",
+  "steps": [
+    [
+      "Agree who participates",
+      "Ask consent and include people who may need help with movement, medication or communication. Do not publish a public list of vulnerable households."
+    ],
+    [
+      "Assign realistic tasks",
+      "Choose check-in, charging, water transport or childcare tasks people can perform safely. Do not assign dangerous repairs, rescues or conflict-zone travel."
+    ],
+    [
+      "Choose backups",
+      "Have another contact and a written way to reconnect if phones fail. Make sure no essential task depends on one person being present."
+    ],
+    [
+      "Set boundaries",
+      "Agree what can be shared, how decisions are made and what people cannot safely offer. Do not promise supplies or transport you do not have."
+    ],
+    [
+      "Review together",
+      "Practise a short check-in and update the plan after household needs change. Keep information current and private."
+    ]
+  ],
+  "next": "Use the network to coordinate verified information and reduce duplicated trips. Independent humanitarian assistance can complement it when available, but should not be its only foundation.",
+  "watch": "Mutual aid should never require handing over identity documents, leaving children with strangers or entering a dangerous building.",
+  "without_help": "Start with a few trusted people and one useful task. If no network exists, use your household plan and independently verify any offer before relying on it.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "household-emergency-plan",
+  "category": "preparedness",
+  "subcategory": "Documents & support",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "mutual aid",
+    "neighbour support",
+    "community preparedness",
+    "alone disaster"
+  ],
+  "keywords": [
+    "mutual aid",
+    "neighbour support",
+    "community preparedness",
+    "alone disaster"
+  ],
+  "urgency": "planning",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

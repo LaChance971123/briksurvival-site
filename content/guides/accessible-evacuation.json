@@ -1,0 +1,53 @@
+{
+  "slug": "accessible-evacuation",
+  "title": "Evacuation with access or mobility needs",
+  "label": "EVACUATION",
+  "deck": "Plan movement around the person who needs the most assistance. Keep mobility aids, medicines, communication tools and essential care supplies together. Confirm accessible transport and a suitable destination directly; do not assume a shelter, lift or public rescue vehicle will be available.",
+  "tldr": "Plan movement around the person who needs the most assistance. Keep mobility aids, medicines, communication tools and essential care supplies together. Confirm accessible transport and a suitable destination directly; do not assume a shelter, lift or public rescue vehicle will be available.",
+  "steps": [
+    [
+      "Identify the actual assistance",
+      "Write down transfer needs, walking distance, stairs, powered devices, communication needs and care routines. Ask the person what help is safe and useful."
+    ],
+    [
+      "Check the route",
+      "Assess exits and stairs before a crisis. Do not use lifts in a fire or damaged building, and do not improvise a dangerous carry."
+    ],
+    [
+      "Confirm support",
+      "Arrange more than one trusted helper and transport option. Make the responsibility specific rather than assuming someone else will come."
+    ],
+    [
+      "Keep essential equipment close",
+      "Include medicines, charger, batteries, mobility aids and a concise care note. Keep a portable backup where possible."
+    ],
+    [
+      "Verify the destination",
+      "Ask about step-free entry, toilets, charging, refrigeration, caregivers and service animals. A general promise of accessibility is not a confirmed arrangement."
+    ]
+  ],
+  "next": "Practise the plan with the person’s consent and revise it when equipment or care needs change. Keep an alternative plan for power loss and an unavailable caregiver.",
+  "watch": "Do not separate a person from essential equipment or a necessary caregiver if avoidable. An untrained lifting attempt can injure both the person and the helper.",
+  "without_help": "Use your confirmed private support network and a destination suited to care needs. If transport cannot be arranged, identify the safest available refuge and communicate the precise assistance required through a safe channel.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "accessibility",
+  "category": "evacuation-shelter",
+  "subcategory": "Evacuation",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "wheelchair evacuation",
+    "disabled evacuation",
+    "accessible shelter",
+    "mobility emergency"
+  ],
+  "keywords": [
+    "wheelchair evacuation",
+    "disabled evacuation",
+    "accessible shelter",
+    "mobility emergency"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "downed-power-lines",
+  "title": "Downed wires & electrical hazards",
+  "label": "ELECTRICAL HAZARDS",
+  "deck": "Keep away from fallen wires, damaged electrical equipment and anything touching them, including water, fences and vehicles. Assume wires are live even when they are quiet or the neighbourhood has no power. Do not attempt a rescue by touching a person or object in contact with electricity. Contact the utility or emergency services from a safe place.",
+  "tldr": "Keep away from fallen wires, damaged electrical equipment and anything touching them, including water, fences and vehicles. Assume wires are live even when they are quiet or the neighbourhood has no power. Do not attempt a rescue by touching a person or object in contact with electricity. Contact the utility or emergency services from a safe place.",
+  "steps": [
+    [
+      "Stay back",
+      "Do not approach to determine whether a wire is live. Current can travel through wet ground and conductive objects. Keep others and animals away."
+    ],
+    [
+      "Avoid connected objects",
+      "Do not touch fences, trees, vehicles or debris that may contact a wire. Do not use a stick or tool to move it."
+    ],
+    [
+      "Stay out of flooded electrical areas",
+      "Never enter water to reach a breaker, appliance or person near damaged electrical systems. Use qualified help."
+    ],
+    [
+      "Warn from safety",
+      "Tell people to avoid the area from your safe location. Report a clear location without approaching for a photograph."
+    ],
+    [
+      "Do not restore damaged systems",
+      "Leave flooded, scorched or broken equipment off until qualified personnel assess it. A restored grid does not make damaged wiring safe."
+    ]
+  ],
+  "next": "If a wire falls onto a vehicle you occupy, generally stay inside and call for help; fire or another immediate threat changes the decision. Follow qualified emergency instructions rather than touching the vehicle and ground together.",
+  "watch": "Do not assume a fixed visible distance proves safety. Lines may reenergise without warning; no spark or hum is not an all-clear.",
+  "without_help": "Keep the hazard avoided if the utility cannot be reached. Do not move a wire to open a road or restore access; arrange a different safe route.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "power",
+  "category": "home-building",
+  "subcategory": "Electrical hazards",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "fallen wire",
+    "power line down",
+    "electrical flood",
+    "live cable"
+  ],
+  "keywords": [
+    "fallen wire",
+    "power line down",
+    "electrical flood",
+    "live cable"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

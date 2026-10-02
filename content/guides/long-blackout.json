@@ -1,0 +1,61 @@
+{
+  "slug": "long-blackout",
+  "title": "Long-duration blackout",
+  "label": "ELECTRICITY",
+  "deck": "Plan around water, essential medical power, safe temperature, food and communications rather than a restoration estimate. Reserve battery power for necessities and use shelf-stable food when refrigeration fails. Keep all generators outdoors at least 20 feet from openings. Move early if essential care or safe shelter cannot be maintained.",
+  "tldr": "Plan around water, essential medical power, safe temperature, food and communications rather than a restoration estimate. Reserve battery power for necessities and use shelf-stable food when refrigeration fails. Keep all generators outdoors at least 20 feet from openings. Move early if essential care or safe shelter cannot be maintained.",
+  "steps": [
+    [
+      "List critical needs",
+      "Identify power-dependent care, temperature-sensitive medicines, water access and who cannot manage stairs or heat. Set priorities before using scarce batteries or fuel."
+    ],
+    [
+      "Measure what remains",
+      "Write down safe water, ready-to-eat meals, usable batteries and medicine quantities. Review the inventory daily rather than guessing."
+    ],
+    [
+      "Keep fuel use safe",
+      "Never run generators, charcoal or camping stoves indoors, in a garage or on an enclosed balcony. Do not backfeed house wiring."
+    ],
+    [
+      "Protect food and hygiene",
+      "Keep cold appliances closed and use food-safety time and temperature guidance. Separate drinking water from washing and waste arrangements."
+    ],
+    [
+      "Set a relocation trigger",
+      "Choose the point when medical support, water or temperature can no longer be maintained. Confirm a reachable destination before those needs become urgent."
+    ]
+  ],
+  "next": "Share safe tasks and checked information with trusted neighbours. Charge essential devices when safe power is available and use brief scheduled check-ins. Do not rely on an internet-only plan.",
+  "watch": "An announced restoration time is an estimate. Carbon monoxide, unsafe improvised wiring, dehydration and dangerous temperatures can be more urgent than the outage itself.",
+  "without_help": "Build a daily plan from current supplies and reachable shelter options. Do not wait for a food distribution, public generator or rescue transport that has not been confirmed.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "power",
+  "category": "utilities",
+  "subcategory": "Electricity",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "extended blackout",
+    "days without power",
+    "grid down",
+    "prolonged power outage"
+  ],
+  "keywords": [
+    "extended blackout",
+    "days without power",
+    "grid down",
+    "prolonged power outage"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "shopping": [
+    "Battery lights and spare batteries",
+    "Safe drinking-water containers",
+    "Shelf-stable food and manual opener",
+    "Charged power bank",
+    "Battery radio",
+    "Working carbon monoxide alarms"
+  ]
+}

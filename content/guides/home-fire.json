@@ -37,5 +37,8 @@
   "sources": "home-fire",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Escape immediately, gather outside and keep the exit area clear. If trapped, close the door between you and smoke, signal from a window and send your exact location if possible. Do not reenter because the fire seems quiet or because firefighters have not arrived.",
+  "household": "Choose an outside meeting place and check that every person can use the escape route. Keep keys, mobility aids and shoes accessible. Tell neighbours about a hazard from a safe location; do not organise an untrained entry or rescue.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

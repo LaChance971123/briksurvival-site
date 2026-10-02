@@ -36,5 +36,8 @@
   "sources": "thunderstorm",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Use a substantial building or enclosed hard-top vehicle even when warnings cannot be checked. Avoid plumbing and wired electrical equipment during lightning. Watch for rising water and damaging wind without going outside to observe the storm.",
+  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

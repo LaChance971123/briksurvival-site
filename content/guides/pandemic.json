@@ -37,5 +37,8 @@
   "sources": "pandemic",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Create a workable sick-person area, improve ventilation where safe and separate shared food, washing and care tasks. Keep medicines and a written symptom record. Obtain disease-specific guidance when possible; do not use unproven treatments or copy isolation rules from another outbreak.",
+  "household": "Make the care plan workable with the people, room and supplies you have. Separate clean and dirty tasks, check high-risk household members and preserve access to essential medicines. Keep a written record of symptoms and exposure rather than relying on memory.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

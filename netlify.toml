@@ -1,6 +1,6 @@
 [build]
-  publish = "."
-  command = ""
+  publish = "dist"
+  command = "pip install -r requirements-build.txt && python scripts/build_library.py && python scripts/refine_site.py && python scripts/verify_library.py && node scripts/verify_search.cjs && node scripts/verify_ads.cjs && python scripts/stage_site.py"
 
 [[headers]]
   for = "/*"
@@ -10,7 +10,13 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
-    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self' https://assets.mailerlite.com; frame-ancestors 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https:; connect-src 'self' https:; frame-src https:"
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self' https://assets.mailerlite.com; frame-ancestors 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https:; connect-src 'self' https:; frame-src https:; worker-src 'self'; object-src 'none'"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+    Content-Type = "application/javascript; charset=utf-8"
 
 [[headers]]
   for = "/Assets/*"

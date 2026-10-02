@@ -12,7 +12,7 @@
   "keywords": [
     "Shelter"
   ],
-  "tldr": "Go inside when instructed and choose the shelter location for the specific hazard. An airborne chemical release, tornado and radiation event need different shelter choices. Follow the official notice about room location, ventilation and when to leave.",
+  "tldr": "Get inside if the outdoor hazard makes travel more dangerous, and choose the room for that hazard: a lowest-floor sturdy interior area for a tornado, protective interior mass for fallout, or few outside openings for an airborne chemical release. Close openings and control ventilation only as the hazard requires. Do not remain in a burning, flooding or collapsing building, and do not wait for a message when immediate danger is visible.",
   "steps": [
     [
       "Identify the hazard",
@@ -36,5 +36,8 @@
   "sources": "shelter-in-place",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Choose the room for the hazard, not the phrase: lowest sturdy interior area for tornadoes, protective interior mass for fallout, and a room with few outside openings for an airborne chemical threat. Leave a shelter that is burning, flooding or collapsing rather than following a generic stay-inside rule.",
+  "household": "Keep the group together with a named adult responsible for each child or person needing assistance. Count people at every departure and arrival. Write contact details on paper, retain necessary medicines and agree what to do if one person cannot travel.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

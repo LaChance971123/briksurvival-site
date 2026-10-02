@@ -1,0 +1,59 @@
+{
+  "slug": "explosions-shelling",
+  "title": "Explosions & nearby shelling",
+  "label": "CIVILIAN PROTECTION",
+  "deck": "Move away from windows and exposed areas into the most protective intact shelter you can reach safely. Stay clear of damaged buildings and unfamiliar debris. Keep family members together and shoes, a light and medicines close. A pause in explosions is not an all-clear; do not go out to film, investigate or collect fragments.",
+  "tldr": "Move away from windows and exposed areas into the most protective intact shelter you can reach safely. Stay clear of damaged buildings and unfamiliar debris. Keep family members together and shoes, a light and medicines close. A pause in explosions is not an all-clear; do not go out to film, investigate or collect fragments.",
+  "steps": [
+    [
+      "Get out of exposed space",
+      "Use a designated protective shelter if it is safely reachable. Otherwise choose the most protective intact interior space available, away from glazing. Consider fire, collapse, flooding and escape access; a basement is not safe if these hazards are present."
+    ],
+    [
+      "Protect yourself from secondary hazards",
+      "Keep away from windows, loose masonry and damaged electrical equipment. Keep footwear on when moving. Do not use a lift in a damaged building."
+    ],
+    [
+      "Check people without increasing exposure",
+      "Account for the household from shelter. Provide first aid only where you will not become another casualty. Send a brief private status message if service is available."
+    ],
+    [
+      "Reassess the building",
+      "Smoke, fire, instability or flooding may require movement to a safer reachable place. Do not interpret a quiet period as proof that streets or unexploded objects are safe."
+    ],
+    [
+      "Keep debris untouched",
+      "Never handle suspicious fragments, wires, containers or munitions. Keep children and pets away. Do not approach to take a photograph."
+    ]
+  ],
+  "next": "Prepare for loss of water, power and communications. Choose a reunion contact and a second shelter option. Use recently verified humanitarian or local information to judge whether movement is safer than staying.",
+  "watch": "No ordinary room is guaranteed protection against weapons. Do not travel through active fighting or assume a claimed safe corridor has been secured.",
+  "without_help": "If broadcasts and emergency numbers fail, keep sheltering while it remains intact and safer than movement. Check essential supplies, agree on short check-ins and use trusted neighbours without sending people into exposed areas.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "civilian-safety",
+  "category": "conflict",
+  "subcategory": "Civilian protection",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "shelling",
+    "bombing",
+    "explosions nearby",
+    "air raid",
+    "missile attack",
+    "bomb went off",
+    "bombs nearby",
+    "explosion",
+    "shelling nearby"
+  ],
+  "keywords": [
+    "shelling",
+    "bombing",
+    "explosions nearby",
+    "air raid",
+    "missile attack"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

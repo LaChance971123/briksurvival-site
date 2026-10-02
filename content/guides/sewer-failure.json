@@ -1,0 +1,55 @@
+{
+  "slug": "sewer-failure",
+  "title": "Sewer failure & toilets without service",
+  "label": "SANITATION",
+  "deck": "Stop using plumbing that is backing up or may discharge sewage into living areas. Keep children and pets away from contaminated water. Separate toilet waste from drinking water, food and washing areas, and use a contained temporary toilet arrangement until safe disposal and service are established. Do not flush blindly during a sewer disruption.",
+  "tldr": "Stop using plumbing that is backing up or may discharge sewage into living areas. Keep children and pets away from contaminated water. Separate toilet waste from drinking water, food and washing areas, and use a contained temporary toilet arrangement until safe disposal and service are established. Do not flush blindly during a sewer disruption.",
+  "steps": [
+    [
+      "Check for backup",
+      "If drains or toilets back up, stop adding water and keep clear of the affected area. Do not operate electrical equipment in standing water."
+    ],
+    [
+      "Keep clean supplies separate",
+      "Protect drinking-water containers and food. Use a designated clean handwashing area with safe water and soap."
+    ],
+    [
+      "Use a contained temporary option",
+      "Use a purpose-made portable or camping toilet according to instructions, or a sturdy lidded container with appropriate leak-resistant liners as a temporary arrangement. Keep it stable and away from children."
+    ],
+    [
+      "Handle waste cautiously",
+      "Wear gloves when available, close liners securely and prevent leaks. Wash hands after handling and before food preparation. Keep waste away from water sources."
+    ],
+    [
+      "Confirm disposal",
+      "Use an established safe disposal service or locally appropriate sanitation guidance. Do not dump waste into streets, rivers, storm drains or open ground."
+    ]
+  ],
+  "next": "When water returns, sewer service may still be damaged. Resume plumbing only once its use and disposal route are safe; arrange qualified cleanup for significant sewage contamination.",
+  "watch": "Bleach does not make sewage floodwater safe to enter. Never mix cleaning chemicals. Contamination and infection risks are greater for children and immunocompromised people.",
+  "without_help": "If no collection is operating, contain waste securely in a protected place away from living, food and water areas while seeking a verified disposal option. Do not improvise an open discharge that endangers neighbours.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "hygiene",
+  "category": "utilities",
+  "subcategory": "Sanitation",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "no toilet",
+    "sewer backup",
+    "toilet no water",
+    "sewage outage",
+    "toilet does not flush",
+    "toilet wont flush"
+  ],
+  "keywords": [
+    "no toilet",
+    "sewer backup",
+    "toilet no water",
+    "sewage outage"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

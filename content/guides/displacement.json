@@ -1,0 +1,55 @@
+{
+  "slug": "displacement",
+  "title": "Displacement & temporary shelter",
+  "label": "DISPLACEMENT",
+  "deck": "Choose a reachable place away from the immediate hazard, keep the family together and retain medicines, identification and contacts. Confirm shelter and transport directly before moving. Ask who operates the shelter, what is required and whether it meets access needs. Aid may be delayed or unavailable; have a second destination.",
+  "tldr": "Choose a reachable place away from the immediate hazard, keep the family together and retain medicines, identification and contacts. Confirm shelter and transport directly before moving. Ask who operates the shelter, what is required and whether it meets access needs. Aid may be delayed or unavailable; have a second destination.",
+  "steps": [
+    [
+      "Confirm the destination",
+      "Check that the address exists, is accepting people and can provide accessible shelter. Ask about water, sanitation, medication storage, pets and transport."
+    ],
+    [
+      "Keep documents with you",
+      "Carry originals securely where possible and a separate copy or digital backup. Do not hand documents to an unverified person offering transport or accommodation."
+    ],
+    [
+      "Travel with a clear plan",
+      "Agree who stays with each child and how to reconnect if separated. Use a destination and route checked as recently as possible."
+    ],
+    [
+      "Check shelter conditions",
+      "Identify exits, drinking water, toilets and the people responsible for the site. Keep sleeping and food areas separate from waste. Raise safety concerns through a trusted channel."
+    ],
+    [
+      "Protect personal information",
+      "Give only necessary information to verified providers. Avoid public posts showing children, exact sleeping locations or live routes without consent."
+    ]
+  ],
+  "next": "Keep a short record of where the household stayed, contacts and assistance received. Use UNHCR or Red Cross channels relevant to the country for protection and family tracing; availability varies.",
+  "watch": "Pressure to surrender documents, pay unexpected fees, separate from children or keep a journey secret is a warning sign. A logo or social post is not verification.",
+  "without_help": "If official shelter is unavailable, contact trusted relatives or community members and agree on water, sleeping, hygiene and check-in arrangements. Avoid an unverified ride or address simply because it promises immediate help.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "displacement",
+  "category": "evacuation-shelter",
+  "subcategory": "Displacement",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "displaced",
+    "refugee shelter",
+    "lost home",
+    "temporary housing",
+    "fleeing war"
+  ],
+  "keywords": [
+    "displaced",
+    "refugee shelter",
+    "lost home",
+    "temporary housing",
+    "fleeing war"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

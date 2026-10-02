@@ -40,5 +40,8 @@
     "Suitable water-treatment product used as labeled"
   ],
   "urgency": "planning",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Choose the least contaminated available source and establish whether the problem is microbial or chemical. If the source may contain fuel, industrial chemicals or radioactive material, find another source; a camping filter or boiling is not a universal solution.",
+  "household": "Practise the method with safe supplies before relying on it. Keep food, drinking water and waste areas separate. Make sure children understand which water is safe and where knives, fuel and treatment chemicals must not be handled.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

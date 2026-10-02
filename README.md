@@ -21,3 +21,26 @@ Validate: `python scripts/verify_library.py && node scripts/verify_search.cjs`.
 Generated static pages and PDFs are committed for Netlify's existing static publish.
 The shared page shell lives in `templates/shell.html`. Update sources and the
 article date together; never publish placeholder guides or download buttons.
+# Civilian resilience release — October 2026
+
+The knowledge library contains 74 original guides across 13 subjects, 74 generated action checklists, seven shopping lists and a complete A–Z index. Every guide has a quick answer, immediate actions, a situation-specific no-assistance plan, household considerations and linked references. See AGENTS.md for the enduring mission.
+
+Build and verify:
+
+```sh
+pip install -r requirements-build.txt
+python scripts/build_library.py
+python scripts/refine_site.py
+python scripts/verify_library.py
+node --check app.js
+node --check search.js
+node scripts/verify_search.cjs
+node scripts/verify_ads.cjs
+python scripts/stage_site.py
+```
+
+Netlify runs the build and publishes `dist`. PDFs are regenerated from source during deployment. Source JSON, templates and scripts are excluded from public output. Existing public URLs are preserved.
+
+Advertising zones: 11941494 (MultiTag) on eligible browsing/preparedness pages and 11941449 (vignette) on field-guide pages, only after a deliberate choice. Homepage, search, urgent response, privacy and signup confirmation pages do not initialize either zone. Focus mode reloads without initialization; browser notification permission must be revoked separately. The site limits new zone starts to once per ten minutes per tab session; third-party creative frequency and revenue remain provider-controlled.
+
+Netlify Forms collects optional email signup requests. Automated newsletter delivery is not configured by this release. Search ranking runs locally; query URLs can persist in history and hosting logs. First-aid and conflict material is source-linked editorial guidance, not independently certified clinical or protection advice.

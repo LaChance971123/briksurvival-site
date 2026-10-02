@@ -36,5 +36,8 @@
   "sources": "earthquake",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "After shaking, account for people, put on shoes and check from a safe position for fire, gas smell, damaged wiring and instability. Do not reenter a seriously damaged building while waiting for inspection. Expect aftershocks and keep clear of masonry and power lines.",
+  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

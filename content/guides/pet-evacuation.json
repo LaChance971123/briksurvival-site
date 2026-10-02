@@ -1,0 +1,51 @@
+{
+  "slug": "pet-evacuation",
+  "title": "Evacuating with pets",
+  "label": "EVACUATION",
+  "deck": "Take pets when you can evacuate safely, using a carrier or lead and a destination that accepts them. Keep food, water, medicines, identification and veterinary information together. Do not delay escape into immediate danger or reenter a hazardous building for an animal.",
+  "tldr": "Take pets when you can evacuate safely, using a carrier or lead and a destination that accepts them. Keep food, water, medicines, identification and veterinary information together. Do not delay escape into immediate danger or reenter a hazardous building for an animal.",
+  "steps": [
+    [
+      "Contain animals early",
+      "Use a secure carrier or lead before loading or opening doors. Distress and noise can cause animals to run."
+    ],
+    [
+      "Confirm the destination",
+      "Ask whether pets are accepted and what documents or carriers are needed. Make a backup arrangement with a trusted person."
+    ],
+    [
+      "Pack basic care",
+      "Take normal food, safe water, medicines, waste supplies and a familiar blanket if readily available. Include pet water in the household total."
+    ],
+    [
+      "Keep identification current",
+      "Use a tag and a recent photo, and check microchip contact details before emergencies. Keep veterinary records privately."
+    ],
+    [
+      "Avoid unsafe rescue",
+      "Tell reachable responders where an animal may be, but do not return to fire, floodwater or active danger yourself."
+    ]
+  ],
+  "next": "Check animals regularly for overheating, cold and distress in transport. Keep them restrained in crowded temporary accommodation and maintain hygiene.",
+  "watch": "A service animal and a pet may have different accommodation rules. Never leave animals in a hot vehicle while arranging shelter.",
+  "without_help": "Use a trusted host or verified animal-care arrangement rather than assuming public shelters accept pets. Keep the family and animals together where safe and feasible.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "pets",
+  "category": "evacuation-shelter",
+  "subcategory": "Evacuation",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "pets evacuation",
+    "dog evacuation",
+    "cat emergency"
+  ],
+  "keywords": [
+    "pets evacuation",
+    "dog evacuation",
+    "cat emergency"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

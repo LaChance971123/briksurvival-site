@@ -1,0 +1,53 @@
+{
+  "slug": "heating-failure",
+  "title": "Heating failure in cold weather",
+  "label": "HEATING",
+  "deck": "Use dry layers, blankets and a smaller dry room while you identify safe heat or a warmer reachable place. Never use a gas oven, barbecue or generator to heat indoors. Confusion, slurred speech, unusual drowsiness or poor coordination can mean hypothermia: seek urgent care and begin safe warming.",
+  "tldr": "Use dry layers, blankets and a smaller dry room while you identify safe heat or a warmer reachable place. Never use a gas oven, barbecue or generator to heat indoors. Confusion, slurred speech, unusual drowsiness or poor coordination can mean hypothermia: seek urgent care and begin safe warming.",
+  "steps": [
+    [
+      "Get dry and insulated",
+      "Replace wet clothes, layer loose dry clothing and insulate beneath the body as well as above it. Keep vulnerable people away from draughts."
+    ],
+    [
+      "Use one workable space",
+      "Choose a dry room that remains safe and has a usable exit. Close unnecessary interior doors without blocking ventilation needed by approved heating appliances."
+    ],
+    [
+      "Avoid combustion shortcuts",
+      "Use only heating equipment approved for indoor use according to its instructions, with working CO alarms. A grill, oven or indoor generator is not a backup heater."
+    ],
+    [
+      "Check people regularly",
+      "Cold can impair judgement. Pay particular attention to infants, older people and anyone with illness or limited mobility. Do not rely on a person saying they feel fine."
+    ],
+    [
+      "Move before severe exposure",
+      "Confirm a warmer destination and safe route while people can still travel. Do not cross dangerous ice or an active hazard merely to reach a public warming centre."
+    ]
+  ],
+  "next": "Contact a qualified repair provider when reachable and safe. Plan for medication storage, food, water and sanitation during a longer outage; a portable heater alone does not solve all needs.",
+  "watch": "Do not give alcohol as a warming method or rub frostbitten skin. Fuel-burning devices can create lethal CO even when you cannot smell anything.",
+  "without_help": "Use the safest dry shelter and insulation available while confirming a warmer private or community destination. Leave early if you cannot keep vulnerable people warm rather than waiting for official shelter.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "extreme-cold",
+  "category": "home-building",
+  "subcategory": "Heating",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "no heat",
+    "heater broken",
+    "freezing house",
+    "heating outage"
+  ],
+  "keywords": [
+    "no heat",
+    "heater broken",
+    "freezing house",
+    "heating outage"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

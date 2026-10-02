@@ -36,5 +36,8 @@
   "sources": "generator-safety",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "If there is no safe outdoor position, do not run the generator. Use battery lights and ration stored electrical power for medical needs and communications. Do not improvise a connection to household wiring or operate it indoors because the weather is bad.",
+  "household": "Choose an outside meeting place and check that every person can use the escape route. Keep keys, mobility aids and shoes accessible. Tell neighbours about a hazard from a safe location; do not organise an untrained entry or rescue.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

@@ -3,27 +3,31 @@
   "title": "Armed conflict",
   "label": "CIVILIAN SAFETY",
   "deck": "A civilian plan for shelter, communication, displacement, and unexploded hazards.",
-  "tldr": "If fighting is nearby, get away from windows and exposed areas and follow trustworthy local shelter or evacuation instructions. Keep people together, identify a safe place and a contact outside the area, and carry essential medication and documents if you must leave. Never touch an unfamiliar munition or suspicious debris.",
+  "tldr": "If fighting or explosions are nearby, move away from windows and exposed areas into the most protective intact space you can reach safely. Keep family members together, shoes and essential medicines close, and a plan for losing phone service. Do not cross active fighting for supplies or touch suspicious debris. Assistance and safe passage may be unavailable; judge movement against the danger of staying.",
   "steps": [
     [
-      "Get to safer cover",
-      "Move away from windows and exterior openings to a sturdy interior space when travel is unsafe. If authorities direct an evacuation and the route is safe, follow it."
+      "Choose shelter before the next attack",
+      "Prefer a designated protective shelter if safely reachable. Otherwise use the most protective intact interior area available, away from glazing. Consider collapse, fire and flooding as well as blast exposure; no ordinary room guarantees safety."
     ],
     [
-      "Keep a family plan",
-      "Agree on a meeting point and an out-of-area contact. Write down important numbers; phone and data service may fail."
+      "Keep essentials beside you",
+      "Gather a battery light, footwear, safe water, medicines and written contacts without exposing yourself to retrieve them. Keep corridors and exits clear."
     ],
     [
-      "Prepare for movement",
-      "Keep identification, medication, water, phone power, weather-appropriate clothing, and children\u2019s essentials accessible. Check current routes and shelter options before departure."
+      "Make a family check-in plan",
+      "Choose nearby and out-of-area reunion contacts. Use short private messages with your location and status; do not publish live movements or other people’s locations."
     ],
     [
-      "Avoid explosive remnants",
-      "Do not approach, handle, or move unexploded objects. Keep others away and report the location through local authorities when safe."
+      "Reassess before moving",
+      "Confirm a destination and route as recently as possible with independent trusted information. A claimed corridor or ceasefire is not proof of safe passage. Do not cross active fighting."
+    ],
+    [
+      "Avoid explosive debris",
+      "Leave unfamiliar objects, wires, fragments and abandoned munitions untouched. Warn people from a safe position and use verified demining or humanitarian channels when safe."
     ]
   ],
-  "next": "If abroad, check your country's embassy or consular crisis messages; do not assume transport or evacuation will be provided. Reassess each movement against current conditions rather than an old map or rumor.",
-  "watch": "This is civilian protective guidance, not a movement order. The safest choice can change quickly with the location, time, and instructions from responsible authorities.",
+  "next": "Inventory water, food, medical supplies and power for the people with you. Arrange care tasks and check-ins with trusted neighbours where safe. Verify humanitarian assistance directly; do not assume government, embassy or aid transport will arrive.",
+  "watch": "A lull is not an all-clear. Fire, damaged structures, unexploded ordnance and interrupted utilities remain dangerous. Avoid confrontation with armed personnel; local protection risks determine whether contacting officials is safe.",
   "sources": "conflict",
   "category": "conflict",
   "subcategory": "Conflict",
@@ -36,5 +40,8 @@
     "Conflict"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Choose the most protective reachable room before another attack, keep footwear and a light there, and keep essential medicines close. Do not cross active fighting to collect supplies. Use verified humanitarian contacts and trusted people; government assistance or safe passage may not exist.",
+  "household": "Choose two reunion places and an out-of-area contact. Keep children with a trusted caregiver and carry a written contact card. Share sensitive addresses and travel details only with people who need them; avoid posting live locations or images of other families without consent.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

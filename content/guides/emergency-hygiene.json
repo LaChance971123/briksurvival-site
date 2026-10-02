@@ -1,0 +1,61 @@
+{
+  "slug": "emergency-hygiene",
+  "title": "Hygiene with limited water",
+  "label": "FOOD & HYGIENE",
+  "deck": "Reserve safe water for drinking, food, medicines and essential hygiene. Wash hands with safe water and soap before food preparation and after toilet or waste handling. Keep clean and dirty tasks separate. Sanitiser with at least 60% alcohol helps when hands are not visibly dirty; it does not remove chemicals or replace washing dirty hands.",
+  "tldr": "Reserve safe water for drinking, food, medicines and essential hygiene. Wash hands with safe water and soap before food preparation and after toilet or waste handling. Keep clean and dirty tasks separate. Sanitiser with at least 60% alcohol helps when hands are not visibly dirty; it does not remove chemicals or replace washing dirty hands.",
+  "steps": [
+    [
+      "Set up a clean station",
+      "Put safe water, soap and a clean towel or air-drying arrangement near food and care tasks. Use a container that does not require everyone to dip dirty hands into the supply."
+    ],
+    [
+      "Prioritise key washing times",
+      "Wash after toilet and waste handling, before eating or preparing food and before wound or infant care. Do not use suspected chemically contaminated water on skin."
+    ],
+    [
+      "Use sanitiser appropriately",
+      "Use at least 60% alcohol sanitiser when soap and safe water are unavailable and hands are not visibly dirty. Keep it away from flames and children."
+    ],
+    [
+      "Separate waste and food",
+      "Store rubbish and toilet waste away from water, food and sleeping areas. Clean high-contact surfaces using product instructions without mixing chemicals."
+    ],
+    [
+      "Plan personal care",
+      "Include menstrual supplies, nappies, necessary skin care and clean clothing. Keep wounds clean and covered; worsening redness, pain or fever needs medical assessment."
+    ]
+  ],
+  "next": "Replenish safe water when a verified source becomes available. Keep a routine that the household can sustain; a simple clean station is more useful than occasional improvised deep cleaning.",
+  "watch": "Surface disinfectant is not drinking-water treatment. Do not apply household bleach to skin or mix bleach with ammonia or other cleaners.",
+  "without_help": "Use the smallest workable clean-water station and protect it from contamination. Reduce nonessential washing before cutting drinking water or essential handwashing.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "hygiene",
+  "category": "field-skills",
+  "subcategory": "Food & hygiene",
+  "content_type": "Field guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "no running water hygiene",
+    "wash hands outage",
+    "limited water",
+    "sanitation"
+  ],
+  "keywords": [
+    "no running water hygiene",
+    "wash hands outage",
+    "limited water",
+    "sanitation"
+  ],
+  "urgency": "planning",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "shopping": [
+    "Soap",
+    "Food-grade water container with tap",
+    "Alcohol hand sanitiser",
+    "Leak-resistant waste bags",
+    "Menstrual or infant supplies",
+    "Clean cloths and gloves"
+  ]
+}

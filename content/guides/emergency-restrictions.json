@@ -3,7 +3,7 @@
   "title": "Emergency restrictions & martial law",
   "label": "CIVIC CONDITIONS",
   "deck": "Find the actual order. Work from its words, place, and time.",
-  "tldr": "If officials announce a curfew, movement restriction, state of emergency, or martial law, find the actual order from the authority that issued it. Check the affected area, start and end times, permitted travel, essential-service exceptions, and how updates will be announced. Keep identification and necessary medical information accessible, and seek qualified local legal help for a rights or detention question.",
+  "tldr": "Check what restriction actually applies to your location and time, and plan essential travel cautiously. Keep identification and medical information accessible. Avoid confrontation at checkpoints; an official order does not guarantee safe treatment or passage. Where authorities are a source of threat, use trusted local legal or humanitarian support if contacting them is safe. Rules and rights vary by jurisdiction.",
   "steps": [
     [
       "Verify the announcement",
@@ -23,7 +23,7 @@
     ]
   ],
   "next": "A declaration of emergency, a curfew, and martial law are distinct legal actions. Their meaning and lawful scope depend on the jurisdiction and the actual instrument issued; this guide cannot determine the law for a specific place.",
-  "watch": "Do not infer blanket rules from the phrase \u201cmartial law\u201d in a headline. Follow live safety instructions, and verify any claim about suspended rights or universal powers against the actual order and local legal advice.",
+  "watch": "Do not infer blanket rules from the phrase “martial law” in a headline. Follow live safety instructions, and verify any claim about suspended rights or universal powers against the actual order and local legal advice.",
   "sources": "restrictions",
   "category": "conflict",
   "subcategory": "Civil disruption",
@@ -36,5 +36,8 @@
     "Civil disruption"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Avoid confrontation and plan essential travel conservatively. An order does not guarantee that a checkpoint or transport corridor is safe. Where authorities are implicated in abuse, seek trusted local legal or humanitarian support when doing so will not increase your exposure. Do not broadcast sensitive travel plans.",
+  "household": "Choose two reunion places and an out-of-area contact. Keep children with a trusted caregiver and carry a written contact card. Share sensitive addresses and travel details only with people who need them; avoid posting live locations or images of other families without consent.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

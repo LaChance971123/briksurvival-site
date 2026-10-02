@@ -1,0 +1,53 @@
+{
+  "slug": "checkpoint-safety",
+  "title": "Checkpoints & interrupted travel",
+  "label": "CIVILIAN PROTECTION",
+  "deck": "Avoid unnecessary travel through active fighting or uncertain checkpoints. Check the route and requirements as recently as possible, keep identification and essential medical information accessible, and avoid confrontation. A uniform, posted order or claimed safe corridor does not guarantee safe passage. Rules and protection risks differ by place.",
+  "tldr": "Avoid unnecessary travel through active fighting or uncertain checkpoints. Check the route and requirements as recently as possible, keep identification and essential medical information accessible, and avoid confrontation. A uniform, posted order or claimed safe corridor does not guarantee safe passage. Rules and protection risks differ by place.",
+  "steps": [
+    [
+      "Decide whether travel is necessary",
+      "Compare the danger of staying with the risks of the route. Do not travel only to investigate a closure. Have a known destination and another option."
+    ],
+    [
+      "Verify current conditions",
+      "Compare recent trusted local information with independently verified humanitarian information. Check dates and exact locations; old route advice may be unsafe."
+    ],
+    [
+      "Keep essential documents accessible",
+      "Carry identification and medical information securely. Know where they are so you do not need a hurried search. Do not display sensitive details unnecessarily."
+    ],
+    [
+      "Avoid escalating an encounter",
+      "Remain calm, avoid sudden gestures and do not film an encounter when doing so increases danger. There is no universal script that guarantees safe treatment."
+    ],
+    [
+      "Keep the household together",
+      "Have an agreed check-in and separation plan. Do not send a child or vulnerable person ahead alone to test a route."
+    ]
+  ],
+  "next": "Where you face detention or abuse risk, seek trusted local legal or humanitarian protection advice before travel when possible. Keep a private record of events only when doing so is safe.",
+  "watch": "This is civilian safety planning, not advice to evade checkpoints or legal restrictions. Never assume passage based on a map, an insignia or an unverified promise.",
+  "without_help": "If nobody can verify a route and travel is not immediately necessary, remain in the safer available place while reassessing. Do not assume a public convoy or unofficial driver has secured protection.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "displacement",
+  "category": "conflict",
+  "subcategory": "Civilian protection",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "checkpoint",
+    "roadblock",
+    "curfew travel",
+    "road closed conflict"
+  ],
+  "keywords": [
+    "checkpoint",
+    "roadblock",
+    "curfew travel",
+    "road closed conflict"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

@@ -3,7 +3,7 @@
   "title": "Water disruption",
   "label": "WATER",
   "deck": "Read the exact notice before treating or using tap water.",
-  "tldr": "Find the current water advisory for your address and follow its exact wording. A boil-water advisory, do-not-drink notice, and do-not-use notice require different actions. Boiling can kill germs, but it does not remove chemical contamination. Use sealed bottled or otherwise approved water until the utility or health authority clears the notice.",
+  "tldr": "After a water outage, damaged pipes or suspected contamination, use sealed bottled or previously stored safe water until you establish the risk. Boil-water, do-not-drink and do-not-use notices mean different things. Boiling kills germs but does not remove fuel, chemicals or radioactive contamination. If notices are unavailable, do not treat clear water or restored pressure as proof of safety.",
   "steps": [
     [
       "Identify the notice",
@@ -37,5 +37,8 @@
     "Water"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "If there is no notice after pressure loss, flooding or damaged pipes, use sealed or previously stored safe water while you establish the risk. Do not assume that boiling solves an unknown contamination problem. Label containers and keep drinking water separate from cleaning water.",
+  "household": "Write down water, food, battery and medication needs for each person. Keep clean and dirty containers separate and preserve essential power before entertainment. Agree on the point at which lack of water, medical support or safe temperature means you must relocate.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

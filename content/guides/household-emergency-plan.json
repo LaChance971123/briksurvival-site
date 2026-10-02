@@ -36,5 +36,8 @@
   "sources": "household-emergency-plan",
   "shopping": [],
   "urgency": "planning",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Give each household member a written copy with two meeting places, two contacts and essential medical details. Practise the plan with phones off. Include a destination you can actually reach without an official shelter or rescue transport.",
+  "household": "Build the plan around the least mobile person and the shortest critical supply. Try carrying the kit, opening containers and using the light in the dark. Spend first on safe water, essential medicines, basic food and communication rather than specialised gear you cannot use.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

@@ -38,5 +38,8 @@
   "sources": "communications-outage",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Write a short message with your status, location and next check-in time; try it periodically rather than draining the battery with constant retries. Use your agreed meeting plan only when the route is safe. Do not split up to hunt for signal.",
+  "household": "Use one agreed check-in message and time so several people do not drain batteries repeating the same search. Share updates privately and include the time and location. Keep essential contacts on paper and teach children which trusted people they can approach.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

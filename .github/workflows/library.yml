@@ -13,6 +13,8 @@ jobs:
           node-version: '22'
       - run: pip install -r requirements-build.txt
       - run: python scripts/build_library.py
+      - run: python scripts/refine_site.py
       - run: python scripts/verify_library.py
       - run: node --check app.js && node --check search.js
       - run: node scripts/verify_search.cjs
+      - run: node scripts/verify_ads.cjs

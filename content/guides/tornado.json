@@ -37,5 +37,8 @@
   "sources": "tornado",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Go to your identified shelter without waiting for confirmation when a warning or nearby clear danger is present. Keep shoes, a light and head protection close. If in a mobile home, use a nearby sturdy shelter before conditions worsen; never attempt to outrun a tornado in traffic.",
+  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

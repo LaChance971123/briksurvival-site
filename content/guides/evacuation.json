@@ -3,7 +3,7 @@
   "title": "Evacuation",
   "label": "MOVEMENT",
   "deck": "A departure is easier when the destination and route are already decided.",
-  "tldr": "Follow the evacuation order for your area. Leave early enough to use a safe route; take people, pets, medication, identification, phone and charger, keys, and a few essentials. Know where you are going, tell a contact, and do not take a closed or flooded road.",
+  "tldr": "Leave a threatened location while a safer route and destination are still available. Take people, pets, essential medicines, identification, shoes, water and phone power; do not delay for belongings. Confirm the route and a place to stay, tell a trusted contact, and avoid flooded, closed or actively dangerous roads. Do not wait for an order when immediate danger is evident. Radiation or airborne hazards may make sheltering safer than travel.",
   "steps": [
     [
       "Confirm the order",
@@ -37,5 +37,8 @@
     "Evacuation"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Choose a reachable destination with someone you trust, identify a second route, and agree on a check-in. Do not wait for transport that has not been confirmed. If the route is actively dangerous, compare the specific hazard of staying with the hazard of moving; shelter while reassessing if no safer route is available.",
+  "household": "Keep the group together with a named adult responsible for each child or person needing assistance. Count people at every departure and arrival. Write contact details on paper, retain necessary medicines and agree what to do if one person cannot travel.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

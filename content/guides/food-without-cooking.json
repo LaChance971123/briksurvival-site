@@ -1,0 +1,61 @@
+{
+  "slug": "food-without-cooking",
+  "title": "Food when cooking is unavailable",
+  "label": "FOOD & HYGIENE",
+  "deck": "Use safe ready-to-eat food, protect drinking water and keep hands and utensils clean. Do not run a camping stove, grill or charcoal indoors. Check food-storage times and temperatures after power loss; never taste suspect food to decide whether it is safe. Plan around dietary and medical needs.",
+  "tldr": "Use safe ready-to-eat food, protect drinking water and keep hands and utensils clean. Do not run a camping stove, grill or charcoal indoors. Check food-storage times and temperatures after power loss; never taste suspect food to decide whether it is safe. Plan around dietary and medical needs.",
+  "steps": [
+    [
+      "Inventory safe food",
+      "Count shelf-stable items that can be eaten without heating and identify a manual opener. Separate suspect refrigerated food from safe supplies."
+    ],
+    [
+      "Plan small portions",
+      "Open only what can be eaten safely when refrigeration is unavailable. Read the label for storage after opening."
+    ],
+    [
+      "Protect water and hygiene",
+      "Use safe water for food and essential washing. Keep preparation surfaces separate from toilet waste and dirty containers."
+    ],
+    [
+      "Keep combustion outside",
+      "Use cooking equipment only in the location and manner its instructions allow. Never burn charcoal or use a camp stove inside a room, garage or enclosed balcony."
+    ],
+    [
+      "Include special needs",
+      "Plan for infants, allergies, diabetes, swallowing difficulty and pets. Do not change prescribed diets or infant formula preparation without qualified advice."
+    ]
+  ],
+  "next": "Replenish through a verified reachable source before supplies become critical. Set aside easy-to-carry food for movement and avoid creating a plan that depends entirely on fuel or refrigeration.",
+  "watch": "Food that looks and smells normal can still be unsafe. Do not salvage leaking, swollen or flood-contaminated packaging.",
+  "without_help": "Use known safe shelf-stable food already present and a written meal inventory. If no safe cooking position exists, choose food that does not need cooking rather than improvising an indoor flame.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "food-safety-outage",
+  "category": "field-skills",
+  "subcategory": "Food & hygiene",
+  "content_type": "Field guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "no stove",
+    "no cooking",
+    "food blackout",
+    "cold emergency meals"
+  ],
+  "keywords": [
+    "no stove",
+    "no cooking",
+    "food blackout",
+    "cold emergency meals"
+  ],
+  "urgency": "planning",
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "shopping": [
+    "Ready-to-eat shelf-stable meals",
+    "Manual can opener",
+    "Safe drinking water",
+    "Clean utensils",
+    "Soap",
+    "Food matching dietary needs"
+  ]
+}

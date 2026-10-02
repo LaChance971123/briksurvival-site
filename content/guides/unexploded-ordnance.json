@@ -1,0 +1,55 @@
+{
+  "slug": "unexploded-ordnance",
+  "title": "Mines & unexploded ordnance",
+  "label": "EXPLOSIVE HAZARDS",
+  "deck": "Do not approach, touch, move, collect or attempt to dismantle a suspicious object, munition or wire. Keep other people away from a safe position. Avoid abandoned positions, disturbed ground and routes that have not been assessed after fighting. Report only through a safe verified channel; do not enter a hazardous area to identify an object.",
+  "tldr": "Do not approach, touch, move, collect or attempt to dismantle a suspicious object, munition or wire. Keep other people away from a safe position. Avoid abandoned positions, disturbed ground and routes that have not been assessed after fighting. Report only through a safe verified channel; do not enter a hazardous area to identify an object.",
+  "steps": [
+    [
+      "Stop approaching",
+      "Do not move closer to inspect, photograph or identify the object. Small fragments and abandoned everyday objects can conceal explosive hazards."
+    ],
+    [
+      "Keep others away",
+      "Warn people from where you are safe. Keep children and animals away without crossing suspect ground. Do not place a marker beside the object."
+    ],
+    [
+      "Avoid uncertain routes",
+      "Stay out of abandoned military sites and recently fought-over or marked hazardous areas. A road, field or house that was once safe may no longer be."
+    ],
+    [
+      "Share the location safely",
+      "From a safe place, describe the general location to verified demining, humanitarian or emergency contacts. Do not broadcast a precise route that invites others to approach."
+    ],
+    [
+      "Do not attempt a rescue into suspect ground",
+      "Call specialist help when reachable. Entering a suspected mined area can create additional casualties; do not improvise a clearance or dismantling method."
+    ]
+  ],
+  "next": "Teach children a simple rule: do not touch, move away from the hazard without approaching it, tell a trusted adult. Use routes confirmed safe by qualified local assessment; no appearance-based test proves ground is clear.",
+  "watch": "Never burn, bury, throw, transport or disturb an object. This guide cannot determine a safe distance or a safe escape path through mined ground.",
+  "without_help": "If no qualified contact answers, keep the area avoided and warn trusted people from a safe location. Do not treat the lack of an official sign or report as proof that it is safe.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "explosive-hazards",
+  "category": "conflict",
+  "subcategory": "Explosive hazards",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "uxo",
+    "landmine",
+    "unexploded bomb",
+    "suspicious munition",
+    "minefield"
+  ],
+  "keywords": [
+    "uxo",
+    "landmine",
+    "unexploded bomb",
+    "suspicious munition",
+    "minefield"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

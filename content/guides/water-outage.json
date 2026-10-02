@@ -7,7 +7,8 @@
   "updated": "2026-10-02",
   "aliases": [
     "no water",
-    "tap not running"
+    "tap not running",
+    "no running water"
   ],
   "keywords": [
     "Water"
@@ -36,5 +37,8 @@
   "sources": "water-outage",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked"
+  "review_status": "source-linked editorial review; not independent expert certification",
+  "without_help": "Inventory clean containers and safe water, then prioritise drinking, food, medicines and hand hygiene. Do not use nonpotable water in food or formula. Plan toilet and waste arrangements separately and keep them away from food and water storage.",
+  "household": "Write down water, food, battery and medication needs for each person. Keep clean and dirty containers separate and preserve essential power before entertainment. Agree on the point at which lack of water, medical support or safe temperature means you must relocate.",
+  "pack_now": "Keep essential medicines, drinking water, a battery light, shoes, phone power and a written contact card within reach. Adapt the load to the hazard and the people with you; do not delay escape to collect equipment."
 }

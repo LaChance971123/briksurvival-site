@@ -1,0 +1,55 @@
+{
+  "slug": "medication-continuity",
+  "title": "Medicines during disrupted services",
+  "label": "CARE & ACCESSIBILITY",
+  "deck": "Keep essential medicines, a written medication list and the supplies needed to administer them accessible. Follow each product’s storage instructions and protect medicines from floodwater, freezing and excess heat. Contact a pharmacist or clinician for a product-specific shortage or storage problem; do not change doses or substitute medicines on your own.",
+  "tldr": "Keep essential medicines, a written medication list and the supplies needed to administer them accessible. Follow each product’s storage instructions and protect medicines from floodwater, freezing and excess heat. Contact a pharmacist or clinician for a product-specific shortage or storage problem; do not change doses or substitute medicines on your own.",
+  "steps": [
+    [
+      "Write the essential list",
+      "Record the medicine name, strength, usual dose, prescriber, pharmacy and allergies. Keep a paper copy with the medicine and a copy with a trusted contact."
+    ],
+    [
+      "Count usable supply",
+      "Track what remains and identify which medicine interruption is most urgent. Include inhalers, needles, testing supplies and batteries, not just tablets."
+    ],
+    [
+      "Protect storage",
+      "Use the product label and pharmacist advice for temperature limits. Avoid direct heat and sunlight; do not let temperature-sensitive medicines freeze against ice packs."
+    ],
+    [
+      "Contact alternatives early",
+      "Try a reachable pharmacy, clinician or verified medical aid provider before the supply is exhausted. Ask about the exact product; replacement rules vary."
+    ],
+    [
+      "Keep treatment unchanged unless advised",
+      "Do not ration by skipping or doubling doses without professional direction. Seek urgent medical help for deterioration rather than trying an unverified substitute."
+    ]
+  ],
+  "next": "Before a disruption, agree a refill and storage plan with the prescriber or pharmacist, within local rules. If you use insulin or powered equipment, keep its specific emergency instructions with the kit.",
+  "watch": "A medicine can be unsafe after heat or flood exposure even when its package looks normal. Product-specific advice matters; there is no universal safe unrefrigerated storage period.",
+  "without_help": "Use the written list to seek qualified advice through a reachable pharmacy or verified clinic. Preserve safe storage and track supply. If a life-critical treatment cannot be maintained, prioritise relocation to care before the last dose or battery is used.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "medication",
+  "category": "preparedness",
+  "subcategory": "Care & accessibility",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "medication shortage",
+    "medicine power outage",
+    "insulin blackout",
+    "prescription emergency",
+    "out of medicine",
+    "need medication"
+  ],
+  "keywords": [
+    "medication shortage",
+    "medicine power outage",
+    "insulin blackout",
+    "prescription emergency"
+  ],
+  "urgency": "planning",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

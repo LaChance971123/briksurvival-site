@@ -1,0 +1,53 @@
+{
+  "slug": "infant-child-preparedness",
+  "title": "Infants & children during disruption",
+  "label": "CARE & ACCESSIBILITY",
+  "deck": "Keep children with a trusted caregiver and plan safe feeding, water, hygiene, medicines and warmth around their age and needs. Put written contacts with each child and agree a reunion plan. Use age-appropriate feeding guidance; do not dilute formula or use unsafe water to stretch supplies.",
+  "tldr": "Keep children with a trusted caregiver and plan safe feeding, water, hygiene, medicines and warmth around their age and needs. Put written contacts with each child and agree a reunion plan. Use age-appropriate feeding guidance; do not dilute formula or use unsafe water to stretch supplies.",
+  "steps": [
+    [
+      "Name the caregiver",
+      "Decide who stays with each child during sheltering and travel. Use a familiar trusted backup; do not hand children to unverified helpers."
+    ],
+    [
+      "Protect feeding",
+      "Maintain breastfeeding where applicable. Ready-to-feed formula can avoid preparation water needs when available; follow product and age-specific guidance. Do not improvise formula or change dilution."
+    ],
+    [
+      "Keep hygiene supplies",
+      "Pack nappies, wipes, soap, clean clothing and safe water for essential care. Keep feeding equipment clean and separate from waste."
+    ],
+    [
+      "Keep a contact card",
+      "Use necessary caregiver contact details and medical information without displaying sensitive identity details publicly. Teach older children the agreed safe contacts."
+    ],
+    [
+      "Use simple explanations",
+      "Explain the next action calmly and specifically. Familiar routines and a comfort item can help; avoid promising that you know when danger will end."
+    ]
+  ],
+  "next": "Plan quantities for the actual feeding and care routine, and ask a qualified clinician for special dietary or medical needs. Include medications and transport or sleeping arrangements.",
+  "watch": "Infants can deteriorate quickly with dehydration, temperature exposure or illness. Seek qualified care for concerning symptoms; do not rely on adult treatment advice.",
+  "without_help": "Use the caregiver plan and safe supplies already available while seeking verified medical or feeding support. Do not stretch formula with extra water or leave a child alone to find supplies.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "children",
+  "category": "preparedness",
+  "subcategory": "Care & accessibility",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "baby emergency",
+    "children war",
+    "infant supplies",
+    "formula outage"
+  ],
+  "keywords": [
+    "baby emergency",
+    "children war",
+    "infant supplies",
+    "formula outage"
+  ],
+  "urgency": "planning",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}

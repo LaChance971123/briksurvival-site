@@ -1,0 +1,57 @@
+{
+  "slug": "family-reunification",
+  "title": "Family separation & reunification",
+  "label": "FAMILY REUNIFICATION",
+  "deck": "Stay in a safe place, try the agreed contact and meeting plan, and record the missing person’s last confirmed location and time. Keep children with a trusted caregiver. Use verified Red Cross or humanitarian family-tracing channels if available. Do not publish sensitive personal details or enter danger to search.",
+  "tldr": "Stay in a safe place, try the agreed contact and meeting plan, and record the missing person’s last confirmed location and time. Keep children with a trusted caregiver. Use verified Red Cross or humanitarian family-tracing channels if available. Do not publish sensitive personal details or enter danger to search.",
+  "steps": [
+    [
+      "Record facts",
+      "Write the last confirmed contact, location, time, description and medical needs. Distinguish what you know from rumours. Keep a recent photo privately if available."
+    ],
+    [
+      "Try agreed channels",
+      "Send a short text to the person and the out-of-area contact. Leave your own location and next check-in time. A sent message may not be delivered."
+    ],
+    [
+      "Use the safe meeting plan",
+      "Go to the meeting point only if the route and location are safe. Do not send several people independently into a hazardous area."
+    ],
+    [
+      "Verify tracing services",
+      "Use independently found Red Cross or humanitarian contacts. Check the organisation rather than trusting a forwarded number, and ask how information will be protected."
+    ],
+    [
+      "Protect children",
+      "Never hand a child to an unverified adult promising reunification. Keep a written contact card and involve a trusted caregiver or verified protection service."
+    ]
+  ],
+  "next": "Keep one person coordinating the information so sightings, contacts and dates are not lost. Update the record when someone is found and tell verified tracing services to stop circulating old requests.",
+  "watch": "Scammers may demand money or identity documents. Do not post full identity numbers, sensitive addresses or real-time movements publicly.",
+  "without_help": "If networks fail, follow the written reunion plan only where safe and leave a message with the agreed trusted contact. Keep your own location predictable rather than repeatedly moving between unsafe places.",
+  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect.",
+  "pack_now": "Keep essential medicines, safe drinking water, a battery light, footwear, phone power and written contacts accessible. Carry only what you can manage; collecting supplies must not delay escape.",
+  "sources": "family-links",
+  "category": "evacuation-shelter",
+  "subcategory": "Family reunification",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "missing family",
+    "separated child",
+    "family lost",
+    "reunite",
+    "cant find family",
+    "my family is missing",
+    "missing child"
+  ],
+  "keywords": [
+    "missing family",
+    "separated child",
+    "family lost",
+    "reunite",
+    "cant find family"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked editorial review; not independent expert certification"
+}
