@@ -72,6 +72,21 @@ for (const button of document.querySelectorAll("[data-print]")) button.addEventL
     note.textContent = 'Focus mode is on. This page will not initialise advertisements.';
   });
   let loaded = false;
+  // Register before the provider so its click handlers cannot consume this control.
+  const stopAdvertising = () => {
+    try { safeWrite(window.localStorage, 'oz-focus', 'true'); } catch { /* private mode */ }
+    window.location.reload();
+  };
+  window.addEventListener('pointerdown', event => {
+    if (loaded && focus.contains(event.target)) {
+      event.preventDefault(); event.stopImmediatePropagation(); stopAdvertising();
+    }
+  }, true);
+  window.addEventListener('keydown', event => {
+    if (loaded && event.key === 'Escape') {
+      event.preventDefault(); event.stopImmediatePropagation(); stopAdvertising();
+    }
+  }, true);
   enable.addEventListener('click', () => {
     if (loaded) return;
     let last = 0;
@@ -89,7 +104,12 @@ for (const button of document.querySelectorAll("[data-print]")) button.addEventL
       script.src = 'https://5gvci.com/act/files/tag.min.js?z=11941494';
     }
     script.addEventListener('error', () => { note.textContent = 'Advertising could not load. All guides remain available.'; });
-    script.addEventListener('load', () => { note.textContent = 'Advertising provider loaded. Ad availability varies; focus mode stops ads after a reload.'; });
+    script.addEventListener('load', () => {
+      note.textContent = 'Advertising provider loaded. Use focus mode or press Escape to reload without ads.';
+      focus.classList.add('ad-stop-button'); focus.textContent = 'Stop ads · Focus mode';
+      // Keep the escape control outside the document layout and above overlays.
+      document.body.appendChild(focus);
+    });
     loaded = true; enable.disabled = true; focus.textContent = 'Use focus mode'; focus.setAttribute('aria-pressed', 'false');
     note.textContent = 'Loading the advertising provider…';
     document.body.appendChild(script);
