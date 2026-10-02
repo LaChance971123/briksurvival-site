@@ -1,0 +1,42 @@
+{
+  "slug": "extreme-heat",
+  "title": "Extreme heat",
+  "category": "natural-hazards",
+  "subcategory": "Heat & dry conditions",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "heat wave",
+    "heatwave",
+    "too hot",
+    "no ac"
+  ],
+  "keywords": [
+    "Heat & dry conditions"
+  ],
+  "tldr": "Move to air conditioning or a designated cooling space, reduce exertion and drink water regularly unless your clinician restricts fluids. Confusion, collapse or seizures in heat can mean heat stroke: call emergency services and start rapid cooling.",
+  "steps": [
+    [
+      "Find a cooler place",
+      "Use air conditioning, a public cooling center or another safe indoor location."
+    ],
+    [
+      "Reduce heat load",
+      "Rest, loosen unnecessary clothing and use cool wet cloths or a cool shower."
+    ],
+    [
+      "Check on others",
+      "Older adults, infants, outdoor workers and people with illness may need help. Never leave anyone or pets in a parked vehicle."
+    ],
+    [
+      "Recognize an emergency",
+      "For altered mental status or collapse, call emergency services and cool the person while waiting; do not give drinks to someone unable to swallow."
+    ]
+  ],
+  "next": "Plan activities for cooler hours and follow heat alerts. Arrange safe transport before the home becomes dangerously hot.",
+  "watch": "Heat stroke can occur with sweating. Do not wait for dry skin.",
+  "sources": "extreme-heat",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

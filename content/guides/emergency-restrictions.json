@@ -1,0 +1,40 @@
+{
+  "slug": "emergency-restrictions",
+  "title": "Emergency restrictions & martial law",
+  "label": "CIVIC CONDITIONS",
+  "deck": "Find the actual order. Work from its words, place, and time.",
+  "tldr": "If officials announce a curfew, movement restriction, state of emergency, or martial law, find the actual order from the authority that issued it. Check the affected area, start and end times, permitted travel, essential-service exceptions, and how updates will be announced. Keep identification and necessary medical information accessible, and seek qualified local legal help for a rights or detention question.",
+  "steps": [
+    [
+      "Verify the announcement",
+      "Read the original order or official alert rather than a repost. Confirm the issuing authority, jurisdiction, and effective time."
+    ],
+    [
+      "Map the practical effect",
+      "Note what movement or services are restricted, who is exempt, and where to obtain food, medication, medical care, and shelter."
+    ],
+    [
+      "Plan essential movement",
+      "Carry identification and relevant documentation, tell a contact your route, and use current official information about closures and checkpoints. Avoid unnecessary travel into a restricted area."
+    ],
+    [
+      "Keep records and reassess",
+      "Save the order, updates, and emergency contacts offline if possible. If you are detained or need advice about your rights, contact a qualified attorney or local legal aid."
+    ]
+  ],
+  "next": "A declaration of emergency, a curfew, and martial law are distinct legal actions. Their meaning and lawful scope depend on the jurisdiction and the actual instrument issued; this guide cannot determine the law for a specific place.",
+  "watch": "Do not infer blanket rules from the phrase \u201cmartial law\u201d in a headline. Follow live safety instructions, and verify any claim about suspended rights or universal powers against the actual order and local legal advice.",
+  "sources": "restrictions",
+  "category": "conflict",
+  "subcategory": "Civil disruption",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "martial law"
+  ],
+  "keywords": [
+    "Civil disruption"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

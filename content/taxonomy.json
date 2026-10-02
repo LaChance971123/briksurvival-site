@@ -1,0 +1,113 @@
+[
+  {
+    "id": "natural-hazards",
+    "title": "Natural hazards",
+    "subcategories": [
+      "Severe storms",
+      "Tropical weather",
+      "Winter",
+      "Heat & dry conditions",
+      "Flooding",
+      "Geological",
+      "Coastal & ocean",
+      "Mountain",
+      "Volcanic",
+      "Fire & air"
+    ]
+  },
+  {
+    "id": "home-building",
+    "title": "Home, fire & buildings",
+    "subcategories": [
+      "Fire",
+      "Air & gas",
+      "Backup power"
+    ]
+  },
+  {
+    "id": "utilities",
+    "title": "Utilities & infrastructure",
+    "subcategories": [
+      "Electricity",
+      "Water"
+    ]
+  },
+  {
+    "id": "medical",
+    "title": "Medical & first aid",
+    "subcategories": [
+      "Resuscitation",
+      "Airway",
+      "Injury"
+    ]
+  },
+  {
+    "id": "public-health",
+    "title": "Public health",
+    "subcategories": [
+      "Infectious disease"
+    ]
+  },
+  {
+    "id": "chemical-radiation",
+    "title": "Chemical, radiation & industry",
+    "subcategories": [
+      "Chemical",
+      "Radiation"
+    ]
+  },
+  {
+    "id": "conflict",
+    "title": "Conflict & civil disruption",
+    "subcategories": [
+      "Conflict",
+      "Civil disruption"
+    ]
+  },
+  {
+    "id": "evacuation-shelter",
+    "title": "Evacuation & shelter",
+    "subcategories": [
+      "Evacuation",
+      "Shelter"
+    ]
+  },
+  {
+    "id": "preparedness",
+    "title": "Preparedness",
+    "subcategories": [
+      "Planning",
+      "Kits & supplies",
+      "Water & food"
+    ]
+  },
+  {
+    "id": "communications",
+    "title": "Communications & information",
+    "subcategories": [
+      "Warnings & information",
+      "Connectivity"
+    ]
+  },
+  {
+    "id": "field-skills",
+    "title": "Field & survival skills",
+    "subcategories": [
+      "Water"
+    ]
+  },
+  {
+    "id": "vehicle-travel",
+    "title": "Vehicle & travel",
+    "subcategories": [
+      "Roadside"
+    ]
+  },
+  {
+    "id": "recovery",
+    "title": "Recovery & aftermath",
+    "subcategories": [
+      "Food & water"
+    ]
+  }
+]

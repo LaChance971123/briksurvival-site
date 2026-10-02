@@ -1,0 +1,39 @@
+{
+  "slug": "tropical-storm",
+  "title": "Tropical storm",
+  "category": "natural-hazards",
+  "subcategory": "Tropical weather",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "tropical cyclone"
+  ],
+  "keywords": [
+    "Tropical weather"
+  ],
+  "tldr": "Treat tropical storm warnings seriously: dangerous flooding, surge, wind and tornadoes can occur. Check local evacuation instructions, avoid flooded roads, and take shelter before conditions become unsafe.",
+  "steps": [
+    [
+      "Read all warnings",
+      "Check flood, surge and tornado notices as well as wind forecasts."
+    ],
+    [
+      "Prepare before arrival",
+      "Charge devices, secure loose outdoor items while safe and arrange essential medicines and supplies."
+    ],
+    [
+      "Leave if ordered",
+      "Follow the evacuation zone and route instructions for your address."
+    ],
+    [
+      "Keep travel limited",
+      "Stay off roads during hazardous weather and never drive into floodwater."
+    ]
+  ],
+  "next": "Monitor updates after the storm passes; rivers may keep rising and power lines may remain live.",
+  "watch": "A storm below hurricane strength can still cause catastrophic flooding.",
+  "sources": "tropical-storm",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

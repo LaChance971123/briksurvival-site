@@ -1,0 +1,41 @@
+{
+  "slug": "pandemic",
+  "title": "Pandemic & disease outbreak",
+  "category": "public-health",
+  "subcategory": "Infectious disease",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "outbreak",
+    "infectious disease",
+    "epidemic"
+  ],
+  "keywords": [
+    "Infectious disease"
+  ],
+  "tldr": "Check current local health guidance for the specific disease. Reduce exposure, stay home when sick when feasible and seek care for severe symptoms. Recommended tests, vaccines, masks and isolation steps depend on the pathogen and your health risks.",
+  "steps": [
+    [
+      "Find current guidance",
+      "Use the local health department and CDC disease-specific updates."
+    ],
+    [
+      "Reduce transmission",
+      "Improve cleaner indoor air and use recommended precautions for the way the disease spreads."
+    ],
+    [
+      "Plan care",
+      "Ask your clinician about risk, treatment access and continuity of essential medicines."
+    ],
+    [
+      "Know urgent signs",
+      "Seek emergency help for severe breathing difficulty, new confusion or other life-threatening symptoms."
+    ]
+  ],
+  "next": "Arrange sick-leave, caregiver and household supply plans. Verify information before sharing it.",
+  "watch": "Do not transfer isolation durations or treatment advice from one disease to another.",
+  "sources": "pandemic",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

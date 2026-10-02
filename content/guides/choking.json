@@ -1,0 +1,41 @@
+{
+  "slug": "choking",
+  "title": "Adult & child choking",
+  "category": "medical",
+  "subcategory": "Airway",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "cant breathe eating",
+    "food stuck",
+    "choking child"
+  ],
+  "keywords": [
+    "Airway"
+  ],
+  "tldr": "If someone cannot speak, breathe or cough effectively, call emergency services. For a responsive adult or child, give 5 back blows followed by 5 abdominal thrusts, repeating until the blockage clears or they become unresponsive. Use chest thrusts when pregnant or when you cannot encircle the abdomen.",
+  "steps": [
+    [
+      "Assess the cough",
+      "If the person can cough effectively, encourage coughing and watch closely."
+    ],
+    [
+      "Call for help",
+      "Send someone to call emergency services, or use speakerphone without delaying care."
+    ],
+    [
+      "Give back blows and thrusts",
+      "Lean them forward for 5 back blows between shoulder blades, then give 5 abdominal thrusts; follow dispatcher guidance."
+    ],
+    [
+      "If unresponsive",
+      "Lower them safely and start CPR as directed. Remove only a clearly visible object; never blindly sweep the mouth."
+    ]
+  ],
+  "next": "Get medical assessment after thrusts or persistent symptoms. Learn separate infant choking care.",
+  "watch": "Do not use abdominal thrusts on an infant under one year; infant care uses back blows and chest thrusts.",
+  "sources": "choking",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked; independent clinical review pending"
+}

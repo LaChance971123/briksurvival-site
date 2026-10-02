@@ -1,0 +1,39 @@
+{
+  "slug": "avalanche",
+  "title": "Avalanche",
+  "category": "natural-hazards",
+  "subcategory": "Mountain",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "snow slide"
+  ],
+  "keywords": [
+    "Mountain"
+  ],
+  "tldr": "Stay out of avalanche terrain when conditions are unsafe. Read the local avalanche forecast before travel and choose a safer route; rescue equipment does not make a dangerous slope safe. If someone is buried, call rescue and start companion rescue only where you can avoid another avalanche.",
+  "steps": [
+    [
+      "Check conditions before departure",
+      "Consult the local avalanche center and get training before entering snow-covered backcountry."
+    ],
+    [
+      "Choose terrain deliberately",
+      "Avoid avalanche paths and slopes identified in the forecast; turn around when uncertain."
+    ],
+    [
+      "Carry and know rescue gear",
+      "Each person needs a transceiver, probe and shovel and practiced companion rescue skills."
+    ],
+    [
+      "If an avalanche occurs",
+      "Note the last seen location, call rescue and assess continuing danger before searching."
+    ]
+  ],
+  "next": "Take a practical avalanche course and travel with trained partners. Use professional local advice for route selection.",
+  "watch": "Do not enter unstable terrain for an untrained rescue that may create more victims.",
+  "sources": "avalanche",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

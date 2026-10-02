@@ -1,0 +1,41 @@
+{
+  "slug": "nuclear-plant-emergency",
+  "title": "Nuclear power plant emergency",
+  "category": "chemical-radiation",
+  "subcategory": "Radiation",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "nuclear accident",
+    "radiation leak",
+    "reactor accident"
+  ],
+  "keywords": [
+    "Radiation"
+  ],
+  "tldr": "Listen to the official alert for your zone and follow instructions to shelter or evacuate. If told to shelter, go indoors and close windows and doors. Take potassium iodide only if public-health officials direct it; it is not a general radiation antidote.",
+  "steps": [
+    [
+      "Confirm your zone",
+      "Use emergency management and plant-area alerts for your actual address."
+    ],
+    [
+      "Shelter when directed",
+      "Move indoors and follow instructions for outside-air ventilation."
+    ],
+    [
+      "Evacuate when directed",
+      "Use designated routes and reception centers; do not invent a route through restricted areas."
+    ],
+    [
+      "Follow food and water instructions",
+      "Use packaged supplies and heed any local contamination restrictions."
+    ]
+  ],
+  "next": "Keep the local emergency plan, routes and alert channels available before an incident.",
+  "watch": "Plant emergencies differ from nuclear detonations; a fixed distance or timer is not an all-clear.",
+  "sources": "nuclear-plant-emergency",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

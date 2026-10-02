@@ -1,0 +1,38 @@
+{
+  "slug": "civil-unrest",
+  "title": "Civil unrest",
+  "label": "PUBLIC SAFETY",
+  "deck": "Move away from active violence and keep your route decisions grounded in current information.",
+  "tldr": "If violence or dangerous crowd movement is near you, leave the immediate area by a safe route or shelter in a secure place if travel is unsafe. Check local alerts, road closures, and transit changes. Avoid confrontation and keep a way to contact the people you need to reach.",
+  "steps": [
+    [
+      "Separate the event from your location",
+      "Check what is happening on your route, not just citywide headlines. Peaceful assembly and a nearby dangerous incident are different conditions."
+    ],
+    [
+      "Choose a safe path",
+      "Move away from active violence and blocked roads. If there is no safe exit, shelter inside, away from windows, and update a trusted contact."
+    ],
+    [
+      "Stay informed",
+      "Use official local notices for curfews, transport changes, and emergency services, and verify unconfirmed social posts before acting."
+    ],
+    [
+      "Regroup deliberately",
+      "Arrange a meeting point and a backup contact if mobile networks are strained. Wait for reliable updates before returning to a disrupted area."
+    ]
+  ],
+  "next": "Before going out, check whether your route crosses a closure and identify an alternative. Carry basic identification, necessary medication, and phone power.",
+  "watch": "Do not assume a protest is violent or that a citywide alert applies equally to every neighborhood. If an order applies, read its location, hours, and exceptions.",
+  "sources": "unrest",
+  "category": "conflict",
+  "subcategory": "Civil disruption",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [],
+  "keywords": [
+    "Civil disruption"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

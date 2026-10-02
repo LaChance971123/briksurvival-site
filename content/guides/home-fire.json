@@ -1,0 +1,41 @@
+{
+  "slug": "home-fire",
+  "title": "Home fire",
+  "category": "home-building",
+  "subcategory": "Fire",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "house fire",
+    "apartment fire",
+    "smoke in building"
+  ],
+  "keywords": [
+    "Fire"
+  ],
+  "tldr": "Get out, stay out and call emergency services from outside. Use the nearest safe exit, stay low beneath smoke, and close doors behind you if possible. Do not stop for belongings or go back inside for people or pets; tell firefighters where they may be.",
+  "steps": [
+    [
+      "Leave immediately",
+      "Follow the escape route and use stairs, not elevators. Check doors for heat before opening; use another exit if unsafe."
+    ],
+    [
+      "If the exit is blocked",
+      "Close doors between you and fire, call emergency services with your location and signal from a window."
+    ],
+    [
+      "Meet outside",
+      "Account for everyone at the meeting point and report missing people to firefighters."
+    ],
+    [
+      "Stay outside",
+      "Do not reenter until the fire department permits it."
+    ]
+  ],
+  "next": "Install and test smoke alarms and practice two ways out with the household. Plan assistance for children and people with mobility needs.",
+  "watch": "An extinguisher attempt must never delay escape or block your exit.",
+  "sources": "home-fire",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

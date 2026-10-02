@@ -1,0 +1,38 @@
+{
+  "slug": "flooding",
+  "title": "Flooding",
+  "label": "FLOOD",
+  "deck": "Distance from floodwater is the first safety decision.",
+  "tldr": "Move to higher ground if water is rising or a flash-flood warning affects you. Never walk, swim, or drive through floodwater; depth, current, contamination, and road damage are hard to judge. Follow evacuation orders and avoid basements or low areas that can fill rapidly.",
+  "steps": [
+    [
+      "Get above the water",
+      "Leave low ground and move to a safe higher location. If a road is flooded, turn around and choose another route."
+    ],
+    [
+      "Read the local notice",
+      "Check alerts, road closures, and evacuation instructions. Do not rely on the road being open because it was open earlier."
+    ],
+    [
+      "Keep away from hazards",
+      "Floodwater may hide energized wires, debris, sewage, chemicals, and missing road surface. Keep children and pets away."
+    ],
+    [
+      "If trapped, call for help",
+      "Give your precise location to emergency services. Move to a higher level if possible; avoid entering a closed attic where you could become trapped by rising water."
+    ]
+  ],
+  "next": "Return only when officials say it is safe. Photograph damage without entering unstable structures, use protective gear for cleanup, and check the water supply for advisories.",
+  "watch": "Flooding can begin far from the heaviest rain. Do not attempt to cross flowing water to reach a vehicle, home, or belongings.",
+  "sources": "flood",
+  "category": "natural-hazards",
+  "subcategory": "Flooding",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [],
+  "keywords": [
+    "Flooding"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

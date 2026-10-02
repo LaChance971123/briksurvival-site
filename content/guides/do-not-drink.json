@@ -1,0 +1,41 @@
+{
+  "slug": "do-not-drink",
+  "title": "Do-not-drink advisory",
+  "category": "utilities",
+  "subcategory": "Water",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "do not drink",
+    "water contamination",
+    "water unsafe"
+  ],
+  "keywords": [
+    "Water"
+  ],
+  "tldr": "Use commercially bottled or officially approved water for drinking, cooking, brushing teeth, ice, formula and pets. Do not try to make chemically contaminated water safe by boiling. Read the notice for which other uses are allowed.",
+  "steps": [
+    [
+      "Read restrictions",
+      "Check what contaminant is involved and which uses are prohibited."
+    ],
+    [
+      "Replace drinking water",
+      "Use the approved alternative for anything swallowed or used to prepare food."
+    ],
+    [
+      "Check household uses",
+      "Bathing, laundry and cleaning depend on the exact local notice."
+    ],
+    [
+      "Wait for clearance",
+      "Follow any flushing or filter replacement instructions before resuming use."
+    ]
+  ],
+  "next": "Save the utility notice and alternative-water distribution location offline.",
+  "watch": "Clear appearance and normal taste cannot confirm safety.",
+  "sources": "do-not-drink",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "go-bag",
+  "title": "Go bag",
+  "category": "preparedness",
+  "subcategory": "Kits & supplies",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "bug out bag",
+    "evacuation bag"
+  ],
+  "keywords": [
+    "Kits & supplies"
+  ],
+  "tldr": "Pack a portable bag with the essentials you need to leave quickly: medicines, documents, contact information, water, food, light, phone power and weather-appropriate clothing. Keep it light enough to carry and a separate grab list for items used every day.",
+  "steps": [
+    [
+      "Plan the destination",
+      "Know where you can go and how you will get there."
+    ],
+    [
+      "Pack personal essentials",
+      "Include medication arrangements, identification copies, keys and accessible supplies."
+    ],
+    [
+      "Add basic support",
+      "Pack water, snacks, light, charger, hygiene supplies and appropriate clothing."
+    ],
+    [
+      "Test and maintain",
+      "Carry the bag briefly, reduce excess weight and refresh dated items."
+    ]
+  ],
+  "next": "Keep bags accessible and plan for pets, infants and mobility equipment.",
+  "watch": "Never delay an urgent evacuation to finish packing.",
+  "sources": "go-bag",
+  "shopping": [
+    "Portable bag",
+    "Water and ready-to-eat snacks",
+    "Flashlight",
+    "Power bank and cables",
+    "Weather-appropriate clothing",
+    "Hygiene kit",
+    "Waterproof document pouch"
+  ],
+  "urgency": "planning",
+  "review_status": "source-linked"
+}

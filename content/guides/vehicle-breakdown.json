@@ -1,0 +1,40 @@
+{
+  "slug": "vehicle-breakdown",
+  "title": "Vehicle breakdown",
+  "category": "vehicle-travel",
+  "subcategory": "Roadside",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "car broke down",
+    "stranded vehicle"
+  ],
+  "keywords": [
+    "Roadside"
+  ],
+  "tldr": "Move out of traffic if you safely can, switch on hazard lights and call roadside assistance or emergency services for immediate danger. Give your road, direction and nearest marker. On a high-speed road, follow local road-authority advice about whether to stay belted inside or exit to a protected area.",
+  "steps": [
+    [
+      "Protect from traffic",
+      "Do not stand in travel lanes or between vehicles. Avoid repairs beside moving traffic."
+    ],
+    [
+      "Give a precise location",
+      "Share the road name, direction, marker and number of people."
+    ],
+    [
+      "Assess immediate danger",
+      "If fire, smoke or a collision threat makes the vehicle unsafe, move to a safe location away from traffic when possible."
+    ],
+    [
+      "Wait safely",
+      "Keep children and pets protected and conserve phone power. In remote areas do not wander without a known safe destination."
+    ]
+  ],
+  "next": "Carry water, weather protection, a charged phone and a vehicle kit. Check tires, fuel or charge before travel.",
+  "watch": "Exit choices depend on the road and surroundings; do not apply one universal rule to every breakdown.",
+  "sources": "vehicle-breakdown",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

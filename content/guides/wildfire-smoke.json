@@ -1,0 +1,43 @@
+{
+  "slug": "wildfire-smoke",
+  "title": "Wildfire smoke",
+  "label": "FIRE / AIR",
+  "deck": "Separate an approaching fire from a smoke exposure problem.",
+  "tldr": "For smoke without an immediate fire threat, stay indoors with windows and doors closed, use filtered recirculated air or a portable air cleaner, and check local air-quality updates. If ordered to evacuate, leave promptly. Severe breathing difficulty requires emergency medical help.",
+  "steps": [
+    [
+      "Know which problem you face",
+      "Check official fire, evacuation, and air-quality notices for your address. An evacuation order changes the decision immediately."
+    ],
+    [
+      "If leaving, leave early",
+      "Take people, pets, medication, keys, and essentials; tell a contact where you are going. Use the evacuation guide and current route instructions."
+    ],
+    [
+      "If sheltering from smoke",
+      "Close windows and doors. Set HVAC to recirculate where possible, use a portable air cleaner or a cleaner indoor room, and avoid adding indoor smoke from candles, frying, or smoking."
+    ],
+    [
+      "Limit outside exposure",
+      "If you must go outside in smoke, a well-fitting N95 or P100 respirator can reduce particle exposure; ordinary cloth masks do not provide the same protection."
+    ]
+  ],
+  "next": "Keep checking changing wind, fire perimeter, and air-quality conditions. People with heart or lung disease, children, older adults, and pregnant people may need added precautions or clinical advice.",
+  "watch": "If fire threatens the building or officials order departure, indoor smoke control is no substitute for evacuation. If breathing becomes difficult or symptoms are severe, seek urgent medical help.",
+  "sources": "wildfire",
+  "category": "natural-hazards",
+  "subcategory": "Fire & air",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "smoke in air",
+    "cant breathe smoke",
+    "air quality",
+    "smoke pollution"
+  ],
+  "keywords": [
+    "Fire & air"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

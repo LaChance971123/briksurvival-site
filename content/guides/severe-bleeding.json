@@ -1,0 +1,41 @@
+{
+  "slug": "severe-bleeding",
+  "title": "Severe bleeding",
+  "category": "medical",
+  "subcategory": "Injury",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "bleeding heavily",
+    "stop bleeding",
+    "hemorrhage"
+  ],
+  "keywords": [
+    "Injury"
+  ],
+  "tldr": "Call emergency services and press firmly directly on the bleeding wound with a dressing or clean cloth. Maintain pressure. For life-threatening bleeding from an arm or leg, use a commercial tourniquet if trained; follow dispatcher instructions.",
+  "steps": [
+    [
+      "Protect and call",
+      "Check scene safety, use gloves if available and get emergency help."
+    ],
+    [
+      "Apply direct pressure",
+      "Press firmly over the wound and keep pressing until bleeding stops or appropriate help takes over."
+    ],
+    [
+      "Use trained techniques",
+      "Use a tourniquet or wound packing for the appropriate injury if trained, following the device and dispatcher instructions."
+    ],
+    [
+      "Monitor the person",
+      "Keep them from getting cold, check breathing and remain until responders arrive."
+    ]
+  ],
+  "next": "Get urgent medical assessment even if bleeding stops. Take a practical bleeding-control course.",
+  "watch": "Do not pull an embedded object out; press around it and get help.",
+  "sources": "severe-bleeding",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked; independent clinical review pending"
+}

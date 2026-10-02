@@ -1,0 +1,43 @@
+{
+  "slug": "power-outage",
+  "title": "Power outage",
+  "label": "UTILITIES",
+  "deck": "Protect people, preserve essentials, and avoid the hidden hazards of a blackout.",
+  "tldr": "Check the utility and local alerts, then deal with immediate medical, temperature, and water needs. Use battery light and conserve phone power. Run generators and other fuel-burning equipment outdoors, away from windows and vents; never use an oven or grill to heat a home.",
+  "steps": [
+    [
+      "Check the situation",
+      "Find the outage map and local emergency alerts. If someone depends on powered medical equipment, use the backup plan and seek urgent help if that equipment cannot run."
+    ],
+    [
+      "Make the space safe",
+      "Use flashlights rather than candles. Keep refrigerators and freezers closed. Unplug sensitive electronics if power is unstable, and leave one light on to show when service returns."
+    ],
+    [
+      "Keep air safe",
+      "A generator, camp stove, grill, or vehicle can produce deadly carbon monoxide. Keep fuel-burning equipment outside and well away from openings; use a battery-powered CO alarm if available."
+    ],
+    [
+      "Check your people",
+      "Contact neighbors who may need help. Conserve phone power, use text when calls are congested, and monitor official updates."
+    ]
+  ],
+  "next": "If the outage continues, plan for safe temperature, water, medication refrigeration, and a place to relocate if the home becomes unsafe. Check current food-safety advice before eating perishables after a prolonged outage.",
+  "watch": "Headache, dizziness, weakness, nausea, or confusion near fuel-burning equipment can signal carbon monoxide exposure. Get into fresh air and call emergency services. Never enter a flooded area to operate electrical equipment.",
+  "sources": "power",
+  "category": "utilities",
+  "subcategory": "Electricity",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "blackout",
+    "lights out",
+    "no electricity",
+    "my power just went out"
+  ],
+  "keywords": [
+    "Electricity"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

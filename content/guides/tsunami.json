@@ -1,0 +1,40 @@
+{
+  "slug": "tsunami",
+  "title": "Tsunami",
+  "category": "natural-hazards",
+  "subcategory": "Coastal & ocean",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "tidal wave",
+    "ocean pulled back"
+  ],
+  "keywords": [
+    "Coastal & ocean"
+  ],
+  "tldr": "Near the coast, strong or long shaking, a sudden unusual sea rise or retreat, or a loud ocean roar can signal a tsunami. After shaking stops, move to high ground and inland immediately. Do not wait for an official warning when natural warning signs are present.",
+  "steps": [
+    [
+      "Protect during shaking",
+      "Drop, Cover and Hold On first if the earthquake is still occurring."
+    ],
+    [
+      "Follow evacuation signs",
+      "Move uphill and inland along the designated route, on foot if roads are blocked."
+    ],
+    [
+      "Stay off the shore",
+      "Never go to watch waves or exposed seabed."
+    ],
+    [
+      "Wait for clearance",
+      "Stay out of the evacuation zone until authorities say it is safe."
+    ]
+  ],
+  "next": "Know coastal evacuation routes before visiting. Use designated vertical evacuation structures where local plans provide them.",
+  "watch": "The first wave may not be largest. Dangerous currents can last for hours.",
+  "sources": "tsunami",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

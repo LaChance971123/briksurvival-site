@@ -1,0 +1,40 @@
+{
+  "slug": "landslide",
+  "title": "Landslide & debris flow",
+  "category": "natural-hazards",
+  "subcategory": "Geological",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "mudslide",
+    "debris flow"
+  ],
+  "keywords": [
+    "Geological"
+  ],
+  "tldr": "Move away from a slide area if you can do so safely, and obey evacuation warnings. Avoid steep slopes, channels and places downhill from recent burns during heavy rain. Do not cross moving debris or enter a fresh slide to inspect it.",
+  "steps": [
+    [
+      "Notice warning signs",
+      "New ground cracks, tilting trees, unusual runoff or rumbling warrant immediate caution and a call to local authorities."
+    ],
+    [
+      "Leave the affected area",
+      "Use an official safe route rather than following a drainage channel."
+    ],
+    [
+      "Avoid crossings",
+      "Mud and debris can sweep away vehicles and hide damaged road surfaces."
+    ],
+    [
+      "Report from safety",
+      "Give the location and visible hazards to emergency services; keep others out."
+    ]
+  ],
+  "next": "Return only after local authorities assess stability. Contact a qualified professional about slope or structural damage.",
+  "watch": "Another slide can follow the first, especially during continued rain.",
+  "sources": "landslide",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "flash-flood",
+  "title": "Flash flood",
+  "category": "natural-hazards",
+  "subcategory": "Flooding",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "flash flooding",
+    "water rising"
+  ],
+  "keywords": [
+    "Flooding"
+  ],
+  "tldr": "Move to higher ground immediately if a flash-flood warning affects you or water is rising. Never cross flowing water on foot or in a vehicle. Leave low areas, canyons and basements without waiting to see how high the water gets.",
+  "steps": [
+    [
+      "Get uphill",
+      "Move away from streams, low roads and drainage channels."
+    ],
+    [
+      "Turn around",
+      "Do not drive across a flooded road; the roadbed may be missing."
+    ],
+    [
+      "If trapped",
+      "Call emergency services and move to a higher open level without becoming trapped in a closed attic."
+    ],
+    [
+      "Follow routes",
+      "Use current evacuation and road-closure instructions."
+    ]
+  ],
+  "next": "Wait for official clearance. Water may rise after rain stops or when storms occur upstream.",
+  "watch": "A small-looking current can sweep away people and vehicles.",
+  "sources": "flash-flood",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "water-disruption",
+  "title": "Water disruption",
+  "label": "WATER",
+  "deck": "Read the exact notice before treating or using tap water.",
+  "tldr": "Find the current water advisory for your address and follow its exact wording. A boil-water advisory, do-not-drink notice, and do-not-use notice require different actions. Boiling can kill germs, but it does not remove chemical contamination. Use sealed bottled or otherwise approved water until the utility or health authority clears the notice.",
+  "steps": [
+    [
+      "Identify the notice",
+      "Find the utility or health department notice for your address, its start time, reason, and permitted uses. Save a screenshot in case service fails."
+    ],
+    [
+      "Match use to the instruction",
+      "A boil-water notice generally addresses microbes; follow the authority's boil directions. If the notice says do not drink or do not use, follow those stricter limits and the specified alternative-water instructions."
+    ],
+    [
+      "Protect priority needs",
+      "Set aside approved water for drinking, infant formula, medications, tooth brushing, food preparation, and pets, as the notice directs."
+    ],
+    [
+      "Wait for clearance",
+      "Do not assume that water is safe because it looks clear or service has returned. Follow flushing or filter replacement instructions after an official all-clear."
+    ]
+  ],
+  "next": "Store water and a printed copy of your utility's alert channel. Know whether anyone in the household needs extra water or cannot use a typical treatment method.",
+  "watch": "Do not boil water suspected of chemical or fuel contamination. Boiling can concentrate some contaminants; use the alternative source named in the notice.",
+  "sources": "water",
+  "diagram": "water",
+  "category": "utilities",
+  "subcategory": "Water",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "water unsafe"
+  ],
+  "keywords": [
+    "Water"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

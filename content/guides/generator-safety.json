@@ -1,0 +1,40 @@
+{
+  "slug": "generator-safety",
+  "title": "Generator safety",
+  "category": "home-building",
+  "subcategory": "Backup power",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "portable generator",
+    "backup generator"
+  ],
+  "keywords": [
+    "Backup power"
+  ],
+  "tldr": "Operate a portable generator outdoors at least 20 feet from doors, windows and vents, with exhaust directed away from buildings. Never run it in a home, garage or enclosed space. Use working CO alarms and never connect a generator to a wall outlet.",
+  "steps": [
+    [
+      "Choose outdoor placement",
+      "Keep the generator away from occupied buildings and openings, including neighbors."
+    ],
+    [
+      "Connect safely",
+      "Use rated cords as instructed; a building connection requires a professionally installed transfer switch."
+    ],
+    [
+      "Refuel safely",
+      "Shut down and let it cool before refueling. Store fuel safely outside living areas."
+    ],
+    [
+      "Check CO alarms",
+      "If an alarm sounds or symptoms occur, leave for fresh air and call emergency services."
+    ]
+  ],
+  "next": "Read the manufacturer instructions before a crisis. Plan weather protection that does not enclose the generator or obstruct exhaust.",
+  "watch": "An open garage door does not make indoor generator operation safe.",
+  "sources": "generator-safety",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

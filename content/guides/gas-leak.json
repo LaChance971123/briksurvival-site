@@ -1,0 +1,41 @@
+{
+  "slug": "gas-leak",
+  "title": "Natural gas leak",
+  "category": "home-building",
+  "subcategory": "Air & gas",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "smell gas",
+    "rotten eggs",
+    "gas odor"
+  ],
+  "keywords": [
+    "Air & gas"
+  ],
+  "tldr": "If you smell gas or suspect a leak, leave the area on foot immediately. Do not use switches, flames, phones or engines in the suspected leak area. Once safely away, call emergency services and your gas utility. Do not reenter until cleared.",
+  "steps": [
+    [
+      "Leave now",
+      "Do not search for the leak or stop to collect belongings."
+    ],
+    [
+      "Avoid ignition",
+      "Do not turn electrical devices on or off, light flames, operate garage doors or start a vehicle nearby."
+    ],
+    [
+      "Call from safety",
+      "Give the address and what you noticed to emergency services and the utility."
+    ],
+    [
+      "Keep others clear",
+      "Wait outside the danger area and follow responder instructions."
+    ]
+  ],
+  "next": "Have the utility or a qualified technician restore service and inspect appliances when required.",
+  "watch": "Never use a flame to test for leaks or attempt your own repair.",
+  "sources": "gas-leak",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

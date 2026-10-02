@@ -1,0 +1,41 @@
+{
+  "slug": "volcanic-eruption",
+  "title": "Volcanic eruption",
+  "category": "natural-hazards",
+  "subcategory": "Volcanic",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "volcano",
+    "eruption",
+    "volcanic ash"
+  ],
+  "keywords": [
+    "Volcanic"
+  ],
+  "tldr": "Follow the local volcano evacuation order and stay out of restricted zones. If ash is falling and you are not told to evacuate, stay indoors with windows and doors closed. Avoid river valleys where volcanic mudflows may travel.",
+  "steps": [
+    [
+      "Check official monitoring",
+      "Use local emergency alerts and the responsible volcano observatory."
+    ],
+    [
+      "Leave danger zones",
+      "Take designated evacuation routes; do not approach the volcano to watch."
+    ],
+    [
+      "Limit ash exposure",
+      "Close outside-air openings and use eye protection and a well-fitting particulate respirator for necessary outdoor movement."
+    ],
+    [
+      "Keep roads clear",
+      "Avoid driving in ash unless necessary; visibility and engines can be affected."
+    ]
+  ],
+  "next": "Wait for reentry instructions. Do not climb a roof covered in ash; wet ash can overload structures.",
+  "watch": "A particle respirator does not protect against volcanic gases.",
+  "sources": "volcanic-eruption",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

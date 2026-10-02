@@ -1,0 +1,44 @@
+{
+  "slug": "water-purification",
+  "title": "Water purification",
+  "category": "field-skills",
+  "subcategory": "Water",
+  "content_type": "Field guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "purify water",
+    "water treatment"
+  ],
+  "keywords": [
+    "Water"
+  ],
+  "tldr": "Use safe bottled water when available. For microbial risk, bring clear water to a rolling boil for 1 minute, or 3 minutes above 6,500 feet, and cool before use. Water contaminated with fuel, chemicals or radioactive material cannot be made safe by boiling or ordinary disinfection.",
+  "steps": [
+    [
+      "Check the source",
+      "Avoid floodwater or sources suspected of toxic contamination; find an approved alternative."
+    ],
+    [
+      "Clarify cloudy water",
+      "Let sediment settle or strain through a clean cloth before treatment; this alone does not disinfect it."
+    ],
+    [
+      "Boil for germs",
+      "Use the appropriate time and cool safely in a clean container."
+    ],
+    [
+      "If boiling is unavailable",
+      "Use a treatment product as labeled and official guidance for your water source; filters have different capabilities."
+    ]
+  ],
+  "next": "Store treated water in clean covered containers and prevent recontamination.",
+  "watch": "Clear water can still contain germs. Ordinary filters may not remove viruses or chemicals.",
+  "sources": "water-purification",
+  "shopping": [
+    "Clean food-grade containers",
+    "Safe means of boiling water",
+    "Suitable water-treatment product used as labeled"
+  ],
+  "urgency": "planning",
+  "review_status": "source-linked"
+}

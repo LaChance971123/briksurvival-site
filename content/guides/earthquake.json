@@ -1,0 +1,40 @@
+{
+  "slug": "earthquake",
+  "title": "Earthquake",
+  "category": "natural-hazards",
+  "subcategory": "Geological",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "quake",
+    "earth shaking"
+  ],
+  "keywords": [
+    "Geological"
+  ],
+  "tldr": "During shaking, Drop, Cover and Hold On. Protect your head and neck beneath a sturdy table if nearby; stay indoors rather than running outside. If near the coast, strong or long shaking may mean tsunami danger: move inland and uphill once shaking stops.",
+  "steps": [
+    [
+      "Protect yourself now",
+      "Drop onto hands and knees and cover your head and neck. With a mobility device, lock wheels and protect your head."
+    ],
+    [
+      "Hold on",
+      "Stay under sturdy cover until shaking ends. Keep away from windows and objects that can fall."
+    ],
+    [
+      "If outdoors or driving",
+      "Move away from buildings and lines. Pull over safely clear of bridges, wires and trees and remain in the vehicle during shaking."
+    ],
+    [
+      "Check secondary hazards",
+      "Expect aftershocks; avoid damaged structures and check for fire, gas leaks and tsunami warnings."
+    ]
+  ],
+  "next": "Check injuries and use texts to communicate. Leave a damaged building by stairs when safe and follow official reentry instructions.",
+  "watch": "Doorways are not generally the safest shelter. Do not use elevators after damaging shaking.",
+  "sources": "earthquake",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

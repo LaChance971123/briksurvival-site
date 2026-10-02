@@ -1,0 +1,39 @@
+{
+  "slug": "hail",
+  "title": "Hail",
+  "category": "natural-hazards",
+  "subcategory": "Severe storms",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "hailstorm"
+  ],
+  "keywords": [
+    "Severe storms"
+  ],
+  "tldr": "Get indoors and stay away from windows during hail. If driving, stop in a safe place out of traffic when you can; stay inside the vehicle and protect yourself from broken glass. Do not stop beneath a highway overpass.",
+  "steps": [
+    [
+      "Leave the open",
+      "Move into a sturdy building before collecting possessions."
+    ],
+    [
+      "Stay away from glass",
+      "Use an interior room and keep pets inside."
+    ],
+    [
+      "If in a car",
+      "Pull over safely out of traffic, avoid flood-prone areas and remain in the vehicle."
+    ],
+    [
+      "Follow other warnings",
+      "Hail can accompany tornadoes, lightning and strong wind; act on those warnings as well."
+    ]
+  ],
+  "next": "Check for injuries and roof or window damage only when conditions are safe. Photograph damage from ground level.",
+  "watch": "Do not climb a wet or damaged roof to inspect it.",
+  "sources": "hail",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

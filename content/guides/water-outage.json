@@ -1,0 +1,40 @@
+{
+  "slug": "water-outage",
+  "title": "Water outage",
+  "category": "utilities",
+  "subcategory": "Water",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "no water",
+    "tap not running"
+  ],
+  "keywords": [
+    "Water"
+  ],
+  "tldr": "Check the utility notice to learn whether water service is interrupted and whether an advisory applies. Use stored or commercially bottled water for drinking and essential care. Service returning does not automatically mean tap water is safe.",
+  "steps": [
+    [
+      "Find the notice",
+      "Check the affected address, restoration estimate and any advisory."
+    ],
+    [
+      "Prioritize safe water",
+      "Reserve approved water for drinking, medications, formula, food and pets."
+    ],
+    [
+      "Plan hygiene",
+      "Use local health instructions for sanitation and safe handwashing without running water."
+    ],
+    [
+      "Wait for clearance",
+      "Follow flushing and treatment instructions once the utility restores service."
+    ]
+  ],
+  "next": "Build an emergency water supply and know how your household will handle sanitation.",
+  "watch": "Do not use heating-system or radiator water for drinking.",
+  "sources": "water-outage",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

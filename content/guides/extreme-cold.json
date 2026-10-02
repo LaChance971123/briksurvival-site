@@ -1,0 +1,41 @@
+{
+  "slug": "extreme-cold",
+  "title": "Extreme cold",
+  "category": "natural-hazards",
+  "subcategory": "Winter",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "freezing no heat",
+    "heating failure",
+    "cold snap"
+  ],
+  "keywords": [
+    "Winter"
+  ],
+  "tldr": "Get into a warm, dry place, replace wet clothing and add dry layers. Confusion, extreme drowsiness or loss of coordination can indicate hypothermia; call emergency services. Use safe heat and never bring grills or generators indoors.",
+  "steps": [
+    [
+      "Get sheltered",
+      "Limit outdoor exposure and protect hands, feet, head and face."
+    ],
+    [
+      "Change wet clothing",
+      "Use dry layers and blankets; warm the body gently."
+    ],
+    [
+      "Find safe heat",
+      "Use approved heaters as directed, keep them away from combustibles and maintain CO alarms."
+    ],
+    [
+      "Arrange help",
+      "If heat fails, contact local warming shelters and help people with limited mobility relocate safely."
+    ]
+  ],
+  "next": "Keep medicines, transport and backup plans ready. Watch for numb, pale or waxy skin that may signal frostbite.",
+  "watch": "Do not rub frostbitten skin or apply direct intense heat.",
+  "sources": "extreme-cold",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

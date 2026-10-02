@@ -1,0 +1,39 @@
+{
+  "slug": "aed",
+  "title": "Using an AED",
+  "category": "medical",
+  "subcategory": "Resuscitation",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "defibrillator"
+  ],
+  "keywords": [
+    "Resuscitation"
+  ],
+  "tldr": "For an unresponsive person who is not breathing normally, call emergency services and begin CPR. Turn on the AED as soon as it arrives and follow its voice and picture prompts. Do not touch the person during rhythm analysis or a shock.",
+  "steps": [
+    [
+      "Turn it on",
+      "Continue CPR while another helper prepares the AED if possible."
+    ],
+    [
+      "Expose the chest",
+      "Dry a wet chest and place pads according to the AED diagrams."
+    ],
+    [
+      "Stand clear",
+      "Make sure no one touches the person during analysis or shock delivery."
+    ],
+    [
+      "Resume CPR",
+      "Immediately follow the device instructions to continue compressions."
+    ]
+  ],
+  "next": "Keep the AED connected until responders take over. Learn the location of nearby devices and obtain training.",
+  "watch": "For a child or infant, use the appropriate pediatric pads or setting when available and follow the device and dispatcher instructions.",
+  "sources": "aed",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked; independent clinical review pending"
+}

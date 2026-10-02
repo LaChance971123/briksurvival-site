@@ -1,0 +1,39 @@
+{
+  "slug": "nuclear-detonation",
+  "title": "Nuclear detonation",
+  "label": "RADIATION",
+  "deck": "Get inside, stay inside, and get reliable instructions.",
+  "tldr": "After a nuclear detonation, get inside the nearest sturdy building as quickly as you can. Move to a basement or central interior area, away from walls, windows, and the roof. Stay inside and tune to official updates; the first 24 hours are especially important unless the building is unsafe or authorities direct you elsewhere.",
+  "steps": [
+    [
+      "Get inside",
+      "Do not remain outdoors looking at the blast or travel across town for a preferred shelter. A substantial building offers better protection than a vehicle or open space."
+    ],
+    [
+      "Go deeper inside",
+      "Use a basement or the middle of the building with as much material between you and outdoors as possible. Close doors and windows."
+    ],
+    [
+      "If exposed outdoors, clean up",
+      "Once sheltered, remove the outer layer of clothing and set it aside away from people; wash exposed skin with water and soap when available. This reduces contamination brought indoors."
+    ],
+    [
+      "Stay tuned",
+      "Use radio, phone, or other available channels for location-specific instructions. Avoid going out to collect family members who are already sheltered elsewhere."
+    ]
+  ],
+  "next": "Arrange water, medications, and a way to receive alerts within the shelter. Leave only for an immediate threat such as fire, collapse, or other life-threatening condition, or when officials direct a safe move.",
+  "watch": "Fallout conditions vary by place and time. Do not treat a fixed distance or a clock as an all-clear; use the official instructions for your location. Potassium iodide is not a general radiation antidote and should be taken only when public-health officials advise it.",
+  "sources": "nuclear",
+  "diagram": "nuclear",
+  "category": "chemical-radiation",
+  "subcategory": "Radiation",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [],
+  "keywords": [
+    "Radiation"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "hurricane",
+  "title": "Hurricane",
+  "category": "natural-hazards",
+  "subcategory": "Tropical weather",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "cyclone",
+    "hurricane coming"
+  ],
+  "keywords": [
+    "Tropical weather"
+  ],
+  "tldr": "Check your evacuation zone and the current order. If told to evacuate, leave before conditions deteriorate. If staying outside an evacuation zone, shelter inside a sturdy building away from windows; storm surge and inland flooding can be deadly even far from the storm center.",
+  "steps": [
+    [
+      "Check your zone",
+      "Read local evacuation and storm-surge instructions for your address, not just the forecast track."
+    ],
+    [
+      "Leave when directed",
+      "Use official routes to a destination outside the hazard area. Bring medications, identification, pets and phone power."
+    ],
+    [
+      "Shelter for wind",
+      "If the building is safe and evacuation is not required, stay in an interior room away from windows during strong winds."
+    ],
+    [
+      "Watch for water",
+      "Keep out of flooded roads and basements. Follow separate flash-flood warnings and move to safer higher ground when necessary."
+    ]
+  ],
+  "next": "Expect extended outages. Store water, protect documents and charge devices before the storm. Return only after officials allow reentry.",
+  "watch": "A calm eye is not an all-clear. Do not base flood safety on the wind category.",
+  "sources": "hurricane",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

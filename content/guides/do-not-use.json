@@ -1,0 +1,39 @@
+{
+  "slug": "do-not-use",
+  "title": "Do-not-use advisory",
+  "category": "utilities",
+  "subcategory": "Water",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "do not use water"
+  ],
+  "keywords": [
+    "Water"
+  ],
+  "tldr": "Do not drink or use tap water for any purpose while a do-not-use advisory is in effect. Avoid contact with skin, eyes and lungs. Use commercially bottled or officially approved alternatives and follow local instructions for sanitation.",
+  "steps": [
+    [
+      "Stop tap-water use",
+      "Do not bathe, wash dishes or use connected water and ice appliances."
+    ],
+    [
+      "Get safe alternatives",
+      "Check official water distribution and hygiene arrangements."
+    ],
+    [
+      "Prevent accidental exposure",
+      "Tell everyone in the household and keep children and pets from using taps."
+    ],
+    [
+      "Follow restoration steps",
+      "Wait for the official all-clear and complete any required flushing or appliance instructions."
+    ]
+  ],
+  "next": "Plan temporary access to safe washing and sanitation if restrictions continue.",
+  "watch": "Boiling does not override a do-not-use order.",
+  "sources": "do-not-use",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

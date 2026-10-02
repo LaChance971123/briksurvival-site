@@ -1,0 +1,39 @@
+{
+  "slug": "lightning",
+  "title": "Lightning",
+  "category": "natural-hazards",
+  "subcategory": "Severe storms",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "lightning strike"
+  ],
+  "keywords": [
+    "Severe storms"
+  ],
+  "tldr": "When you hear thunder, move into a substantial building or enclosed hard-top vehicle immediately. There is no safe place outdoors during a thunderstorm. Wait at least 30 minutes after the last thunder before going back out.",
+  "steps": [
+    [
+      "Leave exposed areas",
+      "Get out of water and off ridges, fields and beaches. Do not shelter beneath a lone tree."
+    ],
+    [
+      "Choose real shelter",
+      "Use a building or enclosed hard-top vehicle; picnic shelters and tents are not adequate."
+    ],
+    [
+      "Avoid indoor pathways",
+      "Stay away from showers, sinks, corded phones and plugged-in equipment."
+    ],
+    [
+      "Help a struck person",
+      "Call emergency services. A lightning victim carries no electrical charge; give CPR if needed and follow dispatcher instructions."
+    ]
+  ],
+  "next": "Check forecasts before outdoor activity and identify shelter before leaving it.",
+  "watch": "Lightning can strike beyond rainfall. Do not wait for rain to seek shelter.",
+  "sources": "lightning",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

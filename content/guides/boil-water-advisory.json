@@ -1,0 +1,40 @@
+{
+  "slug": "boil-water-advisory",
+  "title": "Boil-water advisory",
+  "category": "utilities",
+  "subcategory": "Water",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "boil water",
+    "boil notice"
+  ],
+  "keywords": [
+    "Water"
+  ],
+  "tldr": "Use bottled water or bring clear tap water to a rolling boil for 1 minute, then cool it; above 6,500 feet, boil for 3 minutes. Use approved water for drinking, cooking and brushing teeth. Follow the exact local notice. Boiling does not remove chemical contamination.",
+  "steps": [
+    [
+      "Confirm the notice",
+      "Check that it is a boil-water advisory, rather than do-not-drink or do-not-use."
+    ],
+    [
+      "Boil and cool",
+      "Use the local authority instructions; allow water to cool safely before use."
+    ],
+    [
+      "Prevent accidental use",
+      "Avoid connected refrigerator water and ice; use safe water for food, formula and pets."
+    ],
+    [
+      "Follow the all-clear",
+      "Resume normal use only after official clearance and any flushing instructions."
+    ]
+  ],
+  "next": "Keep bottled water and a safe means of boiling available. If boiling is impractical, use the alternative named by officials.",
+  "watch": "A household pitcher filter does not replace boiling during this advisory.",
+  "sources": "boil-water-advisory",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

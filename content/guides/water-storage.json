@@ -1,0 +1,44 @@
+{
+  "slug": "water-storage",
+  "title": "Emergency water storage",
+  "category": "preparedness",
+  "subcategory": "Water & food",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "how much water should i store",
+    "stored water"
+  ],
+  "keywords": [
+    "Water & food"
+  ],
+  "tldr": "Store at least one gallon of water per person per day for three days; aim for two weeks if practical. Allow more for heat, illness, pregnancy and pets. Use commercially bottled water or clean food-grade containers, and keep it cool and away from chemicals.",
+  "steps": [
+    [
+      "Calculate needs",
+      "Count people and days and add water for pets and extra needs."
+    ],
+    [
+      "Choose containers",
+      "Use commercially bottled water or food-grade containers intended for water."
+    ],
+    [
+      "Label and store",
+      "Mark fill dates and store away from sunlight, fuel and cleaning products."
+    ],
+    [
+      "Rotate supplies",
+      "Follow bottled-water dates and replace self-filled stored water every six months."
+    ]
+  ],
+  "next": "Learn the local advisory system. Plan how to transport water if distribution sites open.",
+  "watch": "Do not reuse containers that held toxic substances, even after washing.",
+  "sources": "water-storage",
+  "shopping": [
+    "Commercially bottled water or food-grade storage containers",
+    "Labels and permanent marker",
+    "Additional water for pets and medical needs"
+  ],
+  "urgency": "planning",
+  "review_status": "source-linked"
+}

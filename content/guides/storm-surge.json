@@ -1,0 +1,39 @@
+{
+  "slug": "storm-surge",
+  "title": "Storm surge",
+  "category": "natural-hazards",
+  "subcategory": "Tropical weather",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "coastal surge"
+  ],
+  "keywords": [
+    "Tropical weather"
+  ],
+  "tldr": "If a storm-surge evacuation order covers you, leave for a safe location outside the surge zone before roads close. Wind strength alone does not describe surge danger. Never walk or drive through coastal floodwater.",
+  "steps": [
+    [
+      "Check the surge zone",
+      "Use your local emergency management evacuation map and official order."
+    ],
+    [
+      "Leave early",
+      "Choose an inland destination outside the evacuation area and use designated routes."
+    ],
+    [
+      "Avoid shoreline viewing",
+      "Stay away from beaches, seawalls and flooded coastal roads."
+    ],
+    [
+      "If trapped",
+      "Contact emergency services with your location and move to a safer higher level without entering a closed attic."
+    ]
+  ],
+  "next": "Return only after reentry is allowed; damaged bridges, debris and polluted water can remain.",
+  "watch": "Storm surge may arrive before the worst wind. Do not wait for visible water.",
+  "sources": "storm-surge",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

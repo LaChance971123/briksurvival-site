@@ -1,0 +1,41 @@
+{
+  "slug": "damaging-winds",
+  "title": "Damaging winds",
+  "category": "natural-hazards",
+  "subcategory": "Severe storms",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "high winds",
+    "derecho",
+    "windstorm"
+  ],
+  "keywords": [
+    "Severe storms"
+  ],
+  "tldr": "Shelter inside a sturdy building away from windows when damaging winds threaten. Avoid trees, power lines and lightweight structures. Follow tornado warnings separately; straight-line winds can also cause severe damage.",
+  "steps": [
+    [
+      "Secure items beforehand",
+      "Bring loose items inside while conditions are calm; do not go out once winds are dangerous."
+    ],
+    [
+      "Use an interior room",
+      "Stay away from glass and large exterior openings."
+    ],
+    [
+      "Limit driving",
+      "High-profile vehicles are vulnerable; avoid routes lined with falling trees or debris."
+    ],
+    [
+      "Keep clear afterward",
+      "Assume downed lines are live and report them from a safe distance."
+    ]
+  ],
+  "next": "Inspect damage without entering unstable buildings. Arrange help for trees touching wires.",
+  "watch": "Do not attempt to clear a tree from a power line.",
+  "sources": "damaging-winds",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

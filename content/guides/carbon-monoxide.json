@@ -1,0 +1,41 @@
+{
+  "slug": "carbon-monoxide",
+  "title": "Carbon monoxide",
+  "category": "home-building",
+  "subcategory": "Air & gas",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "co alarm",
+    "co poisoning",
+    "carbon monoxide exposure"
+  ],
+  "keywords": [
+    "Air & gas"
+  ],
+  "tldr": "If a CO alarm sounds or carbon monoxide exposure is suspected, get everyone into fresh air immediately and call emergency services. Do not stay inside to find the source. Headache, dizziness, nausea or confusion can be warning signs.",
+  "steps": [
+    [
+      "Leave the building",
+      "Move people and pets into fresh air, without delaying to ventilate or troubleshoot."
+    ],
+    [
+      "Call from outside",
+      "Report the alarm, symptoms and possible fuel-burning source to emergency services."
+    ],
+    [
+      "Get medical help",
+      "Tell responders about suspected exposure even if symptoms improve outdoors."
+    ],
+    [
+      "Wait for clearance",
+      "Do not reenter until responders say it is safe."
+    ]
+  ],
+  "next": "Install CO alarms and service heating equipment. Keep generators and grills outdoors, far from openings.",
+  "watch": "CO is invisible and odorless. A silent smoke alarm is not proof that air is safe.",
+  "sources": "carbon-monoxide",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

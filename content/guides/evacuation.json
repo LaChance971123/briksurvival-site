@@ -1,0 +1,41 @@
+{
+  "slug": "evacuation",
+  "title": "Evacuation",
+  "label": "MOVEMENT",
+  "deck": "A departure is easier when the destination and route are already decided.",
+  "tldr": "Follow the evacuation order for your area. Leave early enough to use a safe route; take people, pets, medication, identification, phone and charger, keys, and a few essentials. Know where you are going, tell a contact, and do not take a closed or flooded road.",
+  "steps": [
+    [
+      "Confirm the order",
+      "Check the official zone, deadline, route, shelter options, and whether the order includes your address."
+    ],
+    [
+      "Gather people first",
+      "Account for everyone and pets. Take required medication and medical supplies, documents, accessible equipment, keys, and a charged phone. Do not spend critical time packing extras."
+    ],
+    [
+      "Choose a destination",
+      "Go to a trusted contact or designated shelter outside the hazard area. Check pet rules, accessibility, and transport needs."
+    ],
+    [
+      "Leave and report safely",
+      "Use current official routes. Share your destination with an out-of-area contact, keep fuel in the vehicle if relevant, and do not return until authorities say it is safe."
+    ]
+  ],
+  "next": "Make two destinations and more than one route in advance. Keep a small grab list by the door, especially for medications, pets, and items that cannot be prepacked.",
+  "watch": "If a route is unsafe, do not force it. Follow current local instructions or contact emergency services for help. Some hazards, especially radiation fallout, can make immediate travel more dangerous than sheltering; follow the hazard-specific order.",
+  "sources": "evacuation",
+  "diagram": "evacuation",
+  "category": "evacuation-shelter",
+  "subcategory": "Evacuation",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "need to leave home"
+  ],
+  "keywords": [
+    "Evacuation"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

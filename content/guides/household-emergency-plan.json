@@ -1,0 +1,40 @@
+{
+  "slug": "household-emergency-plan",
+  "title": "Household emergency plan",
+  "category": "preparedness",
+  "subcategory": "Planning",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "family plan",
+    "emergency plan"
+  ],
+  "keywords": [
+    "Planning"
+  ],
+  "tldr": "Agree on how to receive warnings, where to shelter, when and where to evacuate, and how to reconnect if separated. Write the plan down and include people who need medication, mobility assistance or caregiver support.",
+  "steps": [
+    [
+      "Identify local risks",
+      "Use local emergency management information and plan for likely hazards."
+    ],
+    [
+      "Choose meeting places",
+      "Pick a nearby safe place and an out-of-area destination plus backup routes."
+    ],
+    [
+      "Assign contact arrangements",
+      "Name an out-of-area contact, write phone numbers and agree on check-in times."
+    ],
+    [
+      "Practice and update",
+      "Run a simple drill and revise for changes in health, school, work or pets."
+    ]
+  ],
+  "next": "Keep copies offline and in go bags. Share relevant details with caregivers and trusted contacts.",
+  "watch": "A plan that depends on one vehicle or one working phone network needs alternatives.",
+  "sources": "household-emergency-plan",
+  "shopping": [],
+  "urgency": "planning",
+  "review_status": "source-linked"
+}

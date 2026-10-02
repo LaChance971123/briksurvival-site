@@ -1,0 +1,41 @@
+{
+  "slug": "cpr",
+  "title": "Adult hands-only CPR",
+  "category": "medical",
+  "subcategory": "Resuscitation",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "cardiac arrest",
+    "not breathing",
+    "adult collapsed"
+  ],
+  "keywords": [
+    "Resuscitation"
+  ],
+  "tldr": "If an adult suddenly collapses, is unresponsive and is not breathing normally or is only gasping, call emergency services, get an AED and start chest compressions. Push hard and fast in the center of the chest at 100\u2013120 compressions per minute; follow dispatcher instructions.",
+  "steps": [
+    [
+      "Check safely",
+      "Ensure the scene is safe and check responsiveness and breathing quickly."
+    ],
+    [
+      "Call and get an AED",
+      "Use speakerphone or send someone to call and bring an AED."
+    ],
+    [
+      "Give compressions",
+      "Place both hands in the center of the chest; compress at least 2 inches, avoiding more than 2.4 inches, and allow full recoil."
+    ],
+    [
+      "Continue",
+      "Follow the AED prompts and dispatcher instructions until responders take over or normal signs of life return."
+    ]
+  ],
+  "next": "Take a CPR course. Trained rescuers can give breaths according to training; children, infants, drowning and other breathing-related arrests need appropriate CPR with breaths.",
+  "watch": "This adult sudden-collapse guide does not replace infant or child CPR instructions. Gasping is not normal breathing.",
+  "sources": "cpr",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked; independent clinical review pending"
+}

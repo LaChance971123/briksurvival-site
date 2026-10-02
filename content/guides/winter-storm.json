@@ -1,0 +1,41 @@
+{
+  "slug": "winter-storm",
+  "title": "Winter storm",
+  "category": "natural-hazards",
+  "subcategory": "Winter",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "snowstorm",
+    "blizzard",
+    "stuck in snow"
+  ],
+  "keywords": [
+    "Winter"
+  ],
+  "tldr": "Stay indoors and postpone travel during dangerous snow, ice or blowing snow. Keep heat safe, use battery lighting and watch for power loss. If stranded in a vehicle, stay with it unless a safer shelter is clearly accessible.",
+  "steps": [
+    [
+      "Check road conditions",
+      "Use official closures and forecasts before deciding to travel."
+    ],
+    [
+      "Keep warmth safe",
+      "Wear dry layers; never heat a home with an oven, grill or indoor generator."
+    ],
+    [
+      "Prepare for outages",
+      "Keep essential medicines, water, food, light and charged batteries accessible."
+    ],
+    [
+      "If stranded",
+      "Call for help with your location. If running the engine briefly for heat, first clear snow from the exhaust and crack a window; monitor for carbon monoxide."
+    ]
+  ],
+  "next": "Check on people who rely on powered equipment or may lack safe heat. Arrange relocation before indoor temperatures become dangerous.",
+  "watch": "Do not walk away from a stranded vehicle in poor visibility unless you know a safe nearby destination.",
+  "sources": "winter-storm",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "armed-conflict",
+  "title": "Armed conflict",
+  "label": "CIVILIAN SAFETY",
+  "deck": "A civilian plan for shelter, communication, displacement, and unexploded hazards.",
+  "tldr": "If fighting is nearby, get away from windows and exposed areas and follow trustworthy local shelter or evacuation instructions. Keep people together, identify a safe place and a contact outside the area, and carry essential medication and documents if you must leave. Never touch an unfamiliar munition or suspicious debris.",
+  "steps": [
+    [
+      "Get to safer cover",
+      "Move away from windows and exterior openings to a sturdy interior space when travel is unsafe. If authorities direct an evacuation and the route is safe, follow it."
+    ],
+    [
+      "Keep a family plan",
+      "Agree on a meeting point and an out-of-area contact. Write down important numbers; phone and data service may fail."
+    ],
+    [
+      "Prepare for movement",
+      "Keep identification, medication, water, phone power, weather-appropriate clothing, and children\u2019s essentials accessible. Check current routes and shelter options before departure."
+    ],
+    [
+      "Avoid explosive remnants",
+      "Do not approach, handle, or move unexploded objects. Keep others away and report the location through local authorities when safe."
+    ]
+  ],
+  "next": "If abroad, check your country's embassy or consular crisis messages; do not assume transport or evacuation will be provided. Reassess each movement against current conditions rather than an old map or rumor.",
+  "watch": "This is civilian protective guidance, not a movement order. The safest choice can change quickly with the location, time, and instructions from responsible authorities.",
+  "sources": "conflict",
+  "category": "conflict",
+  "subcategory": "Conflict",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "war"
+  ],
+  "keywords": [
+    "Conflict"
+  ],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "ice-storm",
+  "title": "Ice storm",
+  "category": "natural-hazards",
+  "subcategory": "Winter",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "freezing rain",
+    "glaze ice"
+  ],
+  "keywords": [
+    "Winter"
+  ],
+  "tldr": "Avoid travel on icy roads and keep away from ice-laden trees and power lines. Prepare for a long outage using safe heat and battery lights. Stay indoors until conditions improve unless your shelter is unsafe.",
+  "steps": [
+    [
+      "Postpone travel",
+      "Even thin ice can make roads and sidewalks unsafe."
+    ],
+    [
+      "Avoid falling hazards",
+      "Stay clear of branches, wires and roofs shedding ice."
+    ],
+    [
+      "Use safe backup heat",
+      "Keep combustion equipment outdoors and maintain working CO alarms."
+    ],
+    [
+      "Check vulnerable people",
+      "Plan safe transport to a warm location if heat or essential medical power fails."
+    ]
+  ],
+  "next": "Use footwear with traction for necessary movement and do not enter areas beneath damaged trees.",
+  "watch": "Never touch or approach a fallen wire, even if it appears inactive.",
+  "sources": "ice-storm",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

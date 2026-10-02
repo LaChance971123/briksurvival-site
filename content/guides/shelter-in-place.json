@@ -1,0 +1,40 @@
+{
+  "slug": "shelter-in-place",
+  "title": "Shelter-in-place",
+  "category": "evacuation-shelter",
+  "subcategory": "Shelter",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "stay inside",
+    "shelter indoors"
+  ],
+  "keywords": [
+    "Shelter"
+  ],
+  "tldr": "Go inside when instructed and choose the shelter location for the specific hazard. An airborne chemical release, tornado and radiation event need different shelter choices. Follow the official notice about room location, ventilation and when to leave.",
+  "steps": [
+    [
+      "Identify the hazard",
+      "Read the actual shelter instruction and affected area."
+    ],
+    [
+      "Choose the correct room",
+      "Use an interior low room for tornadoes, a basement or central area for fallout, and the room specified for a chemical event."
+    ],
+    [
+      "Bring immediate essentials",
+      "Take people, pets, medicines, phone power and a radio without delaying shelter."
+    ],
+    [
+      "Stay informed",
+      "Remain until officials advise otherwise, unless fire or another immediate danger makes the building unsafe."
+    ]
+  ],
+  "next": "Plan safe rooms for the hazards in your area and keep an alert source that works during outages.",
+  "watch": "Do not apply chemical room-sealing instructions to every hazard or remain in a burning building.",
+  "sources": "shelter-in-place",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

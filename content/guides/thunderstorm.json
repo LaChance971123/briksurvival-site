@@ -1,0 +1,40 @@
+{
+  "slug": "thunderstorm",
+  "title": "Thunderstorm",
+  "category": "natural-hazards",
+  "subcategory": "Severe storms",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "storm coming",
+    "thunder"
+  ],
+  "keywords": [
+    "Severe storms"
+  ],
+  "tldr": "Go inside a substantial building or a fully enclosed hard-top vehicle when thunder is heard. Stay away from windows and monitor warnings for damaging wind, hail, tornadoes and flash flooding.",
+  "steps": [
+    [
+      "Get indoors",
+      "Open shelters, tents and trees do not protect from lightning."
+    ],
+    [
+      "Avoid conductive paths",
+      "Inside, avoid plumbing and plugged-in equipment during lightning."
+    ],
+    [
+      "Read new warnings",
+      "Move to an interior room for severe wind or hail; use a tornado shelter if a tornado warning is issued."
+    ],
+    [
+      "Wait before returning",
+      "After the last thunder, wait at least 30 minutes before resuming outdoor activity."
+    ]
+  ],
+  "next": "Check for downed lines and flooded routes before travel. Schedule outdoor work around forecasts.",
+  "watch": "Every thunderstorm can produce lightning, even without a severe thunderstorm warning.",
+  "sources": "thunderstorm",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

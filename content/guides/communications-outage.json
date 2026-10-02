@@ -1,0 +1,42 @@
+{
+  "slug": "communications-outage",
+  "title": "Communications outage",
+  "category": "communications",
+  "subcategory": "Connectivity",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "no cell service",
+    "no signal",
+    "internet outage",
+    "cell network down"
+  ],
+  "keywords": [
+    "Connectivity"
+  ],
+  "tldr": "Conserve phone battery, try short texts for nonurgent check-ins and use a battery radio for official information. For immediate danger, try calling local emergency services; text-to-911 availability varies. Do not travel into danger just to find signal.",
+  "steps": [
+    [
+      "Check alternatives",
+      "Try a safe available landline, another carrier or Wi-Fi calling if configured and functioning."
+    ],
+    [
+      "Keep messages short",
+      "Send your location, status and next check-in time to your out-of-area contact."
+    ],
+    [
+      "Protect battery",
+      "Lower brightness, enable low-power mode and limit unnecessary use."
+    ],
+    [
+      "Use the meeting plan",
+      "If networks fail completely, follow the agreed safe meeting and contact arrangements."
+    ]
+  ],
+  "next": "Keep paper contact lists, offline maps and a radio. Arrange check-in times before a crisis.",
+  "watch": "A message sent is not necessarily delivered. Do not assume emergency texting is supported everywhere.",
+  "sources": "communications-outage",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

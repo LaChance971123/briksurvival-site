@@ -1,0 +1,41 @@
+{
+  "slug": "chemical-emergency",
+  "title": "Chemical release",
+  "category": "chemical-radiation",
+  "subcategory": "Chemical",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "chemical spill",
+    "hazmat",
+    "industrial accident"
+  ],
+  "keywords": [
+    "Chemical"
+  ],
+  "tldr": "Move away from a chemical release and follow official instructions about evacuation or sheltering indoors. If exposed, get the chemical off and seek help. For severe symptoms, call emergency services; in the U.S., Poison Control is 1-800-222-1222.",
+  "steps": [
+    [
+      "Leave the release area",
+      "Do not approach a spill or plume to identify it."
+    ],
+    [
+      "Follow shelter or evacuation orders",
+      "The right action depends on the substance and where the release is; use location-specific instructions."
+    ],
+    [
+      "Get clean",
+      "Follow Poison Control or responder instructions for removing contaminated clothing and washing; avoid spreading contamination to others."
+    ],
+    [
+      "Get medical help",
+      "Tell responders what was involved if known, your location and symptoms."
+    ]
+  ],
+  "next": "Wait for official clearance before returning. Keep contaminated items isolated as responders direct.",
+  "watch": "A dust mask or N95 does not protect against toxic gases.",
+  "sources": "chemical-emergency",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

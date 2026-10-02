@@ -1,0 +1,41 @@
+{
+  "slug": "tornado",
+  "title": "Tornado",
+  "category": "natural-hazards",
+  "subcategory": "Severe storms",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "twister",
+    "tornado warning",
+    "funnel cloud"
+  ],
+  "keywords": [
+    "Severe storms"
+  ],
+  "tldr": "If a tornado warning covers your location, shelter now in a basement or small interior room on the lowest floor of a sturdy building. Stay away from windows and cover your head and neck. A mobile home is not a safe tornado shelter.",
+  "steps": [
+    [
+      "Go to the shelter",
+      "Move immediately; put shoes on if within reach and take your phone without delaying. Use a designated storm shelter when accessible."
+    ],
+    [
+      "Protect your head",
+      "Crouch low and cover your head and neck with your arms. Use a sturdy table or available cushioning for additional protection."
+    ],
+    [
+      "If outside or in a vehicle",
+      "Get to a nearby sturdy building if safely possible. Do not shelter under an overpass. Vehicles and mobile homes offer little protection."
+    ],
+    [
+      "Keep listening",
+      "Use local warning messages or weather radio; remain sheltered until the threat has passed and official updates permit leaving."
+    ]
+  ],
+  "next": "Afterward, avoid damaged buildings, broken glass and downed lines. Check for injuries and use text to let your contact know you are safe.",
+  "watch": "Do not wait to see a funnel. Darkness and rain can hide tornadoes. A watch calls for readiness; a warning calls for action.",
+  "sources": "tornado",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

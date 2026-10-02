@@ -1,0 +1,41 @@
+{
+  "slug": "food-safety-outage",
+  "title": "Food safety after power loss",
+  "category": "recovery",
+  "subcategory": "Food & water",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "food after blackout",
+    "fridge off",
+    "spoiled food"
+  ],
+  "keywords": [
+    "Food & water"
+  ],
+  "tldr": "Keep refrigerator and freezer doors closed. Without power, a refrigerator keeps food safe for about 4 hours; a full freezer about 48 hours and a half-full freezer about 24 hours. Never taste food to test safety. Use official discard guidance and a thermometer.",
+  "steps": [
+    [
+      "Note the time",
+      "Record when power failed and avoid opening cold storage."
+    ],
+    [
+      "Use temperatures",
+      "Check appliance and food temperatures when safe; appearance and smell do not prove safety."
+    ],
+    [
+      "Discard risky food",
+      "After 4 hours without power or another cold source, discard refrigerated perishables such as meat, eggs and leftovers."
+    ],
+    [
+      "Check frozen food",
+      "Food with ice crystals or at 40\u00b0F or below can generally be refrozen or cooked; use official food-specific charts."
+    ]
+  ],
+  "next": "Clean appliances and replace spoiled supplies. Keep thermometers available before the next outage.",
+  "watch": "Do not serve questionable food to people or pets.",
+  "sources": "food-safety-outage",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

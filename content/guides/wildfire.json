@@ -1,0 +1,40 @@
+{
+  "slug": "wildfire",
+  "title": "Wildfire",
+  "category": "natural-hazards",
+  "subcategory": "Fire & air",
+  "content_type": "Emergency guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "forest fire",
+    "brush fire"
+  ],
+  "keywords": [
+    "Fire & air"
+  ],
+  "tldr": "Check evacuation notices for your address. Leave promptly when ordered, using the current official route; do not delay for possessions. If a fire threatens your escape or you are trapped, call emergency services with your precise location.",
+  "steps": [
+    [
+      "Confirm your zone",
+      "Use fire agency and emergency management alerts rather than old perimeter maps."
+    ],
+    [
+      "Gather people and pets",
+      "Take essential medicines, identification, keys and phone power without delaying departure."
+    ],
+    [
+      "Use official routes",
+      "Smoke and closures can change quickly; do not drive into heavy smoke or flames."
+    ],
+    [
+      "Report your destination",
+      "Tell an out-of-area contact where you are going and follow shelter instructions."
+    ]
+  ],
+  "next": "Return only when reentry is allowed. Check for damaged utilities, hot debris and continuing smoke.",
+  "watch": "A smoke-control room cannot protect you from a fire approaching the building.",
+  "sources": "wildfire",
+  "shopping": [],
+  "urgency": "immediate",
+  "review_status": "source-linked"
+}

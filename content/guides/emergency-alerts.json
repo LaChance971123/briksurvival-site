@@ -1,0 +1,41 @@
+{
+  "slug": "emergency-alerts",
+  "title": "Emergency alerts",
+  "category": "communications",
+  "subcategory": "Warnings & information",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "warning",
+    "weather radio",
+    "notifications"
+  ],
+  "keywords": [
+    "Warnings & information"
+  ],
+  "tldr": "Check an official alert for your exact location, hazard, timing and required action. Enable emergency alerts on your phone and add local emergency management notifications. Keep a battery radio as backup rather than relying on one app.",
+  "steps": [
+    [
+      "Enable phone alerts",
+      "Review emergency notification settings and keep the phone charged."
+    ],
+    [
+      "Add local channels",
+      "Sign up with your county or city emergency management office and utility."
+    ],
+    [
+      "Use weather backup",
+      "For weather hazards, use NOAA Weather Radio or your local official warning service."
+    ],
+    [
+      "Read the action",
+      "Distinguish preparation notices from instructions to shelter or evacuate."
+    ]
+  ],
+  "next": "Write down local frequencies and contact information. Test devices and accessibility features with your household.",
+  "watch": "Alerts can be delayed or missed. Act on obvious immediate danger and natural warning signs.",
+  "sources": "emergency-alerts",
+  "shopping": [],
+  "urgency": "planning",
+  "review_status": "source-linked"
+}

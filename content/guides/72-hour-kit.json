@@ -1,0 +1,49 @@
+{
+  "slug": "72-hour-kit",
+  "title": "72-hour emergency kit",
+  "category": "preparedness",
+  "subcategory": "Kits & supplies",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-02",
+  "aliases": [
+    "3 day kit",
+    "emergency supplies"
+  ],
+  "keywords": [
+    "Kits & supplies"
+  ],
+  "tldr": "Start with at least three days of safe water, ready-to-eat food, essential medicines, lighting and communication supplies. Include one gallon of water per person per day as a starting point, and account for pets, heat, medical needs and accessibility.",
+  "steps": [
+    [
+      "Inventory what you own",
+      "Gather usable supplies before buying duplicates."
+    ],
+    [
+      "Cover essentials",
+      "Choose safe water, shelf-stable food, a can opener, light, radio, batteries and phone charging."
+    ],
+    [
+      "Personalize",
+      "Add medication arrangements, eyeglasses, infant needs, pet supplies, hygiene and accessible equipment."
+    ],
+    [
+      "Maintain the kit",
+      "Label dates, rotate food and water as instructed and check supplies routinely."
+    ]
+  ],
+  "next": "Build longer-duration supplies as space and budget allow. Keep an evacuation bag separate enough to carry.",
+  "watch": "A standard checklist is only a starting point; three days may not cover a prolonged disruption.",
+  "sources": "72-hour-kit",
+  "shopping": [
+    "Bottled water / food-grade water containers",
+    "Shelf-stable food and manual can opener",
+    "Flashlight and spare batteries",
+    "Battery radio",
+    "Power bank and charging cables",
+    "First aid supplies",
+    "Hygiene supplies",
+    "Pet and infant supplies as needed"
+  ],
+  "urgency": "planning",
+  "review_status": "source-linked"
+}
