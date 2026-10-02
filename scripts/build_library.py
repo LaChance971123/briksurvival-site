@@ -88,8 +88,21 @@ for g in GUIDES:
  label,source=SOURCES[g['sources']][0];resources+=f'<a class="resource-button resource-official" href="{e(source,quote=True)}" target="_blank" rel="noopener noreferrer">Official guidance <small>{e(label)}</small></a>'
  steps=''.join(f'<li><span class="step-num">{n:02}</span><div><h3>{e(h)}</h3><p>{e(p)}</p></div></li>' for n,(h,p) in enumerate(g['steps'],1))
  sources=''.join(f'<li><a href="{e(u,quote=True)}" target="_blank" rel="noopener noreferrer">{e(l)}</a></li>' for l,u in SOURCES[g['sources']])
- related=[x for x in GUIDES if x['slug']!=g['slug'] and x['category']==g['category']][:4]
- extra=['evacuation','emergency-alerts','72-hour-kit']
+ related=[x for x in GUIDES if x['slug']!=g['slug'] and x['category']==g['category'] and x['subcategory']==g['subcategory']][:3]
+ extra={
+  'power-outage':['generator-safety','food-safety-outage','water-disruption','extreme-cold'],
+  'earthquake':['tsunami','evacuation','gas-leak'],
+  'wildfire':['wildfire-smoke','evacuation','go-bag'],
+  'wildfire-smoke':['wildfire','extreme-heat'],
+  'tornado':['damaging-winds','thunderstorm','emergency-alerts'],
+  'home-fire':['evacuation','carbon-monoxide','household-emergency-plan'],
+  'carbon-monoxide':['generator-safety','power-outage'],
+  'evacuation':['go-bag','household-emergency-plan','emergency-alerts'],
+  'food-safety-outage':['power-outage','water-outage','72-hour-kit'],
+  'nuclear-detonation':['shelter-in-place','water-disruption','emergency-alerts'],
+  'cpr':['aed','choking','severe-bleeding'],
+  'vehicle-breakdown':['winter-storm','extreme-heat','communications-outage']
+ }.get(g['slug'],['emergency-alerts','72-hour-kit','evacuation'])
  for slug in extra:
   x=next(x for x in GUIDES if x['slug']==slug)
   if x not in related and slug!=g['slug'] and len(related)<4:related.append(x)
@@ -140,7 +153,7 @@ for c in CATS:browse('/library/'+c['id']+'/',c['title'],[g for g in GUIDES if g[
 browse('/emergencies/severe-weather/','Weather: choose the specific hazard.',[g for g in GUIDES if g['category']=='natural-hazards' and g['subcategory'] in ['Severe storms','Tropical weather','Winter','Heat & dry conditions','Flooding']])
 filters=''.join(f'<option value="{c["id"]}">{e(c["title"])}</option>' for c in CATS)
 types=['Emergency guide','Preparedness guide','Field guide','Checklist','Shopping list','Published reference']
-main=f'''<main id="main" class="subpage"><section class="wrap library-heading"><p class="kicker">SEARCH THE ENCYCLOPEDIA</p><h1>What happened?</h1><p>Use a topic or a few words. Try “lights out”, “smell gas” or “water unsafe”.</p><form id="global-search-form" class="library-search" role="search"><label for="global-search">Search all guides and downloads</label><div><input id="global-search" name="q" type="search" autocomplete="off" aria-controls="search-results" placeholder="Find the next step"><button class="button button-primary">Search</button></div><div class="search-filters"><label>Subject<select id="search-category"><option value="">All subjects</option>{filters}</select></label><label>Resource type<select id="search-type"><option value="">All types</option>{''.join(f'<option>{x}</option>' for x in types)}</select></label><button type="button" id="search-reset">Clear filters</button></div></form><p id="search-status" role="status" aria-live="polite">Loading the library…</p><div id="search-results" class="search-results"></div><noscript><p>Search needs JavaScript. <a href="/library/">Browse all topics here</a>; guides and downloads work without JavaScript.</p></noscript></section></main>'''
+main=f'''<main id="main" class="subpage"><section class="wrap library-heading"><p class="kicker">SEARCH THE ENCYCLOPEDIA</p><h1>What happened?</h1><p>Use a topic or a few words. Try “lights out”, “smell gas” or “water unsafe”.</p><form id="global-search-form" class="library-search" role="search"><label for="global-search">Search all guides and downloads</label><div><input id="global-search" name="q" type="search" autocomplete="off" aria-controls="search-results" placeholder="Find the next step"><button class="button button-primary">Search</button></div><div class="search-filters"><label for="search-category">Subject<select id="search-category"><option value="">All subjects</option>{filters}</select></label><label for="search-type">Resource type<select id="search-type"><option value="">All types</option>{''.join(f'<option>{x}</option>' for x in types)}</select></label><button type="button" id="search-reset">Clear filters</button></div></form><p id="search-status" role="status" aria-live="polite">Loading the library…</p><div id="search-results" class="search-results"></div><noscript><p>Search needs JavaScript. <a href="/library/">Browse all topics here</a>; guides and downloads work without JavaScript.</p></noscript></section></main>'''
 page('/search/','Search','Search the entire Osprey Zero library by topic, common phrase or keyword.',main)
 for k,r in MANUALS.items():
  INDEX.append(dict(title=r['title'],url=r['url'],category='Reference shelf',category_id='',subcategory='Published manuals',content_type='Published reference',aliases=[],summary=r['description'],text=r['description'],priority=0))
