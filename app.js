@@ -30,3 +30,13 @@ const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
 
 for (const button of document.querySelectorAll("[data-print]")) button.addEventListener("click", () => window.print());
+
+// Monetag vignette: never initialize advertisements on homepage aliases.
+(() => {
+  const path = window.location.pathname.replace(/\/+$/, '') || '/';
+  if (['/', '/index.html', '/index', '/indexv3.html'].includes(path)) return;
+  const script = document.createElement('script');
+  script.dataset.zone = '11941449';
+  script.src = 'https://n6wxm.com/vignette.min.js';
+  (document.body || document.documentElement).appendChild(script);
+})();
