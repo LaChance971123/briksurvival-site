@@ -4,7 +4,7 @@
 
 A calm, premium knowledge platform that is useful before the full guide library exists and scales into a one-stop emergency reference. The homepage must let a visitor facing a disruption find a situation immediately, while offering a slower path into preparedness, original guides, and the newsletter.
 
-The approved Osprey Zero logo is the OZ osprey monogram with field-bone mark and signal-orange triangle. The site uses the exact palette: Obsidian Black `#0B0D0F`, Field Bone `#D7D1C4`, Field Olive `#55624A`, Slate Gray `#6B7378`, Signal Orange `#F05A2A`. The page surfaces are solid black and charcoal. There are no photographic or decorative graphics behind content. Orange is reserved for direction, active states, small rules, and primary actions. Typography uses a condensed display face, readable body text, and restrained mono labels. The inherited slogan remains exact: **Skill beats panic. Every time.**
+The approved Osprey Zero logo is the OZ osprey monogram with field-bone mark and signal-orange triangle. The site uses the exact palette: Obsidian Black `#0B0D0F`, Field Bone `#D7D1C4`, Field Olive `#55624A`, Slate Gray `#6B7378`, Signal Orange `#F05A2A`. The page surfaces are solid black and charcoal. There are no photographic or decorative graphics behind content. Orange is reserved for direction, active states, small rules, and primary actions. Typography shares ClipJar’s Space Grotesk display face and DM Sans body text, with restrained IBM Plex Mono labels for field references. The inherited slogan remains exact: **Skill beats panic. Every time.**
 
 ## Visitor paths
 
