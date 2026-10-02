@@ -24,3 +24,10 @@ assert(fs.readFileSync('scripts/refine_site.py','utf8').includes('/ads.js?v=oz8"
 assert(fs.readFileSync('scripts/stage_site.py','utf8').includes("'ads.js'"));
 assert(fs.readFileSync('sw.js','utf8').includes('11941494'));
 console.log('PASS: early vignette coverage, secondary push hubs, critical-page exclusions, no duplicate formats, delivery diagnostics.');
+
+const policies=JSON.parse(fs.readFileSync('config/security-policy.json','utf8'));
+assert(!policies.default.includes("script-src-elem 'self' https: 'unsafe-inline'"));
+assert(policies.push_hubs.includes("script-src-elem 'self' https: 'unsafe-inline'"));
+assert(policies.push_hubs.includes("script-src-attr 'none'"));
+assert(!policies.push_hubs.includes("'unsafe-eval'"));
+assert(!fs.readFileSync('netlify.toml','utf8').includes('Content-Security-Policy ='));
