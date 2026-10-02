@@ -54,3 +54,5 @@ if (menu && nav) {
 }
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
+
+for (const button of document.querySelectorAll("[data-print]")) button.addEventListener("click", () => window.print());
