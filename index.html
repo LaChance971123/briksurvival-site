@@ -15,8 +15,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=oz2">
-  <script src="/app.js" defer></script>
+  <link rel="stylesheet" href="/styles.css?v=oz3">
+  <script src="/app.js?v=oz3" defer></script>
   <title>Osprey Zero — Skill beats panic. Every time.</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
   <div class="utility-line"><div class="wrap utility-inner"><span>OSPREY ZERO <i></i> FIELD KNOWLEDGE / V1.0</span><span>SKILL BEATS PANIC. EVERY TIME.</span></div></div>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="/" aria-label="Osprey Zero home"><img src="/Assets/oz-mark.webp" alt="" width="45" height="45"><span>OSPREY <strong>ZERO</strong></span></a>
+      <a class="brand" href="/" aria-label="Osprey Zero home"><img src="/Assets/oz-mark.webp" alt="" width="62" height="62"><span>OSPREY <strong>ZERO</strong></span></a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
       <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
         <a href="/emergencies/">Emergencies</a><a href="/preparedness/">Preparedness</a><a href="/guides/">Field guides</a><a href="/resources/">Reference shelf</a><a href="/about/">About</a>
@@ -56,7 +56,7 @@
 
     <section id="find-help" class="section wrap finder-section" aria-labelledby="finder-title">
       <div class="section-head"><div><p class="kicker"><span class="accent-line"></span> THE FAST PATH</p><h2 id="finder-title">Start with what’s <span>happening.</span></h2></div><p>Choose a situation. Each topic stays here on Osprey Zero, with a short orientation first and deeper guides as the library grows.</p></div>
-      <div class="finder-bar"><label for="emergency-search">Find a situation</label><div class="search-control"><span aria-hidden="true">⌕</span><input id="emergency-search" type="search" placeholder="Search power, storm, water, evacuation…" autocomplete="off"><kbd>/</kbd></div><span class="finder-count" id="finder-count">06 TOPICS</span></div>
+      <div class="finder-bar"><label for="emergency-search">Find a situation</label><div class="search-control"><span aria-hidden="true">⌕</span><input id="emergency-search" type="search" placeholder="Search power, storm, water, evacuation…" autocomplete="off"><kbd>/</kbd></div><span class="finder-count" id="finder-count" role="status" aria-live="polite" aria-atomic="true">06 TOPICS</span></div>
       <div class="topic-grid" id="topic-grid">
         <a class="topic-card" href="/emergencies/#power-outage" data-search="power outage blackout electricity grid generator"><span class="topic-index">01 / UTILITIES</span><span class="topic-symbol" aria-hidden="true">ϟ</span><h3>Power outage</h3><p>When the lights go out and the clock starts.</p><span class="topic-link">Open topic <b aria-hidden="true">↗</b></span></a>
         <a class="topic-card" href="/emergencies/#severe-weather" data-search="severe weather storm tornado hurricane lightning cold heat"><span class="topic-index">02 / WEATHER</span><span class="topic-symbol" aria-hidden="true">≋</span><h3>Severe weather</h3><p>Warnings, shelter decisions, and what comes next.</p><span class="topic-link">Open topic <b aria-hidden="true">↗</b></span></a>
@@ -65,7 +65,7 @@
         <a class="topic-card" href="/emergencies/#evacuation" data-search="evacuation leave go bag home emergency shelter"><span class="topic-index">05 / MOVEMENT</span><span class="topic-symbol" aria-hidden="true">↗</span><h3>Evacuation</h3><p>Make a clear departure plan before you need it.</p><span class="topic-link">Open topic <b aria-hidden="true">↗</b></span></a>
         <a class="topic-card" href="/emergencies/#water-disruption" data-search="water disruption boil water notice drinking sanitation utility"><span class="topic-index">06 / ESSENTIALS</span><span class="topic-symbol" aria-hidden="true">◌</span><h3>Water disruption</h3><p>Find the current notice and plan safe access.</p><span class="topic-link">Open topic <b aria-hidden="true">↗</b></span></a>
       </div>
-      <p class="no-results" id="no-results" hidden>No matching topic yet. <a href="/emergencies/">Browse all emergency topics.</a></p>
+      <p class="no-results" id="no-results" role="status" hidden>No matching topic yet. <a href="/emergencies/">Browse all emergency topics.</a></p>
       <div class="section-bottom"><span>FIELD DIRECTORY / 06 STARTING POINTS</span><a href="/emergencies/">Browse the emergency directory <span aria-hidden="true">→</span></a></div>
     </section>
 
@@ -79,6 +79,6 @@
 
     <section class="resource-band" aria-labelledby="resource-title"><div class="wrap resource-band-inner"><div><p class="kicker"><span class="accent-line"></span> REFERENCE SHELF</p><h2 id="resource-title">Know where the knowledge comes from.</h2><p>Our guides will be written for Osprey Zero. We’ll keep government guidance, public health references, and published field manuals in a separate source library for deeper reading and current instructions.</p></div><a class="button button-outline" href="/resources/">Open the reference shelf <span aria-hidden="true">→</span></a></div></section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-top"><div><a class="brand" href="/" aria-label="Osprey Zero home"><img src="/Assets/oz-mark.webp" alt="" width="42" height="42"><span>OSPREY <strong>ZERO</strong></span></a><p>Field knowledge, preparedness, and practical survival intelligence.</p></div><div class="footer-nav"><div><b>EXPLORE</b><a href="/emergencies/">Emergencies</a><a href="/preparedness/">Preparedness</a><a href="/guides/">Field guides</a></div><div><b>MORE</b><a href="/resources/">Reference shelf</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></div></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Osprey Zero</span><span>Skill beats panic. Every time.</span><span>When an emergency is active, follow local official instructions.</span></div></footer>
+  <footer class="site-footer"><div class="wrap footer-top"><div><a class="brand" href="/" aria-label="Osprey Zero home"><img src="/Assets/oz-mark.webp" alt="" width="52" height="52"><span>OSPREY <strong>ZERO</strong></span></a><p>Field knowledge, preparedness, and practical survival intelligence.</p></div><div class="footer-nav"><div><b>EXPLORE</b><a href="/emergencies/">Emergencies</a><a href="/preparedness/">Preparedness</a><a href="/guides/">Field guides</a></div><div><b>MORE</b><a href="/resources/">Reference shelf</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></div></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Osprey Zero</span><span>Skill beats panic. Every time.</span><span>When an emergency is active, follow local official instructions.</span></div></footer>
 </body>
 </html>
