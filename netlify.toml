@@ -10,7 +10,7 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
-    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self' https://assets.mailerlite.com; frame-ancestors 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://groot.mailerlite.com; connect-src 'self' https://assets.mailerlite.com https://groot.mailerlite.com"
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self' https://assets.mailerlite.com; frame-ancestors 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https:; connect-src 'self' https:; frame-src https:"
 
 [[headers]]
   for = "/Assets/*"
@@ -25,7 +25,7 @@
 [[headers]]
   for = "/app.js"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 # The old Brik checklist URL remains accessible during content conversion.
 [[redirects]]
