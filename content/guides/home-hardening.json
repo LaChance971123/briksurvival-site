@@ -1,0 +1,70 @@
+{
+  "slug": "home-hardening",
+  "title": "Home preparedness and practical hardening",
+  "category": "home-building",
+  "subcategory": "Homes & security",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "home hardening",
+    "house hardening"
+  ],
+  "keywords": [
+    "Homes & security",
+    "home hardening",
+    "house hardening"
+  ],
+  "tldr": "Start with working alarms, usable exits, secure doors and windows, and maintenance against local hazards. Hardening should reduce risk while keeping everyone able to escape.",
+  "steps": [
+    [
+      "Audit basic safety",
+      "Check alarms according to their instructions, keep escape paths clear and identify damaged locks, unsafe wiring, water leaks or blocked drainage."
+    ],
+    [
+      "Match improvements to hazards",
+      "Use local wind, flood, wildfire and heat risks to set priorities. Consult qualified professionals for structural, electrical, roofing or flood-resistant work."
+    ],
+    [
+      "Improve access control",
+      "Repair suitable locks, latch hardware and exterior lighting. Secure outdoor tools and avoid hiding spare keys in obvious places. Preserve safe emergency exit operation."
+    ],
+    [
+      "Plan safe occupancy",
+      "Choose appropriate interior shelter locations for the relevant warning. Keep lights and essential supplies accessible without turning rooms into trip hazards."
+    ]
+  ],
+  "sections": [
+    [
+      "A sensible order of spending",
+      "Fix a broken exit, alarm or lock before buying specialized equipment. Then address the highest local hazard and the household’s greatest access need. Photograph the baseline, record repairs and keep contractor and insurance information accessible. Cosmetic reinforcement does not establish structural safety."
+    ],
+    [
+      "Security without entrapment",
+      "Do not use traps, electrified barriers or improvised defensive devices. Window bars and additional locks can delay escape or responders; choose lawful systems that occupants can operate in an emergency. Clear sightlines, ordinary lighting and working hardware support everyday security without turning evacuation into a puzzle."
+    ]
+  ],
+  "without_help": "Use the safest usable parts of the home and avoid damaged electrical or structural systems. Where a repair needs a professional, restrict access and relocate if the hazard cannot be controlled; do not improvise structural work during an event.",
+  "household": "Test locks and exits with the people who actually use them, including those with limited grip, vision or mobility. Store critical equipment at reachable heights.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Complete a room-by-room audit: one exit issue, one alarm issue, one maintenance issue and one practical security improvement.",
+  "watch": "No home improvement guarantees safety against violent entry or severe weather. Do not remain in a building that has become unsafe because it has been “hardened.”",
+  "sources": "housing-preparedness",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "home-fire",
+    "bug-in-plan",
+    "household-emergency-plan"
+  ]
+}

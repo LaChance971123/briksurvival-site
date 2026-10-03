@@ -1,0 +1,69 @@
+{
+  "slug": "ammunition-storage",
+  "title": "Ammunition: compatibility, storage and inspection",
+  "category": "firearms-tools",
+  "subcategory": "Ammunition",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "ammo",
+    "cartridges"
+  ],
+  "keywords": [
+    "Ammunition",
+    "ammo",
+    "cartridges"
+  ],
+  "tldr": "Use only ammunition confirmed for the exact firearm by its markings and manufacturer’s manual. Keep ammunition locked, dry, identifiable and away from unauthorized people; isolate uncertain or damaged rounds from use.",
+  "steps": [
+    [
+      "Keep labels intact",
+      "Retain original packaging and identifying information. Do not mix loose cartridges or identify ammunition by appearance alone."
+    ],
+    [
+      "Confirm compatibility",
+      "Match the manual, firearm markings and ammunition packaging. Similar names or dimensions do not establish that a cartridge is safe for a firearm. Ask the manufacturer or a qualified professional if uncertain."
+    ],
+    [
+      "Protect storage",
+      "Use secured storage separate from unloaded firearms. Follow manufacturer guidance on moisture, heat and storage; keep oils, solvents and water away from ammunition."
+    ],
+    [
+      "Stop using damaged or uncertain ammunition",
+      "Do not fire corroded, deformed, flooded, contaminated or unidentified ammunition. Arrange lawful disposal through qualified local channels; do not burn, dismantle or throw it into a fire."
+    ]
+  ],
+  "sections": [
+    [
+      "A simple inventory",
+      "Record caliber exactly as labeled, manufacturer, lot when available, quantity and storage location in a private record. Inventory supports compatibility and accountability; it should not be posted publicly or attached to an easily shared household contact card. Review condition when checking storage, without unnecessarily manipulating cartridges."
+    ],
+    [
+      "After flooding or household disruption",
+      "Keep suspect ammunition separate from normal stock and restrict access. Do not try to restore wet ammunition by heating it. Disposal services and transport requirements differ; describe what you have and ask for instructions before taking suspect material to a facility."
+    ]
+  ],
+  "without_help": "If reliable identification or inspection is unavailable, do not use the ammunition. Securing it and postponing use is safer than guessing from an online comparison photo.",
+  "household": "Keep keys, packaging and loose cartridges away from children and visitors. Include ammunition security in household relocation planning without giving untrained people responsibility for handling it.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Audit labels and storage access. Mark anything uncertain as not for use and arrange appropriate professional advice.",
+  "watch": "This guide does not provide reloading, ammunition manufacture, modification or performance optimization instructions.",
+  "sources": "firearm-safety",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "firearm-safety-basics",
+    "firearm-storage"
+  ]
+}

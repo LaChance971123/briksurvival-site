@@ -1,0 +1,72 @@
+{
+  "slug": "small-team-coordination",
+  "title": "Small-team preparedness: roles, buddies and check-ins",
+  "category": "preparedness",
+  "subcategory": "Group coordination",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "small team tactics",
+    "buddy system",
+    "team preparedness"
+  ],
+  "keywords": [
+    "Group coordination",
+    "small team tactics",
+    "buddy system",
+    "team preparedness"
+  ],
+  "tldr": "A small civilian team needs clear responsibilities, buddy checks, a shared destination and an agreed response to separation. Keep coordination simple enough to use when people are tired or communications fail.",
+  "steps": [
+    [
+      "Name roles and backups",
+      "Assign coordination, dependent care, transport, supplies and contact updates. Give every critical role a backup rather than relying on one person."
+    ],
+    [
+      "Use buddy accountability",
+      "Agree who checks each person is present and able to continue. Check at departures, junctions and destinations; do not silently assume someone is following."
+    ],
+    [
+      "Share the same plan",
+      "Write meeting points, destination, timing and communications options. Confirm everyone can explain the plan in their own words."
+    ],
+    [
+      "Set stop and change rules",
+      "Pause when someone is missing, injured, exhausted or unable to continue. Use safe regroup points and change the plan openly."
+    ]
+  ],
+  "sections": [
+    [
+      "A short situation update",
+      "Use a repeatable message: where we are, who is present, what has changed, what we need, and the next safe action. Repeat back important details. Give one person responsibility for updating an outside contact so several conflicting messages do not create confusion."
+    ],
+    [
+      "Group movement for ordinary emergencies",
+      "Move at a pace the least able person can sustain and keep people together through route changes. Do not send an unwell person back alone or split the group casually. Emergency coordination is not patrol training: avoiding hazards, maintaining accountability and reaching a safe destination are the aims."
+    ]
+  ],
+  "without_help": "Use the written meeting and timing plan. If radios or phones fail, keep the group together and use known safe destinations. A missing person calls for the agreed response and safe reporting, not uncontrolled searching into danger.",
+  "household": "Assign help based on actual ability, consent and care needs. Include people who cannot carry supplies or hear radio messages. Children should not carry critical responsibilities they cannot manage.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Run a 15-minute departure drill. Test a missing radio, a changed driver and a dependent who needs extra time; then revise roles.",
+  "watch": "This guide covers civilian coordination, not combat tactics, armed patrols, ambushes or evasion.",
+  "sources": "group-planning",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "radio-check-in-plan",
+    "outdoor-trip-plan",
+    "household-emergency-plan"
+  ]
+}

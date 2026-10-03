@@ -30,6 +30,8 @@ for page in sorted(OUT.rglob('*.html')):
     else:
         canonical = route
     policy = POLICIES['push_hubs' if canonical in PUSH_HUBS else 'default']
+    if canonical.startswith('/planner/app'):
+        policy="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src 'self' blob:; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
     for path in sorted(set(paths)):
         if path:
             headers.append(path + '\n  Content-Security-Policy: ' + policy + '\n')

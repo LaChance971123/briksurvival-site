@@ -1,0 +1,65 @@
+{
+  "slug": "outdoor-trip-plan",
+  "title": "Outdoor trip plans, turnaround times and accountability",
+  "category": "field-skills",
+  "subcategory": "Navigation & shelter",
+  "content_type": "Field guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [],
+  "keywords": [
+    "Navigation & shelter"
+  ],
+  "tldr": "Leave a specific itinerary with a trusted contact, set a turnaround time, and carry enough essentials for delays. A rescue plan starts before you lose reception.",
+  "steps": [
+    [
+      "Write the itinerary",
+      "Include trailhead, route, alternatives, vehicle details, group members, expected return and who to contact if overdue. Agree when the contact should act."
+    ],
+    [
+      "Check conditions",
+      "Verify weather, closures, daylight, water and the hardest section. Match the route to the least experienced or least mobile person."
+    ],
+    [
+      "Set limits",
+      "Agree on a turnaround time and reasons to stop: deteriorating weather, lost route, depleted water, fatigue or equipment failure. Reaching a destination is optional; returning safely is the objective."
+    ],
+    [
+      "Carry independent essentials",
+      "Each person needs suitable layers, food, water, light and a signal. Do not let one separated backpack contain all navigation or communications equipment."
+    ]
+  ],
+  "sections": [
+    [
+      "Checkpoints that mean something",
+      "Use recognizable map locations and realistic time windows. Discuss what happens if the group misses a checkpoint or changes route. Update the trusted contact when you can do so safely. A shared phone location can supplement the plan, but reception, battery and device failure make it unsuitable as the only accountability method."
+    ],
+    [
+      "A safe return is the measure",
+      "Travel at a pace the whole group can sustain. Keep people together through junctions and difficult ground. If someone is tired or injured, stop and reassess rather than sending them back alone. Avoid unplanned shortcuts: they can introduce steeper terrain, water crossings and navigation problems not reflected in your itinerary."
+    ]
+  ],
+  "without_help": "Your contact should already know the overdue threshold and the relevant local response channel. If communications fail, follow the agreed route and turnaround decision; do not climb into danger merely to get a signal.",
+  "household": "Give children and companions a simple separation plan: stop, stay in a safe visible place and signal. Check medications, mobility needs and individual water access before leaving.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Write a plan for a familiar short walk and ask your contact to explain exactly what they would do if you failed to return.",
+  "watch": "A trip plan does not guarantee rescue. Weather, terrain and distance can delay help substantially.",
+  "sources": "outdoor-skills",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "lost-outdoors",
+    "small-team-coordination",
+    "bushcraft-foundation"
+  ]
+}

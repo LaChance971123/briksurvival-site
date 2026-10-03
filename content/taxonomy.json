@@ -23,7 +23,10 @@
       "Air & gas",
       "Backup power",
       "Heating",
-      "Electrical hazards"
+      "Electrical hazards",
+      "Apartments & rentals",
+      "Homes & security",
+      "Trailers & mobile homes"
     ]
   },
   {
@@ -80,7 +83,8 @@
       "Evacuation",
       "Shelter",
       "Family reunification",
-      "Displacement"
+      "Displacement",
+      "Bug out & bug in"
     ]
   },
   {
@@ -91,7 +95,9 @@
       "Kits & supplies",
       "Water & food",
       "Care & accessibility",
-      "Documents & support"
+      "Documents & support",
+      "Group coordination",
+      "Practice & maintenance"
     ]
   },
   {
@@ -101,7 +107,9 @@
       "Warnings & information",
       "Connectivity",
       "Verification & privacy",
-      "Offline information"
+      "Offline information",
+      "Two-way radios",
+      "Weather radio"
     ]
   },
   {
@@ -110,7 +118,9 @@
     "subcategories": [
       "Water",
       "Food & hygiene",
-      "Navigation & shelter"
+      "Navigation & shelter",
+      "Bushcraft",
+      "Survival priorities"
     ]
   },
   {
@@ -128,6 +138,16 @@
       "Reentry",
       "Fraud & documents",
       "Cleanup"
+    ]
+  },
+  {
+    "id": "firearms-tools",
+    "title": "Firearms, ammunition & tool safety",
+    "subcategories": [
+      "Safe ownership",
+      "Secure storage",
+      "Ammunition",
+      "Tools & training"
     ]
   }
 ]

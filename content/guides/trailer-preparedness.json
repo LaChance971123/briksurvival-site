@@ -1,0 +1,72 @@
+{
+  "slug": "trailer-preparedness",
+  "title": "Trailer, RV and mobile-home preparedness",
+  "category": "home-building",
+  "subcategory": "Trailers & mobile homes",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "trailer preparedness",
+    "mobile home",
+    "RV preparedness"
+  ],
+  "keywords": [
+    "Trailers & mobile homes",
+    "trailer preparedness",
+    "mobile home",
+    "RV preparedness"
+  ],
+  "tldr": "Plan early access to a sturdy shelter and a safe destination. A trailer, RV or mobile home is not a safe tornado shelter; supplies and tie-downs do not change that limitation.",
+  "steps": [
+    [
+      "Identify sturdy shelter before a warning",
+      "Confirm where you can go, opening arrangements, travel time and access needs. Move early when severe weather is forecast rather than waiting until travel is dangerous."
+    ],
+    [
+      "Check installed systems",
+      "Follow model manuals for propane, electrical, batteries, heating, ventilation and alarms. Arrange qualified inspection for faults and know how to report a suspected leak."
+    ],
+    [
+      "Keep travel plans realistic",
+      "Check vehicle condition, route limits, fuel, towing arrangements and campground restrictions. Moving a unit during severe wind or flooding can be unsafe."
+    ],
+    [
+      "Use a portable exit kit",
+      "Keep medicines, documents, pet supplies, light and communications ready to carry without preparing the entire trailer for travel."
+    ]
+  ],
+  "sections": [
+    [
+      "Sheltering and moving are different plans",
+      "A towable trailer may need substantial time to secure and connect; a mobile home may not be movable at all. The safer choice can be leaving the unit and reaching an established shelter. Write that decision into the plan so possessions do not delay people’s departure."
+    ],
+    [
+      "Daily preparedness in a compact space",
+      "Keep exits, hatches and ventilation unobstructed. Secure stored items against normal movement using suitable hardware and observe manufacturer load limits. Store water and supplies so weight does not create unsafe handling or vehicle loading. Do not run generators in enclosed spaces or where exhaust enters the unit or nearby homes."
+    ]
+  ],
+  "without_help": "If the unit is unsafe, prioritize people and portable essentials. Use the already identified shelter or destination rather than attempting repairs, towing or fuel transfers in dangerous conditions.",
+  "household": "Check shelter access for wheelchair users, pets and anyone unable to drive. Assign a transport helper and an alternate; both may be affected by the same storm.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Time the journey to the sturdy shelter in ordinary conditions and prepare a leave-the-unit checklist.",
+  "watch": "An RV or vehicle is not a dependable substitute for sturdy tornado shelter. Do not cross flooded roads or remain in a flood-prone campsite.",
+  "sources": "housing-preparedness",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "tornado",
+    "bug-out-plan",
+    "generator-safety"
+  ]
+}

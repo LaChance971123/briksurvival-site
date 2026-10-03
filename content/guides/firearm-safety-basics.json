@@ -1,0 +1,75 @@
+{
+  "slug": "firearm-safety-basics",
+  "title": "Firearm safety: the household foundation",
+  "category": "firearms-tools",
+  "subcategory": "Safe ownership",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "guns",
+    "weapons",
+    "gun safety"
+  ],
+  "keywords": [
+    "Safe ownership",
+    "guns",
+    "weapons",
+    "gun safety"
+  ],
+  "tldr": "Build safety around controlled access, a safe muzzle direction, a finger outside the trigger guard, and model-specific training. A firearm is not a substitute for evacuation, de-escalation or an emergency plan.",
+  "steps": [
+    [
+      "Identify the exact firearm",
+      "Obtain the manufacturer’s manual for the exact model. Learn its controls from a qualified instructor; familiarity with another firearm does not establish competence with this one."
+    ],
+    [
+      "Control direction and hands",
+      "Always keep the muzzle pointed where an unintended discharge would not injure someone. Keep your finger outside the trigger guard until an appropriate, lawful firing decision. A safety lever does not replace these habits."
+    ],
+    [
+      "Separate handling from distractions",
+      "Do not handle firearms while impaired, overtired or arguing. Establish a quiet handling area that excludes children and visitors. Do not use a loaded firearm for practice or demonstrations."
+    ],
+    [
+      "Secure it after use",
+      "Store firearms unloaded and locked, with ammunition secured separately. Restrict keys and codes to authorized adults. Check storage after visitors, household changes and maintenance."
+    ]
+  ],
+  "sections": [
+    [
+      "Before bringing a firearm home",
+      "Budget for a suitable lockbox or safe, secure installation, instruction and eye and hearing protection before accessories. Discuss how everyone will respond to an unfamiliar firearm: leave it alone, move away, and tell a responsible adult. Children’s awareness never replaces adult storage responsibilities."
+    ],
+    [
+      "Range boundaries and inspection",
+      "Use a supervised, lawful range with an adequate backstop. Know the target and what is beyond it; never fire at a sound or unidentified movement. Use only ammunition confirmed by the manual and firearm markings. If a firearm appears damaged, has been flooded, or behaves abnormally, stop using it and seek qualified inspection."
+    ],
+    [
+      "During a disaster",
+      "A hurried move adds handling and access risks. Plan lawful transport and destination storage ahead of time. Shelters, vehicles, hotels and another household may have different rules. Keep guns away from shared supply bins, volunteers and children; do not assume normal storage is still secure after flooding or forced entry."
+    ]
+  ],
+  "without_help": "Keep the firearm secured if training or competent supervision is unavailable. Use evacuation, locks, lighting and a household communication plan to reduce exposure. Do not attempt an unfamiliar repair to make equipment usable during a crisis.",
+  "household": "Account for children, visitors, memory changes and a person in emotional crisis. Reconsider who can access keys or codes. Arrange a lawful, safe storage alternative with qualified local help when household risks change.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Without handling a firearm, walk through who has access to the storage system, where keys are kept, and how a destination would securely store it.",
+  "watch": "This guide does not cover tactical use, armed confrontation, legal use-of-force advice or repairs. Follow current local law and the exact manufacturer’s instructions.",
+  "sources": "firearm-safety",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "firearm-storage",
+    "ammunition-storage"
+  ]
+}

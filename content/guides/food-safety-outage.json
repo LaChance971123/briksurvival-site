@@ -4,7 +4,7 @@
   "category": "recovery",
   "subcategory": "Food & water",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "food after blackout",
     "fridge off",
@@ -55,5 +55,15 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Record the start time and temperature",
+      "Keep appliance doors closed and use appliance thermometers. A refrigerator generally maintains safe temperatures for about four hours unopened; a full freezer about 48 hours, or 24 hours if half full. These are estimates, not guarantees when doors open or conditions differ. Use current food-safety charts for individual foods."
+    ],
+    [
+      "Do not taste-test safety",
+      "Discard perishable food above 40°F for more than two hours unless current food-specific guidance says otherwise. Appearance, smell and taste do not establish safety. Plan ready-to-eat alternatives and separate discarded food so nobody mistakenly uses it later."
+    ]
+  ]
 }

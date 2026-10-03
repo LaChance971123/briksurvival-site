@@ -9,12 +9,138 @@
       "status": "planned",
       "title": "Complete Preparedness Toolkit",
       "summary": "A planned collection of practical topic guides, checklists and household planning tools, organised into one preparation system.",
-      "components": ["Expanded topic guides", "Action checklists", "Household planners", "Shopping and equipment lists", "Supply inventories", "Contact and quick-reference cards"],
+      "components": [
+        "Expanded topic guides",
+        "Action checklists",
+        "Household planners",
+        "Shopping and equipment lists",
+        "Supply inventories",
+        "Contact and quick-reference cards"
+      ],
       "guide_slugs": [],
-      "included_product_ids": [],
+      "included_product_ids": [
+        "power-outage",
+        "water-disruption",
+        "emergency-food",
+        "evacuation"
+      ],
       "price": null,
       "currency": "USD",
       "edition": null,
+      "payhip_product_id": null,
+      "checkout_url": null,
+      "delivery_verified": false
+    },
+    {
+      "id": "power-outage",
+      "slug": "power-outage",
+      "kind": "topic",
+      "status": "files-ready",
+      "title": "Power Outage Toolkit",
+      "summary": "A complete household blackout plan: safe power decisions, lighting, food protection, contacts and recovery.",
+      "components": [
+        "18 branded PDF resources in both A4 and US Letter",
+        "Step-by-step guide, action checklists and household planning sheets",
+        "Concrete shopping lists, equipment notes and contact cards",
+        "Branded Excel calculator with clearly marked input fields",
+        "Universal welcome and mission page; organized print folders"
+      ],
+      "guide_slugs": [
+        "power-outage",
+        "long-blackout",
+        "generator-safety",
+        "heating-failure"
+      ],
+      "included_product_ids": [],
+      "price": null,
+      "currency": "USD",
+      "edition": "US v1.0",
+      "payhip_product_id": null,
+      "checkout_url": null,
+      "delivery_verified": false
+    },
+    {
+      "id": "water-disruption",
+      "slug": "water-disruption",
+      "kind": "topic",
+      "status": "files-ready",
+      "title": "Water Disruption & Safe Storage Toolkit",
+      "summary": "Plan reserves, understand water notices, organize containers and keep household hygiene workable.",
+      "components": [
+        "19 branded PDF resources in both A4 and US Letter",
+        "58 pages per paper size, organized by purpose",
+        "Storage plans, advisory decision cards and hygiene worksheets",
+        "Concrete shopping lists and clearly marked Excel calculator",
+        "Universal welcome and mission page"
+      ],
+      "guide_slugs": [
+        "water-disruption",
+        "water-outage",
+        "water-storage",
+        "water-purification",
+        "boil-water-advisory",
+        "do-not-drink",
+        "do-not-use"
+      ],
+      "included_product_ids": [],
+      "price": null,
+      "currency": "USD",
+      "edition": "US v1.0",
+      "payhip_product_id": null,
+      "checkout_url": null,
+      "delivery_verified": false
+    },
+    {
+      "id": "emergency-food",
+      "slug": "emergency-food",
+      "kind": "topic",
+      "status": "files-ready",
+      "title": "Emergency Food & No-Cook Planning Toolkit",
+      "summary": "Build usable food reserves with practical meals, shopping quantities, rotation and outage decisions.",
+      "components": [
+        "19 branded PDF resources in both A4 and US Letter",
+        "61 pages per paper size, organized by purpose",
+        "No-cook meal plans, pantry inventories and rotation sheets",
+        "Concrete shopping lists and clearly marked Excel calculator",
+        "Universal welcome and mission page"
+      ],
+      "guide_slugs": [
+        "food-safety-outage",
+        "food-without-cooking"
+      ],
+      "included_product_ids": [],
+      "price": null,
+      "currency": "USD",
+      "edition": "US v1.0",
+      "payhip_product_id": null,
+      "checkout_url": null,
+      "delivery_verified": false
+    },
+    {
+      "id": "evacuation",
+      "slug": "evacuation",
+      "kind": "topic",
+      "status": "files-ready",
+      "title": "Evacuation & Go-Bags Toolkit",
+      "summary": "Turn leaving into a clear household plan with destinations, roles, bags, transport and check-ins.",
+      "components": [
+        "19 branded PDF resources in both A4 and US Letter",
+        "59 pages per paper size, organized by purpose",
+        "Destination, route, dependent-care and go-bag planning sheets",
+        "Concrete shopping lists and branded Excel travel calculator",
+        "Universal welcome and mission page"
+      ],
+      "guide_slugs": [
+        "evacuation",
+        "go-bag",
+        "accessible-evacuation",
+        "pet-evacuation",
+        "bug-out-plan"
+      ],
+      "included_product_ids": [],
+      "price": null,
+      "currency": "USD",
+      "edition": "US v1.0",
       "payhip_product_id": null,
       "checkout_url": null,
       "delivery_verified": false

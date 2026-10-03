@@ -1,0 +1,70 @@
+{
+  "slug": "apartment-preparedness",
+  "title": "Apartment preparedness: limited space, shared systems",
+  "category": "home-building",
+  "subcategory": "Apartments & rentals",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "apartment prepping",
+    "renter preparedness"
+  ],
+  "keywords": [
+    "Apartments & rentals",
+    "apartment prepping",
+    "renter preparedness"
+  ],
+  "tldr": "Build a compact household reserve, learn your building’s escape arrangements and plan for shared-system failures. Stair access, alarms, water pressure and landlord responsibilities matter as much as supplies.",
+  "steps": [
+    [
+      "Learn the building plan",
+      "Identify stairs, exits, alarm procedures and the management contact. Ask what happens when lifts, entry systems, water pumps or backup lighting fail."
+    ],
+    [
+      "Store supplies safely",
+      "Use small labeled reserves distributed without blocking exits or overloading shelving. Keep drinking water in appropriate containers and rotate food the household normally uses."
+    ],
+    [
+      "Plan without lifts",
+      "Arrange help and an accessible destination for anyone unable to use stairs. Check evacuation assistance arrangements in advance; never assume someone will arrive."
+    ],
+    [
+      "Keep an exit kit accessible",
+      "Store shoes, light, keys, medicines, contact details and a manageable bag near your routine exit path. Check pets and essential support equipment."
+    ]
+  ],
+  "sections": [
+    [
+      "Apartment-specific power limits",
+      "Portable power banks can support phones and small approved devices; they do not make every medical or cooking appliance usable. Never operate a generator or charcoal grill inside, in a corridor, or on a balcony where exhaust can enter homes. Ask management about installed backup systems and what they actually support."
+    ],
+    [
+      "Renter improvements",
+      "Use suitable door and window security that preserves emergency escape and respects lease and building requirements. Ask permission before structural alterations. Smoke and carbon monoxide alarms, working locks, clear stairs and prompt reporting of broken communal lighting are practical first improvements. A renter’s plan should include inventory photographs and access to insurance and lease contacts."
+    ]
+  ],
+  "without_help": "If management or neighbors are unreachable, use your own tested exit and household contact plan. Do not wait for a lift during fire evacuation. If escape is blocked by heat or smoke, use the building-specific fire plan and report your location when possible.",
+  "household": "Agree who helps dependents and where to reunite. Keep a backup helper outside the building; a neighbor may also need to leave or be unavailable.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Walk the permitted exit route with your household and identify one compact storage improvement without blocking access.",
+  "watch": "Never block shared corridors, disable fire doors or add bars that trap occupants. Flooding, gas or fire requires hazard-specific action.",
+  "sources": "housing-preparedness",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "apartment-fire",
+    "bug-in-plan",
+    "accessible-evacuation"
+  ]
+}

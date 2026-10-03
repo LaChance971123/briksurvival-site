@@ -1,0 +1,64 @@
+{
+  "slug": "firearm-storage",
+  "title": "Secure firearm storage and emergency relocation",
+  "category": "firearms-tools",
+  "subcategory": "Secure storage",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [],
+  "keywords": [
+    "Secure storage"
+  ],
+  "tldr": "Secure unloaded firearms with a storage system suited to the household, and lock ammunition separately. Plan how lawful storage will continue during evacuation, visitors or displacement.",
+  "steps": [
+    [
+      "Assess who could gain access",
+      "Include children, guests, contractors, unauthorized adults and people at risk of self-harm. A hidden drawer is not secure storage."
+    ],
+    [
+      "Choose and install a storage system",
+      "Compare lockboxes, safes and locking devices appropriate to the firearm and manufacturer’s instructions. Consider authorized access, resistance to removal and whether installation is permitted."
+    ],
+    [
+      "Control keys and codes",
+      "Keep keys inaccessible to unauthorized people. Do not share combinations casually or store them on the cabinet. Check who knows the code after household changes."
+    ],
+    [
+      "Plan relocation",
+      "Verify transport rules, destination restrictions and available locked storage before travel. Secure cases against unauthorized access; avoid leaving firearms in unattended vehicles."
+    ]
+  ],
+  "sections": [
+    [
+      "Match storage to real conditions",
+      "Check fit, locks and mounting with equipment made safe according to its manual and competent supervision. A device that prevents firing may not prevent theft; a case suitable for transport may not replace installed storage. Follow both product and firearm instructions rather than improvising a locking arrangement."
+    ],
+    [
+      "Water, heat and damaged storage",
+      "A wet safe, broken lock or displaced cabinet can create access and reliability problems. Keep people away from unsecured firearms. Ask a qualified professional about a lawful storage and inspection plan; do not assume that drying a flooded firearm makes it usable. Document damage without unnecessary handling."
+    ]
+  ],
+  "without_help": "Keep unauthorized people away from the area and use an existing suitable locked container if safely possible. If you cannot establish secure storage, seek a lawful alternative before moving others into that space.",
+  "household": "Check access for caregivers and visitors, not only residents. Include a responsible adult’s contact information in the relocation plan without advertising where firearms are stored.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Review locks, mounting, keys and destination arrangements at each seasonal household check.",
+  "watch": "Never compromise escape routes or use storage arrangements that create entrapment. Storage laws and transport rules vary by location.",
+  "sources": "firearm-safety",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "firearm-safety-basics",
+    "ammunition-storage"
+  ]
+}

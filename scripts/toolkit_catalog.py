@@ -26,7 +26,7 @@ def load_catalog(root):
                 raise ValueError(f'Invalid product {key}')
         if product['id'] in by_id or product['slug'] in slugs:
             raise ValueError('Duplicate product ID or route')
-        if product['kind'] not in ('topic', 'collection') or product['status'] not in ('planned', 'ready', 'retired'):
+        if product['kind'] not in ('topic', 'collection') or product['status'] not in ('planned', 'files-ready', 'ready', 'retired'):
             raise ValueError('Invalid product kind or status')
         if product['currency'] != 'USD' or not isinstance(product['delivery_verified'], bool):
             raise ValueError('Invalid currency or delivery verification')
@@ -95,6 +95,8 @@ def purchase_control(product):
         return (f'<a class="button button-primary" data-payhip-checkout href="{e(product["checkout_url"], quote=True)}">'
                 f'Buy {e(product["title"])} · {price}</a>'
                 '<p class="toolkit-purchase-note">One-time purchase · Checkout and file delivery through Payhip</p>')
+    if product['status'] == 'files-ready':
+        return '<p class="toolkit-status">Files complete · Checkout opening soon</p><p class="toolkit-purchase-note">Purchasing will open after Payhip checkout and delivery are verified.</p>'
     return '<p class="toolkit-status">In development · Not available to purchase</p>'
 
 
@@ -113,25 +115,14 @@ def guide_cta(guide, catalog):
             description = featured['summary'] + ' This online guide stays free to read.'
             destination, label = product_route(featured), 'Explore the complete toolkit'
         else:
-            description = 'Printable topic guides, checklists and practical planners are in development. This online guide stays free to read.'
-            destination, label = '/toolkits/', 'Explore upcoming toolkits'
+            description = 'Explore four completed topic packages with printable guides, checklists and practical worksheets. Checkout is opening soon. This online guide stays free to read.'
+            destination, label = '/toolkits/', 'Explore the toolkits'
     return (f'<section class="wrap guide-toolkit" aria-label="Preparation toolkits"><div>'
             f'<p class="kicker">PREPARE BEFORE YOU NEED IT</p><h2>{e(heading)}</h2><p>{e(description)}</p>'
             f'</div><a class="button button-outline" href="{destination}">{label}</a></section>')
 
 
 def homepage_section(catalog):
-    product = next(p for p in catalog['products'] if p['id'] == catalog['featured_product_id'])
-    components = ''.join(f'<li>{e(x)}</li>' for x in product['components'])
-    status = 'AVAILABLE NOW' if product['status'] == 'ready' else 'IN DEVELOPMENT'
-    form = '''<form data-signup="guide-early-access" name="guide-early-access" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks/">
-      <input type="hidden" name="form-name" value="guide-early-access"><p class="honeypot"><label>Leave this empty <input name="bot-field"></label></p>
-      <label for="guide-email">Request toolkit release updates</label><div class="email-row"><input id="guide-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required><button class="button button-primary" type="submit">Request updates</button></div>
-      <p class="form-note">Requests are collected here. Email delivery is awaiting setup. <a href="/privacy/">Privacy &amp; email details</a>.</p><p class="form-status" data-form-status role="status" aria-live="polite"></p></form>'''
-    return (f'<section class="section wrap access-section toolkit-feature" id="guide-access" aria-labelledby="access-title">'
-            f'<div class="access-copy"><p class="kicker"><span class="accent-line"></span> THE COMPLETE TOOLKIT / {status}</p>'
-            f'<h2 id="access-title">Keep a plan.<br><span>Before you need it.</span></h2><p>{e(product["summary"])}</p>'
-            f'{purchase_control(product)}<a class="button button-outline" href="{product_route(product)}">Explore the complete toolkit</a>{form}</div>'
-            '<div class="toolkit-inclusions"><p class="kicker">A PRACTICAL PREPARATION SYSTEM</p><h3>Plan. Prepare. Keep it close.</h3>'
-            f'<p>{"Included tools" if product["status"] == "ready" else "Planned tools"}</p><ul>{components}</ul>'
-            '<p class="toolkit-footnote">Free online guidance remains available without an account.</p></div></section>')
+    topics = [p for p in catalog['products'] if p['kind']=='topic' and p['status']!='retired']
+    cards = ''.join(f'<article class="toolkit-card"><p class="kicker">TOPIC TOOLKIT / {"AVAILABLE" if p["status"]=="ready" else "FILES COMPLETE"}</p><h3>{e(p["title"])}</h3><p>{e(p["summary"])}</p><a class="text-link" href="{product_route(p)}">See what is included →</a></article>' for p in topics)
+    return ('<section class="section wrap access-section toolkit-feature" id="guide-access" aria-labelledby="access-title"><div class="access-copy"><p class="kicker">OSPREY ZERO / PREPARATION TOOLKITS</p><h2 id="access-title">A plan you can use.<br><span>Tools you can keep.</span></h2><p>Four completed topic packages bring the guidance together with polished checklists, shopping lists, contact cards and clearly marked Excel calculators. A4 and US Letter resources have their own organized folders.</p><p class="toolkit-status">Files complete · Checkout opening soon</p><a class="button button-primary" href="/toolkits/">Explore all four toolkits</a><p>The complete collection is being assembled after the individual kits. The Household Planner is a separate product.</p><a class="text-link" href="/planner/">Explore the Household Planner →</a></div><div class="release-kit-grid">'+cards+'</div></section>')

@@ -35,7 +35,7 @@
   "category": "utilities",
   "subcategory": "Electricity",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "extended blackout",
     "days without power",
@@ -72,5 +72,15 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Track the limiting essential",
+      "List water, food, medications, temperature control, communications and equipment power separately. Count remaining usable supplies and record the next review time. The first essential to become unsafe determines the next action; a stocked pantry cannot compensate for failed critical medical equipment or an unsafe indoor temperature."
+    ],
+    [
+      "Keep routine manageable",
+      "Choose safe lighting, a charging order, simple meals and a hygiene arrangement. Agree quiet rest times and short condition updates rather than constant news consumption. Keep a departure option ready and check neighbors only where it is safe and within your ability."
+    ]
+  ]
 }

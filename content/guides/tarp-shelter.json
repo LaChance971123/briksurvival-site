@@ -1,0 +1,70 @@
+{
+  "slug": "tarp-shelter",
+  "title": "Emergency tarp shelter and dry sleeping systems",
+  "category": "field-skills",
+  "subcategory": "Navigation & shelter",
+  "content_type": "Field guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "tarp",
+    "survival shelter"
+  ],
+  "keywords": [
+    "Navigation & shelter",
+    "tarp",
+    "survival shelter"
+  ],
+  "tldr": "A shelter needs a safe site, wind and rain protection, and insulation from the ground. Test your tarp and sleeping equipment before a trip; a tarp alone does not make cold or severe weather safe.",
+  "steps": [
+    [
+      "Choose the site first",
+      "Avoid drainage channels, rising water, unstable slopes, cliff edges and dead or damaged overhead branches. Move to a safer location before arranging equipment."
+    ],
+    [
+      "Protect from ground moisture",
+      "Use a ground barrier and insulation suited to conditions. Keep your sleep area above local runoff; do not dig unauthorized drainage trenches."
+    ],
+    [
+      "Pitch and check",
+      "Use the shelter’s instructions and existing suitable anchors. Keep fabric tensioned so rain does not pool. Check that stakes and cord do not create trip hazards."
+    ],
+    [
+      "Keep warmth and airflow",
+      "Protect dry layers and your sleeping insulation. Maintain ventilation appropriate to the shelter. Never use fuel-burning heaters or cooking equipment inside an improvised shelter."
+    ]
+  ],
+  "sections": [
+    [
+      "A complete shelter system",
+      "Think in layers: roof or wind barrier, ground protection, insulating pad, sleeping insulation and dry clothing. A foil emergency blanket is not equivalent to a complete cold-weather sleep system. Test entry, exit, rain coverage and the space needed for a dependent person before relying on it outdoors."
+    ],
+    [
+      "Know when to leave",
+      "A tarp does not protect adequately against all weather. Thunderstorms, severe wind, flooding or cold beyond the equipment’s rating call for a safer shelter or an early return. A sheltered-looking hollow can collect water, and a tree can become an overhead hazard. Decide early while there is daylight and energy to move safely."
+    ]
+  ],
+  "without_help": "Use the safest reachable shelter and keep the group together. Reduce wind exposure and ground heat loss with available equipment; do not undertake a risky climb or river crossing to find a prettier campsite.",
+  "household": "Fit shelter and sleeping systems to actual body sizes, mobility needs and weather. A person who cannot help pitch the tarp still needs a dry, insulated place and an accessible exit.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Pitch your actual shelter before dark, simulate rain with a hose at home, and check pooling, runoff and exit access.",
+  "watch": "Improvised anchors are not climbing protection. Do not cut structural branches, sleep beneath unstable trees or rely on a campfire for overnight warmth.",
+  "sources": "outdoor-skills",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "bushcraft-foundation",
+    "extreme-cold",
+    "outdoor-trip-plan"
+  ]
+}

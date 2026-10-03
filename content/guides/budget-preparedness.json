@@ -4,7 +4,7 @@
   "category": "preparedness",
   "subcategory": "Kits & supplies",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "cheap emergency kit",
     "budget preparedness",
@@ -71,5 +71,15 @@
   ],
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Spend against a specific gap",
+      "Start with actions that cost little: update contacts, learn exits, inventory medicines, test chargers and choose destinations. Next, buy the missing essential with the greatest practical benefit. Ordinary food you already eat, appropriate water containers and reliable lighting often beat a box of unfamiliar gadgets."
+    ],
+    [
+      "Count continuing costs",
+      "Include replacement batteries, expiry, storage space, training and subscription fees. Avoid equipment that requires consumables you cannot afford to replace. Record what each purchase does and who can operate it; a low price is not good value if the item cannot support the intended task."
+    ]
+  ]
 }

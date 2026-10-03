@@ -610,5 +610,77 @@
       "Ready.gov - Build a kit",
       "https://www.ready.gov/kit"
     ]
+  ],
+  "firearm-safety": [
+    [
+      "NSSF · Firearm safety rules",
+      "https://www.nssf.org/safety/rules-firearms-safety/"
+    ],
+    [
+      "Project ChildSafe · Secure your firearm",
+      "https://projectchildsafe.org/securing-your-firearm/"
+    ]
+  ],
+  "radio-services": [
+    [
+      "eCFR · GMRS licensing",
+      "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-E/section-95.1705"
+    ],
+    [
+      "eCFR · GMRS equipment certification",
+      "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-E/section-95.1761"
+    ],
+    [
+      "eCFR · FRS equipment certification",
+      "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-B/section-95.561"
+    ],
+    [
+      "Baofeng · Model manuals",
+      "https://www.baofengradio.com/pages/download"
+    ]
+  ],
+  "weather-radio": [
+    [
+      "NOAA · Weather radio questions",
+      "https://www.weather.gov/nwr/faq"
+    ]
+  ],
+  "outdoor-skills": [
+    [
+      "NPS · Ten essentials",
+      "https://www.nps.gov/articles/10essentials.htm"
+    ],
+    [
+      "NPS · Hiking safety",
+      "https://www.nps.gov/articles/hiking-safety.htm"
+    ],
+    [
+      "NPS · Outdoor emergency planning",
+      "https://www.nps.gov/articles/gtgemergencyplan.htm"
+    ]
+  ],
+  "housing-preparedness": [
+    [
+      "USFA · Home escape plans",
+      "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+    ],
+    [
+      "NWS · Tornado shelter safety",
+      "https://www.weather.gov/safety/tornado-during"
+    ],
+    [
+      "Red Cross · Household emergency plan",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ]
+  ],
+  "group-planning": [
+    [
+      "Red Cross · Make and practice an emergency plan",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ],
+    [
+      "NPS · Hiking safety",
+      "https://www.nps.gov/articles/hiking-safety.htm"
+    ]
   ]
 }

@@ -1,0 +1,65 @@
+{
+  "slug": "preparedness-drills",
+  "title": "Household preparedness drills that reveal real gaps",
+  "category": "preparedness",
+  "subcategory": "Practice & maintenance",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [],
+  "keywords": [
+    "Practice & maintenance"
+  ],
+  "tldr": "Use short, safe rehearsals to test actual people, equipment and decisions. Improve one weak step at a time rather than staging dangerous surprise emergencies.",
+  "steps": [
+    [
+      "Pick one scenario",
+      "Choose departure, a communications failure or locating equipment in low light. State the objective and stop conditions before starting."
+    ],
+    [
+      "Protect essential care",
+      "Do not disconnect necessary medical equipment, withhold medicines or create hazardous heat, cold, smoke or fire. Tell participants it is a drill."
+    ],
+    [
+      "Use real equipment",
+      "Try the actual bags, chargers, contacts and accessible routes. Note missing adapters, forgotten keys, unclear roles and uncomfortable carrying loads."
+    ],
+    [
+      "Review and fix",
+      "Ask what worked, what failed and one concrete change. Assign an owner and a date, then repeat only the affected part."
+    ]
+  ],
+  "sections": [
+    [
+      "A simple monthly rotation",
+      "Rotate a short contact check, supply-date review, departure rehearsal and safe equipment familiarization session. Keep the schedule manageable so it survives normal life. Record an action completed, not just a readiness score. A checklist full of untested assumptions does not establish capability."
+    ],
+    [
+      "Include failure deliberately",
+      "Try a unavailable driver, a phone with no signal or a forgotten charger in a controlled setting. Ask which alternative is usable without help. Do not simulate hazards by actually disabling safety systems or blocking exits. A drill should make the household calmer and more capable, not frightened or exhausted."
+    ]
+  ],
+  "without_help": "Practice the protective steps you can complete independently. Keep a short paper plan so the exercise does not require internet, a paid app or a responding service to succeed.",
+  "household": "Adapt drills to age, disability, language and anxiety. Use predictable steps, consent and breaks. Record where help is needed rather than labeling someone as the problem.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Choose one ten-minute drill this week and complete its single highest-value improvement before scheduling the next.",
+  "watch": "Never stage surprise armed scenarios, real smoke exposure, dangerous driving or deprivation exercises.",
+  "sources": "group-planning",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "small-team-coordination",
+    "household-emergency-plan",
+    "budget-preparedness"
+  ]
+}

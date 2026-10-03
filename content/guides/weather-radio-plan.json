@@ -1,0 +1,72 @@
+{
+  "slug": "weather-radio-plan",
+  "title": "NOAA weather radio: alerts, batteries and household use",
+  "category": "communications",
+  "subcategory": "Weather radio",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "NOAA",
+    "weather radio",
+    "SAME"
+  ],
+  "keywords": [
+    "Weather radio",
+    "NOAA",
+    "weather radio",
+    "SAME"
+  ],
+  "tldr": "Choose a weather radio with the alert features you need, set it for your location using its manual, and test it. Receiving a broadcast is different from automatically alerting a sleeping household.",
+  "steps": [
+    [
+      "Confirm coverage and features",
+      "Check NOAA coverage and the exact device’s weather-alert, battery and SAME capabilities. Not every radio receiving weather audio has location-specific automatic alerts."
+    ],
+    [
+      "Set your location",
+      "Follow the manufacturer’s setup instructions for the relevant transmitter and location codes if supported. Verify the configured areas and warning options rather than using defaults blindly."
+    ],
+    [
+      "Place and power it",
+      "Test reception in the planned room and connect approved backup power or batteries. Keep it audible and reachable without obstructing exits."
+    ],
+    [
+      "Agree what each alert means",
+      "Know which hazards require leaving, an interior shelter or another action. Keep household-specific instructions beside the radio."
+    ]
+  ],
+  "sections": [
+    [
+      "Use more than one warning route",
+      "Weather radio complements phone alerts, local warning methods and trusted current information. Terrain, reception, transmitter outages and depleted batteries can disrupt any one source. Identify how a hearing-impaired household member will receive an alert, using compatible accessible equipment where needed."
+    ],
+    [
+      "Make maintenance routine",
+      "Follow the manual for test reception and batteries. Check settings after moving, changing batteries or resetting the device. A radio bought and placed on a shelf without setup may not warn the household as intended. Record the transmitter and configured areas so another adult can check them."
+    ]
+  ],
+  "without_help": "Use other safe warning sources and the current visible conditions. If a warning source fails, do not assume the hazard has ended. Continue the protective action until reliable information supports a change.",
+  "household": "Assign an adult to wake and assist dependents. Test audibility or accessible alert equipment from sleeping areas, with doors in their usual positions.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Check reception, location settings, backup power and the household response to one likely warning.",
+  "watch": "NOAA weather radio is U.S.-specific. Alert availability and systems differ elsewhere; verify the equivalent local service.",
+  "sources": "weather-radio",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "emergency-alerts",
+    "tornado",
+    "baofeng-basics"
+  ]
+}

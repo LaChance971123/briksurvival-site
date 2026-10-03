@@ -4,7 +4,7 @@
   "category": "preparedness",
   "subcategory": "Kits & supplies",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "bug out bag",
     "evacuation bag"
@@ -62,5 +62,15 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Build around a real journey",
+      "Pack for the transport and destination you can actually use. A walking bag, a vehicle kit and supplies for an accessible shelter are different loads. Put urgent medicines, identification, contacts and light where they can be reached without emptying the bag. Keep a separate last-minute list for glasses, mobility aids, refrigerated medicine arrangements and devices used daily."
+    ],
+    [
+      "Test weight and ownership",
+      "Carry the actual bag while helping the people and pets who would leave with you. Assign shared items once rather than making every bag duplicate them. A bag too heavy to carry without assistance needs a smaller load or a confirmed transport plan. Review expiry dates, clothing sizes, cables and contacts after household changes."
+    ]
+  ]
 }

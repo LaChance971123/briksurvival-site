@@ -1,0 +1,72 @@
+{
+  "slug": "preparedness-inventory",
+  "title": "Household inventory: what you own, what works and what is missing",
+  "category": "preparedness",
+  "subcategory": "Planning",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "inventory",
+    "stockpile",
+    "supplies"
+  ],
+  "keywords": [
+    "Planning",
+    "inventory",
+    "stockpile",
+    "supplies"
+  ],
+  "tldr": "A useful inventory records usable supplies, condition, location and next action. Count what works for your actual household instead of turning preparedness into an endless shopping list.",
+  "steps": [
+    [
+      "Start with essentials",
+      "Record water, food, medication arrangements, lighting, communications, hygiene, care equipment and portable departure supplies."
+    ],
+    [
+      "Test usability",
+      "Check dates, batteries, cable compatibility, labels, container condition and who knows how to operate equipment. A broken or inaccessible item is not a reliable reserve."
+    ],
+    [
+      "Record a clear next action",
+      "Give each gap a practical action, owner, cost estimate and due date. Prioritize essential needs and access issues."
+    ],
+    [
+      "Review at a manageable interval",
+      "Check after use, a household change or an approaching local hazard season. Keep a routine simple enough to maintain."
+    ]
+  ],
+  "sections": [
+    [
+      "Quantity is not duration",
+      "Duration depends on people, pets, climate, actual use and safe storage. Calculate water and meal requirements separately and avoid a single readiness percentage that hides a failing essential. Record consumables alongside any equipment that needs them."
+    ],
+    [
+      "Location is part of inventory",
+      "Write where supplies are stored and how they can be accessed in low light or without lifts. Keep exits and equipment ventilation clear. Split portable items from home reserves and keep urgent medicines or support information readily reachable."
+    ]
+  ],
+  "without_help": "Use a notebook or a simple spreadsheet if an app is unavailable. Update quantities when supplies are used. A basic accurate record is more useful than an elaborate dashboard full of old data.",
+  "household": "Include allergies, mobility aids, pets, infants and the needs of people who visit or provide care. Do not expose sensitive records on a shared device without discussing access.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Inventory one shelf and one essential device today, then complete the highest-priority missing action.",
+  "watch": "Do not count expired, damaged or incompatible supplies as usable. Avoid heavy storage that creates injury or blocked exits.",
+  "sources": "group-planning",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "budget-preparedness",
+    "72-hour-kit",
+    "household-emergency-plan"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "slug": "baofeng-basics",
+  "title": "Baofeng basics: choose the radio, then learn its limits",
+  "category": "communications",
+  "subcategory": "Two-way radios",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "baofeng",
+    "UV-5R",
+    "ham radio"
+  ],
+  "keywords": [
+    "Two-way radios",
+    "baofeng",
+    "UV-5R",
+    "ham radio"
+  ],
+  "tldr": "Baofeng is a brand, not permission to transmit. Identify the exact model, service certification, operator requirements and manual before programming or pressing transmit.",
+  "steps": [
+    [
+      "Identify the exact radio",
+      "Record model, regulatory identification and manual edition. Similar-looking radios can be intended for different services and markets."
+    ],
+    [
+      "Separate receiving from transmitting",
+      "A frequency you can enter is not automatically one you may transmit on. Check the relevant national radio service rules, licensing and device certification."
+    ],
+    [
+      "Learn safe controls",
+      "Use the exact manual to learn power, volume, channel selection, keypad lock and receive settings. Avoid transmit testing until you have confirmed permission and a suitable frequency or channel."
+    ],
+    [
+      "Make a practical communication plan",
+      "Choose compatible, lawful equipment with the people you need to reach. Test it in normal conditions at the locations you will actually use."
+    ]
+  ],
+  "sections": [
+    [
+      "U.S. service distinctions",
+      "FRS uses certified FRS equipment. GMRS requires appropriate certified equipment and applicable licensing. A generic programmable amateur handheld does not become a certified FRS or GMRS radio by entering those frequencies. Amateur radio has its own operator and station requirements; learn them through current official guidance and qualified local instruction. Rules outside the U.S. differ."
+    ],
+    [
+      "Receiving alerts has limits",
+      "A handheld that receives a weather broadcast may not provide reliable automatic alerts or SAME location-specific functions. Check the exact manual. Keep phone alerts and an appropriate weather radio as separate options. A charged radio is useful only when you know what to monitor and whether the desired service is available at your location."
+    ]
+  ],
+  "without_help": "Use verified receive-only functions and your written contact plan while working out licensing or equipment questions. Do not assume that a crisis creates unrestricted permission to transmit on any frequency.",
+  "household": "Label the agreed channels and controls in plain language. Choose a radio that less technical household members can operate, not only one that an enthusiast can program.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Find your exact manual and certification information, then write down the service, authorized users and a lawful routine test plan.",
+  "watch": "Do not transmit on public-safety, aviation or other unauthorized channels. This is an equipment and planning overview, not legal authorization or programming instructions for a specific model.",
+  "sources": "radio-services",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "radio-service-choice",
+    "radio-check-in-plan",
+    "weather-radio-plan"
+  ]
+}

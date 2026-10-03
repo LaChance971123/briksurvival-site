@@ -1,0 +1,70 @@
+{
+  "slug": "bug-out-plan",
+  "title": "Bug out: evacuation destinations, triggers and routes",
+  "category": "evacuation-shelter",
+  "subcategory": "Bug out & bug in",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "bug out",
+    "bugout"
+  ],
+  "keywords": [
+    "Bug out & bug in",
+    "bug out",
+    "bugout"
+  ],
+  "tldr": "A useful bug-out plan names when to leave, where to go, how to travel and what to do if the first option fails. The destination matters more than an overloaded bag.",
+  "steps": [
+    [
+      "Choose departure triggers",
+      "Write hazard-specific triggers: evacuation instructions, unsafe building conditions, approaching wildfire, flood access loss or inability to sustain essential care. Leave before routes become unsafe where possible."
+    ],
+    [
+      "Confirm destinations",
+      "Arrange a nearby and an outside-area destination. Check acceptance, accessibility, pets, parking and essential care. An unconfirmed shelter or public campground is not a guaranteed destination."
+    ],
+    [
+      "Plan transport and alternatives",
+      "Map at least two practical routes where available. Consider no-car travel, fuel, road closures, bridges, water hazards and travel time with dependents."
+    ],
+    [
+      "Make a short grab list",
+      "Prioritize medicines, identification, contacts, mobility aids, keys, phone power, water and weather protection. Assign bags and dependent care; never delay an urgent departure to complete packing."
+    ]
+  ],
+  "sections": [
+    [
+      "Three decisions to write down",
+      "For each likely hazard record the trigger, destination and transport owner. Add who checks current conditions and how the household receives the decision. Avoid a vague promise to “head to the woods”: unfamiliar land, missing shelter, property restrictions and water uncertainty can make that move worse than an established destination."
+    ],
+    [
+      "When the first option fails",
+      "Use the alternate destination and route agreed ahead of time. If a road is flooded, closed or affected by active danger, do not force a crossing. Tell your contact where you are going if it is safe to communicate. If no safe route remains, seek the best available protective location for the actual hazard and reassess; do not treat staying as universally safe."
+    ]
+  ],
+  "without_help": "Work from confirmed reachable options and supplies already accessible. Help may be delayed, so keep your own contacts, route notes and essential care information available without internet.",
+  "household": "Assign an adult to each dependent and identify who can drive or arrange accessible transport. Check shelter rules for pets, service animals and support equipment before an event.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Time a calm departure rehearsal with the actual people, bags and transport. Record the slowest step and fix it.",
+  "watch": "No universal bug-out destination or timetable suits every disaster. Avoid flooded roads and do not enter an active danger area for supplies.",
+  "sources": "evacuation",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "go-bag",
+    "accessible-evacuation",
+    "pet-evacuation"
+  ]
+}
