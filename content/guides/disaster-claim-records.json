@@ -1,0 +1,71 @@
+{
+  "slug": "disaster-claim-records",
+  "title": "After a disaster: damage records, receipts and claims",
+  "category": "recovery",
+  "subcategory": "Fraud & documents",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "claims-planning",
+  "tldr": "Protect people first. Once access is safe, document damage, keep receipts and contact your insurer through a verified channel. Do not enter an unsafe building to collect evidence.",
+  "steps": [
+    [
+      "Check safe access first",
+      "Do not begin a photo survey where structural damage, floodwater, wires, gas or other hazards remain. Use the separate reentry guide and qualified assessment when available."
+    ],
+    [
+      "Make an evidence log",
+      "Record dates, damaged items, photos taken from safe locations and who you contacted. Keep original files and a copy separate from the damaged property."
+    ],
+    [
+      "Save the paper trail",
+      "Keep claim references, receipts, estimates and written agreements. Note the date, name and next action after each conversation."
+    ],
+    [
+      "Ask before committing",
+      "Confirm relevant claim instructions and coverage with the insurer. If coverage is denied or disputed, ask for the reasons in writing and whether an appeal process is available."
+    ]
+  ],
+  "sections": [
+    [
+      "A simple log is easier to maintain",
+      "Editorial log columns: date; issue or item; photo filename; expense; person contacted; reference number; promised follow-up. Keep facts and estimates clearly separate. You do not need a polished report to preserve a useful chronology, but avoid overwriting the original evidence as your understanding changes."
+    ],
+    [
+      "Separate urgent protection from permanent repair",
+      "Write down which work is intended to prevent further damage and which work is a permanent repair. Ask the insurer what documentation is needed and keep relevant receipts. Do not sign unfamiliar assignments, blank forms or rushed contracts simply because someone says the offer expires today."
+    ]
+  ],
+  "without_help": "If the insurer cannot be reached, continue keeping safe evidence and receipts. Record contact attempts and avoid making unverified assumptions about reimbursement or coverage.",
+  "household": "Designate one household contact to maintain the log so evidence is not scattered across several phones. Keep rental, vehicle and belongings records separate where different providers are involved.",
+  "pack_now": "Phone or camera, a private note-taking method, claim contact details and protected copies of relevant policy records.",
+  "next": "Create an empty incident log today and photograph a few ordinary rooms for your private household inventory.",
+  "watch": "Insurance coverage, deadlines and local law differ. This guide is recordkeeping help, not legal advice or a promise that costs will be paid.",
+  "faqs": [
+    [
+      "Should I throw damaged items away immediately?",
+      "Safety comes first. Where safe, document items before disposal and ask the insurer about inspection and evidence requirements. Do not retain hazardous materials in living areas merely to support a claim."
+    ]
+  ],
+  "decisions": [],
+  "related": [
+    "returning-home",
+    "flood-cleanup",
+    "disaster-scams"
+  ],
+  "aliases": [
+    "insurance damage log",
+    "claim receipts",
+    "disaster evidence"
+  ],
+  "keywords": [
+    "insurance damage log",
+    "claim receipts",
+    "disaster evidence"
+  ],
+  "scope": "Civilian household planning. U.S. references; local services and rules differ. Planning examples are editorial suggestions, not promises of assistance."
+}

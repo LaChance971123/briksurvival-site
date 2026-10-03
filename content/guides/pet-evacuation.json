@@ -35,7 +35,7 @@
   "category": "evacuation-shelter",
   "subcategory": "Evacuation",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "pets evacuation",
     "dog evacuation",
@@ -79,5 +79,11 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Practice loading, not just packing",
+      "Put the actual carrier, leash, water container, food and records beside the bag. Practice a calm loading session and check whether the vehicle still has room for people and essential equipment. Confirm a pet-compatible destination directly; a generic shelter listing may not reflect current admission rules. Identify who collects each animal so everyone does not assume someone else did it."
+    ]
+  ]
 }

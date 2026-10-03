@@ -1,0 +1,71 @@
+{
+  "slug": "preparedness-maintenance",
+  "title": "Monthly readiness check: keep your plan usable",
+  "category": "preparedness",
+  "subcategory": "Practice & maintenance",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "group-planning",
+  "tldr": "Check one small part of the plan regularly: contacts, supplies, equipment and access. Record what failed, fix the most important gap, and keep checks manageable enough to repeat.",
+  "steps": [
+    [
+      "Choose a short review",
+      "Set a recurring household check suited to your schedule. Start with one kit or room rather than unpacking every item at once."
+    ],
+    [
+      "Inspect and rotate",
+      "Review food labels, water arrangements, batteries and equipment according to their instructions. Replace used items and record damaged or missing supplies."
+    ],
+    [
+      "Confirm the people",
+      "Check contact numbers, destination permission, transport arrangements and household changes. A plan can fail because a helper moved, even when all the gear still works."
+    ],
+    [
+      "Practice one action",
+      "Find a light in darkness, locate the contact card or pack the carry bag. Keep drills calm and safe; record friction rather than scoring people."
+    ]
+  ],
+  "sections": [
+    [
+      "A four-part cycle",
+      "Editorial rotation: one month review contacts and destinations; next review food and water; next review lighting, charging and radios; next review carry bags and mobility needs. Add checks after using supplies, moving home or changing care arrangements. This is a suggested rhythm, not a replacement for the manufacturer’s maintenance schedule."
+    ],
+    [
+      "Close the loop on problems",
+      "Write three fields: problem, owner and next action. A dead flashlight should produce a specific task such as replacing its suitable batteries and testing it, not a vague note to buy more equipment. Keep the list short enough that the household can finish it before the next review."
+    ]
+  ],
+  "without_help": "When services are already disrupted, avoid lengthy audits. Check immediate essentials and critical care first, then use a short task list to keep track of what needs replenishing or repair.",
+  "household": "Let each person practice the part they may need to do. Adapt checks for mobility, vision, hearing and anxiety. Do not use surprise drills, smoke or simulated violence to make a household exercise feel realistic.",
+  "pack_now": "A simple inventory, a current contact card, product instructions and a small list of unresolved tasks.",
+  "next": "Choose a ten-minute check this week. Find one missing item, one outdated contact or one awkward access problem and fix it.",
+  "watch": "Do not test emergency devices by creating a hazard. Follow specific alarm, battery, medical-device and radio instructions rather than inventing a universal test procedure.",
+  "faqs": [
+    [
+      "How often should everything be checked?",
+      "Use product instructions for equipment-specific intervals. Add a manageable household review rhythm and revisit the plan after changes or use; a monthly check is an organizational suggestion, not a technical standard."
+    ]
+  ],
+  "decisions": [],
+  "related": [
+    "preparedness-inventory",
+    "preparedness-drills",
+    "emergency-contact-plan"
+  ],
+  "aliases": [
+    "monthly checklist",
+    "kit rotation",
+    "readiness review"
+  ],
+  "keywords": [
+    "monthly checklist",
+    "kit rotation",
+    "readiness review"
+  ],
+  "scope": "Civilian household planning. U.S. references; local services and rules differ. Planning examples are editorial suggestions, not promises of assistance."
+}

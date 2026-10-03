@@ -5,7 +5,7 @@ from toolkit_catalog import load_catalog, product_route
 STATIC_PAGES = {
     'index.html', 'about/index.html', 'privacy/index.html', 'thanks/index.html', 'resources/index.html',
     '404.html', 'blackout-checklist-confirmed.html', 'retired-downloads.html',
-    'offline/index.html', 'toolkits/index.html', 'planner/index.html', 'planner/app/index.html',
+    'reading-list/index.html', 'offline/index.html', 'toolkits/index.html', 'planner/index.html', 'planner/app/index.html',
 }
 STATIC_FILES = {
     'app.js', 'ads.js', 'search.js', 'styles.css', 'search-index.json',

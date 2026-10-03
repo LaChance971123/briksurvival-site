@@ -14,7 +14,7 @@ block='<section class="wrap learning-paths" id="learning-paths" aria-labelledby=
 for name in ('index.html','library/index.html'):
  p=R/name;s=p.read_text();s=re.sub(r'<section class="wrap learning-paths".*?</section>','',s,flags=re.S)
  if name=='index.html':s=s.replace('<section class="wrap mission-paths"',block+'<section class="wrap mission-paths"')
- else:s=s.replace('</main>',block+'</main>')
+ else:s=s.replace('<div class="wrap library-layout">','<details class="wrap learning-directory"><summary>New to preparedness? Choose a learning path</summary>'+block.replace('class="wrap learning-paths"','class="learning-paths"')+'</details><div class="wrap library-layout">')
  p.write_text(s)
 # Search includes the separately sold planner, without implying an active checkout.
 p=R/'search-index.json';data=json.loads(p.read_text());data.append(dict(title='Household Planner',url='/planner/',category='Preparation tools',category_id='',subcategory='Separate digital product',content_type='Planner',aliases=['dashboard','household app'],summary='A household dashboard with local web access for customers who have the purchased app file. Separate from the topic kits.',text='inventory supplies contacts cards budgets tasks meals backup dashboard mobile',priority=0));p.write_text(json.dumps(data,separators=(',',':')))

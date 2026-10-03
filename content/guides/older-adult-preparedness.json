@@ -1,0 +1,71 @@
+{
+  "slug": "older-adult-preparedness",
+  "title": "Older adult preparedness: independence and backup care",
+  "category": "preparedness",
+  "subcategory": "Care & accessibility",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "older-adult-planning",
+  "tldr": "Build a plan around the person’s daily routine, with their consent. Confirm backup helpers, accessible transport and how essential care continues when the usual caregiver cannot arrive.",
+  "steps": [
+    [
+      "Ask what matters daily",
+      "List medicines, meals, water access, toileting, mobility, hearing or vision aids and equipment use. Let the person explain what they can do independently and where help is needed."
+    ],
+    [
+      "Build a small support network",
+      "Agree specific responsibilities with several trusted people. Share relevant emergency information with permission and decide who checks in if the usual helper is unavailable."
+    ],
+    [
+      "Plan the move",
+      "Confirm an accessible destination and transport. Check stairs, transfers, equipment space and whether the destination can support essential care."
+    ],
+    [
+      "Keep information usable",
+      "Create a brief contact and care summary. Make it readable, current and accessible to the person and agreed helpers. Avoid distributing more private information than each helper needs."
+    ]
+  ],
+  "sections": [
+    [
+      "A care handover that someone can follow",
+      "Editorial handover outline: usual routine, contact for clinical questions, where essential supplies are kept, communication preferences, mobility assistance and tasks the helper must not attempt. Include the next planned care task and who owns it. A long list of diagnoses does not explain how to help someone through the next few hours."
+    ],
+    [
+      "Respect choice and capacity",
+      "Preparedness works better when the person helps choose the destination, supplies and check-in method. Use large clear text if useful, label items plainly and practice the plan together. Do not assume every older person is frail or every family member has permission to manage their affairs."
+    ]
+  ],
+  "without_help": "If the support network cannot reach you, prioritize an accessible safe room, essential supplies and a way to communicate. Escalate a failing care arrangement early; do not wait until a critical supply or device is exhausted.",
+  "household": "Ask helpers to plan for their own households as well. Choose backups who are unlikely to lose access for the same reason. Include service animals and the person’s normal communication methods.",
+  "pack_now": "Glasses, hearing-aid supplies, contact and care summary, essential medicines within their proper storage conditions, and mobility aids.",
+  "next": "Walk through one missed caregiver visit. Identify which task becomes urgent first, who can safely do it and the point at which relocation is needed.",
+  "watch": "Do not alter medicine doses, oxygen settings or device connections to stretch supplies. Ask the relevant clinician, pharmacist or supplier for an individual contingency plan.",
+  "faqs": [
+    [
+      "Does a neighbour need my full medical file?",
+      "Usually the useful information is narrower: agreed contact details, access arrangements and the task they may help with. Discuss what to share with the person concerned and protect sensitive records."
+    ]
+  ],
+  "decisions": [],
+  "related": [
+    "medication-continuity",
+    "accessible-evacuation",
+    "emergency-contact-plan"
+  ],
+  "aliases": [
+    "senior preparedness",
+    "elderly emergency plan",
+    "backup caregiver"
+  ],
+  "keywords": [
+    "senior preparedness",
+    "elderly emergency plan",
+    "backup caregiver"
+  ],
+  "scope": "Civilian household planning. U.S. references; local services and rules differ. Planning examples are editorial suggestions, not promises of assistance."
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "caregiver-handover",
+  "title": "Caregiver handover: a plan for missed visits",
+  "category": "preparedness",
+  "subcategory": "Care & accessibility",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "care-network",
+  "tldr": "Write down essential tasks, confirm who can perform them safely, and define when a missed visit becomes urgent. A name on a contact list is not a confirmed backup caregiver.",
+  "steps": [
+    [
+      "List the next essential tasks",
+      "Record what must happen during the next day: meals, personal care, medicines, equipment checks and mobility assistance. Separate everyday help from tasks requiring training."
+    ],
+    [
+      "Confirm responsibility",
+      "Ask a primary and backup helper what they can actually do, when they can arrive and what supplies or access they need. Do not assign clinical work to an untrained volunteer."
+    ],
+    [
+      "Write a short handover",
+      "Record the usual routine, communication preferences, relevant contacts, supply locations and limits. Share with consent through a private method."
+    ],
+    [
+      "Set escalation points",
+      "Agree what happens if the person cannot be reached, a critical task is missed or the environment no longer supports care. Identify a realistic accessible destination before that point."
+    ]
+  ],
+  "sections": [
+    [
+      "Keep the summary short and current",
+      "Editorial format: one page for the immediate routine, with detailed instructions and specialist plans stored separately. Date the summary and name who updates it. Have a backup helper explain the plan back to you; confusing wording discovered in a calm practice run is easier to fix than during an outage."
+    ],
+    [
+      "Test the access problem",
+      "A helper may know the routine but be unable to enter the building or reach supplies. Discuss keys, building rules and any safe access arrangement without publishing codes. Include what happens when lifts stop or transport is disrupted. Do not make the entire backup depend on a single phone, driver or person."
+    ]
+  ],
+  "without_help": "If no helper can attend, use the individual plan to prioritize safe independent tasks and seek reachable assistance early. A situation involving essential care that cannot be delivered may require moving to a setting that can support it.",
+  "household": "Include the person receiving care in decisions. Protect their privacy and ask about language, hearing, vision and communication needs. Ensure helpers know who can authorize changes to the plan.",
+  "pack_now": "A current care summary, contact numbers, essential supplies and any device-specific contingency instructions from the supplier or clinician.",
+  "next": "Run a calm handover exercise with the backup helper. Record one task they cannot perform and arrange a qualified alternative.",
+  "watch": "Generic emergency advice does not replace an individual clinical or equipment plan. Do not improvise lifting, feeding, medication changes or medical-device work.",
+  "faqs": [
+    [
+      "What if my usual helper also needs to evacuate?",
+      "Agree a second helper or destination before the emergency. Ask both helpers about the conditions that would make them unavailable so the backups do not all fail together."
+    ]
+  ],
+  "decisions": [],
+  "related": [
+    "older-adult-preparedness",
+    "medication-continuity",
+    "accessible-evacuation"
+  ],
+  "aliases": [
+    "care handover",
+    "missed caregiver",
+    "support network"
+  ],
+  "keywords": [
+    "care handover",
+    "missed caregiver",
+    "support network"
+  ],
+  "scope": "Civilian household planning. U.S. references; local services and rules differ. Planning examples are editorial suggestions, not promises of assistance."
+}

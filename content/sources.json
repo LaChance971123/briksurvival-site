@@ -1,423 +1,423 @@
 {
   "power": [
     [
-      "CDC · Protect yourself during a power outage",
+      "CDC \u00b7 Protect yourself during a power outage",
       "https://www.cdc.gov/natural-disasters/response/what-to-do-protect-yourself-during-a-power-outage.html"
     ],
     [
-      "CDC · Avoid carbon monoxide poisoning",
+      "CDC \u00b7 Avoid carbon monoxide poisoning",
       "https://www.cdc.gov/natural-disasters/psa-toolkit/avoiding-carbon-monoxide-poisoning.html"
     ]
   ],
   "weather": [
     [
-      "National Weather Service · Tornado safety",
+      "National Weather Service \u00b7 Tornado safety",
       "https://www.weather.gov/safety/tornado-during"
     ],
     [
-      "National Weather Service · Weather safety",
+      "National Weather Service \u00b7 Weather safety",
       "https://www.weather.gov/safety/"
     ]
   ],
   "wildfire": [
     [
-      "Wildfire · official guidance",
+      "Wildfire \u00b7 official guidance",
       "https://www.ready.gov/wildfires"
     ]
   ],
   "flood": [
     [
-      "Ready.gov · Floods",
+      "Ready.gov \u00b7 Floods",
       "https://www.ready.gov/floods"
     ],
     [
-      "CDC · Floodwater safety",
+      "CDC \u00b7 Floodwater safety",
       "https://www.cdc.gov/floods/about/index.html"
     ]
   ],
   "evacuation": [
     [
-      "Ready.gov · Evacuation",
+      "Ready.gov \u00b7 Evacuation",
       "https://www.ready.gov/evacuation"
     ],
     [
-      "Ready.gov · Make a plan",
+      "Ready.gov \u00b7 Make a plan",
       "https://www.ready.gov/plan"
     ]
   ],
   "water": [
     [
-      "CDC · Drinking water advisories",
+      "CDC \u00b7 Drinking water advisories",
       "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
     ],
     [
-      "CDC · Make water safe in an emergency",
+      "CDC \u00b7 Make water safe in an emergency",
       "https://www.cdc.gov/water-emergency/about/index.html"
     ]
   ],
   "conflict": [
     [
-      "ICRC · Explosive remnants of war",
+      "ICRC \u00b7 Explosive remnants of war",
       "https://www.icrc.org/en/law-and-policy/explosive-remnants-war"
     ],
     [
-      "U.S. State Department · Crisis response",
+      "U.S. State Department \u00b7 Crisis response",
       "https://travel.state.gov/en/international-travel/help-abroad/crisis-response.html"
     ]
   ],
   "unrest": [
     [
-      "U.S. State Department · Global events and travel",
+      "U.S. State Department \u00b7 Global events and travel",
       "https://travel.state.gov/en/international-travel/travel-advisories/global-events.html"
     ],
     [
-      "Ready.gov · Emergency alerts",
+      "Ready.gov \u00b7 Emergency alerts",
       "https://www.ready.gov/alerts"
     ]
   ],
   "nuclear": [
     [
-      "CDC · Radiation emergencies",
+      "CDC \u00b7 Radiation emergencies",
       "https://www.cdc.gov/radiation-emergencies/index.html"
     ],
     [
-      "CDC · Get inside",
+      "CDC \u00b7 Get inside",
       "https://www.cdc.gov/radiation-emergencies/response/get-inside.html"
     ],
     [
-      "CDC · Stay inside",
+      "CDC \u00b7 Stay inside",
       "https://www.cdc.gov/radiation-emergencies/response/stay-inside.html"
     ],
     [
-      "EPA · Radiation emergency preparedness",
+      "EPA \u00b7 Radiation emergency preparedness",
       "https://www.epa.gov/radtown/radiation-emergencies-and-preparedness"
     ]
   ],
   "restrictions": [
     [
-      "Constitution Annotated · Martial law generally",
+      "Constitution Annotated \u00b7 Martial law generally",
       "https://constitution.congress.gov/browse/essay/artII-S2-C1-1-14/ALDE_00013476/"
     ],
     [
-      "Ready.gov · Emergency alerts",
+      "Ready.gov \u00b7 Emergency alerts",
       "https://www.ready.gov/alerts"
     ],
     [
-      "U.S. State Department · Crisis response",
+      "U.S. State Department \u00b7 Crisis response",
       "https://travel.state.gov/en/international-travel/help-abroad/crisis-response.html"
     ]
   ],
   "tornado": [
     [
-      "Tornado · official guidance",
+      "Tornado \u00b7 official guidance",
       "https://www.weather.gov/safety/tornado-during"
     ]
   ],
   "hurricane": [
     [
-      "Hurricane · official guidance",
+      "Hurricane \u00b7 official guidance",
       "https://www.ready.gov/hurricanes"
     ]
   ],
   "tropical-storm": [
     [
-      "Tropical storm · official guidance",
+      "Tropical storm \u00b7 official guidance",
       "https://www.weather.gov/safety/hurricane"
     ]
   ],
   "storm-surge": [
     [
-      "NWS · Hurricane safety",
+      "NWS \u00b7 Hurricane safety",
       "https://www.weather.gov/safety/hurricane"
     ]
   ],
   "thunderstorm": [
     [
-      "Thunderstorm · official guidance",
+      "Thunderstorm \u00b7 official guidance",
       "https://www.weather.gov/safety/thunderstorm"
     ]
   ],
   "lightning": [
     [
-      "Lightning · official guidance",
+      "Lightning \u00b7 official guidance",
       "https://www.weather.gov/safety/lightning"
     ]
   ],
   "hail": [
     [
-      "Hail · official guidance",
+      "Hail \u00b7 official guidance",
       "https://www.weather.gov/safety/thunderstorm"
     ]
   ],
   "damaging-winds": [
     [
-      "Damaging winds · official guidance",
+      "Damaging winds \u00b7 official guidance",
       "https://www.weather.gov/safety/wind"
     ]
   ],
   "winter-storm": [
     [
-      "Winter storm · official guidance",
+      "Winter storm \u00b7 official guidance",
       "https://www.weather.gov/safety/winter"
     ]
   ],
   "ice-storm": [
     [
-      "Ice storm · official guidance",
+      "Ice storm \u00b7 official guidance",
       "https://www.weather.gov/safety/winter"
     ]
   ],
   "extreme-heat": [
     [
-      "Extreme heat · official guidance",
+      "Extreme heat \u00b7 official guidance",
       "https://www.weather.gov/safety/heat"
     ]
   ],
   "extreme-cold": [
     [
-      "Extreme cold · official guidance",
+      "Extreme cold \u00b7 official guidance",
       "https://www.weather.gov/safety/cold"
     ]
   ],
   "flash-flood": [
     [
-      "Flash flood · official guidance",
+      "Flash flood \u00b7 official guidance",
       "https://www.weather.gov/safety/flood"
     ]
   ],
   "earthquake": [
     [
-      "Earthquake · official guidance",
+      "Earthquake \u00b7 official guidance",
       "https://www.ready.gov/earthquakes"
     ]
   ],
   "tsunami": [
     [
-      "Tsunami · official guidance",
+      "Tsunami \u00b7 official guidance",
       "https://www.weather.gov/safety/tsunami"
     ]
   ],
   "landslide": [
     [
-      "Landslide & debris flow · official guidance",
+      "Landslide & debris flow \u00b7 official guidance",
       "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/landslide.html"
     ]
   ],
   "volcanic-eruption": [
     [
-      "Volcanic eruption · official guidance",
+      "Volcanic eruption \u00b7 official guidance",
       "https://www.ready.gov/volcanoes"
     ]
   ],
   "avalanche": [
     [
-      "Avalanche · official guidance",
+      "Avalanche \u00b7 official guidance",
       "https://www.ready.gov/avalanche"
     ]
   ],
   "home-fire": [
     [
-      "Home fire · official guidance",
+      "Home fire \u00b7 official guidance",
       "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/"
     ]
   ],
   "carbon-monoxide": [
     [
-      "Carbon monoxide · official guidance",
+      "Carbon monoxide \u00b7 official guidance",
       "https://www.cdc.gov/carbon-monoxide/about/index.html"
     ]
   ],
   "gas-leak": [
     [
-      "Natural gas leak · official guidance",
+      "Natural gas leak \u00b7 official guidance",
       "https://www.phmsa.dot.gov/safety-awareness/pipeline/pipeline-leak-recognition-and-what-do"
     ]
   ],
   "generator-safety": [
     [
-      "Generator safety · official guidance",
+      "Generator safety \u00b7 official guidance",
       "https://www.cdc.gov/carbon-monoxide/factsheets/generator-safety-fact-sheet.html"
     ]
   ],
   "water-outage": [
     [
-      "Water outage · official guidance",
+      "Water outage \u00b7 official guidance",
       "https://www.cdc.gov/water-emergency/about/index.html"
     ]
   ],
   "boil-water-advisory": [
     [
-      "Boil-water advisory · official guidance",
+      "Boil-water advisory \u00b7 official guidance",
       "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
     ]
   ],
   "do-not-drink": [
     [
-      "Do-not-drink advisory · official guidance",
+      "Do-not-drink advisory \u00b7 official guidance",
       "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
     ]
   ],
   "do-not-use": [
     [
-      "Do-not-use advisory · official guidance",
+      "Do-not-use advisory \u00b7 official guidance",
       "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
     ]
   ],
   "chemical-emergency": [
     [
-      "Chemical release · official guidance",
+      "Chemical release \u00b7 official guidance",
       "https://www.cdc.gov/chemical-emergencies/response/index.html"
     ]
   ],
   "nuclear-plant-emergency": [
     [
-      "Nuclear power plant emergency · official guidance",
+      "Nuclear power plant emergency \u00b7 official guidance",
       "https://www.cdc.gov/radiation-emergencies/faq/index.html"
     ]
   ],
   "shelter-in-place": [
     [
-      "Shelter-in-place · official guidance",
+      "Shelter-in-place \u00b7 official guidance",
       "https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html"
     ]
   ],
   "emergency-alerts": [
     [
-      "Emergency alerts · official guidance",
+      "Emergency alerts \u00b7 official guidance",
       "https://www.ready.gov/alerts"
     ]
   ],
   "communications-outage": [
     [
-      "Communications outage · official guidance",
+      "Communications outage \u00b7 official guidance",
       "https://www.fcc.gov/emergency"
     ]
   ],
   "pandemic": [
     [
-      "Pandemic & disease outbreak · official guidance",
+      "Pandemic & disease outbreak \u00b7 official guidance",
       "https://www.cdc.gov/respiratory-viruses/prevention/index.html"
     ]
   ],
   "72-hour-kit": [
     [
-      "72-hour emergency kit · official guidance",
+      "72-hour emergency kit \u00b7 official guidance",
       "https://www.ready.gov/kit"
     ]
   ],
   "go-bag": [
     [
-      "Go bag · official guidance",
+      "Go bag \u00b7 official guidance",
       "https://www.ready.gov/evacuation"
     ]
   ],
   "water-storage": [
     [
-      "Emergency water storage · official guidance",
+      "Emergency water storage \u00b7 official guidance",
       "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
     ]
   ],
   "food-safety-outage": [
     [
-      "Food safety after power loss · official guidance",
+      "Food safety after power loss \u00b7 official guidance",
       "https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html"
     ]
   ],
   "cpr": [
     [
-      "Adult hands-only CPR · official guidance",
+      "Adult hands-only CPR \u00b7 official guidance",
       "https://www.redcross.org/take-a-class/cpr/performing-cpr/hands-only-cpr"
     ]
   ],
   "aed": [
     [
-      "Using an AED · official guidance",
+      "Using an AED \u00b7 official guidance",
       "https://www.redcross.org/take-a-class/aed/using-an-aed"
     ]
   ],
   "severe-bleeding": [
     [
-      "Severe bleeding · official guidance",
+      "Severe bleeding \u00b7 official guidance",
       "https://www.redcross.org/take-a-class/resources/learn-first-aid/bleeding-life-threatening-external"
     ]
   ],
   "choking": [
     [
-      "Adult & child choking · official guidance",
+      "Adult & child choking \u00b7 official guidance",
       "https://www.redcross.org/take-a-class/resources/learn-first-aid/adult-child-choking"
     ]
   ],
   "water-purification": [
     [
-      "Water purification · official guidance",
+      "Water purification \u00b7 official guidance",
       "https://www.cdc.gov/water-emergency/about/index.html"
     ]
   ],
   "vehicle-breakdown": [
     [
-      "Vehicle breakdown · official guidance",
+      "Vehicle breakdown \u00b7 official guidance",
       "https://www.nhtsa.gov/road-safety"
     ]
   ],
   "household-emergency-plan": [
     [
-      "Household emergency plan · official guidance",
+      "Household emergency plan \u00b7 official guidance",
       "https://www.ready.gov/plan"
     ]
   ],
   "civilian-safety": [
     [
-      "ICRC · Urban warfare and civilian protection",
+      "ICRC \u00b7 Urban warfare and civilian protection",
       "https://www.icrc.org/en/law-and-policy/urban-warfare-and-violence"
     ],
     [
-      "ICRC · Find help",
+      "ICRC \u00b7 Find help",
       "https://www.icrc.org/en/where-we-work"
     ]
   ],
   "explosive-hazards": [
     [
-      "ICRC · Weapon contamination",
+      "ICRC \u00b7 Weapon contamination",
       "https://www.icrc.org/en/what-we-do/weapon-contamination"
     ]
   ],
   "family-links": [
     [
-      "ICRC · Reconnecting families",
+      "ICRC \u00b7 Reconnecting families",
       "https://www.icrc.org/en/what-we-do/reconnecting-families"
     ],
     [
-      "ICRC · Family Links",
+      "ICRC \u00b7 Family Links",
       "https://familylinks.icrc.org/"
     ]
   ],
   "displacement": [
     [
-      "UNHCR · Help for refugees and displaced people",
+      "UNHCR \u00b7 Help for refugees and displaced people",
       "https://help.unhcr.org/"
     ],
     [
-      "ICRC · Reconnecting families",
+      "ICRC \u00b7 Reconnecting families",
       "https://www.icrc.org/en/what-we-do/reconnecting-families"
     ]
   ],
   "hygiene": [
     [
-      "CDC · Personal hygiene during an emergency",
+      "CDC \u00b7 Personal hygiene during an emergency",
       "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
     ],
     [
-      "CDC · Emergency water",
+      "CDC \u00b7 Emergency water",
       "https://www.cdc.gov/water-emergency/about/index.html"
     ]
   ],
   "medication": [
     [
-      "FDA · Keeping medications safe in emergencies",
+      "FDA \u00b7 Keeping medications safe in emergencies",
       "https://www.fda.gov/drugs/fda-drug-info-rounds-video/emergency-preparedness-keeping-medications-safe-feb-2016"
     ],
     [
-      "CDC · Diabetes care during emergencies",
+      "CDC \u00b7 Diabetes care during emergencies",
       "https://www.cdc.gov/diabetes/articles/diabetes-care-emergencies.html"
     ],
     [
@@ -427,55 +427,55 @@
   ],
   "accessibility": [
     [
-      "Ready.gov · People with disabilities",
+      "Ready.gov \u00b7 People with disabilities",
       "https://www.ready.gov/people-disabilities"
     ]
   ],
   "pets": [
     [
-      "Ready.gov · Pets and animals",
+      "Ready.gov \u00b7 Pets and animals",
       "https://www.ready.gov/pets"
     ]
   ],
   "children": [
     [
-      "Ready.gov · Planning for families",
+      "Ready.gov \u00b7 Planning for families",
       "https://www.ready.gov/plan"
     ],
     [
-      "CDC · Infant feeding in emergencies",
+      "CDC \u00b7 Infant feeding in emergencies",
       "https://www.cdc.gov/infant-feeding-emergencies-toolkit/php/checklist.html"
     ]
   ],
   "reentry": [
     [
-      "Ready.gov · Recovering from disaster",
+      "Ready.gov \u00b7 Recovering from disaster",
       "https://www.ready.gov/recovering-disaster"
     ],
     [
-      "CDC · Flood safety",
+      "CDC \u00b7 Flood safety",
       "https://www.cdc.gov/floods/about/index.html"
     ]
   ],
   "scams": [
     [
-      "FTC · Recovering from a weather emergency",
+      "FTC \u00b7 Recovering from a weather emergency",
       "https://consumer.ftc.gov/features/dealing-weather-emergencies"
     ]
   ],
   "privacy": [
     [
-      "Access Now · Digital Security Helpline",
+      "Access Now \u00b7 Digital Security Helpline",
       "https://www.accessnow.org/help/"
     ],
     [
-      "UNHCR · Help",
+      "UNHCR \u00b7 Help",
       "https://help.unhcr.org/"
     ]
   ],
   "navigation": [
     [
-      "National Park Service · Hiking safety",
+      "National Park Service \u00b7 Hiking safety",
       "https://www.nps.gov/articles/hiking-safety.htm"
     ]
   ],
@@ -613,74 +613,132 @@
   ],
   "firearm-safety": [
     [
-      "NSSF · Firearm safety rules",
+      "NSSF \u00b7 Firearm safety rules",
       "https://www.nssf.org/safety/rules-firearms-safety/"
     ],
     [
-      "Project ChildSafe · Secure your firearm",
+      "Project ChildSafe \u00b7 Secure your firearm",
       "https://projectchildsafe.org/securing-your-firearm/"
     ]
   ],
   "radio-services": [
     [
-      "eCFR · GMRS licensing",
+      "eCFR \u00b7 GMRS licensing",
       "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-E/section-95.1705"
     ],
     [
-      "eCFR · GMRS equipment certification",
+      "eCFR \u00b7 GMRS equipment certification",
       "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-E/section-95.1761"
     ],
     [
-      "eCFR · FRS equipment certification",
+      "eCFR \u00b7 FRS equipment certification",
       "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-B/section-95.561"
     ],
     [
-      "Baofeng · Model manuals",
+      "Baofeng \u00b7 Model manuals",
       "https://www.baofengradio.com/pages/download"
     ]
   ],
   "weather-radio": [
     [
-      "NOAA · Weather radio questions",
+      "NOAA \u00b7 Weather radio questions",
       "https://www.weather.gov/nwr/faq"
     ]
   ],
   "outdoor-skills": [
     [
-      "NPS · Ten essentials",
+      "NPS \u00b7 Ten essentials",
       "https://www.nps.gov/articles/10essentials.htm"
     ],
     [
-      "NPS · Hiking safety",
+      "NPS \u00b7 Hiking safety",
       "https://www.nps.gov/articles/hiking-safety.htm"
     ],
     [
-      "NPS · Outdoor emergency planning",
+      "NPS \u00b7 Outdoor emergency planning",
       "https://www.nps.gov/articles/gtgemergencyplan.htm"
     ]
   ],
   "housing-preparedness": [
     [
-      "USFA · Home escape plans",
+      "USFA \u00b7 Home escape plans",
       "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
     ],
     [
-      "NWS · Tornado shelter safety",
+      "NWS \u00b7 Tornado shelter safety",
       "https://www.weather.gov/safety/tornado-during"
     ],
     [
-      "Red Cross · Household emergency plan",
+      "Red Cross \u00b7 Household emergency plan",
       "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
     ]
   ],
   "group-planning": [
     [
-      "Red Cross · Make and practice an emergency plan",
+      "Red Cross \u00b7 Make and practice an emergency plan",
       "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
     ],
     [
-      "NPS · Hiking safety",
+      "NPS \u00b7 Hiking safety",
       "https://www.nps.gov/articles/hiking-safety.htm"
+    ]
+  ],
+  "vehicle-planning": [
+    [
+      "NHTSA \u00b7 Summer driving and roadside kits",
+      "https://www.nhtsa.gov/summer-driving-tips"
+    ],
+    [
+      "NHTSA \u00b7 Winter driving",
+      "https://www.nhtsa.gov/winter-driving-tips"
+    ]
+  ],
+  "financial-planning": [
+    [
+      "CFPB \u00b7 Prepare finances before disaster",
+      "https://www.consumerfinance.gov/consumer-tools/disasters-and-emergencies/get-prepared-before-disaster-emergency-strikes/"
+    ]
+  ],
+  "claims-planning": [
+    [
+      "CFPB \u00b7 Protect finances and property after disaster",
+      "https://www.consumerfinance.gov/ask-cfpb/what-should-i-do-after-a-disaster-to-protect-my-finances-and-property-en-1513/"
+    ]
+  ],
+  "older-adult-planning": [
+    [
+      "Red Cross \u00b7 Older adult preparedness",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/older-adults.html"
+    ],
+    [
+      "Red Cross \u00b7 Build a support network",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/older-adults/building-your-support-network.html"
+    ]
+  ],
+  "battery-planning": [
+    [
+      "USFA \u00b7 Lithium-ion battery safety",
+      "https://www.usfa.fema.gov/a-z/lithium-ion-batteries/community-education/"
+    ]
+  ],
+  "cooking-planning": [
+    [
+      "CPSC \u00b7 Generator, carbon monoxide and fire hazards",
+      "https://www.cpsc.gov/Newsroom/News-Releases/2026/CPSC-Warns-of-Generator-Carbon-Monoxide-and-Fire-Hazards-Ahead-of-Hurricane-Season"
+    ],
+    [
+      "CPSC \u00b7 Portable heaters and camping equipment",
+      "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center/Portable-Heaters--Camping-Equipment"
+    ]
+  ],
+  "care-network": [
+    [
+      "CDC \u00b7 Make an individual emergency plan",
+      "https://www.cdc.gov/disability-emergency-preparedness/people-with-disabilities/make-a-plan.html"
+    ],
+    [
+      "CDC \u00b7 Stay connected",
+      "https://www.cdc.gov/prepare-your-health/plan-ahead/stay-connected.html"
     ]
   ]
 }

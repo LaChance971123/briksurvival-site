@@ -35,7 +35,7 @@
   "category": "communications",
   "subcategory": "Offline information",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "offline navigation",
     "no internet maps",
@@ -81,5 +81,11 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Check the route from both ends",
+      "Study the approach to the destination as well as the route out. Record recognizable junctions, alternate access and where the household will meet if a pickup point becomes unreachable. Test downloaded map coverage before a trip rather than assuming the overview map includes every street. Keep written addresses separate from the phone; avoid posting a private destination in a public message."
+    ]
+  ]
 }

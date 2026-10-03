@@ -1,0 +1,71 @@
+{
+  "slug": "evacuation-without-car",
+  "title": "Evacuation without a car: arrange transport early",
+  "category": "vehicle-travel",
+  "subcategory": "Without a car",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "care-network",
+  "tldr": "Arrange more than one realistic transport option, confirm what each can carry, and leave extra time. Do not wait for a ride that has never been agreed.",
+  "steps": [
+    [
+      "Identify transport dependence",
+      "Write down who needs a lift, accessible vehicle, car seat, equipment space or help reaching the pickup point. Start with people, not luggage."
+    ],
+    [
+      "Confirm a primary ride",
+      "Ask a trusted person what warning they need, where pickup will happen and what would stop them reaching you. Check that the destination is willing and able to receive the group."
+    ],
+    [
+      "Arrange a second option",
+      "Research accessible public or community transport before an emergency. Record contact details, operating limits and booking requirements; availability during disaster is uncertain."
+    ],
+    [
+      "Practice the pickup",
+      "Test the route to the meeting point and the actual load. Use a compact carry bag and leave bulky replaceable supplies if they prevent people or essential care equipment fitting."
+    ]
+  ],
+  "sections": [
+    [
+      "Write down the handover",
+      "Editorial pickup note: names and count of passengers, pickup point, alternate point, departure trigger, destination, accessibility needs, pets and essential equipment. Give a copy to the driver and household. Resolve disagreements before a warning arrives, especially if someone wants to bring more than the vehicle can hold."
+    ],
+    [
+      "Leave before the last possible moment",
+      "The plan needs a trigger that allows loading and travel time. Account for congestion, bridge closures, darkness and the helper’s own household. If your only ride depends on someone crossing the threatened area, look for a closer backup. A transport registration can be useful, but it is not a guaranteed dispatch or rescue service."
+    ]
+  ],
+  "without_help": "If your confirmed ride fails, contact the backup early where possible. Use a safer nearby waiting place only if reachable without crossing the hazard. Share a concise location and access needs when safe assistance becomes reachable.",
+  "household": "Include children’s restraints, mobility equipment, communication aids and pet accommodation. Discuss assistance with the person receiving it; do not assume they can use stairs or transfer into an unfamiliar vehicle.",
+  "pack_now": "Carry identification, essential care supplies, phone, written contacts and the minimum personal items needed at the destination.",
+  "next": "Call the proposed driver today and confirm the exact pickup point and passenger capacity. Record a second arrangement that does not depend on that same driver.",
+  "watch": "Transit, taxis, rideshare and shelters may stop operating or have restrictions. Never present an unconfirmed service as an assured way out.",
+  "faqs": [
+    [
+      "Can I rely on a local evacuation registry?",
+      "Use it as one part of the plan. Ask how the service operates, when it stops taking requests and what it actually promises. Keep personal transport alternatives and carry essential information."
+    ]
+  ],
+  "decisions": [],
+  "related": [
+    "accessible-evacuation",
+    "evacuation",
+    "go-bag"
+  ],
+  "aliases": [
+    "no car evacuation",
+    "transport assistance",
+    "accessible ride"
+  ],
+  "keywords": [
+    "no car evacuation",
+    "transport assistance",
+    "accessible ride"
+  ],
+  "scope": "Civilian household planning. U.S. references; local services and rules differ. Planning examples are editorial suggestions, not promises of assistance."
+}

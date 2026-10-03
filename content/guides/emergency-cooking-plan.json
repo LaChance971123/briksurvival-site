@@ -1,0 +1,71 @@
+{
+  "slug": "emergency-cooking-plan",
+  "title": "Emergency cooking: meals without adding a new hazard",
+  "category": "preparedness",
+  "subcategory": "Water & food",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "cooking-planning",
+  "tldr": "Keep meals you can eat without heat as your first backup. Outdoor-only cooking equipment stays outdoors; if you cannot use it safely, change the menu rather than bringing it inside.",
+  "steps": [
+    [
+      "Start with no-cook meals",
+      "Choose familiar ready-to-eat foods that suit your household. Include a manual opener and portions you can finish without depending on refrigeration."
+    ],
+    [
+      "Check your cooking option",
+      "Read the exact equipment and fuel instructions. Never use charcoal grills or camp stoves indoors or in a garage, even with the door open."
+    ],
+    [
+      "Plan water and cleanup",
+      "Include safe water for drinking, preparation and hand hygiene. Avoid a menu that assumes unlimited washing water or a working sink."
+    ],
+    [
+      "Practice a simple menu",
+      "Prepare one normal meal using the backup arrangement in safe conditions. Check opening packages, lighting, portion sizes and waste handling."
+    ]
+  ],
+  "sections": [
+    [
+      "Build a menu around actual meals",
+      "Editorial no-cook examples: ready-to-eat beans with crackers and shelf-stable fruit; a suitable nut or seed spread with bread; canned fish or an alternative ready-to-eat protein with vegetables. Check allergens, label instructions and household preferences. These examples are meal ideas, not a prescribed nutritional or medical diet."
+    ],
+    [
+      "Count the dependencies",
+      "For each meal, write down water, utensils, opening tools, heat and leftover storage. Dry rice may be inexpensive, but it is a poor first fallback when fuel and safe water are scarce. Choose ready-to-eat portions where cooking access is uncertain; use foods your household already eats so rotation does not become an unwanted expense."
+    ]
+  ],
+  "without_help": "If safe outdoor cooking is unavailable, use the no-cook menu. Do not trade a warm meal for carbon monoxide or fire exposure. If safe food and water cannot be maintained, reassess the location and seek a workable alternative.",
+  "household": "Account for infants, swallowing needs, allergies and medical diets. Use individual clinical guidance for special feeding requirements; a general pantry list may not be appropriate.",
+  "pack_now": "Manual opener, utensils, familiar ready-to-eat portions, safe water and basic hygiene supplies. Keep fuels only in approved arrangements appropriate to the equipment and location.",
+  "next": "Write a one-day no-cook menu for the actual household and check that every ingredient and opening tool is present.",
+  "watch": "Do not use a gas oven for heating. Do not assume a window, fan or CO alarm makes outdoor-only equipment safe indoors. Follow food safety rules for opened and perishable foods.",
+  "faqs": [
+    [
+      "Can I just heat food in the garage?",
+      "Not with charcoal grills or camp stoves. An open garage door does not make that safe. Use an appropriate outdoor location under product instructions or choose food that needs no heating."
+    ]
+  ],
+  "decisions": [],
+  "related": [
+    "food-without-cooking",
+    "food-safety-outage",
+    "water-storage"
+  ],
+  "aliases": [
+    "camp stove safety",
+    "no power meals",
+    "emergency menu"
+  ],
+  "keywords": [
+    "camp stove safety",
+    "no power meals",
+    "emergency menu"
+  ],
+  "scope": "Civilian household planning. U.S. references; local services and rules differ. Planning examples are editorial suggestions, not promises of assistance."
+}

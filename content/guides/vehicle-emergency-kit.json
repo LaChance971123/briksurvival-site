@@ -1,0 +1,71 @@
+{
+  "slug": "vehicle-emergency-kit",
+  "title": "Vehicle emergency kit: useful supplies, safe access",
+  "category": "vehicle-travel",
+  "subcategory": "Roadside",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "vehicle-planning",
+  "tldr": "Pack for the passengers and climate, keep essentials reachable, and service the vehicle before relying on it. A repair tool is useful only where you can use it safely.",
+  "steps": [
+    [
+      "Start with people",
+      "Carry drinking water, familiar shelf-stable food, layers, a flashlight, first-aid supplies and a phone charging cable. Add medicines and passenger-specific essentials within their storage limits."
+    ],
+    [
+      "Check the vehicle",
+      "Check tires, lights and fluids against the owner’s manual. Use the vehicle’s recommended tire pressure, not the maximum printed on the tire. Inspect the spare if fitted."
+    ],
+    [
+      "Match tools to your car",
+      "Confirm that the jack, spare, tire tool or repair kit actually fits. Learn the manufacturer’s procedure in a safe practice setting. Roadside assistance is a backup, not a reason to work beside moving traffic."
+    ],
+    [
+      "Organize access",
+      "Keep a light, phone and contact details accessible from the cabin. Secure heavier equipment so it does not become loose cargo. Keep the main kit retrievable without unloading everything."
+    ]
+  ],
+  "sections": [
+    [
+      "A practical starter shopping list",
+      "Editorial starting point: flashlight with suitable spare batteries, phone cable and compatible charger, reflective vest, work gloves, drinking water, ready-to-eat snacks, weather layers, paper map and a basic first-aid kit. Then add vehicle-specific tools. Avoid buying a large prepacked kit before checking whether its contents suit your climate and passengers."
+    ],
+    [
+      "Rotate for the season",
+      "Review food, water containers and batteries after prolonged heat or freezing conditions. Follow product storage instructions. Add winter clothing for cold routes and check cooling-system maintenance for hot routes. A medicine left in a hot trunk may no longer meet its storage requirements; ask a pharmacist about a suitable travel arrangement."
+    ]
+  ],
+  "without_help": "If help cannot be reached, assess exposure and traffic before attempting any repair. Keep the group together in the safest available location and conserve phone power. Do not turn a mechanical problem into a traffic injury.",
+  "household": "Pack for children, pets and anyone who cannot comfortably wait outdoors. Keep communication aids and mobility equipment accessible. A lone driver should know where the kit is without searching the trunk in darkness.",
+  "pack_now": "Phone, light, contact card and weather layers in the cabin; secured water, food and vehicle-specific tools where they can be reached safely.",
+  "next": "Unpack your current car kit, remove unusable items and practice finding the light and contacts without turning on cabin lights.",
+  "watch": "Never leave children or pets in a hot parked vehicle. Never run an engine in an enclosed space. Flooded roads, wires and active traffic can make staying or repairing unsafe.",
+  "faqs": [
+    [
+      "Should I carry jumper cables?",
+      "Only if appropriate for your vehicle and you know its exact procedure. Some vehicles have designated connection points or restrictions. Check the manual; do not improvise with an unfamiliar high-voltage or damaged battery."
+    ]
+  ],
+  "decisions": [],
+  "related": [
+    "vehicle-breakdown",
+    "offline-maps",
+    "go-bag"
+  ],
+  "aliases": [
+    "car kit",
+    "roadside supplies",
+    "trunk kit"
+  ],
+  "keywords": [
+    "car kit",
+    "roadside supplies",
+    "trunk kit"
+  ],
+  "scope": "Civilian household planning. U.S. references; local services and rules differ. Planning examples are editorial suggestions, not promises of assistance."
+}
