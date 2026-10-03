@@ -35,7 +35,7 @@
       "id": "power-outage",
       "slug": "power-outage",
       "kind": "topic",
-      "status": "files-ready",
+      "status": "ready",
       "title": "Power Outage Toolkit",
       "summary": "A complete household blackout plan: safe power decisions, lighting, food protection, contacts and recovery.",
       "components": [
@@ -52,18 +52,18 @@
         "heating-failure"
       ],
       "included_product_ids": [],
-      "price": null,
+      "price": 4.99,
       "currency": "USD",
       "edition": "US v1.0",
-      "payhip_product_id": null,
-      "checkout_url": null,
-      "delivery_verified": false
+      "payhip_product_id": "j3KTk",
+      "checkout_url": "https://payhip.com/buy?link=j3KTk",
+      "delivery_verified": true
     },
     {
       "id": "water-disruption",
       "slug": "water-disruption",
       "kind": "topic",
-      "status": "files-ready",
+      "status": "ready",
       "title": "Water Disruption & Safe Storage Toolkit",
       "summary": "Plan reserves, understand water notices, organize containers and keep household hygiene workable.",
       "components": [
@@ -83,18 +83,18 @@
         "do-not-use"
       ],
       "included_product_ids": [],
-      "price": null,
+      "price": 4.99,
       "currency": "USD",
       "edition": "US v1.0",
-      "payhip_product_id": null,
-      "checkout_url": null,
-      "delivery_verified": false
+      "payhip_product_id": "RubKm",
+      "checkout_url": "https://payhip.com/buy?link=RubKm",
+      "delivery_verified": true
     },
     {
       "id": "emergency-food",
       "slug": "emergency-food",
       "kind": "topic",
-      "status": "files-ready",
+      "status": "ready",
       "title": "Emergency Food & No-Cook Planning Toolkit",
       "summary": "Build usable food reserves with practical meals, shopping quantities, rotation and outage decisions.",
       "components": [
@@ -109,18 +109,18 @@
         "food-without-cooking"
       ],
       "included_product_ids": [],
-      "price": null,
+      "price": 4.99,
       "currency": "USD",
       "edition": "US v1.0",
-      "payhip_product_id": null,
-      "checkout_url": null,
-      "delivery_verified": false
+      "payhip_product_id": "YZBvc",
+      "checkout_url": "https://payhip.com/buy?link=YZBvc",
+      "delivery_verified": true
     },
     {
       "id": "evacuation",
       "slug": "evacuation",
       "kind": "topic",
-      "status": "files-ready",
+      "status": "ready",
       "title": "Evacuation & Go-Bags Toolkit",
       "summary": "Turn leaving into a clear household plan with destinations, roles, bags, transport and check-ins.",
       "components": [
@@ -138,12 +138,12 @@
         "bug-out-plan"
       ],
       "included_product_ids": [],
-      "price": null,
+      "price": 4.99,
       "currency": "USD",
       "edition": "US v1.0",
-      "payhip_product_id": null,
-      "checkout_url": null,
-      "delivery_verified": false
+      "payhip_product_id": "Nbpit",
+      "checkout_url": "https://payhip.com/buy?link=Nbpit",
+      "delivery_verified": true
     }
   ]
 }

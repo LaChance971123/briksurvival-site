@@ -15,9 +15,9 @@ Publish only `dist`, never the source checkout. The same complete build and vali
 
 ## Free encyclopedia and paid toolkits
 
-86 original online guides in 13 subjects remain free without signup. Edit `content/guides/*.json`, taxonomy and sources, then rebuild. Guide URLs, the quick answer, practical actions, no-help fallback, household needs, decisions and source context remain. Medical content requires current source verification and qualified independent review before claiming that status.
+126 original online guides in 14 subjects remain free without signup. Edit `content/guides/*.json`, taxonomy and sources, then rebuild. Guide URLs, the quick answer, practical actions, no-help fallback, household needs, decisions and source context remain. Medical content requires current source verification and qualified independent review before claiming that status.
 
-The toolkit catalogue, complete-collection detail page, homepage feature and guide CTAs are generated from `content/toolkits.json`. The first collection is explicitly in development. No package, current price or checkout is claimed. Future ready products must have verified Payhip delivery, a price, edition, component list and matching checkout URL. Collections must list their included ready topic products.
+The toolkit catalogue, complete-collection detail page, homepage feature and guide CTAs are generated from `content/toolkits.json`. The four topic kits are $4.99 USD each (US v1.0), with matching Payhip direct checkout URLs. Uploaded customer ZIPs have been downloaded from Payhip and compared byte-for-byte with the completed launch pack. The complete collection remains in development. Ready products must have verified Payhip files, a price, edition, component list and matching checkout URL. Collections must list their included ready topic products.
 
 Premium manuscripts and finished files belong in a separate private workspace, never this public repository or deployment. Payhip will handle purchased-file delivery. The retained document-design utility requires an explicit private output path outside the repository. See [toolkit architecture](docs/toolkit-architecture.md) for product lifecycle, delivery setup and publishing boundaries.
 
@@ -31,7 +31,7 @@ Free Osprey Zero PDF downloads, the portable library and browser offline saving 
 
 The existing Netlify forms collect optional toolkit-update and Field Notes requests, with honeypots, native validation and visible submission feedback. They do not unlock guidance. Automatic newsletter delivery remains awaiting MailerLite setup and verification; do not invent a subscribe endpoint or promise an immediate email.
 
-Payhip checkout and paid-file delivery are not enabled in this migration. Merchant identity and payout setup, actual product upload and an end-to-end payment/delivery test precede a ready product. Affiliate accounts and equipment research are later work.
+Stripe is connected in Payhip and the four topic checkout links are enabled. Customer ZIPs match the finished files. The zero-cost customer checkout test is awaiting Payhip human verification; a successful paid charge and receipt delivery have not yet been verified. Complete customer testing before claiming end-to-end payment verification. Affiliate accounts and equipment research are later work.
 
 ## Advertising
 
