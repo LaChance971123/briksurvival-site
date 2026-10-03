@@ -4,7 +4,7 @@
   "category": "natural-hazards",
   "subcategory": "Severe storms",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "hailstorm"
   ],
@@ -39,20 +39,7 @@
   "without_help": "Remain under substantial shelter while hail continues. Keep shoes on and avoid glazing. Afterward, assess damage from the ground; loose roofing and hidden electrical damage can be more dangerous than the hail itself.",
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: leave the open. Agree who will manage children, pets or mobility needs while that action happens. Do not climb a wet or damaged roof to inspect it.",
   "pack_now": "For hail, prioritize only items needed for the first action and the fallback: Remain under substantial shelter while hail continues. Keep shoes on and avoid glazing. Afterward, assess damage from the ground; loose roofing and hidden electrical damage can be more dangerous than the hail itself. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Leave the open",
-      "Move into a sturdy building before collecting possessions. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Remain under substantial shelter while hail continues. Keep shoes on and avoid glazing. Afterward, assess damage from the ground; loose roofing and hidden electrical damage can be more dangerous than the hail itself. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Do not climb a wet or damaged roof to inspect it. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

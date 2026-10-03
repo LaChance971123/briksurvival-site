@@ -4,7 +4,7 @@
   "category": "medical",
   "subcategory": "Resuscitation",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "cardiac arrest",
     "not breathing",
@@ -41,20 +41,7 @@
   "without_help": "If a call will not connect, start or continue compressions. Ask another person to keep trying and bring an AED. If alone, use speakerphone while starting CPR rather than waiting for an answer. Do not leave an unresponsive person just to seek better reception.",
   "household": "Give someone the specific task of calling or locating care while another person provides first aid. Keep the patient warm or cool as the condition requires and record what happened and when. Do not put yourself into the same hazard or assume an ambulance has been dispatched until confirmed. For this situation, brief every person on the first action: check safely. Agree who will manage children, pets or mobility needs while that action happens. This adult sudden-collapse guide does not replace infant or child CPR instructions. Gasping is not normal breathing.",
   "pack_now": "For adult hands-only cpr, prioritize only items needed for the first action and the fallback: If a call will not connect, start or continue compressions. Ask another person to keep trying and bring an AED. If alone, use speakerphone while starting CPR rather than waiting for an answer. Do not leave an unresponsive person just to seek better reception. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Check safely",
-      "Ensure the scene is safe and check responsiveness and breathing quickly. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "If a call will not connect, start or continue compressions. Ask another person to keep trying and bring an AED. If alone, use speakerphone while starting CPR rather than waiting for an answer. Do not leave an unresponsive person just to seek better reception. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "This adult sudden-collapse guide does not replace infant or child CPR instructions. Gasping is not normal breathing. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

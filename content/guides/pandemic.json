@@ -4,7 +4,7 @@
   "category": "public-health",
   "subcategory": "Infectious disease",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "outbreak",
     "infectious disease",
@@ -41,20 +41,7 @@
   "without_help": "Create a workable sick-person area, improve ventilation where safe and separate shared food, washing and care tasks. Keep medicines and a written symptom record. Obtain disease-specific guidance when possible; do not use unproven treatments or copy isolation rules from another outbreak.",
   "household": "Make the care plan workable with the people, room and supplies you have. Separate clean and dirty tasks, check high-risk household members and preserve access to essential medicines. Keep a written record of symptoms and exposure rather than relying on memory. For this situation, brief every person on the first action: find current guidance. Agree who will manage children, pets or mobility needs while that action happens. Do not transfer isolation durations or treatment advice from one disease to another.",
   "pack_now": "For pandemic & disease outbreak, prioritize only items needed for the first action and the fallback: Create a workable sick-person area, improve ventilation where safe and separate shared food, washing and care tasks. Keep medicines and a written symptom record. Obtain disease-specific guidance when possible; do not use unproven treatments or copy isolation rules from another outbreak. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Find current guidance",
-      "Use the local health department and CDC disease-specific updates. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Create a workable sick-person area, improve ventilation where safe and separate shared food, washing and care tasks. Keep medicines and a written symptom record. Obtain disease-specific guidance when possible; do not use unproven treatments or copy isolation rules from another outbreak. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Do not transfer isolation durations or treatment advice from one disease to another. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

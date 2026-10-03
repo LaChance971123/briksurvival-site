@@ -4,7 +4,7 @@
   "category": "communications",
   "subcategory": "Warnings & information",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "warning",
     "weather radio",
@@ -41,20 +41,7 @@
   "without_help": "Treat direct signs of danger as a reason to act even if an alert has not arrived. Compare a battery-radio bulletin with another independently obtained source when possible. Record the place and time; an old screenshot can be dangerously misleading.",
   "household": "Use one agreed check-in message and time so several people do not drain batteries repeating the same search. Share updates privately and include the time and location. Keep essential contacts on paper and teach children which trusted people they can approach. For this situation, brief every person on the first action: enable phone alerts. Agree who will manage children, pets or mobility needs while that action happens. Alerts can be delayed or missed. Act on obvious immediate danger and natural warning signs.",
   "pack_now": "For emergency alerts, prioritize only items needed for the first action and the fallback: Treat direct signs of danger as a reason to act even if an alert has not arrived. Compare a battery-radio bulletin with another independently obtained source when possible. Record the place and time; an old screenshot can be dangerously misleading. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Enable phone alerts",
-      "Review emergency notification settings and keep the phone charged. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Treat direct signs of danger as a reason to act even if an alert has not arrived. Compare a battery-radio bulletin with another independently obtained source when possible. Record the place and time; an old screenshot can be dangerously misleading. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Alerts can be delayed or missed. Act on obvious immediate danger and natural warning signs. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

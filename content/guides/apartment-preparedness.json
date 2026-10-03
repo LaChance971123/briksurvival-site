@@ -44,6 +44,10 @@
     [
       "Renter improvements",
       "Use suitable door and window security that preserves emergency escape and respects lease and building requirements. Ask permission before structural alterations. Smoke and carbon monoxide alarms, working locks, clear stairs and prompt reporting of broken communal lighting are practical first improvements. A renter’s plan should include inventory photographs and access to insurance and lease contacts."
+    ],
+    [
+      "A ten-minute building walk",
+      "Editorial exercise: identify permitted exits, stairs, the outside meeting point and which doors require keys. Ask management how residents receive urgent notices and how access needs are planned during lift failure. Report obstructed common routes. Do not assume the usual lift or electronic entry will work without power."
     ]
   ],
   "without_help": "If management or neighbors are unreachable, use your own tested exit and household contact plan. Do not wait for a lift during fire evacuation. If escape is blocked by heat or smoke, use the building-specific fire plan and report your location when possible.",
@@ -54,7 +58,16 @@
   "sources": "housing-preparedness",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
-  "decisions": [],
+  "decisions": [
+    [
+      "Communal systems stop working?",
+      "Check safe access, care needs and the alternate stay location rather than assuming the building remains usable."
+    ],
+    [
+      "The landlord has not answered?",
+      "Keep your own contact and household plan usable; a maintenance request is not confirmation that a fault has been corrected."
+    ]
+  ],
   "faqs": [
     [
       "Is buying equipment enough?",

@@ -4,7 +4,7 @@
   "category": "natural-hazards",
   "subcategory": "Severe storms",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "high winds",
     "derecho",
@@ -41,20 +41,7 @@
   "without_help": "Wait for winds to ease in the best shelter you can reach without exposure. Keep a torch and shoes nearby for broken glass. If the building is failing, move to a safer reachable space without going beneath trees, loose roofing or wires.",
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: secure items beforehand. Agree who will manage children, pets or mobility needs while that action happens. Do not attempt to clear a tree from a power line.",
   "pack_now": "For damaging winds, prioritize only items needed for the first action and the fallback: Wait for winds to ease in the best shelter you can reach without exposure. Keep a torch and shoes nearby for broken glass. If the building is failing, move to a safer reachable space without going beneath trees, loose roofing or wires. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Secure items beforehand",
-      "Bring loose items inside while conditions are calm; do not go out once winds are dangerous. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Wait for winds to ease in the best shelter you can reach without exposure. Keep a torch and shoes nearby for broken glass. If the building is failing, move to a safer reachable space without going beneath trees, loose roofing or wires. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Do not attempt to clear a tree from a power line. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

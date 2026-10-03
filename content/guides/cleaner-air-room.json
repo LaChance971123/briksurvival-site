@@ -1,0 +1,80 @@
+{
+  "slug": "cleaner-air-room",
+  "title": "Cleaner air room: a household wildfire-smoke plan",
+  "category": "preparedness",
+  "subcategory": "Care & accessibility",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "cleaner-air",
+  "tldr": "If it is safe to remain home, choose a room that fits your household, close doors and windows without blocking escape, keep it cool and use a suitable air cleaner. Avoid producing smoke or particles indoors. Filtration does not make a home safe during a fire, dangerous heat or a chemical release.",
+  "steps": [
+    [
+      "Pick a workable room",
+      "Use a room everyone can occupy comfortably. Keep exits usable and plan access to a bathroom."
+    ],
+    [
+      "Limit smoke entry",
+      "Close exterior openings. If the air conditioner has an outside-air option, use recirculation as its instructions allow."
+    ],
+    [
+      "Use appropriate filtration",
+      "Choose a CARB-certified portable cleaner with a tobacco-smoke CADR at least two-thirds of the room area in square feet. Follow its instructions and operate continuously during smoke."
+    ],
+    [
+      "Reduce indoor pollution",
+      "Avoid smoking, candles, sprays and high-heat cooking. Clean settled dust with a damp cloth."
+    ]
+  ],
+  "sections": [
+    [
+      "An equipment plan before shopping",
+      "Editorial checklist: measure the room, check available outlets, record the cleaner model and filter type, find replacement filters and choose where people will sit and sleep. Photograph the filter label for later shopping. Avoid relying on a device nobody has learned to operate."
+    ],
+    [
+      "Prepare for a power interruption",
+      "Write down a checked alternate location where cleaner air and a tolerable temperature may be available. Determine the transport and care needs before smoke arrives. A closed room without working cooling may become unsuitable; review both heat and smoke rather than treating one as the only risk."
+    ]
+  ],
+  "without_help": "When filtration or cooling is unavailable, avoid adding indoor particles and check whether a safer alternate location can be reached. Do not remain in dangerous heat simply to keep windows closed.",
+  "household": "Plan around people with heart or lung conditions, children, older adults and pregnant people. Keep their usual care instructions and medicines accessible. Ask their clinician about a personal smoke plan before the season.",
+  "pack_now": "Air-cleaner instructions, suitable replacement filter, drinking water, contacts and the alternate-location plan.",
+  "next": "Practice setting up the room and replacing the filter. Reassess when outside conditions improve; the linked EPA guidance explains when to air out the room.",
+  "watch": "Do not seal anyone inside or block emergency escape. Ordinary particle filtration does not remove every harmful gas. Follow evacuation instructions for nearby fire.",
+  "faqs": [
+    [
+      "Is a cleaner air room a shelter for every hazard?",
+      "No. This plan addresses wildfire smoke while staying home is otherwise safe. Fire, excessive heat and chemical releases require different decisions."
+    ]
+  ],
+  "decisions": [
+    [
+      "The room becomes too hot?",
+      "Use the safer temperature and relocation plan."
+    ],
+    [
+      "A fire threatens the building?",
+      "Use the evacuation plan rather than relying on filtration."
+    ]
+  ],
+  "related": [
+    "wildfire-smoke",
+    "extreme-heat",
+    "evacuation"
+  ],
+  "aliases": [
+    "clean air room",
+    "smoke air purifier",
+    "wildfire air filter"
+  ],
+  "keywords": [
+    "clean air room",
+    "smoke air purifier",
+    "wildfire air filter"
+  ],
+  "scope": "Civilian guidance using the linked U.S. reference. Local conditions and services differ. Household planning examples are Osprey Zero editorial suggestions; this is not a live alert or specialist certification."
+}

@@ -32,7 +32,7 @@
   "category": "conflict",
   "subcategory": "Conflict",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "war"
   ],
@@ -44,20 +44,7 @@
   "without_help": "Choose the most protective reachable room before another attack, keep footwear and a light there, and keep essential medicines close. Do not cross active fighting to collect supplies. Use verified humanitarian contacts and trusted people; government assistance or safe passage may not exist.",
   "household": "Choose two reunion places and an out-of-area contact. Keep children with a trusted caregiver and carry a written contact card. Share sensitive addresses and travel details only with people who need them; avoid posting live locations or images of other families without consent. For this situation, brief every person on the first action: choose shelter before the next attack. Agree who will manage children, pets or mobility needs while that action happens. A lull is not an all-clear. Fire, damaged structures, unexploded ordnance and interrupted utilities remain dangerous. Avoid confrontation with armed personnel; local protection risks determine whether contacting officials is safe.",
   "pack_now": "For armed conflict, prioritize only items needed for the first action and the fallback: Choose the most protective reachable room before another attack, keep footwear and a light there, and keep essential medicines close. Do not cross active fighting to collect supplies. Use verified humanitarian contacts and trusted people; government assistance or safe passage may not exist. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Choose shelter before the next attack",
-      "Prefer a designated protective shelter if safely reachable. Otherwise use the most protective intact interior area available, away from glazing. Consider collapse, fire and flooding as well as blast exposure; no ordinary room guarantees safety. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Choose the most protective reachable room before another attack, keep footwear and a light there, and keep essential medicines close. Do not cross active fighting to collect supplies. Use verified humanitarian contacts and trusted people; government assistance or safe passage may not exist. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "A lull is not an all-clear. Fire, damaged structures, unexploded ordnance and interrupted utilities remain dangerous. Avoid confrontation with armed personnel; local protection risks determine whether contacting officials is safe. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

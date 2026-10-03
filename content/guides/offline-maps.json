@@ -50,20 +50,7 @@
   ],
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "First decision: Download before the outage",
-      "Use the map app’s offline feature for the whole journey, not just the destination. Test it with mobile data off. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Use known routes and written landmarks while checking conditions from safe positions. If you cannot identify a safe onward route, reassess rather than consuming the last battery on repeated rerouting. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Maps and position tools are aids, not proof of safe passage. Avoid unfamiliar shortcuts through hazardous or recently fought-over ground. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

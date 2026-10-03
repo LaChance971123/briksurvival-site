@@ -4,7 +4,7 @@
   "category": "natural-hazards",
   "subcategory": "Volcanic",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "volcano",
     "eruption",
@@ -41,20 +41,7 @@
   "without_help": "Keep away from river valleys, exclusion areas and visible ash plumes. Use the best reachable intact shelter for ashfall while checking evacuation information. Avoid driving through heavy ash unless leaving a more immediate threat; ash can impair engines and visibility.",
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: check official monitoring. Agree who will manage children, pets or mobility needs while that action happens. A particle respirator does not protect against volcanic gases.",
   "pack_now": "For volcanic eruption, prioritize only items needed for the first action and the fallback: Keep away from river valleys, exclusion areas and visible ash plumes. Use the best reachable intact shelter for ashfall while checking evacuation information. Avoid driving through heavy ash unless leaving a more immediate threat; ash can impair engines and visibility. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Check official monitoring",
-      "Use local emergency alerts and the responsible volcano observatory. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Keep away from river valleys, exclusion areas and visible ash plumes. Use the best reachable intact shelter for ashfall while checking evacuation information. Avoid driving through heavy ash unless leaving a more immediate threat; ash can impair engines and visibility. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "A particle respirator does not protect against volcanic gases. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

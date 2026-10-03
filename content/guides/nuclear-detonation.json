@@ -29,7 +29,7 @@
   "category": "chemical-radiation",
   "subcategory": "Radiation",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "radiation shelter",
     "fallout shelter"
@@ -42,20 +42,7 @@
   "without_help": "Do not leave protective shelter simply because broadcasts fail. Use an intact basement or central space, keep contaminated outer clothing away from people and use covered water and food. Fire, collapse or another immediate life threat can force a move; a timer alone cannot establish safe outdoor conditions.",
   "household": "Keep the family together in the correct shelter for the hazard and separate potentially contaminated items from the living area. Use covered food and safe water. Prepare a bag for relocation, but do not send someone outside for it during an active release. For this situation, brief every person on the first action: get inside. Agree who will manage children, pets or mobility needs while that action happens. Fallout conditions vary by place and time. Do not treat a fixed distance or a clock as an all-clear; use the official instructions for your location. Potassium iodide is not a general radiation antidote and should be taken only when public-health officials advise it.",
   "pack_now": "For nuclear detonation, prioritize only items needed for the first action and the fallback: Do not leave protective shelter simply because broadcasts fail. Use an intact basement or central space, keep contaminated outer clothing away from people and use covered water and food. Fire, collapse or another immediate life threat can force a move; a timer alone cannot establish safe outdoor conditions. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Get inside",
-      "Do not remain outdoors looking at the blast or travel across town for a preferred shelter. A substantial building offers better protection than a vehicle or open space. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Do not leave protective shelter simply because broadcasts fail. Use an intact basement or central space, keep contaminated outer clothing away from people and use covered water and food. Fire, collapse or another immediate life threat can force a move; a timer alone cannot establish safe outdoor conditions. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Fallout conditions vary by place and time. Do not treat a fixed distance or a clock as an all-clear; use the official instructions for your location. Potassium iodide is not a general radiation antidote and should be taken only when public-health officials advise it. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

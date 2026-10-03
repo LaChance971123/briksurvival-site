@@ -35,7 +35,7 @@
   "category": "conflict",
   "subcategory": "Civilian protection",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "checkpoint",
     "roadblock",
@@ -50,20 +50,7 @@
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "First decision: Decide whether travel is necessary",
-      "Compare the danger of staying with the risks of the route. Do not travel only to investigate a closure. Have a known destination and another option. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "If nobody can verify a route and travel is not immediately necessary, remain in the safer available place while reassessing. Do not assume a public convoy or unofficial driver has secured protection. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "This is civilian safety planning, not advice to evade checkpoints or legal restrictions. Never assume passage based on a map, an insignia or an unverified promise. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

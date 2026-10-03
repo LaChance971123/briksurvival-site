@@ -4,7 +4,7 @@
   "category": "medical",
   "subcategory": "Resuscitation",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "defibrillator"
   ],
@@ -39,20 +39,7 @@
   "without_help": "If nobody can bring an AED, continue CPR rather than leaving the person to search alone. If another person is present, ask them to locate the nearest accessible AED while you continue compressions. Follow the device prompts when it arrives.",
   "household": "Give someone the specific task of calling or locating care while another person provides first aid. Keep the patient warm or cool as the condition requires and record what happened and when. Do not put yourself into the same hazard or assume an ambulance has been dispatched until confirmed. For this situation, brief every person on the first action: turn it on. Agree who will manage children, pets or mobility needs while that action happens. For a child or infant, use the appropriate pediatric pads or setting when available and follow the device and dispatcher instructions.",
   "pack_now": "For using an aed, prioritize only items needed for the first action and the fallback: If nobody can bring an AED, continue CPR rather than leaving the person to search alone. If another person is present, ask them to locate the nearest accessible AED while you continue compressions. Follow the device prompts when it arrives. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Turn it on",
-      "Continue CPR while another helper prepares the AED if possible. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "If nobody can bring an AED, continue CPR rather than leaving the person to search alone. If another person is present, ask them to locate the nearest accessible AED while you continue compressions. Follow the device prompts when it arrives. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "For a child or infant, use the appropriate pediatric pads or setting when available and follow the device and dispatcher instructions. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

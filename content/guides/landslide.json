@@ -4,7 +4,7 @@
   "category": "natural-hazards",
   "subcategory": "Geological",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "mudslide",
     "debris flow"
@@ -40,20 +40,7 @@
   "without_help": "Stay away from channels, fresh debris and unstable slopes after the first movement. Do not cross the slide to check a house or search for belongings. Choose a destination outside the runout area rather than simply a higher point on the same unstable slope.",
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: notice warning signs. Agree who will manage children, pets or mobility needs while that action happens. Another slide can follow the first, especially during continued rain.",
   "pack_now": "For landslide & debris flow, prioritize only items needed for the first action and the fallback: Stay away from channels, fresh debris and unstable slopes after the first movement. Do not cross the slide to check a house or search for belongings. Choose a destination outside the runout area rather than simply a higher point on the same unstable slope. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Notice warning signs",
-      "New ground cracks, tilting trees, unusual runoff or rumbling warrant immediate caution and a call to local authorities. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Stay away from channels, fresh debris and unstable slopes after the first movement. Do not cross the slide to check a house or search for belongings. Choose a destination outside the runout area rather than simply a higher point on the same unstable slope. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Another slide can follow the first, especially during continued rain. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

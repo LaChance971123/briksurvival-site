@@ -38,6 +38,10 @@
     [
       "Plan how the battery gets recharged",
       "Name an actual accessible charging source and the conditions that could prevent using it. Solar input depends on equipment compatibility and available conditions, so treat it as variable until tested. Keep a smaller independent light and communications option to avoid a single battery becoming the failure point for everything."
+    ],
+    [
+      "Run one realistic test",
+      "Editorial test: fully charge the suitable device, connect the actual appliance and cable, and record how long it serves the intended job under safe normal conditions. Repeat with the planned settings. Keep the result alongside the manual; do not extrapolate a brief test into a promise of overnight medical support."
     ]
   ],
   "without_help": "If charging is unavailable, reduce optional loads and reserve remaining power for agreed essentials. Seek another safe setting early if a critical device cannot be supported for the needed period.",
@@ -51,7 +55,16 @@
       "Do not improvise a backfeed connection. Whole-home integration requires suitable equipment and qualified installation. Use only the connections and loads permitted by the actual product instructions."
     ]
   ],
-  "decisions": [],
+  "decisions": [
+    [
+      "The battery does not support the device?",
+      "Use a compatible alternative; do not defeat safety limits or improvise adapters."
+    ],
+    [
+      "Recharging depends on one unavailable source?",
+      "Reduce the load and use the independent light and communications backup."
+    ]
+  ],
   "related": [
     "long-blackout",
     "generator-safety",

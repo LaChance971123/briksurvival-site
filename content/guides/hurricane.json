@@ -4,7 +4,7 @@
   "category": "natural-hazards",
   "subcategory": "Tropical weather",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "cyclone",
     "hurricane coming"
@@ -40,20 +40,7 @@
   "without_help": "Before roads become unsafe, move out of surge-prone areas using a route and destination you have checked. If already trapped by wind or water, stay in the safest intact interior space available, with flood risk in mind. Do not travel during the calm eye.",
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: check your zone. Agree who will manage children, pets or mobility needs while that action happens. A calm eye is not an all-clear. Do not base flood safety on the wind category.",
   "pack_now": "For hurricane, prioritize only items needed for the first action and the fallback: Before roads become unsafe, move out of surge-prone areas using a route and destination you have checked. If already trapped by wind or water, stay in the safest intact interior space available, with flood risk in mind. Do not travel during the calm eye. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Check your zone",
-      "Read local evacuation and storm-surge instructions for your address, not just the forecast track. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Before roads become unsafe, move out of surge-prone areas using a route and destination you have checked. If already trapped by wind or water, stay in the safest intact interior space available, with flood risk in mind. Do not travel during the calm eye. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "A calm eye is not an all-clear. Do not base flood safety on the wind category. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",
