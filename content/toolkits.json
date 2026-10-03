@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "featured_product_id": "complete-toolkit",
+  "products": [
+    {
+      "id": "complete-toolkit",
+      "slug": "complete-toolkit",
+      "kind": "collection",
+      "status": "planned",
+      "title": "Complete Preparedness Toolkit",
+      "summary": "A planned collection of practical topic guides, checklists and household planning tools, organised into one preparation system.",
+      "components": ["Expanded topic guides", "Action checklists", "Household planners", "Shopping and equipment lists", "Supply inventories", "Contact and quick-reference cards"],
+      "guide_slugs": [],
+      "included_product_ids": [],
+      "price": null,
+      "currency": "USD",
+      "edition": null,
+      "payhip_product_id": null,
+      "checkout_url": null,
+      "delivery_verified": false
+    }
+  ]
+}

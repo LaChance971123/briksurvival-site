@@ -18,3 +18,15 @@ build/
 
 # Python cache
 __pycache__/
+
+# Premium products belong in a separate private workspace, never this public repo.
+premium/
+private/
+paid-content/
+product-files/
+*.pdf
+*.zip
+*.docx
+*.xlsx
+.env
+.env.*

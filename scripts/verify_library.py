@@ -1,37 +1,39 @@
-"""Check published routes, source metadata, quick answers and downloadable PDFs."""
+"""Check free guide structure, internal links and the public search index."""
 import json
 from pathlib import Path
-from html.parser import HTMLParser
 from urllib.parse import urlsplit
-from pypdf import PdfReader
-ROOT=Path(__file__).resolve().parents[1]
-errors=[]
-class Links(HTMLParser):
- def handle_starttag(self,tag,attrs):
-  a=dict(attrs)
-  for key in ['href','src']:
-   x=urlsplit(a.get(key,''))
-   if x.scheme or x.netloc or not x.path.startswith('/'):continue
-   target=ROOT/x.path.strip('/')
-   if not target.exists() and not (target/'index.html').exists():errors.append((str(self.file),x.path))
-for f in ROOT.rglob('*.html'):
- if f.name=='indexv3.html' or 'templates' in f.parts or 'dist' in f.parts:continue
- parser=Links();parser.file=f;parser.feed(f.read_text())
-index=json.loads((ROOT/'search-index.json').read_text())
-guides=[x for x in index if x['content_type'] in ['Emergency guide','Preparedness guide','Field guide']]
-assert len({g['url'] for g in guides})==len(guides)
-for g in guides:
- s=(ROOT/g['url'].strip('/')/'index.html').read_text()
- assert s.index('id="quick-answer"')<s.index('class="guide-resources"')<s.index('id="do-now"'),g['title']
- assert 'Download checklist' in s and 'Trusted reference' in s,g['title']
- assert 'id="without-help"' in s and 'id="household"' in s,g['title']
-for g in index:
- if g['url'].startswith('/downloads/'):
-  r=PdfReader(ROOT/g['url'].lstrip('/'));text=''.join(p.extract_text() for p in r.pages)
-  def norm(t):return ' '.join(t.replace('’',"'").replace('–','-').replace('—','-').split())
-  assert norm(g['title'].split(' checklist')[0].split(' shopping list')[0].split(' full guide PDF')[0]) in norm(text),(g['title'],g['url'])
-assert not errors,errors
-home=(ROOT/'index.html').read_text()
-assert home.count('type="search"')==1,'Homepage must have exactly one search input'
-assert 'hero-query' not in home
-print(f'PASS: {len(guides)} guides, {len(index)} indexed resources, all internal links and PDFs.')
+from lxml import html
+from publication import public_pages
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / 'dist'
+errors = []
+for name in sorted(public_pages(ROOT)):
+    page = OUT / name
+    document = html.fromstring(page.read_text())
+    for link in document.xpath('//@href | //@src | //form/@action'):
+        parsed = urlsplit(link)
+        if parsed.scheme or parsed.netloc or not parsed.path.startswith('/'):
+            continue
+        target = OUT / parsed.path.strip('/')
+        if not target.is_file() and not (target / 'index.html').is_file():
+            errors.append((name, parsed.path))
+    assert not document.xpath('//a[@download] | //*[@data-print] | //*[@id="offline-save"]'), name
+    assert not document.xpath('//a[starts-with(@href,"/downloads/") or starts-with(@href,"/offline/")]'), name
+
+index = json.loads((OUT / 'search-index.json').read_text())
+guide_types = {'Emergency guide', 'Preparedness guide', 'Field guide'}
+guides = [item for item in index if item['content_type'] in guide_types]
+assert len(guides) == len(list((ROOT / 'content/guides').glob('*.json')))
+assert len({item['url'] for item in guides}) == len(guides)
+assert not any(item['url'].startswith(('/downloads/', '/offline/')) for item in index)
+assert not any(item['content_type'] in {'Checklist', 'Shopping list', 'Full guide PDF'} for item in index)
+for guide in guides:
+    text = (OUT / guide['url'].strip('/') / 'index.html').read_text()
+    assert text.index('id="quick-answer"') < text.index('class="guide-resources"') < text.index('id="do-now"'), guide['title']
+    assert 'Trusted reference' in text and 'id="without-help"' in text and 'id="household"' in text, guide['title']
+    assert text.index('id="sources"') < text.index('class="wrap guide-toolkit"'), guide['title']
+assert not errors, errors
+home = (OUT / 'index.html').read_text()
+assert home.count('type="search"') == 1 and 'hero-query' not in home
+print(f'PASS: {len(guides)} free guides, {len(index)} indexed pages/references, internal links and late toolkit CTAs.')

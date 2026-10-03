@@ -1,4 +1,4 @@
-"""Osprey Zero document system: shared site typography, print-safe editorial layout."""
+"""Private document authoring utilities; never part of the public website build."""
 from pathlib import Path
 from html import escape
 from reportlab.pdfbase import pdfmetrics
@@ -37,7 +37,14 @@ def frame(title,kind):
   c.saveState();c.setFillColor(INK);c.rect(0,744,612,48,fill=1,stroke=0);c.setFillColor(colors.HexColor('#F2EEE6'));c.setFont('Display',15);c.drawString(48,762,'OSPREY');c.setFillColor(colors.HexColor('#F05A2A'));c.drawString(113,762,'ZERO');c.setFont('Mono',7);c.setFillColor(ASH);c.drawRightString(564,765,'SKILL BEATS PANIC. EVERY TIME.');c.setStrokeColor(ORANGE);c.setLineWidth(2);c.line(48,737,564,737)
   c.setStrokeColor(LINE);c.setLineWidth(.5);c.line(48,44,564,44);c.setFont('Mono',7);c.setFillColor(MUTED);c.drawString(48,30,'OSPREYZERO.COM / '+kind.upper());c.drawRightString(564,30,f'{d.page:02d}');c.restoreState()
  return paint
+def private_output_path(path):
+ path=Path(path).expanduser()
+ if not path.is_absolute():raise ValueError('Document output must use an explicit absolute private path')
+ path=path.resolve()
+ if path.is_relative_to(ROOT.resolve()):raise ValueError('Product documents must be created outside the public repository')
+ return path
 def build(path,title,kind,story):
+ path=private_output_path(path)
  path.parent.mkdir(exist_ok=True,parents=True);doc=SimpleDocTemplate(str(path),pagesize=(612,792),leftMargin=48,rightMargin=48,topMargin=71,bottomMargin=61,title=title+' | Osprey Zero',author='Osprey Zero',subject=kind)
  doc.build(story,onFirstPage=frame(title,kind),onLaterPages=frame(title,kind))
 def opening(g,kind):return [para('FIELD LIBRARY / '+kind.upper(),'label'),para(g['title'],'title'),para(g.get('category','').replace('-',' ').upper()+' / EDITION '+g['updated'],'small'),Spacer(1,9)]
@@ -55,8 +62,8 @@ def sources(g,refs,route,compact=False):
  s=[para('Sources & limits.','label' if compact else 'h2'),para(g.get('scope','Civilian planning. References may use U.S. systems; emergency numbers, laws and available services differ.'),'small'),para('Source-linked editorial guidance. Not independent clinical or specialist certification. Training and product-specific instructions remain essential.','small')]
  for label,url in refs:s.extend([Paragraph('<link href="'+escape(url,quote=True)+'" color="#C44119">'+clean(label)+'</link>',ST['small']),*([para(url,'small')] if not compact else [])])
  s.extend([para('Full guide: https://ospreyzero.com'+route,'small'),para('Content updated '+g['updated']+'. Saved guidance cannot provide live alerts.','small')]);return s
-def make_document(g,refs,route,kind):
- suffix={'checklist':'checklist','shopping':'shopping-list','guide':'field-guide'}[kind];path=ROOT/'downloads'/f'{g["slug"]}-{suffix}.pdf';story=opening(g,{'checklist':'Action checklist','shopping':'Supply worksheet','guide':'Full field guide'}[kind])
+def make_document(g,refs,route,kind,*,output_dir):
+ suffix={'checklist':'checklist','shopping':'shopping-list','guide':'field-guide'}[kind];path=private_output_path(Path(output_dir)/f'{g["slug"]}-{suffix}.pdf');story=opening(g,{'checklist':'Action checklist','shopping':'Supply worksheet','guide':'Full field guide'}[kind])
  if kind=='shopping':
   story+=[panel('BUILD AROUND YOUR HOUSEHOLD','Use what you own first. Match quantities to people, days and medical needs. Supplies are preparation, never a reason to delay escape.'),Spacer(1,15),Writing(['Household / people / pets','Planning period / available budget'])]
   for n,item in enumerate(g['shopping'],1):
@@ -77,4 +84,4 @@ def make_document(g,refs,route,kind):
   story+=[KeepTogether([para('YOUR SITUATION / PRIVATE WORKSHEET','label'),Writing(g.get('worksheet',['Time / location / changing conditions','People / access or medical needs','Next action / person responsible'])[:2] if kind=='checklist' else g.get('worksheet',['Time / location / changing conditions','People / access or medical needs','Next action / person responsible']))])]
   if kind=='guide':story.append(Spacer(1,14))
   story+=sources(g,refs,route,compact=kind=='checklist')
- build(path,g['title'],suffix,story);return '/downloads/'+path.name
+ build(path,g['title'],suffix,story);return path

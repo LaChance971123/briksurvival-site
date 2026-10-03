@@ -7,7 +7,7 @@ function fixture(path) {
  vm.runInNewContext(code,context);
  return {scripts,root,events,rerun:()=>vm.runInNewContext(code,{...context})};
 }
-for(const p of ['/','/index.html','/index','/indexv3.html','/search/','/search/index.html','/emergencies/','/emergencies/tornado/','/emergencies/cpr/index.html','/emergencies/armed-conflict/','/emergencies/returning-home/','/privacy/','/thanks/','/unknown']) assert.equal(fixture(p).scripts.length,0,p);
+for(const p of ['/','/index.html','/index','/indexv3.html','/search/','/search/index.html','/emergencies/','/emergencies/tornado/','/emergencies/cpr/index.html','/emergencies/armed-conflict/','/emergencies/returning-home/','/privacy/','/thanks/','/toolkits/','/toolkits/complete-toolkit/','/offline/','/retired-downloads.html','/unknown']) assert.equal(fixture(p).scripts.length,0,p);
 for(const p of ['/library/','/library/index.html','/library/conflict/','/preparedness/go-bag/','/preparedness/','/guides/','/guides/water-purification/index.html','/topics/','/resources/','/about/','/emergencies/disaster-scams/','/emergencies/verify-information/index.html']) {
  const x=fixture(p),base=p.replace(/\/index\.html$/,'').replace(/\/$/,'');
  const hub=['/library','/preparedness','/topics','/resources','/about'].includes(base);
@@ -21,7 +21,7 @@ for(const p of ['/library/','/library/index.html','/library/conflict/','/prepare
 assert(!/oz-focus|oz-ad-start|Continue with ads|ad-stop-button/.test(code));
 assert(!fs.readFileSync('app.js','utf8').includes('n6wxm'));
 assert(fs.readFileSync('scripts/refine_site.py','utf8').includes('/ads.js?v=oz8" async'));
-assert(fs.readFileSync('scripts/stage_site.py','utf8').includes("'ads.js'"));
+assert.equal(fs.readFileSync('dist/ads.js','utf8'),code,'Published ad loader must match the verified policy');
 assert(fs.readFileSync('sw.js','utf8').includes('11941494'));
 console.log('PASS: early vignette coverage, secondary push hubs, critical-page exclusions, no duplicate formats, delivery diagnostics.');
 
