@@ -4,13 +4,20 @@
   "category": "home-building",
   "subcategory": "Backup power",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "portable generator",
     "backup generator"
   ],
   "keywords": [
-    "Backup power"
+    "Backup power",
+    "First decide whether a generator fits your home",
+    "Plan the location before the weather turns bad",
+    "Know the difference between appliance and building power",
+    "Choose a limited load plan",
+    "Fuel, heat, and the refueling routine",
+    "Recognize a stop condition",
+    "Build a backup plan that works without the generator"
   ],
   "tldr": "Operate a portable generator outdoors at least 20 feet from doors, windows and vents, with exhaust directed away from buildings. Never run it in a home, garage or enclosed space. Use working CO alarms and never connect a generator to a wall outlet.",
   "steps": [
@@ -33,13 +40,13 @@
   ],
   "next": "Read the manufacturer instructions before a crisis. Plan weather protection that does not enclose the generator or obstruct exhaust.",
   "watch": "An open garage door does not make indoor generator operation safe.",
-  "sources": "generator-safety",
+  "sources": "generator-safety-expanded",
   "shopping": [],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "If there is no safe outdoor position, do not run the generator. Use battery lights and ration stored electrical power for medical needs and communications. Do not improvise a connection to household wiring or operate it indoors because the weather is bad.",
   "household": "Keep children and pets away from the running equipment and fuel. Check working carbon-monoxide alarms near sleeping areas. One adult should control refueling and keep fuel storage separate from occupied rooms and escape routes.",
-  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "pack_now": "The actual generator manual, appropriate intact outdoor cords, working CO alarms with suitable backup, and the specified shutdown and maintenance information. Fuel and operating equipment belong in their safe permitted locations, separate from household drinking water and living spaces.",
   "decisions": [],
   "faqs": [
     [
@@ -52,7 +59,277 @@
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-03",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-03",
+  "sections": [
+    {
+      "heading": "First decide whether a generator fits your home",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A portable fuel-burning generator is an outdoor engine, not an indoor power bank. Before considering wattage, determine whether your property has a genuinely suitable operating position, a safe connection method, permitted fuel storage, and someone capable of following the instructions. If any of these are missing, the household needs a different backup plan."
+        },
+        {
+          "type": "flow",
+          "caption": "Four gates before starting",
+          "items": [
+            [
+              "Position",
+              "An outdoor location with the required separation from all nearby doors, windows, and vents."
+            ],
+            [
+              "Connection",
+              "Suitable intact cords or professionally installed transfer equipment; no connection through a wall outlet."
+            ],
+            [
+              "Operation",
+              "Manufacturer-approved setup, dry conditions, working CO alarms, and an adult who understands shutdown."
+            ],
+            [
+              "Fuel",
+              "Correct fuel, approved storage, and a safe cool-down and refueling routine."
+            ]
+          ],
+          "note": "This is a planning checklist, not an installation diagram or a substitute for the equipment manual."
+        },
+        {
+          "type": "paragraph",
+          "text": "A balcony, garage, shared corridor, or partly enclosed courtyard may not provide a safe or permitted location. In dense housing, consider neighbors’ openings and shared spaces. Rental rules and local fire restrictions can matter as well. If the space is unsuitable, do not try to solve the problem with an improvised exhaust hose or an open door."
+        }
+      ],
+      "references": [
+        [
+          "CPSC · Portable generator safety",
+          "https://www.cpsc.gov/s3fs-public/Portable_Generator_Safety_Alert_2017_5123.pdf"
+        ],
+        [
+          "CDC · Use a generator safely",
+          "https://www.cdc.gov/natural-disasters/psa-toolkit/use-a-generator-safely.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Plan the location before the weather turns bad",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "CDC advises outdoor operation at least 20 feet from doors, windows, and vents. Check every occupied building nearby, including neighbors. Direct exhaust away from buildings and follow any greater manufacturer separation requirement. The minimum distance is not a guarantee that exhaust can never re-enter a building."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Check the whole route from generator to appliance. A safe generator position is not useful if the available cord is too short or cannot be routed safely.",
+            "Keep entrances and escape routes clear. Prevent children and pets from reaching hot parts, fuel, or cords.",
+            "Keep the unit dry using only an appropriate setup that preserves open airflow and follows its instructions. Do not move it into a garage when rain starts.",
+            "Recheck placement when wind, nearby openings, parked vehicles, or household activity changes."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "No smell does not mean no carbon monoxide",
+          "text": "Carbon monoxide cannot be seen or smelled. A running fan or an open garage door does not make an enclosed location safe. If a CO alarm sounds or symptoms suggest exposure, get to fresh air immediately and seek emergency help."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Use a generator safely",
+          "https://www.cdc.gov/natural-disasters/psa-toolkit/use-a-generator-safely.html"
+        ],
+        [
+          "CPSC · Portable generator safety",
+          "https://www.cpsc.gov/s3fs-public/Portable_Generator_Safety_Alert_2017_5123.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Know the difference between appliance and building power",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Two connection approaches, with important boundaries",
+          "columns": [
+            "Approach",
+            "What it requires",
+            "What to avoid"
+          ],
+          "rows": [
+            [
+              "Direct appliance supply",
+              "Compatible appliance, suitable outdoor cord, ratings and instructions checked",
+              "Damaged plugs, overloaded cords, pinch points, wet connections, or improvised adapters."
+            ],
+            [
+              "Household circuit supply",
+              "Appropriate installed transfer equipment and qualified electrical work",
+              "Plugging the generator into a wall outlet, male-to-male cords, or an improvised panel connection."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Backfeeding means energizing building wiring through an unsafe connection such as a wall outlet. It can expose utility workers and other people to electrical danger. Switching a breaker off yourself is not a substitute for appropriate transfer equipment. This guide intentionally does not provide wiring or installation instructions."
+        },
+        {
+          "type": "paragraph",
+          "text": "For direct appliance use, inspect the entire cord and its plugs before connecting. Match the cord and equipment ratings to the actual setup, including the total attached load and the manufacturer’s requirements. Do not assume an indoor power strip or a household extension lead is suitable simply because it fits the socket. Stop using damaged equipment rather than patching it during an outage."
+        }
+      ],
+      "references": [
+        [
+          "CPSC · Portable generator safety",
+          "https://www.cpsc.gov/s3fs-public/Portable_Generator_Safety_Alert_2017_5123.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Choose a limited load plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "List the appliances you intend to support, then use their actual labels and manuals to record running power and any starting demand. Motors and compressors can require additional power to start. Use the generator’s continuous and starting ratings correctly; a large advertised peak number is not a continuous operating allowance."
+        },
+        {
+          "type": "table",
+          "caption": "A load sheet to prepare before an outage",
+          "columns": [
+            "Record",
+            "Example of the information needed"
+          ],
+          "rows": [
+            [
+              "Appliance and purpose",
+              "Refrigerator: keeping food cold, rather than general household convenience."
+            ],
+            [
+              "Running demand",
+              "The appliance’s documented operating watts or current and voltage."
+            ],
+            [
+              "Starting requirement",
+              "Manufacturer information for a compressor or motor, where applicable."
+            ],
+            [
+              "Connection requirements",
+              "Suitable plug, cord, protection, and any equipment-specific restriction."
+            ],
+            [
+              "Operating priority",
+              "Which load stays connected and which can wait."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with a smaller, verified group of loads rather than trying to reproduce normal household electricity. Follow the equipment instructions for starting, connecting, disconnecting, and shutting down. For powered medical care, compatibility and reliability must come from the care provider and device manufacturer; an informal load estimate is not enough."
+        },
+        {
+          "type": "paragraph",
+          "text": "A battery may meet modest communications and lighting needs with less operational work. It still has output, capacity, charging, and storage limits. Choose equipment around the need you have verified, not around the largest number on a product listing."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Fuel, heat, and the refueling routine",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Treat refueling as a separate task that requires time and attention. Turn the generator off and allow it to cool before adding fuel. Use the specified fuel and approved, properly labelled storage containers. Store fuel outside living areas and away from ignition sources; check the rules that apply to your property and fuel type."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Before a planned session, check fuel and other maintenance items exactly as the manual specifies.",
+            "Keep the manual and shutdown instructions accessible to the adult operating the unit.",
+            "End the session using the prescribed shutdown sequence, then allow cool-down before refueling.",
+            "Inspect for leaks or damage from a safe position. Do not restart suspect equipment.",
+            "Record maintenance and replenishment needs instead of relying on memory."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not store fuel beside a water heater or bring a fuel container into the household base. Keep food, drinking water, children’s supplies, and fuel clearly separated. Avoid buying more fuel than you can store legally and safely. Fuel availability during an outage is uncertain, so the plan also needs a non-generator fallback."
+        }
+      ],
+      "references": [
+        [
+          "CPSC · Portable generator safety",
+          "https://www.cpsc.gov/s3fs-public/Portable_Generator_Safety_Alert_2017_5123.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Recognize a stop condition",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Stop using the setup when these conditions appear",
+          "columns": [
+            "Condition",
+            "Response"
+          ],
+          "rows": [
+            [
+              "CO alarm or possible exposure symptoms",
+              "Move people to fresh air immediately; seek emergency help. Do not re-enter until cleared as safe."
+            ],
+            [
+              "Wet or flooded setup",
+              "Do not touch or operate unsafe electrical equipment; use a different backup and qualified assistance."
+            ],
+            [
+              "Fuel leak, smoke, or damaged components",
+              "Keep clear and follow emergency or manufacturer guidance; do not troubleshoot a running hazardous unit."
+            ],
+            [
+              "No suitable outdoor position",
+              "Leave the generator off; use batteries and the relocation plan for essential needs."
+            ],
+            [
+              "Required load cannot be supported reliably",
+              "Reduce nonessential demand or use a confirmed alternative for the essential need."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A second capable adult should know where the instructions are and how to recognize a stop condition. Do not assign children to manage the generator. Alarms and automatic shutdown features supplement safe use; they do not make unsafe placement acceptable."
+        }
+      ],
+      "references": [
+        [
+          "CPSC · Portable generator safety",
+          "https://www.cpsc.gov/s3fs-public/Portable_Generator_Safety_Alert_2017_5123.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Build a backup plan that works without the generator",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Write down what the household will do if the unit will not start, fuel is unavailable, rain makes the setup unusable, or a neighbor’s open window makes the position unsuitable. Include battery lighting, a modest charging plan, no-cook meals, and a confirmed alternative location for essential medical or temperature needs."
+        },
+        {
+          "type": "paragraph",
+          "text": "Practice the manufacturer’s setup with a qualified person where necessary, in appropriate conditions and without disconnecting essential household systems. The useful result is an operator who can explain placement, connections, ratings, alarms, refueling, and shutdown. Buying equipment without that knowledge leaves the most important part of the backup incomplete."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Power outage household plan",
+              "url": "/emergencies/power-outage/"
+            },
+            {
+              "label": "Long-duration blackout",
+              "url": "/emergencies/long-blackout/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    }
+  ]
 }

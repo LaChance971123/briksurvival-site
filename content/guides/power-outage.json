@@ -24,7 +24,7 @@
   ],
   "next": "If the outage continues, plan for safe temperature, water, medication refrigeration, and a place to relocate if the home becomes unsafe. Check current food-safety advice before eating perishables after a prolonged outage.",
   "watch": "Headache, dizziness, weakness, nausea, or confusion near fuel-burning equipment can signal carbon monoxide exposure. Get into fresh air and call emergency services. Never enter a flooded area to operate electrical equipment.",
-  "sources": "power",
+  "sources": "power-outage-expanded",
   "category": "utilities",
   "subcategory": "Electricity",
   "content_type": "Emergency guide",
@@ -38,13 +38,20 @@
     "no power in my apartment"
   ],
   "keywords": [
-    "Electricity"
+    "Electricity",
+    "First 15 minutes: make the household safe",
+    "Set up one practical household base",
+    "Prioritize power instead of powering everything",
+    "Food, water, and cooking during the first day",
+    "Decide when staying home stops working",
+    "When the electricity returns",
+    "Practice before the next outage"
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Assume restoration time is uncertain. Reserve battery power for medical equipment, light and short check-ins, keep fridge doors closed and inventory safe water. If essential medical support or safe temperature cannot be maintained, move to a checked safer place early rather than waiting for an estimate.",
   "household": "Choose one person to manage medical power and one to handle food, water and short contact check-ins. Keep children away from candles, electrical damage and generator fuel. Check whether a neighbor has the same immediate needs before assuming they can help.",
-  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "pack_now": "Battery light or headlamp, working charging cables, charged power bank, paper contacts, essential medicines and care information, safe drinking water, and a no-cook meal. Keep mobility aids and any prescribed backup equipment accessible. Do not delay leaving an immediate hazard to collect supplies.",
   "decisions": [
     [
       "Essential care cannot continue?",
@@ -66,17 +73,280 @@
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-03",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-03",
   "sections": [
-    [
-      "Keep a short outage record",
-      "Editorial record: when power failed, medical-device backup status, phone battery, available safe water and the temperature concern that would make you leave. Nominate a person to check updates rather than having everyone repeatedly refresh the outage map. An estimated restoration time is not a guarantee."
-    ],
-    [
-      "Prepare the next meal without opening everything",
-      "Decide which shelf-stable meal is available now. Keep fridge and freezer doors closed while you organize food, water and a cooler if one is suitable. Photograph appliance thermometer readings only when necessary; repeated checks lose cold air. Use the food-safety guide for discard decisions."
-    ]
+    {
+      "heading": "First 15 minutes: make the household safe",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Start with people rather than equipment. Find everyone, ask who needs help, and put a battery light where the household can reach it. If someone depends on powered medical equipment, make that person’s backup plan the first decision. A fridge full of food is replaceable; a failing essential device is not."
+        },
+        {
+          "type": "flow",
+          "caption": "The first decisions, in order",
+          "items": [
+            [
+              "Immediate danger?",
+              "Fire, gas smell, CO alarm, flooding near electrics, or a medical emergency takes priority. Leave the hazard and seek emergency help from a safe place."
+            ],
+            [
+              "Essential needs covered?",
+              "Check medical power, temperature, drinking water, and a usable exit. Identify which need will fail first."
+            ],
+            [
+              "Stable enough to stay?",
+              "Record the outage time, preserve food temperatures, check reliable updates, and set the next review time."
+            ]
+          ],
+          "note": "Editorial decision aid. Do not wait for the next scheduled review if conditions worsen."
+        },
+        {
+          "type": "paragraph",
+          "text": "Confirm whether the outage affects the neighborhood using a safe view outside or your utility’s outage channel. Do not walk toward damaged lines or open an electrical panel to investigate. A single building with burning smells or visible damage needs qualified assessment, not repeated attempts to reset breakers."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Power outage safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+        ],
+        [
+          "CDC · Power outage protection",
+          "https://www.cdc.gov/natural-disasters/response/what-to-do-protect-yourself-during-a-power-outage.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Set up one practical household base",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose an accessible room for information, lights, charging cables, and the household notebook. Keep exits clear and avoid turning the floor into a maze of extension cords. Everyone should know where to find a light without using a phone screen or searching a dark cupboard."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Assign a check-in person, a food-and-water person, and an information person when there are enough adults. One person can hold all three roles in a small household.",
+            "Write down who is home, who is away, the outage start time, and the next contact attempt. Include pets and people staying temporarily.",
+            "Send one concise message to an outside contact: location, everyone’s condition, immediate needs, and when you will check in again.",
+            "Keep a normal exit available. Test whether electronic locks, powered garage doors, or building access systems create a problem before you need to leave."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If a neighbor offers help, be specific: a charged phone, a safe ride, a welfare check, or a place for someone with temperature-sensitive needs. Agree how to reconnect if phones fail. Avoid promising regular support that you cannot sustain yourself. This is household coordination, not an assumption that outside services will arrive."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Prioritize power instead of powering everything",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "An editorial priority list for limited backup power",
+          "columns": [
+            "Priority",
+            "Typical need",
+            "Plan around"
+          ],
+          "rows": [
+            [
+              "Essential care",
+              "Prescribed powered equipment",
+              "Provider-approved backup, compatible supply, and a relocation deadline."
+            ],
+            [
+              "Communication",
+              "Phone, accessibility device, radio",
+              "Working cables, modest charging sessions, and a spare contact method."
+            ],
+            [
+              "Safe movement",
+              "Battery lights",
+              "Light exits, stairs, and the route to the toilet."
+            ],
+            [
+              "Temperature and food",
+              "Cooling, heating, refrigeration",
+              "Actual power demand and alternatives; small batteries may not support these loads."
+            ],
+            [
+              "Convenience",
+              "Entertainment and discretionary appliances",
+              "Use only after essential reserves are protected."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A portable battery is useful only when the device can actually connect to it and its output can handle the load. Read the appliance and battery instructions. Power rating in watts describes what can run at a given moment; energy in watt-hours describes stored capacity. These are different limits. A large energy number does not guarantee enough output for a compressor or other high-starting-load appliance."
+        },
+        {
+          "type": "callout",
+          "title": "Medical equipment needs an individual plan",
+          "text": "Do not experiment with power connections, change prescribed settings, or assume a battery’s advertised runtime applies to a medical device. Use provider and manufacturer guidance, and arrange a fallback before remaining backup becomes too small to move safely."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Power outage safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Food, water, and cooking during the first day",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Write the outage start time on a note beside the refrigerator and stop opening it to check whether it feels cold. Decide what you can eat from the shelf before fetching cold food. Keep food decisions separate from medicine decisions: the same storage rule does not apply to both."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Use the food-safety guide for temperature checks, the closed-door time limits, and discard decisions. Smell or a quick taste cannot establish safety.",
+            "Choose familiar shelf-stable meals that do not require cooking or a large volume of water. Check allergies, texture needs, and whether the packaging needs an opener.",
+            "If a private well uses an electric pump, count stored drinking water now. Municipal water may also be disrupted; look for an actual advisory rather than assuming the tap is safe.",
+            "Use outdoor cooking equipment only where its instructions and local conditions permit. A garage or open window does not convert outdoor equipment into an indoor appliance."
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Food safety after power loss",
+              "url": "/emergencies/food-safety-outage/"
+            },
+            {
+              "label": "Water outage",
+              "url": "/emergencies/water-outage/"
+            },
+            {
+              "label": "Generator safety",
+              "url": "/emergencies/generator-safety/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CDC · Food safety after an emergency",
+          "https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html"
+        ],
+        [
+          "CPSC · Portable generator safety",
+          "https://www.cpsc.gov/s3fs-public/Portable_Generator_Safety_Alert_2017_5123.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Decide when staying home stops working",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The duration of the outage is only one factor. A person in an accessible home with mild weather and working medical backup may have very different options from someone on an upper floor with a failed lift. Choose a decision point based on the need most likely to fail, not on optimism about the restoration estimate."
+        },
+        {
+          "type": "table",
+          "caption": "Stay, prepare to move, or move now",
+          "columns": [
+            "Situation",
+            "Practical response"
+          ],
+          "rows": [
+            [
+              "Needs are stable and exits usable",
+              "Stay informed, conserve supplies, and set a next review."
+            ],
+            [
+              "Backup or supplies are declining",
+              "Confirm a reachable destination and transport before the limit is reached."
+            ],
+            [
+              "Essential care cannot continue",
+              "Use the established urgent-care or relocation plan; do not wait for routine restoration."
+            ],
+            [
+              "Indoor conditions threaten health",
+              "Seek a confirmed safer location; check access, transport, and the actual conditions there."
+            ],
+            [
+              "Fire, CO alarm, or another immediate hazard",
+              "Leave the danger immediately and contact emergency services when safe."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Confirm that a proposed destination is open and suitable before a non-urgent trip. Ask about accessibility, charging, pets, and any specific care requirement. Take medicines, identification, charging cables, essential equipment, and your contact sheet. A destination written in a plan is not a guaranteed open shelter."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Power outage safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+        ]
+      ]
+    },
+    {
+      "heading": "When the electricity returns",
+      "blocks": [
+        {
+          "type": "steps",
+          "items": [
+            "Check for damage from a safe position. Flooded or damaged wiring and appliances require professional assessment; do not energize suspect equipment.",
+            "Restore ordinary appliances in a controlled sequence according to their instructions, rather than restarting every high-demand device at once.",
+            "Make food decisions using the recorded time and temperatures. Power returning does not erase earlier unsafe storage.",
+            "Check medically important supplies with the pharmacist or care provider when their required storage conditions were not maintained.",
+            "Recharge used batteries, replace consumed supplies, and write down what failed while it is still fresh."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Restoration can be intermittent. Keep lights and your household base available until power is stable. If the original cause affected drinking water or sewage, wait for the relevant service instructions as well. Electrical restoration alone does not certify other systems as safe."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Power outage safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+        ],
+        [
+          "CDC · Food safety after an emergency",
+          "https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Practice before the next outage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Run a short, low-risk evening exercise with ordinary lights switched off; leave essential medical, refrigeration, and safety systems operating. Ask each person to find a light, locate the contact sheet, identify a no-cook meal, and explain where they would go if the home became unsuitable. Do not simulate hazardous wiring changes or operate combustion equipment for the exercise."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Record any item that was missing, inaccessible, uncharged, or unfamiliar.",
+            "Fix one practical problem at a time: a light by the bed, the correct cable, a paper number, or a confirmed ride.",
+            "Review after household changes, a new medical need, or new equipment. Let another capable adult explain the plan back in their own words."
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Planning for a longer blackout",
+              "url": "/emergencies/long-blackout/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    }
   ]
 }

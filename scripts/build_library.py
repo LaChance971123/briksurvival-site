@@ -4,6 +4,7 @@ import json,re
 from pathlib import Path
 from html import escape as e
 from guide_diagrams import diagram
+from guide_content import render_sections, heading as section_heading, text as section_text
 from collections import defaultdict
 ROOT=Path(__file__).resolve().parents[1]
 from toolkit_catalog import load_catalog, guide_cta, homepage_section, product_route, purchase_control
@@ -38,7 +39,7 @@ def page(path,title,desc,main,noindex=False):
 
 def resource_keys(g):
  if g['category']=='field-skills':return ['water','army'] if g['subcategory']=='Water' else ['fema']
- if g['sources']=='generator-safety':return ['generator']
+ if g['slug']=='generator-safety':return ['generator']
  if g['category']=='utilities' and g['subcategory']=='Water':return ['water']
  if g['category']=='natural-hazards':return ['weather']
  if g['category'] in ['preparedness','evacuation-shelter','conflict','chemical-radiation']:return ['fema']
@@ -53,9 +54,9 @@ for g in GUIDES:
  for k in resource_keys(g):
   r=MANUALS[k];resources+=f'<a class="resource-button" href="{e(r["url"],quote=True)}" target="_blank" rel="noopener noreferrer">{e(r["title"])}<small>Published reference · external</small></a>'
  label,source=SOURCES[g['sources']][0];resources+=f'<a class="resource-button resource-official" href="{e(source,quote=True)}" target="_blank" rel="noopener noreferrer">Trusted reference <small>{e(label)}</small></a>'
- sections=''.join(f'<section id="detail-{n}" class="guide-section guide-deep-dive"><h2>{e(h)}</h2><p>{e(p)}</p></section>' for n,(h,p) in enumerate(g.get('sections',[]),1))
- detail_links=''.join(f'<a href="#detail-{n}">{e(h)}</a>' for n,(h,p) in enumerate(g.get('sections',[]),1))
- words=len(' '.join([g['tldr'],g['next'],g['watch'],g['without_help'],g['household'],*[h+' '+p for h,p in g['steps']+g.get('sections',[])+g.get('faqs',[])]]).split())
+ sections=render_sections(g.get('sections',[]))
+ detail_links=''.join(f'<a href="#detail-{n}">{e(section_heading(s))}</a>' for n,s in enumerate(g.get('sections',[]),1))
+ words=len(section_text({k:g.get(k,[]) for k in ('tldr','steps','sections','faqs','decisions','next','watch','without_help','household','pack_now')}).split())
  read_minutes=max(1,(words+199)//200)
  context=('Use this page to build and practice a household plan before disruption. Match decisions to your actual people, equipment and location; this page is not a live alert.' if g.get('urgency')=='planning' else 'Act on immediate danger. Seek qualified help when reachable and safe, but do not make your first protective step depend on a response. This page is general guidance, not a live alert.')
  action_label='Build your plan' if g.get('urgency')=='planning' else 'Do now'
@@ -123,7 +124,7 @@ for g in GUIDES:
  {guide_cta(g,CATALOG)}
  <section class="wrap guide-end"><h2>Related guidance.</h2><div class="related-links">{links}</div></section></main>'''
  page(url,g['title'],g['tldr'],main)
- INDEX.append(dict(title=g['title'],url=url,category=cat['title'],category_id=cat['id'],subcategory=g['subcategory'],content_type=g['content_type'],aliases=g.get('aliases',[]),summary=g['tldr'],text=' '.join([g.get('deck',''),' '.join(h+' '+p for h,p in g.get('decisions',[])+g.get('faqs',[])+g.get('sections',[])),g['next'],g['watch'],g['without_help'],g['household'],*g.get('keywords',[]),*[h+' '+p for h,p in g['steps']]]),priority=10))
+ INDEX.append(dict(title=g['title'],url=url,category=cat['title'],category_id=cat['id'],subcategory=g['subcategory'],content_type=g['content_type'],aliases=g.get('aliases',[]),summary=g['tldr'],text=section_text({k:g.get(k,[]) for k in ('deck','decisions','faqs','sections','next','watch','without_help','household','keywords','steps')}),priority=10))
 
 # Category and subcategory pages remain usable without JavaScript.
 def card(g):return f'<a class="library-card" data-guide-type="{e(g['content_type'])}" href="{route(g)}"><span>{e(g["content_type"])}</span><h3>{e(g["title"])}</h3><p>{e(g["tldr"].split(". ")[0]+".")}</p><small>{e(g["subcategory"])}</small></a>'
