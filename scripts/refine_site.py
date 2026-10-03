@@ -2,7 +2,9 @@
 import re
 from pathlib import Path
 from publication import public_pages
+from toolkit_catalog import load_catalog
 ROOT=Path(__file__).resolve().parents[1]
+LIVE_TOPICS=any(p['kind']=='topic' and p['status']=='ready' for p in load_catalog(ROOT)['products'])
 NAV='''<nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="/emergencies/">Emergency guides</a><a href="/library/">Encyclopedia</a><a href="/toolkits/">Toolkits</a><a href="/planner/">Planner</a><a class="nav-cta" href="/search/">Search</a></nav>'''
 for p in [ROOT/'templates/shell.html',*[ROOT/name for name in sorted(public_pages(ROOT))]]:
  s=p.read_text()
@@ -55,4 +57,11 @@ for p in [ROOT/'templates/shell.html',*[ROOT/name for name in sorted(public_page
  if p==ROOT/'thanks/index.html':
   start=s.index('>',s.index('<main id="main"'))+1;end=s.index('</main>',start)
   s=s[:start]+'<section class="wrap thanks-page"><p class="kicker">MESSAGE RECEIVED</p><h1>Request received.</h1><p>Your signup request has been submitted. Email delivery is awaiting setup. Our online emergency guides remain free to read without signup.</p><div class="toolkit-product-actions"><a class="button button-primary" href="/library/">Read the free guides</a><a class="button button-outline" href="/toolkits/">Explore upcoming toolkits</a></div></section>'+s[end:]
+ if LIVE_TOPICS:
+  s=s.replace('Four topic toolkit editions are complete, with checkout opening soon.', 'Topic toolkits are available through Payhip, with printable A4 and US Letter resources and Excel calculators.')
+  s=s.replace('Four topic toolkits are complete, with checkout opening soon.', 'Topic toolkits are available through Payhip, with printable A4 and US Letter resources and Excel calculators.')
+  s=s.replace('Checkout is opening soon. Our online guides remain free to read.', 'Available toolkits use Payhip for checkout and downloads. Our online guides remain free to read.')
+  s=s.replace('Four topic toolkit editions are complete. Checkout is not currently open; product pages show their contents and edition, with pricing confirmed before sales begin. Checkout and purchased-file delivery will take place through Payhip and its payment providers.', 'Topic toolkit purchases and file delivery take place through Payhip and its payment providers. Product pages show the contents, edition and one-time price; applicable taxes are calculated at checkout.')
+  s=s.replace('Explore upcoming toolkits', 'Explore the toolkits')
+  s=s.replace('Household worksheets in future products are intended to be completed on your own device and kept privately.', 'Household worksheets are intended to be completed on your own device and kept privately.')
  p.write_text(s)
