@@ -30,8 +30,8 @@
   "watch": "An announced restoration time is an estimate. Carbon monoxide, unsafe improvised wiring, dehydration and dangerous temperatures can be more urgent than the outage itself.",
   "without_help": "Build a daily plan from current supplies and reachable shelter options. Do not wait for a food distribution, public generator or rescue transport that has not been confirmed.",
   "household": "Plan shifts for checking vulnerable people and essential equipment so one caregiver is not awake continuously. Keep infant feeding, safe sleep, medicine storage and pet water on the same written daily inventory.",
-  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
-  "sources": "power",
+  "pack_now": "A household notebook, pencil, paper contacts, battery lights, usable charging equipment, confirmed drinking water, familiar shelf-stable meals, handwashing supplies, and the essentials for a possible move. Record where care equipment and transport arrangements are kept.",
+  "sources": "long-blackout-expanded",
   "category": "utilities",
   "subcategory": "Electricity",
   "content_type": "Emergency guide",
@@ -46,7 +46,14 @@
     "extended blackout",
     "days without power",
     "grid down",
-    "prolonged power outage"
+    "prolonged power outage",
+    "Shift from waiting to running a daily plan",
+    "Measure your runway with usable quantities",
+    "Build a routine that reduces mistakes",
+    "Meals and hygiene without normal utilities",
+    "Protect care, communication, and rest",
+    "Resupply and relocation: make one complete decision",
+    "Recovery and a useful after-action review"
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
@@ -70,17 +77,278 @@
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-03",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-03",
   "sections": [
-    [
-      "Track the limiting essential",
-      "List water, food, medications, temperature control, communications and equipment power separately. Count remaining usable supplies and record the next review time. The first essential to become unsafe determines the next action; a stocked pantry cannot compensate for failed critical medical equipment or an unsafe indoor temperature."
-    ],
-    [
-      "Keep routine manageable",
-      "Choose safe lighting, a charging order, simple meals and a hygiene arrangement. Agree quiet rest times and short condition updates rather than constant news consumption. Keep a departure option ready and check neighbors only where it is safe and within your ability."
-    ]
+    {
+      "heading": "Shift from waiting to running a daily plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A long blackout becomes a problem of repeated decisions: drinking water, meals, sanitation, care, communication, rest, and movement. Treat the restoration estimate as uncertain. Build a plan that you can operate today, then review it as supplies and conditions change. This guide begins after the immediate hazards in the power-outage checklist have been addressed."
+        },
+        {
+          "type": "flow",
+          "caption": "A daily operating cycle",
+          "items": [
+            [
+              "Measure",
+              "Count usable supplies and check people’s condition. Use actual quantities rather than how full a cupboard looks."
+            ],
+            [
+              "Choose",
+              "Decide the day’s meals, essential charging, check-ins, and whether home still meets important needs."
+            ],
+            [
+              "Review",
+              "Record what was used, what changed, and the trigger for the next action."
+            ]
+          ],
+          "note": "Editorial planning cycle; urgent changes require action immediately, not at the next scheduled check."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use one notebook rather than scattered phone notes. Give each day a date and record the latest reliable information with its time. A handwritten log remains readable when batteries run out and helps a different adult take over without rebuilding the whole plan."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Measure your runway with usable quantities",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Runway means the time a resource can support the household at the rate it is actually being used. Keep this as a planning estimate, not a promise. Do not count water of uncertain quality, food that cannot be safely prepared, or backup energy that cannot power the required device."
+        },
+        {
+          "type": "table",
+          "caption": "A household status board you can copy into a notebook",
+          "columns": [
+            "Need",
+            "Write down",
+            "Decision trigger"
+          ],
+          "rows": [
+            [
+              "Drinking water",
+              "Safe amount available; actual daily use; next confirmed source",
+              "Arrange supply or move before safe water is exhausted."
+            ],
+            [
+              "Food",
+              "Ready-to-eat meals suitable for everyone",
+              "Change the meal plan before only unusable ingredients remain."
+            ],
+            [
+              "Essential care",
+              "Backup status; medicine storage; reachable support",
+              "Act on the person-specific care deadline."
+            ],
+            [
+              "Sanitation",
+              "Handwashing water; waste route; toilet status",
+              "Change arrangements if waste cannot be contained safely."
+            ],
+            [
+              "Communication",
+              "Working devices; charging opportunities; next check-in",
+              "Use an agreed fallback if a channel fails."
+            ],
+            [
+              "Transport",
+              "Fuel or charge; driver; passable route; destination",
+              "Preserve the ability to leave before options shrink."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: 18 gallons of confirmed drinking-quality water divided by measured household use of 6 gallons a day suggests about three days of supply. It does not include uncounted guests, pets, spillage, or extra heat-related needs. Update the calculation after a day of real use. The goal is early decisions, never withholding necessary drinking water to make a number look better."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Build a routine that reduces mistakes",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "An example daily rhythm, adapted to your household",
+          "columns": [
+            "When",
+            "Useful tasks"
+          ],
+          "rows": [
+            [
+              "Morning",
+              "Check people, water, food, sanitation, and current information. Decide whether to stay."
+            ],
+            [
+              "Daylight",
+              "Handle safe resupply, prepare the next meal, charge essentials when available, and check agreed contacts."
+            ],
+            [
+              "Before dark",
+              "Clear walking routes, place lights, organize night care, and confirm the next check-in."
+            ],
+            [
+              "Evening",
+              "Record use and problems. Protect a rest period for the adults responsible for care."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep tasks small enough to complete. If one adult is caring for a child or dependent person, a complicated fuel schedule and multiple trips may be unrealistic. Build around the available help and physical ability. Use daylight for organizing, reading labels, and checking supplies, but avoid travel or exertion when weather or local conditions make those tasks unsafe."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Give each recurring task an owner and an alternative person where possible.",
+            "Use a check mark after a task is done; a discussion about doing it is not the same as completion.",
+            "Keep children involved in age-appropriate tasks without giving them responsibility for fuel, hot equipment, electrical connections, or safety decisions.",
+            "Preserve routines such as meals, medication schedules, and sleep as far as the individual care plan allows."
+          ]
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Meals and hygiene without normal utilities",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Create a meal sequence from food that is already safe, familiar, and usable. Prefer portions the household can finish so you do not create leftovers that need refrigeration. Before opening a large container, work out how the remainder would be kept safe. A pantry of dry grains is not a complete plan if you lack safe cooking water or a permitted place to cook."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Keep a manual opener with the meals that need it. Check soft-food needs, allergies, and food for pets.",
+            "Separate safe drinking water from water reserved for an allowed non-drinking use. Clearly label containers so a tired person cannot confuse them.",
+            "Choose a handwashing arrangement that can dispense safe water without repeated hand contact inside the supply container.",
+            "If drainage or sewage may be affected, use the sanitation and sewer-failure guides rather than assuming that a toilet will keep working indefinitely."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Waste management is part of the plan, not the last item to remember. Keep food waste away from meal preparation and sleeping areas, use appropriate containers, and check what collection or disposal route is actually available. Avoid instructions that depend on a nonexistent collection service or permit unsafe dumping."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Emergency hygiene",
+              "url": "/guides/emergency-hygiene/"
+            },
+            {
+              "label": "Sewer failure",
+              "url": "/emergencies/sewer-failure/"
+            },
+            {
+              "label": "Food safety after power loss",
+              "url": "/emergencies/food-safety-outage/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Protect care, communication, and rest",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Map the dependencies for each essential need. A powered device may also need a certain cable, clean water, consumables, an accessible outlet, or a trained caregiver. Write these together. A spare battery without the right adapter is not a working backup; a destination without accessibility may not meet the person’s actual needs."
+        },
+        {
+          "type": "paragraph",
+          "text": "Make check-ins concise. State condition, location, immediate need, and next planned contact. Agree what a missed check-in means and what a supporter can safely do. Do not give every person a different schedule that becomes impossible to maintain. Preserve enough phone power for changes in condition and necessary movement."
+        },
+        {
+          "type": "callout",
+          "title": "Use a real care threshold",
+          "text": "The point to seek another care setting comes from the person’s provider-approved plan and actual circumstances. Do not substitute a general household water or battery calculation for a clinical decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fatigue makes ordinary errors more likely: leaving a tap running, confusing containers, missing a care task, or stumbling over clutter. Arrange adult relief when available, keep the work area simple, and write down the important tasks. Someone living alone can ask a trusted contact for scheduled check-ins while still keeping a workable plan if contact fails."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Power outage safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Resupply and relocation: make one complete decision",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before a trip, decide what you need, where it is confirmed available, how to get there safely, and how to return. An unverified rumor about free ice can cost fuel, time, and phone charge. Combine necessary errands when appropriate, but do not turn a simple water trip into a long search while a vulnerable person is left unsupported."
+        },
+        {
+          "type": "table",
+          "caption": "Questions to answer before leaving",
+          "columns": [
+            "Question",
+            "Why it matters"
+          ],
+          "rows": [
+            [
+              "Is the source open and the supply suitable?",
+              "Avoid travelling to closed sites or accepting water of unclear quality."
+            ],
+            [
+              "Can we carry the actual amount?",
+              "Water, fuel, and equipment may exceed physical or vehicle capacity."
+            ],
+            [
+              "Who stays with the household?",
+              "Care, access, and essential monitoring still need to continue."
+            ],
+            [
+              "What is the fallback?",
+              "A failed trip should not leave no safe water or route to another location."
+            ],
+            [
+              "Should this be a move rather than an errand?",
+              "Repeated small trips may conceal that home no longer meets essential needs."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If relocating, confirm the destination’s suitability, arrange transport, and take care information and essential equipment. Plan for pets and building access. If immediate danger develops, leave the hazard without delaying for a perfect inventory."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Recovery and a useful after-action review",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "After restoration, assess systems separately: electricity, drinking water, drainage, food storage, and communications. Do not assume one working service proves the others are ready. Use the relevant utility or public-health instructions, and qualified assessment for damaged equipment."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Recharge and replenish the essentials that made the biggest difference.",
+            "List the first shortage, the first equipment failure, and the hardest daily task.",
+            "Identify a low-cost fix for each: a clearer label, a spare cable, a smaller water container, or a simpler meal.",
+            "Update contact arrangements and relocation choices based on what was actually reachable.",
+            "Review the plan with everyone who will use it, including a substitute caregiver."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A useful review ends with a short list of changes you can make, not a wish list of expensive equipment. Keep the plan modest enough that you will maintain it between emergencies."
+        }
+      ],
+      "references": []
+    }
   ]
 }

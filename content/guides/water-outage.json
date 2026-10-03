@@ -4,14 +4,21 @@
   "category": "utilities",
   "subcategory": "Water",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "no water",
     "tap not running",
     "no running water"
   ],
   "keywords": [
-    "Water"
+    "Water",
+    "Identify the problem before using another source",
+    "Keep drinking-quality water for the right tasks",
+    "Calculate what you have and when you need more",
+    "Handle a boil-water notice correctly",
+    "Manage hygiene and toilet needs separately",
+    "Resupply without turning the trip into another problem",
+    "When service returns: wait for clearance and follow the reset"
   ],
   "tldr": "Check the utility notice to learn whether water service is interrupted and whether an advisory applies. Use stored or commercially bottled water for drinking and essential care. Service returning does not automatically mean tap water is safe.",
   "steps": [
@@ -34,13 +41,13 @@
   ],
   "next": "Build an emergency water supply and know how your household will handle sanitation.",
   "watch": "Do not use heating-system or radiator water for drinking.",
-  "sources": "water-outage",
+  "sources": "water-outage-expanded",
   "shopping": [],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Inventory clean containers and safe water, then prioritise drinking, food, medicines and hand hygiene. Do not use nonpotable water in food or formula. Plan toilet and waste arrangements separately and keep them away from food and water storage.",
   "household": "Give one person responsibility for clean drinking-water containers and another for dirty water or sanitation. Keep containers manageable for the person who must lift them; avoid unmarked bottles accessible to young children.",
-  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "pack_now": "Confirmed drinking water, clean manageable containers, the written advisory, a clear tap notice, a suitable dispensing method, and the household’s hygiene and supply contacts. Include the care and infant-feeding supplies the household actually uses.",
   "decisions": [],
   "faqs": [
     [
@@ -53,7 +60,274 @@
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-03",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-03",
+  "sections": [
+    {
+      "heading": "Identify the problem before using another source",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A dry tap, low pressure, visibly unusual water, and a formal water advisory are different situations. Start by checking a reliable utility or public-health notice when reachable. Record the affected area, time, exact restrictions, and where updates will appear. For a private well, a power failure or flood may require a different response from a municipal main break."
+        },
+        {
+          "type": "flow",
+          "caption": "Read the advisory: three different decisions",
+          "items": [
+            [
+              "Boil water",
+              "Follow the notice’s microbial-risk instructions for relevant uses. An ordinary pitcher filter does not cancel the advisory."
+            ],
+            [
+              "Do not drink",
+              "Use the specified safe alternative for drinking and food. Boiling does not make harmful chemicals or toxins safe."
+            ],
+            [
+              "Do not use",
+              "Avoid tap-water contact and uses covered by the notice. Use the directed alternative; do not substitute a boil routine."
+            ]
+          ],
+          "note": "The exact local advisory controls. This diagram explains the labels; it does not certify a particular supply."
+        },
+        {
+          "type": "paragraph",
+          "text": "If information cannot be obtained, avoid treating water of uncertain quality as confirmed drinking water. Use known-safe stored or commercially bottled water for essential consumption and make a plan to obtain more. Water looking clear or pressure returning does not establish that it is safe."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Drinking water advisories",
+          "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Keep drinking-quality water for the right tasks",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Common uses to check during an advisory",
+          "columns": [
+            "Task",
+            "Practical question"
+          ],
+          "rows": [
+            [
+              "Drinking and medicines",
+              "Is the water confirmed suitable to swallow?"
+            ],
+            [
+              "Food preparation and brushing teeth",
+              "Could water be ingested, even in a small amount?"
+            ],
+            [
+              "Ice and refrigerator dispensers",
+              "Are these connected to the affected supply? Stop using them during an advisory."
+            ],
+            [
+              "Infant feeding",
+              "What suitable ready-to-use or provider-directed option is available?"
+            ],
+            [
+              "Pets",
+              "Are they receiving the safe alternative required by the notice?"
+            ],
+            [
+              "Bathing, handwashing, and laundry",
+              "What does this specific advisory allow? Do not infer permissions from another type of notice."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Tell every household member about the restriction, including visitors and anyone who might make a drink from habit. Put a clear notice at the affected taps. If a person cannot read the notice or needs support with routines, arrange direct assistance rather than relying on a label alone."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the source and date with any new water brought home. A reused bottle from an unknown supply is not equivalent to unopened commercial water. Separate food preparation from the collection and handling of uncertain water so containers cannot easily be mixed up."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Drinking water advisories",
+          "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Calculate what you have and when you need more",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Count only confirmed drinking-quality water. Write the amount in one unit so bottles labelled in litres and jugs labelled in gallons do not cause a counting error. Record people, pets, care requirements, and the amount already used. The emergency storage baseline is a starting point; actual household needs may be greater."
+        },
+        {
+          "type": "paragraph",
+          "text": "An editorial example: three people with nine gallons of safe water have three days at one gallon per person per day before extra needs. If measured use is four gallons a day, the same reserve is about two and a quarter days. Use the shorter realistic estimate to arrange supply early. Do not ration necessary drinking water to stretch the spreadsheet."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Choose the next source before the reserve is nearly empty.",
+            "Check whether the source is suitable, open, reachable, and able to provide the amount you need.",
+            "Choose containers and transport the household can actually manage.",
+            "Preserve some ready-to-carry water if a move becomes necessary."
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Emergency water storage quantities",
+              "url": "/preparedness/water-storage/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency water supply",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Handle a boil-water notice correctly",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use commercially bottled water when available, or follow the local boil instructions. CDC’s general microbial-risk method is a full rolling boil for one minute, or three minutes above 6,500 feet, then allow the water to cool before use. The notice may give additional directions for the local situation. Boil tap water as required even if it has passed through a normal home filter."
+        },
+        {
+          "type": "paragraph",
+          "text": "Plan the process before heating: suitable water source, permitted cooking method, stable pot, safe cooling location, clean storage container, and a person who can carry it safely. Keep children away from the hot-water area. Do not make an unsafe indoor use of outdoor cooking equipment part of the treatment plan."
+        },
+        {
+          "type": "callout",
+          "title": "Boiling has a defined purpose",
+          "text": "This method addresses germs. It does not remove harmful chemical contamination or make a do-not-use supply acceptable. If the advisory is not microbial, switch to the specified alternative water."
+        },
+        {
+          "type": "paragraph",
+          "text": "Make only the amount you can cool, store, and dispense cleanly. Mark the container and prevent someone from refilling it from the restricted tap. If you lack a safe way to heat and handle water, prioritize an approved alternative supply instead of improvising."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Drinking water advisories",
+          "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Manage hygiene and toilet needs separately",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A water outage is also a hygiene problem. Work out where people can wash hands, how meals can be prepared without contaminating them, and what toilet arrangement is usable. Do not count all available water as suitable for every purpose. A do-not-use notice can prohibit skin contact as well as drinking."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Read the actual permission for handwashing and bathing in the notice. Advice for a boil-water event does not automatically apply to a chemical event.",
+            "Keep a small, clearly identified handwashing station with suitable water where food is prepared and near toilet arrangements.",
+            "Reduce unnecessary water-heavy chores while preserving essential hygiene and care.",
+            "Check whether wastewater service is functioning before adding water to toilets or drains, especially when there is a sewer warning or backup."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Bath water collected before a disruption is not automatically drinking water. Label water reserved for an allowed non-drinking task and keep its containers separate. If sewage backs up, isolate the affected area and follow the sewer-failure guidance; repeated flushing can worsen the situation."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Sewer failure",
+              "url": "/emergencies/sewer-failure/"
+            },
+            {
+              "label": "Emergency hygiene",
+              "url": "/guides/emergency-hygiene/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CDC · Drinking water advisories",
+          "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Resupply without turning the trip into another problem",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Confirm a distribution point or retailer before travelling when possible. Ask what containers are needed, what water is supplied, and whether there are quantity limits or access needs. The source may be appropriate for only certain uses; retain any instructions given with it."
+        },
+        {
+          "type": "table",
+          "caption": "A collection plan for the household",
+          "columns": [
+            "Step",
+            "What to decide"
+          ],
+          "rows": [
+            [
+              "Quantity",
+              "How much confirmed safe water is needed before the next realistic supply opportunity?"
+            ],
+            [
+              "Carrying",
+              "Who can lift it, and can the container be secured for transport?"
+            ],
+            [
+              "Route",
+              "Is the route open and safe in the current conditions?"
+            ],
+            [
+              "Care",
+              "Who supports children or dependent adults during the trip?"
+            ],
+            [
+              "Fallback",
+              "What happens if the site is closed or has no suitable water?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For someone living alone or without transport, ask a trusted supporter for a specific manageable delivery. If safe supply cannot be maintained at home, consider a confirmed alternative location before running out. Relocation planning should include care, accessibility, and pets rather than focusing only on gallons."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "When service returns: wait for clearance and follow the reset",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Pressure returning is not the same as an advisory being lifted. Use the utility’s actual clearance and follow its directions for flushing, appliances, filters, ice, and any affected equipment. The correct reset depends on the incident and your plumbing; there is no universal number of minutes that certifies every home."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Confirm the notice has changed for your service area, not only a neighboring area.",
+            "Read the reset instructions before opening taps or restarting water-connected appliances.",
+            "Follow equipment-specific guidance for filters, dispensers, and any affected private-well system.",
+            "Keep restricted-use water clearly separated until it is no longer needed or has been disposed of appropriately.",
+            "Replenish the stored drinking-water reserve and record what the household actually used."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If water remains unusual or the situation is unclear, use the suitable alternative and seek further guidance through a safe, reachable channel. Record which supplies, labels, carrying arrangements, or contacts would make the next outage easier."
+        }
+      ],
+      "references": []
+    }
+  ]
 }

@@ -11,7 +11,14 @@
     "spoiled food"
   ],
   "keywords": [
-    "Food & water"
+    "Food & water",
+    "Start a time and temperature record",
+    "Understand the four-hour and two-hour rules",
+    "Prepare the cooler before the deadline",
+    "Assess foods by type, not one blanket rule",
+    "Plan meals that do not create another cold-storage problem",
+    "Floodwater and contamination change the decision",
+    "Restart, replenish, and reduce the next loss"
   ],
   "tldr": "Keep refrigerator and freezer doors closed. Without power, a refrigerator keeps food safe for about 4 hours; a full freezer about 48 hours and a half-full freezer about 24 hours. Never taste food to test safety. Use official discard guidance and a thermometer.",
   "steps": [
@@ -34,13 +41,13 @@
   ],
   "next": "Clean appliances and replace spoiled supplies. Keep thermometers available before the next outage.",
   "watch": "Do not serve questionable food to people or pets.",
-  "sources": "food-safety-outage",
+  "sources": "food-safety-outage-expanded",
   "shopping": [],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Track the time power stopped and use a fridge thermometer if available. If time or temperature is unknown, discard suspect perishable food and use shelf-stable food. Spend scarce fuel on safe water and essential cooking rather than trying to rescue unsafe food.",
   "household": "Plan a safe meal for each person before using the most vulnerable refrigerated food. Include infant feeding and food allergies. Keep the food decision separate from medicine storage: a clinician or pharmacist must advise on a specific medicine.",
-  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "pack_now": "Appliance thermometers, a pencil and outage-time note, a suitable cooler, frozen packs or a safe ice source, a manual opener, and familiar no-cook meals. Keep the food-specific reference accessible; do not depend on a connected appliance display to reconstruct the storage history.",
   "decisions": [],
   "faqs": [
     [
@@ -53,17 +60,281 @@
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-03",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-03",
   "sections": [
-    [
-      "Record the start time and temperature",
-      "Keep appliance doors closed and use appliance thermometers. A refrigerator generally maintains safe temperatures for about four hours unopened; a full freezer about 48 hours, or 24 hours if half full. These are estimates, not guarantees when doors open or conditions differ. Use current food-safety charts for individual foods."
-    ],
-    [
-      "Do not taste-test safety",
-      "Discard perishable food above 40°F for more than two hours unless current food-specific guidance says otherwise. Appearance, smell and taste do not establish safety. Plan ready-to-eat alternatives and separate discarded food so nobody mistakenly uses it later."
-    ]
+    {
+      "heading": "Start a time and temperature record",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The useful evidence is time and temperature, not whether an appliance light works or a carton still smells normal. Write down when power failed. Keep refrigerator and freezer doors closed, and use appliance thermometers. Normal targets are 40°F (4°C) or below in the refrigerator and 0°F (−18°C) or below in the freezer."
+        },
+        {
+          "type": "flow",
+          "caption": "Outage holding times with doors kept closed",
+          "items": [
+            [
+              "Refrigerator",
+              "About 4 hours without power. Plan a cold-source transfer before this limit if the outage continues."
+            ],
+            [
+              "Full freezer",
+              "About 48 hours. Keep it closed; assess actual food condition when making recovery decisions."
+            ],
+            [
+              "Half-full freezer",
+              "About 24 hours. Less stored cold means a shorter approximate holding period."
+            ]
+          ],
+          "note": "CDC closed-door guidance. These are planning limits, not a guarantee after opening doors, flooding, or other unsafe conditions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Record what is known and what is uncertain. If you discover the outage only after returning home, do not invent a start time. A restoration message or a working fridge cannot prove the food stayed within safe conditions while you were away."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Food safety after an emergency",
+          "https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Understand the four-hour and two-hour rules",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The four-hour refrigerator figure describes food in a closed refrigerator after power loss. It is not permission to leave perishable food on a warm counter for four hours. The item-by-item FoodSafety.gov chart uses exposure above 40°F for more than two hours for many refrigerated perishables. These rules describe different conditions."
+        },
+        {
+          "type": "table",
+          "caption": "Use the rule that matches the evidence",
+          "columns": [
+            "What you know",
+            "How to use it"
+          ],
+          "rows": [
+            [
+              "Closed fridge, outage time known, no added cold source",
+              "Use the outage guidance; discard refrigerated perishables after four hours without power."
+            ],
+            [
+              "Food is measured above 40°F for more than two hours",
+              "Use the item-specific FoodSafety.gov chart; many perishables must be discarded."
+            ],
+            [
+              "Cooler or fridge has an added cold source",
+              "Measure and maintain safe temperatures; ice being present is not sufficient evidence on its own."
+            ],
+            [
+              "Frozen food still has ice crystals or is 40°F or below",
+              "Many items can be refrozen or cooked, subject to the item-specific chart."
+            ],
+            [
+              "Time or temperature history is uncertain",
+              "Do not taste-test or guess; use conservative discard decisions for suspect perishables."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Cooking is not a rescue plan for unsafe storage",
+          "text": "Do not plan to save questionable perishable food by cooking it after an unsafe time or temperature history. Make the storage decision first, then cook only food that is still safe to use."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Food safety after an emergency",
+          "https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html"
+        ],
+        [
+          "FoodSafety.gov · Item-by-item outage chart",
+          "https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage"
+        ]
+      ]
+    },
+    {
+      "heading": "Prepare the cooler before the deadline",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If a continuing outage makes a transfer necessary and you have a suitable cooler and cold source, organize the move before the refrigerator’s holding time is exhausted. Get the cooler, ice or frozen packs, thermometer, and meal plan ready first so the door need not remain open while you search for supplies."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Choose the food that can still be safely kept and that the household will realistically use.",
+            "Place it in the cooler with enough ice or another suitable cold source to maintain 40°F or below.",
+            "Keep raw foods contained so they cannot leak onto ready-to-eat food.",
+            "Use the thermometer to check conditions, and note the transfer time.",
+            "Open the cooler only as needed. Recheck temperature and replace the cold source as necessary."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not assume an insulated shopping bag will perform like a properly managed cooler. A large purchase of ice may be wasted if the household has no suitable container, no thermometer, or no safe place to collect it. Plan around what you can maintain rather than around a one-time cold feeling."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Food safety after an emergency",
+          "https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Assess foods by type, not one blanket rule",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Selected examples from the official refrigerated-food chart",
+          "columns": [
+            "Food type",
+            "After more than two hours above 40°F"
+          ],
+          "rows": [
+            [
+              "Raw or cooked meat, poultry, fish; leftovers",
+              "Discard."
+            ],
+            [
+              "Milk, yogurt, eggs, soft or shredded cheeses",
+              "Discard."
+            ],
+            [
+              "Cooked rice or pasta; cut produce",
+              "Discard."
+            ],
+            [
+              "Uncut fresh fruit or vegetables",
+              "Generally keep under the chart, if otherwise uncontaminated and suitable."
+            ],
+            [
+              "Bread, tortillas, peanut butter",
+              "Generally keep under the chart, if otherwise uncontaminated and suitable."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This short selection is a navigation aid, not the complete official chart. Use the full reference for the particular food, including cheese, sauces, produce, frozen meals, and ice cream. Follow product labels as well. “Shelf-stable” before opening does not mean the opened product can be kept without refrigeration."
+        },
+        {
+          "type": "paragraph",
+          "text": "Avoid mixing discard food back into the normal pantry or freezer. Keep it separate, document losses if useful for insurance, and dispose of it appropriately. Make the safe meal plan from what remains instead of repeatedly reconsidering the same questionable items."
+        }
+      ],
+      "references": [
+        [
+          "FoodSafety.gov · Item-by-item outage chart",
+          "https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage"
+        ]
+      ]
+    },
+    {
+      "heading": "Plan meals that do not create another cold-storage problem",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose familiar foods that meet the household’s needs and can be eaten in one sitting or safely stored after opening. A single-portion package can be more practical than a large container when you cannot keep leftovers cold. Check allergies, chewing or swallowing needs, infant feeding, and any prescribed dietary requirements."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Keep a manual opener with the pantry food that needs it.",
+            "Write a short sequence of meals rather than repeatedly opening the fridge to browse.",
+            "Include foods needing little preparation water, and confirm drinking water is suitable for any food preparation.",
+            "Use outdoor cooking equipment only in an appropriate outdoor setup according to its instructions. Do not bring it indoors because the kitchen has no power.",
+            "Handle cold food only when the next action is ready: serve, transfer to a maintained cooler, or discard."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Example planning exercise: build one day of no-cook meals from your ordinary pantry and check the labels for storage after opening. Note the water, utensils, opener, and cleanup each meal requires. Replace any meal that leaves a large unmanageable refrigerated remainder. This is an editorial planning exercise, not a universal diet or nutrition prescription."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Floodwater and contamination change the decision",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The power-outage clock is irrelevant if food has been contaminated by floodwater. CDC advises throwing away food that may have contacted flood or storm water and food in packaging that is not waterproof. Also reject damaged, bulging, or open containers as directed in the official guidance."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep potentially contaminated packaging away from clean meal-preparation areas. Do not open a questionable container just to investigate its smell, and do not give rejected food to pets. Children and dependent adults need the same separation from uncertain food as other household members."
+        },
+        {
+          "type": "callout",
+          "title": "Cleaning has its own instructions",
+          "text": "CDC provides specific procedures for food-contact surfaces and certain commercially packaged foods after flooding. Follow those procedures exactly where applicable; this guide does not turn a quick wipe or a rinsed package into evidence of safety."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the kitchen itself was flooded or affected by sewage, restore safe preparation conditions before using it. A working refrigerator does not make a contaminated counter, utensil, or water supply suitable for food preparation."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Food safety after an emergency",
+          "https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Restart, replenish, and reduce the next loss",
+      "blocks": [
+        {
+          "type": "steps",
+          "items": [
+            "After power returns, assess food using the recorded time, measured temperature, and the official item-specific chart.",
+            "Clean affected appliance surfaces following appropriate instructions and remove rejected food.",
+            "Check that the refrigerator and freezer actually return to their normal temperatures before relying on them.",
+            "Restock gradually, prioritizing food the household will use and emergency meals that are simple to prepare.",
+            "Replace used ice packs and review the thermometer, cooler, and meal arrangements."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep a brief record of the outage: start time, transfers, temperatures, and the biggest difficulty. If the problem was not having an opener or not knowing what to eat without cooking, fix that before buying a larger appliance. If the same fridge was opened by several people, agree a household rule and post the next planned meal."
+        },
+        {
+          "type": "paragraph",
+          "text": "Medicines, infant feeding, and powered medical equipment require their own guidance. Do not apply the food chart to medicine stability or decide that a medically important supply is unusable without appropriate advice. Use the care provider, pharmacist, and product instructions as applicable."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Power outage checklist",
+              "url": "/emergencies/power-outage/"
+            },
+            {
+              "label": "Water outage",
+              "url": "/emergencies/water-outage/"
+            },
+            {
+              "label": "Long-duration blackout",
+              "url": "/emergencies/long-blackout/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CDC · Food safety after an emergency",
+          "https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html"
+        ],
+        [
+          "American Red Cross · Power outage safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+        ]
+      ]
+    }
   ]
 }

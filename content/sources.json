@@ -784,5 +784,73 @@
       "National Park Service · Ten essentials and navigation preparation",
       "https://www.nps.gov/articles/10essentials.htm"
     ]
+  ],
+  "power-outage-expanded": [
+    [
+      "American Red Cross · Power outage safety",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+    ],
+    [
+      "CDC · Power outage protection",
+      "https://www.cdc.gov/natural-disasters/response/what-to-do-protect-yourself-during-a-power-outage.html"
+    ],
+    [
+      "CDC · Food safety after an emergency",
+      "https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html"
+    ],
+    [
+      "CPSC · Portable generator safety",
+      "https://www.cpsc.gov/s3fs-public/Portable_Generator_Safety_Alert_2017_5123.pdf"
+    ]
+  ],
+  "long-blackout-expanded": [
+    [
+      "American Red Cross · Power outage safety",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+    ]
+  ],
+  "generator-safety-expanded": [
+    [
+      "CPSC · Portable generator safety",
+      "https://www.cpsc.gov/s3fs-public/Portable_Generator_Safety_Alert_2017_5123.pdf"
+    ],
+    [
+      "CDC · Use a generator safely",
+      "https://www.cdc.gov/natural-disasters/psa-toolkit/use-a-generator-safely.html"
+    ]
+  ],
+  "water-storage-expanded": [
+    [
+      "CDC · Emergency water supply",
+      "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+    ],
+    [
+      "CDC · Drinking water advisories",
+      "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+    ]
+  ],
+  "water-outage-expanded": [
+    [
+      "CDC · Drinking water advisories",
+      "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+    ],
+    [
+      "CDC · Emergency water supply",
+      "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+    ]
+  ],
+  "food-safety-outage-expanded": [
+    [
+      "CDC · Food safety after an emergency",
+      "https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html"
+    ],
+    [
+      "FoodSafety.gov · Item-by-item outage chart",
+      "https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage"
+    ],
+    [
+      "American Red Cross · Power outage safety",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+    ]
   ]
 }

@@ -10,7 +10,14 @@
     "stored water"
   ],
   "keywords": [
-    "Water & food"
+    "Water & food",
+    "Work out the household quantity",
+    "Choose containers you can actually handle",
+    "Clean, fill, and label without confusion",
+    "Store for access as well as capacity",
+    "Make rotation a simple routine",
+    "Plan meals and dispensing around the reserve",
+    "Storage is only one layer of the water plan"
   ],
   "tldr": "Store at least one gallon of water per person per day for three days; aim for two weeks if practical. Allow more for heat, illness, pregnancy and pets. Use commercially bottled water or clean food-grade containers, and keep it cool and away from chemicals.",
   "steps": [
@@ -33,7 +40,7 @@
   ],
   "next": "Learn the local advisory system. Plan how to transport water if distribution sites open.",
   "watch": "Do not reuse containers that held toxic substances, even after washing.",
-  "sources": "water-storage",
+  "sources": "water-storage-expanded",
   "shopping": [
     "Commercially bottled water or food-grade storage containers",
     "Labels and permanent marker",
@@ -42,8 +49,8 @@
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Calculate the household quantity on paper and store smaller containers if lifting a large container is difficult. Keep one portable supply ready. Divide storage between safe places so damage to one container does not lose all the household water.",
-  "household": "Build the plan around the least mobile person and the shortest critical supply. Try carrying the kit, opening containers and using the light in the dark. Spend first on safe water, essential medicines, basic food and communication rather than specialised gear you cannot use. For this situation, brief every person on the first action: calculate needs. Agree who will manage children, pets or mobility needs while that action happens. Do not reuse containers that held toxic substances, even after washing.",
-  "pack_now": "For emergency water storage, prioritize only items needed for the first action and the fallback: Calculate the household quantity on paper and store smaller containers if lifting a large container is difficult. Keep one portable supply ready. Divide storage between safe places so damage to one container does not lose all the household water. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
+  "household": "Choose container sizes and dispensing positions that the least mobile household member can use. Include pets, guests, hot-weather needs, pregnancy, illness, and provider-directed care needs in the quantity plan. Ask another capable person to locate and explain the reserve. Keep drinking and non-drinking containers clearly distinct.",
+  "pack_now": "Suitable drinking-water containers, durable labels, a marker, the written quantity and location inventory, and a manageable portable supply. Keep the container-cleaning instructions and rotation dates where another household member can find them.",
   "decisions": [
     [
       "The stored water cannot be reached safely?",
@@ -69,21 +76,262 @@
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-03",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-03",
   "sections": [
-    [
-      "Count needs before containers",
-      "Plan at least one gallon per person per day for drinking and basic sanitation, with additional water for heat, pregnancy, illness and other needs. Add pets and any equipment requirements. A three-day supply is a starting point; expand within safe space and budget rather than promising that a fixed amount covers every household."
-    ],
-    [
-      "Keep a rotation record",
-      "Use suitable food-grade containers and follow CDC cleaning and filling guidance. Label filled containers and avoid heat, direct sunlight and chemicals. Replace self-filled stored water every six months; follow commercially bottled water labeling. Practice pouring without contaminating the container or sharing a drinking utensil."
-    ],
-    [
-      "Make the reserve easy to use",
-      "Editorial layout: keep drinking water separate from cleaning supplies, label the storage or purchase date, and identify the container you will open first. Test whether the person with the least strength can lift or dispense it. Distribute the reserve so one leak or inaccessible cupboard does not remove the entire supply."
-    ]
+    {
+      "heading": "Work out the household quantity",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Start with a written count of people and days. CDC’s baseline is at least one U.S. gallon per person per day for three days, with a two-week supply if possible. Extra needs can include pets, hot weather, pregnancy, illness, and particular care requirements. A U.S. gallon is about 3.8 litres; do not confuse it with an imperial gallon."
+        },
+        {
+          "type": "table",
+          "caption": "Baseline arithmetic before extra needs",
+          "columns": [
+            "People",
+            "3 days",
+            "7 days",
+            "14 days"
+          ],
+          "rows": [
+            [
+              "1",
+              "3 gal / 11.4 L",
+              "7 gal / 26.5 L",
+              "14 gal / 53 L"
+            ],
+            [
+              "2",
+              "6 gal / 22.7 L",
+              "14 gal / 53 L",
+              "28 gal / 106 L"
+            ],
+            [
+              "4",
+              "12 gal / 45.4 L",
+              "28 gal / 106 L",
+              "56 gal / 212 L"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The table is multiplication of the CDC baseline, rounded for planning. It is not a complete allowance for all household washing, laundry, or toilet flushing. Add those needs separately and identify which uses require drinking-quality water. Record the actual amount stored, not the capacity of empty containers."
+        },
+        {
+          "type": "callout",
+          "title": "Build in stages if space or money is limited",
+          "text": "Start with a usable three-day reserve and improve it gradually. A small supply you can access, label, and maintain is more useful than an ambitious target that remains empty containers."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency water supply",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Choose containers you can actually handle",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Unopened commercially bottled water is a straightforward emergency option. For refilled supplies, use suitable food-grade water containers, with tight lids and a design you can clean and dispense from. Never reuse a container that held toxic chemicals. Check the manufacturer if you are unsure whether a container is suitable for drinking water."
+        },
+        {
+          "type": "table",
+          "caption": "Match storage format to the household",
+          "columns": [
+            "Format",
+            "Practical advantage",
+            "Check before choosing"
+          ],
+          "rows": [
+            [
+              "Small sealed bottles",
+              "Easy to distribute and carry",
+              "Enough total volume, packaging condition, and storage space."
+            ],
+            [
+              "Small refillable water containers",
+              "Manageable portions and flexible placement",
+              "Food-grade suitability, cleaning access, tight lid, and rotation."
+            ],
+            [
+              "Larger water containers",
+              "Less packaging for a larger reserve",
+              "Filled weight, safe support, accessible tap, and ability to clean."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For planning, a five-gallon water load weighs about 42 pounds before the container. That may be too heavy for a child, an older adult, or someone with limited mobility. Choose several smaller containers if necessary. Test the empty container’s placement and dispensing position before filling it; do not plan to lift a heavy container overhead during an outage."
+        },
+        {
+          "type": "paragraph",
+          "text": "A container must also fit the task. A sealed bottle for a go-bag, a jug for a household dispenser, and water for a pet may need different arrangements. Do not make everyone depend on a single heavy container that only one person can move."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency water supply",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Clean, fill, and label without confusion",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Follow the CDC container-cleaning procedure in the reference below and the container’s instructions before filling a reusable vessel. Use a clean, suitable water source and close the lid tightly. Keep container sanitation separate from drinking-water disinfection: they have different purposes and instructions."
+        },
+        {
+          "type": "flow",
+          "caption": "A maintainable storage routine",
+          "items": [
+            [
+              "Prepare",
+              "Check suitability and condition; wash and sanitize following the linked container procedure."
+            ],
+            [
+              "Fill and identify",
+              "Use safe water; mark drinking water, fill date, volume, and the next rotation date."
+            ],
+            [
+              "Store and review",
+              "Keep cool, away from sunlight and chemicals; check access, leaks, and the review schedule."
+            ]
+          ],
+          "note": "Editorial process map. Use the CDC reference for the exact cleaning method and bleach concentration; do not improvise a drinking-water dose from it."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use durable labels that remain readable in dim light. A simple record might say: “Drinking water; filled 3 October; 2 gallons; replace by 3 April.” Keep the source and any container instructions in the household notebook. If a different container holds water for an allowed non-drinking use, make the distinction unmistakable."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency water supply",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Store for access as well as capacity",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose a cool storage place away from direct sunlight, fuel, pesticides, and other chemicals. CDC suggests 50–70°F for stored home-filled water. If your only available space becomes very hot, improve the location rather than assuming any cupboard is suitable. Follow the storage directions and date information for bottled water."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Spread manageable containers across appropriate locations so one blocked cupboard or a single leak does not remove all access.",
+            "Keep frequently used drinking water where household members can reach it without climbing, moving furniture, or relying on power.",
+            "Use sound support and avoid creating a falling or trip hazard. Consider the combined weight before loading shelves.",
+            "Keep a small ready-to-carry portion with evacuation essentials; the whole household reserve is not automatically portable."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "In an apartment or trailer, sketch the actual spaces you have and label what will go in each. Record both stored gallons and reachable gallons for a person who cannot lift or use stairs. Accessibility is part of the reserve, not an optional refinement after the quantity target is met."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency water supply",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Make rotation a simple routine",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "CDC recommends replacing home-filled stored water every six months. Observe the dates on commercially bottled water. Use a calendar reminder and a written shelf label so the routine does not depend on the founder of the household plan remembering everything."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Check containers for damage, leakage, readable labels, and a secure lid.",
+            "Use the oldest appropriate supply first in normal household use when suitable, then replace it.",
+            "For a refill, repeat the proper cleaning and sanitation process; do not keep topping up an uncertain old supply.",
+            "Update the fill date and the inventory with the real volume.",
+            "Check whether household numbers, care needs, pet needs, or storage conditions have changed."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the system easy enough that another person can maintain it. A paper inventory needs only container, location, amount, fill or purchase date, and review date. If a container’s history is unclear or it may be contaminated, do not count it as confirmed drinking water."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency water supply",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Plan meals and dispensing around the reserve",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Water use includes what meals require. Write a sample day of familiar food and note every step needing water: preparation, drinking, cleanup, and care. An emergency pantry full of foods that need long boiling can be a poor match for limited water and fuel. Include options that need little or no preparation water."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Keep a clean dispensing method with the container. Avoid repeatedly dipping hands or a used cup into the supply.",
+            "Agree which containers are for everyday use during the disruption and which remain closed as reserve.",
+            "Allocate suitable water for pets and any provider-directed care requirement.",
+            "Keep drinking-quality water available for brushing teeth and food preparation during a water advisory, as directed by that notice."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Do a tabletop exercise: list tomorrow’s meals, estimate the water used, then compare it with a day of actual routine use. The exercise reveals omitted tasks without deliberately depriving anyone of water. Use the result to improve storage and reduce unnecessary water-heavy tasks."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Storage is only one layer of the water plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A reserve buys time; it does not establish an unlimited source. Identify how you would obtain suitable water if the disruption exceeds your stock: a confirmed retailer, distribution point, trusted person, or other verified supply. Record access, carrying capacity, and the possibility that the location is closed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not count swimming-pool water, floodwater, an unknown stream, or chemically contaminated water as drinking supply. Boiling and ordinary filters do not solve every contamination problem. If tap service fails or an advisory is issued, use the water-outage guide to determine the allowed uses and the next safe source."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Water outage and advisories",
+              "url": "/emergencies/water-outage/"
+            },
+            {
+              "label": "Long-duration blackout planning",
+              "url": "/emergencies/long-blackout/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CDC · Drinking water advisories",
+          "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+        ]
+      ]
+    }
   ]
 }

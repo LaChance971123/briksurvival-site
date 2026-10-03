@@ -13,6 +13,7 @@ commands = [
     [sys.executable, 'scripts/stage_site.py'],
     [sys.executable, 'scripts/verify_library.py'],
     [sys.executable, 'scripts/verify_navigation.py'],
+    [sys.executable, 'scripts/verify_guide_depth.py'],
     [sys.executable, 'scripts/verify_homepage.py'],
     ['node', 'scripts/verify_search.cjs'],
     ['node', 'scripts/verify_ads.cjs'],
