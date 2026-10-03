@@ -1,0 +1,71 @@
+{
+  "slug": "emergency-document-folder",
+  "title": "Emergency documents: a private, usable recovery folder",
+  "category": "preparedness",
+  "subcategory": "Documents & support",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "financial-planning",
+  "tldr": "Organize the information needed to identify yourself, contact providers and recover after disruption. Keep protected copies in separate places and check that you can actually open them.",
+  "steps": [
+    [
+      "Gather the essentials",
+      "Identify relevant identity papers, insurance details, housing records, medical information and financial contacts. Prioritize what your household would need away from home."
+    ],
+    [
+      "Make a contact index",
+      "Record provider names, official phone numbers and enough account information to locate the service. Keep full sensitive records separate from an everyday contact card."
+    ],
+    [
+      "Protect copies",
+      "Store copies separately from originals and protect digital access. Consider fire, water, loss and unauthorized viewing when choosing storage."
+    ],
+    [
+      "Test retrieval",
+      "Check that a trusted authorized person can find the information if you are unavailable. Test access without your usual phone and note any account recovery dependence."
+    ]
+  ],
+  "sections": [
+    [
+      "Separate three levels of information",
+      "Editorial organization: an everyday card with limited contacts; a travel folder with relevant copies; and a protected archive with fuller financial and identity records. This reduces the need to carry every sensitive document everywhere. Label folders plainly so a tired household can find housing, care and insurance details quickly."
+    ],
+    [
+      "Treat passwords differently",
+      "Avoid putting account passwords beside a complete identity and financial file that could be lost. Use a secure access arrangement suited to your household, and document recovery steps without exposing secrets. A password-protected file is not useful if its only unlock information is on the phone you just lost."
+    ]
+  ],
+  "without_help": "If online services fail, use the paper contact index and protected copies for available in-person or phone services. Do not give documents to an unverified person claiming to arrange aid.",
+  "household": "Include each household member’s relevant records and discuss permission to share them. Plan language support, accessibility and how a caregiver can locate necessary care information.",
+  "pack_now": "A limited contact card and protected travel copies where you can retrieve them quickly; a separate backup in a location unlikely to be affected by the same event.",
+  "next": "Choose five records you would miss most after losing access to home. Check their dates, make protected copies and test retrieval.",
+  "watch": "Do not post identity documents, account numbers or recovery credentials in public help requests. Storage and legal requirements vary; consult relevant providers about acceptable copies.",
+  "faqs": [
+    [
+      "Should everything go in my go bag?",
+      "Carry what you realistically need and protect it. A bag can be lost or stolen, so keep a separate backup and avoid carrying a single unprotected collection of all your sensitive records."
+    ]
+  ],
+  "decisions": [],
+  "related": [
+    "disaster-scams",
+    "go-bag",
+    "emergency-contact-plan"
+  ],
+  "aliases": [
+    "documents binder",
+    "identity copies",
+    "recovery folder"
+  ],
+  "keywords": [
+    "documents binder",
+    "identity copies",
+    "recovery folder"
+  ],
+  "scope": "Civilian household planning. U.S. references; local services and rules differ. Planning examples are editorial suggestions, not promises of assistance."
+}

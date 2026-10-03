@@ -11,6 +11,7 @@ commands = [
     [sys.executable, 'scripts/polish_release.py'],
     [sys.executable, 'scripts/stage_site.py'],
     [sys.executable, 'scripts/verify_library.py'],
+    [sys.executable, 'scripts/verify_navigation.py'],
     ['node', 'scripts/verify_search.cjs'],
     ['node', 'scripts/verify_ads.cjs'],
     ['node', 'scripts/verify_offline_retirement.cjs'],

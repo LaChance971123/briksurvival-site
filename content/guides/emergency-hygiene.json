@@ -35,7 +35,7 @@
   "category": "field-skills",
   "subcategory": "Food & hygiene",
   "content_type": "Field guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "no running water hygiene",
     "wash hands outage",
@@ -72,5 +72,11 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Create a clean supply station",
+      "Editorial organization: keep the household’s available safe water, suitable hygiene supplies and clean personal items together, separate from waste and cleanup equipment. Label water by its intended use and follow the relevant advisory. A bottle reserved for drinking should not quietly disappear into a cleaning task. Assign one person to check what remains so the household notices shortages before the next meal or care task."
+    ]
+  ]
 }

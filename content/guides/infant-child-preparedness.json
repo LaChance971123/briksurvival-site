@@ -35,7 +35,7 @@
   "category": "preparedness",
   "subcategory": "Care & accessibility",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "baby emergency",
     "children war",
@@ -81,5 +81,11 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Use a familiar handover",
+      "Editorial family planning: record the usual caregiver contacts, authorized pickup arrangements, communication needs and where essential items are kept. Ask the backup caregiver what they need to support the child safely. Include a familiar comfort item when practical and use calm, age-appropriate practice rather than frightening surprise scenarios. Feeding requirements need their own plan; do not assume a generic adult pantry solves them."
+    ]
+  ]
 }

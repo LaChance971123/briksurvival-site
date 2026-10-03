@@ -1,0 +1,71 @@
+{
+  "slug": "battery-power-plan",
+  "title": "Battery backup: match the power source to the job",
+  "category": "home-building",
+  "subcategory": "Backup power",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "battery-planning",
+  "tldr": "List the devices you must support, check compatibility and test the real load before relying on a battery. Protect exits and follow the manufacturer’s charging and storage instructions.",
+  "steps": [
+    [
+      "Choose priorities",
+      "Separate essentials such as communications and suitable lighting from optional loads. Medical equipment needs a supplier-approved backup plan, not a generic consumer battery assumption."
+    ],
+    [
+      "Read the specifications",
+      "Check output type, voltage, continuous output limits and device requirements. Capacity and maximum output answer different questions; a large capacity does not make every appliance compatible."
+    ],
+    [
+      "Test in calm conditions",
+      "Try the intended devices and cables within manufacturer limits. Record actual observed use and remaining capacity; do not plan around an untested marketing runtime."
+    ],
+    [
+      "Make a safe charging routine",
+      "Use appropriate charging equipment and follow product instructions. Inspect batteries for damage and keep charging arrangements clear of escape routes."
+    ]
+  ],
+  "sections": [
+    [
+      "Make a device table before shopping",
+      "Editorial table fields: device, required connection, normal use, intended backup period, compatible cable and tested result. Include the accessories; a charged power bank with the wrong cable cannot keep a phone working. For a refrigerator or other cycling appliance, a brief power reading alone does not establish whole-day runtime."
+    ],
+    [
+      "Plan how the battery gets recharged",
+      "Name an actual accessible charging source and the conditions that could prevent using it. Solar input depends on equipment compatibility and available conditions, so treat it as variable until tested. Keep a smaller independent light and communications option to avoid a single battery becoming the failure point for everything."
+    ]
+  ],
+  "without_help": "If charging is unavailable, reduce optional loads and reserve remaining power for agreed essentials. Seek another safe setting early if a critical device cannot be supported for the needed period.",
+  "household": "Teach the household which sockets and cables to use and who can change the setup. Keep batteries away from children and choose arrangements people can access without blocking doors.",
+  "pack_now": "Compatible labeled cables, a small independent light and the manufacturer’s instructions for the actual model.",
+  "next": "List three priority devices and verify their required connections. Test one planned charging session and record the result.",
+  "watch": "Smoke, unusual heat, bulging, odors or noises can signal battery trouble. If a battery fire occurs, evacuate and call emergency services when reachable; do not attempt improvised firefighting or handle a failing battery. Check recalls.",
+  "faqs": [
+    [
+      "Can I connect a portable battery to a wall outlet to power my house?",
+      "Do not improvise a backfeed connection. Whole-home integration requires suitable equipment and qualified installation. Use only the connections and loads permitted by the actual product instructions."
+    ]
+  ],
+  "decisions": [],
+  "related": [
+    "long-blackout",
+    "generator-safety",
+    "medication-continuity"
+  ],
+  "aliases": [
+    "power bank",
+    "portable power station",
+    "battery backup"
+  ],
+  "keywords": [
+    "power bank",
+    "portable power station",
+    "battery backup"
+  ],
+  "scope": "Civilian household planning. U.S. references; local services and rules differ. Planning examples are editorial suggestions, not promises of assistance."
+}

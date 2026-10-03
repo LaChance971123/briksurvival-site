@@ -15,7 +15,7 @@ async function main() {
   };
   const document = {querySelector: () => null, querySelectorAll: () => []};
   const context = {document, navigator: {serviceWorker: {getRegistrations: async () => registrations}},
-    window: {caches}, caches, location: {origin: 'https://ospreyzero.com'}, URL, Promise};
+    window: {caches, addEventListener: () => {}}, caches, location: {origin: 'https://ospreyzero.com'}, URL, Promise};
   vm.runInNewContext(fs.readFileSync('app.js', 'utf8'), context);
   await vm.runInNewContext('retireOfflineAccess()', context);
   assert.deepEqual([...new Set(removedWorkers)], ['/offline/']);

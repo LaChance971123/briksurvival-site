@@ -35,7 +35,7 @@
   "category": "preparedness",
   "subcategory": "Documents & support",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "mutual aid",
     "neighbour support",
@@ -81,5 +81,11 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Give each offer a limit",
+      "Editorial check-in arrangement: write down what a neighbour has agreed to do, when they can do it and what would make them unavailable. Someone willing to make a phone call may not be able to provide transport or personal care. Keep requests specific, protect private information and make room for people to decline. Review the arrangement after a household moves or care needs change."
+    ]
+  ]
 }

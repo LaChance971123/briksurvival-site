@@ -127,7 +127,9 @@
     "id": "vehicle-travel",
     "title": "Vehicle & travel",
     "subcategories": [
-      "Roadside"
+      "Roadside",
+      "Travel planning",
+      "Without a car"
     ]
   },
   {
