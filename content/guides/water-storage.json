@@ -46,16 +46,12 @@
   "pack_now": "For emergency water storage, prioritize only items needed for the first action and the fallback: Calculate the household quantity on paper and store smaller containers if lifting a large container is difficult. Keep one portable supply ready. Divide storage between safe places so damage to one container does not lose all the household water. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [
     [
-      "First decision: Calculate needs",
-      "Count people and days and add water for pets and extra needs. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
+      "The stored water cannot be reached safely?",
+      "Treat it as unavailable in your plan and change the storage arrangement."
     ],
     [
-      "When the original plan fails",
-      "Calculate the household quantity on paper and store smaller containers if lifting a large container is difficult. Keep one portable supply ready. Divide storage between safe places so damage to one container does not lose all the household water. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Do not reuse containers that held toxic substances, even after washing. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
+      "A notice warns of chemicals?",
+      "Do not assume boiling or an ordinary filter makes the supply usable; open the matching advisory guide."
     ]
   ],
   "faqs": [
@@ -84,6 +80,10 @@
     [
       "Keep a rotation record",
       "Use suitable food-grade containers and follow CDC cleaning and filling guidance. Label filled containers and avoid heat, direct sunlight and chemicals. Replace self-filled stored water every six months; follow commercially bottled water labeling. Practice pouring without contaminating the container or sharing a drinking utensil."
+    ],
+    [
+      "Make the reserve easy to use",
+      "Editorial layout: keep drinking water separate from cleaning supplies, label the storage or purchase date, and identify the container you will open first. Test whether the person with the least strength can lift or dispense it. Distribute the reserve so one leak or inaccessible cupboard does not remove the entire supply."
     ]
   ]
 }

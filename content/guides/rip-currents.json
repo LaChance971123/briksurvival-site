@@ -1,0 +1,82 @@
+{
+  "slug": "rip-currents",
+  "title": "Rip currents: escape the pull, help from shore",
+  "category": "natural-hazards",
+  "subcategory": "Coastal & ocean",
+  "content_type": "Emergency guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "immediate",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "rip-currents",
+  "tldr": "Do not swim directly against the current. Float to conserve energy; if you can swim, move parallel to shore to leave the current, then return toward the beach. Wave and call for help. A bystander should alert a lifeguard or emergency services and throw flotation rather than enter the water.",
+  "steps": [
+    [
+      "Conserve your effort",
+      "Avoid exhausting yourself by fighting toward shore against the pull. Float or tread water if you cannot swim out."
+    ],
+    [
+      "Signal clearly",
+      "Wave and shout so someone on shore knows you need help."
+    ],
+    [
+      "Help without becoming another casualty",
+      "Get a lifeguard, call emergency services when possible, and throw something that floats. Do not form a human chain."
+    ],
+    [
+      "Prevent another exposure",
+      "Check beach warnings and use guarded swimming areas. Calm skies and small waves do not establish safe water."
+    ]
+  ],
+  "sections": [
+    [
+      "Before your beach visit",
+      "Editorial family plan: name the guarded swimming area, read the posted warnings, identify the nearest beach access marker and decide who supervises each child. Write the access location in a message before swimming so a bystander can tell responders where you are."
+    ],
+    [
+      "Give responders a usable location",
+      "From shore, describe the beach name, nearest numbered access or lifeguard tower, number of people in difficulty and visible landmarks. Keep watching the person so you can indicate their position; send another adult to meet responders if available."
+    ]
+  ],
+  "without_help": "If no lifeguard is visible, shout for someone to contact emergency services while you look for flotation to throw from a safe position. An untrained swimming rescue can create a second emergency.",
+  "household": "Agree on direct adult supervision and a meeting place outside the water. A flotation aid is not a substitute for supervision. If conditions are uncertain, choose a shore activity rather than entering the surf.",
+  "pack_now": "Beach location, phone kept dry, local warning information and supervision arrangements. Do not delay alerting help to retrieve supplies.",
+  "next": "After a rescue, seek qualified assessment for breathing difficulty or other symptoms. Reassess the whole group before anyone returns to the water.",
+  "watch": "Do not assume a gap between breaking waves is a safe entry route. Avoid piers and jetties where currents can concentrate.",
+  "faqs": [
+    [
+      "Does a sunny day mean it is safe?",
+      "No. Read the beach forecast and flags and ask the lifeguard about conditions. If in doubt, stay out."
+    ]
+  ],
+  "decisions": [
+    [
+      "Unable to swim free?",
+      "Stop fighting the current, float and signal."
+    ],
+    [
+      "Someone else is caught?",
+      "Alert help and throw flotation from shore."
+    ]
+  ],
+  "related": [
+    "storm-surge",
+    "thunderstorm",
+    "outdoor-trip-plan"
+  ],
+  "aliases": [
+    "rip tide",
+    "rip current",
+    "pulled out to sea",
+    "beach current"
+  ],
+  "keywords": [
+    "rip tide",
+    "rip current",
+    "pulled out to sea",
+    "beach current"
+  ],
+  "scope": "Civilian guidance using the linked U.S. reference. Local conditions and services differ. Household planning examples are Osprey Zero editorial suggestions; this is not a live alert or specialist certification."
+}

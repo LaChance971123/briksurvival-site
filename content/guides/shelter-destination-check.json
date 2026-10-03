@@ -1,0 +1,83 @@
+{
+  "slug": "shelter-destination-check",
+  "title": "Shelter destinations: verify access before leaving",
+  "category": "evacuation-shelter",
+  "subcategory": "Shelter",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "shelter-choice",
+  "tldr": "Identify a destination that is actually open, reachable and suitable for your household. Ask about pets, accessibility, essential care and what to bring. A pre-storm evacuation center may have fewer supplies than a longer-term recovery shelter. Never treat an old shelter address as confirmation of current access.",
+  "steps": [
+    [
+      "Confirm the current location",
+      "Use current local emergency-management or shelter-provider information. Record the address, opening status and time you checked."
+    ],
+    [
+      "Check household needs",
+      "Ask about mobility access, pets, medicines and necessary equipment. Do not assume every location has the same services."
+    ],
+    [
+      "Pack essentials you can carry",
+      "Bring medicines, relevant medical information, hygiene items, suitable clothing, charging cables and food or bedding requested by the shelter."
+    ],
+    [
+      "Keep an alternate",
+      "Choose another checked destination where possible and decide how your outside contact will learn about a change."
+    ]
+  ],
+  "sections": [
+    [
+      "A destination record worth keeping",
+      "Editorial fields: location, source of current information, check time, route, transport contact, access arrangements, pet arrangements and alternate. If you are travelling with several households, confirm that each has a transport and contact plan; do not assume the group can solve missing capacity after departure."
+    ],
+    [
+      "Match your bag to the location",
+      "Ask which supplies the specific site requests. Balance carryable essentials with transport limits. Keep care equipment, medicine information and contact details accessible rather than buried beneath blankets. Do not delay leaving immediate danger to complete a packing list."
+    ]
+  ],
+  "without_help": "If current shelter details cannot be confirmed, use other trusted current channels or a known reachable private destination where safe. Avoid travelling blindly into the hazard to investigate an old listing.",
+  "household": "Write down access, caregiver and pet needs before calling. Someone who needs specialist care may need a different arrangement from a general shelter; seek a suitable plan early.",
+  "pack_now": "Address, alternate, contacts, medicines and care information, carryable essentials and household identification where appropriate.",
+  "next": "Check the destination again before departure when time and conditions allow. Tell your outside contact where you are going and when to expect the next check-in.",
+  "watch": "Shelter services vary by location and event. The linked Florida account describes past storm arrangements; it is not a current shelter listing or a promise of beds, transport or care.",
+  "faqs": [
+    [
+      "Does a shelter listing guarantee a space?",
+      "No. Check current access and instructions with the provider, and maintain an alternate when possible."
+    ]
+  ],
+  "decisions": [
+    [
+      "The shelter cannot meet a care need?",
+      "Arrange a suitable alternative before relying on it."
+    ],
+    [
+      "Immediate danger leaves no time to pack?",
+      "Take the first safe protective step; possessions come later."
+    ]
+  ],
+  "related": [
+    "evacuation",
+    "accessible-evacuation",
+    "pet-evacuation",
+    "go-bag"
+  ],
+  "aliases": [
+    "find evacuation shelter",
+    "shelter packing",
+    "shelter pets",
+    "where to evacuate"
+  ],
+  "keywords": [
+    "find evacuation shelter",
+    "shelter packing",
+    "shelter pets",
+    "where to evacuate"
+  ],
+  "scope": "Civilian guidance using the linked U.S. reference. Local conditions and services differ. Household planning examples are Osprey Zero editorial suggestions; this is not a live alert or specialist certification."
+}

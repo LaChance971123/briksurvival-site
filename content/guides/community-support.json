@@ -50,20 +50,7 @@
   ],
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "First decision: Agree who participates",
-      "Ask consent and include people who may need help with movement, medication or communication. Do not publish a public list of vulnerable households. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Start with a few trusted people and one useful task. If no network exists, use your household plan and independently verify any offer before relying on it. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Mutual aid should never require handing over identity documents, leaving children with strangers or entering a dangerous building. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

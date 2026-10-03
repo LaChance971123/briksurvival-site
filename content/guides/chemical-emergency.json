@@ -4,7 +4,7 @@
   "category": "chemical-radiation",
   "subcategory": "Chemical",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "chemical spill",
     "hazmat",
@@ -41,20 +41,7 @@
   "without_help": "If no reliable instruction arrives, move away from the visible release or affected area without passing through it. If leaving would put you into contaminated outdoor air, use an intact indoor space, shut openings and turn off outdoor-air intake while seeking trustworthy information. Do not identify a gas by sniffing it.",
   "household": "Keep the family together in the correct shelter for the hazard and separate potentially contaminated items from the living area. Use covered food and safe water. Prepare a bag for relocation, but do not send someone outside for it during an active release. For this situation, brief every person on the first action: leave the release area. Agree who will manage children, pets or mobility needs while that action happens. A dust mask or N95 does not protect against toxic gases.",
   "pack_now": "For chemical release, prioritize only items needed for the first action and the fallback: If no reliable instruction arrives, move away from the visible release or affected area without passing through it. If leaving would put you into contaminated outdoor air, use an intact indoor space, shut openings and turn off outdoor-air intake while seeking trustworthy information. Do not identify a gas by sniffing it. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Leave the release area",
-      "Do not approach a spill or plume to identify it. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "If no reliable instruction arrives, move away from the visible release or affected area without passing through it. If leaving would put you into contaminated outdoor air, use an intact indoor space, shut openings and turn off outdoor-air intake while seeking trustworthy information. Do not identify a gas by sniffing it. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "A dust mask or N95 does not protect against toxic gases. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

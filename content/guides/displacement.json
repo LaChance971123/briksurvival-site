@@ -35,7 +35,7 @@
   "category": "evacuation-shelter",
   "subcategory": "Displacement",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "displaced",
     "refugee shelter",
@@ -52,20 +52,7 @@
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "First decision: Confirm the destination",
-      "Check that the address exists, is accepting people and can provide accessible shelter. Ask about water, sanitation, medication storage, pets and transport. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "If official shelter is unavailable, contact trusted relatives or community members and agree on water, sleeping, hygiene and check-in arrangements. Avoid an unverified ride or address simply because it promises immediate help. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Pressure to surrender documents, pay unexpected fees, separate from children or keep a journey secret is a warning sign. A logo or social post is not verification. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

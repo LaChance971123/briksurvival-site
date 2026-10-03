@@ -1,0 +1,81 @@
+{
+  "slug": "financial-disaster-plan",
+  "title": "Financial disaster plan: records, payments and recovery",
+  "category": "preparedness",
+  "subcategory": "Documents & support",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "financial-readiness",
+  "tldr": "Gather account contacts and insurance information, keep protected copies accessible, and understand your coverage and deductibles before disruption. Build a practical plan for essential payments and unexpected costs around your budget. Keep private account details out of public forms and shared links.",
+  "steps": [
+    [
+      "Build a contact list",
+      "Record verified contacts for housing, utilities, insurance, banking and essential care. Use numbers from account statements or the provider’s own site."
+    ],
+    [
+      "Protect important records",
+      "Keep identity, policy and account information in protected storage with a separate backup. Decide who can access it if you are unavailable."
+    ],
+    [
+      "Understand your insurance",
+      "Check covered hazards, exclusions, deductibles and claim instructions with your insurer. Standard home insurance generally does not include flood or earthquake damage."
+    ],
+    [
+      "Prioritize essential needs",
+      "Editorial planning: list the costs of safe housing, transport, food, water and care. Choose a realistic saving target after essentials; avoid buying gear with money already needed for bills."
+    ]
+  ],
+  "sections": [
+    [
+      "A worksheet you can build yourself",
+      "Editorial fields: provider, verified contact, policy or account reference stored privately, regular due date, usual payment method and alternate contact method. Keep a separate expense list for relocation and recovery. Update contact details after changing providers so an old document does not lead you to the wrong service."
+    ],
+    [
+      "Practice finding the records",
+      "Choose one adult to simulate a lost-phone situation. Can they find the insurance contact and housing reference without your phone, email inbox or password reset? Resolve the access problem safely, then return the documents to protected storage. The exercise should not expose passwords or account numbers to the group."
+    ]
+  ],
+  "without_help": "If providers cannot be reached, keep dated notes of attempted contact and unavoidable expenses, preserve receipts and try verified channels when service returns. Do not assume a payment pause or assistance approval exists until confirmed.",
+  "household": "Plan for a person who normally manages the finances becoming unavailable. Give an appropriate trusted person the access they actually need, while keeping sensitive records away from children and public shared folders.",
+  "pack_now": "Protected records, verified contacts, essential-cost list and a way to retain receipts. Do not carry every original document if that creates an unnecessary loss risk.",
+  "next": "Check one policy and one backup-access method this week. Ask the insurer specific coverage questions rather than assuming every storm loss is covered.",
+  "watch": "Anyone promising guaranteed aid or demanding unusual payment may be a scam. Verify through independent official channels before providing identity or account information.",
+  "faqs": [
+    [
+      "Is there a single correct emergency savings amount?",
+      "No. Use your actual household costs and constraints. A small achievable reserve and usable records are practical starting points."
+    ]
+  ],
+  "decisions": [
+    [
+      "The policy wording is unclear?",
+      "Ask the insurer and retain the response."
+    ],
+    [
+      "An aid message asks for sensitive data?",
+      "Verify its source before sharing anything."
+    ]
+  ],
+  "related": [
+    "emergency-document-folder",
+    "budget-preparedness",
+    "disaster-claim-records",
+    "disaster-scams"
+  ],
+  "aliases": [
+    "financial preparedness",
+    "disaster money plan",
+    "emergency finances"
+  ],
+  "keywords": [
+    "financial preparedness",
+    "disaster money plan",
+    "emergency finances"
+  ],
+  "scope": "Civilian guidance using the linked U.S. reference. Local conditions and services differ. Household planning examples are Osprey Zero editorial suggestions; this is not a live alert or specialist certification."
+}

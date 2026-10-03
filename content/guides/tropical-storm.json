@@ -4,7 +4,7 @@
   "category": "natural-hazards",
   "subcategory": "Tropical weather",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "tropical cyclone"
   ],
@@ -39,20 +39,7 @@
   "without_help": "Prepare for loss of water, electricity and communications even if the storm is not a hurricane. Move out of flood and surge areas before access is lost. Do not use the storm name or wind category as proof that your route or home is safe.",
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: read all warnings. Agree who will manage children, pets or mobility needs while that action happens. A storm below hurricane strength can still cause catastrophic flooding.",
   "pack_now": "For tropical storm, prioritize only items needed for the first action and the fallback: Prepare for loss of water, electricity and communications even if the storm is not a hurricane. Move out of flood and surge areas before access is lost. Do not use the storm name or wind category as proof that your route or home is safe. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Read all warnings",
-      "Check flood, surge and tornado notices as well as wind forecasts. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Prepare for loss of water, electricity and communications even if the storm is not a hurricane. Move out of flood and surge areas before access is lost. Do not use the storm name or wind category as proof that your route or home is safe. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "A storm below hurricane strength can still cause catastrophic flooding. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

@@ -35,7 +35,7 @@
   "category": "recovery",
   "subcategory": "Fraud & documents",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "fake aid",
     "disaster fraud",
@@ -50,20 +50,7 @@
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "First decision: Find an independent contact",
-      "Use the organisation’s known website or an existing trusted number rather than the contact in an unsolicited message. Confirm the specific programme or provider. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "If reporting channels are unavailable, stop contact, protect remaining money and accounts, and retain the records for later. A promised refund is not a reason to make another payment. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "An offer of transport or shelter may also carry exploitation risk. Do not surrender documents or separate from family because a stranger promises priority assistance. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

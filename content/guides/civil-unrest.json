@@ -28,7 +28,7 @@
   "category": "conflict",
   "subcategory": "Civil disruption",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [],
   "keywords": [
     "Civil disruption"
@@ -38,20 +38,7 @@
   "without_help": "Use what you can see safely from your location to judge immediate danger; do not approach a crowd to investigate. Agree on a place to regroup away from the disturbance. If officials or armed personnel are involved in threats, use trusted private contacts or independently verified humanitarian help when safe.",
   "household": "Choose two reunion places and an out-of-area contact. Keep children with a trusted caregiver and carry a written contact card. Share sensitive addresses and travel details only with people who need them; avoid posting live locations or images of other families without consent. For this situation, brief every person on the first action: separate the event from your location. Agree who will manage children, pets or mobility needs while that action happens. Do not assume a protest is violent or that a citywide alert applies equally to every neighborhood. If an order applies, read its location, hours, and exceptions.",
   "pack_now": "For civil unrest, prioritize only items needed for the first action and the fallback: Use what you can see safely from your location to judge immediate danger; do not approach a crowd to investigate. Agree on a place to regroup away from the disturbance. If officials or armed personnel are involved in threats, use trusted private contacts or independently verified humanitarian help when safe. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Separate the event from your location",
-      "Check what is happening on your route, not just citywide headlines. Peaceful assembly and a nearby dangerous incident are different conditions. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Use what you can see safely from your location to judge immediate danger; do not approach a crowd to investigate. Agree on a place to regroup away from the disturbance. If officials or armed personnel are involved in threats, use trusted private contacts or independently verified humanitarian help when safe. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Do not assume a protest is violent or that a citywide alert applies equally to every neighborhood. If an order applies, read its location, hours, and exceptions. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

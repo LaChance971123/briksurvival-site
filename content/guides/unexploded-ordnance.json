@@ -35,7 +35,7 @@
   "category": "conflict",
   "subcategory": "Explosive hazards",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "uxo",
     "landmine",
@@ -52,20 +52,7 @@
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "First decision: Stop approaching",
-      "Do not move closer to inspect, photograph or identify the object. Small fragments and abandoned everyday objects can conceal explosive hazards. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "If no qualified contact answers, keep the area avoided and warn trusted people from a safe location. Do not treat the lack of an official sign or report as proof that it is safe. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Never burn, bury, throw, transport or disturb an object. This guide cannot determine a safe distance or a safe escape path through mined ground. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

@@ -4,7 +4,7 @@
   "category": "evacuation-shelter",
   "subcategory": "Shelter",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "stay inside",
     "shelter indoors"
@@ -40,20 +40,7 @@
   "without_help": "Choose the room for the hazard, not the phrase: lowest sturdy interior area for tornadoes, protective interior mass for fallout, and a room with few outside openings for an airborne chemical threat. Leave a shelter that is burning, flooding or collapsing rather than following a generic stay-inside rule.",
   "household": "Keep the group together with a named adult responsible for each child or person needing assistance. Count people at every departure and arrival. Write contact details on paper, retain necessary medicines and agree what to do if one person cannot travel. For this situation, brief every person on the first action: identify the hazard. Agree who will manage children, pets or mobility needs while that action happens. Do not apply chemical room-sealing instructions to every hazard or remain in a burning building.",
   "pack_now": "For shelter-in-place, prioritize only items needed for the first action and the fallback: Choose the room for the hazard, not the phrase: lowest sturdy interior area for tornadoes, protective interior mass for fallout, and a room with few outside openings for an airborne chemical threat. Leave a shelter that is burning, flooding or collapsing rather than following a generic stay-inside rule. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Identify the hazard",
-      "Read the actual shelter instruction and affected area. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Choose the room for the hazard, not the phrase: lowest sturdy interior area for tornadoes, protective interior mass for fallout, and a room with few outside openings for an airborne chemical threat. Leave a shelter that is burning, flooding or collapsing rather than following a generic stay-inside rule. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Do not apply chemical room-sealing instructions to every hazard or remain in a burning building. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

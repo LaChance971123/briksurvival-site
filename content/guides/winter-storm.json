@@ -4,7 +4,7 @@
   "category": "natural-hazards",
   "subcategory": "Winter",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "snowstorm",
     "blizzard",
@@ -41,20 +41,7 @@
   "without_help": "Keep dry layers, safe food, water and battery light together. If stranded in a vehicle, keep the exhaust clear before running the engine and conserve fuel; do not sleep with the engine running. Remain with the vehicle when walking would expose you to poor visibility or severe cold.",
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: check road conditions. Agree who will manage children, pets or mobility needs while that action happens. Do not walk away from a stranded vehicle in poor visibility unless you know a safe nearby destination.",
   "pack_now": "For winter storm, prioritize only items needed for the first action and the fallback: Keep dry layers, safe food, water and battery light together. If stranded in a vehicle, keep the exhaust clear before running the engine and conserve fuel; do not sleep with the engine running. Remain with the vehicle when walking would expose you to poor visibility or severe cold. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Check road conditions",
-      "Use official closures and forecasts before deciding to travel. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Keep dry layers, safe food, water and battery light together. If stranded in a vehicle, keep the exhaust clear before running the engine and conserve fuel; do not sleep with the engine running. Remain with the vehicle when walking would expose you to poor visibility or severe cold. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Do not walk away from a stranded vehicle in poor visibility unless you know a safe nearby destination. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

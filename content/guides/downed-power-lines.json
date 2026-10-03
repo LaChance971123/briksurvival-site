@@ -35,7 +35,7 @@
   "category": "home-building",
   "subcategory": "Electrical hazards",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "fallen wire",
     "power line down",
@@ -50,20 +50,7 @@
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "First decision: Stay back",
-      "Do not approach to determine whether a wire is live. Current can travel through wet ground and conductive objects. Keep others and animals away. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Keep the hazard avoided if the utility cannot be reached. Do not move a wire to open a road or restore access; arrange a different safe route. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Do not assume a fixed visible distance proves safety. Lines may reenergise without warning; no spark or hum is not an all-clear. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

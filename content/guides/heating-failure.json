@@ -35,7 +35,7 @@
   "category": "home-building",
   "subcategory": "Heating",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "no heat",
     "heater broken",
@@ -50,20 +50,7 @@
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "First decision: Get dry and insulated",
-      "Replace wet clothes, layer loose dry clothing and insulate beneath the body as well as above it. Keep vulnerable people away from draughts. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Use the safest dry shelter and insulation available while confirming a warmer private or community destination. Leave early if you cannot keep vulnerable people warm rather than waiting for official shelter. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Do not give alcohol as a warming method or rub frostbitten skin. Fuel-burning devices can create lethal CO even when you cannot smell anything. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

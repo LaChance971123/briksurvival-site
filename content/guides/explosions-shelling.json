@@ -35,7 +35,7 @@
   "category": "conflict",
   "subcategory": "Civilian protection",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "shelling",
     "bombing",
@@ -56,20 +56,7 @@
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "First decision: Get out of exposed space",
-      "Use a designated protective shelter if it is safely reachable. Otherwise choose the most protective intact interior space available, away from glazing. Consider fire, collapse, flooding and escape access; a basement is not safe if these hazards are present. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "If broadcasts and emergency numbers fail, keep sheltering while it remains intact and safer than movement. Check essential supplies, agree on short check-ins and use trusted neighbours without sending people into exposed areas. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "No ordinary room is guaranteed protection against weapons. Do not travel through active fighting or assume a claimed safe corridor has been secured. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

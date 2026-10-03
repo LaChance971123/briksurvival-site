@@ -28,7 +28,7 @@
   "category": "utilities",
   "subcategory": "Electricity",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "blackout",
     "lights out",
@@ -45,7 +45,16 @@
   "without_help": "Assume restoration time is uncertain. Reserve battery power for medical equipment, light and short check-ins, keep fridge doors closed and inventory safe water. If essential medical support or safe temperature cannot be maintained, move to a checked safer place early rather than waiting for an estimate.",
   "household": "Choose one person to manage medical power and one to handle food, water and short contact check-ins. Keep children away from candles, electrical damage and generator fuel. Check whether a neighbor has the same immediate needs before assuming they can help.",
   "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
-  "decisions": [],
+  "decisions": [
+    [
+      "Essential care cannot continue?",
+      "Use the prearranged care or relocation plan immediately. Do not wait for a restoration estimate."
+    ],
+    [
+      "No safe light?",
+      "Use an available battery light and keep movement simple; do not add indoor combustion hazards."
+    ]
+  ],
   "faqs": [
     [
       "Who depends on power?",
@@ -59,5 +68,15 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Keep a short outage record",
+      "Editorial record: when power failed, medical-device backup status, phone battery, available safe water and the temperature concern that would make you leave. Nominate a person to check updates rather than having everyone repeatedly refresh the outage map. An estimated restoration time is not a guarantee."
+    ],
+    [
+      "Prepare the next meal without opening everything",
+      "Decide which shelf-stable meal is available now. Keep fridge and freezer doors closed while you organize food, water and a cooler if one is suitable. Photograph appliance thermometer readings only when necessary; repeated checks lose cold air. Use the food-safety guide for discard decisions."
+    ]
+  ]
 }

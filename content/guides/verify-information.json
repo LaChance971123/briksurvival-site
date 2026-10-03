@@ -35,7 +35,7 @@
   "category": "communications",
   "subcategory": "Verification & privacy",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "rumours",
     "fake alert",
@@ -52,20 +52,7 @@
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "First decision: Check the original",
-      "Find the actual organisation or person through an independently known channel. A familiar-looking account or copied badge can be fake. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "If connectivity fails, use the observations you can obtain safely and your written plans. Do not travel into danger to confirm a rumour or follow a single anonymous message. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Verification should not delay escape from visible fire, rising water or another immediate hazard. No source can guarantee that conditions remain unchanged. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

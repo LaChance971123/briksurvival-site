@@ -1,0 +1,82 @@
+{
+  "slug": "lithium-battery-safety",
+  "title": "Lithium battery safety: power banks, tools and e-bikes",
+  "category": "home-building",
+  "subcategory": "Electrical hazards",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "battery-fire",
+  "tldr": "Follow the device and charger instructions. Stop using a battery with swelling, leakage, unusual heat, odor or noises. If it is smoking or burning, leave the area and call emergency services from a safe place; do not carry it through the home. Keep charging areas away from your escape route.",
+  "steps": [
+    [
+      "Check your equipment",
+      "Use the specified compatible charger and reputable, certified equipment. Do not improvise repairs to a damaged pack."
+    ],
+    [
+      "Choose a charging place",
+      "Keep batteries away from combustible materials, direct sun and hot vehicles. Follow the product temperature limits."
+    ],
+    [
+      "Notice changes early",
+      "Stop using a device with unusual heat, changed shape, leaks, smells or sounds. Seek manufacturer or qualified repair advice rather than opening the pack."
+    ],
+    [
+      "Dispose through the right service",
+      "Do not put lithium batteries in household trash. Ask the local battery collection service how it handles damaged batteries before transporting one."
+    ]
+  ],
+  "sections": [
+    [
+      "Make a household charging map",
+      "Editorial exercise: list where phones, power banks, tools and mobility batteries are normally charged. Mark any location that blocks a doorway or stair. Move routine charging to a suitable clear area according to the manufacturer; agree who checks that the right charger is used."
+    ],
+    [
+      "Buying backup power",
+      "Compare the jobs you actually need a battery to do, cable compatibility, storage instructions and reputable certification information. Record the model and support contact. A larger battery adds cost and storage needs; test the smallest suitable option before expanding."
+    ]
+  ],
+  "without_help": "If a damaged battery cannot be assessed promptly, keep people away and avoid using or charging it. Smoke, fire or escalating heat calls for evacuation rather than waiting for a repair appointment.",
+  "household": "Keep children away from chargers and damaged packs. Include e-bikes and mobility equipment in the escape plan; a battery or vehicle must not block the only exit.",
+  "pack_now": "Model, charger specification, manufacturer contact and a separate flashlight. Keep emergency contacts accessible without the affected device.",
+  "next": "Review charging locations, remove incompatible chargers from routine use and ask your local collection service about disposal arrangements.",
+  "watch": "A battery exposed to flooding may need specialist handling. Do not test it by charging. Smoke and fire can make the surrounding air unsafe.",
+  "faqs": [
+    [
+      "Can I fix a swollen battery?",
+      "Do not puncture, compress or open it. Stop using it and seek appropriate handling instructions."
+    ]
+  ],
+  "decisions": [
+    [
+      "Ordinary inspection finds damage?",
+      "Stop use and arrange qualified advice."
+    ],
+    [
+      "Smoke or fire?",
+      "Leave, stay out and alert emergency services from a safe location."
+    ]
+  ],
+  "related": [
+    "battery-power-plan",
+    "home-fire",
+    "apartment-preparedness"
+  ],
+  "aliases": [
+    "swollen power bank",
+    "battery swelling",
+    "e bike battery",
+    "lithium battery"
+  ],
+  "keywords": [
+    "swollen power bank",
+    "battery swelling",
+    "e bike battery",
+    "lithium battery"
+  ],
+  "scope": "Civilian guidance using the linked U.S. reference. Local conditions and services differ. Household planning examples are Osprey Zero editorial suggestions; this is not a live alert or specialist certification."
+}

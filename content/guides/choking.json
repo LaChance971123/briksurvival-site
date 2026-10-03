@@ -4,7 +4,7 @@
   "category": "medical",
   "subcategory": "Airway",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "cant breathe eating",
     "food stuck",
@@ -41,20 +41,7 @@
   "without_help": "Begin the first-aid sequence immediately while another person calls if possible. If the person becomes unresponsive, lower them safely and begin CPR. Look for a visible object before breaths; never sweep blindly inside the mouth. A delayed ambulance is not a reason to delay first aid.",
   "household": "Give someone the specific task of calling or locating care while another person provides first aid. Keep the patient warm or cool as the condition requires and record what happened and when. Do not put yourself into the same hazard or assume an ambulance has been dispatched until confirmed. For this situation, brief every person on the first action: assess the cough. Agree who will manage children, pets or mobility needs while that action happens. Do not use abdominal thrusts on an infant under one year; infant care uses back blows and chest thrusts.",
   "pack_now": "For adult & child choking, prioritize only items needed for the first action and the fallback: Begin the first-aid sequence immediately while another person calls if possible. If the person becomes unresponsive, lower them safely and begin CPR. Look for a visible object before breaths; never sweep blindly inside the mouth. A delayed ambulance is not a reason to delay first aid. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Assess the cough",
-      "If the person can cough effectively, encourage coughing and watch closely. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Begin the first-aid sequence immediately while another person calls if possible. If the person becomes unresponsive, lower them safely and begin CPR. Look for a visible object before breaths; never sweep blindly inside the mouth. A delayed ambulance is not a reason to delay first aid. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Do not use abdominal thrusts on an infant under one year; infant care uses back blows and chest thrusts. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

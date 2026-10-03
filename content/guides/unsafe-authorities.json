@@ -35,7 +35,7 @@
   "category": "preparedness",
   "subcategory": "Documents & support",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "government threat",
     "unsafe police",
@@ -53,20 +53,7 @@
   ],
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "First decision: Assess the actual threat",
-      "Separate verified incidents and direct threats from rumours. Think about who can access your location or information and whether a call, visit or public post could increase exposure. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "If no safe support channel is available, keep the family together in the safest reachable place and reduce unnecessary travel and disclosure. Reassess opportunities using verified information rather than a promised rescue. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "This page cannot guarantee privacy, legal protection or safe passage. Do not record, photograph or document an incident if doing so increases immediate danger. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

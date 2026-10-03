@@ -4,7 +4,7 @@
   "category": "chemical-radiation",
   "subcategory": "Radiation",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "nuclear accident",
     "radiation leak",
@@ -41,20 +41,7 @@
   "without_help": "Seek zone-specific radiation information by radio or another verified channel. Radiation cannot be measured by smell or sight. Indoors, close openings and reduce outside-air intake while you establish whether your zone must evacuate; do not self-dose potassium iodide or improvise a route through a suspected release.",
   "household": "Keep the family together in the correct shelter for the hazard and separate potentially contaminated items from the living area. Use covered food and safe water. Prepare a bag for relocation, but do not send someone outside for it during an active release. For this situation, brief every person on the first action: confirm your zone. Agree who will manage children, pets or mobility needs while that action happens. Plant emergencies differ from nuclear detonations; a fixed distance or timer is not an all-clear.",
   "pack_now": "For nuclear power plant emergency, prioritize only items needed for the first action and the fallback: Seek zone-specific radiation information by radio or another verified channel. Radiation cannot be measured by smell or sight. Indoors, close openings and reduce outside-air intake while you establish whether your zone must evacuate; do not self-dose potassium iodide or improvise a route through a suspected release. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Confirm your zone",
-      "Use emergency management and plant-area alerts for your actual address. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Seek zone-specific radiation information by radio or another verified channel. Radiation cannot be measured by smell or sight. Indoors, close openings and reduce outside-air intake while you establish whether your zone must evacuate; do not self-dose potassium iodide or improvise a route through a suspected release. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Plant emergencies differ from nuclear detonations; a fixed distance or timer is not an all-clear. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

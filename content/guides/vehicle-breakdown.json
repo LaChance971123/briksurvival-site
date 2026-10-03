@@ -4,7 +4,7 @@
   "category": "vehicle-travel",
   "subcategory": "Roadside",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "car broke down",
     "stranded vehicle"
@@ -40,20 +40,7 @@
   "without_help": "Record your exact location, stay visible without standing in traffic and conserve your phone. Do not begin walking along a dangerous road or into remote terrain without a known reachable refuge. In heat or cold, watch occupants closely and reassess whether the vehicle remains safe.",
   "household": "Count occupants, monitor temperature and keep children away from traffic. Preserve medicines, water and a light within reach. Do not split the group without a clear safe destination and a reliable way to reconnect. For this situation, brief every person on the first action: protect from traffic. Agree who will manage children, pets or mobility needs while that action happens. Exit choices depend on the road and surroundings; do not apply one universal rule to every breakdown.",
   "pack_now": "For vehicle breakdown, prioritize only items needed for the first action and the fallback: Record your exact location, stay visible without standing in traffic and conserve your phone. Do not begin walking along a dangerous road or into remote terrain without a known reachable refuge. In heat or cold, watch occupants closely and reassess whether the vehicle remains safe. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Protect from traffic",
-      "Do not stand in travel lanes or between vehicles. Avoid repairs beside moving traffic. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Record your exact location, stay visible without standing in traffic and conserve your phone. Do not begin walking along a dangerous road or into remote terrain without a known reachable refuge. In heat or cold, watch occupants closely and reassess whether the vehicle remains safe. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Exit choices depend on the road and surroundings; do not apply one universal rule to every breakdown. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

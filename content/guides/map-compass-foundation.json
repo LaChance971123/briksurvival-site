@@ -1,0 +1,86 @@
+{
+  "slug": "map-compass-foundation",
+  "title": "Map and compass: a practical navigation foundation",
+  "category": "field-skills",
+  "subcategory": "Navigation & shelter",
+  "content_type": "Field guide",
+  "published": "2026-10-03",
+  "updated": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "sources": "map-compass",
+  "tldr": "Learn your map, compass and route before going somewhere unfamiliar. Carry a physical map alongside electronic navigation and a way to keep the phone powered. A compass indicates direction; it cannot tell you whether terrain is passable or whether you are on the correct trail.",
+  "steps": [
+    [
+      "Use a map for the actual area",
+      "Find the route, named junctions, access points and likely exit options. Check local route conditions before setting out."
+    ],
+    [
+      "Learn the tools before relying on them",
+      "Practice with your map and compass in a familiar place. Check how your device displays location and which maps remain accessible without reception."
+    ],
+    [
+      "Keep an independent backup",
+      "Carry a physical map and suitable phone power. Protect both against rain and accidental loss."
+    ],
+    [
+      "Leave a trip plan",
+      "Tell a trusted person where you are going and when to expect you back. Agree what they should do if you miss the check-in."
+    ]
+  ],
+  "sections": [
+    [
+      "A simple route card",
+      "Editorial fields: start, intended route, obvious junctions, turnaround point, expected return and alternate exit. Use landmarks you can recognize on the ground. Keep the first practice route short and familiar so a mistaken turn is easy to notice and correct."
+    ],
+    [
+      "A compass is one part of the decision",
+      "Practice with qualified instruction for bearings, map orientation and local magnetic declination before relying on those techniques. Do not choose a straight-line shortcut merely because the compass points that way. Rivers, cliffs, private land and weather can make a direction unusable."
+    ],
+    [
+      "Practice a failed-phone scenario",
+      "On a familiar safe route, compare the physical map with known junctions while keeping the phone available for real emergencies. Can everyone identify the start, return route and turnaround point? Stop the exercise if you become unsure of your position."
+    ]
+  ],
+  "without_help": "When navigation becomes uncertain, stop making the situation worse. Reassess your known location, daylight, weather and group needs. Use the lost-outdoors guide rather than walking on a guess.",
+  "household": "Match distance, pace and turnaround time to the slowest group member. Share the intended route and keep the group together at junctions so one person’s navigation error does not separate everyone.",
+  "pack_now": "Area map, familiar compass, phone and power, trip-contact details and weather-appropriate supplies.",
+  "next": "Choose a safe introductory navigation session and a short familiar practice walk. Expand only when you can explain your route and backup without relying on one screen.",
+  "watch": "Electronic location can be inaccurate or unavailable. A bearing does not establish a safe crossing, legal access or a clear path through unfamiliar terrain.",
+  "faqs": [
+    [
+      "Will a compass work without mobile reception?",
+      "A conventional magnetic compass does not need reception, but you still need the right map, a known position and the skills to interpret them."
+    ]
+  ],
+  "decisions": [
+    [
+      "You cannot identify your position?",
+      "Stop and reassess rather than inventing a route."
+    ],
+    [
+      "The planned terrain is unsafe?",
+      "Use the turnaround or alternate plan."
+    ]
+  ],
+  "related": [
+    "offline-maps",
+    "lost-outdoors",
+    "outdoor-trip-plan"
+  ],
+  "aliases": [
+    "map and compass",
+    "navigation basics",
+    "paper map",
+    "compass beginner"
+  ],
+  "keywords": [
+    "map and compass",
+    "navigation basics",
+    "paper map",
+    "compass beginner"
+  ],
+  "scope": "Civilian guidance using the linked U.S. reference. Local conditions and services differ. Household planning examples are Osprey Zero editorial suggestions; this is not a live alert or specialist certification."
+}

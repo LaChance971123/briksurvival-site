@@ -35,7 +35,7 @@
   "category": "evacuation-shelter",
   "subcategory": "Family reunification",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "missing family",
     "separated child",
@@ -54,20 +54,7 @@
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
-  "decisions": [
-    [
-      "First decision: Record facts",
-      "Write the last confirmed contact, location, time, description and medical needs. Distinguish what you know from rumours. Keep a recent photo privately if available. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "If networks fail, follow the written reunion plan only where safe and leave a message with the agreed trusted contact. Keep your own location predictable rather than repeatedly moving between unsafe places. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Scammers may demand money or identity documents. Do not post full identity numbers, sensitive addresses or real-time movements publicly. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",

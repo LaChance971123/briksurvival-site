@@ -28,7 +28,7 @@
   "category": "conflict",
   "subcategory": "Civil disruption",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "martial law"
   ],
@@ -40,20 +40,7 @@
   "without_help": "Avoid confrontation and plan essential travel conservatively. An order does not guarantee that a checkpoint or transport corridor is safe. Where authorities are implicated in abuse, seek trusted local legal or humanitarian support when doing so will not increase your exposure. Do not broadcast sensitive travel plans.",
   "household": "Choose two reunion places and an out-of-area contact. Keep children with a trusted caregiver and carry a written contact card. Share sensitive addresses and travel details only with people who need them; avoid posting live locations or images of other families without consent. For this situation, brief every person on the first action: verify the announcement. Agree who will manage children, pets or mobility needs while that action happens. Do not infer blanket rules from the phrase “martial law” in a headline. Follow live safety instructions, and verify any claim about suspended rights or universal powers against the actual order and local legal advice.",
   "pack_now": "For emergency restrictions & martial law, prioritize only items needed for the first action and the fallback: Avoid confrontation and plan essential travel conservatively. An order does not guarantee that a checkpoint or transport corridor is safe. Where authorities are implicated in abuse, seek trusted local legal or humanitarian support when doing so will not increase your exposure. Do not broadcast sensitive travel plans. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [
-    [
-      "First decision: Verify the announcement",
-      "Read the original order or official alert rather than a repost. Confirm the issuing authority, jurisdiction, and effective time. Decide which person can carry this out immediately and what would prevent it in your current location. Do not delay the protective step to complete a household worksheet."
-    ],
-    [
-      "When the original plan fails",
-      "Avoid confrontation and plan essential travel conservatively. An order does not guarantee that a checkpoint or transport corridor is safe. Where authorities are implicated in abuse, seek trusted local legal or humanitarian support when doing so will not increase your exposure. Do not broadcast sensitive travel plans. Reassess the next available location or resource using the warning signs in this guide; do not assume a promised service is operating."
-    ],
-    [
-      "Before changing location",
-      "Do not infer blanket rules from the phrase “martial law” in a headline. Follow live safety instructions, and verify any claim about suspended rights or universal powers against the actual order and local legal advice. Check the actual route and the needs of the person who will have the most difficulty moving. A destination is not confirmed until access and conditions have been checked."
-    ]
-  ],
+  "decisions": [],
   "faqs": [
     [
       "What matters before collecting supplies?",
