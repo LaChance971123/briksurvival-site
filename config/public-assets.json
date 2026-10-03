@@ -22,5 +22,9 @@
   "Assets/fonts/SpaceGrotesk-OFL.txt",
   "Assets/oz-mark.webp",
   "Assets/oz-share.png",
-  "Assets/site.webmanifest"
+  "Assets/site.webmanifest",
+  "Assets/toolkit-previews/power-outage.webp",
+  "Assets/toolkit-previews/water-disruption.webp",
+  "Assets/toolkit-previews/emergency-food.webp",
+  "Assets/toolkit-previews/evacuation.webp"
 ]

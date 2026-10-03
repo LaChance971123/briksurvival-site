@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 from publication import public_pages
 ROOT=Path(__file__).resolve().parents[1]
-NAV='''<nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="/emergencies/">Get help now</a><a href="/library/">Browse subjects</a><a href="/preparedness/">Prepare</a><a href="/topics/">A–Z index</a><a href="/toolkits/">Toolkits</a><a href="/planner/">Planner</a><a class="nav-cta" href="/search/">Search</a></nav>'''
+NAV='''<nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="/emergencies/">Emergency guides</a><a href="/library/">Encyclopedia</a><a href="/toolkits/">Toolkits</a><a href="/planner/">Planner</a><a class="nav-cta" href="/search/">Search</a></nav>'''
 for p in [ROOT/'templates/shell.html',*[ROOT/name for name in sorted(public_pages(ROOT))]]:
  s=p.read_text()
  section='/'+p.relative_to(ROOT).parts[0]+'/'
@@ -21,6 +21,11 @@ for p in [ROOT/'templates/shell.html',*[ROOT/name for name in sorted(public_page
  s=s.replace('FIELD KNOWLEDGE / V1.0','CIVILIAN KNOWLEDGE / FREE ACCESS')
  s=s.replace('When an emergency is active, follow local official instructions.','Act on danger. Verify information. Plan for help to be unavailable.')
  s=re.sub(r'/(styles.css|app.js|search.js)\?v=oz\d+',lambda m:'/'+m[1]+'?v=oz7',s)
+ if '<footer' in s and 'href="/topics/"' not in s[s.index('<footer'):]:
+  s=s.replace('<a href="/resources/">Reference shelf</a>','<a href="/topics/">All topics A–Z</a><a href="/resources/">Reference shelf</a>')
+ if '<footer' in s and 'https://www.tiktok.com/@osprey_zero' not in s[s.index('<footer'):]:
+  social='<div><b>FOLLOW</b><a href="https://www.tiktok.com/@osprey_zero" target="_blank" rel="noopener noreferrer">TikTok</a><a href="https://www.instagram.com/ospreyzero/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.youtube.com/@OspreyZero" target="_blank" rel="noopener noreferrer">YouTube</a></div>'
+  s=s.replace('</a></div></div></div><div class="wrap footer-bottom">','</a></div>'+social+'</div></div><div class="wrap footer-bottom">')
  if p==ROOT/'index.html':
   s=re.sub(r'<form class="library-search hero-search".*?</form>','',s,flags=re.S)
   s=s.replace('Practical knowledge for emergencies, everyday disruptions, and the places beyond the pavement. Find what matters, understand it quickly, and keep learning.','Practical steps for individuals and families when power, water, communications or outside help fail. Find the quick answer, make a workable plan and keep the essentials offline.')
