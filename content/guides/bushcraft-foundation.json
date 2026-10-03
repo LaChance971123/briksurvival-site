@@ -1,0 +1,70 @@
+{
+  "slug": "bushcraft-foundation",
+  "title": "Bushcraft: a practical beginner’s foundation",
+  "category": "field-skills",
+  "subcategory": "Bushcraft",
+  "content_type": "Field guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "bushcraft",
+    "bushcrafting"
+  ],
+  "keywords": [
+    "Bushcraft",
+    "bushcraft",
+    "bushcrafting"
+  ],
+  "tldr": "Learn shelter, navigation, water planning and equipment care on short, supported trips. Bring reliable essentials first; practice should not depend on catching food, making fire or improvising every item.",
+  "steps": [
+    [
+      "Choose a low-consequence practice site",
+      "Use a permitted location near an easy return route. Check weather, land rules and water availability; tell someone your itinerary and return time."
+    ],
+    [
+      "Pack dependable essentials",
+      "Bring navigation, a headlamp, insulation, weather protection, water, food, first aid and a shelter appropriate to conditions. Tools complement these supplies."
+    ],
+    [
+      "Practice one skill at a time",
+      "Pitch a shelter, organize a dry sleeping system or locate yourself on a map before adding complications. Practice before dark with enough time to stop."
+    ],
+    [
+      "Leave a clean site",
+      "Use existing durable sites where permitted. Carry out waste and follow local rules for fires, wood collection and wildlife protection."
+    ]
+  ],
+  "sections": [
+    [
+      "Choose skills with immediate value",
+      "A tarp pitched securely, dry clothing and a known route home usually offer more value than dramatic survival experiments. Test your equipment with the people who will use it. Record what failed: a cord too short, wet insulation, a leaking bottle, an unreachable headlamp or an overly heavy pack."
+    ],
+    [
+      "Food, water and fire boundaries",
+      "Bring food rather than relying on hunting or foraging. Clear water is not automatically safe. A filter must match the contamination hazard and its instructions; chemical contamination can require another source. Treat fire as optional: restrictions, wind, wet conditions and fuel availability may prevent safe use. Do not build a trip plan around a fire you may be unable or prohibited to light."
+    ]
+  ],
+  "without_help": "Use the equipment and safe route you brought. Turn back early if conditions exceed your ability, your group is tiring or essential equipment fails. If lost, stop and use the lost-outdoors plan rather than experimenting with shortcuts.",
+  "household": "Choose distance and terrain for the least mobile person. Include individual medicines, warm layers and snacks. Give every person a light, whistle and simple instructions for separation.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Run a daylight shelter-and-packing session close to home. Finish with a gear check and a written lesson learned.",
+  "watch": "No eating unidentified plants, unsafe knife experiments, destructive shelters or unsupervised fire practice. Outdoor skills require hands-on training and judgment.",
+  "sources": "outdoor-skills",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "tarp-shelter",
+    "outdoor-trip-plan",
+    "lost-outdoors"
+  ]
+}

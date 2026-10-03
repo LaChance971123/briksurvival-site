@@ -1,0 +1,70 @@
+{
+  "slug": "preparedness-shopping-plan",
+  "title": "Preparedness shopping: buy usable essentials first",
+  "category": "preparedness",
+  "subcategory": "Kits & supplies",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "shopping list",
+    "budget prepping"
+  ],
+  "keywords": [
+    "Kits & supplies",
+    "shopping list",
+    "budget prepping"
+  ],
+  "tldr": "Buy against a specific household gap, not a dramatic product list. Start with usable water storage, familiar shelf-stable food, reliable lighting, essential care arrangements and the equipment needed to leave safely.",
+  "steps": [
+    [
+      "Inventory before buying",
+      "Check existing supplies, dates, working lights, charging cables and containers. Avoid buying duplicates while an essential need remains unsupported."
+    ],
+    [
+      "Write the requirement",
+      "State who needs the item, what job it performs, where it will be stored and how it will be maintained."
+    ],
+    [
+      "Compare total cost",
+      "Include batteries, replacement filters, consumables, subscriptions and training. A cheap device can be expensive to keep usable."
+    ],
+    [
+      "Buy in affordable stages",
+      "Complete one priority gap at a time and test the item. Choose food the household uses and rotate it into ordinary meals."
+    ]
+  ],
+  "sections": [
+    [
+      "A practical starter list",
+      "Suitable food-grade water containers; familiar ready-to-eat foods; a manual opener if needed; a flashlight or headlamp; appropriate batteries; a compatible phone power bank and cables; basic hygiene supplies; a document pouch; and a portable bag that can actually be carried. Quantities depend on the household and intended duration."
+    ],
+    [
+      "Read the product limits",
+      "Check the exact manual and intended use. Filters may not address chemical hazards, radios may require certification or licensing, and portable power may not support your equipment. Do not buy based only on a label such as tactical, emergency or military-grade."
+    ]
+  ],
+  "without_help": "Use free planning steps and ordinary supplies already available. If the budget cannot cover every gap, prioritize the most immediate essential and arrange a realistic backup destination or helper.",
+  "household": "Include allergies, medicine arrangements, infants, pets and accessibility. Buying a one-size kit can leave those needs unsupported.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Create a five-item priority list with quantities, intended use and continuing costs, then test the first purchase.",
+  "watch": "No shopping list makes a household ready by itself. Avoid unsafe fuel storage or equipment you cannot lawfully or competently use.",
+  "sources": "group-planning",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "budget-preparedness",
+    "preparedness-inventory",
+    "72-hour-kit"
+  ]
+}

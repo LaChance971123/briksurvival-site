@@ -1,0 +1,70 @@
+{
+  "slug": "bushcraft-no-fire",
+  "title": "No-fire bushcraft: warmth, food and shelter alternatives",
+  "category": "field-skills",
+  "subcategory": "Bushcraft",
+  "content_type": "Field guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "campfire alternative",
+    "fireless survival"
+  ],
+  "keywords": [
+    "Bushcraft",
+    "campfire alternative",
+    "fireless survival"
+  ],
+  "tldr": "Plan a trip that remains safe without a fire. Shelter, insulation, ready-to-eat food, lighting and early return options are more dependable than assuming you can light a campfire in any conditions.",
+  "steps": [
+    [
+      "Pack warmth directly",
+      "Carry layers, rain protection, a suitable sleeping system and ground insulation. Keep a protected dry set for rest."
+    ],
+    [
+      "Bring food you can eat as carried",
+      "Choose familiar shelf-stable meals and snacks that do not require heat or large quantities of water. Include utensils and any required opener."
+    ],
+    [
+      "Bring reliable light",
+      "Use a headlamp and appropriate spare power. Avoid relying on burning material for navigation or campsite work."
+    ],
+    [
+      "Respect restrictions",
+      "Check current land rules and conditions before travel. If fire is prohibited or cannot be controlled, do not light one."
+    ]
+  ],
+  "sections": [
+    [
+      "A fire-independent campsite",
+      "Pitch shelter before dark, protect insulation, keep food organized and choose a site away from runoff and overhead hazards. Give each person their own light so a shared lamp does not leave someone unable to move safely. Arrange the campsite so critical equipment can be found in the dark."
+    ],
+    [
+      "Cold conditions need honest limits",
+      "Food and exercise do not compensate for inadequate sleeping insulation or severe wet exposure. A cold-weather trip requires equipment and experience suited to conditions. Turn back or reach a safer shelter early if the system is insufficient; do not keep pushing because a hoped-for fire might fix it later."
+    ]
+  ],
+  "without_help": "Use dry insulation and shelter you already have, reduce unnecessary exposure and choose the safe return plan. Do not search for fuel through dangerous terrain or use a cooking appliance inside a shelter.",
+  "household": "Include ready-to-eat food that suits allergies, chewing needs and children’s preferences. Check that everyone has a light and can access their warm clothing.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Prepare a no-fire meal and shelter routine during a short daylight practice session close to home.",
+  "watch": "Never use charcoal, fuel-burning heaters or stoves inside tents or improvised enclosed shelters. A campfire is not an essential-care or overnight heating guarantee.",
+  "sources": "outdoor-skills",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "tarp-shelter",
+    "bushcraft-foundation",
+    "food-without-cooking"
+  ]
+}

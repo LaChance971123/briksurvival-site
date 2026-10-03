@@ -1,0 +1,69 @@
+{
+  "slug": "survival-signaling",
+  "title": "Civilian distress signaling and location information",
+  "category": "field-skills",
+  "subcategory": "Survival priorities",
+  "content_type": "Field guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "distress signal",
+    "rescue signal"
+  ],
+  "keywords": [
+    "Survival priorities",
+    "distress signal",
+    "rescue signal"
+  ],
+  "tldr": "Be easy to locate without creating a new hazard. Carry a whistle, light and suitable communications equipment, know your position, and keep signals distinct from routine activity.",
+  "steps": [
+    [
+      "Prepare location information",
+      "Know how your map or device displays coordinates and the location format. Include trail, landmark, access point and number of people in a request for help."
+    ],
+    [
+      "Use a safe visible position",
+      "Stay away from floodwater, unstable edges and overhead hazards. Move only as needed to reach immediate safety; do not roam simply to find a better signal."
+    ],
+    [
+      "Use equipment deliberately",
+      "A whistle and light can attract attention without sustained shouting. Follow any signaling device’s instructions and local response guidance. Never point lasers at aircraft."
+    ],
+    [
+      "Conserve and communicate",
+      "Keep messages brief and specific. Preserve enough battery for follow-up and state whether you can remain at the reported position."
+    ]
+  ],
+  "sections": [
+    [
+      "Build a usable distress message",
+      "Practice saying: our location, what happened, how many people, immediate hazards, urgent needs and how to contact us. Read coordinates carefully and confirm the receiver understands them. A pin dropped on a map is useful only if it can be transmitted and opened by the recipient."
+    ],
+    [
+      "Equipment has limits",
+      "Satellite messengers and personal locator beacons have different subscriptions, activation procedures and capabilities. Learn the exact device before carrying it. Do not assume every device supports two-way replies or operates under tree cover, indoors or with a depleted battery. A whistle is inexpensive but cannot guarantee anyone is within hearing range."
+    ]
+  ],
+  "without_help": "Use the trip plan and remain at a safe known location if lost. Continue safe signaling without exhausting yourself or starting a fire that could escape control.",
+  "household": "Give every person their own whistle and light when appropriate. Teach children what the agreed signal means and how to respond without walking toward unknown voices.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Practice reading your location aloud and checking a device battery. Test routine functions rather than triggering an emergency alert.",
+  "watch": "No signal guarantees timely rescue. Avoid unsafe climbs, roadside exposure, uncontrolled smoke or interference with aircraft.",
+  "sources": "outdoor-skills",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "outdoor-trip-plan",
+    "lost-outdoors"
+  ]
+}

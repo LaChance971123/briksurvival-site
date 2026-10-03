@@ -4,7 +4,7 @@
   "category": "preparedness",
   "subcategory": "Planning",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "family plan",
     "emergency plan"
@@ -54,5 +54,15 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Turn decisions into a one-page routine",
+      "For each likely local hazard write the first action, who decides, where to meet, transport options and a backup contact. Separate a near-home meeting point from an outside-area destination. Give everyone usable copies, including a person who cannot use the household’s phone app."
+    ],
+    [
+      "Plan when the usual helper is absent",
+      "List a backup for school collection, dependent care, driving and essential equipment. Confirm permission and availability in advance. Test the plan during ordinary work hours as well as at night: a plan that needs every adult home at once is fragile."
+    ]
+  ]
 }

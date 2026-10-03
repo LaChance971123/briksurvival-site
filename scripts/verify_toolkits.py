@@ -47,22 +47,22 @@ with tempfile.TemporaryDirectory() as directory:
     reject(candidate)
     topic = copy.deepcopy(baseline['products'][0])
     topic.update(id='qa-topic', slug='qa-topic', kind='topic', status='ready', title='QA topic',
-                 guide_slugs=['power-outage'], price=2.99, edition='1.0',
+                 guide_slugs=['earthquake'], included_product_ids=[], price=2.99, edition='1.0',
                  payhip_product_id='QA123', checkout_url='https://payhip.com/buy?link=QA123', delivery_verified=True)
     valid = copy.deepcopy(baseline)
     valid['products'].append(topic)
     write(valid)
     result = load_catalog(fixture)
-    assert 'data-payhip-checkout' in purchase_control(result['products'][1])
-    guide = json.loads((ROOT / 'content/guides/power-outage.json').read_text())
+    assert 'data-payhip-checkout' in purchase_control(result['products'][-1])
+    guide = json.loads((ROOT / 'content/guides/earthquake.json').read_text())
     assert '/toolkits/qa-topic/' in guide_cta(guide, result)
     for bad_url in ['https://payhip.com.evil.invalid/buy?link=QA123', 'http://payhip.com/buy?link=QA123',
                     'https://payhip.com/buy?link=OTHER', 'javascript:alert(1)', '/downloads/paid.pdf']:
         candidate = copy.deepcopy(valid)
-        candidate['products'][1]['checkout_url'] = bad_url
+        candidate['products'][-1]['checkout_url'] = bad_url
         reject(candidate)
     candidate = copy.deepcopy(valid)
-    candidate['products'][1]['delivery_verified'] = False
+    candidate['products'][-1]['delivery_verified'] = False
     reject(candidate)
     candidate = copy.deepcopy(valid)
     collection = candidate['products'][0]
@@ -71,7 +71,7 @@ with tempfile.TemporaryDirectory() as directory:
                       included_product_ids=['qa-topic'])
     write(candidate)
     load_catalog(fixture)
-    candidate['products'][1].update(status='planned', payhip_product_id=None, checkout_url=None, delivery_verified=False)
+    candidate['products'][-1].update(status='planned', payhip_product_id=None, checkout_url=None, delivery_verified=False)
     reject(candidate)
 
     write(baseline)

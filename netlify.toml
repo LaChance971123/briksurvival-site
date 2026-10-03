@@ -100,3 +100,14 @@
   for = "/search-index.json"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/planner/app/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+    Service-Worker-Allowed = "/planner/app/"
+
+[[headers]]
+  for = "/planner/app/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"

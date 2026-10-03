@@ -4,7 +4,7 @@
   "category": "communications",
   "subcategory": "Connectivity",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "no cell service",
     "no signal",
@@ -57,5 +57,15 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Write a fallback ladder",
+      "Choose an order such as short text, another safe connection, an out-of-area contact and an agreed meeting point. Tell everyone the expected check-in window. A failed call should not cause each person to improvise a different destination."
+    ],
+    [
+      "Reduce avoidable battery use",
+      "Keep messages brief, dim the screen where practical and close unnecessary activity. Use appropriate power banks and cables. Do not climb unsafe structures or enter danger just to obtain reception; location and accountability plans should still work without service."
+    ]
+  ]
 }

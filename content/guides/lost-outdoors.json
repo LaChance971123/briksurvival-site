@@ -4,7 +4,7 @@
   "category": "field-skills",
   "subcategory": "Navigation & shelter",
   "content_type": "Field guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "lost hiking",
     "lost in woods",
@@ -71,5 +71,15 @@
   ],
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Avoid making the search area larger",
+      "Stop at a safe position, assess immediate hazards and use your last reliable map location. Stay put when lost unless the location itself is unsafe. Unplanned downhill travel, river following or shortcuts can introduce cliffs, floodwater and greater distance from your itinerary."
+    ],
+    [
+      "Make a precise help message",
+      "Report location or the last confirmed landmark, group size, injuries, weather exposure and available supplies. State if you must move for immediate safety. Use safe visible signaling and your trip contact’s overdue plan; do not exhaust yourself repeatedly shouting or searching for a phone signal."
+    ]
+  ]
 }

@@ -4,7 +4,7 @@
   "category": "preparedness",
   "subcategory": "Kits & supplies",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "3 day kit",
     "emergency supplies"
@@ -63,5 +63,15 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Separate storage from portability",
+      "A home reserve can include larger containers and comfort supplies; a departure bag must be carryable. Do not assume the whole home kit can leave with you. Label where essential portable items are stored and who carries them."
+    ],
+    [
+      "Maintain by household changes",
+      "Review medicines, clothing sizes, pet needs, care equipment, contacts and transport alongside dates on food and batteries. Test cables and lights. Three days is an initial planning target, not a guarantee that services will return by then."
+    ]
+  ]
 }

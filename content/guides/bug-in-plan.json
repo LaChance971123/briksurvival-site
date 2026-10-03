@@ -1,0 +1,72 @@
+{
+  "slug": "bug-in-plan",
+  "title": "Bug in: staying home with clear exit limits",
+  "category": "evacuation-shelter",
+  "subcategory": "Bug out & bug in",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "bug in",
+    "bugin",
+    "stay home"
+  ],
+  "keywords": [
+    "Bug out & bug in",
+    "bug in",
+    "bugin",
+    "stay home"
+  ],
+  "tldr": "Staying home can be practical while the building is safe and essential needs can be met. Set explicit limits for leaving; stored supplies do not make fire, rising water, structural damage or severe exposure safe.",
+  "steps": [
+    [
+      "Assess the building and hazard",
+      "Check fire, gas, carbon monoxide, flooding, structural damage, indoor temperature and the current warning. A general stay-home plan differs from a chemical shelter-in-place instruction."
+    ],
+    [
+      "Map essential needs",
+      "Plan drinking water, safe food, hygiene, light, communication, medications, cooling or warmth, and support for dependents. Count people and pets before estimating supply duration."
+    ],
+    [
+      "Set review points",
+      "Choose who checks conditions, supplies and messages at agreed times. Log important changes and avoid constant battery-draining news consumption."
+    ],
+    [
+      "Keep an exit ready",
+      "Keep medicines, documents, shoes, mobility aids and bags accessible. Write the conditions that would require a safer destination and how you would get there."
+    ]
+  ],
+  "sections": [
+    [
+      "A home operating plan",
+      "Choose where people sleep, prepare food safely, wash hands and charge devices. Keep routes clear and reduce unnecessary opening of a refrigerator during an outage. Use flashlights rather than unattended candles. Fuel-burning equipment belongs only where its manufacturer and safety guidance allow it; a balcony, garage or doorway does not make generator use safe."
+    ],
+    [
+      "Supply duration is only one limit",
+      "A home may remain stocked while becoming too hot, too cold or unable to support medical equipment. Water and sanitation failures can change the plan before food runs out. Track each essential separately. Decide the next safe option before the household is exhausted or dependent care becomes impossible."
+    ]
+  ],
+  "without_help": "Use a written routine and reachable support contacts. Conserve existing essentials by reducing unnecessary use, while meeting actual drinking, hygiene and care needs. If the home becomes unsafe, supplies must not be a reason to stay.",
+  "household": "Plan for a person who needs powered equipment, temperature-controlled medicine, assistance on stairs or sensory support. Identify a helper and alternative location rather than assuming the building manager can provide one.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Test a two-hour no-mains-power routine in safe conditions, keeping essential medical equipment and food safety protected.",
+  "watch": "Bugging in is not barricading yourself into a hazardous building. Keep fire exits usable and follow the protective action appropriate to the threat.",
+  "sources": "group-planning",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "long-blackout",
+    "water-storage",
+    "bug-out-plan"
+  ]
+}

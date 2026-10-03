@@ -5,11 +5,12 @@ from toolkit_catalog import load_catalog, product_route
 STATIC_PAGES = {
     'index.html', 'about/index.html', 'privacy/index.html', 'thanks/index.html', 'resources/index.html',
     '404.html', 'blackout-checklist-confirmed.html', 'retired-downloads.html',
-    'offline/index.html', 'toolkits/index.html',
+    'offline/index.html', 'toolkits/index.html', 'planner/index.html', 'planner/app/index.html',
 }
 STATIC_FILES = {
     'app.js', 'ads.js', 'search.js', 'styles.css', 'search-index.json',
     'sitemap.xml', 'robots.txt', 'sw.js', 'offline/sw.js',
+    *{'planner/app/'+name for name in ('launcher.js','launcher.css','sw.js','manifest.webmanifest','icon-180.png','icon-192.png','icon-512.png','body.woff2','display.woff2','LICENSES.txt')},
 }
 
 

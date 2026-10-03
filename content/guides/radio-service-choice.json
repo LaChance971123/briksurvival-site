@@ -1,0 +1,71 @@
+{
+  "slug": "radio-service-choice",
+  "title": "FRS, GMRS and amateur radio: choosing a household system",
+  "category": "communications",
+  "subcategory": "Two-way radios",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "FRS",
+    "GMRS",
+    "amateur radio"
+  ],
+  "keywords": [
+    "Two-way radios",
+    "FRS",
+    "GMRS",
+    "amateur radio"
+  ],
+  "tldr": "Choose radios around who needs to use them, the legal service, certification and actual tested coverage. More advertised power or a longer feature list does not guarantee better household communication.",
+  "steps": [
+    [
+      "Define the task",
+      "Decide whether you need short local check-ins, a vehicle-to-house link or a trained amateur-radio activity. Note buildings, terrain and who must operate independently."
+    ],
+    [
+      "Check service rules",
+      "For U.S. FRS use certified equipment. For GMRS verify equipment certification and license coverage. Amateur operation has separate requirements; do not confuse services because channel numbers look similar."
+    ],
+    [
+      "Test compatibility",
+      "Match channel or frequency and relevant receiving settings on lawful compatible devices. Different manufacturers’ numbering or preset lists may differ."
+    ],
+    [
+      "Budget for complete use",
+      "Include batteries, chargers, labels, training and a backup method. Spend on demonstrated coverage and usability rather than an untested range claim."
+    ]
+  ],
+  "sections": [
+    [
+      "A household choice checklist",
+      "Can every intended user operate the device lawfully? Is the hardware certified for the service? Does it work inside your building, at your meeting point and along the planned route? Can it be recharged during an outage? Are controls readable and usable with gloves or limited dexterity? Answer these before selecting a product."
+    ],
+    [
+      "Licensing is not the only constraint",
+      "A license does not authorize any radio on any service. Check equipment, channels and operating conditions separately. In U.S. GMRS, the rules specify which family members can operate under an individual’s license; do not assume unrelated friends are covered. Verify the current rule before sharing equipment."
+    ]
+  ],
+  "without_help": "Use phone texts, agreed meeting points and written check-in times if a lawful radio system is not available. If radio contact fails, follow the missed-contact plan rather than repeatedly draining batteries.",
+  "household": "Plan accessible controls and earpieces where useful. Do not put the entire household’s communications plan behind one person’s technical knowledge or license.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Borrow or buy a suitable basic system and perform a lawful coverage test at three actual locations before buying additional radios.",
+  "watch": "Radio laws and equipment approvals vary by country. Marketing range figures are not a safety guarantee.",
+  "sources": "radio-services",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "baofeng-basics",
+    "radio-check-in-plan"
+  ]
+}

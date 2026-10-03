@@ -1,0 +1,72 @@
+{
+  "slug": "radio-check-in-plan",
+  "title": "Radio check-ins, range tests and missed-contact plans",
+  "category": "communications",
+  "subcategory": "Two-way radios",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "walkie talkie",
+    "privacy codes",
+    "radio range"
+  ],
+  "keywords": [
+    "Two-way radios",
+    "walkie talkie",
+    "privacy codes",
+    "radio range"
+  ],
+  "tldr": "Agree a lawful channel, check-in times, plain-language messages and what to do when nobody answers. Test real coverage; “privacy codes” do not make conversations private.",
+  "steps": [
+    [
+      "Write the plan",
+      "Record who calls whom, the agreed lawful channel, check-in windows and the backup meeting or contact method. Keep a paper copy with each radio."
+    ],
+    [
+      "Test actual locations",
+      "Try normal indoor and outdoor positions, distances and terrain with authorized users. Mark dead spots without putting anyone in danger to improve reception."
+    ],
+    [
+      "Use short messages",
+      "Identify yourself and recipient, give location or status, then ask for confirmation. Pause so others can respond and avoid talking over a reply."
+    ],
+    [
+      "Plan a failed check-in",
+      "Use the agreed retry and backup method. A missed call may mean battery, terrain or timing problems; it is not automatically proof of an emergency."
+    ]
+  ],
+  "sections": [
+    [
+      "Receiving tones are filters",
+      "CTCSS/DCS settings can suppress audio from some other users, but they do not encrypt a conversation or reserve a channel. Others may hear you and the channel may still be occupied. Match settings for compatibility and avoid sharing sensitive medical, financial or security information over an ordinary open radio link."
+    ],
+    [
+      "Power and range routine",
+      "Keep batteries maintained according to the device instructions and have a suitable charging plan. Terrain, buildings, antenna position, interference and batteries affect coverage. Repeaters may fail or be inaccessible. An alternative check-in method is more reliable than a promise that one radio will always reach everyone."
+    ]
+  ],
+  "without_help": "Follow the agreed backup meeting and contact plan. Do not leave a safe location or climb an exposed structure merely to find signal. Keep the household informed of any safe route change.",
+  "household": "Use names and everyday words rather than complex codes. Practice with children and less technical adults in safe conditions; assign responsibility for charging and returning each radio.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Run a short lawful check-in drill, deliberately skip one call, and verify that everyone follows the agreed backup action.",
+  "watch": "Only transmit where the service rules and equipment permit. Do not treat open-channel communications as confidential.",
+  "sources": "radio-services",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "small-team-coordination",
+    "radio-service-choice",
+    "communications-outage"
+  ]
+}

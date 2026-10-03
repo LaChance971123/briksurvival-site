@@ -1,0 +1,70 @@
+{
+  "slug": "survival-priorities",
+  "title": "SERE-inspired civilian survival priorities",
+  "category": "field-skills",
+  "subcategory": "Survival priorities",
+  "content_type": "Field guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "SERE",
+    "survival priorities"
+  ],
+  "keywords": [
+    "Survival priorities",
+    "SERE",
+    "survival priorities"
+  ],
+  "tldr": "Use preparation, composure and simple priorities to prevent a bad situation from getting worse: avoid immediate hazards, stabilize your location, protect against weather, manage water, and make yourself findable.",
+  "steps": [
+    [
+      "Pause and assess",
+      "Stop unnecessary movement. Identify immediate hazards, injuries, weather exposure, available equipment, location and daylight. Do not rush into a new hazard while trying to solve the first one."
+    ],
+    [
+      "Protect against exposure",
+      "Seek a safe position and use shelter, insulation and dry layers. Prevent avoidable wetting and overheating; clothing and ground insulation matter as much as the roof."
+    ],
+    [
+      "Manage water and energy",
+      "Use the water you have sensibly and reduce unnecessary exertion. Keep enough food for delays. Do not eat unidentified plants or drink uncertain water simply because it looks natural."
+    ],
+    [
+      "Support discovery and communication",
+      "Use your known position, trip plan and safe signaling equipment. Contact help with location, situation and number of people if possible. Stay put when lost unless the site is unsafe."
+    ]
+  ],
+  "sections": [
+    [
+      "What “SERE-inspired” means here",
+      "This civilian guide uses preparation and survival decision-making, not military evasion, resistance or escape training. It is not certification and does not teach concealment from rescuers or confrontation. A civilian objective is to avoid harm, remain accountable and return to a safe place."
+    ],
+    [
+      "Priorities change with conditions",
+      "There is no universal countdown that makes a fixed survival rule correct. Cold rain, extreme heat, injury, water supply, daylight and the ability to reach safe shelter alter what matters first. Reassess after each action. A task that consumes more energy, daylight or water than it saves may be the wrong task."
+    ]
+  ],
+  "without_help": "Focus on achievable protective actions with existing equipment. Set a simple review cycle: check people, weather, water, location and signaling again after a change. Avoid separating the group or making speculative journeys.",
+  "household": "Distribute warmth, water, light and signaling equipment so that dependents can use them. Give one calm instruction at a time and check whether everyone understands it.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "At home, run a five-minute scenario: unexpected delay, cold rain and no phone service. Identify your first three safe actions using the equipment you actually own.",
+  "watch": "Survival articles cannot replace outdoor training or a suitable trip plan. Do not practice deprivation, dangerous exposure or escape scenarios to test resilience.",
+  "sources": "outdoor-skills",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "lost-outdoors",
+    "tarp-shelter",
+    "outdoor-trip-plan"
+  ]
+}

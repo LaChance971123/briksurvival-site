@@ -1,0 +1,71 @@
+{
+  "slug": "knife-tool-safety",
+  "title": "Knives, saws and hand tools: useful skills, safe limits",
+  "category": "firearms-tools",
+  "subcategory": "Tools & training",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "knife",
+    "weapons safety",
+    "tools"
+  ],
+  "keywords": [
+    "Tools & training",
+    "knife",
+    "weapons safety",
+    "tools"
+  ],
+  "tldr": "Choose tools for a defined task, learn their instructions and keep cutting work separate from people. Tools are part of practical preparedness; they should not add avoidable injuries or become improvised weapons.",
+  "steps": [
+    [
+      "Choose the task and tool",
+      "Use a purpose-made tool of manageable size. Check handles, guards, locking mechanisms and condition; retire damaged equipment rather than relying on tape to restore safety."
+    ],
+    [
+      "Set a controlled work area",
+      "Use stable footing, adequate light and a secure work surface. Keep other people away from the working area and stop when distracted or fatigued."
+    ],
+    [
+      "Carry and store safely",
+      "Use the correct sheath or guard. Secure tools during transport and keep them inaccessible to children. Do not leave blades loose in bags."
+    ],
+    [
+      "Learn with supervision",
+      "Get practical instruction for the actual task. Practice on suitable material in safe conditions before taking a tool on a trip."
+    ]
+  ],
+  "sections": [
+    [
+      "A compact repair kit",
+      "Start with the tools needed to maintain your existing equipment: suitable fasteners, manufacturer-approved repair materials, a small screwdriver set and a practical cutting tool if trained to use it. A larger blade or axe is not automatically more useful. Carrying weight, skill, permitted use and injury consequences all matter."
+    ],
+    [
+      "Protect the whole work session",
+      "Check what is behind or under the material, who can enter the area and how a tool will be put down safely. Gloves may help for an appropriate task but do not make poor technique safe. Never improvise load-bearing repairs, cut live electrical equipment or use a tool in a way the manufacturer prohibits."
+    ]
+  ],
+  "without_help": "Stop the job if adequate light, footing or competent instruction is unavailable. Use a simpler existing solution or arrange qualified help; finishing a repair is not worth an avoidable serious injury.",
+  "household": "Keep tools away from shared food and children’s bags. Choose accessible handles and suitable task roles rather than assuming everyone can safely use the same tool.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Inspect a small tool kit, identify one damaged item and arrange a supervised lesson for one useful task.",
+  "watch": "This guide does not cover combat use, weapon construction, traps or hazardous field surgery. Specific cutting techniques need practical instruction.",
+  "sources": "outdoor-skills",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "bushcraft-foundation",
+    "severe-bleeding"
+  ]
+}

@@ -7,7 +7,7 @@ function fixture(path) {
  vm.runInNewContext(code,context);
  return {scripts,root,events,rerun:()=>vm.runInNewContext(code,{...context})};
 }
-for(const p of ['/','/index.html','/index','/indexv3.html','/search/','/search/index.html','/emergencies/','/emergencies/tornado/','/emergencies/cpr/index.html','/emergencies/armed-conflict/','/emergencies/returning-home/','/privacy/','/thanks/','/toolkits/','/toolkits/complete-toolkit/','/offline/','/retired-downloads.html','/unknown']) assert.equal(fixture(p).scripts.length,0,p);
+for(const p of ['/','/index.html','/index','/indexv3.html','/search/','/search/index.html','/emergencies/','/emergencies/tornado/','/emergencies/cpr/index.html','/emergencies/armed-conflict/','/emergencies/returning-home/','/privacy/','/thanks/','/toolkits/','/toolkits/complete-toolkit/','/offline/','/retired-downloads.html','/unknown','/planner/','/planner/app/','/planner/app/index.html']) assert.equal(fixture(p).scripts.length,0,p);
 for(const p of ['/library/','/library/index.html','/library/conflict/','/preparedness/go-bag/','/preparedness/','/guides/','/guides/water-purification/index.html','/topics/','/resources/','/about/','/emergencies/disaster-scams/','/emergencies/verify-information/index.html']) {
  const x=fixture(p),base=p.replace(/\/index\.html$/,'').replace(/\/$/,'');
  const hub=['/library','/preparedness','/topics','/resources','/about'].includes(base);

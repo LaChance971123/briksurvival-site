@@ -29,7 +29,7 @@
   "category": "evacuation-shelter",
   "subcategory": "Evacuation",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "need to leave home"
   ],
@@ -55,5 +55,15 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Confirm where you will arrive",
+      "A destination needs actual acceptance, transport, access, pet arrangements and essential care support. Have an alternate outside the affected area where feasible. Record addresses and contacts on paper; a map app can fail when reception, power or roads change."
+    ],
+    [
+      "Make a change-of-plan message",
+      "Agree who tells the outside contact the new destination and route. Include departure time, people present and the next check-in. Never delay leaving immediate danger to send the perfect message, retrieve optional supplies or secure every possession."
+    ]
+  ]
 }

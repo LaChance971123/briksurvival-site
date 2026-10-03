@@ -1,0 +1,72 @@
+{
+  "slug": "emergency-contact-plan",
+  "title": "Emergency contacts, meeting points and household cards",
+  "category": "preparedness",
+  "subcategory": "Documents & support",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-03",
+  "published": "2026-10-03",
+  "source_checked": "2026-10-03",
+  "next_review": "2027-04-03",
+  "aliases": [
+    "phone numbers",
+    "contact cards",
+    "emergency contacts"
+  ],
+  "keywords": [
+    "Documents & support",
+    "phone numbers",
+    "contact cards",
+    "emergency contacts"
+  ],
+  "tldr": "Keep a small, current contact plan that works without your phone. Include trusted people, meeting points and essential support contacts, while protecting private information.",
+  "steps": [
+    [
+      "Choose an outside-area contact",
+      "Ask a trusted person to help relay status if local calls fail. Confirm what information they should collect and share."
+    ],
+    [
+      "Record reachable support",
+      "Include household members, caregivers, schools where relevant, veterinary support and essential service contacts. Use current local numbers rather than assuming one number works everywhere."
+    ],
+    [
+      "Choose two meeting arrangements",
+      "Name a nearby location for an ordinary separation and an outside-area destination for a wider event. Confirm access and acceptance."
+    ],
+    [
+      "Make usable copies",
+      "Keep a paper card with each person and a protected home copy. Update numbers and care details after a change."
+    ]
+  ],
+  "sections": [
+    [
+      "A card should stay small",
+      "Record name, trusted contact, meeting point and a few essential support details. Avoid putting full identity documents, access codes, firearm storage locations or detailed medical histories on a card that can be lost. Keep sensitive supporting documents separately with controlled access."
+    ],
+    [
+      "Practice a status message",
+      "Use a simple format: safe or needing help, current location, who is present, planned destination and next check-in. An outside contact can relay a consistent message so several household members do not spend battery repeating long calls. Avoid posting private locations publicly."
+    ]
+  ],
+  "without_help": "Use the agreed meeting plan and written numbers. If calls fail, short texts may be more practical when service becomes available; neither is guaranteed. Do not enter danger to retrieve a phone or make a call.",
+  "household": "Provide large print, relevant languages or accessible formats. Children need age-appropriate instructions and an adult helper; a card does not replace supervision.",
+  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "next": "Call or message your chosen contact during ordinary conditions, confirm their role, and replace one outdated number.",
+  "watch": "A listed contact may be unavailable. Verify destination and care arrangements in advance and keep alternatives.",
+  "sources": "group-planning",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [
+    [
+      "Is buying equipment enough?",
+      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+    ]
+  ],
+  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "related": [
+    "family-reunification",
+    "communications-outage",
+    "household-emergency-plan"
+  ]
+}

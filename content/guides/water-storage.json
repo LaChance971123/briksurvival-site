@@ -4,7 +4,7 @@
   "category": "preparedness",
   "subcategory": "Water & food",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "aliases": [
     "how much water should i store",
     "stored water"
@@ -75,5 +75,15 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "sections": [
+    [
+      "Count needs before containers",
+      "Plan at least one gallon per person per day for drinking and basic sanitation, with additional water for heat, pregnancy, illness and other needs. Add pets and any equipment requirements. A three-day supply is a starting point; expand within safe space and budget rather than promising that a fixed amount covers every household."
+    ],
+    [
+      "Keep a rotation record",
+      "Use suitable food-grade containers and follow CDC cleaning and filling guidance. Label filled containers and avoid heat, direct sunlight and chemicals. Replace self-filled stored water every six months; follow commercially bottled water labeling. Practice pouring without contaminating the container or sharing a drinking utensil."
+    ]
+  ]
 }
