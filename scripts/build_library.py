@@ -59,7 +59,16 @@ for g in GUIDES:
  words=len(section_text({k:g.get(k,[]) for k in ('tldr','steps','sections','faqs','decisions','next','watch','without_help','household','pack_now')}).split())
  read_minutes=max(1,(words+199)//200)
  context=('Use this page to build and practice a household plan before disruption. Match decisions to your actual people, equipment and location; this page is not a live alert.' if g.get('urgency')=='planning' else 'Act on immediate danger. Seek qualified help when reachable and safe, but do not make your first protective step depend on a response. This page is general guidance, not a live alert.')
- action_label='Build your plan' if g.get('urgency')=='planning' else 'Do now'
+ action_label=g.get('action_label', 'Build your plan' if g.get('urgency')=='planning' else 'Do now')
+ context=g.get('intro_note', context)
+ fallback_heading=g.get('fallback_heading','If help is unavailable')
+ household_heading=g.get('household_heading','People & practical needs')
+ pack_heading=g.get('pack_heading','Keep essentials within reach')
+ fallback_kicker='' if g.get('equipment_layout') else '<p class="kicker">PLAN AROUND WHAT YOU HAVE</p>'
+ review_suffix='' if g.get('equipment_layout') else ' Verify changing conditions through sources safe for you to contact.'
+ next_heading=g.get('next_heading','Next steps')
+ watch_heading=g.get('watch_heading','Watch for')
+ source_context=g.get('source_context','Osprey Zero combines source-based protective guidance with practical household planning. References provide context, not a promise of assistance. Some standards are U.S.-based; local risks, laws and services differ.')
  steps=''.join(f'<li><span class="step-num">{n:02}</span><div><h3>{e(h)}</h3><p>{e(p)}</p></div></li>' for n,(h,p) in enumerate(g['steps'],1))
  decisions=''.join(f'<div class="decision-card"><h3>{e(h)}</h3><p>{e(p)}</p></div>' for h,p in g.get('decisions',[]))
  faq_link='<a href="#questions">Common questions</a>' if g.get('faqs') else ''
@@ -110,17 +119,17 @@ for g in GUIDES:
  <div class="guide-meta"><span>UPDATED {g['updated']}</span><span>FREE ONLINE GUIDE</span><span>{read_minutes} MIN READ</span></div>
  <div class="guide-actions"><button type="button" data-save-guide aria-pressed="false" hidden>Save to reading list</button><a href="/reading-list/">My reading list</a><button type="button" data-share-guide hidden>Copy guide link</button><span data-guide-status role="status" aria-live="polite"></span></div>
  <div class="guide-alert"><span>!</span><p>{e(context)}</p></div>
- <details class="guide-toc"><summary>On this page</summary><nav class="guide-jumps" aria-label="Skip to a section"><a href="#do-now">{action_label}</a>{detail_links}<a href="#without-help">Without help</a><a href="#household">Family plan</a><a href="#next">Next</a><a href="#watch">Watch for</a>{faq_link}<a href="#sources">Sources</a></nav></details>
+ <details class="guide-toc"><summary>On this page</summary><nav class="guide-jumps" aria-label="Skip to a section"><a href="#do-now">{action_label}</a>{detail_links}<a href="#without-help">{e(fallback_heading)}</a><a href="#household">{e(household_heading)}</a><a href="#next">{e(next_heading)}</a><a href="#watch">{e(watch_heading)}</a>{faq_link}<a href="#sources">Sources</a></nav></details>
  <section class="guide-section" id="do-now"><h2>{action_label}.</h2><ol class="action-list">{steps}</ol></section>
  {diagram(g.get('diagram'))}
  {sections}
- <section class="guide-section no-help-panel" id="without-help"><p class="kicker">PLAN AROUND WHAT YOU HAVE</p><h2>If help is unavailable.</h2><p>{e(g['without_help'])}</p></section>
- <section class="guide-section" id="household"><h2>People & practical needs.</h2><p>{e(g['household'])}</p><details class="pack-details"><summary>Keep essentials within reach</summary><p>{e(g['pack_now'])}</p></details></section>
- <section class="guide-section" id="next"><h2>Next steps.</h2><p>{e(g['next'])}</p><div class="decision-grid">{decisions}</div></section>
+ <section class="guide-section no-help-panel" id="without-help">{fallback_kicker}<h2>{e(fallback_heading)}.</h2><p>{e(g['without_help'])}</p></section>
+ <section class="guide-section" id="household"><h2>{e(household_heading)}.</h2><p>{e(g['household'])}</p><details class="pack-details"><summary>{e(pack_heading)}</summary><p>{e(g['pack_now'])}</p></details></section>
+ <section class="guide-section" id="next"><h2>{e(next_heading)}.</h2><p>{e(g['next'])}</p><div class="decision-grid">{decisions}</div></section>
  {faq_section}
- <section class="guide-section guide-caution" id="watch"><h2>Watch for.</h2><p>{e(g['watch'])}</p></section>
- <section class="guide-section guide-sources" id="sources"><h2>Sources & context.</h2><p>Osprey Zero combines source-based protective guidance with practical household planning. References provide context, not a promise of assistance. Some standards are U.S.-based; local risks, laws and services differ.</p><ul>{sources}</ul><p>Updated {g['updated']}. {'First-aid summaries support immediate response and training; they have not received independent clinical review.' if g['category']=='medical' else 'Editorially reviewed against linked references; not independently certified by a subject-matter expert. Verify changing conditions through sources safe for you to contact.'}</p></section></div>
- <aside class="guide-rail" aria-label="Guide contents"><div class="rail-panel"><span>FIND IT FAST</span><a href="#quick-answer">Quick answer</a><a href="#do-now">{action_label}</a>{detail_links}<a href="#without-help">If help is unavailable</a><a href="#household">People & practical needs</a><a href="#next">Next steps</a><a href="#watch">Watch for</a>{faq_link}<a href="#sources">Sources</a><a href="#quick-answer" class="rail-back">↑ Back to quick answer</a><a href="/search/">Search another situation</a></div></aside></article>
+ <section class="guide-section guide-caution" id="watch"><h2>{e(watch_heading)}.</h2><p>{e(g['watch'])}</p></section>
+ <section class="guide-section guide-sources" id="sources"><h2>Sources & context.</h2><p>{e(source_context)}</p><ul>{sources}</ul><p>Updated {g['updated']}. {'First-aid summaries support immediate response and training; they have not received independent clinical review.' if g['category']=='medical' else 'Editorially reviewed against linked references; not independently certified by a subject-matter expert.'+review_suffix}</p></section></div>
+ <aside class="guide-rail" aria-label="Guide contents"><div class="rail-panel"><span>FIND IT FAST</span><a href="#quick-answer">Quick answer</a><a href="#do-now">{action_label}</a>{detail_links}<a href="#without-help">{e(fallback_heading)}</a><a href="#household">{e(household_heading)}</a><a href="#next">{e(next_heading)}</a><a href="#watch">{e(watch_heading)}</a>{faq_link}<a href="#sources">Sources</a><a href="#quick-answer" class="rail-back">↑ Back to quick answer</a><a href="/search/">Search another situation</a></div></aside></article>
  {guide_cta(g,CATALOG)}
  <section class="wrap guide-end"><h2>Related guidance.</h2><div class="related-links">{links}</div></section></main>'''
  page(url,g['title'],g['tldr'],main)

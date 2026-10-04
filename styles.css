@@ -196,6 +196,13 @@ body{font-synthesis:none}
 .guide-table tbody tr:last-child>*{border-bottom:0}
 .guide-table tbody tr:nth-child(even){background:#222625}
 .guide-process{margin:1.75rem 0;padding:1.4rem;border:1px solid #444a48;border-radius:14px;background:linear-gradient(135deg,#272c2a,#1b1f1f)}
+.guide-illustration{margin:1.75rem 0;padding:1.2rem;border:1px solid #444a48;border-radius:14px;background:#1b2220}
+.guide-illustration figcaption{font-family:"Space Grotesk",sans-serif;font-size:1.2rem;font-weight:600;color:#f2eee6}
+.guide-illustration svg{display:block;width:100%;max-width:640px;height:auto;margin:.8rem auto;color:#e9eee8}
+.guide-illustration svg text{font-family:Arial,sans-serif;font-size:19px;fill:currentColor}
+.guide-illustration svg .svg-small{font-size:16px}
+.guide-illustration .guide-visual-note{font-size:.85rem;line-height:1.6;color:#b4bab4}
+@media(max-width:500px){.guide-illustration{padding:.8rem}.guide-illustration svg text{font-size:20px}}
 .guide-process>figcaption{font-family:"Space Grotesk",sans-serif;color:#f2eee6;font-size:1.25rem;font-weight:600;margin-bottom:1.2rem}
 .guide-process>ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
 .guide-process li{position:relative;padding:1rem;background:#151b1b;border:1px solid #3d4642;border-radius:10px}

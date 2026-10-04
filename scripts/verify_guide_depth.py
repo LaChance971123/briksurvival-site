@@ -29,12 +29,17 @@ for file in (ROOT / 'content/guides').glob('*.json'):
             if block['type'] == 'table':
                 for row in block['rows']:
                     assert all(cell in entry['text'] for cell in row), (file, 'unsearchable table')
+            if block['type'] == 'illustration':
+                assert block['caption'] in entry['text'] and block['description'] in entry['text'], file
     for table in d.xpath('//table[@class="guide-table"]'):
         assert table.xpath('./caption') and table.xpath('./thead/tr/th[@scope="col"]'), file
         assert all(row.xpath('./th[@scope="row"]') for row in table.xpath('./tbody/tr')), file
         assert table.getparent().get('tabindex') == '0', file
     for figure in d.xpath('//figure[@class="guide-process"]'):
         assert figure.xpath('./figcaption') and figure.xpath('./ol/li/h3'), file
+    for figure in d.xpath('//figure[@class="guide-illustration"]'):
+        assert figure.xpath('./figcaption') and figure.xpath('./svg[@role="img"]'), file
+        assert figure.xpath('./svg/title') and figure.xpath('./svg/desc'), file
     assert d.xpath('//*[@id="quick-answer"]') and d.xpath('//*[@id="do-now"]'), file
     # Substantial useful detail must exist in the body, not only repeated header/sidebar text.
     assert len(text(sections).split()) >= 900, (file, 'insufficient detail')

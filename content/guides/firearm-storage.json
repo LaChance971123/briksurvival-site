@@ -1,59 +1,323 @@
 {
   "slug": "firearm-storage",
-  "title": "Secure firearm storage and emergency relocation",
+  "title": "Firearm storage: locks, safes and household access",
   "category": "firearms-tools",
   "subcategory": "Secure storage",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-04",
+  "next_review": "2027-01-04",
   "aliases": [],
   "keywords": [
     "Secure storage"
   ],
-  "tldr": "Secure unloaded firearms with a storage system suited to the household, and lock ammunition separately. Plan how lawful storage will continue during evacuation, visitors or displacement.",
+  "tldr": "Choose storage for three separate jobs: prevent unauthorized access, resist theft and protect condition. A cable lock, lockbox, cabinet and safe offer different levels of protection. Compare independent ratings, installation, humidity and backup access; a heavy enclosure or “fireproof” label is not a complete storage plan.",
   "steps": [
     [
-      "Assess who could gain access",
-      "Include children, guests, contractors, unauthorized adults and people at risk of self-harm. A hidden drawer is not secure storage."
+      "Define the access risks",
+      "Account for children, visitors, burglary risk, shared housing and changing household circumstances."
     ],
     [
-      "Choose and install a storage system",
-      "Compare lockboxes, safes and locking devices appropriate to the firearm and manufacturer’s instructions. Consider authorized access, resistance to removal and whether installation is permitted."
+      "Compare the enclosure and lock",
+      "Read the exact model’s security claims, installation instructions, dimensions and backup-access arrangements."
     ],
     [
-      "Control keys and codes",
-      "Keep keys inaccessible to unauthorized people. Do not share combinations casually or store them on the cabinet. Check who knows the code after household changes."
+      "Choose the location before purchase",
+      "Consider flood exposure, floor loading, doorway clearance, usable access and installation permission."
     ],
     [
-      "Plan relocation",
-      "Verify transport rules, destination restrictions and available locked storage before travel. Secure cases against unauthorized access; avoid leaving firearms in unattended vehicles."
+      "Review the complete system",
+      "Check keys and codes, anchoring, moisture, actual capacity and destination storage during evacuation."
     ]
   ],
   "sections": [
-    [
-      "Match storage to real conditions",
-      "Check fit, locks and mounting with equipment made safe according to its manual and competent supervision. A device that prevents firing may not prevent theft; a case suitable for transport may not replace installed storage. Follow both product and firearm instructions rather than improvising a locking arrangement."
-    ],
-    [
-      "Water, heat and damaged storage",
-      "A wet safe, broken lock or displaced cabinet can create access and reliability problems. Keep people away from unsecured firearms. Ask a qualified professional about a lawful storage and inspection plan; do not assume that drying a flooded firearm makes it usable. Document damage without unnecessary handling."
-    ]
+    {
+      "heading": "Four storage options and what each can reasonably do",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Storage categories are not interchangeable",
+          "columns": [
+            "Option",
+            "Main role",
+            "Important limitation"
+          ],
+          "rows": [
+            [
+              "Cable or trigger lock",
+              "Restricts operation when appropriate to the model and installed as instructed.",
+              "Does not enclose the firearm or prevent it being carried away."
+            ],
+            [
+              "Lockbox",
+              "An enclosure useful for controlling access to a limited number of items.",
+              "Portability can also make theft easier; installation and ratings matter."
+            ],
+            [
+              "Locking cabinet",
+              "Organized enclosure, often lighter and less expensive than substantial safes.",
+              "Do not assume substantial forced-entry or fire resistance."
+            ],
+            [
+              "Security container / safe",
+              "An enclosure that may carry defined security or fire ratings.",
+              "The word “safe,” its weight and its appearance do not establish those ratings."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Match the storage method to the actual firearm and the household, not a generic photograph. Follow the firearm and locking-device instructions; a lock that fits one model may be unsuitable for another. Secure firearms unloaded and keep ammunition separately secured. A locking device is a useful layer, while an appropriate locked enclosure also limits physical access."
+        },
+        {
+          "type": "paragraph",
+          "text": "A household with one sporting rifle has a different capacity problem from a collection of handguns and long guns. There is no benefit in buying an enclosure that forces equipment together or cannot close properly. Choose usable capacity, including normal cases and fitted accessories, before comparing marketing capacity numbers."
+        }
+      ],
+      "references": [
+        [
+          "Project ChildSafe · Storage options",
+          "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
+        ],
+        [
+          "Project ChildSafe · Lockbox considerations",
+          "https://projectchildsafe.org/wp-content/uploads/2023/11/Benefits-Of-Lock-Box-One-Pager_V3.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Theft resistance: understand the label instead of the showroom weight",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Security claims should identify the exact product, standard and test level. UL distinguishes residential security containers from other safe categories and evaluates resistance under defined test conditions. A certification for a lock is not automatically certification for the entire enclosure. Likewise, a claim that a product “uses UL components” does not identify an enclosure rating."
+        },
+        {
+          "type": "table",
+          "caption": "A useful security comparison",
+          "columns": [
+            "Question",
+            "What to look for"
+          ],
+          "rows": [
+            [
+              "What was independently tested?",
+              "The exact enclosure or component, identified by model."
+            ],
+            [
+              "Against which standard?",
+              "A named standard and classification, not just “tested.”"
+            ],
+            [
+              "What is the test scope?",
+              "The stated attack level and conditions; laboratory results are not a promise of indefinite resistance."
+            ],
+            [
+              "Does installation matter?",
+              "The documented mounting or anchoring requirements."
+            ],
+            [
+              "Can the product be removed?",
+              "Consider portability, location and the complete installed system."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Anchoring is not a decorative final step. Follow the product’s installation instructions and assess the supporting structure. A heavy enclosure can still present floor-loading and tip-over concerns. Renters should obtain permission for required installation; a mobile home or upstairs room may need structural advice before a large safe is delivered."
+        },
+        {
+          "type": "paragraph",
+          "text": "Think about the whole access path: delivery route, door swing, working clearance and whether a household member can use the storage without leaving it unsecured. A system that is inconvenient is more likely to be bypassed. Plan the installation first, then select an enclosure that fits it."
+        }
+      ],
+      "references": [
+        [
+          "UL Solutions · Security-container certification",
+          "https://www.ul.com/services/anti-theft-device-testing-and-certification"
+        ],
+        [
+          "Liberty Safe · Use and care (manufacturer reference)",
+          "https://libertysafe.com/pages/gun-safe-use-and-care"
+        ]
+      ]
+    },
+    {
+      "heading": "Fire ratings: useful evidence with specific limits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Fireproof” is an overstatement for ordinary consumer storage. A fire rating describes a defined test, time and performance criterion. UL’s safe fire testing includes interior temperature limits and may address different content types. A rating aimed at preserving paper does not establish that electronics, ammunition or a firearm will be unaffected in every real fire."
+        },
+        {
+          "type": "paragraph",
+          "text": "Compare the test temperature profile, time, maximum interior conditions, testing organization and exact rated model. Two “60-minute” claims are not necessarily equivalent when the criteria differ. Burglary resistance, fire endurance and water resistance are separate properties. A product can perform well in one category without carrying meaningful evidence for another."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Ask for the exact rating document or label rather than an unexplained badge.",
+            "Distinguish an independent certification from a manufacturer’s own test.",
+            "Treat fire and water claims separately; firefighting water creates another exposure.",
+            "Keep an inventory and appropriate insurance records outside the enclosure in a private backup.",
+            "After a real fire, obtain qualified assessment rather than relying on the original rating."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A safe is property protection, not shelter. During a home fire, evacuate people and follow the emergency plan instead of retrieving equipment. Replacement records can help afterward; risking a delayed exit to save a firearm defeats the household purpose of preparedness."
+        }
+      ],
+      "references": [
+        [
+          "UL Solutions · Safe fire tests and labels",
+          "https://www.ul.com/news/turning-heat-sneak-peek-uls-fire-testing-safes"
+        ],
+        [
+          "SAAMI · Fire-exposed firearms and ammunition, February 2025",
+          "https://saami.org/wp-content/uploads/2025/03/Guidance-on-Firearms-and-Ammunition-Exposed-to-Fire-2-21-2025.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Humidity and corrosion: inspect the inside, not only the room",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An enclosure can have a moisture problem even in a home that feels comfortable. Local leaks, damp flooring, temperature changes and air exchange affect conditions. Measure inside the storage space and follow the safe and firearm manufacturers’ care recommendations. There is no single humidity number that replaces the instructions for every material and product."
+        },
+        {
+          "type": "paragraph",
+          "text": "Desiccant and powered moisture-control devices work differently. Desiccant has finite capacity and needs replacement or regeneration as directed; a powered product depends on power and approved installation. Neither corrects a leaking building or makes a flood-risk location appropriate. Keep cables, mounting and ventilation consistent with the manufacturer’s instructions."
+        },
+        {
+          "type": "table",
+          "caption": "A quick condition review",
+          "columns": [
+            "Check",
+            "What to record"
+          ],
+          "rows": [
+            [
+              "Interior conditions",
+              "Humidity trend and evidence of condensation or a leak."
+            ],
+            [
+              "Equipment surfaces",
+              "New rust, unusual staining, moisture or packaging damage."
+            ],
+            [
+              "Moisture control",
+              "Service date and whether a powered unit still functions."
+            ],
+            [
+              "Enclosure condition",
+              "Door closure, seal condition where fitted and exterior corrosion."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Avoid long-term storage in a damp soft case or with unapproved materials that can hold moisture against the firearm. The care routine must suit the actual finish and stock material. Check conditions again after a plumbing leak, prolonged outage or a move; the previous room’s routine may not transfer to the new location."
+        }
+      ],
+      "references": [
+        [
+          "Liberty Safe · Moisture control (manufacturer reference)",
+          "https://libertysafe.com/blogs/the-vault/how-to-keep-moisture-out-of-your-gun-safe"
+        ],
+        [
+          "Liberty Safe · Use and care (manufacturer reference)",
+          "https://libertysafe.com/pages/gun-safe-use-and-care"
+        ]
+      ]
+    },
+    {
+      "heading": "Keys, codes, backup access and changing household risk",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A secure enclosure with a visible backup key or widely shared code has a weak access policy. Decide which adults are authorized, keep backup access separate and review the list when circumstances change. Children, visitors and a person experiencing an emotional crisis can change the household’s risk even when the storage hardware is unchanged."
+        },
+        {
+          "type": "paragraph",
+          "text": "Electronic, mechanical and biometric locks have different maintenance and usability considerations. Follow the lock manual, including approved battery types, replacement intervals and documented recovery procedures. A biometric feature is not a promise that it will recognize every user in every condition. Confirm what happens after a power or battery problem before relying on it."
+        },
+        {
+          "type": "paragraph",
+          "text": "A suitable accessibility review includes vision, dexterity, reaching the lock and understanding its feedback. Conduct normal access checks with the enclosure empty when appropriate, without turning a household demonstration into firearm handling. The goal is a reliable authorized-access routine while preventing access by everyone else."
+        },
+        {
+          "type": "paragraph",
+          "text": "If household risks escalate, consider a lawful temporary storage arrangement with an appropriate provider. Rules about transfers and custody vary. Plan this option while there is time to verify it rather than leaving equipment with an unprepared friend during a crisis."
+        }
+      ],
+      "references": [
+        [
+          "Project ChildSafe · Lockbox considerations",
+          "https://projectchildsafe.org/wp-content/uploads/2023/11/Benefits-Of-Lock-Box-One-Pager_V3.pdf"
+        ],
+        [
+          "Project ChildSafe · Storage options",
+          "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Evacuation, shared housing and destination storage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Normal storage may not be available after a hurricane, fire or displacement. Decide beforehand whether equipment will remain in a secured lawful location or be moved under applicable transport rules. A vehicle is not a substitute for ordinary home storage: heat, theft and unauthorized access are different concerns there."
+        },
+        {
+          "type": "paragraph",
+          "text": "Verify the destination’s rules before travel. Shelters, hotels, other households and jurisdictions can have restrictions or lack suitable storage. Keep firearms apart from shared emergency supplies and children’s belongings. Do not delay an urgent evacuation to solve a storage problem that should have been planned beforehand."
+        },
+        {
+          "type": "paragraph",
+          "text": "For apartment and trailer living, a modest enclosure that can be installed appropriately may be more workable than a large safe chosen only for capacity. Consider landlord permission, structural support, flood exposure and destination options together. Review the plan after a move and once per year; household access, equipment size and building conditions change."
+        },
+        {
+          "type": "paragraph",
+          "text": "Finish with a simple record: storage model, installation completed, authorized access, last moisture check and a verified evacuation arrangement. That record turns a purchase into a functioning system and identifies the remaining work without assuming that owning a safe has solved every risk."
+        }
+      ],
+      "references": [
+        [
+          "Liberty Safe · Use and care (manufacturer reference)",
+          "https://libertysafe.com/pages/gun-safe-use-and-care"
+        ],
+        [
+          "Project ChildSafe · Storage options",
+          "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
+        ]
+      ]
+    }
   ],
-  "without_help": "Keep unauthorized people away from the area and use an existing suitable locked container if safely possible. If you cannot establish secure storage, seek a lawful alternative before moving others into that space.",
-  "household": "Check access for caregivers and visitors, not only residents. Include a responsible adult’s contact information in the relocation plan without advertising where firearms are stored.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
-  "next": "Review locks, mounting, keys and destination arrangements at each seasonal household check.",
-  "watch": "Never compromise escape routes or use storage arrangements that create entrapment. Storage laws and transport rules vary by location.",
-  "sources": "firearm-safety",
+  "without_help": "Keep equipment away from shared supplies and unauthorized people. Use a previously verified lawful storage alternative where available. Flood- or fire-exposed equipment needs assessment before reuse; do not assume the enclosure rating proves it is unaffected.",
+  "household": "Reassess keys, codes and backup access after guests, a move, separation, memory changes or a household crisis. Teach children to leave an unfamiliar firearm alone, while retaining adult responsibility for storage.",
+  "pack_now": "Enclosure and lock manuals, installation record, authorized-access list, service information and a verified destination-storage plan. Keep backup keys and codes secure.",
+  "next": "Check one enclosure: actual capacity, closure, permitted anchoring, backup-key security, lock service and interior moisture. Fix the weakest link before purchasing accessories.",
+  "watch": "Keep firearms unloaded and locked with ammunition separately secured. Manufacturer-approved installation, controlled keys and periodic review are essential; neither concealment nor a child’s promise replaces storage.",
+  "sources": "firearm-storage",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [],
-  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "scope": "Technical education for civilian ownership, sporting use and household preparedness. Manufacturer references describe products and technology; they are not independent endorsements. U.S. legal examples do not establish the rules elsewhere.",
   "related": [
     "firearm-safety-basics",
     "ammunition-storage"
-  ]
+  ],
+  "action_label": "Quick checklist",
+  "equipment_layout": true,
+  "source_context": "Technical education for civilian ownership, sporting use and household preparedness. Manufacturer references describe products and technology; they are not independent endorsements. U.S. legal examples do not establish the rules elsewhere.",
+  "intro_note": "Compare controlled access, theft resistance, fire performance and moisture separately. The installed system matters more than a single label.",
+  "fallback_heading": "If secure storage is disrupted",
+  "household_heading": "Review authorized access",
+  "pack_heading": "Private storage record",
+  "next_heading": "Audit your installed system",
+  "watch_heading": "A lock is one layer"
 }

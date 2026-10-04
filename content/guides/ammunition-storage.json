@@ -1,13 +1,13 @@
 {
   "slug": "ammunition-storage",
-  "title": "Ammunition: compatibility, storage and inspection",
+  "title": "Ammunition storage: condition, moisture and inventory",
   "category": "firearms-tools",
   "subcategory": "Ammunition",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-04",
+  "next_review": "2027-01-04",
   "aliases": [
     "ammo",
     "cartridges"
@@ -17,48 +17,305 @@
     "ammo",
     "cartridges"
   ],
-  "tldr": "Use only ammunition confirmed for the exact firearm by its markings and manufacturer’s manual. Keep ammunition locked, dry, identifiable and away from unauthorized people; isolate uncertain or damaged rounds from use.",
+  "tldr": "Store ammunition locked, dry and clearly identified, preferably in its original labelled packaging. Preserve product and lot numbers, inspect for damage and separate suspect stock. Flooding, fire exposure and corrosion require a different response from routine storage—not drying, polishing or test-firing to “check” a round.",
   "steps": [
     [
-      "Keep labels intact",
-      "Retain original packaging and identifying information. Do not mix loose cartridges or identify ammunition by appearance alone."
+      "Choose a stable location",
+      "Use a secured indoor location protected from heat, moisture and unauthorized access. Avoid attic, vehicle and flood-prone storage."
     ],
     [
-      "Confirm compatibility",
-      "Match the manual, firearm markings and ammunition packaging. Similar names or dimensions do not establish that a cartridge is safe for a firearm. Ask the manufacturer or a qualified professional if uncertain."
+      "Keep the identification",
+      "Retain the manufacturer box or a complete label with cartridge, product code and lot number. Do not combine unidentified loose rounds."
     ],
     [
-      "Protect storage",
-      "Use secured storage separate from unloaded firearms. Follow manufacturer guidance on moisture, heat and storage; keep oils, solvents and water away from ammunition."
+      "Inspect the environment and packaging",
+      "Look for damp cartons, container condensation, rust, corrosion or damaged seals before counting the stock."
     ],
     [
-      "Stop using damaged or uncertain ammunition",
-      "Do not fire corroded, deformed, flooded, contaminated or unidentified ammunition. Arrange lawful disposal through qualified local channels; do not burn, dismantle or throw it into a fire."
+      "Separate questionable ammunition",
+      "Mark it “do not use,” secure it separately and follow the manufacturer’s recall, assessment or disposal directions."
     ]
   ],
   "sections": [
-    [
-      "A simple inventory",
-      "Record caliber exactly as labeled, manufacturer, lot when available, quantity and storage location in a private record. Inventory supports compatibility and accountability; it should not be posted publicly or attached to an easily shared household contact card. Review condition when checking storage, without unnecessarily manipulating cartridges."
-    ],
-    [
-      "After flooding or household disruption",
-      "Keep suspect ammunition separate from normal stock and restrict access. Do not try to restore wet ammunition by heating it. Disposal services and transport requirements differ; describe what you have and ask for instructions before taking suspect material to a facility."
-    ]
+    {
+      "heading": "What good storage protects",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Storage has three jobs: restrict access, preserve condition and preserve identity. A strong lock alone cannot prevent corrosion in a damp location; a dry room alone cannot prevent a child or visitor gaining access. Original boxes help identify the exact cartridge and product after years of storage. Those goals work together, and none should depend solely on remembering where an item was placed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Loaded ammunition is not the same storage category as loose smokeless powder or primers. Their packaging and fire-related requirements differ. This guide concerns factory-loaded sporting ammunition, not reloading components. Follow the ammunition manufacturer’s instructions and applicable building or fire rules; avoid treating a metal container as universally suitable just because it is sold as an “ammo can.”"
+        },
+        {
+          "type": "table",
+          "caption": "Choose a location by its actual conditions",
+          "columns": [
+            "Location",
+            "Common problem",
+            "Better planning choice"
+          ],
+          "rows": [
+            [
+              "Vehicle or attic",
+              "Repeated heat exposure and large temperature changes.",
+              "A secured indoor storage location with more stable conditions."
+            ],
+            [
+              "Garage or shed",
+              "Humidity, leaks, heat and chemicals can be difficult to control.",
+              "Measure conditions and choose another location if they are unsuitable."
+            ],
+            [
+              "Low basement shelf",
+              "Flooding or a plumbing leak can reach the inventory.",
+              "A suitable elevated storage arrangement in a lower-risk area."
+            ],
+            [
+              "Shared supply bin",
+              "Loss of identification and uncontrolled access.",
+              "Dedicated, locked and plainly labelled storage."
+            ]
+          ]
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Ammunition storage and handling",
+          "https://saami.org/wp-content/uploads/2018/04/SAAMI-Recommendations-for-Safe-Ammunition-Storage-and-Handling-1-18-2018.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Humidity, condensation and the limits of a sealed can",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A container helps only if its contents and interior start dry. Closing a can around damp cardboard traps the moisture with the ammunition. A gasket or latch also needs to be in usable condition. “Water resistant” on a product listing is not proof of a tested immersion rating, and no label makes a flood-prone location a good storage choice."
+        },
+        {
+          "type": "paragraph",
+          "text": "Condensation can appear when cold surfaces meet warmer humid air. Think about the whole storage routine, including movement between air-conditioned rooms and hot outdoor conditions. An inexpensive humidity indicator can reveal a problem inside a container that feels dry outside. Desiccant has limited capacity; follow its replacement or regeneration instructions rather than assuming one packet works indefinitely."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Inspect the enclosure for water staining, a damaged seal and interior rust.",
+            "Keep ammunition apart from oils, cleaning solvents and household chemicals.",
+            "Use a review date for moisture-control products; check again after a leak or unusually humid period.",
+            "Do not apply oil to ammunition as a corrosion treatment.",
+            "Treat a damp cardboard box as a reason to investigate exposure, not simply replace the box and forget the event."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose a routine that someone else in the household can understand: where the key is controlled, which container holds each cartridge family and when the environment was last checked. A complicated system that is rarely reviewed can hide a leak longer than a modest, well-labelled inventory."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Ammunition storage and handling",
+          "https://saami.org/wp-content/uploads/2018/04/SAAMI-Recommendations-for-Safe-Ammunition-Storage-and-Handling-1-18-2018.pdf"
+        ],
+        [
+          "SAAMI · Water-exposed ammunition, February 2025",
+          "https://saami.org/wp-content/uploads/2025/03/Guidance-on-Ammunition-That-Has-Been-Submerged-In-Water-2-26-2025.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Packaging and labels: make every lot traceable",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Original packaging usually carries information that the cartridge headstamp does not: product code, bullet description, lot identifier and manufacturer warnings. A headstamp can help identify a cartridge family but normally cannot reconstruct the full product history. If an outer carton is damaged, preserve a photograph of its readable label before moving unaffected stock into appropriate secured packaging."
+        },
+        {
+          "type": "table",
+          "caption": "A practical inventory row",
+          "columns": [
+            "Field",
+            "Example of what to record"
+          ],
+          "rows": [
+            [
+              "Full designation",
+              "9mm Luger, .22 LR or 12 gauge with the specified shell length—not just “pistol” or “shotgun.”"
+            ],
+            [
+              "Manufacturer and product",
+              "Brand plus the exact catalog or product code."
+            ],
+            [
+              "Lot identifier",
+              "Copy the printed lot exactly; use a readable photograph as backup."
+            ],
+            [
+              "Quantity and location",
+              "Number of rounds and the labelled storage container."
+            ],
+            [
+              "Acquired / reviewed",
+              "Purchase date and the last condition check."
+            ],
+            [
+              "Status",
+              "Available, awaiting manufacturer advice, recalled or awaiting authorized disposal."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep different lots distinguishable even if they are the same product. That way a recall affecting one batch does not become a guessing exercise involving everything you own. A simple spreadsheet or paper inventory is enough. Avoid uploading serials, detailed household locations or ownership records to public resources; use a private backup if losing the record would make identification difficult."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mark storage with the full cartridge name rather than an abbreviated caliber alone. Separate easily confused handgun names, rifle cartridge families and different shotshell gauges. Labeling is especially valuable after a hurried move when a familiar shelf layout is gone."
+        }
+      ],
+      "references": [
+        [
+          "Federal · Product warnings and lot identification",
+          "https://www.federalpremium.com/safety-information/product-warnings.html"
+        ],
+        [
+          "SAAMI · Equivalent cartridge names",
+          "https://saami.org/wp-content/uploads/2024/11/SAAMI-Generally-Accepted-Cartridge-and-Chambers-10-8-2021.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Inspection: distinguish appearance from known condition",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A visual check can reveal cracked cases, severe corrosion, visibly damaged primers, distorted cartridges, split shells or abnormal bullet position. It cannot prove that the primer and propellant are sound. Do not turn a cosmetic inspection into a guarantee, especially if the ammunition’s exposure history is unknown."
+        },
+        {
+          "type": "table",
+          "caption": "What to notice during a storage review",
+          "columns": [
+            "Observation",
+            "Response"
+          ],
+          "rows": [
+            [
+              "Clean packaging and no known adverse exposure",
+              "Continue normal secured storage and record the review."
+            ],
+            [
+              "Unidentified loose rounds",
+              "Keep separate; recover the identification before considering use."
+            ],
+            [
+              "Cracks, distortion or significant corrosion",
+              "Set aside and obtain manufacturer guidance."
+            ],
+            [
+              "Known flood or fire exposure",
+              "Follow the specific disaster-exposure advisory; appearance alone is insufficient."
+            ],
+            [
+              "Lot matches a current warning",
+              "Follow the exact manufacturer recall instructions."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not sand or polish corrosion away to make a round look acceptable. Do not try to straighten, reseat or otherwise repair factory ammunition. A cartridge that appears unusual belongs in the suspect category until its maker has resolved the concern. Photographs and the lot label are more useful for that conversation than firing a sample."
+        },
+        {
+          "type": "paragraph",
+          "text": "Review stored quantities periodically and use identifiable, acceptable older stock first within your normal sporting activity. Purchase age alone does not provide a universal expiration date; conditions and manufacturer instructions matter. Conversely, recently purchased ammunition is not automatically acceptable if it has already been damaged or recalled."
+        }
+      ],
+      "references": [
+        [
+          "NSSF · Firearm handling principles",
+          "https://www.nssf.org/safety/rules-firearms-safety/"
+        ],
+        [
+          "Federal · Product warnings and lot identification",
+          "https://www.federalpremium.com/safety-information/product-warnings.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Flooding and fire: two separate decision paths",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Brief incidental moisture and complete submersion are different events. SAAMI notes that rimfire ammunition is particularly vulnerable to moisture. For submerged ammunition, do not assume drying restores reliability. Secure the affected stock, identify the product and follow the manufacturer’s disposition instructions. Keep it apart from unaffected ammunition so its history is not lost."
+        },
+        {
+          "type": "paragraph",
+          "text": "After a fire, damaged packaging may conceal heat exposure that is not obvious on the case. SAAMI’s fire-exposure advisory addresses firearms, loaded ammunition and propellants separately. Do not enter an unsafe structure to retrieve equipment or treat an intact-looking box as proof that its contents escaped damage. An emergency is not a reason to test-fire suspect ammunition."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Record the event, storage location and what is known about water or heat exposure.",
+            "Photograph readable labels from a safe location; keep the affected stock segregated.",
+            "Contact the manufacturer for product-specific disposition and local services for authorized disposal arrangements.",
+            "Do not throw ammunition into a fire, burn pile or an ordinary disposal stream without explicit authorized instructions.",
+            "Update the inventory status so another household member cannot mistake the affected stock for normal supplies."
+          ]
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Water-exposed ammunition, February 2025",
+          "https://saami.org/wp-content/uploads/2025/03/Guidance-on-Ammunition-That-Has-Been-Submerged-In-Water-2-26-2025.pdf"
+        ],
+        [
+          "SAAMI · Fire-exposed firearms and ammunition, February 2025",
+          "https://saami.org/wp-content/uploads/2025/03/Guidance-on-Firearms-and-Ammunition-Exposed-to-Fire-2-21-2025.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "A storage review that takes minutes instead of hours",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Make the inventory manageable before buying more. Start with one container: verify the lock and access, examine its condition, confirm that every box remains identified, update quantities and check the manufacturer’s warning page. Repeat for the remaining containers on a schedule suitable for your climate and use. Add an extra review after a move, roof leak, flood warning or change in household access."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, a Florida household keeping a modest target-shooting inventory can record the room’s condition, container labels and latest moisture check in the same spreadsheet as quantities. The goal is not a large stockpile; it is knowing what is present, who can access it and whether any exposure has changed its status."
+        },
+        {
+          "type": "paragraph",
+          "text": "Budget for a secure location, useful labels and moisture monitoring before extra quantity. Preserve contact details for the manufacturers of the products you actually own. That gives you a practical next step if a recall or damaged box appears, without relying on generic internet guesses about shelf life."
+        }
+      ],
+      "references": []
+    }
   ],
-  "without_help": "If reliable identification or inspection is unavailable, do not use the ammunition. Securing it and postponing use is safer than guessing from an online comparison photo.",
-  "household": "Keep keys, packaging and loose cartridges away from children and visitors. Include ammunition security in household relocation planning without giving untrained people responsibility for handling it.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
-  "next": "Audit labels and storage access. Mark anything uncertain as not for use and arrange appropriate professional advice.",
-  "watch": "This guide does not provide reloading, ammunition manufacture, modification or performance optimization instructions.",
-  "sources": "firearm-safety",
+  "without_help": "Keep suspect ammunition secured and segregated. Mark the exposure or identification problem and wait for product-specific instructions. Do not dry, dismantle, polish or test-fire it as a substitute for an assessment.",
+  "household": "Use full names and visible status labels, while keeping keys and quantities private. Authorized adults should know which stock is set aside and why. Children’s safety education never replaces locked storage.",
+  "pack_now": "Box-label photographs, product and lot numbers, container locations, review dates and manufacturer support information.",
+  "next": "Check the lock, moisture evidence, packaging, lot records and manufacturer warning page. Correct missing labels before increasing the inventory.",
+  "watch": "Cracks, deformation, corrosion, unidentified cartridges and flood or fire exposure are reasons to separate stock and seek instructions. A normal exterior is not proof of unaffected primers or propellant.",
+  "sources": "ammunition-storage",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [],
-  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "scope": "Technical education for civilian ownership, sporting use and household preparedness. Manufacturer references describe products and technology; they are not independent endorsements. U.S. legal examples do not establish the rules elsewhere.",
   "related": [
     "firearm-safety-basics",
     "firearm-storage"
-  ]
+  ],
+  "action_label": "Quick checklist",
+  "equipment_layout": true,
+  "source_context": "Technical education for civilian ownership, sporting use and household preparedness. Manufacturer references describe products and technology; they are not independent endorsements. U.S. legal examples do not establish the rules elsewhere.",
+  "intro_note": "Condition, identification and controlled access are separate checks. This guide covers factory-loaded ammunition; loose propellants and primers have different requirements.",
+  "fallback_heading": "When the condition is unknown",
+  "household_heading": "Make the inventory understandable",
+  "pack_heading": "Keep with your private records",
+  "next_heading": "Review one container",
+  "watch_heading": "Do not overlook exposure"
 }
