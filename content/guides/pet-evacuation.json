@@ -28,14 +28,14 @@
   ],
   "next": "Check animals regularly for overheating, cold and distress in transport. Keep them restrained in crowded temporary accommodation and maintain hygiene.",
   "watch": "A service animal and a pet may have different accommodation rules. Never leave animals in a hot vehicle while arranging shelter.",
-  "without_help": "Use a trusted host or verified animal-care arrangement rather than assuming public shelters accept pets. Keep the family and animals together where safe and feasible.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: contain animals early. Agree who will manage children, pets or mobility needs while that action happens. A service animal and a pet may have different accommodation rules. Never leave animals in a hot vehicle while arranging shelter.",
-  "pack_now": "For evacuating with pets, prioritize only items needed for the first action and the fallback: Use a trusted host or verified animal-care arrangement rather than assuming public shelters accept pets. Keep the family and animals together where safe and feasible. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "sources": "pets",
+  "without_help": "Use a confirmed trusted host or animal-care arrangement and keep a viable alternative. Ask the actual evacuation site about current animal housing rather than assuming every site accepts pets or keeps them beside their owners.",
+  "household": "Assign a capable handler to each animal while another adult manages children or access needs. Test transport with the actual people and equipment, and verify pet and service-animal arrangements separately.",
+  "pack_now": "Suitable carriers or restraints, normal food and safe water, bowls and required opener, prescribed medicines, waste supplies, current identification, private veterinary records and confirmed destination details.",
+  "sources": "pet-evacuation-expanded",
   "category": "evacuation-shelter",
   "subcategory": "Evacuation",
   "content_type": "Emergency guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "aliases": [
     "pets evacuation",
     "dog evacuation",
@@ -44,33 +44,258 @@
   "keywords": [
     "pets evacuation",
     "dog evacuation",
-    "cat emergency"
+    "cat emergency",
+    "Make a separate departure task for every animal",
+    "Confirm admission rather than assuming a shelter accepts pets",
+    "Pack usable care, identification and a concise instruction card",
+    "Test transport space and controlled loading",
+    "Maintain care in temporary accommodation",
+    "Plan lost-pet checks and safe return"
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [
     [
-      "What matters before collecting supplies?",
-      "Take pets when you can evacuate safely, using a carrier or lead and a destination that accepts them. Keep food, water, medicines, identification and veterinary information together. Do not delay escape into immediate danger or reenter a hazardous building for an animal. Collect items only if doing so does not delay this action."
+      "Are pets accepted wherever people shelter?",
+      "Do not assume so. Verify the particular site’s current admission, containment and care arrangements, including any separate housing. Keep an alternative suitable destination."
     ],
     [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For evacuating with pets, keep the specific hazard in view: A service animal and a pet may have different accommodation rules. Never leave animals in a hot vehicle while arranging shelter."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Avoid unsafe rescue. Tell reachable responders where an animal may be, but do not return to fire, floodwater or active danger yourself. Keep personal notes private; they are not submitted to Osprey Zero."
+      "What if a pet is still inside a dangerous building?",
+      "Do not reenter active danger. Give reachable responders accurate information from safety and use verified animal-assistance channels when available."
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-04",
   "sections": [
-    [
-      "Practice loading, not just packing",
-      "Put the actual carrier, leash, water container, food and records beside the bag. Practice a calm loading session and check whether the vehicle still has room for people and essential equipment. Confirm a pet-compatible destination directly; a generic shelter listing may not reflect current admission rules. Identify who collects each animal so everyone does not assume someone else did it."
-    ]
+    {
+      "heading": "Make a separate departure task for every animal",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Name who collects each animal, which carrier or restraint is used, and where the animal will travel. Include pets that hide, cannot be handled by every adult, or need special care. Start containment early in a developing evacuation when it is safe; searching for a frightened cat after doors open can consume the departure time. Keep the human immediate-escape plan separate from planned packing."
+        },
+        {
+          "type": "flow",
+          "caption": "Plan the animal’s whole journey",
+          "items": [
+            [
+              "Contain",
+              "Use suitable familiar restraint or a secure carrier before loading."
+            ],
+            [
+              "Move",
+              "Fit people, animals and essential care equipment into the actual transport."
+            ],
+            [
+              "Receive",
+              "Confirm an animal-compatible destination and care arrangement."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, individual needs and current instructions control the response."
+        },
+        {
+          "type": "paragraph",
+          "text": "Editorial example: two dogs have bags of food ready but only one adult can safely handle both leads while helping a child. The gap is responsibility and transport, not food. Practice a calm loading sequence in normal conditions and adjust the plan before warning time is short. Do not delay escape from a fire or reenter danger to collect equipment or an animal."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Pet disaster preparedness",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/pet-disaster-preparedness.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Confirm admission rather than assuming a shelter accepts pets",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Check the destination directly before relying on it. Ask whether it accepts the animal’s species, size and number, what containment and records are required, whether animals stay with owners, and what care remains the owner’s responsibility. A hotel, host, boarding facility or evacuation center may have different rules and limited space. Keep a realistic alternative that is not exposed to exactly the same hazard."
+        },
+        {
+          "type": "table",
+          "caption": "A useful destination confirmation",
+          "columns": [
+            "Question",
+            "Record the actual answer"
+          ],
+          "rows": [
+            [
+              "Acceptance",
+              "Species, number and any relevant restrictions."
+            ],
+            [
+              "Admission",
+              "Opening, availability, reservation or registration requirements."
+            ],
+            [
+              "Equipment",
+              "Carrier, lead, records, food and other supplies required."
+            ],
+            [
+              "Care",
+              "Who feeds, handles and gives prescribed medicines."
+            ],
+            [
+              "Separation",
+              "Where animals stay, visiting arrangements and how ownership is verified."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not conflate pets and service animals. They may have different accommodation rules. Red Cross guidance describes possible separate animal housing depending on circumstances and welcomes service animals that assist people with disabilities. Use the specific facility’s current arrangements; do not present an old shelter list or general policy as a confirmed space for tonight."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Pet disaster preparedness",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/pet-disaster-preparedness.html"
+        ],
+        [
+          "Florida emergency management · Pet planning (Florida example)",
+          "https://www.floridadisaster.org/planprepare/pets/"
+        ]
+      ]
+    },
+    {
+      "heading": "Pack usable care, identification and a concise instruction card",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use the normal suitable food, safe water, appropriate bowls, prescribed medicines and needed waste supplies. Count pet water and food separately so human reserves are not silently assigned twice. Include the equipment needed to open or serve the actual food. Ask the veterinarian about special diets, medicine storage and emergency care needs; do not improvise a dose or sedate an animal from a generic evacuation tip."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Keep a suitable carrier, harness or lead with an accessible loading location.",
+            "Use a current identification tag and review microchip contact details where applicable.",
+            "Keep a recent photograph and veterinary information privately with the responsible adult.",
+            "Write the feeding routine, prescribed instructions, veterinarian contact and important handling needs.",
+            "Include appropriate waste containment and clean-up supplies without packing chemicals beside food.",
+            "Add a familiar item if manageable, while keeping essential human and animal care accessible."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Label by animal where needs differ. A generic bag saying pets can conceal a missing medicine or the wrong food. Keep a grab list for daily-use care items and review it after treatment changes. Store records so they can be found even if a phone fails, while protecting information that is unnecessary for admission or care."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Pet disaster preparedness",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/pet-disaster-preparedness.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Test transport space and controlled loading",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Check the actual vehicle with people, mobility equipment, bags and suitable animal restraint. Carrier dimensions and access matter as much as total cargo space. Use the restraint and transport equipment as intended and maintain appropriate ventilation and temperature. Never leave an animal in a hot vehicle while negotiating admission or checking a room. Travel conditions and the animal’s health may require veterinary advice."
+        },
+        {
+          "type": "table",
+          "caption": "A calm loading rehearsal",
+          "columns": [
+            "Check",
+            "Problem it reveals"
+          ],
+          "rows": [
+            [
+              "Carrier access",
+              "An animal cannot enter calmly or the door does not secure."
+            ],
+            [
+              "Responsible handler",
+              "The assigned adult is also needed for another dependent person."
+            ],
+            [
+              "Vehicle layout",
+              "People or essential equipment lose necessary space."
+            ],
+            [
+              "Transfer at arrival",
+              "Opening a door creates an escape opportunity."
+            ],
+            [
+              "Backup driver",
+              "The alternative vehicle cannot fit the same arrangement."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep doors and animals controlled during transfers. Do not let children manage a distressed animal beyond their ability. If the usual adult is away, identify a trusted helper with appropriate access and knowledge before the emergency, rather than counting on an unfamiliar volunteer. A helper must also have a safe route; do not ask them to enter active fire, floodwater or another dangerous area."
+        }
+      ],
+      "references": [
+        [
+          "Florida emergency management · Pet planning (Florida example)",
+          "https://www.floridadisaster.org/planprepare/pets/"
+        ]
+      ]
+    },
+    {
+      "heading": "Maintain care in temporary accommodation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "On arrival, count animals and confirm that each is secured in the intended arrangement. Place food, medicines and clean equipment where the responsible person can find them. Keep animals under appropriate control around unfamiliar people and other animals. Distress can change behavior, so do not assume a normally friendly animal is comfortable with crowding, noise or strangers handling it."
+        },
+        {
+          "type": "callout",
+          "title": "Keep a daily care record if responsibility changes",
+          "text": "Record feeding, prescribed care, waste needs and any concern for the next trusted handler. Note what was actually done rather than leaving two adults to guess whether medicine was already given."
+        },
+        {
+          "type": "paragraph",
+          "text": "Check temperature, available water and suitable rest without relying only on the weather outdoors. Seek veterinary help for worrying changes or injury. Maintain hygiene between animal waste, meal tasks and child care. If separate boarding is necessary, verify who holds the animal, how updates are obtained, and how collection will work. Keep the information with the household coordinator so onward movement does not leave the animal unaccounted for."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Plan lost-pet checks and safe return",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If an animal is missing, record its last confirmed place and time, description, identification and photograph. Contact verified animal services, veterinary contacts or the relevant facility through independently obtained channels when available. Do not enter a dangerous area or pay an unknown caller solely on a claim of finding the animal. Keep public appeals limited to useful information and protect private identity and location details."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Account for each animal before every move and after arrival.",
+            "Tell the trusted handler or household coordinator of any missing animal.",
+            "Record sightings separately from confirmed identification.",
+            "Verify found-animal reports through a known service or safe trusted contact.",
+            "Confirm collection and update outdated notices when reunited.",
+            "Return home only when the setting is suitable for people and animals. Keep animals controlled around damage and debris."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "After an evacuation, review the part that actually failed: capture, loading, admission, care or communication. Replace used supplies and adjust responsibility before the next event. Livestock, large numbers of animals and specialist species need their own transport and welfare plan; this household guide does not make a small pet carrier plan sufficient for them."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Household evacuation",
+              "url": "/preparedness/bug-out-plan/"
+            },
+            {
+              "label": "Returning home",
+              "url": "/emergencies/returning-home/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    }
   ]
 }

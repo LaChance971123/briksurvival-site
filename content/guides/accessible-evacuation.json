@@ -29,13 +29,13 @@
   "next": "Practise the plan with the person’s consent and revise it when equipment or care needs change. Keep an alternative plan for power loss and an unavailable caregiver.",
   "watch": "Do not separate a person from essential equipment or a necessary caregiver if avoidable. An untrained lifting attempt can injure both the person and the helper.",
   "without_help": "Use your confirmed private support network and a destination suited to care needs. If transport cannot be arranged, identify the safest available refuge and communicate the precise assistance required through a safe channel.",
-  "household": "Practice the route using the actual mobility and communication aids. Keep chargers, essential medicines and written instructions together. Ask the person what works for them before moving them or their equipment.",
-  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
-  "sources": "accessibility",
+  "household": "Ask the individual what assistance is safe and useful. Include named helpers and a backup, and keep essential equipment and a necessary caregiver with the person wherever feasible.",
+  "pack_now": "A concise assistance and communication card, current care instructions, essential mobility and communication aids, approved chargers and consumables, a daily-use grab list and confirmed transport and destination details.",
+  "sources": "accessible-evacuation-expanded",
   "category": "evacuation-shelter",
   "subcategory": "Evacuation",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-04",
   "aliases": [
     "wheelchair evacuation",
     "disabled evacuation",
@@ -46,23 +46,244 @@
     "wheelchair evacuation",
     "disabled evacuation",
     "accessible shelter",
-    "mobility emergency"
+    "mobility emergency",
+    "Describe assistance as tasks, with the person’s input",
+    "Check the entire route, including the building exit",
+    "Arrange named helpers and transport backups",
+    "Keep essential equipment and a useful handover together",
+    "Confirm the destination’s specific capabilities",
+    "Rehearse safely and state what to do if assistance fails"
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [
     [
-      "What specific assistance is required?",
-      "Describe actions rather than only a diagnosis: stairs, transfers, communication, oxygen, charging, medication or a service animal. Make this information available to a trusted helper without publishing private medical details."
+      "Does accessible entry mean the destination meets my needs?",
+      "No. Check toilets, sleeping, communication, power, essential care, assistance and equipment arrangements separately, then verify actual conditions on arrival."
     ],
     [
-      "What if the planned helper cannot come?",
-      "Identify a second reachable support option and a safe waiting location suited to the hazard. Check it directly when possible. A generic shelter label does not establish accessibility, medical capability or permission to bring needed equipment."
+      "Should we practice carrying someone down stairs?",
+      "Do not improvise an untrained carry. Develop the building-specific plan with the person and appropriate professionals, and rehearse only safe agreed actions."
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-04",
+  "sections": [
+    {
+      "heading": "Describe assistance as tasks, with the person’s input",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Start with what the individual says they need and what safely works for them. A diagnosis alone does not explain how to leave a building, communicate, travel, use a toilet, or maintain essential care. Plan for a difficult day as well as a good one. Pain, fatigue, noise, loss of power and an unfamiliar setting may change what the person can manage independently."
+        },
+        {
+          "type": "table",
+          "caption": "A practical assistance record",
+          "columns": [
+            "Task",
+            "Record the real requirement"
+          ],
+          "rows": [
+            [
+              "Movement",
+              "Usable distance, stairs, transfers, mobility aid and safe assistance."
+            ],
+            [
+              "Communication",
+              "Preferred language or format, aid, interpreter or written prompts."
+            ],
+            [
+              "Care",
+              "Prescribed routine, equipment dependencies and care-provider contacts."
+            ],
+            [
+              "Transport",
+              "Suitable vehicle, boarding requirements and equipment space."
+            ],
+            [
+              "Destination",
+              "Entry, toilet, sleeping, charging and caregiver arrangements."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Use consent to decide which helpers receive sensitive details. Keep a concise task note available to trusted people without publishing medical records. Ask the care provider or equipment supplier about technical and clinical questions rather than inventing a generic carrying method or backup power rule."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Inclusive preparedness",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/inclusive-preparedness-resources.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Check the entire route, including the building exit",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A route is only usable if the person can move from their actual starting place to the destination. Check doors, locks, thresholds, corridors, stairs, outside surfaces, pickup position and vehicle boarding. Do this in normal safe conditions with appropriate support. Do not rely on an elevator as the only exit arrangement, especially in a fire, power failure or damaged building."
+        },
+        {
+          "type": "flow",
+          "caption": "Every part of the route needs a workable answer",
+          "items": [
+            [
+              "Building",
+              "How does the person reach the appropriate safe exit or planned refuge?"
+            ],
+            [
+              "Transport",
+              "Who assists, what vehicle fits, and how are the person and equipment moved safely?"
+            ],
+            [
+              "Destination",
+              "Can the site support access, communication and essential care on arrival?"
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, individual needs and current instructions control the response."
+        },
+        {
+          "type": "paragraph",
+          "text": "Discuss the site-specific evacuation plan with building management or the responsible fire-safety professional before an emergency. If a refuge is part of that plan, know how assistance is requested and what the arrangement actually provides. Do not assume an unmarked landing is safe for every hazard. Never practice by blocking exits, disabling alarms, or improvising an untrained carry down stairs."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Inclusive preparedness",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/inclusive-preparedness-resources.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Arrange named helpers and transport backups",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Make the primary helper’s role explicit: check in, reach the person, assist with specified tasks, and communicate the outcome. Ask whether they can realistically reach the location when roads, lifts or phones fail. A nearby relative may face the same disruption. Identify another viable option and keep current contact information for both. A message requesting help is not confirmation that someone is on the way."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Ask helpers to learn the person-approved assistance method through suitable training or professional guidance.",
+            "Confirm who can unlock the location and how lawful access is arranged.",
+            "Check whether the transport provider can accommodate the actual mobility equipment and necessary companion.",
+            "Ask any local registry or assistance program about eligibility, registration deadlines, contact procedures and limits; registration is not a rescue guarantee.",
+            "Decide how the person reports a failed arrangement and the precise assistance still required."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Editorial example: a driver offers a car but the required wheelchair will not fit and the person cannot safely transfer. The offer does not complete transport. Resolve the whole journey in advance rather than counting a phone number as a confirmed capability. Recheck when equipment, mobility, helpers or living arrangements change."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Inclusive preparedness",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/inclusive-preparedness-resources.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Keep essential equipment and a useful handover together",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Write a portable care and equipment note for the person and trusted helper. Include necessary current instructions, contact details, compatible chargers, required consumables, and where daily-use items are kept. Medicines and equipment must be stored and transported under their specific requirements. Use a provider-directed contingency for electricity-dependent care; an ordinary phone power bank does not establish support for a medical device."
+        },
+        {
+          "type": "table",
+          "caption": "Separate what travels from what must be grabbed",
+          "columns": [
+            "Layer",
+            "Useful contents or information"
+          ],
+          "rows": [
+            [
+              "Always accessible",
+              "Communication card, trusted contacts and concise assistance preferences."
+            ],
+            [
+              "Prepared carry items",
+              "Suitable charger, approved consumables, spare aids where appropriate."
+            ],
+            [
+              "Daily-use grab list",
+              "Current medicines or equipment that cannot remain packed."
+            ],
+            [
+              "Technical instructions",
+              "Device model, safe operation, power limits and supplier contact."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the person with essential mobility or communication aids and a necessary caregiver whenever feasible. If a separation cannot be avoided, record where equipment went and who is responsible for reuniting it. Do not make children lift equipment or carry medicines beyond their ability. Avoid a bag so heavy that it competes with safely supporting the person."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Confirm the destination’s specific capabilities",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An “accessible” label may refer only to an entrance. Ask about the full stay: toilets, washing, sleeping position, turning space, safe electrical supply, medication storage, communications, necessary assistance and service-animal arrangements. A general evacuation center may not provide clinical care or a personal caregiver. State needs clearly and ask what is confirmed, what must be supplied, and what remains unavailable."
+        },
+        {
+          "type": "callout",
+          "title": "A destination must match the care plan",
+          "text": "If essential care cannot be sustained there, investigate another suitable arrangement before travel becomes urgent. Do not assume the presence of staff or a generator means the person’s specific needs will be met."
+        },
+        {
+          "type": "paragraph",
+          "text": "Record the date, contact and limits of a confirmation, then recheck when conditions change. A relative’s home can be a suitable option only if entry, toilet access, equipment and care arrangements actually work. Plan a realistic alternative for a site that fills, loses power, or becomes unreachable. On arrival, verify conditions rather than treating the pre-emergency conversation as permanent assurance."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Checking a shelter destination",
+              "url": "/preparedness/shelter-destination-check/"
+            },
+            {
+              "label": "Household evacuation planning",
+              "url": "/preparedness/bug-out-plan/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Rehearse safely and state what to do if assistance fails",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use discussion and a supported normal-condition route check with the individual’s agreement. Keep medical support operating and stop if the exercise causes pain, distress or an unsafe condition. Time useful steps without turning movement into a race. Check whether the backup helper can find the instructions and explain the actual assistance instead of simply saying they will help."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Describe the warning and how the person perceives it.",
+            "Identify the building response appropriate to that hazard.",
+            "Locate the communication card and essential grab list.",
+            "Confirm helper, vehicle and destination arrangements.",
+            "Introduce one failure on paper and identify the next realistic option.",
+            "Record the unmet need, responsible person and next action."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If an emergency occurs and help cannot be reached, use the safest available location appropriate to the hazard and communicate exact location and assistance needed through a safe working channel. Do not treat delayed help as permission for an unsafe transfer. For a developing threat, earlier movement can preserve options; immediate fire or structural danger needs its own building emergency response. Review the plan after any failed step."
+        }
+      ],
+      "references": []
+    }
+  ]
 }

@@ -29,13 +29,13 @@
   "next": "Keep one person coordinating the information so sightings, contacts and dates are not lost. Update the record when someone is found and tell verified tracing services to stop circulating old requests.",
   "watch": "Scammers may demand money or identity documents. Do not post full identity numbers, sensitive addresses or real-time movements publicly.",
   "without_help": "If networks fail, follow the written reunion plan only where safe and leave a message with the agreed trusted contact. Keep your own location predictable rather than repeatedly moving between unsafe places.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: record facts. Agree who will manage children, pets or mobility needs while that action happens. Scammers may demand money or identity documents. Do not post full identity numbers, sensitive addresses or real-time movements publicly.",
-  "pack_now": "For family separation & reunification, prioritize only items needed for the first action and the fallback: If networks fail, follow the written reunion plan only where safe and leave a message with the agreed trusted contact. Keep your own location predictable rather than repeatedly moving between unsafe places. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "sources": "family-links",
+  "household": "Keep children with a trusted responsible adult and assign one person to coordinate confirmed information. Plan communication, authorized collection and care needs without sending several people into unsafe searches.",
+  "pack_now": "A private last-contact record, current photograph where available, household contact card, school or caregiver release details, a working communication method and verified case references.",
+  "sources": "family-reunification-expanded",
   "category": "evacuation-shelter",
   "subcategory": "Family reunification",
   "content_type": "Emergency guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "aliases": [
     "missing family",
     "separated child",
@@ -50,27 +50,243 @@
     "separated child",
     "family lost",
     "reunite",
-    "cant find family"
+    "cant find family",
+    "Stabilize your own group and record the last confirmed facts",
+    "Use the existing reunion plan before inventing several searches",
+    "Use school, childcare and caregiver release procedures",
+    "Find an appropriate tracing or welfare service and verify it",
+    "Check reported sightings without exposing the person",
+    "Confirm the reunion and close the information loop"
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [
     [
-      "What matters before collecting supplies?",
-      "Stay in a safe place, try the agreed contact and meeting plan, and record the missing person’s last confirmed location and time. Keep children with a trusted caregiver. Use verified Red Cross or humanitarian family-tracing channels if available. Do not publish sensitive personal details or enter danger to search. Collect items only if doing so does not delay this action."
+      "Should I post all identity details publicly?",
+      "No. Limit any appeal to useful appropriate information and seek verified tracing guidance. Keep identity numbers, private medical records, addresses and live movements out of public posts."
     ],
     [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For family separation & reunification, keep the specific hazard in view: Scammers may demand money or identity documents. Do not post full identity numbers, sensitive addresses or real-time movements publicly."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Protect children. Never hand a child to an unverified adult promising reunification. Keep a written contact card and involve a trusted caregiver or verified protection service. Keep personal notes private; they are not submitted to Osprey Zero."
+      "What closes the search?",
+      "Confirm identity, location and any assistance needed, tell the coordinator and relevant tracing services, and update obsolete requests. A reported sighting alone is not a verified reunion."
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-04",
+  "sections": [
+    {
+      "heading": "Stabilize your own group and record the last confirmed facts",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before searching for anyone, protect the people already with you and establish a safe contactable base. A frantic series of moves can create another missing person and erase the location someone expects you to use. If a child is missing or someone may be in immediate danger, contact the appropriate emergency or protection service through a safe available channel. Do not postpone that request while completing a perfect record."
+        },
+        {
+          "type": "table",
+          "caption": "A private first record",
+          "columns": [
+            "Field",
+            "What belongs in it"
+          ],
+          "rows": [
+            [
+              "Person",
+              "Name, recent description or photograph, and relevant identifying details."
+            ],
+            [
+              "Last confirmed contact",
+              "Exact place, time, who observed it and how they know."
+            ],
+            [
+              "Immediate concern",
+              "Age, essential care or a specific known hazard; avoid guessing."
+            ],
+            [
+              "Attempts made",
+              "Number or channel, time, outcome and any reference from a service."
+            ],
+            [
+              "Your contact",
+              "A reachable trusted coordinator and safe way to send updates."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Separate what you witnessed from a reported sighting and a rumor. “Someone said they were at a shelter” is not a confirmed arrival. Retain the original message if safe, note its time, and check the sender through a known channel. Keep the working record private rather than placing a full identity profile on social media."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Use the existing reunion plan before inventing several searches",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Try the person’s agreed contact channel and the household’s outside coordinator. Send one short factual update with your location, the people with you, and a next check-in time. Ask for confirmation when practical. If a prearranged meeting place is reachable and appropriate to the hazard, use the written plan. Do not treat that plan as permission to cross danger or enter a damaged building."
+        },
+        {
+          "type": "flow",
+          "caption": "One coordinator keeps the search coherent",
+          "items": [
+            [
+              "Record",
+              "Collect confirmed last-contact details and current concerns."
+            ],
+            [
+              "Coordinate",
+              "Use agreed contacts and a safe meeting plan; assign distinct checks."
+            ],
+            [
+              "Update",
+              "Log each result, keep your own group reachable, and close outdated requests."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, individual needs and current instructions control the response."
+        },
+        {
+          "type": "paragraph",
+          "text": "A useful division of work is for one adult to contact the known school or host while another stays with children and maintains the record. Give each task a clear end point and reporting time. Avoid several people independently driving to the same unverified location. If no message gets through, maintain a predictable safe location as far as the incident allows."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Household emergency planning",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Use school, childcare and caregiver release procedures",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A school or care facility may move people to a different site and may restrict collection to authorized adults. Before an incident, ask for its emergency contact, release, relocation and identification procedure. Put the relevant details with the household plan. During an incident, use independently verified facility information rather than an address supplied by an unknown caller claiming to have your child."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Name the authorized backup collector and make sure the facility’s records agree.",
+            "Record what identification or permission the actual facility requires, without assuming one universal rule.",
+            "Arrange who stays with other children while a collector travels.",
+            "Use a calm handover: verify the child’s identity, the collecting adult and the confirmed destination.",
+            "If someone offers to move or reunite a child, verify their role and organization before allowing a handover; seek verified protection help when needed."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For an adult requiring assistance, record how they communicate and who is authorized to help. A caregiver’s failure to answer does not prove that the adult was transferred elsewhere. Check the facility or known support contact and ask for a specific confirmed status. Respect privacy limits; an institution may need to verify your identity before disclosing information."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Find an appropriate tracing or welfare service and verify it",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The American Red Cross describes different family and welfare inquiry services for U.S. disaster separations, with eligibility criteria. Use its current contact-and-locate page or an independently verified local chapter to learn which service fits. For international separation, use verified Red Cross or Red Crescent family-links channels appropriate to the situation. Neither an inquiry submission nor a registration guarantees a rapid location or reunion."
+        },
+        {
+          "type": "table",
+          "caption": "Before sending sensitive information",
+          "columns": [
+            "Check",
+            "Ask or verify"
+          ],
+          "rows": [
+            [
+              "Identity of service",
+              "Find the organization through an independent known channel."
+            ],
+            [
+              "Scope",
+              "Does it handle this disaster, geographic area and type of separation?"
+            ],
+            [
+              "Required information",
+              "Which details are necessary, and where are they stored or shared?"
+            ],
+            [
+              "Reference and follow-up",
+              "What case reference and safe update method will be used?"
+            ],
+            [
+              "Costs or demands",
+              "Question unexpected payment, pressure or requests for unnecessary identity documents."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep any case reference with the coordinator’s record. Do not send private documents through a stranger’s link because they claim the person has been found. If official services are unsafe or unavailable in the local situation, use a trusted humanitarian channel and the household’s own safe contacts while protecting sensitive location information."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Contact and locate loved ones",
+          "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/contact-and-locate-loved-ones.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Check reported sightings without exposing the person",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A report should include when and where the person was seen, what the observer actually knows, and a safe way to verify it. Several reposts of one claim do not create several independent sightings. Use known contacts or the relevant verified service to check the report. Do not send a child, a vulnerable adult, or an untrained volunteer into a hazardous search area."
+        },
+        {
+          "type": "callout",
+          "title": "Public appeals need a privacy decision",
+          "text": "Consider what minimum information could help, who might see it, and whether the person faces a safety threat. Keep full identity numbers, medical records, private addresses and live movements out of public posts. Ask a verified tracing service what publication is appropriate."
+        },
+        {
+          "type": "paragraph",
+          "text": "Editorial example: a stranger says a relative is at a hotel and asks for a fee before giving a room number. Record the claim, independently contact the hotel or verified service through a known number where appropriate, and do not pay merely to unlock the story. A convincing photograph can be old or copied. Avoid promising a reward or sharing more private information before verification."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Communications outage",
+              "url": "/emergencies/communications-outage/"
+            },
+            {
+              "label": "Recognizing disaster scams",
+              "url": "/emergencies/disaster-scams/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Confirm the reunion and close the information loop",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When contact is restored, confirm identity through familiar knowledge or a trusted verified handover, establish the person’s actual location and condition, and agree how to reconnect safely. Someone answering a borrowed phone may be reachable but still unable to travel. Do not call the search finished until the coordinator understands what support or onward arrangement is needed."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Confirm who was reached, where they are and when the contact happened.",
+            "Check whether urgent care, an accessible journey or a trusted caregiver is needed.",
+            "Tell the household coordinator and relevant verified tracing services.",
+            "Update or remove outdated public requests where you control them.",
+            "Keep necessary case and care records private, and stop unnecessary circulation.",
+            "Review what caused separation and improve contact cards or release arrangements."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Reunion can be physically and emotionally difficult. Provide calm information, suitable food and water, essential care, and rest where available. Avoid requiring a child to repeatedly recount frightening details to every adult. Once safe, replace assumptions in the plan with what actually worked: a reachable contact, a clear collector, a confirmed destination, and a paper fallback."
+        }
+      ],
+      "references": []
+    }
+  ]
 }

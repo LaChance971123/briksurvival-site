@@ -4,14 +4,21 @@
   "category": "preparedness",
   "subcategory": "Kits & supplies",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "aliases": [
     "cheap emergency kit",
     "budget preparedness",
     "low cost kit",
     "cant afford kit"
   ],
-  "keywords": [],
+  "keywords": [
+    "Choose a likely disruption and protect ordinary essentials first",
+    "Inventory capabilities as well as objects",
+    "Build a three-stage priority list",
+    "Count the complete cost and recurring burden",
+    "Use ordinary food and quantities you can actually maintain",
+    "Make a small purchase log and finish one gap at a time"
+  ],
   "tldr": "Start with a household plan, written contacts and supplies you already own. Prioritize drinking water, essential medicines, food you normally eat and safe light. Build gradually without taking money away from urgent household needs.",
   "steps": [
     [
@@ -28,15 +35,15 @@
     ],
     [
       "Make free planning changes",
-      "Write emergency contacts, choose meeting places, save guides and learn safe shutoffs. Practice an exit route and check warning access."
+      "Write contacts, choose safe meeting places, review usable exits and warning access, and practice the household plan. Keep concise paper instructions; Osprey Zero does not provide free offline guide downloads."
     ]
   ],
   "without_help": "Plan around actual carrying capacity, storage, transport and money. Identify safe mutual support before a crisis, but confirm what a neighbor or group can provide. A borrowed item is only useful when it will be accessible during the disruption.",
-  "household": "Ask each person what they need to function without power or transport. Include sensory access, infant feeding, pets and medical routines. Keep a written priority list so shared household purchases solve a real problem rather than duplicating equipment.",
-  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "household": "Choose priorities around actual care, diet, access, pet and transport needs. Assign inventory and testing tasks people can do safely, and avoid counting the same supply toward several different people or uses.",
+  "pack_now": "A short household needs list, accurate inventory, spending limit, complete-cost comparison, safe working equipment already owned and a dated list of unresolved essential gaps.",
   "next": "Revisit one gap at a time. Check a kit when food or medication rotates, after household changes and before the local hazard season.",
   "watch": "Do not buy unsafe used safety equipment, store fuel improperly or ration essential medication to build a kit. No shopping list guarantees survival.",
-  "sources": "budget-preparedness",
+  "sources": "budget-preparedness-expanded",
   "shopping": [
     "Safe drinking-water containers",
     "Food the household normally eats without cooking",
@@ -51,39 +58,245 @@
   "decisions": [
     [
       "Little storage space",
-      "Choose compact supplies that are useful in daily life, keep exits clear and identify a safe storage location."
+      "Use suitable compact supplies, keep exits clear, check safe storage and avoid unsafe lifting."
     ],
     [
       "No purchase is affordable now",
-      "Complete contacts, escape planning, guide saving and a household inventory first. Ask a trusted local support group about verified resources when safe."
+      "Complete contacts, safe movement planning and an accurate inventory. Investigate verified support when safe without assuming it will be available."
     ]
   ],
   "faqs": [
     [
-      "Do I need a large commercial kit?",
-      "No. Start with practical needs and equipment the household can use. Compare an actual inventory with the likely disruption before buying."
+      "What can I do with no shopping budget?",
+      "Update contacts, roles, exits, destinations and inventory. Test existing suitable equipment, label where essentials are kept and identify the first real gap."
+    ],
+    [
+      "How do I compare cheap and expensive options?",
+      "Define the required task, check usability and documented limits, then include compatible power, consumables, maintenance, training and storage. Price alone does not establish usefulness."
     ]
   ],
-  "worksheet": [
-    "Incident / symptom onset / location",
-    "Help requested / response confirmed",
-    "Actions / times / next handover"
-  ],
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-04",
   "sections": [
-    [
-      "Spend against a specific gap",
-      "Start with actions that cost little: update contacts, learn exits, inventory medicines, test chargers and choose destinations. Next, buy the missing essential with the greatest practical benefit. Ordinary food you already eat, appropriate water containers and reliable lighting often beat a box of unfamiliar gadgets."
-    ],
-    [
-      "Count continuing costs",
-      "Include replacement batteries, expiry, storage space, training and subscription fees. Avoid equipment that requires consumables you cannot afford to replace. Record what each purchase does and who can operate it; a low price is not good value if the item cannot support the intended task."
-    ],
-    [
-      "Buy the missing capability",
-      "Before buying, name the problem the purchase will solve: seeing in darkness, carrying safe water, opening food or contacting the household. Check whether you already own a suitable item. Budget for any required batteries, cable, storage or maintenance as part of the same purchase. A sale price is not a saving if the equipment cannot be used by the person who needs it."
-    ]
+    {
+      "heading": "Choose a likely disruption and protect ordinary essentials first",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A limited budget needs a defined job. Start with one plausible local disruption, such as a short power outage, a water interruption or a planned evacuation. List the people and pets who must be supported and their essential care. Set a spending limit that does not displace rent, food, necessary medicines or other immediate needs. This guide is a practical household buying method, not a prediction of disaster or personal financial advice."
+        },
+        {
+          "type": "flow",
+          "caption": "Buy against a real gap",
+          "items": [
+            [
+              "Inventory",
+              "Count suitable working items and usable quantities already owned."
+            ],
+            [
+              "Prioritize",
+              "Identify the essential need that fails first in the selected scenario."
+            ],
+            [
+              "Complete",
+              "Buy or arrange the missing part, test it, and include continuing costs."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, individual needs and current instructions control the response."
+        },
+        {
+          "type": "paragraph",
+          "text": "Avoid starting with a commercial kit’s item count. Twenty unfamiliar accessories can leave the household without a usable light, safe water or a necessary charger. Define success in plain terms: everyone can see to move, eat suitable food, contact the agreed person, or leave with essential care. A free planning change may solve a gap that another gadget cannot."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Inventory capabilities as well as objects",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Collect suitable supplies already in the home and test ordinary equipment safely. Record the item, usable quantity, location, who can operate it and what is missing. A flashlight without compatible batteries is an incomplete capability. A large tin of food without an opener is another. Do not count water containers as filled reserves or orders as supplies already available."
+        },
+        {
+          "type": "table",
+          "caption": "Turn an inventory into useful decisions",
+          "columns": [
+            "Already owned",
+            "Check",
+            "Possible missing part"
+          ],
+          "rows": [
+            [
+              "Battery light",
+              "Works; controls suit the user.",
+              "Correct batteries or an accessible storage spot."
+            ],
+            [
+              "Normal pantry food",
+              "Suitable diet and safe preparation without normal utilities.",
+              "An opener, usable servings or preparation water."
+            ],
+            [
+              "Phone charging gear",
+              "Complete compatible combination tested.",
+              "A cable or suitable charged reserve."
+            ],
+            [
+              "Water containers",
+              "Appropriate for safe water and usable by the household.",
+              "A safe filling, storage or handling arrangement."
+            ],
+            [
+              "Travel bag",
+              "Manageable with care and mobility needs.",
+              "A clear daily-use grab list rather than a new bag."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep unsuitable items off the ready list. Damaged electrical equipment, unsafe used protective equipment or unlabelled chemicals are not savings. If a borrowed item is part of the plan, confirm access and what happens if the owner needs it too. Record that dependency instead of presenting it as guaranteed household stock."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Emergency kit supplies",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Build a three-stage priority list",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use stages rather than an all-or-nothing cart. Stage one is essential gaps and free organization. Stage two improves the duration or access of capabilities already made usable. Stage three adds convenience or redundancy after the essentials work. The order is editorial planning; individual care needs and the local hazard may change it. Do not ration prescribed medicines or unsafe water to afford an upgrade."
+        },
+        {
+          "type": "table",
+          "caption": "An editorial staging example",
+          "columns": [
+            "Stage",
+            "Typical job",
+            "Check before moving on"
+          ],
+          "rows": [
+            [
+              "Start",
+              "Contacts, care arrangement, safe water, suitable food and a working light.",
+              "Can the household use the first-action plan?"
+            ],
+            [
+              "Extend",
+              "Additional normal consumables or a tested backup for a key dependency.",
+              "Does the added reserve solve an actual duration or access gap?"
+            ],
+            [
+              "Improve",
+              "Comfort, carrying convenience or specialist equipment with a justified purpose.",
+              "Can required maintenance, training and consumables be sustained?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A household with no money available can still write contacts, agree roles, find exit information, label existing supplies and test a compatible charger. If purchasing is possible, compare the actual missing capability rather than a product category. Two households with the same budget can need different first purchases because one already owns lights and the other has a child-specific care gap."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Count the complete cost and recurring burden",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The purchase price may omit the battery, charger, cable, consumable, training, storage or service needed to use the item. Write the complete cost before buying. Check whether parts remain reasonably obtainable and whether the user understands operation. Avoid treating a subscription-dependent feature as an independent fallback until service limits, renewal cost and loss-of-connection behavior are understood."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Include compatible power and any required adapter in the same decision.",
+            "Compare the storage footprint and safe handling weight with the home’s real space.",
+            "Check replacement instructions and whether ordinary use can rotate consumables.",
+            "Identify training or qualified installation needed to use equipment safely.",
+            "Check the expected job against documented limits, not only promotional claims.",
+            "Decide what becomes unusable if a paid service or proprietary consumable is unavailable."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Editorial example: a discounted light needing an expensive uncommon battery may cost more to maintain than a suitable existing light with ordinary replacements. Conversely, the cheapest option can be poor value if a person cannot see or operate its controls. Compare a few suitable choices after defining requirements; do not assume high price or tactical styling establishes usefulness."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Use ordinary food and quantities you can actually maintain",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose suitable shelf-stable food the household already eats and can safely prepare under the selected scenario. Plan meals instead of collecting random packets. Consider allergies, texture needs, infants, pets, preparation water and refrigeration after opening. A normal pantry rotation can reduce waste, but it requires recording what was used and replacing it rather than assuming the reserve remains complete."
+        },
+        {
+          "type": "callout",
+          "title": "Water and special care need their own calculation",
+          "text": "Use the water-storage guide and individual care instructions. A small bottle included with a bargain kit does not establish the household’s complete safe-water plan. Infant feeding cannot be substituted with adult pantry food."
+        },
+        {
+          "type": "paragraph",
+          "text": "Buy gradually when affordable and use a consistent unit for inventory. Separate an emergency reserve from food already expected to cover the week; counting it twice exaggerates readiness. Keep storage safe, accessible and clear of exits. If space is limited, a compact staged plan may work better than a bulk purchase that cannot be lifted or stored appropriately."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Water quantities and storage",
+              "url": "/preparedness/water-storage/"
+            },
+            {
+              "label": "A practical 72-hour kit",
+              "url": "/preparedness/72-hour-kit/"
+            },
+            {
+              "label": "Infant and child care",
+              "url": "/preparedness/infant-child-preparedness/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Make a small purchase log and finish one gap at a time",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a simple private record: need, item or arrangement, complete cost, quantity, location, result and next review. Mark a capability ready only after the missing part is obtained and the normal safe test works. Keep open problems visible but short. A wish list can grow indefinitely; a useful plan shows which essential gaps were actually closed."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Choose one scenario and a realistic spending limit.",
+            "Inventory what works, including actual quantities and access.",
+            "Rank care and essential daily needs before optional upgrades.",
+            "Resolve one complete capability and test it safely.",
+            "Update the inventory and replacement requirement.",
+            "Review after use, a household change or the relevant hazard season."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If the first gap is unaffordable, investigate verified community resources or trusted mutual support where safe. Ask what is actually available and accessible without assuming assistance will arrive. Do not buy an item simply because a sale deadline creates urgency. The most useful improvement this week may be a clear contact card, a reachable light or a confirmed destination, not a new box of supplies."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Household emergency planning",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    }
   ]
 }

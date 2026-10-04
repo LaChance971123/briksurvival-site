@@ -4,7 +4,7 @@
   "category": "communications",
   "subcategory": "Connectivity",
   "content_type": "Emergency guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "aliases": [
     "no cell service",
     "no signal",
@@ -13,7 +13,13 @@
     "wifi down"
   ],
   "keywords": [
-    "Connectivity"
+    "Connectivity",
+    "Work out what failed without delaying protection",
+    "Separate urgent help from household check-ins",
+    "Use one message format and one outside coordinator",
+    "Keep power for the tasks that matter",
+    "Use a movement plan that does not depend on a new message",
+    "Practice the fallback without disconnecting essential care"
   ],
   "tldr": "Conserve phone battery, try short texts for nonurgent check-ins and use a battery radio for official information. For immediate danger, try calling local emergency services; text-to-911 availability varies. Do not travel into danger just to find signal.",
   "steps": [
@@ -36,36 +42,247 @@
   ],
   "next": "Keep paper contact lists, offline maps and a radio. Arrange check-in times before a crisis.",
   "watch": "A message sent is not necessarily delivered. Do not assume emergency texting is supported everywhere.",
-  "sources": "communications-outage",
+  "sources": "communications-outage-expanded",
   "shopping": [],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Write a short message with your status, location and next check-in time; try it periodically rather than draining the battery with constant retries. Use your agreed meeting plan only when the route is safe. Do not split up to hunt for signal.",
-  "household": "Give each person a written contact card and explain what to do if separated. Plan for hearing, vision, language and literacy needs. Keep live family locations and identity details off public posts even when a message seems urgent.",
-  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "household": "Give every person a usable paper fallback and an agreed check-in method. Plan who assists a child or someone who cannot use the usual message format. Keep private locations and care information within the trusted group.",
+  "pack_now": "Paper contact card, destination and meeting notes, a usable phone and compatible charging reserve, a working broadcast receiver and a brief check-in log. Keep needed communication aids available.",
   "decisions": [],
   "faqs": [
     [
-      "Is one failed app the whole network?",
-      "Try the simplest available channel without repeated battery-draining attempts: a short text, a checked Wi-Fi connection or a prearranged contact. A local internet outage and a cellular outage may require different workarounds; do not assume every service has failed."
+      "Can a weather radio send my location?",
+      "A normal weather receiver supplies broadcasts; it does not report your location or send a request for help. Use a separately verified communication method and keep a paper movement plan."
     ],
     [
-      "What if messages cannot be delivered?",
-      "Use the household’s prearranged meeting and check-in plan rather than making unplanned trips to find a signal. Keep a radio or other verified warning source if available. Record unconfirmed information separately from actual contact."
+      "Does sent mean someone received the message?",
+      "No. Record whether the recipient acknowledged it and which facts remain unconfirmed. Use the agreed fallback without assuming silence proves an injury."
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-04",
   "sections": [
-    [
-      "Write a fallback ladder",
-      "Choose an order such as short text, another safe connection, an out-of-area contact and an agreed meeting point. Tell everyone the expected check-in window. A failed call should not cause each person to improvise a different destination."
-    ],
-    [
-      "Reduce avoidable battery use",
-      "Keep messages brief, dim the screen where practical and close unnecessary activity. Use appropriate power banks and cables. Do not climb unsafe structures or enter danger just to obtain reception; location and accountability plans should still work without service."
-    ]
+    {
+      "heading": "Work out what failed without delaying protection",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A phone showing no signal, an unavailable messaging app, and a home router without power are different failures. From a safe place, check the simplest explanation once: whether other devices work, whether the phone has charge, and whether a known connection is available. Do not spend the first minutes restarting every device while a fire, flood, or medical emergency needs action. Carry out the protective step and try the appropriate emergency channel."
+        },
+        {
+          "type": "table",
+          "caption": "A quick connection check",
+          "columns": [
+            "What you observe",
+            "What to try safely",
+            "What it does not establish"
+          ],
+          "rows": [
+            [
+              "One app fails",
+              "A short ordinary text or another familiar service.",
+              "That the whole cellular network is unavailable."
+            ],
+            [
+              "Home internet fails",
+              "Cellular service, if available.",
+              "That a powered router has a working upstream connection."
+            ],
+            [
+              "Cellular calls fail",
+              "A short nonurgent text; a known working connection.",
+              "That a message was delivered or someone is responding."
+            ],
+            [
+              "Every usual channel fails",
+              "The written household fallback and a working broadcast receiver.",
+              "That roads, destinations or help are available."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep this check brief. A familiar landline may also depend on electricity or internet equipment. Treat every alternative as a method to verify, not a guaranteed rescue route. If equipment is damaged, wet, or unsafe to reach, leave it alone."
+        }
+      ],
+      "references": [
+        [
+          "National 911 Program · Calling and texting 911 (U.S.)",
+          "https://www.911.gov/calling-911/frequently-asked-questions/"
+        ]
+      ]
+    },
+    {
+      "heading": "Separate urgent help from household check-ins",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For a true emergency in the United States, call 911 if you can; text if you cannot and the local service supports it. The National 911 Program notes that unsupported text-to-911 should generate a bounce-back. A message in a family chat, a social-media post, or a text marked sent is not a request confirmed by an emergency dispatcher. Elsewhere, use the applicable local emergency system."
+        },
+        {
+          "type": "callout",
+          "title": "Give the location in plain language",
+          "text": "When connected, state the address, apartment or room, what is happening, and the assistance needed. Do not assume a device automatically supplies a complete usable location. Follow the call-taker’s instructions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Routine family updates have a different purpose: accounting for people and avoiding unnecessary travel. Keep those messages short and direct. Do not use emergency lines for outage estimates or a practice call. If a test of emergency access is needed for an individual accessibility plan, arrange it in advance through the local service’s nonemergency process."
+        }
+      ],
+      "references": [
+        [
+          "National 911 Program · Calling and texting 911 (U.S.)",
+          "https://www.911.gov/calling-911/frequently-asked-questions/"
+        ]
+      ]
+    },
+    {
+      "heading": "Use one message format and one outside coordinator",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An agreed format helps a tired reader understand an update quickly. Use names or an agreed identifier, present location, condition, who is together, and the next intended check-in. Include the time and distinguish a current fact from a proposed move. Do not report a destination as reached until someone has actually arrived. Keep exact locations and care details within the trusted contact group."
+        },
+        {
+          "type": "flow",
+          "caption": "Household message and confirmation",
+          "items": [
+            [
+              "Send",
+              "Report who is with you, current location, condition and next check-in."
+            ],
+            [
+              "Confirm",
+              "Ask the receiver to acknowledge when practical; record which updates remain unconfirmed."
+            ],
+            [
+              "Coordinate",
+              "The agreed outside contact relays confirmed information instead of everyone repeating calls."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, individual needs and current instructions control the response."
+        },
+        {
+          "type": "paragraph",
+          "text": "Editorial example: “Alex and Sam together at our agreed host, 4:20 pm, no injuries, phone low, next check 6 pm.” This is more useful than “we’re fine” followed by a long silence. Choose realistic check-in windows before a crisis; a missed window is a reason to use the agreed fallback, not evidence by itself that someone is injured."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Household emergency planning",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Keep power for the tasks that matter",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Prioritize warning access, urgent help, essential care communication, and agreed check-ins. Use the phone’s documented power-saving settings, reduce unnecessary screen time, and stop repeatedly refreshing unavailable apps. Store a known compatible charging cable with an appropriate charged power bank. Test the full combination in normal conditions so that an incompatible connector is not discovered during the outage."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Keep paper contact and destination details so a dead phone does not erase the plan.",
+            "Avoid assuming a displayed power-bank capacity equals a fixed number of phone charges; device use, conversion and battery condition differ.",
+            "If limiting radios or using airplane mode between checks, understand that calls and cellular alerts will not arrive while the relevant connection is disabled.",
+            "Use another working warning route when available rather than silencing the only source of urgent information.",
+            "Charge equipment only through safe, compatible supplies. Do not run a vehicle in an enclosed place to charge a phone."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose priorities around the actual user. A communication aid may be more important than a general-purpose phone, while a lone person may need continuous access to incoming messages. The goal is a usable communication plan, not the lowest possible battery consumption."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Use a movement plan that does not depend on a new message",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Write where each person should remain or go if contact fails, subject to the actual hazard and safe access. Different plans may be needed for home, work, school, and travel. A nearby fire meeting place is not automatically the destination for a neighborhood evacuation. Never set a rule that requires crossing floodwater, entering a closed area, or returning to an unsafe building just because nobody replied."
+        },
+        {
+          "type": "table",
+          "caption": "Before networks fail, agree these details",
+          "columns": [
+            "Question",
+            "Write an explicit answer"
+          ],
+          "rows": [
+            [
+              "Who coordinates?",
+              "A named out-of-area contact and a backup."
+            ],
+            [
+              "What if the usual location closes?",
+              "A checked alternative and the conditions for using it."
+            ],
+            [
+              "Who collects a child?",
+              "Authorized collectors and the school’s own release arrangements."
+            ],
+            [
+              "What if travel is unsafe?",
+              "The safest available location and how updates will be attempted."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If the family is together, avoid splitting up to search for signal. If already separated, keep your own location as predictable as safety allows. A working broadcast radio supplies information but normally cannot tell another person where you are; reception and two-way communication are separate capabilities."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Household emergency planning",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Practice the fallback without disconnecting essential care",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a tabletop scenario: one adult is away, home internet fails, and a short text is not acknowledged. Have each person explain the next action using the paper plan. Then test an ordinary message, the known charger, and the broadcast receiver safely. Do not intentionally cut off a medical device, disable emergency access, or create a surprise separation to make the exercise realistic."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Find the contact list without internet or a device unlock.",
+            "Send a normal test check-in to the consenting outside contact and ask for confirmation.",
+            "Identify what is unknown if no confirmation arrives.",
+            "Describe the safe stay-put or movement fallback for each person.",
+            "Review battery use, accessible message formats and missing equipment.",
+            "Fix the single most consequential failure and date the corrected plan."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "After a real outage, record which methods worked rather than assuming the most expensive option performed best. Review the plan when a phone, carrier, school, caregiver, or destination changes. Satellite messaging and other specialist services need their own documented compatibility, coverage and setup checks; do not count an advertised feature as already tested."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Household contact plan",
+              "url": "/preparedness/emergency-contact-plan/"
+            },
+            {
+              "label": "Warning systems",
+              "url": "/preparedness/emergency-alerts/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    }
   ]
 }
