@@ -41,20 +41,7 @@
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: postpone travel. Agree who will manage children, pets or mobility needs while that action happens. Never touch or approach a fallen wire, even if it appears inactive.",
   "pack_now": "For ice storm, prioritize only items needed for the first action and the fallback: Preserve heat in a dry room, keep lights battery powered and avoid unnecessary travel. If you must move because of dangerous cold, do it before people become weak and use a route you know is passable; a car is not reliable shelter if exhaust or roads are blocked. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Avoid travel on icy roads and keep away from ice-laden trees and power lines. Prepare for a long outage using safe heat and battery lights. Stay indoors until conditions improve unless your shelter is unsafe. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For ice storm, keep the specific hazard in view: Never touch or approach a fallen wire, even if it appears inactive."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Check vulnerable people. Plan safe transport to a warm location if heat or essential medical power fails. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

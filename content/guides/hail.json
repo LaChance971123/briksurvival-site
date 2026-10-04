@@ -40,20 +40,7 @@
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: leave the open. Agree who will manage children, pets or mobility needs while that action happens. Do not climb a wet or damaged roof to inspect it.",
   "pack_now": "For hail, prioritize only items needed for the first action and the fallback: Remain under substantial shelter while hail continues. Keep shoes on and avoid glazing. Afterward, assess damage from the ground; loose roofing and hidden electrical damage can be more dangerous than the hail itself. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Get indoors and stay away from windows during hail. If driving, stop in a safe place out of traffic when you can; stay inside the vehicle and protect yourself from broken glass. Do not stop beneath a highway overpass. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For hail, keep the specific hazard in view: Do not climb a wet or damaged roof to inspect it."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Follow other warnings. Hail can accompany tornadoes, lightning and strong wind; act on those warnings as well. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

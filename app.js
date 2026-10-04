@@ -54,11 +54,11 @@ for (const form of document.querySelectorAll('form[data-signup]')) {
   if(form.querySelector('[name="bot-field"]')?.value)return;
   button.disabled=true;status.textContent='Submitting your request…';
   try {const response=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()});if(!response.ok)throw Error();location.assign('/thanks/?request='+encodeURIComponent(form.dataset.signup));}
-  catch {status.textContent='The request could not be submitted. Check your connection and try again. The free online guides are available without signup.';button.disabled=false;}
+  catch {status.textContent='The request could not be submitted. Check your connection and try again. You can still read all free guides.';button.disabled=false;}
  });
 }
 const thanks=document.querySelector('.thanks-page h1');
-if(thanks){const type=new URLSearchParams(location.search).get('request');if(type==='guide-early-access')thanks.textContent='Toolkit update request received.';else if(type==='field-notes-newsletter')thanks.textContent='Field Notes request received.';}
+if(thanks){const type=new URLSearchParams(location.search).get('request');if(type==='guide-early-access')thanks.textContent='Toolkit update request received.';else if(type==='field-notes-newsletter')thanks.textContent='Field Notes request received.';else if(type==='private-contact')thanks.textContent='Your message has been submitted.';}
 
 // Guide links only: no downloaded content, accounts, or household records.
 (function () {

@@ -43,20 +43,7 @@
   "household": "Keep the family together in the correct shelter for the hazard and separate potentially contaminated items from the living area. Use covered food and safe water. Prepare a bag for relocation, but do not send someone outside for it during an active release. For this situation, brief every person on the first action: get inside. Agree who will manage children, pets or mobility needs while that action happens. Fallout conditions vary by place and time. Do not treat a fixed distance or a clock as an all-clear; use the official instructions for your location. Potassium iodide is not a general radiation antidote and should be taken only when public-health officials advise it.",
   "pack_now": "For nuclear detonation, prioritize only items needed for the first action and the fallback: Do not leave protective shelter simply because broadcasts fail. Use an intact basement or central space, keep contaminated outer clothing away from people and use covered water and food. Fire, collapse or another immediate life threat can force a move; a timer alone cannot establish safe outdoor conditions. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "After a nuclear detonation, get inside the nearest sturdy building as quickly as you can. Move to a basement or central interior area, away from walls, windows, and the roof. Stay inside and tune to official updates; the first 24 hours are especially important unless the building is unsafe or authorities direct you elsewhere. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For nuclear detonation, keep the specific hazard in view: Fallout conditions vary by place and time. Do not treat a fixed distance or a clock as an all-clear; use the official instructions for your location. Potassium iodide is not a general radiation antidote and should be taken only when public-health officials advise it."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Stay tuned. Use radio, phone, or other available channels for location-specific instructions. Avoid going out to collect family members who are already sheltered elsewhere. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

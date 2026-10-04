@@ -39,20 +39,7 @@
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: get above the water. Agree who will manage children, pets or mobility needs while that action happens. Flooding can begin far from the heaviest rain. Do not attempt to cross flowing water to reach a vehicle, home, or belongings.",
   "pack_now": "For flooding, prioritize only items needed for the first action and the fallback: Identify higher ground reachable without crossing water. Pack essentials while routes remain dry; if they are already cut off, use the safest elevated space available and signal for help. Stay out of a basement that is taking on water. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Move to higher ground if water is rising or a flash-flood warning affects you. Never walk, swim, or drive through floodwater; depth, current, contamination, and road damage are hard to judge. Follow evacuation orders and avoid basements or low areas that can fill rapidly. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For flooding, keep the specific hazard in view: Flooding can begin far from the heaviest rain. Do not attempt to cross flowing water to reach a vehicle, home, or belongings."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: If trapped, call for help. Give your precise location to emergency services. Move to a higher level if possible; avoid entering a closed attic where you could become trapped by rising water. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

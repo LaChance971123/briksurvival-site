@@ -42,20 +42,7 @@
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: secure items beforehand. Agree who will manage children, pets or mobility needs while that action happens. Do not attempt to clear a tree from a power line.",
   "pack_now": "For damaging winds, prioritize only items needed for the first action and the fallback: Wait for winds to ease in the best shelter you can reach without exposure. Keep a torch and shoes nearby for broken glass. If the building is failing, move to a safer reachable space without going beneath trees, loose roofing or wires. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Shelter inside a sturdy building away from windows when damaging winds threaten. Avoid trees, power lines and lightweight structures. Follow tornado warnings separately; straight-line winds can also cause severe damage. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For damaging winds, keep the specific hazard in view: Do not attempt to clear a tree from a power line."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Keep clear afterward. Assume downed lines are live and report them from a safe distance. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

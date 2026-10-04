@@ -1,0 +1,323 @@
+{
+  "slug": "cartridges-calibers-explained",
+  "title": "Cartridges & calibers: names, compatibility and sporting context",
+  "category": "firearms-tools",
+  "subcategory": "Ammunition",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-04",
+  "published": "2026-10-04",
+  "source_checked": "2026-10-04",
+  "next_review": "2027-01-04",
+  "aliases": [
+    "calibers",
+    "calibres",
+    "22 LR",
+    "9mm",
+    "5.56",
+    "7.62",
+    "223",
+    "308",
+    "rifle ammunition"
+  ],
+  "keywords": [
+    "calibers",
+    "calibres",
+    "22 LR",
+    "9mm",
+    "5.56",
+    "7.62",
+    "223",
+    "308",
+    "rifle ammunition"
+  ],
+  "tldr": "Use the complete cartridge designation, the exact firearm manual and current sporting rules. A shared diameter or a cartridge that physically fits does not establish compatibility. Understand the terminology before comparing equipment.",
+  "steps": [
+    [
+      "Identify the complete designation",
+      "Write down the full chamber marking and the cartridge name in the manufacturer’s manual, including suffixes. Do not rely on “.22,” “9mm” or “7.62” alone."
+    ],
+    [
+      "Separate compatibility from purpose",
+      "First confirm what the firearm is approved to use. Then check the rules and requirements of the lawful sporting activity; those are different questions."
+    ],
+    [
+      "Read the box, not just the sales label",
+      "Keep original packaging and lot information. Note the exact designation and any special warning. Put unknown or mixed ammunition aside rather than guessing."
+    ],
+    [
+      "Budget for the whole activity",
+      "Include access to a lawful range, instruction, hearing protection, storage and any hunting licence. Ammunition availability is only one part of preparedness."
+    ]
+  ],
+  "sections": [
+    {
+      "heading": "Caliber is a starting point, not a complete identity",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Caliber usually describes a bore or projectile diameter, while a cartridge designation identifies a particular ammunition design. The naming conventions are not one consistent measuring system. Some use inch-based names, some use millimetres and a case-length designation, and some retain historical trade names. Gauge is another system used for most shotguns. Treat the complete printed designation as the identifier rather than translating a nickname into an assumed substitute."
+        },
+        {
+          "type": "table",
+          "caption": "Read the whole name",
+          "columns": [
+            "Term",
+            "What it tells you",
+            "What remains to verify"
+          ],
+          "rows": [
+            [
+              "Caliber",
+              "A diameter convention or family label.",
+              "The complete cartridge and chamber designation."
+            ],
+            [
+              "Cartridge",
+              "The assembled ammunition unit.",
+              "Compatibility with the specific firearm."
+            ],
+            [
+              "Bullet",
+              "The projectile, rather than the entire cartridge.",
+              "The complete ammunition product label."
+            ],
+            [
+              "Grain",
+              "A unit of mass used in ammunition descriptions.",
+              "Whether the label refers to a projectile or another component."
+            ],
+            [
+              "Gauge",
+              "A shotgun bore naming convention.",
+              "The permitted shell designation and length in the manual."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "In your household inventory, use the same full spelling as the manufacturer. A short nickname might be convenient in conversation but is a poor storage label. Photograph the original box label for your private records; keep identifying firearm records off public social posts."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Technical terminology",
+          "https://saami.org/glossary/"
+        ]
+      ]
+    },
+    {
+      "heading": "Common names people encounter",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Examples of cartridge families, not interchangeable substitutes",
+          "columns": [
+            "Name encountered",
+            "General sporting context",
+            "Important distinction"
+          ],
+          "rows": [
+            [
+              ".22 Long Rifle / .22 LR",
+              "Commonly encountered in recreational target shooting and lawful small-game hunting.",
+              "It is not the same designation as .22 WMR or every cartridge called “.22.”"
+            ],
+            [
+              "9mm Luger / 9×19mm",
+              "A common centerfire pistol cartridge used in recreational and competition shooting.",
+              "Other cartridges also include “9mm” in their names."
+            ],
+            [
+              ".223 Remington and 5.56×45mm NATO",
+              "Rifle cartridge names often discussed together in target and sporting contexts.",
+              "The chamber and manufacturer approval matter; the names do not establish universal interchangeability."
+            ],
+            [
+              ".308 Winchester and 7.62×51mm NATO",
+              "Rifle designations often discussed together.",
+              "Do not treat every firearm or ammunition product with these labels as an approved substitute."
+            ],
+            [
+              "7.62×39mm",
+              "A separate rifle cartridge designation.",
+              "“7.62” alone cannot identify a cartridge or its compatibility."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These examples explain vocabulary. They are not a ranking for armed confrontation, barrier penetration or a promise about effective range. A sporting choice still depends on the actual activity, local rules, the firearm and the user’s ability to take part responsibly. Avoid asking a retailer for “the best caliber” without first specifying the lawful task and the equipment already owned."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Cartridge compatibility questions",
+          "https://saami.org/faqs/"
+        ]
+      ]
+    },
+    {
+      "heading": "Resolve compatibility questions without an experiment",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "SAAMI specifically warns against firing 5.56 NATO ammunition in a firearm marked for .223 Remington. Its discussion also makes the exact chamber specification and firearm manufacturer important when considering the reverse question. Follow the manufacturer’s answer for the particular model. Do not turn this example into a general rule that similar rifle cartridge names are interchangeable."
+        },
+        {
+          "type": "flow",
+          "caption": "A compatibility question",
+          "items": [
+            [
+              "Identify",
+              "Read the firearm’s exact chamber marking and manual."
+            ],
+            [
+              "Compare",
+              "Compare the complete factory ammunition designation."
+            ],
+            [
+              "Resolve",
+              "Ask the manufacturer when labels differ or the manual is unclear."
+            ],
+            [
+              "Pause",
+              "Keep uncertain ammunition separate until the question is resolved."
+            ]
+          ],
+          "note": "An educational decision aid, not equipment certification or a live assessment."
+        },
+        {
+          "type": "paragraph",
+          "text": "A loose cartridge found in a bag is not a useful way to test this process. Keep original packaging whenever possible. If an inherited firearm has unclear markings, modifications or missing documentation, have a qualified professional identify it before use. A friend’s experience with another firearm is not evidence about this one."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Cartridge compatibility questions",
+          "https://saami.org/faqs/"
+        ],
+        [
+          "NSSF · Firearm handling and ammunition rules",
+          "https://www.nssf.org/safety/rules-firearms-safety/"
+        ]
+      ]
+    },
+    {
+      "heading": "Hunting belongs in a planned food system",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Small-game hunting can be a lawful outdoor activity, but it is an unreliable emergency food promise. Permission, season, species identification, legal methods, suitable conditions, processing knowledge and a way to keep food safe all matter. Do not assume that evacuating or losing utility service suspends wildlife rules. Pack ordinary food for an evacuation rather than making the household’s next meal depend on finding game."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Identify the species and current rules for the exact land you will use.",
+            "Check licences, landowner permission, hunting hours and method restrictions.",
+            "Arrange safe handling, transport and food storage before taking part.",
+            "Decide what will make you cancel the outing: severe weather, fatigue, route closures or uncertainty about permission."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Florida provides a useful example of why caliber alone is insufficient: its current resident-game rules prohibit rimfire cartridges for taking deer and impose other restrictions by method and species. That is a Florida example, not a nationwide rule. Check the current wildlife agency guidance for the location and date of your activity."
+        }
+      ],
+      "references": [
+        [
+          "Florida FWC · Legal methods of taking game",
+          "https://myfwc.com/hunting/regulations/taking-game/"
+        ]
+      ]
+    },
+    {
+      "heading": "Build an inventory that prevents confusion",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Organize ammunition records around full designations and original factory labels. For each product, record the manufacturer, designation, quantity, lot identifier if provided, purchase date and storage location. Mark the exact firearm manual that confirms compatibility. Keep this as a private inventory; it need not include a public list of household firearms or their locations."
+        },
+        {
+          "type": "table",
+          "caption": "A useful private inventory",
+          "columns": [
+            "Field",
+            "Why it matters"
+          ],
+          "rows": [
+            [
+              "Full designation",
+              "Prevents family-name shortcuts from becoming an assumption."
+            ],
+            [
+              "Original box and lot",
+              "Preserves product identity and recall information."
+            ],
+            [
+              "Manual reference",
+              "Separates verified compatibility from memory."
+            ],
+            [
+              "Condition note",
+              "Makes water, corrosion or heat exposure visible."
+            ],
+            [
+              "Review date",
+              "Prompts a check after a move or household change."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not relabel mixed or unidentified rounds as a known product. Keep damaged or suspect material out of the usable inventory and ask the manufacturer or qualified local provider about appropriate disposition. Cleaning the exterior does not establish that ammunition exposed to a disaster is dependable."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Ammunition and firearm advisories",
+          "https://saami.org/publications-advisories/advisories/"
+        ]
+      ]
+    },
+    {
+      "heading": "Ask better questions and make a sustainable plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A useful equipment conversation starts with the activity, budget and support available. Ask what documentation establishes compatibility, whether the ammunition is permitted for the intended sporting activity, and how you will maintain a traceable inventory. Ask the range what facilities and rules apply before travelling. For hunting, use a hunter-education provider to address skills and local practices rather than trying to compress an entire activity into a cartridge chart."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Can the household explain the full designation without relying on a nickname?",
+            "Is the current manual available on the device and in a separate private record?",
+            "Does the budget include secure storage, protection, instruction and access?",
+            "Is there a practical food and evacuation plan that works without hunting?"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Review the plan after changing a firearm, moving, changing hunting locations or discovering uncertain ammunition. For a beginner, fewer clearly documented equipment decisions can be more manageable than a large collection of unfamiliar items. For an experienced owner, the same record discipline makes a hurried move or handover less confusing. Learn the equipment thoroughly while services and knowledgeable support are available."
+        }
+      ],
+      "references": []
+    }
+  ],
+  "without_help": "Keep unresolved legal, equipment or interpretation questions unresolved in the plan. Use ordinary supplies and safe alternatives rather than guessing; contact the manufacturer or an appropriately qualified provider when available.",
+  "household": "Choose who manages the equipment records, maintenance and access. Account for vision, hearing, dexterity, shared devices, children and visitors. Keep sensitive household and ownership records private.",
+  "pack_now": "Keep the exact model manual, permitted batteries or protection, and necessary private records with the equipment. Separate unfamiliar equipment from ordinary shared household supplies.",
+  "next": "Write the specific civilian task, one unresolved question and the source that can answer it. Review that answer before buying or relying on the equipment.",
+  "watch": "A specification, appearance or online demonstration is not a certification. Use current legal requirements and manufacturer instructions, and verify important findings independently.",
+  "sources": "cartridges-calibers-explained",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [],
+  "scope": "Civilian equipment education and editorial planning; U.S. references are labelled and rules vary. Manufacturer references explain technology and are not independent product endorsements. No tactical instruction, legal advice or specialist certification.",
+  "related": [
+    "suppressor-fundamentals",
+    "night-vision-basics",
+    "thermal-imaging-basics",
+    "firearm-safety-basics"
+  ]
+}

@@ -45,20 +45,7 @@
   "household": "Choose two reunion places and an out-of-area contact. Keep children with a trusted caregiver and carry a written contact card. Share sensitive addresses and travel details only with people who need them; avoid posting live locations or images of other families without consent. For this situation, brief every person on the first action: choose shelter before the next attack. Agree who will manage children, pets or mobility needs while that action happens. A lull is not an all-clear. Fire, damaged structures, unexploded ordnance and interrupted utilities remain dangerous. Avoid confrontation with armed personnel; local protection risks determine whether contacting officials is safe.",
   "pack_now": "For armed conflict, prioritize only items needed for the first action and the fallback: Choose the most protective reachable room before another attack, keep footwear and a light there, and keep essential medicines close. Do not cross active fighting to collect supplies. Use verified humanitarian contacts and trusted people; government assistance or safe passage may not exist. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "If fighting or explosions are nearby, move away from windows and exposed areas into the most protective intact space you can reach safely. Keep family members together, shoes and essential medicines close, and a plan for losing phone service. Do not cross active fighting for supplies or touch suspicious debris. Assistance and safe passage may be unavailable; judge movement against the danger of staying. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For armed conflict, keep the specific hazard in view: A lull is not an all-clear. Fire, damaged structures, unexploded ordnance and interrupted utilities remain dangerous. Avoid confrontation with armed personnel; local protection risks determine whether contacting officials is safe."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Avoid explosive debris. Leave unfamiliar objects, wires, fragments and abandoned munitions untouched. Warn people from a safe position and use verified demining or humanitarian channels when safe. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

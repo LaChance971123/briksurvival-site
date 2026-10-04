@@ -51,20 +51,7 @@
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Save maps before service fails, write down your destination and at least one alternative, and check the actual route against current hazards. An offline map does not show live closures, fighting, damaged bridges or flooding. GPS position may still work without data, but accuracy and battery life are not guaranteed. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For offline maps & route planning, keep the specific hazard in view: Maps and position tools are aids, not proof of safe passage. Avoid unfamiliar shortcuts through hazardous or recently fought-over ground."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Reassess as conditions change. Stop in a safe place to compare the route with visible conditions and recent trusted reports. Do not enter an uncertain road simply because the map displays it. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

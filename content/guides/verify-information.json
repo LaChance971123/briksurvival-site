@@ -53,20 +53,7 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Check the source, time, exact location and evidence before acting on or sharing an emergency message. Compare independent sources when possible. A forwarded screenshot, logo or urgent voice note is not verification. Act on obvious immediate danger without waiting for a post to be confirmed. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For verify emergency information, keep the specific hazard in view: Verification should not delay escape from visible fire, rising water or another immediate hazard. No source can guarantee that conditions remain unchanged."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Share carefully. Forward only necessary verified information with its time and source. Protect live locations and personal information. Correct earlier messages if they prove wrong. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

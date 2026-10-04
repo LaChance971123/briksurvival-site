@@ -26,3 +26,6 @@ assert.equal(rank(data,'zzzzzzzz unknownword').length,0);
 assert.equal(rank(data,'').length,data.length);
 for(const type of ['Toolkit','Published reference','Emergency guide','Preparedness guide','Field guide'])assert(rank(data,'','',type).every(d=>d.content_type===type));
 console.log(`PASS: ${Object.keys(regression).length+data.filter(d=>d.priority===10).length} audit regressions and canonical title searches.`);
+
+assert(rank(data,'water unsafe').length<=5,'Water-advisory searches should not return unrelated filler');
+assert(!rank(data,'hurricane warning').some(x=>x.title==='Tornado'),'Hurricane intent must not recommend tornado as a result');

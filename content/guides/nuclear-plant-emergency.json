@@ -42,20 +42,7 @@
   "household": "Keep the family together in the correct shelter for the hazard and separate potentially contaminated items from the living area. Use covered food and safe water. Prepare a bag for relocation, but do not send someone outside for it during an active release. For this situation, brief every person on the first action: confirm your zone. Agree who will manage children, pets or mobility needs while that action happens. Plant emergencies differ from nuclear detonations; a fixed distance or timer is not an all-clear.",
   "pack_now": "For nuclear power plant emergency, prioritize only items needed for the first action and the fallback: Seek zone-specific radiation information by radio or another verified channel. Radiation cannot be measured by smell or sight. Indoors, close openings and reduce outside-air intake while you establish whether your zone must evacuate; do not self-dose potassium iodide or improvise a route through a suspected release. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Listen to the official alert for your zone and follow instructions to shelter or evacuate. If told to shelter, go indoors and close windows and doors. Take potassium iodide only if public-health officials direct it; it is not a general radiation antidote. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For nuclear power plant emergency, keep the specific hazard in view: Plant emergencies differ from nuclear detonations; a fixed distance or timer is not an all-clear."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Follow food and water instructions. Use packaged supplies and heed any local contamination restrictions. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

@@ -40,20 +40,7 @@
   "household": "Give someone the specific task of calling or locating care while another person provides first aid. Keep the patient warm or cool as the condition requires and record what happened and when. Do not put yourself into the same hazard or assume an ambulance has been dispatched until confirmed. For this situation, brief every person on the first action: turn it on. Agree who will manage children, pets or mobility needs while that action happens. For a child or infant, use the appropriate pediatric pads or setting when available and follow the device and dispatcher instructions.",
   "pack_now": "For using an aed, prioritize only items needed for the first action and the fallback: If nobody can bring an AED, continue CPR rather than leaving the person to search alone. If another person is present, ask them to locate the nearest accessible AED while you continue compressions. Follow the device prompts when it arrives. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "For an unresponsive person who is not breathing normally, call emergency services and begin CPR. Turn on the AED as soon as it arrives and follow its voice and picture prompts. Do not touch the person during rhythm analysis or a shock. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For using an aed, keep the specific hazard in view: For a child or infant, use the appropriate pediatric pads or setting when available and follow the device and dispatcher instructions."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Resume CPR. Immediately follow the device instructions to continue compressions. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

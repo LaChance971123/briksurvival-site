@@ -211,3 +211,13 @@ body{font-synthesis:none}
 .guide-companions a:hover{border-color:#f05a2a}
 .guide-rail .rail-panel{max-height:calc(100vh - 115px);overflow-y:auto;overscroll-behavior:contain}
 @media(max-width:650px){.guide-process{padding:1rem}.guide-process>ol{grid-template-columns:1fr;gap:1.2rem}.guide-process li:not(:last-child)::after{content:'↓';top:auto;bottom:-1.2rem;right:1rem}.guide-table th,.guide-table td{padding:.85rem}.guide-note{padding:1rem}.guide-deep-dive h2{overflow-wrap:break-word}}
+
+/* Contact and small-screen interaction polish. */
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px)}
+.contact-form{padding:clamp(20px,3vw,36px);background:var(--panel,#121619);border:1px solid #35393d;border-radius:12px;display:grid;gap:12px;align-content:start}
+.contact-form label{font-weight:600}.contact-form label span{font-weight:400;color:#b9b4ab}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;min-height:48px;border:1px solid #767970;border-radius:6px;background:#080b0d;color:#f2eee6;padding:12px;font:inherit}
+.contact-form textarea{resize:vertical}.contact-form :is(input,select,textarea):focus-visible{outline:2px solid #f05a2a;outline-offset:3px}
+.home-urgent-links a,.hero-urgent a{min-height:44px;display:inline-flex;align-items:center}
+.home-hero-promise,.readiness-brand small,.home-readiness>p{font-size:max(11px,.72rem)}
+@media(max-width:700px){.contact-layout{grid-template-columns:1fr}.contact-form{padding:20px}.contact-form input,.contact-form select,.contact-form textarea{font-size:16px}}

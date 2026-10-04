@@ -41,20 +41,7 @@
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: notice warning signs. Agree who will manage children, pets or mobility needs while that action happens. Another slide can follow the first, especially during continued rain.",
   "pack_now": "For landslide & debris flow, prioritize only items needed for the first action and the fallback: Stay away from channels, fresh debris and unstable slopes after the first movement. Do not cross the slide to check a house or search for belongings. Choose a destination outside the runout area rather than simply a higher point on the same unstable slope. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Move away from a slide area if you can do so safely, and obey evacuation warnings. Avoid steep slopes, channels and places downhill from recent burns during heavy rain. Do not cross moving debris or enter a fresh slide to inspect it. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For landslide & debris flow, keep the specific hazard in view: Another slide can follow the first, especially during continued rain."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Report from safety. Give the location and visible hazards to emergency services; keep others out. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
