@@ -852,5 +852,161 @@
       "American Red Cross · Power outage safety",
       "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
     ]
+  ],
+  "household-emergency-plan-expanded": [
+    [
+      "American Red Cross · Make a plan",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ],
+    [
+      "USFA · Home fire escape plans",
+      "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+    ]
+  ],
+  "72-hour-kit-expanded": [
+    [
+      "American Red Cross · Emergency kit supplies",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+    ],
+    [
+      "CDC · Emergency water supply",
+      "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+    ]
+  ],
+  "go-bag-expanded": [
+    [
+      "American Red Cross · Emergency kit supplies",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+    ],
+    [
+      "American Red Cross · Make a plan",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ]
+  ],
+  "evacuation-expanded": [
+    [
+      "American Red Cross · Make a plan",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ],
+    [
+      "CDC · Chemical emergency sheltering",
+      "https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html"
+    ],
+    [
+      "Pinellas County · Evacuation planning (Florida example)",
+      "https://pinellas.gov/evacuation/"
+    ],
+    [
+      "USFA · Home fire escape plans",
+      "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+    ]
+  ],
+  "shelter-in-place-expanded": [
+    [
+      "NWS · Tornado protection",
+      "https://www.weather.gov/safety/tornado-during"
+    ],
+    [
+      "CDC · Chemical emergency sheltering",
+      "https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html"
+    ],
+    [
+      "USFA · Home fire escape plans",
+      "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+    ],
+    [
+      "CDC · Get inside during a radiation emergency",
+      "https://www.cdc.gov/radiation-emergencies/response/get-inside.html"
+    ],
+    [
+      "American Red Cross · Power outage safety",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+    ],
+    [
+      "American Red Cross · Make a plan",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ]
+  ],
+  "emergency-hygiene-expanded": [
+    [
+      "CDC · Emergency personal hygiene",
+      "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
+    ],
+    [
+      "CDC · Drinking water advisories",
+      "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+    ],
+    [
+      "CDC · Diaper-changing hygiene",
+      "https://www.cdc.gov/hygiene/about/healthy-habits-diaper-hygiene.html"
+    ]
+  ],
+  "sewer-failure-expanded": [
+    [
+      "Washington DOH · Emergency toilet options (local guidance example)",
+      "https://doh.wa.gov/community-and-environment/wastewater-management/toilet-use-during-emergencies"
+    ],
+    [
+      "CDC · Emergency personal hygiene",
+      "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
+    ]
+  ],
+  "apartment-preparedness-expanded": [
+    [
+      "USFA · Home fire escape plans",
+      "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+    ],
+    [
+      "American Red Cross · Make a plan",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ],
+    [
+      "CDC · Emergency water supply",
+      "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+    ],
+    [
+      "American Red Cross · Emergency kit supplies",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+    ],
+    [
+      "American Red Cross · Power outage safety",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+    ]
+  ],
+  "bug-in-plan-expanded": [
+    [
+      "American Red Cross · Make a plan",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ],
+    [
+      "NWS · Tornado protection",
+      "https://www.weather.gov/safety/tornado-during"
+    ],
+    [
+      "American Red Cross · Power outage safety",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+    ]
+  ],
+  "bug-out-plan-expanded": [
+    [
+      "American Red Cross · Make a plan",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ],
+    [
+      "USFA · Home fire escape plans",
+      "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+    ],
+    [
+      "CDC · Chemical emergency sheltering",
+      "https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html"
+    ],
+    [
+      "CDC · Get inside during a radiation emergency",
+      "https://www.cdc.gov/radiation-emergencies/response/get-inside.html"
+    ],
+    [
+      "Pinellas County · Evacuation planning (Florida example)",
+      "https://pinellas.gov/evacuation/"
+    ]
   ]
 }

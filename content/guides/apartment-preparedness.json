@@ -4,10 +4,10 @@
   "category": "home-building",
   "subcategory": "Apartments & rentals",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-04",
+  "next_review": "2027-04-04",
   "aliases": [
     "apartment prepping",
     "renter preparedness"
@@ -15,7 +15,13 @@
   "keywords": [
     "Apartments & rentals",
     "apartment prepping",
-    "renter preparedness"
+    "renter preparedness",
+    "Map the building systems you depend on",
+    "Know the escape arrangements before they are needed",
+    "Store a compact reserve without blocking the home",
+    "Respect the limits of apartment backup power",
+    "Use reversible renter improvements and realistic support",
+    "Practice the failure of one shared system"
   ],
   "tldr": "Build a compact household reserve, learn your building’s escape arrangements and plan for shared-system failures. Stair access, alarms, water pressure and landlord responsibilities matter as much as supplies.",
   "steps": [
@@ -37,25 +43,280 @@
     ]
   ],
   "sections": [
-    [
-      "Apartment-specific power limits",
-      "Portable power banks can support phones and small approved devices; they do not make every medical or cooking appliance usable. Never operate a generator or charcoal grill inside, in a corridor, or on a balcony where exhaust can enter homes. Ask management about installed backup systems and what they actually support."
-    ],
-    [
-      "Renter improvements",
-      "Use suitable door and window security that preserves emergency escape and respects lease and building requirements. Ask permission before structural alterations. Smoke and carbon monoxide alarms, working locks, clear stairs and prompt reporting of broken communal lighting are practical first improvements. A renter’s plan should include inventory photographs and access to insurance and lease contacts."
-    ],
-    [
-      "A ten-minute building walk",
-      "Editorial exercise: identify permitted exits, stairs, the outside meeting point and which doors require keys. Ask management how residents receive urgent notices and how access needs are planned during lift failure. Report obstructed common routes. Do not assume the usual lift or electronic entry will work without power."
-    ]
+    {
+      "heading": "Map the building systems you depend on",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Apartment preparedness starts with the building as well as the household. List shared systems that affect you: lifts, access doors, alarms, stair lighting, water pumps, ventilation, and wastewater. Ask management what happens when each fails and what residents are expected to do. Keep answers with their date, and distinguish an installed system from an assumption about its backup capacity."
+        },
+        {
+          "type": "table",
+          "caption": "Questions for management or the building plan",
+          "columns": [
+            "System",
+            "What to ask"
+          ],
+          "rows": [
+            [
+              "Exit and fire arrangements",
+              "Where are the permitted stairs and exits, and what is the building-specific fire procedure?"
+            ],
+            [
+              "Access",
+              "Can residents leave and enter when electronic systems lose power?"
+            ],
+            [
+              "Lifts",
+              "What arrangements exist for a person unable to use stairs?"
+            ],
+            [
+              "Water and drainage",
+              "Which services depend on pumps, and how are restrictions communicated?"
+            ],
+            [
+              "Notices",
+              "How do residents receive urgent instructions, including accessible formats?"
+            ],
+            [
+              "Backup power",
+              "Exactly which systems are supported, and what limits or maintenance apply?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A maintenance request is not confirmation that a problem has been corrected. Record faults and follow up, while keeping a personal fallback for essential needs. Neighbors may be affected by the same event and should not be treated as an unlimited source of power, water, or help."
+        }
+      ],
+      "references": [
+        [
+          "USFA · Home fire escape plans",
+          "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+        ],
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Know the escape arrangements before they are needed",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Walk the permitted route to exits and the outside meeting place in normal safe conditions. Identify doors requiring keys, stairs, and any areas that are commonly obstructed. Follow the actual building fire plan and report blocked common routes. Do not prop fire doors open or create a storage area in a corridor."
+        },
+        {
+          "type": "flow",
+          "caption": "A useful building walk",
+          "items": [
+            [
+              "Inside the dwelling",
+              "Locate keys, a light, care needs, and the clear route to the normal exit."
+            ],
+            [
+              "Shared route",
+              "Identify permitted stairs and exits, door access, and any assistance arrangements."
+            ],
+            [
+              "Outside",
+              "Choose a suitable meeting point and identify how the household continues to a safe destination."
+            ]
+          ],
+          "note": "Editorial walk-through aid, not a building fire-engineering assessment. Follow the building plan and fire-service instructions."
+        },
+        {
+          "type": "paragraph",
+          "text": "USFA advises stairs rather than elevators during high-rise fire escape unless the fire department directs otherwise. A person unable to use stairs needs advance access planning, not a last-minute promise of help. If smoke or heat prevents escape, use the apartment-fire guidance and report the location to emergency responders when possible; do not enter smoke to preserve the usual route."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Apartment and high-rise fire",
+              "url": "/emergencies/apartment-fire/"
+            },
+            {
+              "label": "Access and mobility evacuation",
+              "url": "/emergencies/accessible-evacuation/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "USFA · Home fire escape plans",
+          "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+        ]
+      ]
+    },
+    {
+      "heading": "Store a compact reserve without blocking the home",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose supplies by household need and available safe space. Use manageable water containers and ordinary shelf-stable food that people will eat. Label storage locations and count actual usable quantities. Do not overload shelving, put heavy containers above a person’s head, or make the exit route narrower with emergency boxes."
+        },
+        {
+          "type": "table",
+          "caption": "Small-space storage choices",
+          "columns": [
+            "Need",
+            "Practical arrangement"
+          ],
+          "rows": [
+            [
+              "Drinking water",
+              "Suitable smaller containers in safe accessible positions; record total volume."
+            ],
+            [
+              "Meals",
+              "A clearly identified pantry reserve with an opener and preparation requirements checked."
+            ],
+            [
+              "Light and charging",
+              "A light accessible from the bed and normal walking route; tested compatible cables."
+            ],
+            [
+              "Care and documents",
+              "Required storage conditions and a private, readable location list."
+            ],
+            [
+              "Leaving",
+              "A manageable bag and daily-use grab list near a clear route, without obstructing it."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Distribute supplies where appropriate so a blocked cupboard or leak does not remove all access. Keep drinking water away from chemicals. An inventory should identify items kept outside the main kit, including medicines with specific conditions. The useful question is whether the intended person can retrieve and use them during a disruption."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency water supply",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ],
+        [
+          "American Red Cross · Emergency kit supplies",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Respect the limits of apartment backup power",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A power bank or battery can support only compatible loads within its output and capacity limits. Check the instructions and actual device requirements. A small unit suitable for phone charging should not be described as a solution for all heating, cooking, or powered care. Plan an appropriate alternative location if an essential need cannot continue."
+        },
+        {
+          "type": "paragraph",
+          "text": "Portable fuel-burning generators, grills, and outdoor stoves are not indoor backups. A corridor, garage, or balcony can expose occupants and neighbors to exhaust or create other hazards. If there is no safe permitted setup, leave the equipment unused and use a different plan. Ask about building-installed systems rather than trying to connect equipment to shared wiring."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Check whether lifts, water pumps, entry doors, and common lighting actually have backup, instead of inferring it from a generator on the property.",
+            "Keep a light and essential contacts independent of communal systems.",
+            "Use provider and manufacturer guidance for medical power compatibility and the relocation deadline.",
+            "Confirm rental, fire, and building restrictions before any equipment or alteration."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A household in a mild-weather outage can have different options from one facing dangerous indoor temperatures. Base the staying decision on the people and actual conditions, not simply on being indoors."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Power outage safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Use reversible renter improvements and realistic support",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Begin with working alarms and locks, clear walking routes, accessible lighting, and prompt reporting of faults. Any security addition must preserve emergency escape and comply with the lease and building requirements. Do not add bars, wedges, or improvised measures that trap occupants or interfere with fire doors."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep lease, insurance, property-management, and maintenance contacts accessible. Photograph belongings where useful and keep suitable records protected. A basic contents inventory can make recovery easier without occupying valuable storage space with more equipment."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Agree specific neighbor support such as a welfare check or a lift to a destination, with an alternative if that person is unavailable.",
+            "Keep a trusted contact outside the building; everyone on the same floor may face the same disruption.",
+            "Ask how urgent information reaches people with hearing, vision, language, or cognitive access needs.",
+            "Identify who can help each dependent person, and do not presume building staff will be available immediately."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The support plan should be reciprocal and modest. A neighbor can agree to check whether help is needed without becoming responsible for complex medical care. Keep consent and privacy in view when sharing contact or access information."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ],
+        [
+          "USFA · Home fire escape plans",
+          "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+        ]
+      ]
+    },
+    {
+      "heading": "Practice the failure of one shared system",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose a tabletop scenario: electricity fails, the lift stops, and one household member cannot use stairs. Explain the care plan, check-in, supplies, and decision about remaining or relocating. Keep all essential systems operating during the exercise. The point is to reveal an unconfirmed assumption, not to manufacture an access emergency."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Find the management and outside contacts without using an internet search.",
+            "Identify the actual building procedure and assistance arrangements.",
+            "Locate a working light and test access to the compact reserve.",
+            "Check a suitable destination and transport option, including pets and equipment.",
+            "Introduce one complication: management is unreachable or the helper is away.",
+            "Choose the first low-cost improvement and update the household plan."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Review after moving units, a change in mobility, a different building policy, or new equipment. The best apartment plan fits the building and can still make progress when communal services or staff are unavailable."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Staying home with clear limits",
+              "url": "/preparedness/bug-in-plan/"
+            },
+            {
+              "label": "Household emergency plan",
+              "url": "/preparedness/household-emergency-plan/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    }
   ],
   "without_help": "If management or neighbors are unreachable, use your own tested exit and household contact plan. Do not wait for a lift during fire evacuation. If escape is blocked by heat or smoke, use the building-specific fire plan and report your location when possible.",
   "household": "Agree who helps dependents and where to reunite. Keep a backup helper outside the building; a neighbor may also need to leave or be unavailable.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "pack_now": "Keys, accessible light, compact water and meal reserves, care essentials, management and outside contacts, the building plan and a manageable bag. Keep exits and shared routes clear.",
   "next": "Walk the permitted exit route with your household and identify one compact storage improvement without blocking access.",
   "watch": "Never block shared corridors, disable fire doors or add bars that trap occupants. Flooding, gas or fire requires hazard-specific action.",
-  "sources": "housing-preparedness",
+  "sources": "apartment-preparedness-expanded",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [
@@ -70,8 +331,12 @@
   ],
   "faqs": [
     [
-      "Is buying equipment enough?",
-      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+      "Does a building generator power my flat?",
+      "It may support only certain shared systems. Ask exactly what is supplied and what limits apply; do not infer household appliance or medical support from the presence of installed backup."
+    ],
+    [
+      "Should I keep emergency boxes in the hall?",
+      "No. Keep common and household escape routes clear. Choose safe accessible storage that does not interfere with fire doors, stairs or other residents."
     ]
   ],
   "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",

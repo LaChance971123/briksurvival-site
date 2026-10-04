@@ -96,8 +96,8 @@ def purchase_control(product):
                 f'Buy {e(product["title"])} · {price}</a>'
                 '<p class="toolkit-purchase-note">One-time purchase · Checkout and file delivery through Payhip</p>')
     if product['status'] == 'files-ready':
-        return '<p class="toolkit-status">Files complete · Checkout opening soon</p><p class="toolkit-purchase-note">Purchasing will open after Payhip checkout and delivery are verified.</p>'
-    return '<p class="toolkit-status">In development · Not available to purchase</p>'
+        return '<p class="toolkit-status">Toolkit redesign underway · Purchases paused</p><p class="toolkit-purchase-note">Purchasing will open after Payhip checkout and delivery are verified.</p>'
+    return '<p class="toolkit-status">In development · Toolkit redesign underway</p><p class="toolkit-purchase-note">Purchases are paused while we improve the toolkits. No preorders are being taken. Explore the free guides while the new editions are in development.</p>'
 
 
 def guide_cta(guide, catalog):
@@ -115,8 +115,8 @@ def guide_cta(guide, catalog):
             description = featured['summary'] + ' This online guide stays free to read.'
             destination, label = product_route(featured), 'Explore the complete toolkit'
         else:
-            availability = 'Available topic toolkits use Payhip for checkout and downloads.' if any(p['kind'] == 'topic' and p['status'] == 'ready' for p in catalog['products']) else 'Checkout is opening soon.'
-            description = 'Explore four completed topic packages with printable guides, checklists and practical worksheets. ' + availability + ' This online guide stays free to read.'
+            availability = 'Available topic toolkits use Payhip for checkout and downloads.' if any(p['kind'] == 'topic' and p['status'] == 'ready' for p in catalog['products']) else 'Purchases are paused while the toolkits are redesigned.'
+            description = 'Explore our topic toolkit plans for printable guides, checklists and practical worksheets. ' + availability + ' This online guide stays free to read.'
             destination, label = '/toolkits/', 'Explore the toolkits'
     return (f'<section class="wrap guide-toolkit" aria-label="Preparation toolkits"><div>'
             f'<p class="kicker">PREPARE BEFORE YOU NEED IT</p><h2>{e(heading)}</h2><p>{e(description)}</p>'
@@ -125,6 +125,6 @@ def guide_cta(guide, catalog):
 
 def homepage_section(catalog):
     topics = [p for p in catalog['products'] if p['kind']=='topic' and p['status']!='retired']
-    status = 'Topic toolkits available now' if any(p['status']=='ready' for p in topics) else 'Files complete · Checkout opening soon'
-    cards = ''.join(f'<article class="toolkit-card"><p class="kicker">TOPIC TOOLKIT / {"AVAILABLE" if p["status"]=="ready" else "FILES COMPLETE"}</p><h3>{e(p["title"])}</h3><p>{e(p["summary"])}</p><a class="text-link" href="{product_route(p)}">See what is included →</a></article>' for p in topics)
-    return ('<section class="section wrap access-section toolkit-feature" id="guide-access" aria-labelledby="access-title"><div class="access-copy"><p class="kicker">OSPREY ZERO / PREPARATION TOOLKITS</p><h2 id="access-title">A plan you can use.<br><span>Tools you can keep.</span></h2><p>Four completed topic packages bring the guidance together with polished checklists, shopping lists, contact cards and clearly marked Excel calculators. A4 and US Letter resources have their own organized folders.</p><p class="toolkit-status">'+status+'</p><a class="button button-primary" href="/toolkits/">Explore all four toolkits</a><p>The complete collection is being assembled after the individual kits. The Household Planner is a separate product.</p><a class="text-link" href="/planner/">Explore the Household Planner →</a></div><div class="release-kit-grid">'+cards+'</div></section>')
+    status = 'Topic toolkits available now' if any(p['status']=='ready' for p in topics) else 'Toolkit redesign underway · Purchases paused'
+    cards = ''.join(f'<article class="toolkit-card"><p class="kicker">TOPIC TOOLKIT / {"AVAILABLE" if p["status"]=="ready" else "IN DEVELOPMENT"}</p><h3>{e(p["title"])}</h3><p>{e(p["summary"])}</p><a class="text-link" href="{product_route(p)}">See what is included →</a></article>' for p in topics)
+    return ('<section class="section wrap access-section toolkit-feature" id="guide-access" aria-labelledby="access-title"><div class="access-copy"><p class="kicker">OSPREY ZERO / PREPARATION TOOLKITS</p><h2 id="access-title">A plan you can use.<br><span>Tools you can keep.</span></h2><p>The redesigned topic packages will bring the guidance together with polished checklists, shopping lists, contact cards and clearly marked Excel calculators. A4 and US Letter resources have their own organized folders.</p><p class="toolkit-status">'+status+'</p><a class="button button-primary" href="/toolkits/">Explore all four toolkits</a><p>The complete collection is being assembled after the individual kits. The Household Planner is a separate product.</p><a class="text-link" href="/planner/">Explore the Household Planner →</a></div><div class="release-kit-grid">'+cards+'</div></section>')

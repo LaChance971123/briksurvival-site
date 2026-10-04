@@ -30,12 +30,12 @@
   "watch": "Surface disinfectant is not drinking-water treatment. Do not apply household bleach to skin or mix bleach with ammonia or other cleaners.",
   "without_help": "Use the smallest workable clean-water station and protect it from contamination. Reduce nonessential washing before cutting drinking water or essential handwashing.",
   "household": "Make the hygiene plan usable for children, mobility needs and caregivers changing diapers or handling wounds. Keep gloves, cleaning tools and drinking-water supplies distinct. Tell everyone where the clean handwashing area is and who manages waste.",
-  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
-  "sources": "hygiene",
+  "pack_now": "Suitable water, soap, a stable dispenser, a clean drying method, required personal-care items and separate containment for soiled materials. Keep cleaning-product labels readable and away from food.",
+  "sources": "emergency-hygiene-expanded",
   "category": "field-skills",
   "subcategory": "Food & hygiene",
   "content_type": "Field guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "aliases": [
     "no running water hygiene",
     "wash hands outage",
@@ -46,7 +46,13 @@
     "no running water hygiene",
     "wash hands outage",
     "limited water",
-    "sanitation"
+    "sanitation",
+    "Build a clean-to-dirty workflow",
+    "Handwashing is the priority",
+    "Use limited water for essential personal care",
+    "Diapering and assisted care need their own setup",
+    "Cleaning is different from disinfecting",
+    "Maintain the routine and know its limits"
   ],
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
@@ -61,22 +67,261 @@
   "decisions": [],
   "faqs": [
     [
-      "How do I separate clean and dirty handling?",
-      "Choose a clean area for drinking water, food and medicine and a different area for waste and dirty tools. Make the clean-water container easy to identify. Use safe water and follow public-health guidance for handwashing after waste handling."
+      "Can sanitizer replace every wash?",
+      "No. CDC notes that sanitizer has limits, including visibly dirty or greasy hands and harmful chemicals. Plan suitable water and soap, especially around toilet, waste and meal tasks."
     ],
     [
-      "Can a temporary toilet go anywhere?",
-      "No. Local sanitation and disposal rules, soil, water sources and household access affect the plan. Keep waste away from drinking supplies and floodwater exposure. A temporary container must be stable, covered and managed without contaminating a living area."
+      "Can I use water that is unsafe to drink for bathing?",
+      "Sometimes an advisory allows certain non-drinking uses, but it depends on the contaminant and notice. Follow the specific permission; do not infer it from a different incident."
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-04",
   "sections": [
-    [
-      "Create a clean supply station",
-      "Editorial organization: keep the household’s available safe water, suitable hygiene supplies and clean personal items together, separate from waste and cleanup equipment. Label water by its intended use and follow the relevant advisory. A bottle reserved for drinking should not quietly disappear into a cleaning task. Assign one person to check what remains so the household notices shortages before the next meal or care task."
-    ]
+    {
+      "heading": "Build a clean-to-dirty workflow",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When water, drainage, and rubbish collection fail, hygiene is a household system rather than a bottle of sanitizer. Decide where clean drinking water and food stay, where people wash hands, where personal care happens, and how waste is contained. Keep these activities separate enough that a dirty container, glove, or cloth cannot routinely pass through the meal area."
+        },
+        {
+          "type": "flow",
+          "caption": "A simple hygiene workflow",
+          "items": [
+            [
+              "Clean supplies",
+              "Keep safe water, food, clean care items, and utensils protected."
+            ],
+            [
+              "Handwashing",
+              "Use an accessible dispensing point with appropriate water and soap, and a suitable way to handle runoff."
+            ],
+            [
+              "Waste and used items",
+              "Keep contained waste and soiled materials separate; wash hands before returning to clean tasks."
+            ]
+          ],
+          "note": "Editorial layout concept. It is not a plumbing or waste-disposal design; local water and sanitation restrictions still apply."
+        },
+        {
+          "type": "paragraph",
+          "text": "In a small dwelling, separation may mean labelled containers, a dedicated changing surface, and a sequence that is easy to follow rather than different rooms. Choose a stable setup the least mobile person can use. Keep walking routes clear, particularly at night. Waste should not be placed where children or pets can access it."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency personal hygiene",
+          "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Handwashing is the priority",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "CDC advises washing hands with soap and water for at least 20 seconds. Important times include after toilet use or handling waste and before preparing or eating food. Check the actual water advisory to determine whether tap water is acceptable for handwashing; a drinking restriction and a do-not-use restriction are different."
+        },
+        {
+          "type": "table",
+          "caption": "Match the method to the conditions",
+          "columns": [
+            "Condition",
+            "Practical response"
+          ],
+          "rows": [
+            [
+              "Suitable water and soap available",
+              "Use proper handwashing and a clean drying method."
+            ],
+            [
+              "No normal running tap",
+              "Set up a stable jug dispenser with appropriate water; avoid shared dipping into the supply."
+            ],
+            [
+              "Soap and water unavailable",
+              "CDC identifies sanitizer containing at least 60% alcohol as an alternative in some situations."
+            ],
+            [
+              "Visibly dirty or greasy hands",
+              "Sanitizer is less effective; obtain soap and appropriate water."
+            ],
+            [
+              "Possible chemical contamination",
+              "Sanitizer may not remove harmful chemicals; follow exposure guidance rather than assuming it decontaminates."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep soap and a light beside the station rather than in a separate cupboard. Plan where runoff goes; do not use drains affected by sewage failure. Teach the setup to children with suitable supervision and arrange assistance for anyone who cannot operate the dispenser. Empty or unstable equipment creates a station that exists on paper but not in practice."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency personal hygiene",
+          "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
+        ],
+        [
+          "CDC · Drinking water advisories",
+          "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Use limited water for essential personal care",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose suitable water for brushing teeth and follow the local notice for bathing. Do not bathe in water potentially contaminated with sewage or toxic chemicals. Reduced bathing can be a practical temporary adjustment, but necessary handwashing, oral care, and provider-directed care still need a plan."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Keep each person’s toothbrush, hygiene items, and drying materials identifiable; do not make several people share a dirty cloth.",
+            "Plan menstrual supplies, continence care, skin care, and privacy explicitly rather than calling all of these “toiletries.”",
+            "Record special water or cleaning requirements from an individual care plan. A general household routine does not replace those instructions.",
+            "Keep wounds protected from contaminated water, and seek medical help for signs of infection or other concerning change.",
+            "Separate pet cleanup from human meal and personal-care surfaces."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Estimate water used by an actual routine rather than making an arbitrary ration. Try a safe practice while normal water remains available: locate supplies, operate the dispenser, and complete the usual essential tasks. Use the observed amount to improve the reserve. Never withhold necessary drinking water or prescribed care to make a target last longer."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency personal hygiene",
+          "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Diapering and assisted care need their own setup",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Prepare a dedicated, cleanable changing area away from food. Bring the required items before starting so the child is not left unattended while a caregiver searches. Follow CDC’s diaper-changing sequence, including separating soiled items, washing the child’s hands, cleaning and disinfecting the surface as directed, and washing the caregiver’s hands."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use an appropriate product for the surface and follow its label, including any contact time. Disposable gloves, when used, do not replace handwashing. Keep clean diapers, wipes, spare clothes, and bagging materials within reach, while putting the closed used-item container where children cannot reach it. Adult continence care also needs dignity, a stable position, privacy, and any individual skin-care instructions."
+        },
+        {
+          "type": "callout",
+          "title": "Plan the whole care cycle",
+          "text": "A stack of clean diapers is only one part of the plan. Include the changing space, handwashing water, cleaning supplies, soiled-clothing containment, waste route, and a backup caregiver if needed."
+        },
+        {
+          "type": "paragraph",
+          "text": "If a caregiver must also prepare meals, make the transition explicit: finish the dirty task, contain used items, clean as directed, wash hands, then return to clean supplies. Do not put a changing mat on the only meal-preparation surface just because it is convenient."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Diaper-changing hygiene",
+          "https://www.cdc.gov/hygiene/about/healthy-habits-diaper-hygiene.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Cleaning is different from disinfecting",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Cleaning removes visible soil; disinfecting uses a suitable product as directed to address germs. Product type, surface, and instructions matter. Do not mix cleaning chemicals or improvise concentrated recipes. A chemical label must be readable and the product kept out of drinking-water containers."
+        },
+        {
+          "type": "table",
+          "caption": "An editorial cleaning checklist",
+          "columns": [
+            "Step",
+            "What to verify"
+          ],
+          "rows": [
+            [
+              "Identify the surface and contamination",
+              "Ordinary household dirt, a changing surface, and sewage contamination need different responses."
+            ],
+            [
+              "Choose a suitable product",
+              "Read the label for permitted surfaces, dilution, precautions, and contact time."
+            ],
+            [
+              "Prepare the work area",
+              "Keep food, people needing care, and pets away from the dirty task."
+            ],
+            [
+              "Handle used materials",
+              "Keep soiled cloths and waste separate from clean supplies."
+            ],
+            [
+              "Finish safely",
+              "Wash hands and restore clean supplies without recontaminating them."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Significant sewage contamination may require qualified cleanup and an alternative living space. Do not treat a quick wipe or a splash of bleach as proof that a contaminated room is safe. Keep electrical and structural hazards in view, and avoid entering unsafe water to begin cleaning."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Sewer failure and temporary toilets",
+              "url": "/emergencies/sewer-failure/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CDC · Diaper-changing hygiene",
+          "https://www.cdc.gov/hygiene/about/healthy-habits-diaper-hygiene.html"
+        ],
+        [
+          "CDC · Emergency personal hygiene",
+          "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Maintain the routine and know its limits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Record suitable water, soap, personal-care consumables, liners, and the functioning waste route. Review actual use and replenish before the routine fails. A supply of waste bags does not establish that collection exists or that every type of waste can go into ordinary rubbish. Follow the relevant local disposal arrangements."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Check the station at the start of the day: water, soap, light, stability, and runoff arrangements.",
+            "Check each person’s essential personal-care needs and the supplies they can actually use.",
+            "Keep clean and used materials separated, and supervise children appropriately.",
+            "Record any service or advisory change and adjust the routine.",
+            "If safe water, care, or waste containment cannot be sustained, arrange a suitable alternative location early."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "After normal service returns, confirm the appropriate water and drainage instructions, clean affected equipment as directed, and replenish the hygiene kit. Note one preventable difficulty: a missing soap dispenser, an inaccessible container, inadequate privacy, or an unconfirmed waste route. Fixing that difficulty can provide more value than buying another generic emergency pouch."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency personal hygiene",
+          "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
+        ],
+        [
+          "CDC · Drinking water advisories",
+          "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+        ]
+      ]
+    }
   ]
 }

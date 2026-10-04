@@ -35,15 +35,15 @@
       "id": "power-outage",
       "slug": "power-outage",
       "kind": "topic",
-      "status": "ready",
+      "status": "planned",
       "title": "Power Outage Toolkit",
-      "summary": "A complete household blackout plan: safe power decisions, lighting, food protection, contacts and recovery.",
+      "summary": "Being redesigned around a practical household blackout system: before, during and after the outage.",
       "components": [
-        "18 branded PDF resources in both A4 and US Letter",
-        "Step-by-step guide, action checklists and household planning sheets",
-        "Concrete shopping lists, equipment notes and contact cards",
-        "Branded Excel calculator with clearly marked input fields",
-        "Universal welcome and mission page; organized print folders"
+        "Expanded topic guide organized for preparation, response and recovery",
+        "Practical action checklists and household planning sheets",
+        "Shopping, budgeting and supply-inventory tools",
+        "Useful contacts and quick-reference resources",
+        "Branded A4 and US Letter resources; final contents to be confirmed"
       ],
       "guide_slugs": [
         "power-outage",
@@ -52,26 +52,26 @@
         "heating-failure"
       ],
       "included_product_ids": [],
-      "price": 4.99,
+      "price": null,
       "currency": "USD",
-      "edition": "US v1.0",
-      "payhip_product_id": "j3KTk",
-      "checkout_url": "https://payhip.com/buy?link=j3KTk",
-      "delivery_verified": true
+      "edition": null,
+      "payhip_product_id": null,
+      "checkout_url": null,
+      "delivery_verified": false
     },
     {
       "id": "water-disruption",
       "slug": "water-disruption",
       "kind": "topic",
-      "status": "ready",
+      "status": "planned",
       "title": "Water Disruption & Safe Storage Toolkit",
       "summary": "Plan reserves, understand water notices, organize containers and keep household hygiene workable.",
       "components": [
-        "19 branded PDF resources in both A4 and US Letter",
-        "58 pages per paper size, organized by purpose",
-        "Storage plans, advisory decision cards and hygiene worksheets",
-        "Concrete shopping lists and clearly marked Excel calculator",
-        "Universal welcome and mission page"
+        "Expanded topic guide organized for preparation, response and recovery",
+        "Practical action checklists and household planning sheets",
+        "Shopping, budgeting and supply-inventory tools",
+        "Useful contacts and quick-reference resources",
+        "Branded A4 and US Letter resources; final contents to be confirmed"
       ],
       "guide_slugs": [
         "water-disruption",
@@ -83,52 +83,52 @@
         "do-not-use"
       ],
       "included_product_ids": [],
-      "price": 4.99,
+      "price": null,
       "currency": "USD",
-      "edition": "US v1.0",
-      "payhip_product_id": "RubKm",
-      "checkout_url": "https://payhip.com/buy?link=RubKm",
-      "delivery_verified": true
+      "edition": null,
+      "payhip_product_id": null,
+      "checkout_url": null,
+      "delivery_verified": false
     },
     {
       "id": "emergency-food",
       "slug": "emergency-food",
       "kind": "topic",
-      "status": "ready",
+      "status": "planned",
       "title": "Emergency Food & No-Cook Planning Toolkit",
       "summary": "Build usable food reserves with practical meals, shopping quantities, rotation and outage decisions.",
       "components": [
-        "19 branded PDF resources in both A4 and US Letter",
-        "61 pages per paper size, organized by purpose",
-        "No-cook meal plans, pantry inventories and rotation sheets",
-        "Concrete shopping lists and clearly marked Excel calculator",
-        "Universal welcome and mission page"
+        "Expanded topic guide organized for preparation, response and recovery",
+        "Practical action checklists and household planning sheets",
+        "Shopping, budgeting and supply-inventory tools",
+        "Useful contacts and quick-reference resources",
+        "Branded A4 and US Letter resources; final contents to be confirmed"
       ],
       "guide_slugs": [
         "food-safety-outage",
         "food-without-cooking"
       ],
       "included_product_ids": [],
-      "price": 4.99,
+      "price": null,
       "currency": "USD",
-      "edition": "US v1.0",
-      "payhip_product_id": "YZBvc",
-      "checkout_url": "https://payhip.com/buy?link=YZBvc",
-      "delivery_verified": true
+      "edition": null,
+      "payhip_product_id": null,
+      "checkout_url": null,
+      "delivery_verified": false
     },
     {
       "id": "evacuation",
       "slug": "evacuation",
       "kind": "topic",
-      "status": "ready",
+      "status": "planned",
       "title": "Evacuation & Go-Bags Toolkit",
       "summary": "Turn leaving into a clear household plan with destinations, roles, bags, transport and check-ins.",
       "components": [
-        "19 branded PDF resources in both A4 and US Letter",
-        "59 pages per paper size, organized by purpose",
-        "Destination, route, dependent-care and go-bag planning sheets",
-        "Concrete shopping lists and branded Excel travel calculator",
-        "Universal welcome and mission page"
+        "Expanded topic guide organized for preparation, response and recovery",
+        "Practical action checklists and household planning sheets",
+        "Shopping, budgeting and supply-inventory tools",
+        "Useful contacts and quick-reference resources",
+        "Branded A4 and US Letter resources; final contents to be confirmed"
       ],
       "guide_slugs": [
         "evacuation",
@@ -138,12 +138,12 @@
         "bug-out-plan"
       ],
       "included_product_ids": [],
-      "price": 4.99,
+      "price": null,
       "currency": "USD",
-      "edition": "US v1.0",
-      "payhip_product_id": "Nbpit",
-      "checkout_url": "https://payhip.com/buy?link=Nbpit",
-      "delivery_verified": true
+      "edition": null,
+      "payhip_product_id": null,
+      "checkout_url": null,
+      "delivery_verified": false
     }
   ]
 }

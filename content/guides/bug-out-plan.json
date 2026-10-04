@@ -4,10 +4,10 @@
   "category": "evacuation-shelter",
   "subcategory": "Bug out & bug in",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-04",
+  "next_review": "2027-04-04",
   "aliases": [
     "bug out",
     "bugout"
@@ -15,7 +15,13 @@
   "keywords": [
     "Bug out & bug in",
     "bug out",
-    "bugout"
+    "bugout",
+    "Build an evacuation plan with a real destination",
+    "Choose triggers you can recognize",
+    "Develop two destinations and check their assumptions",
+    "Connect routes, vehicles, and carrying capacity",
+    "Prepare roles, bags, and change messages",
+    "Rehearse one failed assumption at a time"
   ],
   "tldr": "A useful bug-out plan names when to leave, where to go, how to travel and what to do if the first option fails. The destination matters more than an overloaded bag.",
   "steps": [
@@ -37,28 +43,300 @@
     ]
   ],
   "sections": [
-    [
-      "Three decisions to write down",
-      "For each likely hazard record the trigger, destination and transport owner. Add who checks current conditions and how the household receives the decision. Avoid a vague promise to “head to the woods”: unfamiliar land, missing shelter, property restrictions and water uncertainty can make that move worse than an established destination."
-    ],
-    [
-      "When the first option fails",
-      "Use the alternate destination and route agreed ahead of time. If a road is flooded, closed or affected by active danger, do not force a crossing. Tell your contact where you are going if it is safe to communicate. If no safe route remains, seek the best available protective location for the actual hazard and reassess; do not treat staying as universally safe."
-    ]
+    {
+      "heading": "Build an evacuation plan with a real destination",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Bug out” is planned relocation from an unsafe place. Define it in ordinary terms: who leaves, under what conditions, by what transport, to which suitable destination. A vague plan to head into the countryside creates new problems with shelter, water, access, and permission. Choose locations that can actually support the household."
+        },
+        {
+          "type": "flow",
+          "caption": "A complete relocation chain",
+          "items": [
+            [
+              "Trigger",
+              "A recognizable hazard instruction or household condition starts the departure plan."
+            ],
+            [
+              "Journey",
+              "Suitable transport and current route information support the whole household."
+            ],
+            [
+              "Arrival",
+              "A checked destination meets access, care, pet, and sleeping needs."
+            ],
+            [
+              "Alternative",
+              "Another realistic option handles a closed route, unavailable driver, or rejected arrival."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, access needs and current instructions control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep immediate escape distinct from planned evacuation. If the building is burning or another immediate danger is present, leave without finishing a bag or route worksheet. For a developing hazard, the planning chain helps the household move before choices become limited."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ],
+        [
+          "USFA · Home fire escape plans",
+          "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+        ]
+      ]
+    },
+    {
+      "heading": "Choose triggers you can recognize",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Write conditions rather than dramatic predictions. Examples include an applicable evacuation instruction, an unsafe dwelling, or the inability to continue essential care. Some care or transport needs require an earlier departure than a general deadline. Use individual provider and equipment guidance instead of inventing a generic timing rule."
+        },
+        {
+          "type": "table",
+          "caption": "Turn a concern into a decision",
+          "columns": [
+            "Concern",
+            "Trigger to define",
+            "Action to prepare"
+          ],
+          "rows": [
+            [
+              "Regional hazard",
+              "Applicable zone or address instruction and relevant deadline",
+              "Use the current route and suitable destination."
+            ],
+            [
+              "Building suitability",
+              "Immediate danger or verified loss of safe use",
+              "Use the appropriate escape and accommodation plan."
+            ],
+            [
+              "Essential care",
+              "Individual backup or care limit",
+              "Move or seek urgent assistance according to the care plan."
+            ],
+            [
+              "Transport",
+              "A point beyond which the option becomes unavailable",
+              "Arrange an earlier usable departure."
+            ],
+            [
+              "Safe water or sanitation",
+              "Cannot sustain the need with verified alternatives",
+              "Relocate before supplies or containment fail."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For an outdoor chemical or radiation emergency, travel can increase exposure. A relocation plan should include the possibility of sheltering under the specific instruction, rather than treating departure as always correct. Keep the hazard-specific guidance available with the trigger sheet."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Chemical emergency sheltering",
+          "https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html"
+        ],
+        [
+          "CDC · Get inside during a radiation emergency",
+          "https://www.cdc.gov/radiation-emergencies/response/get-inside.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Develop two destinations and check their assumptions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose a primary and an alternate location, considering the hazards likely to affect both. Two addresses on the same exposed street may share the same failure. Options can include a consenting trusted contact, suitable accommodation, or an operating designated shelter, but acceptance and services need checking."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Record the address, contact, acceptance arrangement, and how to reach it without an internet search.",
+            "Check access, essential equipment support, medicine storage, sleeping, water, sanitation, and any specific dietary needs.",
+            "Confirm pet rules and a suitable transport arrangement for the animals actually owned.",
+            "Identify what each location expects the household to bring.",
+            "Record when the information was checked and the alternative if the destination is unavailable."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: family offers a spare room, but the only toilet is upstairs and a household member cannot use stairs. The address is willing but not suitable without a workable accommodation. Resolve that detail before calling it the primary destination. Do not turn a friendly offer into a promise of medical or specialist support."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Connect routes, vehicles, and carrying capacity",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose more than one route where practical, but regard them as options to check against current conditions. A paper map or saved route note supports orientation; it does not certify that a road is open. Follow applicable closures and hazard-specific instructions and do not drive through flooded or actively dangerous routes."
+        },
+        {
+          "type": "table",
+          "caption": "Test the complete transport load",
+          "columns": [
+            "Part",
+            "What to verify"
+          ],
+          "rows": [
+            [
+              "People",
+              "Seats, driver, pickup location, and access assistance."
+            ],
+            [
+              "Care equipment",
+              "Usable space and the appropriate support during travel."
+            ],
+            [
+              "Pets",
+              "Secure transport and suitable carriers or restraints."
+            ],
+            [
+              "Bags",
+              "Manageable loading without displacing people or essential equipment."
+            ],
+            [
+              "Fuel or charge",
+              "Available reserve and realistic stops; do not assume every service remains open."
+            ],
+            [
+              "No-vehicle fallback",
+              "A confirmed helper or assistance option, with limits and an alternate."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Walking is not simply the same plan without a car. Reassess distance, conditions, mobility, water, carrying capacity, and route safety. Arrange support early where possible. Do not use a prolonged survival march as the default answer to an unavailable vehicle."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Evacuation without a car",
+              "url": "/preparedness/evacuation-without-car/"
+            },
+            {
+              "label": "Go-bag packing",
+              "url": "/preparedness/go-bag/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Pinellas County · Evacuation planning (Florida example)",
+          "https://pinellas.gov/evacuation/"
+        ]
+      ]
+    },
+    {
+      "heading": "Prepare roles, bags, and change messages",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Name who supports each dependent person, who handles pets, who manages transport, and who communicates. Include an alternate for an adult who may be away. Keep individual bags and a short list of daily-use care items ready, and test that the helpers can carry what they are assigned."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "For a planned departure, confirm people and urgent care requirements first.",
+            "Check the destination and current route.",
+            "Collect manageable bags and daily-use items if time permits.",
+            "Tell the outside contact the destination, people present, and next check-in when safe.",
+            "At arrival, count everyone and settle essential care.",
+            "If the plan changes, send one concise updated destination message instead of relying on several different assumptions."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Protect privacy when sharing information. Trusted contacts may need the route and care requirements; a public social-media audience generally does not need the household’s exact departure, documents, or empty-home details. Communication should support safety and reunion, not create another task that delays leaving."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the immediate-escape rule visible on the role sheet: no optional item is worth remaining in or re-entering danger. A beautifully packed bag should reduce departure effort, not become a reason to postpone it."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Rehearse one failed assumption at a time",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Start with a tabletop walk-through, then safe practical checks such as loading the proposed equipment or walking the normal building exit route. Do not practise a hazardous journey, shut down essential medical equipment, or enter restricted areas. Use discussion to introduce a road closure, unavailable driver, or closed destination."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Ask another adult to explain the trigger and find the destination information.",
+            "Check how children, pets, and equipment fit into the departure sequence.",
+            "Time ordinary retrieval only to identify a missing item or awkward arrangement, not to encourage unsafe rushing.",
+            "Write what changes if the primary route or location fails.",
+            "Review when household needs, vehicles, destinations, or local arrangements change."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "After a real move, record what was actually useful and what caused delay. Replenish the bag, update the acceptance arrangements, and revise unrealistic alternatives. Plan the return separately using current access and building-safety information. The goal is a usable relocation system that can change with conditions, not an unalterable route drawn on a map."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Immediate evacuation actions",
+              "url": "/emergencies/evacuation/"
+            },
+            {
+              "label": "Household emergency plan",
+              "url": "/preparedness/household-emergency-plan/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    }
   ],
   "without_help": "Work from confirmed reachable options and supplies already accessible. Help may be delayed, so keep your own contacts, route notes and essential care information available without internet.",
   "household": "Assign an adult to each dependent and identify who can drive or arrange accessible transport. Check shelter rules for pets, service animals and support equipment before an event.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "pack_now": "The trigger and role sheet, two checked destinations, current route information, transport contacts, care essentials, manageable bags and the daily-use grab list. Use an immediate-escape plan separately.",
   "next": "Time a calm departure rehearsal with the actual people, bags and transport. Record the slowest step and fix it.",
   "watch": "No universal bug-out destination or timetable suits every disaster. Avoid flooded roads and do not enter an active danger area for supplies.",
-  "sources": "evacuation",
+  "sources": "bug-out-plan-expanded",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [
     [
-      "Is buying equipment enough?",
-      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+      "Is a distant rural location a sufficient destination?",
+      "No. Verify access, acceptance, shelter, safe water, sanitation and essential care. An unfamiliar location can introduce needs the household is not equipped to meet."
+    ],
+    [
+      "How many routes should I have?",
+      "Develop realistic alternatives where possible and check current conditions. Several lines on a map are not helpful if they share the same closure or cannot be used by the household."
     ]
   ],
   "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
