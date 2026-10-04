@@ -1,5 +1,6 @@
 """Rich editorial sections, with support for the original heading/body pairs."""
 from html import escape as e
+from guide_illustrations import illustration
 
 
 def text(value):
@@ -40,6 +41,8 @@ def render_sections(sections):
             elif kind == 'links':
                 assert all(x['url'].startswith('/') and not x['url'].startswith('//') for x in b['items'])
                 body.append('<nav class="guide-companions" aria-label="Related detail">' + ''.join(f'<a href="{e(x["url"], quote=True)}">{e(x["label"])}</a>' for x in b['items']) + '</nav>')
+            elif kind == 'illustration':
+                body.append(illustration(b['kind'], b['caption'], b['description']))
             else:
                 raise ValueError(f'Unknown guide block: {kind}')
         if isinstance(section, dict) and section.get('references'):

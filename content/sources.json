@@ -1127,31 +1127,35 @@
   ],
   "cartridges-calibers-explained": [
     [
-      "SAAMI · Cartridge compatibility questions",
+      "SAAMI · Complete technical glossary",
+      "https://saami.org/saami-glossary/"
+    ],
+    [
+      "SAAMI · Equivalent cartridge names",
+      "https://saami.org/wp-content/uploads/2024/11/SAAMI-Generally-Accepted-Cartridge-and-Chambers-10-8-2021.pdf"
+    ],
+    [
+      "SAAMI · Cartridge compatibility FAQ",
       "https://saami.org/faqs/"
     ],
     [
-      "SAAMI · Technical terminology",
-      "https://saami.org/glossary/"
+      "CCI · Rimfire cartridge comparison",
+      "https://www.cci-ammunition.com/cci-stories/choosing-the-right-rimfire-cartridge.html"
     ],
     [
-      "SAAMI · Ammunition and firearm advisories",
-      "https://saami.org/publications-advisories/advisories/"
+      "Winchester · Reading a box of shotshells",
+      "https://winchester.com/Blog/2020/11/Whats-on-a-Box-of-Shells"
     ],
     [
-      "Florida FWC · Legal methods of taking game",
-      "https://myfwc.com/hunting/regulations/taking-game/"
-    ],
-    [
-      "NSSF · Firearm handling and ammunition rules",
+      "NSSF · Firearm handling principles",
       "https://www.nssf.org/safety/rules-firearms-safety/"
+    ],
+    [
+      "Florida FWC · Methods of taking game",
+      "https://myfwc.com/hunting/regulations/taking-game/"
     ]
   ],
   "suppressor-fundamentals": [
-    [
-      "ATF · National Firearms Act resources",
-      "https://www.atf.gov/rules-and-regulations/laws-alcohol-tobacco-firearms-and-explosives/national-firearms-act"
-    ],
     [
       "NIOSH · Suppressor noise and auditory risk research",
       "https://stacks.cdc.gov/view/cdc/111710"
@@ -1161,8 +1165,24 @@
       "https://www.cdc.gov/niosh/bulletin/2017/firearms-training.html"
     ],
     [
-      "NSSF · Firearm handling and ammunition rules",
+      "SilencerCo · Sound-reduction explanation (manufacturer reference)",
+      "https://silencerco.com/blog/how-do-suppressors-work"
+    ],
+    [
+      "ATF · National Firearms Act resources; check current guidance",
+      "https://www.atf.gov/rules-and-regulations/laws-alcohol-tobacco-firearms-and-explosives/national-firearms-act"
+    ],
+    [
+      "NSSF · Firearm handling principles",
       "https://www.nssf.org/safety/rules-firearms-safety/"
+    ],
+    [
+      "SilencerCo · Material considerations (manufacturer reference)",
+      "https://silencerco.com/blog/unlocking-power-of-titanium-in-silencers"
+    ],
+    [
+      "SilencerCo · Care requirements (manufacturer reference)",
+      "https://silencerco.com/blog/how-to-clean-a-suppressor"
     ]
   ],
   "night-vision-basics": [
@@ -1177,6 +1197,10 @@
     [
       "FLIR OEM · Active infrared versus thermal imaging",
       "https://oem.flir.com/support/support-center/knowledge-base/what-is-the-difference-between-active-ir-and-thermal-imaging/"
+    ],
+    [
+      "Photonis · Image-intensifier specifications (manufacturer reference)",
+      "https://cdn.photonis.com/system/files/2023-12/Photonis_Night%20Vision%20and%20Image%20Intensifiers%20market_EN_17102023.pdf"
     ]
   ],
   "thermal-imaging-basics": [
@@ -1195,6 +1219,100 @@
     [
       "FLIR · Fog and rain limitations",
       "https://www.flir.com/discover/rd-science/can-thermal-imaging-see-through-fog-and-rain/"
+    ],
+    [
+      "FLIR · Emissivity and reflections",
+      "https://www.flir.com/discover/professional-tools/how-does-emissivity-affect-thermal-imaging/"
+    ],
+    [
+      "FLIR · Radiometric image files",
+      "https://docs.flir.com/T810587/en-US/latest/s08.html"
+    ]
+  ],
+  "ammunition-storage": [
+    [
+      "SAAMI · Ammunition storage and handling",
+      "https://saami.org/wp-content/uploads/2018/04/SAAMI-Recommendations-for-Safe-Ammunition-Storage-and-Handling-1-18-2018.pdf"
+    ],
+    [
+      "SAAMI · Water-exposed ammunition, February 2025",
+      "https://saami.org/wp-content/uploads/2025/03/Guidance-on-Ammunition-That-Has-Been-Submerged-In-Water-2-26-2025.pdf"
+    ],
+    [
+      "SAAMI · Fire-exposed firearms and ammunition, February 2025",
+      "https://saami.org/wp-content/uploads/2025/03/Guidance-on-Firearms-and-Ammunition-Exposed-to-Fire-2-21-2025.pdf"
+    ],
+    [
+      "Federal · Product warnings and lot identification",
+      "https://www.federalpremium.com/safety-information/product-warnings.html"
+    ],
+    [
+      "NSSF · Firearm handling principles",
+      "https://www.nssf.org/safety/rules-firearms-safety/"
+    ],
+    [
+      "SAAMI · Equivalent cartridge names",
+      "https://saami.org/wp-content/uploads/2024/11/SAAMI-Generally-Accepted-Cartridge-and-Chambers-10-8-2021.pdf"
+    ]
+  ],
+  "firearm-safety-basics": [
+    [
+      "SAAMI · Complete technical glossary",
+      "https://saami.org/saami-glossary/"
+    ],
+    [
+      "SAAMI · Semiautomatic action",
+      "https://saami.org/glossary/semiautomatic-action/"
+    ],
+    [
+      "SAAMI · Single action",
+      "https://saami.org/glossary/single-action/"
+    ],
+    [
+      "SAAMI · Double-action terminology",
+      "https://saami.org/saami-glossary/?letter=D"
+    ],
+    [
+      "NSSF · Firearm handling principles",
+      "https://www.nssf.org/safety/rules-firearms-safety/"
+    ],
+    [
+      "Ruger · Safety notices and recalls",
+      "https://ruger.com/safety/announcements.html"
+    ],
+    [
+      "SAAMI · Fire-exposed firearms and ammunition, February 2025",
+      "https://saami.org/wp-content/uploads/2025/03/Guidance-on-Firearms-and-Ammunition-Exposed-to-Fire-2-21-2025.pdf"
+    ]
+  ],
+  "firearm-storage": [
+    [
+      "Project ChildSafe · Storage options",
+      "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
+    ],
+    [
+      "Project ChildSafe · Lockbox considerations",
+      "https://projectchildsafe.org/wp-content/uploads/2023/11/Benefits-Of-Lock-Box-One-Pager_V3.pdf"
+    ],
+    [
+      "UL Solutions · Security-container certification",
+      "https://www.ul.com/services/anti-theft-device-testing-and-certification"
+    ],
+    [
+      "UL Solutions · Safe fire tests and labels",
+      "https://www.ul.com/news/turning-heat-sneak-peek-uls-fire-testing-safes"
+    ],
+    [
+      "Liberty Safe · Use and care (manufacturer reference)",
+      "https://libertysafe.com/pages/gun-safe-use-and-care"
+    ],
+    [
+      "Liberty Safe · Moisture control (manufacturer reference)",
+      "https://libertysafe.com/blogs/the-vault/how-to-keep-moisture-out-of-your-gun-safe"
+    ],
+    [
+      "SAAMI · Fire-exposed firearms and ammunition, February 2025",
+      "https://saami.org/wp-content/uploads/2025/03/Guidance-on-Firearms-and-Ammunition-Exposed-to-Fire-2-21-2025.pdf"
     ]
   ]
 }

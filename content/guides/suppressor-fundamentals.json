@@ -1,6 +1,6 @@
 {
   "slug": "suppressor-fundamentals",
-  "title": "Suppressors: sound reduction, ownership and equipment limits",
+  "title": "Suppressors: sound, specifications and ownership",
   "category": "firearms-tools",
   "subcategory": "Suppressors",
   "content_type": "Preparedness guide",
@@ -18,42 +18,48 @@
     "silencer",
     "hearing safe"
   ],
-  "tldr": "A suppressor reduces part of a firearm’s sound; it does not make firing silent or eliminate the need for hearing protection. Understand the evidence, current legal requirements, manufacturer limits and maintenance commitments before purchase.",
+  "tldr": "A suppressor reduces the muzzle-report component of firearm noise by managing the release of propellant gas. It does not make a firearm silent: projectile shock waves, mechanical noise and reflections remain. Compare intended firearm compatibility, weight, care and measured noise data, while retaining hearing protection.",
   "steps": [
     [
-      "Start with current ownership requirements",
-      "Use current ATF resources, applicable state law and a qualified licensed dealer. Confirm the actual product and ownership arrangement before committing to a purchase."
+      "Separate the sound sources",
+      "Muzzle report, supersonic projectile noise and action noise are different phenomena. A suppressor does not address all of them equally."
     ],
     [
-      "Keep hearing protection in the plan",
-      "Budget for appropriate hearing protection and a supervised range. A quieter demonstration is not proof that an exposure is safe."
+      "Read the exact product documentation",
+      "Record the model’s approved applications, materials, weight, care requirements and warranty terms. A caliber label alone is incomplete."
     ],
     [
-      "Use manufacturer support",
-      "Ask the manufacturer or qualified dealer to confirm compatibility, approved servicing and warranty conditions for the exact equipment."
+      "Question noise claims",
+      "Look for test conditions and microphone locations, not one unexplained decibel number or “hearing safe” slogan."
     ],
     [
-      "Plan storage and care",
-      "Account for hot equipment, secure storage, transport and service. Do not improvise a suppressor or modify its internal components."
+      "Check current ownership rules",
+      "Verify federal, state and local requirements before purchase or transfer. Legal information changes independently of the technology."
     ]
   ],
   "sections": [
     {
-      "heading": "What a suppressor changes",
+      "heading": "What a suppressor changes—and what remains audible",
       "blocks": [
         {
-          "type": "paragraph",
-          "text": "A firearm discharge produces a sudden release of gas and several sources of sound. A suppressor moderates part of that gas-related report. It does not remove every sound associated with firing or turn a firearm into the nearly silent prop shown in films. In ordinary discussion, “suppressor” and “silencer” refer to this class of device; U.S. regulatory materials use the term silencer. Terminology is not an exemption from regulation."
+          "type": "illustration",
+          "kind": "sound",
+          "caption": "Three contributors to firearm sound",
+          "description": "Conceptual sound-source comparison: a suppressor reduces muzzle report; a supersonic projectile can produce its own shock wave; mechanical action noise and environmental reflections remain. This is not a sound-level chart."
         },
         {
           "type": "paragraph",
-          "text": "The practical educational distinction is reduction versus elimination. If someone describes a product as quiet, ask what that description means, where measurements were taken and which equipment was used. A video recorded on a phone or played through small speakers cannot reproduce the original impulse exposure at the shooter’s ear. Do not use a recording as a hearing-risk test."
+          "text": "The muzzle report occurs as high-pressure propellant gas emerges from the barrel and expands into the surrounding air. At a conceptual level, a suppressor slows and moderates that gas release. The result is reduced report, not elimination of every sound associated with the shot. “Silencer” is a historical and legal term; “suppressor” better conveys that the reduction is partial."
+        },
+        {
+          "type": "paragraph",
+          "text": "A projectile travelling faster than the local speed of sound can create a separate shock wave. The firearm’s moving parts also make noise, and nearby surfaces reflect sound back toward observers. That is why a video recorded with a phone is a poor substitute for a controlled noise test: the microphone, automatic gain processing, distance and surroundings change the recording."
         }
       ],
       "references": [
         [
-          "ATF · National Firearms Act resources",
-          "https://www.atf.gov/rules-and-regulations/laws-alcohol-tobacco-firearms-and-explosives/national-firearms-act"
+          "SilencerCo · Sound-reduction explanation (manufacturer reference)",
+          "https://silencerco.com/blog/how-do-suppressors-work"
         ],
         [
           "NIOSH · Suppressor noise and auditory risk research",
@@ -62,46 +68,45 @@
       ]
     },
     {
-      "heading": "Read sound claims with useful scepticism",
+      "heading": "Decibels: why one number is not the whole comparison",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "NIOSH-linked research supports suppressors as a way to reduce firearm noise exposure, while still recommending hearing protection. It does not establish that every device, firearm, location and firing session becomes safe without protection. Sound measurements taken under one set of conditions are not a guarantee for another combination or for the accumulated exposure of a full day."
+          "text": "Decibels use a logarithmic scale. A change in decibels is not a matching percentage change in loudness, and different metrics describe different aspects of sound. Peak impulse level is relevant to a short firearm report, while a time-averaged figure can conceal its brief maximum. A product comparison should state which metric was used instead of displaying “dB reduction” without context."
         },
         {
           "type": "table",
-          "caption": "Questions behind a sound claim",
+          "caption": "Read a noise test before comparing products",
           "columns": [
-            "Claim encountered",
-            "Question to ask",
-            "What not to conclude"
+            "Test detail",
+            "Why it matters"
           ],
           "rows": [
             [
-              "A single decibel number",
-              "Where, how and with what equipment was it measured?",
-              "That the number describes every person’s exposure."
+              "Microphone location",
+              "A reading near the muzzle and a reading near the shooter’s ear describe different exposures."
             ],
             [
-              "“Hearing safe”",
-              "What evidence supports that phrase and for which conditions?",
-              "That ear protection is unnecessary."
+              "Firearm and ammunition",
+              "Results depend on the test combination; they do not automatically transfer to another setup."
             ],
             [
-              "A quiet online clip",
-              "How did microphone processing and playback change the sound?",
-              "That a phone recording is a calibrated measurement."
+              "Environment",
+              "Indoor surfaces and nearby barriers change reflections and exposure."
             ],
             [
-              "A comparison at a demonstration",
-              "Were the surroundings and measurement method comparable?",
-              "That another range will produce the same exposure."
+              "Measurement method",
+              "Instrumentation, bandwidth and reporting method affect the result."
+            ],
+            [
+              "Number of observations",
+              "A single reading hides variation; look for repeat measurements and disclosed conditions."
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "For a personal decision, the conservative plan is to keep hearing protection and professional range guidance in place. If someone experiences ringing, pain or a hearing change after noise exposure, seek appropriate medical advice rather than interpreting the experience as a normal equipment characteristic."
+          "text": "Noise reduction is valuable, but it does not establish that a particular use is safe for unprotected hearing. NIOSH research found reduced exposure with suppressors while still recommending hearing protection. Keep suitable hearing protection in the range routine and follow the facility’s rules. A quieter impression at the ear is not a calibrated exposure assessment."
         }
       ],
       "references": [
@@ -116,164 +121,185 @@
       ]
     },
     {
-      "heading": "Ownership is a separate research task",
+      "heading": "Product categories and compatibility terminology",
       "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Before purchase, confirm the current federal and state requirements, who will own the device, and what documentation must be retained. Use ATF’s current resources and a qualified licensed dealer for the exact transaction. Requirements, forms, fees and administrative processes can change. This guide deliberately does not quote a fee, approval duration or a universal travel rule that might be outdated or inapplicable."
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Confirm the product’s legal classification and applicable ownership rules.",
-            "Clarify the buyer or ownership entity before submitting a transaction.",
-            "Ask what approvals are required before taking possession.",
-            "Ask about lawful transport, storage and use at the planned destination.",
-            "Keep approvals and purchase records private, organised and backed up."
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "A dealer’s national sales page does not answer every local question. A friend’s earlier purchase timeline is not a current promise. If an answer affects legality and remains unclear, resolve it before the transaction rather than buying first and expecting paperwork to catch up. Do not treat an emergency relocation as automatic permission to ignore destination restrictions."
-        }
-      ],
-      "references": [
-        [
-          "ATF · National Firearms Act resources",
-          "https://www.atf.gov/rules-and-regulations/laws-alcohol-tobacco-firearms-and-explosives/national-firearms-act"
-        ]
-      ]
-    },
-    {
-      "heading": "Compatibility and service: use the exact manual",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Treat a suppressor as manufacturer-supported equipment. Bring the exact firearm and product information to the manufacturer or a qualified dealer and ask for a written compatibility answer. A diameter label alone is not a complete approval. This guide does not provide mounting, internal modification or performance-tuning instructions; those require the exact manufacturer’s documentation and appropriately qualified support."
-        },
         {
           "type": "table",
-          "caption": "Questions for the provider",
+          "caption": "Common categories in product descriptions",
           "columns": [
-            "Area",
-            "Useful question"
+            "Category",
+            "General meaning",
+            "Check in documentation"
           ],
           "rows": [
             [
-              "Compatibility",
-              "Is this exact combination approved by both relevant manufacturers?"
+              "Rimfire",
+              "Products intended for specified rimfire applications.",
+              "Approved cartridges and whether the design permits user cleaning."
             ],
             [
-              "Care",
-              "What routine care is permitted for this model?"
+              "Centerfire pistol",
+              "Products intended for specified handgun applications.",
+              "The complete approved application; the bore designation is only one part of compatibility."
             ],
             [
-              "Service",
-              "Who performs inspection or repair, and when is service required?"
+              "Centerfire rifle",
+              "Products intended for specified rifle applications.",
+              "Manufacturer limits and service arrangements."
             ],
             [
-              "Warranty",
-              "What practices or accessories affect coverage?"
-            ],
-            [
-              "Support",
-              "Where can the current manual and recall information be found?"
+              "Multi-caliber",
+              "A product marketed for more than one cartridge or platform.",
+              "The explicit approved list; “multi” does not mean universal."
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "If the history of used equipment is unknown, treat that as a separate inspection question. Do not assume that a device is sound because its exterior looks tidy. An undocumented alteration is a reason to pause and obtain manufacturer guidance, not an invitation to copy an internet repair."
+          "text": "A bore designation, material description or advertised mounting category is not a complete approval for a firearm. Interfaces, pressure exposure and the manufacturer’s limits are model-specific. Treat compatibility as a documented yes-or-no requirement before comparing comfort or appearance. This guide explains the vocabulary; the exact product manual provides the installation and inspection instructions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Modular describes a product with manufacturer-authorized configuration choices. User-serviceable means a defined maintenance process is permitted. Neither term authorizes improvised parts, modifications or combining components from unrelated products. A sealed product may rely on manufacturer service rather than user disassembly; include that in the ownership cost instead of assuming every suppressor has the same care routine."
         }
       ],
       "references": [
         [
-          "NSSF · Firearm handling and ammunition rules",
+          "SilencerCo · Sound-reduction explanation (manufacturer reference)",
+          "https://silencerco.com/blog/how-do-suppressors-work"
+        ]
+      ]
+    },
+    {
+      "heading": "Weight, material and heat: practical ownership tradeoffs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Adding an accessory changes a sporting firearm’s total weight and balance. A specification listing only the main body may omit other required components, so compare the complete documented system. More length also changes storage-case fit. Those are useful everyday considerations even when two products have similar marketing claims about noise."
+        },
+        {
+          "type": "table",
+          "caption": "Materials are clues, not a substitute for product limits",
+          "columns": [
+            "Material commonly listed",
+            "Broad ownership consideration"
+          ],
+          "rows": [
+            [
+              "Aluminum",
+              "Low density can support a light product; permitted applications and cleaning chemistry remain design-specific."
+            ],
+            [
+              "Stainless steel",
+              "Often adds weight; care, corrosion resistance and service limits still vary by alloy and construction."
+            ],
+            [
+              "Titanium",
+              "Can offer a lower-mass option; its name alone does not prove unrestricted heat tolerance."
+            ],
+            [
+              "Nickel-based alloys",
+              "Often mentioned in heat-resistant products; overall capability remains a property of the complete design."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A suppressor can become hot during use. Plan for the manufacturer’s cooling and storage instructions, keep it away from skin and combustible surfaces, and do not treat a fabric case or accessory cover as proof that handling is safe. Coatings, seals and different metals can have different chemical tolerances. Use only approved maintenance products and processes; more aggressive cleaning is not automatically better."
+        },
+        {
+          "type": "paragraph",
+          "text": "A practical ownership comparison includes service availability, replacement policy, warranty exclusions and the cost of any manufacturer-required accessories. A low headline price can be less attractive if the product is difficult to support. Ask what routine care you are expected to perform and what requires returning the unit for service."
+        }
+      ],
+      "references": [
+        [
+          "SilencerCo · Material considerations (manufacturer reference)",
+          "https://silencerco.com/blog/unlocking-power-of-titanium-in-silencers"
+        ],
+        [
+          "SilencerCo · Care requirements (manufacturer reference)",
+          "https://silencerco.com/blog/how-to-clean-a-suppressor"
+        ]
+      ]
+    },
+    {
+      "heading": "A useful range and maintenance record",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Keep an equipment record with the exact model, serial number where applicable, purchase documentation, current manual and service correspondence. Store the record privately rather than on a public checklist. A short dated maintenance note is more useful than trying to remember what happened over several range visits."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Before a visit: confirm the manufacturer-approved application and current range rules; pack hearing protection.",
+            "After the equipment has cooled as directed: follow the manual’s inspection and care process.",
+            "Record an abnormal change in sound, looseness, visible damage or performance; discontinue use pending an appropriate assessment.",
+            "Check whether the storage case accommodates the documented configuration without forcing parts or placing strain on equipment.",
+            "Keep service and warranty instructions accessible so a fault becomes a repair question rather than an improvised experiment."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Distinguish cosmetic marks from manufacturer-defined rejection criteria. An internet photograph cannot establish the condition of your own equipment. When reporting a concern, provide the model and a clear description of what changed. The useful question is specific—“does this observed damage meet your inspection criteria?”—rather than asking for reassurance based on a brand name."
+        }
+      ],
+      "references": [
+        [
+          "NSSF · Firearm handling principles",
           "https://www.nssf.org/safety/rules-firearms-safety/"
         ]
       ]
     },
     {
-      "heading": "Plan a range visit and the trip home",
+      "heading": "Legal information belongs in a dated, separate check",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Ask the range whether the equipment is permitted and what its handling rules require. Arrange instruction or supervision appropriate to the activity. Include ordinary eye and hearing protection, safe storage for the trip, a way to keep records available privately, and enough time to avoid hurried packing. Take unfamiliar controls and unclear documentation as reasons to resolve questions before arriving."
+          "text": "In the United States, suppressors have historically been addressed by the National Firearms Act, while state and local requirements can add separate restrictions. Tax rules, court orders, administrative procedures and their applicability can change. This technical guide deliberately does not present an old fee, a promised approval time or a headline about one case as the nationwide purchasing rule."
         },
         {
           "type": "paragraph",
-          "text": "Hot equipment creates an additional handling and packing concern. Follow the product instructions about cooling, handling and transport; do not place equipment that may still be hot against skin, soft luggage or household supplies. Plan a storage location that does not expose children, visitors or someone unloading a vehicle to an unfamiliar object. A hurried disaster move is a poor time to discover that the case or care routine does not work."
-        },
-        {
-          "type": "flow",
-          "caption": "A sustainable equipment routine",
-          "items": [
-            [
-              "Before",
-              "Confirm permissions, documentation and manufacturer support."
-            ],
-            [
-              "During",
-              "Follow the range rules and retain hearing protection."
-            ],
-            [
-              "After",
-              "Follow product care and handling instructions."
-            ],
-            [
-              "Between visits",
-              "Keep access controlled and records organised."
-            ]
-          ],
-          "note": "An educational decision aid, not equipment certification or a live assessment."
+          "text": "Legal source review: 4 October 2026. Use current ATF guidance together with the rules for the location of ownership, transfer and intended sporting use. Confirm how any recent legal change applies to your situation with an appropriately licensed dealer or qualified legal adviser. A lawful purchase in one jurisdiction does not establish lawful possession, transport or hunting use in another."
         },
         {
           "type": "paragraph",
-          "text": "The purpose of this routine is clear responsibility. Decide which adult checks storage after a trip, who keeps the records and who contacts support when something seems wrong. A household member who does not use the equipment should still know whom to notify about an unsecured item."
+          "text": "For budgeting, separate the product price, required documented accessories, current transaction requirements and ongoing service cost. Keep the written basis for a purchase decision with the records. Technical research can explain what a suppressor does; it cannot replace a current, jurisdiction-specific legal check."
         }
       ],
-      "references": []
-    },
-    {
-      "heading": "Make the purchase serve an actual need",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "For a civilian sporting user, ask whether the purchase improves an activity already practised responsibly and whether the household can maintain it. Include the total cost of ownership: the product, any required administrative steps, qualified support, storage, protection and future service. Do not choose a product solely because a video makes it sound impressive or because an accessory bundle appears to offer savings."
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Write down the lawful activity the equipment will support.",
-            "Obtain the current manual before buying when available.",
-            "Ask how service is handled if the seller closes or the product is discontinued.",
-            "Check the return policy and the implications of a regulated transaction.",
-            "Keep other preparedness essentials funded: water, food, medicines, transport and communication."
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Waiting is a valid outcome when documentation, budget or legal questions remain unresolved. A suppressor is not a replacement for an emergency plan and is not required to begin preparing a household. This educational guide focuses on sound, ownership and equipment literacy, rather than concealment, armed confrontation or ways to alter a device."
-        }
-      ],
-      "references": []
+      "references": [
+        [
+          "ATF · National Firearms Act resources; check current guidance",
+          "https://www.atf.gov/rules-and-regulations/laws-alcohol-tobacco-firearms-and-explosives/national-firearms-act"
+        ]
+      ]
     }
   ],
-  "without_help": "Keep unresolved legal, equipment or interpretation questions unresolved in the plan. Use ordinary supplies and safe alternatives rather than guessing; contact the manufacturer or an appropriately qualified provider when available.",
-  "household": "Choose who manages the equipment records, maintenance and access. Account for vision, hearing, dexterity, shared devices, children and visitors. Keep sensitive household and ownership records private.",
-  "pack_now": "Keep the exact model manual, permitted batteries or protection, and necessary private records with the equipment. Separate unfamiliar equipment from ordinary shared household supplies.",
-  "next": "Write the specific civilian task, one unresolved question and the source that can answer it. Review that answer before buying or relying on the equipment.",
-  "watch": "A specification, appearance or online demonstration is not a certification. Use current legal requirements and manufacturer instructions, and verify important findings independently.",
+  "without_help": "Pause use or purchase until you have the exact manual, approved applications and service instructions. Do not infer compatibility from the product’s external diameter, appearance or a seller’s informal description.",
+  "household": "Secure the equipment with the firearm inventory, follow the manufacturer’s cooling requirements and keep ownership records private. Account for anyone who could mistake a hot component for an ordinary accessory.",
+  "pack_now": "Suitable hearing and eye protection, the exact manual, a permitted storage arrangement and the manufacturer’s service contact.",
+  "next": "Compare three documented models using approved applications, complete weight, care requirements, warranty support and fully described noise tests. Resolve compatibility before price.",
+  "watch": "An unexpected noise change, visible damage or a loose component warrants stopping use and following the manufacturer’s inspection process. Do not attempt repairs or modifications based on an online example.",
   "sources": "suppressor-fundamentals",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [],
-  "scope": "Civilian equipment education and editorial planning; U.S. references are labelled and rules vary. Manufacturer references explain technology and are not independent product endorsements. No tactical instruction, legal advice or specialist certification.",
+  "scope": "Technical education for civilian ownership, sporting use and household preparedness. Manufacturer references describe products and technology; they are not independent endorsements. U.S. legal examples do not establish the rules elsewhere.",
   "related": [
     "cartridges-calibers-explained",
     "night-vision-basics",
     "thermal-imaging-basics",
     "firearm-safety-basics"
-  ]
+  ],
+  "action_label": "Quick checklist",
+  "equipment_layout": true,
+  "source_context": "Technical education for civilian ownership, sporting use and household preparedness. Manufacturer references describe products and technology; they are not independent endorsements. U.S. legal examples do not establish the rules elsewhere.",
+  "intro_note": "Understand the technology before comparing advertisements. A suppressor is sound-reduction equipment; quieter does not mean silent or safe without hearing protection.",
+  "fallback_heading": "If the documentation is missing",
+  "household_heading": "Storage and access",
+  "pack_heading": "Range bag essentials",
+  "next_heading": "Build a product comparison",
+  "watch_heading": "When to stop using it"
 }

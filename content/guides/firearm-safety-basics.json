@@ -1,13 +1,13 @@
 {
   "slug": "firearm-safety-basics",
-  "title": "Firearm safety: the household foundation",
+  "title": "Understanding your firearm: parts, actions and maintenance",
   "category": "firearms-tools",
   "subcategory": "Safe ownership",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-04",
+  "next_review": "2027-01-04",
   "aliases": [
     "guns",
     "weapons",
@@ -19,54 +19,314 @@
     "weapons",
     "gun safety"
   ],
-  "tldr": "Build safety around controlled access, a safe muzzle direction, a finger outside the trigger guard, and model-specific training. A firearm is not a substitute for evacuation, de-escalation or an emergency plan.",
+  "tldr": "Learn the exact model’s parts, action type, chamber marking and controls before relying on it. The magazine and chamber are different locations; removing a magazine does not establish that a firearm is unloaded. Use the manufacturer’s manual for handling and maintenance, and recognize faults that require stopping use.",
   "steps": [
     [
-      "Identify the exact firearm",
-      "Obtain the manufacturer’s manual for the exact model. Learn its controls from a qualified instructor; familiarity with another firearm does not establish competence with this one."
+      "Identify the exact model",
+      "Record the manufacturer, model, chamber designation and applicable manual revision. Check for manufacturer safety notices."
     ],
     [
-      "Control direction and hands",
-      "Always keep the muzzle pointed where an unintended discharge would not injure someone. Keep your finger outside the trigger guard until an appropriate, lawful firing decision. A safety lever does not replace these habits."
+      "Learn the terminology",
+      "Distinguish the chamber, magazine, barrel, muzzle, action and safety controls. Familiar names do not guarantee familiar controls."
     ],
     [
-      "Separate handling from distractions",
-      "Do not handle firearms while impaired, overtired or arguing. Establish a quiet handling area that excludes children and visitors. Do not use a loaded firearm for practice or demonstrations."
+      "Understand the action type",
+      "Bolt, lever, pump, break-action, revolver and semiautomatic describe different mechanisms. Single-action and double-action describe trigger functions."
     ],
     [
-      "Secure it after use",
-      "Store firearms unloaded and locked, with ammunition secured separately. Restrict keys and codes to authorized adults. Check storage after visitors, household changes and maintenance."
+      "Set maintenance boundaries",
+      "Separate manufacturer-authorized routine care from repair, modification and fault diagnosis. Keep ammunition away from the maintenance area."
     ]
   ],
   "sections": [
-    [
-      "Before bringing a firearm home",
-      "Budget for a suitable lockbox or safe, secure installation, instruction and eye and hearing protection before accessories. Discuss how everyone will respond to an unfamiliar firearm: leave it alone, move away, and tell a responsible adult. Children’s awareness never replaces adult storage responsibilities."
-    ],
-    [
-      "Range boundaries and inspection",
-      "Use a supervised, lawful range with an adequate backstop. Know the target and what is beyond it; never fire at a sound or unidentified movement. Use only ammunition confirmed by the manual and firearm markings. If a firearm appears damaged, has been flooded, or behaves abnormally, stop using it and seek qualified inspection."
-    ],
-    [
-      "During a disaster",
-      "A hurried move adds handling and access risks. Plan lawful transport and destination storage ahead of time. Shelters, vehicles, hotels and another household may have different rules. Keep guns away from shared supply bins, volunteers and children; do not assume normal storage is still secure after flooding or forced entry."
-    ]
+    {
+      "heading": "The major parts and what their names mean",
+      "blocks": [
+        {
+          "type": "illustration",
+          "kind": "firearm",
+          "caption": "A sporting rifle: external parts vocabulary",
+          "description": "Conceptual sporting-rifle outline showing stock, receiver/action, barrel, muzzle and magazine. The chamber is at the rear of the barrel. Actual shapes and controls vary; this is not an operating or assembly diagram."
+        },
+        {
+          "type": "table",
+          "caption": "A component glossary",
+          "columns": [
+            "Term",
+            "Function or location"
+          ],
+          "rows": [
+            [
+              "Barrel / bore",
+              "The barrel is the tube; the bore is its interior passage. Rifling consists of spiral features inside a rifled bore."
+            ],
+            [
+              "Muzzle",
+              "The forward opening of the barrel."
+            ],
+            [
+              "Chamber",
+              "The cartridge-holding portion at the rear of the barrel; revolvers have chambers in the cylinder."
+            ],
+            [
+              "Receiver / frame",
+              "The main structure supporting relevant mechanisms; naming varies by firearm type."
+            ],
+            [
+              "Action",
+              "The mechanism associated with loading, closing, firing and removing a cartridge case."
+            ],
+            [
+              "Magazine",
+              "A cartridge supply, fixed or detachable depending on the firearm. It is not the chamber."
+            ],
+            [
+              "Stock / grip",
+              "The parts held or supported by the user; shape and fit affect comfort."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These terms make manuals, service discussions and product descriptions easier to understand. A clip is not simply another name for every magazine. A sporting rifle drawing also does not map directly onto a revolver or shotgun. Use the parts list supplied with the exact model to identify controls and components rather than assuming their positions from a generic diagram."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Complete technical glossary",
+          "https://saami.org/saami-glossary/"
+        ]
+      ]
+    },
+    {
+      "heading": "Action types: what the category actually describes",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Common sporting action families",
+          "columns": [
+            "Type",
+            "General mechanical distinction"
+          ],
+          "rows": [
+            [
+              "Bolt action",
+              "A bolt is manually operated as part of the loading and extraction cycle."
+            ],
+            [
+              "Lever action",
+              "A lever operates the action; cartridge storage and other details vary by design."
+            ],
+            [
+              "Pump action",
+              "A sliding fore-end operates the action; common in sporting shotguns and some rifles."
+            ],
+            [
+              "Break action",
+              "The firearm opens at a hinge to expose its chamber or chambers."
+            ],
+            [
+              "Revolver",
+              "A rotating cylinder contains multiple chambers."
+            ],
+            [
+              "Semiautomatic",
+              "Energy from a shot cycles the action; one shot is fired for each trigger actuation."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Semiautomatic does not mean fully automatic. Single-action and double-action are another classification: they describe what a trigger actuation does in relation to preparing and releasing the firing mechanism. They do not tell you whether the firearm uses a detachable magazine, how its manual safety works or which cartridge it accepts. Striker-fired and hammer-fired describe different firing-mechanism arrangements, not universal quality rankings."
+        },
+        {
+          "type": "paragraph",
+          "text": "An action type can help explain why two firearms have different controls and maintenance requirements, but the exact design matters. Two semiautomatic sporting rifles can have different operating systems, while two revolvers can require different handling practices. Familiarity with a category is useful background; it does not replace learning a particular model."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Semiautomatic action",
+          "https://saami.org/glossary/semiautomatic-action/"
+        ],
+        [
+          "SAAMI · Single action",
+          "https://saami.org/glossary/single-action/"
+        ],
+        [
+          "SAAMI · Double-action terminology",
+          "https://saami.org/saami-glossary/?letter=D"
+        ]
+      ]
+    },
+    {
+      "heading": "Chamber, magazine and controls: avoid the common assumptions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A cartridge can remain in a chamber independently of what is in the magazine. That is why removing a detachable magazine alone is not an unloaded-condition check. A visible indicator or an apparently open action is also not a substitute for the manufacturer’s complete verification procedure. Learn that procedure in a suitable setting with competent instruction, rather than improvising from a diagram."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mechanical safeties differ. Some block or disconnect parts of the firing mechanism; some designs have several passive features; some lack an external safety lever. A safety’s presence does not establish that every possible impact or handling error is harmless. A decocker is not simply another name for a safety, and its operation must be learned from the exact manual."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Do not infer loaded condition from the magazine, a lever position or a sound.",
+            "Identify the chamber marking separately from a model name stamped elsewhere.",
+            "Check whether a manual covers your exact variant and revision.",
+            "Recognize that older examples and modified firearms may not match a current marketing description."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Good terminology prevents costly confusion when contacting support. Saying “the magazine release is damaged” is more useful than “the button is wrong,” while reporting the model and variant helps the manufacturer identify the relevant controls. Keep a clear photograph of markings in your private equipment record."
+        }
+      ],
+      "references": [
+        [
+          "NSSF · Firearm handling principles",
+          "https://www.nssf.org/safety/rules-firearms-safety/"
+        ],
+        [
+          "Ruger · Manuals and safety information",
+          "https://www.ruger.com/safety/announcements.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Routine care: cleaning is not the same as repair",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Routine maintenance preserves condition; it should follow the manufacturer’s instructions for the exact firearm. Different finishes, materials and mechanisms can require different products. More solvent, more oil or more disassembly does not automatically improve the result. Excess products can attract contamination or reach places the manual says to keep dry."
+        },
+        {
+          "type": "table",
+          "caption": "Keep the maintenance boundary clear",
+          "columns": [
+            "Task",
+            "Useful approach"
+          ],
+          "rows": [
+            [
+              "Routine exterior care",
+              "Follow the manual’s approved products and protection instructions."
+            ],
+            [
+              "Scheduled cleaning",
+              "Use the manufacturer’s procedure and limits; do not substitute an unrelated model’s tutorial."
+            ],
+            [
+              "Parts replacement",
+              "Confirm whether this is an owner-permitted task or qualified service work."
+            ],
+            [
+              "Abnormal operation",
+              "Stop use and arrange appropriate assessment; cleaning is not a universal fault repair."
+            ],
+            [
+              "Unknown modifications",
+              "Establish what was changed before relying on an old manual or standard parts list."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep live ammunition out of the maintenance area and establish the unloaded condition using the exact instructions before beginning. Use a clear workspace and keep cleaning chemicals away from food and children. Record the date, products used and any concern discovered. A short log supports warranty service and reveals a recurring issue that might otherwise be forgotten."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not file, bend or adjust firing-mechanism parts to resolve an unexplained symptom. Ordinary care and altering mechanical behavior are different jobs. If a manufacturer notice describes a recall or safety bulletin, follow it even if the firearm seems to operate normally."
+        }
+      ],
+      "references": [
+        [
+          "NSSF · Firearm handling principles",
+          "https://www.nssf.org/safety/rules-firearms-safety/"
+        ],
+        [
+          "Ruger · Safety notices and recalls",
+          "https://ruger.com/safety/announcements.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Wear, obstruction and disaster exposure",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Pay attention to changes: visible damage, newly loose components, unusual operation, unexplained corrosion or a different report during sporting use. An obstruction in the bore can be hazardous. If something suggests a blockage or mechanical fault, stop using the firearm and follow the manufacturer’s assessment process; do not try another shot to determine whether the concern was real."
+        },
+        {
+          "type": "paragraph",
+          "text": "A firearm exposed to floodwater or fire needs a different decision from a routine post-range cleaning. Water can reach concealed mechanisms, and heat can affect materials without an obvious exterior change. Secure the equipment and arrange qualified inspection under the relevant manufacturer and SAAMI guidance. Photograph its identification and record the event from a safe location."
+        },
+        {
+          "type": "paragraph",
+          "text": "Secondhand equipment deserves an especially clear baseline. Obtain the manual, check manufacturer notices and establish its condition and modification history before use. A seller’s statement that it “worked last time” does not document present condition. A qualified inspection can be more valuable than immediately buying accessories for an unfamiliar firearm."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Fire-exposed firearms and ammunition, February 2025",
+          "https://saami.org/wp-content/uploads/2025/03/Guidance-on-Firearms-and-Ammunition-Exposed-to-Fire-2-21-2025.pdf"
+        ],
+        [
+          "SAAMI · Firearm and ammunition advisories",
+          "https://saami.org/publications-advisories/advisories/"
+        ]
+      ]
+    },
+    {
+      "heading": "A concise safety foundation that supports better learning",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Keep the muzzle in a direction that would not injure someone if the firearm discharged. Keep fingers outside the trigger guard until the appropriate point in a lawful sporting activity. Identify the target and what lies beyond it, use an appropriate range or hunting setting, and wear suitable eye and hearing protection. Mechanical features support these practices; they do not replace them."
+        },
+        {
+          "type": "paragraph",
+          "text": "Separate handling from alcohol, impairment, fatigue and interruptions. Secure firearms against unauthorized access and account for children, visitors and changes in household risk. Anyone who finds an unfamiliar firearm should leave it alone, move away and tell a responsible adult. Safety education for children supplements adult storage responsibility."
+        },
+        {
+          "type": "paragraph",
+          "text": "For your next learning session, choose a specific question: identifying controls on your model, understanding its authorized routine care or interpreting a safety bulletin. Work with the manual and qualified instruction for hands-on learning. A focused question creates progress; a vague claim of being “experienced with guns” can leave important model-specific gaps unnoticed."
+        }
+      ],
+      "references": [
+        [
+          "NSSF · Firearm handling principles",
+          "https://www.nssf.org/safety/rules-firearms-safety/"
+        ]
+      ]
+    }
   ],
-  "without_help": "Keep the firearm secured if training or competent supervision is unavailable. Use evacuation, locks, lighting and a household communication plan to reduce exposure. Do not attempt an unfamiliar repair to make equipment usable during a crisis.",
-  "household": "Account for children, visitors, memory changes and a person in emotional crisis. Reconsider who can access keys or codes. Arrange a lawful, safe storage alternative with qualified local help when household risks change.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
-  "next": "Without handling a firearm, walk through who has access to the storage system, where keys are kept, and how a destination would securely store it.",
-  "watch": "This guide does not cover tactical use, armed confrontation, legal use-of-force advice or repairs. Follow current local law and the exact manufacturer’s instructions.",
-  "sources": "firearm-safety",
+  "without_help": "Keep the firearm secured and unused while you identify it and obtain its manual or inspection. Do not substitute a similar-looking model’s instructions or attempt a repair to make unfamiliar equipment usable.",
+  "household": "Limit access to authorized adults who understand the exact firearm and storage system. Review access after visitors, a move, memory changes or a household crisis; familiarity never replaces secure storage.",
+  "pack_now": "Exact manual, model and variant, chamber designation, safety-notice check date, maintenance record and manufacturer service contact.",
+  "next": "Choose one model-specific question and find its answer in the manual or through qualified instruction. Start with controls, loaded-condition verification or routine care.",
+  "watch": "Damage, suspected bore obstruction, abnormal operation, a manufacturer safety notice and flood or fire exposure require a pause and appropriate assessment. Do not continue sporting use to “see if it happens again.”",
+  "sources": "firearm-safety-basics",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [],
-  "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
+  "scope": "Technical education for civilian ownership, sporting use and household preparedness. Manufacturer references describe products and technology; they are not independent endorsements. U.S. legal examples do not establish the rules elsewhere.",
   "related": [
     "cartridges-calibers-explained",
     "suppressor-fundamentals",
     "firearm-storage",
     "night-vision-basics"
-  ]
+  ],
+  "action_label": "Quick checklist",
+  "equipment_layout": true,
+  "source_context": "Technical education for civilian ownership, sporting use and household preparedness. Manufacturer references describe products and technology; they are not independent endorsements. U.S. legal examples do not establish the rules elsewhere.",
+  "intro_note": "Parts and action types are useful vocabulary. The exact manufacturer manual governs hands-on handling, inspection and maintenance.",
+  "fallback_heading": "If the model or condition is unclear",
+  "household_heading": "Who handles the equipment",
+  "pack_heading": "Your model reference",
+  "next_heading": "Fill one knowledge gap",
+  "watch_heading": "Stop-use concerns"
 }

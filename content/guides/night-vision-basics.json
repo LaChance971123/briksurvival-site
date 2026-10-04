@@ -132,10 +132,49 @@
         },
         {
           "type": "paragraph",
-          "text": "A useful demonstration answers these questions with the live device. Ask to inspect the menus, focus controls and battery access. If the seller provides only an edited clip, leave unresolved points on the comparison sheet rather than filling them in from assumptions."
+          "text": "A useful demonstration includes both fine scene detail and a wider view. Compare the live image rather than edited footage, and distinguish a sensor specification from a display specification. For image-intensifier products, tube generation alone does not describe every aspect of the view; individual tube specifications, condition and optics matter. For digital products, performance with an illuminator enabled is different from performance with ambient light alone."
+        },
+        {
+          "type": "table",
+          "caption": "More useful specification vocabulary",
+          "columns": [
+            "Term",
+            "What it describes"
+          ],
+          "rows": [
+            [
+              "Field of view",
+              "The angular width of the scene visible at once; a narrower view provides less surrounding context."
+            ],
+            [
+              "Native resolution",
+              "The underlying sensor or image-detail capability, distinct from screen pixels and digitally enlarged output."
+            ],
+            [
+              "Signal-to-noise ratio (intensifier)",
+              "A measure related to useful signal versus image noise under stated test conditions."
+            ],
+            [
+              "Resolution (intensifier)",
+              "Often expressed in line pairs per millimeter; do not compare it directly with digital screen resolution."
+            ],
+            [
+              "Figure of merit (FOM)",
+              "Signal-to-noise ratio multiplied by limiting resolution; it is not a complete rating of optics, ergonomics or device condition."
+            ],
+            [
+              "Eye relief / diopter",
+              "Viewing comfort and adjustment for the eye; check whether the device suits glasses and the intended user."
+            ]
+          ]
         }
       ],
-      "references": []
+      "references": [
+        [
+          "Photonis · Image-intensifier specifications (manufacturer reference)",
+          "https://cdn.photonis.com/system/files/2023-12/Photonis_Night%20Vision%20and%20Image%20Intensifiers%20market_EN_17102023.pdf"
+        ]
+      ]
     },
     {
       "heading": "Light and terrain still determine the task",
@@ -239,7 +278,7 @@
         },
         {
           "type": "paragraph",
-          "text": "A borrower or occasional user should have a short operating note with the power control, permitted care, battery requirements and an explicit fallback. Keep that note about normal observation; do not use it for weapon targeting or tactical movement. Review whether vision, glasses, screen comfort or dexterity affect how each person uses the equipment. A technically capable product may still be frustrating for the intended user."
+          "text": "An occasional user benefits from a short operating card with the power control, focus adjustment, battery type and permitted care. Test it with the actual user: glasses, eye relief, weight and dexterity can determine whether an otherwise capable device is comfortable. Keep the card specific to the model so the controls remain familiar after a few months without use."
         },
         {
           "type": "paragraph",
@@ -249,21 +288,30 @@
       "references": []
     }
   ],
-  "without_help": "Keep unresolved legal, equipment or interpretation questions unresolved in the plan. Use ordinary supplies and safe alternatives rather than guessing; contact the manufacturer or an appropriately qualified provider when available.",
-  "household": "Choose who manages the equipment records, maintenance and access. Account for vision, hearing, dexterity, shared devices, children and visitors. Keep sensitive household and ownership records private.",
-  "pack_now": "Keep the exact model manual, permitted batteries or protection, and necessary private records with the equipment. Separate unfamiliar equipment from ordinary shared household supplies.",
-  "next": "Write the specific civilian task, one unresolved question and the source that can answer it. Review that answer before buying or relying on the equipment.",
-  "watch": "A specification, appearance or online demonstration is not a certification. Use current legal requirements and manufacturer instructions, and verify important findings independently.",
+  "without_help": "When a shape lacks detail, record only what you can actually distinguish. Use ordinary lighting for a safe stationary check when appropriate. Keep a headlamp and a normal navigation plan available if power or visibility is poor.",
+  "household": "Label the permitted batteries, store the lens protection with the device and make its normal controls easy to find. Test comfort with glasses, focus adjustment and screen brightness for the actual user.",
+  "pack_now": "Model and manual, battery type, normal power and focus controls, permitted storage conditions, care instructions and warranty contact.",
+  "next": "Compare live views of familiar objects from a safe stationary location under similar lighting. Record image detail, field of view, focus effort, comfort and real battery use.",
+  "watch": "A bright-looking scene can still hide nearby obstacles. Follow the device’s light-exposure limits; a screen image does not establish safe terrain or identify an ambiguous subject.",
   "sources": "night-vision-basics",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [],
-  "scope": "Civilian equipment education and editorial planning; U.S. references are labelled and rules vary. Manufacturer references explain technology and are not independent product endorsements. No tactical instruction, legal advice or specialist certification.",
+  "scope": "Civilian observation and household equipment education. Manufacturer references explain the technology; they are not independent endorsements or proof that a particular product meets your needs.",
   "related": [
     "cartridges-calibers-explained",
     "suppressor-fundamentals",
     "thermal-imaging-basics",
     "firearm-safety-basics"
-  ]
+  ],
+  "equipment_layout": true,
+  "action_label": "Quick checklist",
+  "fallback_heading": "When the image is inconclusive",
+  "household_heading": "A usable equipment routine",
+  "pack_heading": "Equipment reference card",
+  "next_heading": "Run a useful comparison",
+  "watch_heading": "Interpretation limits",
+  "source_context": "Civilian observation and household equipment education. Manufacturer references explain the technology; they are not independent endorsements or proof that a particular product meets your needs.",
+  "intro_note": "Light-based night vision and thermal imaging solve different observation problems. Compare the live image, underlying technology and usability—not only a generation label."
 }

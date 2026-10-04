@@ -51,7 +51,7 @@
         },
         {
           "type": "paragraph",
-          "text": "For a household, the useful question is often whether an image suggests something worth checking by another method. An unusual surface pattern may justify a professional inspection, but it does not independently diagnose water damage, a wiring fault or a medical condition. Keep the observation separate from the conclusion. Write down what was seen, the conditions and what would be needed to confirm it."
+          "text": "For a household inspection, separate the observation from its proposed cause. A cool-looking patch on a wall could have several explanations, including a temperature difference or reflection. Record the surface, weather, indoor heating or cooling conditions and a normal photograph. Repeated observations under comparable conditions make a better inspection record than one dramatic palette image."
         }
       ],
       "references": [
@@ -103,6 +103,36 @@
         {
           "type": "paragraph",
           "text": "Thermal sensitivity and spatial resolution answer different questions. More detector pixels do not by themselves establish sensitivity, accurate temperature measurement or a useful lens for your task. Compare manufacturers’ datasheets rather than collecting the largest number in each advertisement. Keep incompatible test conditions visible instead of treating unlike specifications as a fair ranking."
+        },
+        {
+          "type": "table",
+          "caption": "Interpretation terms worth knowing",
+          "columns": [
+            "Term",
+            "Practical meaning"
+          ],
+          "rows": [
+            [
+              "NETD / thermal sensitivity",
+              "The ability to distinguish small thermal differences under stated test conditions; lower reported values can indicate better sensitivity when tests are comparable."
+            ],
+            [
+              "Emissivity",
+              "How effectively a surface emits infrared radiation; shiny low-emissivity surfaces can make reflections especially important."
+            ],
+            [
+              "Radiometric image",
+              "A file that retains measurement information, where supported; a screenshot of a color palette may not retain it."
+            ],
+            [
+              "Automatic gain / palette",
+              "Display choices that change contrast and colors; two differently scaled images may look different without a matching physical change."
+            ],
+            [
+              "Focus and field of view",
+              "Determine which surface detail is resolved and how much of the surrounding scene appears."
+            ]
+          ]
         }
       ],
       "references": [
@@ -113,6 +143,14 @@
         [
           "FLIR OEM · Choosing a thermal imager",
           "https://www.oem.flir.com/learn/discover/choosing-the-right-thermal-imager-for-your-integrated-project/"
+        ],
+        [
+          "FLIR · Emissivity and reflections",
+          "https://www.flir.com/discover/professional-tools/how-does-emissivity-affect-thermal-imaging/"
+        ],
+        [
+          "FLIR · Radiometric image files",
+          "https://docs.flir.com/T810587/en-US/latest/s08.html"
         ]
       ]
     },
@@ -264,21 +302,30 @@
       "references": []
     }
   ],
-  "without_help": "Keep unresolved legal, equipment or interpretation questions unresolved in the plan. Use ordinary supplies and safe alternatives rather than guessing; contact the manufacturer or an appropriately qualified provider when available.",
-  "household": "Choose who manages the equipment records, maintenance and access. Account for vision, hearing, dexterity, shared devices, children and visitors. Keep sensitive household and ownership records private.",
-  "pack_now": "Keep the exact model manual, permitted batteries or protection, and necessary private records with the equipment. Separate unfamiliar equipment from ordinary shared household supplies.",
-  "next": "Write the specific civilian task, one unresolved question and the source that can answer it. Review that answer before buying or relying on the equipment.",
-  "watch": "A specification, appearance or online demonstration is not a certification. Use current legal requirements and manufacturer instructions, and verify important findings independently.",
+  "without_help": "If a pattern has no clear explanation, keep the original image and record the conditions rather than assigning it a cause. Use ordinary visible inspection where safe; obtain appropriate assessment for electrical, structural or moisture concerns.",
+  "household": "Keep visible and thermal photographs together, label the location and date, and store records privately. Make batteries, lens protection and the correct manual available to the person who uses the camera.",
+  "pack_now": "Model, native sensor resolution, measurement capability, battery requirements, manual, care limits and an inspection-log template.",
+  "next": "Compare live images under the same conditions. Check field of view, native resolution, thermal sensitivity, focus and whether original measurement files can be exported.",
+  "watch": "A hot-looking patch may be a reflection, and an observation imager may not measure temperature. Do not use a consumer camera to replace alarms or open hazardous equipment to investigate an image.",
   "sources": "thermal-imaging-basics",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [],
-  "scope": "Civilian equipment education and editorial planning; U.S. references are labelled and rules vary. Manufacturer references explain technology and are not independent product endorsements. No tactical instruction, legal advice or specialist certification.",
+  "scope": "Civilian observation and household equipment education. Manufacturer references explain the technology; they are not independent endorsements or proof that a particular product meets your needs.",
   "related": [
     "cartridges-calibers-explained",
     "suppressor-fundamentals",
     "night-vision-basics",
     "firearm-safety-basics"
-  ]
+  ],
+  "equipment_layout": true,
+  "action_label": "Quick checklist",
+  "fallback_heading": "When the image is inconclusive",
+  "household_heading": "A usable equipment routine",
+  "pack_heading": "Equipment reference card",
+  "next_heading": "Run a useful comparison",
+  "watch_heading": "Interpretation limits",
+  "source_context": "Civilian observation and household equipment education. Manufacturer references explain the technology; they are not independent endorsements or proof that a particular product meets your needs.",
+  "intro_note": "Thermal contrast, scene detail and temperature measurement are separate capabilities. A thermal image shows radiation from visible surfaces; it is not a view through ordinary walls."
 }
