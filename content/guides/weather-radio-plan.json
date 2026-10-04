@@ -4,10 +4,10 @@
   "category": "communications",
   "subcategory": "Weather radio",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-04",
+  "next_review": "2027-04-04",
   "aliases": [
     "NOAA",
     "weather radio",
@@ -17,7 +17,13 @@
     "Weather radio",
     "NOAA",
     "weather radio",
-    "SAME"
+    "SAME",
+    "Choose receiving, automatic alerting and access features separately",
+    "Find the appropriate transmitter and test the real room",
+    "Program locations without copying someone else’s codes",
+    "Test power, warning behavior and accessible attachments",
+    "Place it where the household can respond",
+    "Maintain a fallback for reception or equipment failure"
   ],
   "tldr": "Choose a weather radio with the alert features you need, set it for your location using its manual, and test it. Receiving a broadcast is different from automatically alerting a sleeping household.",
   "steps": [
@@ -39,28 +45,257 @@
     ]
   ],
   "sections": [
-    [
-      "Use more than one warning route",
-      "Weather radio complements phone alerts, local warning methods and trusted current information. Terrain, reception, transmitter outages and depleted batteries can disrupt any one source. Identify how a hearing-impaired household member will receive an alert, using compatible accessible equipment where needed."
-    ],
-    [
-      "Make maintenance routine",
-      "Follow the manual for test reception and batteries. Check settings after moving, changing batteries or resetting the device. A radio bought and placed on a shelf without setup may not warn the household as intended. Record the transmitter and configured areas so another adult can check them."
-    ]
+    {
+      "heading": "Choose receiving, automatic alerting and access features separately",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A radio advertised as receiving weather broadcasts may simply play audio when turned on. Automatic warning alerting, location selection, backup power, and accessible attachments are separate capabilities. Decide whether the main job is waking a sleeping household, listening while travelling, or supplying information during a blackout. Read the exact model manual rather than assuming every emergency radio performs all three jobs."
+        },
+        {
+          "type": "table",
+          "caption": "Compare features by the task they solve",
+          "columns": [
+            "Feature",
+            "Purpose",
+            "Question before relying on it"
+          ],
+          "rows": [
+            [
+              "Weather-band reception",
+              "Listen to broadcasts.",
+              "Does it receive the relevant transmitter at the intended location?"
+            ],
+            [
+              "Automatic tone alert",
+              "Draw attention to supported warning broadcasts.",
+              "Which modes enable it, and how is it tested?"
+            ],
+            [
+              "SAME location selection",
+              "Select supported geographic alert areas.",
+              "Which codes and areas are configured?"
+            ],
+            [
+              "Backup power",
+              "Operate through loss of normal power.",
+              "Does the complete alert system work on the specified backup?"
+            ],
+            [
+              "Accessible output",
+              "Connect compatible visual or vibration alert equipment.",
+              "Is the accessory supported and independently powered if needed?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "NOAA Weather Radio is a U.S. system. Elsewhere, identify the local warning service and suitable equipment. A two-way handheld radio is not automatically a weather-alert receiver, and a weather receiver normally cannot transmit a request for assistance."
+        }
+      ],
+      "references": [
+        [
+          "NWS · Weather radio receiver features",
+          "https://www.weather.gov/nwr/nwr_receivers"
+        ]
+      ]
+    },
+    {
+      "heading": "Find the appropriate transmitter and test the real room",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use the NWS station and coverage information to identify the relevant transmitter, then follow the receiver manual to tune it. Check the broadcast identity and area served. A strong signal from a different transmitter may not provide the local warnings you expect. Coverage maps are a planning aid; usable reception still needs checking at the actual place you intend to keep the equipment."
+        },
+        {
+          "type": "flow",
+          "caption": "Set up the receiving path",
+          "items": [
+            [
+              "Station",
+              "Identify a transmitter serving the location using current NWS information."
+            ],
+            [
+              "Reception",
+              "Listen at the intended room and check antenna placement using the manual."
+            ],
+            [
+              "Alert setup",
+              "Configure supported location and warning settings, then verify operation."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, individual needs and current instructions control the response."
+        },
+        {
+          "type": "paragraph",
+          "text": "NWS notes that terrain, building materials, and room position affect reception. In normal safe conditions, compare appropriate positions before settling on one. Keep equipment clear of water and escape routes. Do not climb onto a roof or go into dangerous weather to improve an antenna. If external equipment is needed, use compatible hardware and appropriate installation help."
+        }
+      ],
+      "references": [
+        [
+          "NWS · Weather radio reception",
+          "https://www.weather.gov/nwr/reception"
+        ]
+      ]
+    },
+    {
+      "heading": "Program locations without copying someone else’s codes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "SAME means Specific Area Message Encoding. On receivers supporting it, area settings can narrow alerts to selected locations. Use the current NWS location information and the device’s exact setup process. Record which areas were selected and why. A code copied from a video, an old home, or a neighboring county is not a verified configuration for your current address."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Select the area where the receiver will actually be used; consider other relevant locations only if the supported configuration suits the household.",
+            "Check whether the receiver is set for all areas, one area, or multiple areas, using its manual.",
+            "Understand any event-blocking option before changing it. Reducing unwanted noise can also remove a warning you need.",
+            "After a reset, battery change, move, or repair, verify whether settings were retained.",
+            "Keep the station, area settings and review date beside the radio so another adult can check them."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Location selection is not precise household hazard detection. It does not measure floodwater at your door or prove a tornado cannot affect the area. Read the message and keep hazard-specific protective plans ready. Do not silence a warning solely because you cannot yet see the hazard."
+        }
+      ],
+      "references": [
+        [
+          "NWS · Weather radio receiver features",
+          "https://www.weather.gov/nwr/nwr_receivers"
+        ]
+      ]
+    },
+    {
+      "heading": "Test power, warning behavior and accessible attachments",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Start with the manufacturer’s instructions for normal power, backup batteries, warning modes and testing. Use a documented test function and, where appropriate, the local broadcast test schedule. Test scheduling can vary or be postponed; a missed broadcast test alone does not diagnose every fault. Separately check whether ordinary audio is clear and whether the expected settings remain enabled."
+        },
+        {
+          "type": "table",
+          "caption": "Keep a brief setup record",
+          "columns": [
+            "Record",
+            "Useful detail"
+          ],
+          "rows": [
+            [
+              "Power",
+              "Approved supply, battery type, installation and replacement instructions."
+            ],
+            [
+              "Alert mode",
+              "The setting required for automatic warnings and how it is verified."
+            ],
+            [
+              "Location",
+              "Transmitter and selected areas, with last review date."
+            ],
+            [
+              "Access equipment",
+              "Compatible accessory, connection and its own power needs."
+            ],
+            [
+              "Result",
+              "Date, what actually activated and unresolved problems."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A receiver with a backup battery does not necessarily power an attached strobe or vibration device during an outage. Verify the whole path through the documented procedure. Avoid improvised wiring or incompatible supplies. If equipment behavior remains unclear, use the manufacturer or installer’s support while maintaining another available warning route."
+        }
+      ],
+      "references": [
+        [
+          "NWS · Accessible weather radio alerts",
+          "https://www.weather.gov/nwr/special_needs"
+        ]
+      ]
+    },
+    {
+      "heading": "Place it where the household can respond",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The best listening position is not automatically the best alert position. Check whether the intended users can hear, see or feel the signal from their normal sleeping areas. Keep the controls reachable and instructions legible. A caregiver must know how to obtain the actual message after the alarm sounds; silencing the tone without learning the required action wastes its purpose."
+        },
+        {
+          "type": "callout",
+          "title": "Keep the response card beside the receiver",
+          "text": "Write the relevant shelter location, who assists dependents, where departure essentials are, and where a verified update can be obtained. Use hazard-specific instructions rather than one rule for every alarm."
+        },
+        {
+          "type": "paragraph",
+          "text": "Editorial example: a receiver in the kitchen may have clear audio but be inaudible behind two closed bedroom doors. That is a household access problem even if the device technically works. Resolve it through suitable placement or supported alert equipment, then recheck reception. Do not place a radio where it blocks an exit, interferes with ventilation, or can be knocked into a sink."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Household warning plan",
+              "url": "/preparedness/emergency-alerts/"
+            },
+            {
+              "label": "Tornado protection",
+              "url": "/emergencies/tornado/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Maintain a fallback for reception or equipment failure",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If the broadcast becomes unavailable, check safe obvious causes: charge or batteries, selected channel, antenna position, and an available NWS outage notice. Do not assume that an absent broadcast means no hazard. Continue necessary protection using another working information source. An internet outage notice itself requires a connection, so include a backup that does not depend on that page."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Record normal station and settings before a disruption.",
+            "Review reception and backup operation according to the manual.",
+            "Recheck after moving the radio or changing its power arrangements.",
+            "Replace used or unsuitable consumables without mixing incompatible battery types.",
+            "Identify which phone, broadcast or local channel supplies the fallback.",
+            "Practice reading one warning and carrying out the appropriate household action."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep expectations specific. Solar panels, cranks and several bands are not proof of dependable automatic alerting or enough power for another device. Test the function you need rather than the number of features on the box. When replacing equipment, update the setup card and remove obsolete instructions so another user does not follow the wrong model’s procedure."
+        }
+      ],
+      "references": [
+        [
+          "NWS · Weather radio reception",
+          "https://www.weather.gov/nwr/reception"
+        ]
+      ]
+    }
   ],
   "without_help": "Use other safe warning sources and the current visible conditions. If a warning source fails, do not assume the hazard has ended. Continue the protective action until reliable information supports a change.",
-  "household": "Assign an adult to wake and assist dependents. Test audibility or accessible alert equipment from sleeping areas, with doors in their usual positions.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "household": "Test the full alert path from sleeping areas and for the actual users. Assign who wakes or assists dependents and verify any accessory has appropriate backup power.",
+  "pack_now": "The configured receiver, approved power supply and batteries, compatible accessible accessories if needed, the model instructions, station and area record and household response card.",
   "next": "Check reception, location settings, backup power and the household response to one likely warning.",
   "watch": "NOAA weather radio is U.S.-specific. Alert availability and systems differ elsewhere; verify the equivalent local service.",
-  "sources": "weather-radio",
+  "sources": "weather-radio-plan-expanded",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [
     [
-      "Is buying equipment enough?",
-      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+      "Is weather audio the same as automatic alerts?",
+      "No. Check the exact receiver’s automatic alert, location selection and operating-mode features. Test the task you need rather than relying on the word emergency on its packaging."
+    ],
+    [
+      "Will a backup battery power an attached alert accessory?",
+      "Do not assume it. Verify the full receiver-and-accessory system through its documented power and test procedure."
     ]
   ],
   "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",

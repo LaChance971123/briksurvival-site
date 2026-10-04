@@ -29,13 +29,13 @@
   "next": "Plan quantities for the actual feeding and care routine, and ask a qualified clinician for special dietary or medical needs. Include medications and transport or sleeping arrangements.",
   "watch": "Infants can deteriorate quickly with dehydration, temperature exposure or illness. Seek qualified care for concerning symptoms; do not rely on adult treatment advice.",
   "without_help": "Use the caregiver plan and safe supplies already available while seeking verified medical or feeding support. Do not stretch formula with extra water or leave a child alone to find supplies.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: name the caregiver. Agree who will manage children, pets or mobility needs while that action happens. Infants can deteriorate quickly with dehydration, temperature exposure or illness. Seek qualified care for concerning symptoms; do not rely on adult treatment advice.",
-  "pack_now": "For infants & children during disruption, prioritize only items needed for the first action and the fallback: Use the caregiver plan and safe supplies already available while seeking verified medical or feeding support. Do not stretch formula with extra water or leave a child alone to find supplies. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "sources": "children",
+  "household": "Name the caregiver and trusted backup for each child. Preserve safe feeding and care, keep children supervised during supply searches, and make communication and handovers appropriate to age and individual needs.",
+  "pack_now": "Child-specific feeding and hygiene supplies, suitable clothing, prescribed care items and instructions, trusted caregiver contacts, authorized collection details, appropriate transport equipment and a manageable comfort item.",
+  "sources": "infant-child-preparedness-expanded",
   "category": "preparedness",
   "subcategory": "Care & accessibility",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "aliases": [
     "baby emergency",
     "children war",
@@ -46,33 +46,259 @@
     "baby emergency",
     "children war",
     "infant supplies",
-    "formula outage"
+    "formula outage",
+    "Build around one ordinary day of care",
+    "Protect the feeding method instead of improvising substitutes",
+    "Separate feeding, diapering and clean storage",
+    "Keep a trusted caregiver and a clear handover",
+    "Plan safe arrival, rest and a manageable routine",
+    "Test quantities and identify the first care gap"
   ],
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [
     [
-      "What matters before collecting supplies?",
-      "Keep children with a trusted caregiver and plan safe feeding, water, hygiene, medicines and warmth around their age and needs. Put written contacts with each child and agree a reunion plan. Use age-appropriate feeding guidance; do not dilute formula or use unsafe water to stretch supplies. Collect items only if doing so does not delay this action."
+      "Can I dilute formula to make it last longer?",
+      "No. Follow the product and qualified care instructions. If safe supplies or preparation are unavailable, seek verified feeding support; do not improvise dilution or homemade replacements."
     ],
     [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For infants & children during disruption, keep the specific hazard in view: Infants can deteriorate quickly with dehydration, temperature exposure or illness. Seek qualified care for concerning symptoms; do not rely on adult treatment advice."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Use simple explanations. Explain the next action calmly and specifically. Familiar routines and a comfort item can help; avoid promising that you know when danger will end. Keep personal notes private; they are not submitted to Osprey Zero."
+      "Is a well-stocked adult kit enough for an infant?",
+      "No. Feeding, cleaning, storage, hygiene, transport, sleep and caregiver arrangements need their own child-specific plan and usable supplies."
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-04",
   "sections": [
-    [
-      "Use a familiar handover",
-      "Editorial family planning: record the usual caregiver contacts, authorized pickup arrangements, communication needs and where essential items are kept. Ask the backup caregiver what they need to support the child safely. Include a familiar comfort item when practical and use calm, age-appropriate practice rather than frightening surprise scenarios. Feeding requirements need their own plan; do not assume a generic adult pantry solves them."
-    ]
+    {
+      "heading": "Build around one ordinary day of care",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "List what each child uses in an ordinary day: feeding, drinking, hygiene, medicines, communication, sleep and safe transport. Then identify which tasks depend on clean water, electricity, refrigeration, a particular adult or a school. Infants, toddlers and teenagers need different plans. Do not apply an adult pantry or water calculation as a complete infant-care plan."
+        },
+        {
+          "type": "table",
+          "caption": "A child-specific planning sheet",
+          "columns": [
+            "Need",
+            "Record",
+            "Check before relying on it"
+          ],
+          "rows": [
+            [
+              "Feeding",
+              "Usual product or method and relevant care instructions.",
+              "Safe preparation, cleaning and storage during disruption."
+            ],
+            [
+              "Care",
+              "Prescribed medicines, aids and individual requirements.",
+              "Current instructions, suitable storage and backup support."
+            ],
+            [
+              "Supervision",
+              "Named caregiver and trusted backup.",
+              "Pickup permission and how the handover is confirmed."
+            ],
+            [
+              "Comfort and communication",
+              "Useful routine, language and familiar items.",
+              "What the child understands and can safely do."
+            ],
+            [
+              "Movement",
+              "Appropriate transport or carrier arrangement.",
+              "Fit, use instructions and actual space with the family’s bags."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Write the information so the backup adult can use it. Keep product names and care instructions specific where needed, and separate private records from a simple contact card. Review quantities as the child grows rather than leaving an old diaper bag labelled emergency-ready indefinitely."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Infant and young-child supply checklist",
+          "https://www.cdc.gov/infant-feeding-emergencies-toolkit/php/checklist.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Protect the feeding method instead of improvising substitutes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "CDC identifies ready-to-feed infant formula as the safest formula option during emergencies because it does not need mixing water. If formula is used, check suitable products, supply and storage with the child’s needs in mind. Follow label instructions after opening and feeding; unopened shelf stability does not make an opened container safe indefinitely. Do not dilute formula, make homemade replacements or change prescribed feeding without qualified advice."
+        },
+        {
+          "type": "callout",
+          "title": "Powdered formula needs a separate safe plan",
+          "text": "It requires appropriate safe water, correct preparation and clean feeding equipment. If it is the only available option, use CDC’s specific guidance and seek qualified feeding support. A general camping water treatment instruction is not an infant-feeding protocol."
+        },
+        {
+          "type": "paragraph",
+          "text": "If breastfeeding or expressing milk, plan access to appropriate support and any necessary equipment, cleaning and storage. A powered pump introduces dependencies that direct feeding may not have; discuss a workable backup with a qualified lactation provider. Do not assume stress automatically stops milk production or that an unfamiliar feeding technique can safely be learned from a hurried improvisation."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Infant feeding during emergencies",
+          "https://www.cdc.gov/infant-feeding-emergencies-toolkit/php/faqs.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Separate feeding, diapering and clean storage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Organize care supplies by clean and soiled tasks. Keep the feeding area and equipment separate from diaper waste, cleaning chemicals and contaminated belongings. Use safe water and appropriate cleaning instructions for reusable feeding items. A packet of wipes does not replace every cleaning step required by a bottle or pump. If the required cleaning cannot be done, seek a suitable supported alternative rather than repeatedly reusing contaminated equipment."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Keep age-appropriate feeding supplies and their instructions together, with a plan for opened items.",
+            "Place diapers, suitable personal-care items, clean clothing and waste containment in a separate clearly marked group.",
+            "Use a dedicated clean storage arrangement for prepared feeding equipment.",
+            "Record where suitable handwashing water and soap are available.",
+            "Keep product instructions and clinician-directed medicine information readable; do not estimate doses from an adult product."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Editorial example: a family packs enough formula but forgets the equipment and water needed to clean its reusable bottles. The food quantity alone does not support feeding. Walk through one complete feed and one change in normal conditions to identify the missing task. Keep normal care available throughout this exercise."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Infant and young-child supply checklist",
+          "https://www.cdc.gov/infant-feeding-emergencies-toolkit/php/checklist.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Keep a trusted caregiver and a clear handover",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Assign who stays with each child during sheltering, departure and arrival. A child should not be left alone while an adult searches for supplies or signal. Keep a trusted backup and current school or childcare pickup permissions. Record the expected destination and how another household adult learns it. Avoid two collectors arriving independently while nobody maintains the contact plan."
+        },
+        {
+          "type": "flow",
+          "caption": "A simple caregiver handover",
+          "items": [
+            [
+              "Confirm",
+              "Identify the trusted responsible adult and authorized collection arrangement."
+            ],
+            [
+              "Equip",
+              "Provide essential care items, current instructions and a minimal contact card."
+            ],
+            [
+              "Report",
+              "Confirm the child’s location, caregiver and next check-in to the household contact."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, individual needs and current instructions control the response."
+        },
+        {
+          "type": "paragraph",
+          "text": "Teach an older child the agreed trusted contacts and an age-appropriate separation response without placing adult responsibility on them. Keep sensitive identity and medical details off visible public labels. A child with communication or sensory needs may need a particular format, familiar aid, or calm explanation. Tell the backup caregiver what actually works instead of describing the child only by a diagnosis."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Household emergency planning",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Plan safe arrival, rest and a manageable routine",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before relocation, ask what the destination can support for the child: safe feeding, suitable sleeping arrangements, essential care, hygiene, temperature and a caregiver. Do not assume an evacuation site has infant supplies merely because families can enter. Keep an appropriate transport arrangement and follow the child-restraint or carrier instructions; emergency travel is not a reason to improvise unsafe restraint."
+        },
+        {
+          "type": "table",
+          "caption": "Arrival check before settling",
+          "columns": [
+            "Area",
+            "Question to answer"
+          ],
+          "rows": [
+            [
+              "Caregiver",
+              "Who has direct responsibility right now?"
+            ],
+            [
+              "Feeding",
+              "Can the usual safe plan continue with available supplies and equipment?"
+            ],
+            [
+              "Rest",
+              "Is there a safe age-appropriate sleeping arrangement?"
+            ],
+            [
+              "Hygiene",
+              "Where are clean care tasks done and waste contained?"
+            ],
+            [
+              "Communication",
+              "Does the household contact know the confirmed location?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Use simple truthful explanations: what is happening now, where the trusted adult is, and the next step. A familiar story, quiet activity or comfort object may help preserve routine. Avoid promises about when danger ends or repeated exposure to frightening media. Ask qualified child-health support about concerning illness or changes rather than treating this planning guide as a diagnostic checklist."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Test quantities and identify the first care gap",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Inventory supplies against actual use and review them when needs change. For a child using a particular formula or prescribed item, count only suitable usable stock. Keep a daily-use grab list for items that cannot remain in the bag. Check expiration, storage and preparation instructions, and replace supplies used during normal life. A large bag with the wrong sizes or products is not an adequate reserve."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Walk through a normal care period with the backup adult.",
+            "Identify water, power, refrigeration and cleaning dependencies.",
+            "Check the carry load while accounting for who holds or assists the child.",
+            "Confirm the destination’s care arrangements and pickup permissions.",
+            "Write the first essential gap and the safe action to resolve it.",
+            "Recheck the plan after growth, a care change, travel or supply use."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If disruption already prevents safe feeding or necessary care, seek verified qualified assistance promptly while keeping the child with a trusted caregiver. Do not stretch supplies through unsafe dilution or borrow someone else’s treatment instructions. Use a suitable alternative location if available and confirmed. The purpose of the reserve is to preserve care and time to act, not to justify waiting through a worsening situation."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Family reunification",
+              "url": "/emergencies/family-reunification/"
+            },
+            {
+              "label": "Emergency hygiene",
+              "url": "/guides/emergency-hygiene/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    }
   ]
 }

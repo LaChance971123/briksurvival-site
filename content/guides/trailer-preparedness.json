@@ -4,10 +4,10 @@
   "category": "home-building",
   "subcategory": "Trailers & mobile homes",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-04",
+  "next_review": "2027-04-04",
   "aliases": [
     "trailer preparedness",
     "mobile home",
@@ -17,7 +17,13 @@
     "Trailers & mobile homes",
     "trailer preparedness",
     "mobile home",
-    "RV preparedness"
+    "RV preparedness",
+    "Identify the unit and the limit that supplies cannot fix",
+    "Confirm a sturdy destination and how people reach it",
+    "Separate relocation of people from moving the whole unit",
+    "Maintain installed systems through model-specific instructions",
+    "Store a useful reserve without blocking movement or overloading",
+    "Rehearse an unavailable driver and a lost campsite service"
   ],
   "tldr": "Plan early access to a sturdy shelter and a safe destination. A trailer, RV or mobile home is not a safe tornado shelter; supplies and tie-downs do not change that limitation.",
   "steps": [
@@ -39,28 +45,245 @@
     ]
   ],
   "sections": [
-    [
-      "Sheltering and moving are different plans",
-      "A towable trailer may need substantial time to secure and connect; a mobile home may not be movable at all. The safer choice can be leaving the unit and reaching an established shelter. Write that decision into the plan so possessions do not delay people’s departure."
-    ],
-    [
-      "Daily preparedness in a compact space",
-      "Keep exits, hatches and ventilation unobstructed. Secure stored items against normal movement using suitable hardware and observe manufacturer load limits. Store water and supplies so weight does not create unsafe handling or vehicle loading. Do not run generators in enclosed spaces or where exhaust enters the unit or nearby homes."
-    ]
+    {
+      "heading": "Identify the unit and the limit that supplies cannot fix",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A manufactured home, motorhome and towable travel trailer have different movement, structural and utility arrangements. Write what the actual unit is, how it is occupied and whether it can legally and practically move. A mobile home may not be movable in an emergency. A vehicle-based unit may still need considerable preparation and a suitable driver. Do not let the word mobile substitute for a transport plan."
+        },
+        {
+          "type": "callout",
+          "title": "A trailer or mobile home is not a safe tornado shelter",
+          "text": "NWS directs people in mobile homes to sturdy shelter. Identify and use an appropriate shelter plan before travel becomes dangerous; tie-downs, supplies and a reinforced storage bin do not remove this limitation."
+        },
+        {
+          "type": "paragraph",
+          "text": "For other severe wind threats, use the applicable local evacuation and housing guidance. Florida’s manufactured-home guidance emphasizes early planning, qualified assessment of anchors and attachments, and departure arrangements. Its rules and programs are a Florida example, not a universal building standard. Property preparations and decisions about where people shelter are separate tasks."
+        }
+      ],
+      "references": [
+        [
+          "NWS · Tornado protection",
+          "https://www.weather.gov/safety/tornado-during"
+        ],
+        [
+          "Florida emergency management · Manufactured-home planning (Florida example)",
+          "https://www.floridadisaster.org/planprepare/home/manufacturedhomes/"
+        ]
+      ]
+    },
+    {
+      "heading": "Confirm a sturdy destination and how people reach it",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Identify an appropriate destination before a watch or warning leaves little time. Check access, availability, transport time, pets and essential care. A clubhouse or campground office is not proven shelter merely because it looks more substantial than the trailer. Ask the responsible operator or local emergency management what the site actually provides and under which conditions it opens."
+        },
+        {
+          "type": "flow",
+          "caption": "Keep the people plan ahead of the unit plan",
+          "items": [
+            [
+              "Forecast preparation",
+              "Review warnings, transport, destination access and care needs early."
+            ],
+            [
+              "Departure decision",
+              "Use applicable instructions and the household trigger while safe travel remains possible."
+            ],
+            [
+              "People first",
+              "Leave the unit when necessary; do not wait for towing or property work to be completed."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, individual needs and current instructions control the response."
+        },
+        {
+          "type": "paragraph",
+          "text": "Time an ordinary safe journey with the actual household and discuss what changes if the usual driver is away. Keep an alternate appropriate site where possible. Record the exact address and entry arrangement on paper. A destination that requires a locked gate, an absent manager or inaccessible steps needs a solution in advance. Do not plan last-minute driving through a storm as the default."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Separate relocation of people from moving the whole unit",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Moving an RV or trailer involves more than starting a vehicle. The manufacturer’s travel procedure, loading, connections, vehicle condition, towing capability and route restrictions all matter. Plan those tasks in normal conditions and use qualified help for technical questions. During a developing hazard, determine whether there is enough safe time for that actual sequence. Possessions should not delay the household’s necessary departure."
+        },
+        {
+          "type": "table",
+          "caption": "Two distinct departure checklists",
+          "columns": [
+            "People leave",
+            "The unit moves only when safe and suitable"
+          ],
+          "rows": [
+            [
+              "Account for people and pets.",
+              "Use the manufacturer’s travel and towing procedure."
+            ],
+            [
+              "Take essential care and manageable portable items.",
+              "Verify vehicle condition and appropriate load limits."
+            ],
+            [
+              "Use a checked destination and safe route.",
+              "Check the route and destination can accommodate the unit."
+            ],
+            [
+              "Notify the household contact when safe.",
+              "Arrange an experienced suitable driver and necessary preparation."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If moving the unit is no longer appropriate, use the leave-the-unit plan. Do not attempt repairs, hookup, fuel transfer or salvage in dangerous conditions. A road reachable by a passenger car may not be suitable for a large rig. Avoid assuming that a map’s shortest route accounts for clearances, weight or towing constraints."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Maintain installed systems through model-specific instructions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Keep manuals and qualified service contacts for the unit’s electrical, battery, propane, heating, ventilation, water and alarm systems. Inspect and maintain them according to their instructions. Use safe compatible supplies and appropriate professional help for faults. A household preparedness guide cannot replace the wiring or fuel-system documentation for a particular model."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Keep exits, hatches and necessary ventilation clear of supplies.",
+            "Know the documented response to a suspected fuel leak; leave danger and contact the appropriate service from safety.",
+            "Check alarms through their specified test and replacement process.",
+            "Plan safe water and sanitation around actual tank or service limitations; a gauge is not a water-quality test.",
+            "Keep fuel-burning equipment and generator exhaust out of the unit and neighboring occupied spaces.",
+            "Do not improvise adapters, electrical backfeeding, or indoor combustion because an outage interrupts normal comfort."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Before a season of use, check whether another adult can find the manuals and explain the stop conditions. Separate ordinary travel procedures from emergency response. Shutting down or reconnecting equipment during an unsafe event should follow the applicable professional or manufacturer instructions, not a universal online sequence."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Generator safety",
+              "url": "/emergencies/generator-safety/"
+            },
+            {
+              "label": "Safe water reserves",
+              "url": "/preparedness/water-storage/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Store a useful reserve without blocking movement or overloading",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Compact living makes storage, weight and access part of preparedness. Record safe storage locations for suitable water, meals, lights, care supplies and documents. Observe the actual unit and vehicle limits using manufacturer information and appropriate assessment. Water and batteries can add substantial weight; do not assume unused cabinet space means unlimited load capacity."
+        },
+        {
+          "type": "table",
+          "caption": "A compact storage review",
+          "columns": [
+            "Area",
+            "Question"
+          ],
+          "rows": [
+            [
+              "Door or hatch",
+              "Can the full escape route open without moving boxes?"
+            ],
+            [
+              "Care supplies",
+              "Can the right person reach them without unsafe lifting?"
+            ],
+            [
+              "Water and food",
+              "Are storage conditions, containers and handling suitable?"
+            ],
+            [
+              "Travel items",
+              "Are they secured appropriately for ordinary movement?"
+            ],
+            [
+              "Portable essentials",
+              "Can people leave without unloading the main reserve?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep an independently manageable bag and daily-use grab list for leaving the unit. Secure stored items through suitable documented methods rather than placing heavy boxes high over sleeping space. Keep chemicals and fuel separate from food and care equipment. For parked long-term living, review the space like a home as well as a vehicle: a blocked exit is still a hazard even if no journey is planned."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Rehearse an unavailable driver and a lost campsite service",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a tabletop exercise with the household: severe weather is forecast, the usual driver is away, and the campsite loses power. Ask which destination is confirmed, who can help people move, and which essential care fails first. Keep the exercise calm and leave real safety systems operating. The purpose is to discover the unsupported assumption before a warning requires action."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Find a working warning source and identify the relevant location.",
+            "Confirm the suitable sturdy destination and entry arrangements.",
+            "Explain the people-only departure sequence and responsibilities.",
+            "Check the portable care items, contacts and pet plan.",
+            "Identify an alternate driver or safe arrangement and its limits.",
+            "Record one gap, assign its solution and recheck it in normal conditions."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Review after changing sites, vehicles, household members or care needs. A campground’s flood risk, shelter and evacuation access can differ from the previous stop. On return after a disaster, assess access and damage through appropriate qualified channels; being able to unlock a unit does not prove that systems or surroundings are safe. Keep a temporary destination available until essential needs can be sustained again."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Accessible evacuation",
+              "url": "/emergencies/accessible-evacuation/"
+            },
+            {
+              "label": "Household bug-out plan",
+              "url": "/preparedness/bug-out-plan/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    }
   ],
   "without_help": "If the unit is unsafe, prioritize people and portable essentials. Use the already identified shelter or destination rather than attempting repairs, towing or fuel transfers in dangerous conditions.",
-  "household": "Check shelter access for wheelchair users, pets and anyone unable to drive. Assign a transport helper and an alternate; both may be affected by the same storm.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "household": "Plan transport and sturdy shelter access for the least mobile person and for pets. Assign a backup driver or helper and keep the people-only departure independent of towing or preparing the unit.",
+  "pack_now": "A people-only exit bag, medicines and care equipment, pet restraints and supplies, paper destination and transport contacts, working warning access and the actual unit’s manuals and service details.",
   "next": "Time the journey to the sturdy shelter in ordinary conditions and prepare a leave-the-unit checklist.",
   "watch": "An RV or vehicle is not a dependable substitute for sturdy tornado shelter. Do not cross flooded roads or remain in a flood-prone campsite.",
-  "sources": "housing-preparedness",
+  "sources": "trailer-preparedness-expanded",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [
     [
-      "Is buying equipment enough?",
-      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+      "Can tie-downs make a mobile home safe in a tornado?",
+      "No. Use the appropriate sturdy shelter plan. Property reinforcement does not remove the need for a safe place for people."
+    ],
+    [
+      "Do we have to take the RV or trailer when leaving?",
+      "No. Have a people-only departure plan for when moving the unit is unsafe, impractical or would delay required evacuation."
     ]
   ],
   "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",

@@ -1008,5 +1008,109 @@
       "Pinellas County · Evacuation planning (Florida example)",
       "https://pinellas.gov/evacuation/"
     ]
+  ],
+  "communications-outage-expanded": [
+    [
+      "National 911 Program · Calling and texting 911 (U.S.)",
+      "https://www.911.gov/calling-911/frequently-asked-questions/"
+    ],
+    [
+      "American Red Cross · Household emergency planning",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ]
+  ],
+  "emergency-alerts-expanded": [
+    [
+      "NWS · Wireless Emergency Alerts (U.S.)",
+      "https://www.weather.gov/riw/WEA_Info"
+    ],
+    [
+      "NWS · Weather radio receiver features",
+      "https://www.weather.gov/nwr/nwr_receivers"
+    ],
+    [
+      "NWS · Accessible weather radio alerts",
+      "https://www.weather.gov/nwr/special_needs"
+    ]
+  ],
+  "weather-radio-plan-expanded": [
+    [
+      "NWS · Weather radio receiver features",
+      "https://www.weather.gov/nwr/nwr_receivers"
+    ],
+    [
+      "NWS · Weather radio reception",
+      "https://www.weather.gov/nwr/reception"
+    ],
+    [
+      "NWS · Accessible weather radio alerts",
+      "https://www.weather.gov/nwr/special_needs"
+    ]
+  ],
+  "family-reunification-expanded": [
+    [
+      "American Red Cross · Household emergency planning",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ],
+    [
+      "American Red Cross · Contact and locate loved ones",
+      "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/contact-and-locate-loved-ones.html"
+    ]
+  ],
+  "accessible-evacuation-expanded": [
+    [
+      "American Red Cross · Inclusive preparedness",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/inclusive-preparedness-resources.html"
+    ]
+  ],
+  "infant-child-preparedness-expanded": [
+    [
+      "CDC · Infant and young-child supply checklist",
+      "https://www.cdc.gov/infant-feeding-emergencies-toolkit/php/checklist.html"
+    ],
+    [
+      "CDC · Infant feeding during emergencies",
+      "https://www.cdc.gov/infant-feeding-emergencies-toolkit/php/faqs.html"
+    ],
+    [
+      "American Red Cross · Household emergency planning",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ]
+  ],
+  "pet-evacuation-expanded": [
+    [
+      "American Red Cross · Pet disaster preparedness",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/pet-disaster-preparedness.html"
+    ],
+    [
+      "Florida emergency management · Pet planning (Florida example)",
+      "https://www.floridadisaster.org/planprepare/pets/"
+    ]
+  ],
+  "returning-home-expanded": [
+    [
+      "CDC · Returning home after a natural disaster",
+      "https://www.cdc.gov/natural-disasters/safety/returning-home-after-natural-disaster.html"
+    ]
+  ],
+  "budget-preparedness-expanded": [
+    [
+      "American Red Cross · Emergency kit supplies",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+    ],
+    [
+      "American Red Cross · Household emergency planning",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+    ]
+  ],
+  "trailer-preparedness-expanded": [
+    [
+      "NWS · Tornado protection",
+      "https://www.weather.gov/safety/tornado-during"
+    ],
+    [
+      "Florida emergency management · Manufactured-home planning (Florida example)",
+      "https://www.floridadisaster.org/planprepare/home/manufacturedhomes/"
+    ]
   ]
 }
