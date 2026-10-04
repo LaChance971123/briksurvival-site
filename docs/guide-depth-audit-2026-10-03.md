@@ -2,7 +2,7 @@
 
 ## Findings before this iteration
 
-Audited all 126 topic guides. Median editorial length was 430 words; 108 guides were below 600 words, 69 had no deep-dive sections, and only three used a diagram. These are useful response briefs, but most are not yet complete guides. Counts include headings, quick answers, action steps, household planning, questions and deeper content (excluding expandable equipment lists); they exclude navigation, references and sales copy.
+Audited all 126 topic guides. Median editorial length was 430 words; 108 guides were below 600 words, 69 had no deep-dive sections, and only three used a diagram. These are useful response briefs, but most are not yet complete guides. Audit totals include headings, quick answers, action steps, household planning, questions, deeper content and expandable equipment lists. The per-guide comparison table below excludes the expandable equipment lists. Both exclude navigation, references and sales copy.
 
 ## Completed first batch
 

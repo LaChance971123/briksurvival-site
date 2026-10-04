@@ -29,13 +29,13 @@
   "next": "When water returns, sewer service may still be damaged. Resume plumbing only once its use and disposal route are safe; arrange qualified cleanup for significant sewage contamination.",
   "watch": "Bleach does not make sewage floodwater safe to enter. Never mix cleaning chemicals. Contamination and infection risks are greater for children and immunocompromised people.",
   "without_help": "If no collection is operating, contain waste securely in a protected place away from living, food and water areas while seeking a verified disposal option. Do not improvise an open discharge that endangers neighbours.",
-  "household": "Assign a trusted adult to each person who needs assistance. Keep medicines, essential contacts and a workable reunion plan with the group. Make decisions around the least mobile person, not the fastest; avoid splitting the family without a clear, safe way to reconnect. For this situation, brief every person on the first action: check for backup. Agree who will manage children, pets or mobility needs while that action happens. Bleach does not make sewage floodwater safe to enter. Never mix cleaning chemicals. Contamination and infection risks are greater for children and immunocompromised people.",
-  "pack_now": "For sewer failure & toilets without service, prioritize only items needed for the first action and the fallback: If no collection is operating, contain waste securely in a protected place away from living, food and water areas while seeking a verified disposal option. Do not improvise an open discharge that endangers neighbours. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "sources": "hygiene",
+  "household": "Choose a stable accessible toilet position, appropriate privacy and assistance, and a safe handwashing arrangement. Plan diapers, continence care and soiled-clothing containment explicitly. Keep children and pets away from waste and contaminated areas; share cleanup responsibilities only with capable adults.",
+  "pack_now": "Suitable stable toilet equipment and its instructions, required consumables, safe handwashing water and soap, appropriate containment, a light and verified disposal contacts. Keep clean and dirty supplies separate.",
+  "sources": "sewer-failure-expanded",
   "category": "utilities",
   "subcategory": "Sanitation",
   "content_type": "Emergency guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "aliases": [
     "no toilet",
     "sewer backup",
@@ -48,27 +48,276 @@
     "no toilet",
     "sewer backup",
     "toilet no water",
-    "sewage outage"
+    "sewage outage",
+    "Water supply and wastewater service are different",
+    "Set a boundary around contamination",
+    "Choose a temporary toilet for the user and setting",
+    "Make waste handling and handwashing one task",
+    "A disposal plan is essential",
+    "Restart service and review what failed"
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [
     [
-      "What matters before collecting supplies?",
-      "Stop using plumbing that is backing up or may discharge sewage into living areas. Keep children and pets away from contaminated water. Separate toilet waste from drinking water, food and washing areas, and use a contained temporary toilet arrangement until safe disposal and service are established. Do not flush blindly during a sewer disruption. Collect items only if doing so does not delay this action."
+      "Can I flush if I have a bucket of water?",
+      "Only if the plumbing and wastewater system are usable and there is no relevant restriction. Extra water can worsen backup when drainage has failed. Establish the system status before adding it."
     ],
     [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For sewer failure & toilets without service, keep the specific hazard in view: Bleach does not make sewage floodwater safe to enter. Never mix cleaning chemicals. Contamination and infection risks are greater for children and immunocompromised people."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Confirm disposal. Use an established safe disposal service or locally appropriate sanitation guidance. Do not dump waste into streets, rivers, storm drains or open ground. Keep personal notes private; they are not submitted to Osprey Zero."
+      "Can contained human waste go in ordinary rubbish?",
+      "Do not assume so. Check what the actual local collection or disposal arrangement accepts, including the container and product requirements. Secure containment buys time but does not create a legal or safe disposal route."
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-04",
+  "sections": [
+    {
+      "heading": "Water supply and wastewater service are different",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A toilet that has no flushing water is not the same as a toilet connected to a damaged or backed-up sewer. Identify whether the problem is water supply, drainage, the building’s internal plumbing, a septic system, or a wider wastewater failure. Do not keep pouring water into a toilet to test it when sewage may back up or service is restricted."
+        },
+        {
+          "type": "flow",
+          "caption": "The first sanitation decisions",
+          "items": [
+            [
+              "Stop adding water",
+              "When drains back up or a sewer restriction applies, stop using affected plumbing."
+            ],
+            [
+              "Protect the clean area",
+              "Keep people away from sewage and separate drinking water, food, and care supplies."
+            ],
+            [
+              "Arrange the alternative",
+              "Use a suitable contained toilet option with handwashing and a verified waste plan."
+            ]
+          ],
+          "note": "Editorial response map. It does not diagnose the plumbing or authorize disposal into a damaged system."
+        },
+        {
+          "type": "paragraph",
+          "text": "Check utility or property-management information when reachable and record the affected systems and restrictions. In a shared building, your sink may connect to a wider problem. A neighbor’s toilet working once does not establish that the whole drainage system is safe. Significant sewage contamination requires qualified assessment and cleanup."
+        }
+      ],
+      "references": [
+        [
+          "Washington DOH · Emergency toilet options (local guidance example)",
+          "https://doh.wa.gov/community-and-environment/wastewater-management/toilet-use-during-emergencies"
+        ],
+        [
+          "CDC · Emergency personal hygiene",
+          "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Set a boundary around contamination",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Keep children, pets, food, and clean water out of affected areas. Avoid touching or walking through sewage, especially where electrical equipment or building damage may also be involved. Do not enter standing water to operate electrical switches or appliances. A bleach solution does not make a sewage flood safe to enter."
+        },
+        {
+          "type": "table",
+          "caption": "Keep these functions separate",
+          "columns": [
+            "Function",
+            "What to protect"
+          ],
+          "rows": [
+            [
+              "Drinking water and food",
+              "Closed clean containers, meal surfaces, utensils, and suitable preparation water."
+            ],
+            [
+              "Personal and medical care",
+              "Clean supplies, appropriate handwashing, and a usable care space."
+            ],
+            [
+              "Temporary toilet",
+              "A stable private arrangement separated from meals and clean supply storage."
+            ],
+            [
+              "Waste containment",
+              "Leak-resistant closed storage, protected from access and away from water sources."
+            ],
+            [
+              "Cleanup",
+              "Qualified assistance for substantial contamination; no unsafe entry to begin the task."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For a small household, draw the actual room layout and identify where each function can take place. If there is no way to keep living and care areas clear of contamination, staying may not be workable. Do not hide that problem behind an inventory showing plenty of food and batteries."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency personal hygiene",
+          "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Choose a temporary toilet for the user and setting",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A purpose-made portable toilet can provide a contained option when used according to its instructions. Check the seat stability, user capacity, cleaning requirements, liners or chemicals specified by the product, and the actual disposal route. A portable toilet is not complete simply because someone can sit on it."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Choose a stable, accessible position with appropriate privacy and lighting; keep it away from food and drinking-water storage.",
+            "Check how a person with limited mobility transfers, reaches supplies, and receives assistance. Do not improvise an unstable seat or unsafe lifting routine.",
+            "Keep required consumables and instructions together. Different toilet systems may use different waste-handling arrangements.",
+            "Keep the setup secured from children and pets, with a responsible adult managing used materials.",
+            "Use local public-health sanitation guidance for improvised alternatives and disposal. Do not assume another state’s emergency method is permitted in your location."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If an improvised contained arrangement is the only immediate option, it still needs stability, appropriate leak-resistant containment, privacy, handwashing, and a plan for secure temporary holding. This guide does not provide a universal construction or waste-treatment recipe. Where those conditions cannot be met, prioritize a safer sanitation location."
+        }
+      ],
+      "references": [
+        [
+          "Washington DOH · Emergency toilet options (local guidance example)",
+          "https://doh.wa.gov/community-and-environment/wastewater-management/toilet-use-during-emergencies"
+        ]
+      ]
+    },
+    {
+      "heading": "Make waste handling and handwashing one task",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Prepare the handwashing area before handling waste. Use suitable water and soap, and arrange runoff without relying on failed drains. CDC recommends washing hands for at least 20 seconds. Gloves can reduce contact during handling but do not replace handwashing or remove the need to keep clean supplies separate."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Prepare needed containment and cleaning supplies without placing them in the food area.",
+            "Follow the toilet’s actual procedure and local sanitation instructions for closing and handling used materials.",
+            "Prevent leaks and keep the closed waste container protected from access.",
+            "Clean the appropriate surfaces with suitable products according to their instructions; never mix chemicals.",
+            "Remove used gloves appropriately, then wash hands before returning to food or care tasks."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Assign the dirty task to a capable adult where possible, and keep the routine simple enough that another adult can understand it. The person assisting a dependent household member may need separate help to handle waste. Do not rely on a child to recognize contamination or carry a heavy used container."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency personal hygiene",
+          "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
+        ]
+      ]
+    },
+    {
+      "heading": "A disposal plan is essential",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Confirm what the local wastewater utility, public-health service, or emergency collection arrangement accepts and where. Keep the instructions, opening status, transport requirement, and contact details. Rules for human waste, portable-toilet chemicals, diapers, and ordinary rubbish may differ. An ordinary collection vehicle passing the street does not authorize every waste type."
+        },
+        {
+          "type": "table",
+          "caption": "Questions for a verified disposal route",
+          "columns": [
+            "Question",
+            "Why it matters"
+          ],
+          "rows": [
+            [
+              "What waste is accepted?",
+              "Different products and waste streams may require different handling."
+            ],
+            [
+              "What container or closure is required?",
+              "Leak prevention and acceptance requirements may be specific."
+            ],
+            [
+              "Is the site or service operating?",
+              "A normal-service directory may be outdated during disruption."
+            ],
+            [
+              "How can it be transported safely?",
+              "Do not contaminate people, care supplies, or drinking water in transit."
+            ],
+            [
+              "What if collection is delayed?",
+              "Secure temporary holding has limits; arrange another sanitation location before capacity fails."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not discharge waste into streets, storm drains, rivers, or open ground. Do not invent a burial or chemical-treatment solution without appropriate local guidance. If collection is unavailable, maintain secure contained holding while seeking a verified option. If the dwelling cannot sustain it safely, reconsider remaining there."
+        }
+      ],
+      "references": [
+        [
+          "Washington DOH · Emergency toilet options (local guidance example)",
+          "https://doh.wa.gov/community-and-environment/wastewater-management/toilet-use-during-emergencies"
+        ]
+      ]
+    },
+    {
+      "heading": "Restart service and review what failed",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Water pressure returning does not prove that the sewer or septic system is ready. Confirm the applicable instructions before resuming use. Arrange qualified assessment where there was damage or significant contamination. A normal-looking drain should not override a continuing service restriction."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Confirm the status of wastewater service and the building’s affected plumbing.",
+            "Keep contaminated materials and cleanup tasks separated from normal living and meal preparation.",
+            "Follow the applicable cleanup and disposal instructions; use qualified help for significant contamination.",
+            "Replenish toilet, handwashing, and personal-care consumables.",
+            "Record the usable capacity and limitations of the temporary arrangement.",
+            "Update the relocation trigger if the household could not maintain safe sanitation."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For a preparedness exercise, inspect the unused toilet equipment, read its instructions, find suitable storage locations, and identify the normal and emergency disposal contacts. Do not deliberately disable household plumbing or generate waste for practice. Test that the intended user can use the position and supplies safely, with normal facilities available."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Hygiene with limited water",
+              "url": "/guides/emergency-hygiene/"
+            },
+            {
+              "label": "Water outage",
+              "url": "/emergencies/water-outage/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency personal hygiene",
+          "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
+        ],
+        [
+          "Washington DOH · Emergency toilet options (local guidance example)",
+          "https://doh.wa.gov/community-and-environment/wastewater-management/toilet-use-during-emergencies"
+        ]
+      ]
+    }
+  ]
 }

@@ -4,13 +4,19 @@
   "category": "preparedness",
   "subcategory": "Planning",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "aliases": [
     "family plan",
     "emergency plan"
   ],
   "keywords": [
-    "Planning"
+    "Planning",
+    "Start with the household you actually have",
+    "Separate immediate escape from planned relocation",
+    "Write the contact and reunion rules",
+    "Assign tasks and backups without making one person indispensable",
+    "Set decision triggers before an emergency",
+    "Test the plan with a realistic tabletop exercise"
   ],
   "tldr": "Agree on how to receive warnings, where to shelter, when and where to evacuate, and how to reconnect if separated. Write the plan down and include people who need medication, mobility assistance or caregiver support.",
   "steps": [
@@ -33,36 +39,263 @@
   ],
   "next": "Keep copies offline and in go bags. Share relevant details with caregivers and trusted contacts.",
   "watch": "A plan that depends on one vehicle or one working phone network needs alternatives.",
-  "sources": "household-emergency-plan",
+  "sources": "household-emergency-plan-expanded",
   "shopping": [],
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Give each household member a written copy with two meeting places, two contacts and essential medical details. Practise the plan with phones off. Include a destination you can actually reach without an official shelter or rescue transport.",
   "household": "Write the plan in formats everyone can use: plain text, large print, translated wording or another needed communication format. Ask each person which assistance they want. Store private identity and health details securely rather than in public shared links.",
-  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "pack_now": "Keep the current contact card, role sheet, meeting points, destination notes, care instructions and review date accessible. Keep sensitive household information private. A short usable paper copy is more useful than a file nobody can open.",
   "decisions": [],
   "faqs": [
     [
-      "What if people are in different places?",
-      "Choose a nearby meeting point and a second place outside the likely affected area. Give everyone an out-of-area contact and decide how to report safe status without exposing precise locations publicly. Practice the plan without a working mobile network."
+      "How long should the written plan be?",
+      "Keep the first-action, contact, role and destination information concise. Put equipment manuals and more detailed care information where they can be found separately. Test whether another person can use the plan without the organizer explaining it."
     ],
     [
-      "What if the chosen contact cannot respond?",
-      "Name a backup and a reassessment time before an event. Do not keep traveling between unchecked addresses. Agree what each person will do if no message gets through and who is responsible for dependents at school, work or home."
+      "What if a helper is unavailable?",
+      "Name another realistic option and mark any unconfirmed arrangement. Review the person’s essential needs directly; do not make the entire plan depend on a single neighbor or a reply to one message."
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-04",
   "sections": [
-    [
-      "Turn decisions into a one-page routine",
-      "For each likely local hazard write the first action, who decides, where to meet, transport options and a backup contact. Separate a near-home meeting point from an outside-area destination. Give everyone usable copies, including a person who cannot use the household’s phone app."
-    ],
-    [
-      "Plan when the usual helper is absent",
-      "List a backup for school collection, dependent care, driving and essential equipment. Confirm permission and availability in advance. Test the plan during ordinary work hours as well as at night: a plan that needs every adult home at once is fragile."
-    ]
+    {
+      "heading": "Start with the household you actually have",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A useful plan describes who does what when normal arrangements stop working. Begin with the people, pets, places, and services your household relies on. Include anyone who stays part time, someone away at school or work, and a person who may need help communicating or moving. A plan for four fit adults will not work unchanged for a family with a toddler and an adult who cannot use stairs."
+        },
+        {
+          "type": "table",
+          "caption": "Build a dependency list before buying equipment",
+          "columns": [
+            "Need",
+            "Write down",
+            "Fallback to investigate"
+          ],
+          "rows": [
+            [
+              "Care",
+              "Medicines, powered equipment, caregivers, and storage requirements",
+              "Provider-approved backup and an accessible alternative location."
+            ],
+            [
+              "Movement",
+              "Stairs, transport, keys, mobility aids",
+              "A second helper or transport arrangement that can actually be reached."
+            ],
+            [
+              "Communication",
+              "Usable devices, languages, hearing or vision needs",
+              "A written contact card and an agreed accessible contact method."
+            ],
+            [
+              "Daily essentials",
+              "Drinking water, food, toilet arrangements, pets",
+              "Supplies everyone can use and the point at which home stops working."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Make the list short enough to update. Write facts you have checked and mark assumptions that still need work. An advertised shelter, a neighbor’s vehicle, and an electric door are not reliable fallbacks until their limits and availability are understood."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Separate immediate escape from planned relocation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose a nearby meeting point for escaping a home fire and a separate destination for being unable to return to the neighborhood. These serve different purposes. The fire meeting point is where people can be counted after leaving; it is not necessarily somewhere to sleep. A relocation destination needs a safe route, acceptance, and suitable care and access."
+        },
+        {
+          "type": "flow",
+          "caption": "Three parts of a complete movement plan",
+          "items": [
+            [
+              "Get clear",
+              "Leave immediate danger without collecting belongings. Use the appropriate building escape plan."
+            ],
+            [
+              "Account for people",
+              "Meet at the agreed safe place, count everyone, and communicate any missing person to responders."
+            ],
+            [
+              "Continue safely",
+              "For a wider evacuation, use a checked destination and route, with an alternate if they fail."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, access needs and current instructions control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not send someone back into a dangerous building to retrieve a bag, pet, or missing person. Tell responders what is known. For a developing regional emergency, preparations can happen before departure becomes urgent: transport, medicines, pets, destination, and an alternate. Keep that longer checklist distinct from immediate escape."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ],
+        [
+          "USFA · Home fire escape plans",
+          "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+        ]
+      ]
+    },
+    {
+      "heading": "Write the contact and reunion rules",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose an out-of-area contact who agrees to the role. Give everyone the same contact information on paper as well as in their devices. Decide what to report: who is with you, your condition, where you are, and when you expect to make contact again. A missed message should trigger an agreed, realistic response rather than an improvised search into danger."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Record school or daycare pickup rules, authorized collectors, and where children may be taken if the normal site closes.",
+            "Agree what a person should do if unable to reach the primary meeting point. The alternative must also be safe for the actual incident.",
+            "Include helpers who can support access or care needs, with permission to share only the information necessary for the task.",
+            "Keep address and destination information readable without an internet connection. Protect sensitive records; do not post a household plan publicly."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: two adults are at work when a neighborhood is evacuated. The plan should explain who can collect the child, where the child will go, and how the other adult learns the new destination. Both adults independently driving to the school can waste time and leave the next decision unclear."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Assign tasks and backups without making one person indispensable",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Distribute tasks by ability and location. One adult can manage a dependent person while another checks transport and communicates. Someone living alone can still assign an outside check-in contact and keep the essentials organized for self-use. Avoid a plan that requires the only person away at work to come home before any action can begin."
+        },
+        {
+          "type": "table",
+          "caption": "A compact task sheet",
+          "columns": [
+            "Task",
+            "Primary person",
+            "Backup or limit"
+          ],
+          "rows": [
+            [
+              "Support each dependent",
+              "Name the adult and the specific assistance",
+              "Identify an alternative; do not assume neighbors are available."
+            ],
+            [
+              "Transport and destination",
+              "Name the driver or transport contact",
+              "Record another realistic option and when to switch."
+            ],
+            [
+              "Contacts and updates",
+              "Name the information person",
+              "Keep the paper list accessible to another adult."
+            ],
+            [
+              "Essentials",
+              "Name who keeps bags and daily-use grab list ready",
+              "Never let packing delay immediate escape."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Give tasks clear end points. “Handle the pets” is less useful than “put each pet in its labelled carrier and bring its medicine.” Keep a paper location list for daily-use items that cannot live in a bag. Do not give children responsibility for fuel, electrical work, or decisions about whether a building is safe."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Set decision triggers before an emergency",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A trigger states the condition that changes the plan and the action that follows. Use conditions you can recognize: an applicable evacuation order, an unsafe building, an essential device losing backup, or the inability to maintain safe water and sanitation. A vague promise to “leave if things get bad” gives a tired household too much to debate."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "List the local hazards that could require leaving and those that may require sheltering. The correct response depends on the hazard.",
+            "For care and equipment, use provider and manufacturer limits. Do not invent a general battery percentage that applies to every person.",
+            "Choose a time to review stable conditions, but act immediately if an urgent danger develops.",
+            "Record what information would change a decision, where it comes from, and what you can do if that channel fails."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For an editorial example, a household may decide to relocate while transport remains available if it cannot sustain a particular care need at home. That threshold belongs to the individual care plan. A restoration estimate or social-media rumor should not silently replace it."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Staying home with exit limits",
+              "url": "/preparedness/bug-in-plan/"
+            },
+            {
+              "label": "Evacuation planning",
+              "url": "/preparedness/bug-out-plan/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Test the plan with a realistic tabletop exercise",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Gather the people who use the plan and choose one scenario: power fails while one adult is away and phones are unreliable. Ask each person to explain the next action, not simply agree that the plan looks sensible. Keep essential equipment operating; this exercise is discussion and safe practice, not a deliberate loss of medical support."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Locate the contact card, light, medicines grab list, keys, and relevant bag without turning the exercise into a race.",
+            "Describe the first check-in and the response if it cannot be delivered.",
+            "Check the destination and route assumptions, including pets and access.",
+            "Introduce one change: the driver is unavailable, a road is closed, or the destination cannot accept everyone.",
+            "Write down the first three problems and fix the most consequential one before adding more equipment."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Review after moving, a new medical need, a change of school, a new pet, or a different caregiver. Put the review date on the plan and retire confusing old copies. Success means another household member can explain and carry out the plan, not that the folder is impressive."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    }
   ]
 }

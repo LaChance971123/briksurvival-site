@@ -4,10 +4,10 @@
   "category": "evacuation-shelter",
   "subcategory": "Bug out & bug in",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-04",
+  "next_review": "2027-04-04",
   "aliases": [
     "bug in",
     "bugin",
@@ -17,7 +17,13 @@
     "Bug out & bug in",
     "bug in",
     "bugin",
-    "stay home"
+    "stay home",
+    "Define staying home as a conditional decision",
+    "Check home suitability before buying more supplies",
+    "Build a household base and a daily routine",
+    "Use supplies as a runway, not a reason to delay",
+    "Set exit triggers and a ready departure plan",
+    "Run a tabletop drill and review recovery"
   ],
   "tldr": "Staying home can be practical while the building is safe and essential needs can be met. Set explicit limits for leaving; stored supplies do not make fire, rising water, structural damage or severe exposure safe.",
   "steps": [
@@ -39,28 +45,272 @@
     ]
   ],
   "sections": [
-    [
-      "A home operating plan",
-      "Choose where people sleep, prepare food safely, wash hands and charge devices. Keep routes clear and reduce unnecessary opening of a refrigerator during an outage. Use flashlights rather than unattended candles. Fuel-burning equipment belongs only where its manufacturer and safety guidance allow it; a balcony, garage or doorway does not make generator use safe."
-    ],
-    [
-      "Supply duration is only one limit",
-      "A home may remain stocked while becoming too hot, too cold or unable to support medical equipment. Water and sanitation failures can change the plan before food runs out. Track each essential separately. Decide the next safe option before the household is exhausted or dependent care becomes impossible."
-    ]
+    {
+      "heading": "Define staying home as a conditional decision",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“Bug in” means using home as the base during a disruption. It is sensible only while the dwelling is suitable and essential needs can be maintained. Supplies do not make a burning building, an evacuation zone, or failing essential care safe. Write the conditions for staying and the conditions that change the plan."
+        },
+        {
+          "type": "flow",
+          "caption": "A repeated stay-or-move decision",
+          "items": [
+            [
+              "Building",
+              "Is the dwelling appropriate for the actual hazard and free from immediate internal danger?"
+            ],
+            [
+              "People",
+              "Can care, safe temperature, water, food, and sanitation continue?"
+            ],
+            [
+              "Options",
+              "Is a suitable relocation option reachable before the first essential need fails?"
+            ]
+          ],
+          "note": "Editorial decision framework. Do not remain against a hazard-specific evacuation instruction or in immediate danger."
+        },
+        {
+          "type": "paragraph",
+          "text": "Separate a general home-base plan from hazard-specific shelter instructions. Staying home through a power interruption does not automatically require room sealing, and remaining in a tornado-threatened mobile home is not a protective shelter choice. Use the correct hazard guide alongside this household planning page."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ],
+        [
+          "NWS · Tornado protection",
+          "https://www.weather.gov/safety/tornado-during"
+        ]
+      ]
+    },
+    {
+      "heading": "Check home suitability before buying more supplies",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "List the location’s hazards and vulnerabilities: flood exposure, building condition, exits, heat or cold, shared systems, water supply, and care access. Ask what the home can actually provide when electricity and normal services fail. A full pantry does not compensate for an inaccessible exit or a medical device without a viable backup."
+        },
+        {
+          "type": "table",
+          "caption": "Conditions for a workable home base",
+          "columns": [
+            "Need",
+            "Evidence to check",
+            "Fallback"
+          ],
+          "rows": [
+            [
+              "Building protection",
+              "Hazard-specific suitability and usable exits",
+              "A different suitable shelter or evacuation destination."
+            ],
+            [
+              "Essential care",
+              "Individual care and equipment plan",
+              "Provider-approved backup or another care setting."
+            ],
+            [
+              "Temperature",
+              "Actual indoor conditions and vulnerable people",
+              "A confirmed safer heated or cooled location."
+            ],
+            [
+              "Water and sanitation",
+              "Safe supply and a functioning or contained hygiene arrangement",
+              "Verified resupply or a suitable alternative location."
+            ],
+            [
+              "Food and communication",
+              "Usable meals and an accessible information channel",
+              "Modest reserves and a checked contact arrangement."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not assume ownership or familiarity proves suitability. A rental apartment, trailer, detached home, and rural property have different constraints. Write unresolved questions and investigate the ones that could stop essential care or safe movement first."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Power outage safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+        ],
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Build a household base and a daily routine",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose an accessible area for the notebook, contacts, lights, and charging items. Keep exits and routes to the toilet clear. Put meal supplies and safe drinking water where they can be used without repeatedly unpacking the entire reserve. Keep waste, chemicals, and fuel separate from living and food areas."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "At the start of the day, check people, safe water, meals, care supplies, sanitation, and current information.",
+            "During suitable daylight, handle necessary organization and safe resupply without leaving dependent people unsupported.",
+            "Before dark, position lights, clear clutter, and arrange night care and the next check-in.",
+            "Record what was used and any change that affects the stay-or-move decision.",
+            "Give recurring tasks an owner and an alternate where possible; do not build the plan around one exhausted caregiver."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A person living alone can use the same routine with an agreed outside check-in. Keep the plan workable if that contact fails, rather than making every daily task depend on a response. Choose meals and tasks that fit the available time, physical ability, and equipment."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Long-duration blackout routine",
+              "url": "/emergencies/long-blackout/"
+            },
+            {
+              "label": "Hygiene with limited water",
+              "url": "/guides/emergency-hygiene/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Use supplies as a runway, not a reason to delay",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Count usable quantities and actual consumption. A tank or shelf capacity is not the amount present. Safe water, suitable meals, compatible backup energy, and available care consumables need separate counts. Do not merge them into a single preparedness score that hides the shortest essential supply."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: a household has many days of pantry food but only a short supply of suitable drinking water and no confirmed resupply. Its staying decision is driven by the water problem, not the food total. Similarly, provider-directed care limits can be more urgent than any ordinary supply calculation."
+        },
+        {
+          "type": "table",
+          "caption": "A simple home status log",
+          "columns": [
+            "Record",
+            "Use it to decide"
+          ],
+          "rows": [
+            [
+              "Amount and condition",
+              "Count what is actually safe and functional."
+            ],
+            [
+              "Measured daily use",
+              "Estimate when resupply or a move becomes necessary."
+            ],
+            [
+              "Confirmed next source",
+              "Identify whether it can be reached and what it provides."
+            ],
+            [
+              "Transport and destination",
+              "Preserve an option to leave before it is lost."
+            ],
+            [
+              "Uncertainty",
+              "Mark assumptions rather than recording guesses as facts."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Use conservative planning allowances for uncertainty without restricting necessary drinking water or prescribed care. Review after guests arrive, weather changes, a container leaks, or an important device fails. A notebook should show the change and the next action, not only the original target quantities."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Set exit triggers and a ready departure plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Decide the conditions that require leaving, who notices them, and what action follows. Immediate hazards need immediate protective action. Developing shortages allow an earlier planned relocation while transport and a suitable destination are still available. Avoid waiting until a need has already failed to ask whether another location is open."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "An applicable evacuation instruction changes the home-base plan; use current hazard and route guidance.",
+            "A fire, CO alarm, unsafe flood exposure, or failing building requires the relevant immediate response.",
+            "Loss of essential care uses the person-specific urgent-care or backup plan.",
+            "Inability to maintain suitable water, sanitation, or temperature requires verified alternatives and a realistic relocation decision.",
+            "Keep manageable bags and daily-use grab lists ready so a change of plan does not start with a full-house search."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Confirm the destination’s access, care, and pet arrangements. Keep an alternate and the outside contact informed when safe. Securing possessions is secondary to leaving danger. A decision to stay this morning should not become a commitment to stay regardless of what happens later."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ],
+        [
+          "American Red Cross · Power outage safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Run a tabletop drill and review recovery",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use an editorial exercise with three stages. First, normal electricity fails. Second, the expected restoration moves back a day. Third, the planned water source is closed. Ask the household what changes at each stage, who acts, and what information is still missing. Keep real care and utilities operating during the exercise."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Find the current supply and contact record.",
+            "Identify the shortest essential limit and the matching action.",
+            "Check who supports dependents while someone gathers information or supplies.",
+            "Explain the destination and transport alternative if home becomes unsuitable.",
+            "Record the first three practical gaps and choose one affordable improvement."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "After a real disruption, check recovery by system: electricity, water, drainage, food storage, and access. Service returning in one does not clear every other hazard. Replenish used reserves, revise unrealistic assumptions, and review the plan with the people who use it. A simpler maintainable plan often provides more value than another box of unused equipment."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Power outage safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+        ]
+      ]
+    }
   ],
   "without_help": "Use a written routine and reachable support contacts. Conserve existing essentials by reducing unnecessary use, while meeting actual drinking, hygiene and care needs. If the home becomes unsafe, supplies must not be a reason to stay.",
   "household": "Plan for a person who needs powered equipment, temperature-controlled medicine, assistance on stairs or sensory support. Identify a helper and alternative location rather than assuming the building manager can provide one.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "pack_now": "The supply and condition log, lights, safe water and food, care essentials, hygiene arrangement, paper contacts, relocation trigger and ready departure items. Keep fuel and chemicals separate from living supplies.",
   "next": "Test a two-hour no-mains-power routine in safe conditions, keeping essential medical equipment and food safety protected.",
   "watch": "Bugging in is not barricading yourself into a hazardous building. Keep fire exits usable and follow the protective action appropriate to the threat.",
-  "sources": "group-planning",
+  "sources": "bug-in-plan-expanded",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],
   "faqs": [
     [
-      "Is buying equipment enough?",
-      "No. Check that it fits the intended task, can be used by the people who need it, and has a maintenance plan. Practice in safe conditions before relying on it."
+      "Does a large pantry mean I can stay indefinitely?",
+      "No. The shortest essential limit may be care, water, sanitation, temperature or building suitability. Review each separately and keep a usable relocation option."
+    ],
+    [
+      "Is staying home the same as sealing a room?",
+      "No. Temporary sealing is a hazard-specific action, such as certain outdoor chemical instructions. A normal home-base utility plan does not automatically require it."
     ]
   ],
   "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",

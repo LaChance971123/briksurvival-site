@@ -4,13 +4,19 @@
   "category": "preparedness",
   "subcategory": "Kits & supplies",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "aliases": [
     "3 day kit",
     "emergency supplies"
   ],
   "keywords": [
-    "Kits & supplies"
+    "Kits & supplies",
+    "Define what the kit is meant to support",
+    "Count water and meals as quantities",
+    "Make a modest equipment list with a purpose for each item",
+    "Organize the bin for use in the dark",
+    "Build and maintain it without buying twice",
+    "Test a day of use and the longer-outage fallback"
   ],
   "tldr": "Start with at least three days of safe water, ready-to-eat food, essential medicines, lighting and communication supplies. Include one gallon of water per person per day as a starting point, and account for pets, heat, medical needs and accessibility.",
   "steps": [
@@ -33,7 +39,7 @@
   ],
   "next": "Build longer-duration supplies as space and budget allow. Keep an evacuation bag separate enough to carry.",
   "watch": "A standard checklist is only a starting point; three days may not cover a prolonged disruption.",
-  "sources": "72-hour-kit",
+  "sources": "72-hour-kit-expanded",
   "shopping": [
     "Bottled water / food-grade water containers",
     "Shelf-stable food and manual can opener",
@@ -48,30 +54,246 @@
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "If shops close today, inventory water, shelf-stable food, medicine and batteries already at home. Put them together and write down gaps. Build a usable kit in stages; a partly stocked kit is more useful than waiting for an expensive perfect one.",
   "household": "Start with the people in the home: drinking water, medicines, infant feeding, sensory access, safe light and pet care. Choose who will carry shared items. A 72-hour kit is a planning starting point, not a guarantee that a disruption ends after three days.",
-  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "pack_now": "Safe drinking water, usable meals and opener, lights, tested charging equipment, suitable hygiene supplies, paper contacts, and the household’s actual care essentials. Record anything stored outside the bin and its location.",
   "decisions": [],
   "faqs": [
     [
-      "How much can the household carry?",
-      "Separate supplies stored at home from a bag intended for evacuation. Test carrying the bag with the actual caregiver and mobility needs. Heavy water and duplicate tools can make a complete-looking kit unusable when movement matters."
+      "Does three days mean help will arrive then?",
+      "No. Treat it as an initial reserve target and develop a longer-outage fallback based on safe water, care, sanitation and a verified supply or relocation option."
     ],
     [
-      "What if a supply expires?",
-      "Use normal household rotation where suitable and record refill dates. Check battery and device compatibility before relying on them. Medicine quantities and replacements require a clinician or pharmacist rather than an improvised rationing plan."
+      "Must everything fit in one box?",
+      "No. Some water, care items or medicines require separate suitable storage. Record their locations and keep an independently manageable go-bag for leaving."
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-04",
   "sections": [
-    [
-      "Separate storage from portability",
-      "A home reserve can include larger containers and comfort supplies; a departure bag must be carryable. Do not assume the whole home kit can leave with you. Label where essential portable items are stored and who carries them."
-    ],
-    [
-      "Maintain by household changes",
-      "Review medicines, clothing sizes, pet needs, care equipment, contacts and transport alongside dates on food and batteries. Test cables and lights. Three days is an initial planning target, not a guarantee that services will return by then."
-    ]
+    {
+      "heading": "Define what the kit is meant to support",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A 72-hour kit is a starting reserve for an interruption, not a guarantee that help returns in three days. Decide whether yours is mainly a home supply, a transportable evacuation reserve, or a combination with separate bags. The same volume and weight will not work for every purpose. A large home water reserve should not be treated as something everyone can carry out on foot."
+        },
+        {
+          "type": "flow",
+          "caption": "Build around needs, then choose containers",
+          "items": [
+            [
+              "Needs",
+              "Count people, pets, care requirements, climate, and the services likely to fail."
+            ],
+            [
+              "Supplies",
+              "Select usable water, meals, lighting, communication, hygiene, and individual essentials."
+            ],
+            [
+              "Access",
+              "Choose storage and carry arrangements that work for the least mobile person."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, access needs and current instructions control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the three-day goal to get started, then extend the reserve where practical. Count only usable supplies: safe water, familiar meals, compatible charging equipment, and items whose instructions you understand. Empty containers, expired consumables, and a battery without the right cable do not complete a need."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Emergency kit supplies",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Count water and meals as quantities",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "CDC’s basic storage target is at least one U.S. gallon per person per day for three days, with additional needs considered and a longer reserve where possible. For two people, that baseline is six gallons; for four, twelve. The reserve needs to cover actual household use and extra needs, not just a bottle assigned to each bag."
+        },
+        {
+          "type": "table",
+          "caption": "An example planning inventory",
+          "columns": [
+            "Supply",
+            "How to count it",
+            "Check for overlooked needs"
+          ],
+          "rows": [
+            [
+              "Water",
+              "Actual safe volume, in one unit",
+              "Pets, heat, illness, pregnancy, and specific care requirements."
+            ],
+            [
+              "Food",
+              "Meals each person can actually eat",
+              "Allergies, texture needs, infant feeding, and preparation water."
+            ],
+            [
+              "Lighting",
+              "Usable lights plus charged or compatible batteries",
+              "One light where each person can find it and safe movement routes."
+            ],
+            [
+              "Communication",
+              "Working device and a tested way to power it",
+              "Correct connectors and an accessible information method."
+            ],
+            [
+              "Care",
+              "Individual medicines, aids, and relevant information",
+              "Provider-directed backup and lawful refill arrangements."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Write a sample day of meals and repeat it only if the household would genuinely tolerate it. Check every label for preparation and storage after opening. Large servings can create refrigerated leftovers you cannot keep safe. Include the opener and utensils required by the meals rather than treating food packaging as a detail."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Emergency water supply",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Make a modest equipment list with a purpose for each item",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Every item should solve a named problem. Start with equipment already owned and functional before buying more. A headlamp can free a caregiver’s hands; a separate radio can preserve phone charge; a small power bank may support communication. None of these is a substitute for a specific powered-medical-equipment plan."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Lights: choose controls and battery arrangements the users can manage. Keep a working light accessible outside the main bin.",
+            "Charging: match cables and connectors, test them, and check manufacturer limits for any device you intend to support.",
+            "Hygiene: include soap, an appropriate handwashing arrangement, personal supplies, and a separate waste plan.",
+            "Information: keep paper contacts, a local map or route information, and essential instructions with the kit.",
+            "First aid: use supplies you know how to use and seek appropriate training. Owning a kit does not provide clinical skills.",
+            "Comfort and weather: include suitable clothing and bedding for your actual climate without burying essential care items."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Avoid making a low-budget starter kit wait for specialist gear. A clear inventory, safe drinking water, normal shelf-stable food, and a working light can be assembled in stages. Measure progress by supported needs rather than the number of accessories in the container."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Emergency kit supplies",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Organize the bin for use in the dark",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Group by task rather than by the shop where items came from. Mark the groups clearly: meals, light and charging, hygiene, care information, and documents. Separate food and water from chemicals and keep medicines under their required conditions. Store items securely without blocking exits, overloading a shelf, or placing a heavy container where it must be lifted overhead."
+        },
+        {
+          "type": "table",
+          "caption": "An editorial bin layout",
+          "columns": [
+            "Access level",
+            "What belongs there"
+          ],
+          "rows": [
+            [
+              "Immediate reach",
+              "A light, the inventory, contacts, and basic instructions."
+            ],
+            [
+              "Clearly labelled task pouches",
+              "Cables, batteries, opener and utensils, or personal hygiene items."
+            ],
+            [
+              "Protected individual items",
+              "Suitable document copies and care information, kept appropriately private."
+            ],
+            [
+              "Separate safe storage",
+              "Water, medicines needing special conditions, and any item unsuitable for the bin."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Write the location of items stored elsewhere on the inventory. A kit may be complete without physically holding everything, provided the retrieval plan is usable. Try opening containers with the user’s actual abilities, including reduced grip or vision. Decorative packaging that takes both hands and bright light to open is a poor emergency choice."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Build and maintain it without buying twice",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a simple inventory with item, usable quantity, storage location, review date, and replacement need. Record the amount actually present; do not mark an item complete just because it was ordered. For a family, indicate who can use the item and whether it is shared. This prevents a single water bottle or phone cable from being counted several times."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Inventory suitable items already owned and test their function.",
+            "Fill the most important gaps first: care, water, usable food, light, and communication.",
+            "Choose a realistic review schedule and also review after items are used.",
+            "Rotate ordinary pantry food into normal meals before its appropriate date, then replace it.",
+            "Charge and inspect equipment as its instructions require; replace incompatible or damaged items.",
+            "Update the household count and any medical, diet, pet, or transport change."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep consumable money separate from a wish list of upgrades. If a purchase competes with necessary medicines or basic water, it may not be the first priority. Borrowing a container you already have can be a better start than an expensive labelled emergency box."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Test a day of use and the longer-outage fallback",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Run a low-risk practice using one planned meal and the kit’s lighting, while normal safety and care systems remain available. Ask someone other than the organizer to find the needed supplies. Record what is awkward, missing, or misunderstood. Check whether a child or dependent adult has a usable meal and light rather than assuming the shared bin serves everyone."
+        },
+        {
+          "type": "paragraph",
+          "text": "Then discuss the fourth day. Where does suitable water come from? Can sanitation continue? Is there a confirmed destination if essential care or safe temperature cannot be maintained? The three-day label should start this discussion, not end it. Do not deliberately deplete the reserve or restrict necessary drinking water during an exercise."
+        },
+        {
+          "type": "callout",
+          "title": "A home reserve and a go-bag are different layers",
+          "text": "Keep a manageable personal bag for leaving, with a short grab list for daily-use items. Moving the whole home reserve can be impractical and must never delay immediate escape."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Water storage quantities",
+              "url": "/preparedness/water-storage/"
+            },
+            {
+              "label": "Go-bag packing",
+              "url": "/preparedness/go-bag/"
+            },
+            {
+              "label": "Long-duration blackout",
+              "url": "/emergencies/long-blackout/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    }
   ]
 }

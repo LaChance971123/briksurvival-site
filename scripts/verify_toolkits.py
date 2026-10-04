@@ -11,6 +11,12 @@ from document_design import private_output_path
 
 ROOT = Path(__file__).resolve().parents[1]
 catalog = load_catalog(ROOT)
+if not any(p['status'] == 'ready' for p in catalog['products']):
+    for public_page in (ROOT / 'dist').rglob('*.html'):
+        paused = html.fromstring(public_page.read_text())
+        assert not paused.xpath('//a[@data-payhip-checkout] | //a[starts-with(@href,"https://payhip.com/buy")]'), (public_page, 'Purchase link while catalogue is paused')
+        assert not paused.xpath('//script[@type="application/ld+json"][contains(text(),$offer)]', offer='"Offer"'), (public_page, 'Sale offer while catalogue is paused')
+    assert 'Purchases are paused' in (ROOT / 'dist/toolkits/index.html').read_text()
 for product in catalog['products']:
     if product['status'] == 'retired':
         continue

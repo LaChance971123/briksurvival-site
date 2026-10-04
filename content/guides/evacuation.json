@@ -24,23 +24,28 @@
   ],
   "next": "Make two destinations and more than one route in advance. Keep a small grab list by the door, especially for medications, pets, and items that cannot be prepacked.",
   "watch": "If a route is unsafe, do not force it. Follow current local instructions or contact emergency services for help. Some hazards, especially radiation fallout, can make immediate travel more dangerous than sheltering; follow the hazard-specific order.",
-  "sources": "evacuation",
-  "diagram": "evacuation",
+  "sources": "evacuation-expanded",
   "category": "evacuation-shelter",
   "subcategory": "Evacuation",
   "content_type": "Emergency guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "aliases": [
     "need to leave home"
   ],
   "keywords": [
-    "Evacuation"
+    "Evacuation",
+    "Identify why you are leaving and how urgent it is",
+    "Confirm a destination that meets the actual needs",
+    "Plan transport around people, not only bags",
+    "Use a departure check that does not slow escape",
+    "If the route or destination changes",
+    "Arrival, separation, and safe return"
   ],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Choose a reachable destination with someone you trust, identify a second route, and agree on a check-in. Do not wait for transport that has not been confirmed. If the route is actively dangerous, compare the specific hazard of staying with the hazard of moving; shelter while reassessing if no safer route is available.",
   "household": "Give dependents a written contact card and agree who stays with each person. Keep essential medicine and mobility equipment accessible. A pet carrier or heavy bag must not block a caregiver from helping someone move.",
-  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "pack_now": "Shoes, keys, essential medicines and support equipment, identification, contacts, destination and route notes, manageable water and the tested bag when time permits. Immediate escape must not wait for supplies.",
   "decisions": [
     [
       "Your first destination is closed?",
@@ -53,30 +58,273 @@
   ],
   "faqs": [
     [
-      "Is the destination usable?",
-      "Confirm the place can be reached and used by the people traveling: opening, access, medical power, pets and sleeping needs. A location on a map is not a promise of admission. Keep a second realistic option and a meeting point if the group separates."
+      "Should I finish packing before escaping a fire?",
+      "No. Leave immediate danger and do not return for belongings. A planned regional departure may allow a short preparation sequence; urgent escape does not."
     ],
     [
-      "The vehicle is unavailable — what changes?",
-      "Reassess safe reachable shelter, a trusted transport contact or a checked pedestrian route. Do not walk into floodwater, smoke or other moving hazards to preserve the original destination. Carry only what the least mobile person and helpers can manage."
+      "What if the destination changes?",
+      "Use a suitable checked alternative and notify the outside contact when safe. At arrival, account for people and verify essential care rather than assuming the original arrangements still apply."
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-04",
   "sections": [
-    [
-      "Confirm where you will arrive",
-      "A destination needs actual acceptance, transport, access, pet arrangements and essential care support. Have an alternate outside the affected area where feasible. Record addresses and contacts on paper; a map app can fail when reception, power or roads change."
-    ],
-    [
-      "Make a change-of-plan message",
-      "Agree who tells the outside contact the new destination and route. Include departure time, people present and the next check-in. Never delay leaving immediate danger to send the perfect message, retrieve optional supplies or secure every possession."
-    ],
-    [
-      "Pack by priority, not by room",
-      "Editorial priority order: people and essential care, contacts and destination information, carryable water and food, then other useful supplies. Put bags by person rather than collecting loose objects from every room. Choose who assists each dependent and who checks the transport. Do not return for belongings once leaving danger."
-    ]
+    {
+      "heading": "Identify why you are leaving and how urgent it is",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An immediate escape from fire or a visibly unsafe building is different from a regional evacuation with preparation time. Do not delay immediate escape to finish a packing checklist. For a developing hazard, confirm the affected area, applicable deadline, current route instructions, and suitable destination while there is still time to arrange support."
+        },
+        {
+          "type": "flow",
+          "caption": "Departure priorities",
+          "items": [
+            [
+              "People",
+              "Account for the household and required assistance; leave immediate danger without waiting for belongings."
+            ],
+            [
+              "Destination and route",
+              "For a wider evacuation, use current hazard-specific directions and a checked place to arrive."
+            ],
+            [
+              "Essentials and contact",
+              "Take urgent care items and the manageable bag when time permits; report the destination when safe."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, access needs and current instructions control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "Sheltering can sometimes be the safer action during an airborne chemical or radiation hazard. Do not assume that movement is always protective. Use the specific incident guidance and the actual condition of the building. If the building itself is burning, flooding, or failing, that immediate danger also matters."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ],
+        [
+          "CDC · Chemical emergency sheltering",
+          "https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Confirm a destination that meets the actual needs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A destination is usable only if it is reachable, accepting people, and suitable for their needs. Call or use an appropriate current information channel when available. Check the exact address, opening status, entry requirements, accessibility, essential care, pet arrangements, and what supplies people must bring. A map marker is not evidence of admission or medical support."
+        },
+        {
+          "type": "table",
+          "caption": "Destination checks before a non-immediate move",
+          "columns": [
+            "Check",
+            "Useful question"
+          ],
+          "rows": [
+            [
+              "Location",
+              "Is it outside the specific hazard area, and is the route currently usable?"
+            ],
+            [
+              "Acceptance",
+              "Can the whole household stay, and is acceptance confirmed?"
+            ],
+            [
+              "Access",
+              "Can a person use the entrance, toilet, sleeping space, and available movement routes?"
+            ],
+            [
+              "Care",
+              "Can necessary equipment, medicine storage, or caregiving continue?"
+            ],
+            [
+              "Pets",
+              "Are the actual animals permitted, with suitable transport and supplies?"
+            ],
+            [
+              "Alternate",
+              "What is the next realistic option if this location closes or cannot accept you?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If emergency conditions prevent confirmation, keep the uncertainty visible in the plan and prioritize the best available protective information. Do not describe a potential shelter as a guaranteed solution to another household member."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Plan transport around people, not only bags",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Count seats, helpers, pets, mobility equipment, care supplies, and bags together. Confirm who drives or provides transport, where pickup happens, and when the arrangement must be used. Someone who can usually use stairs may be unable to do so while carrying equipment or supporting a child."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "If using a vehicle, preserve fuel or charge and confirm a suitable route. Do not depend on every station being open.",
+            "For arranged assistance, verify the actual service, registration, eligibility, and pickup arrangements in advance where possible.",
+            "If there is no car, identify realistic alternatives early rather than waiting until roads or transit are disrupted.",
+            "Do not assume walking preserves the original plan. Distance, weather, mobility, safe routes, and carryable supplies change the decision.",
+            "Keep contact and destination information on paper as well as in a device."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The Florida county reference illustrates advance zone and transport planning, not rules for every location. Your own community’s arrangements may differ. A registration or a request for help should not be confused with a confirmed immediate pickup."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Evacuation without a car",
+              "url": "/preparedness/evacuation-without-car/"
+            },
+            {
+              "label": "Access and mobility needs",
+              "url": "/emergencies/accessible-evacuation/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Pinellas County · Evacuation planning (Florida example)",
+          "https://pinellas.gov/evacuation/"
+        ]
+      ]
+    },
+    {
+      "heading": "Use a departure check that does not slow escape",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For a planned departure with time available, use a short ordered check: people and care, transport and destination, then manageable essentials. Place daily-use medicine and equipment on a grab list so they are not forgotten. Assign tasks without leaving a dependent person alone while every adult searches for supplies."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Account for people and pets and identify who assists each person.",
+            "Check transport, destination, and current route information.",
+            "Take necessary care items, identification, keys, a light, contacts, suitable water, and the tested bag as time allows.",
+            "Tell the outside contact where the group is going and when you expect another check-in, when safe.",
+            "Leave without returning for optional items. Do not enter danger to complete the checklist."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Secure the home only when it is safe and does not delay departure. Utility shutoff is not a universal evacuation task; follow the applicable utility or incident instructions and do not manipulate unfamiliar systems. A property checklist belongs below people and care, not above them."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ],
+        [
+          "USFA · Home fire escape plans",
+          "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+        ]
+      ]
+    },
+    {
+      "heading": "If the route or destination changes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Do not force the original route through flooded, closed, or actively dangerous roads. Use current route instructions and a safer checked alternative when available. A navigation app may be unaware of the hazard or a closure. If no safer movement is available, compare the immediate danger of staying with the danger of the route and use hazard-specific guidance."
+        },
+        {
+          "type": "table",
+          "caption": "Plan changes to rehearse before departure",
+          "columns": [
+            "Change",
+            "Response to prepare"
+          ],
+          "rows": [
+            [
+              "First destination is closed",
+              "Use the suitable alternate and send a change-of-plan message when safe."
+            ],
+            [
+              "Vehicle is unavailable",
+              "Activate the realistic transport alternative; reassess what can be carried."
+            ],
+            [
+              "Group becomes separated",
+              "Use the agreed safe meeting and contact arrangements; do not improvise a hazardous search."
+            ],
+            [
+              "Care requirement changes",
+              "Prioritize the relevant urgent-care or provider-directed plan."
+            ],
+            [
+              "An airborne hazard makes travel unsafe",
+              "Use the specific shelter instruction and reassess; movement is not automatically safer."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A useful change message states who is present, the new destination, immediate needs, and the next expected contact. Sending it must not delay getting clear of danger. Keep necessary records private and share the location with trusted people who need it, rather than posting a detailed household route publicly."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Chemical emergency sheltering",
+          "https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html"
+        ],
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Arrival, separation, and safe return",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At arrival, count everyone, settle essential care, and tell the outside contact the actual location when safe. Check sleeping, hygiene, water, and device power arrangements before assuming the journey solved all needs. Confirm who is responsible for children and pets during the stay and how the group will reconnect if someone leaves briefly."
+        },
+        {
+          "type": "paragraph",
+          "text": "Return is a new decision. Use current access and hazard instructions, and do not enter a damaged building or unsafe utility area simply because a road reopens. Think through care, water, food, and sanitation before a non-urgent return. Take the appropriate safe route and avoid making several unnecessary trips through a disrupted area."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Keep receipts and useful records of losses and accommodation when appropriate.",
+            "Replenish the bag and transport reserve after use.",
+            "Record which destination, route, contact, or carrying assumption failed.",
+            "Update the household plan using what was actually available, rather than only the original intended arrangement."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A safe practice beforehand can test the departure sequence without simulating a hazardous journey. Discuss one route closure and one unavailable destination. The goal is a flexible household plan that another capable adult can use."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    }
   ]
 }

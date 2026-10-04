@@ -4,13 +4,19 @@
   "category": "evacuation-shelter",
   "subcategory": "Shelter",
   "content_type": "Emergency guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "aliases": [
     "stay inside",
     "shelter indoors"
   ],
   "keywords": [
-    "Shelter"
+    "Shelter",
+    "The phrase does not identify the correct room",
+    "Choose and prepare locations before the event",
+    "For a chemical instruction, control outside air as directed",
+    "Bring essentials without delaying protection",
+    "Monitor both the outside threat and the inside conditions",
+    "Ending the shelter period and improving the plan"
   ],
   "tldr": "Get inside if the outdoor hazard makes travel more dangerous, and choose the room for that hazard: a lowest-floor sturdy interior area for a tornado, protective interior mass for fallout, or few outside openings for an airborne chemical release. Close openings and control ventilation only as the hazard requires. Do not remain in a burning, flooding or collapsing building, and do not wait for a message when immediate danger is visible.",
   "steps": [
@@ -33,30 +39,289 @@
   ],
   "next": "Plan safe rooms for the hazards in your area and keep an alert source that works during outages.",
   "watch": "Do not apply chemical room-sealing instructions to every hazard or remain in a burning building.",
-  "sources": "shelter-in-place",
+  "sources": "shelter-in-place-expanded",
   "shopping": [],
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "Choose the room for the hazard, not the phrase: lowest sturdy interior area for tornadoes, protective interior mass for fallout, and a room with few outside openings for an airborne chemical threat. Leave a shelter that is burning, flooding or collapsing rather than following a generic stay-inside rule.",
-  "household": "Keep the group together with a named adult responsible for each child or person needing assistance. Count people at every departure and arrival. Write contact details on paper, retain necessary medicines and agree what to do if one person cannot travel. For this situation, brief every person on the first action: identify the hazard. Agree who will manage children, pets or mobility needs while that action happens. Do not apply chemical room-sealing instructions to every hazard or remain in a burning building.",
-  "pack_now": "For shelter-in-place, prioritize only items needed for the first action and the fallback: Choose the room for the hazard, not the phrase: lowest sturdy interior area for tornadoes, protective interior mass for fallout, and a room with few outside openings for an airborne chemical threat. Leave a shelter that is burning, flooding or collapsing rather than following a generic stay-inside rule. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
+  "household": "Plan a reachable shelter space for each relevant hazard. Assign help for children, pets and anyone with mobility or communication needs; count people at entry. Keep prescribed care and an accessible alert method available. Do not assume the same room or ventilation rule is suitable for every threat.",
+  "pack_now": "People, pets, care essentials, light, phone power, an accessible alert source and safe water. Keep hazard-specific shelter information available. Collect items only if doing so does not delay protection.",
   "decisions": [],
   "faqs": [
     [
-      "What matters before collecting supplies?",
-      "Get inside if the outdoor hazard makes travel more dangerous, and choose the room for that hazard: a lowest-floor sturdy interior area for a tornado, protective interior mass for fallout, or few outside openings for an airborne chemical release. Close openings and control ventilation only as the hazard requires. Do not remain in a burning, flooding or collapsing building, and do not wait for a message when immediate danger is visible. Collect items only if doing so does not delay this action."
+      "Is the basement always the best room?",
+      "No. Tornado and fallout guidance often favor low or central protective areas, while CDC chemical-release guidance uses different room criteria. Identify the hazard and follow its specific instructions."
     ],
     [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For shelter-in-place, keep the specific hazard in view: Do not apply chemical room-sealing instructions to every hazard or remain in a burning building."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Stay informed. Remain until officials advise otherwise, unless fire or another immediate danger makes the building unsafe. Keep personal notes private; they are not submitted to Osprey Zero."
+      "Does silence mean the hazard is over?",
+      "No. Loss of messages, reduced noise or absence of an odor does not establish an all-clear. Keep using an appropriate information channel and reassess actual inside conditions."
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-04",
+  "sections": [
+    {
+      "heading": "The phrase does not identify the correct room",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Shelter-in-place means using a protective location rather than travelling through a hazard. It does not describe one universal room or ventilation setting. Identify the actual threat, affected area, building conditions, and current instructions before applying a familiar checklist. A tornado room and a chemical-release room can require different choices."
+        },
+        {
+          "type": "table",
+          "caption": "Hazard-specific shelter choices",
+          "columns": [
+            "Threat",
+            "Main protective idea",
+            "Important boundary"
+          ],
+          "rows": [
+            [
+              "Tornado",
+              "Use a basement, safe room, or sturdy interior area away from windows",
+              "Do not substitute a mobile home, tent, or large open room for appropriate shelter."
+            ],
+            [
+              "Outdoor chemical release",
+              "Follow the chemical instruction for a room that limits outside air",
+              "CDC’s general chemical guidance favors the highest practical room; do not reuse tornado placement automatically."
+            ],
+            [
+              "Radioactive fallout",
+              "Put building material between people and outside fallout",
+              "Use the separate nuclear/fallout guide for timing and contamination instructions."
+            ],
+            [
+              "Ordinary utility interruption",
+              "Maintain essential care and safe household conditions",
+              "Staying home is not viable indefinitely when essential needs fail."
+            ],
+            [
+              "Fire or failing building",
+              "Escape the immediate building hazard",
+              "A general shelter message is not permission to remain in immediate danger."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This comparison is an orientation tool, not a site assessment. Read the relevant hazard guide and any applicable current instruction. Do not confidently infer which room is suitable from a floor number alone."
+        }
+      ],
+      "references": [
+        [
+          "NWS · Tornado protection",
+          "https://www.weather.gov/safety/tornado-during"
+        ],
+        [
+          "CDC · Chemical emergency sheltering",
+          "https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html"
+        ],
+        [
+          "USFA · Home fire escape plans",
+          "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+        ],
+        [
+          "CDC · Get inside during a radiation emergency",
+          "https://www.cdc.gov/radiation-emergencies/response/get-inside.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Choose and prepare locations before the event",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Identify suitable spaces for the hazards that actually affect your area. Record how to reach each, how everyone can move there, which supplies are accessible, and what building systems may matter. Someone unable to use stairs may need an advance alternative rather than a last-minute promise that a high or low floor can be reached."
+        },
+        {
+          "type": "flow",
+          "caption": "A household shelter decision",
+          "items": [
+            [
+              "Threat",
+              "Identify the hazard and the specific shelter instruction."
+            ],
+            [
+              "Building",
+              "Check whether the building is suitable and free from immediate internal danger."
+            ],
+            [
+              "People",
+              "Choose the reachable protective space and maintain essential care there."
+            ],
+            [
+              "Review",
+              "Follow updates and act if the shelter itself becomes unsafe."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, access needs and current instructions control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do a safe walk to each location and check the actual doors, furniture, and walking space. Keep the path usable without relying on powered lighting. Store a light and relevant information where they can be reached. Avoid turning the room into storage so dense that people, pets, and care equipment cannot fit."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Tornado",
+              "url": "/emergencies/tornado/"
+            },
+            {
+              "label": "Nuclear detonation and fallout",
+              "url": "/emergencies/nuclear-detonation/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "For a chemical instruction, control outside air as directed",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "CDC’s general chemical-emergency guidance calls for getting indoors, closing windows and doors, turning off fans, air conditioning and the furnace, and moving to the chosen room. It describes temporarily sealing openings with appropriate supplies. Follow the actual incident instruction and equipment limits; this is not a general ventilation rule for every emergency."
+        },
+        {
+          "type": "paragraph",
+          "text": "Prepare supplies and identify controls in advance if this hazard is relevant. Mark which controls belong to your dwelling and which are shared building systems. Ask management about shared ventilation before a crisis; do not dismantle unfamiliar equipment, block safety systems, or assume a room is airtight because its door closes."
+        },
+        {
+          "type": "callout",
+          "title": "Never add combustion to a sealed shelter",
+          "text": "Do not use a generator, grill, outdoor stove, or improvised fuel-burning heater in the room. Sealing does not protect people from a hazard created inside the shelter. Keep an immediate escape option and seek urgent help for symptoms or another internal danger."
+        },
+        {
+          "type": "paragraph",
+          "text": "Plastic and tape provide a temporary protective measure when the specific instruction calls for it; they are not proof of indefinite safe air or guaranteed protection. Keep following updates, and use the incident’s directions for ending the shelter period. Do not invent a universal number of hours for a sealed room."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Chemical emergency sheltering",
+          "https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html"
+        ],
+        [
+          "American Red Cross · Power outage safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/power-outage.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Bring essentials without delaying protection",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Move people and necessary assistance first. Collect medicines, essential equipment, phone power, a radio or other accessible alert source, safe water, and pet necessities only when doing so does not delay the protective action. Avoid repeatedly leaving the shelter to collect conveniences."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Count everyone at entry and keep a named adult responsible for each dependent person.",
+            "Choose a light that people can use safely and keep walking routes clear.",
+            "Keep a concise contact message ready: location, people present, immediate needs, and next planned check-in.",
+            "Place food and drinking water apart from waste and personal-care activity.",
+            "Respect medicine and device instructions; ordinary supplies in the room do not replace an individual care backup."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A shelter plan should include how a person receives instructions if they cannot hear an alarm, read a phone screen, or understand the language used. Arrange accessible communication rather than assuming another resident will translate or assist. A familiar comfort item may help a child if it is already available, but retrieving it must not delay sheltering."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Chemical emergency sheltering",
+          "https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html"
+        ],
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Monitor both the outside threat and the inside conditions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Write down the latest instruction, its source, time, and affected area. Keep a reliable information channel available while conserving unnecessary device use. A social-media message from another neighborhood may not apply to the building or hazard you are facing. Updates can change the safer action."
+        },
+        {
+          "type": "table",
+          "caption": "Conditions to reassess",
+          "columns": [
+            "Change",
+            "Decision to make"
+          ],
+          "rows": [
+            [
+              "Fire, gas, flooding, structural damage, or CO alarm inside",
+              "Leave the immediate danger using appropriate escape guidance; seek help from a safe place."
+            ],
+            [
+              "Essential care cannot continue",
+              "Use the urgent-care or individual backup plan and communicate the need when possible."
+            ],
+            [
+              "Instruction changes to evacuation",
+              "Use the hazard-specific departure directions and current route information."
+            ],
+            [
+              "Communication fails",
+              "Use the prepared alternative; keep applying known protective steps while assessing actual conditions."
+            ],
+            [
+              "No clear all-clear",
+              "Do not treat silence or reduced smell as proof the hazard has ended."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Avoid two extremes: staying regardless of an unsafe building, and going outside simply because waiting is uncomfortable. The decision needs the actual hazard and the household’s condition. If guidance is unavailable, retain the best known protective arrangement while watching for immediate internal danger."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Chemical emergency sheltering",
+          "https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Ending the shelter period and improving the plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use the applicable all-clear and recovery instructions. For a chemical incident, follow directions about leaving, ventilation, and possible exposure rather than removing seals and opening every window on a guess. Tornado recovery and fallout recovery have different hazards. A quieter street is not a universal clearance signal."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Account for the household and check urgent care needs.",
+            "Confirm which instruction applies to leaving the room or building.",
+            "Avoid damaged utility areas, debris, or other remaining hazards.",
+            "Replenish the supplies used and restore the room without obstructing exits.",
+            "Record one access problem, one information problem, and any equipment misunderstanding.",
+            "Update the hazard-specific room plan and explain the changes to everyone who uses it."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A tabletop practice can ask which room the household would use for two different hazards and why. Keep the exercise low risk: do not deliberately seal occupied rooms, disable essential care systems, or create a ventilation problem. Finding an incorrect assumption before an emergency is the useful outcome."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Chemical emergency sheltering",
+          "https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html"
+        ]
+      ]
+    }
+  ]
 }

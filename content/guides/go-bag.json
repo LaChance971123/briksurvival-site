@@ -4,13 +4,19 @@
   "category": "preparedness",
   "subcategory": "Kits & supplies",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "aliases": [
     "bug out bag",
     "evacuation bag"
   ],
   "keywords": [
-    "Kits & supplies"
+    "Kits & supplies",
+    "Pack for a destination, not an imagined wilderness",
+    "Use a core list, then personalize it",
+    "Separate prepacked items from the last-minute grab list",
+    "Test weight, access, and the actual carry method",
+    "Keep pets and children in the movement plan",
+    "Maintain, rehearse, and use it at the right moment"
   ],
   "tldr": "Pack a portable bag with the essentials you need to leave quickly: medicines, documents, contact information, water, food, light, phone power and weather-appropriate clothing. Keep it light enough to carry and a separate grab list for items used every day.",
   "steps": [
@@ -33,7 +39,7 @@
   ],
   "next": "Keep bags accessible and plan for pets, infants and mobility equipment.",
   "watch": "Never delay an urgent evacuation to finish packing.",
-  "sources": "go-bag",
+  "sources": "go-bag-expanded",
   "shopping": [
     "Portable bag",
     "Water and ready-to-eat snacks",
@@ -47,30 +53,249 @@
   "review_status": "source-linked editorial review; not independent expert certification",
   "without_help": "If you have minutes rather than days, grab essential medicines, documents, shoes, water and a phone charger first. Divide necessary supplies among people who can carry them, without giving children or a person with limited mobility an unmanageable load.",
   "household": "Pack for actual infants, pets, access needs and the likely transport mode. Agree which adult carries shared items and who stays with each dependent. Include a destination plan; a bag does not establish that a shelter will admit or support the household.",
-  "pack_now": "Prioritize supplies named in this guide that are usable by the person who needs them. Keep the checklist and relevant contact details accessible. Check carrying capacity, storage and equipment instructions in advance; collecting equipment must not delay the immediate protective action.",
+  "pack_now": "A manageable personal bag with care essentials, contact and destination information, keys, light, compatible phone power, carryable safe water, suitable food and weather protection. Attach a short grab list for daily-use items.",
   "decisions": [],
   "faqs": [
     [
-      "Does a stocked bag make leaving easier?",
-      "Only if it can be reached and carried while managing dependents. Test the load and remove duplication. Keep essential medicine, documents and mobility aids accessible; do not bury a critical item beneath optional equipment."
+      "What is the right bag weight?",
+      "The right load is one the actual person and helpers can manage with their mobility, care and transport needs. Test it safely; no universal percentage makes every bag suitable."
     ],
     [
-      "What if I cannot take the bag?",
-      "Leave when immediate danger requires it. Reaching safety takes priority over retrieving supplies. Keep a short written contact plan with each person and identify an alternate source of essential support ahead of time where possible."
+      "Should I pack all household water in it?",
+      "A home reserve and a carryable portion are different. Maintain adequate safe water planning while choosing a load that can actually move, and verify the next supply rather than pretending a small bottle covers every need."
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-04-04",
   "sections": [
-    [
-      "Build around a real journey",
-      "Pack for the transport and destination you can actually use. A walking bag, a vehicle kit and supplies for an accessible shelter are different loads. Put urgent medicines, identification, contacts and light where they can be reached without emptying the bag. Keep a separate last-minute list for glasses, mobility aids, refrigerated medicine arrangements and devices used daily."
-    ],
-    [
-      "Test weight and ownership",
-      "Carry the actual bag while helping the people and pets who would leave with you. Assign shared items once rather than making every bag duplicate them. A bag too heavy to carry without assistance needs a smaller load or a confirmed transport plan. Review expiry dates, clothing sizes, cables and contacts after household changes."
-    ]
+    {
+      "heading": "Pack for a destination, not an imagined wilderness",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A go-bag supports leaving an unsafe location and reaching a suitable place. Start by asking where you are likely to go, how you will travel, and what support is available there. A bag for a short vehicle trip to family differs from one that must be carried through stairs or on public transport. Neither should depend on sleeping outdoors in an unverified location."
+        },
+        {
+          "type": "paragraph",
+          "text": "List the tasks the bag must help with: essential care, identification, communication, hydration, a suitable meal, weather protection, and basic hygiene. Add what the destination does not provide. Keep the bag’s role separate from the larger home reserve. No bag can compensate for an unsafe route or a destination that cannot accept the household."
+        },
+        {
+          "type": "flow",
+          "caption": "A useful packing order",
+          "items": [
+            [
+              "Protect essential needs",
+              "Care items, mobility or communication aids, and the information needed to continue support."
+            ],
+            [
+              "Support the journey",
+              "Contacts, destination details, keys, carryable safe water, appropriate food, light, and phone power."
+            ],
+            [
+              "Add manageable comfort",
+              "Suitable clothing, hygiene and limited personal items after carrying needs are tested."
+            ]
+          ],
+          "note": "Editorial planning aid. Actual hazards, access needs and current instructions control the decision."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Emergency kit supplies",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+        ],
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Use a core list, then personalize it",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "A practical go-bag checklist",
+          "columns": [
+            "Group",
+            "Items to consider",
+            "Check before packing"
+          ],
+          "rows": [
+            [
+              "Identity and information",
+              "Suitable document copies, contact card, destination and route notes",
+              "Keep sensitive information protected but accessible when needed."
+            ],
+            [
+              "Care",
+              "Medicines and care information, glasses, hearing or mobility supplies",
+              "Storage conditions, refills, and equipment compatibility are individual."
+            ],
+            [
+              "Journey",
+              "Keys, charged phone, correct cable, light, manageable drinking water and food",
+              "The person can use and carry them; food matches dietary needs."
+            ],
+            [
+              "Weather and hygiene",
+              "Suitable clothing, compact hygiene supplies, required personal care items",
+              "Match the season, privacy needs, and the expected destination."
+            ],
+            [
+              "Children and pets",
+              "Necessary feeding, care, identification and transport items",
+              "A caregiver can still assist the person while carrying the load."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These are planning categories rather than a mandatory shopping list. Check what you own and remove items that do not support the journey or stay. For documents, consider what is actually needed to access care or accommodation. Do not put all irreplaceable originals into a bag that is routinely left unattended."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Emergency kit supplies",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Separate prepacked items from the last-minute grab list",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some items are needed every day and cannot sit permanently in a bag. Write a short grab list for them: current medicines, glasses, the phone, keys, essential care equipment, and a pet carrier if not already positioned. Record where each is normally kept. A grab list must be short enough to use without searching every room."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Attach the list to a place the responsible person actually looks, and keep a copy with the bag.",
+            "Use clear labels for each person’s equipment and avoid transferring a shared item between several bags without recording its location.",
+            "Check items with temperature or storage requirements against their instructions; a sealed backpack is not automatically suitable.",
+            "Agree who collects each dependent person’s daily-use items and who checks the transport.",
+            "Treat immediate escape differently: leave a fire or other urgent hazard without completing the list."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: an adult uses glasses and a medicine stored in a specific location. The bag may hold the written care information and a suitable spare item, while the grab list names the glasses and current medicine. Test that another trusted adult can locate them without needing a vague explanation such as “in the usual place.”"
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Test weight, access, and the actual carry method",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "There is no universal bag weight that is suitable for every person. Pack the proposed contents, then test a safe walk and the normal exit route according to the person’s abilities. Keep essential care available and stop if the exercise causes discomfort or unsafe movement. A wheeled bag may help on smooth ground but may be awkward on stairs; a backpack may conflict with caregiving or a mobility aid."
+        },
+        {
+          "type": "table",
+          "caption": "Problems a carry test should reveal",
+          "columns": [
+            "Problem",
+            "Possible adjustment"
+          ],
+          "rows": [
+            [
+              "Cannot lift or carry the bag",
+              "Reduce nonessential items, distribute suitable loads, or arrange realistic assistance."
+            ],
+            [
+              "Need both hands for care or movement",
+              "Choose a compatible carry arrangement and reduce loose items."
+            ],
+            [
+              "Cannot find care items quickly",
+              "Use a clearly labelled accessible pouch and a location list."
+            ],
+            [
+              "Water makes the bag unmanageable",
+              "Keep a carryable portion and plan a verified supply at the destination; do not pretend a smaller amount meets every need."
+            ],
+            [
+              "Transport space is limited",
+              "Check seats, equipment, pets, and bags together before departure."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not solve a heavy-bag problem by leaving necessary care equipment behind without an appropriate alternative. Change the transport or destination plan if that is what the need requires. The practical test is whether the complete household can move, not whether one strong adult can lift all the bags."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Keep pets and children in the movement plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Prepare care and comfort items suitable for the actual child or animal, and identify what the destination allows. A pet-friendly listing does not guarantee acceptance during an emergency. Keep the carrier, leash, identification, and required medicines usable. A child should have age-appropriate contact information without being made responsible for finding adults or deciding the route."
+        },
+        {
+          "type": "paragraph",
+          "text": "Assign a responsible adult to each person needing assistance. Count people at departure and arrival, and agree where to meet if separated. Include a simple familiar comfort item when it fits, especially if it helps a child manage an unfamiliar setting. Keep that comfort item easy to reach without unpacking essential supplies."
+        },
+        {
+          "type": "callout",
+          "title": "Do not overload the helper",
+          "text": "The person supporting a child, pet, or dependent adult may need a lighter personal load. Test that their hands, movement, and attention remain available for the assistance they must provide."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the preferred destination cannot accommodate a need, resolve it before relying on that destination. Keep an alternate and the relevant contact details. The bag is one part of this arrangement, not the entire evacuation plan."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Maintain, rehearse, and use it at the right moment",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Review the bag when seasons, medicines, clothing sizes, phones, pets, or household members change. Rotate consumables appropriately and check equipment function. Put the review date on the inventory so another adult can tell whether it is current. Keep the bag accessible without obstructing an exit or exposing it to inappropriate storage conditions."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Find the bag and explain its purpose to another household member.",
+            "Use the grab list in a safe practice and note any item that was hard to find.",
+            "Check that the destination notes, contact numbers, and transport arrangements still work.",
+            "Open and use a light, charging cable, and food package during practice.",
+            "Remove unnecessary items and replenish anything used.",
+            "Make one alternate plan for a closed destination or unavailable vehicle."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "In an actual evacuation, prioritize the people and urgent care needs. If time allows, take the tested bag and daily-use items; if immediate danger is present, do not remain or return for belongings. Replenish the bag after use so a successful departure does not leave the next one unsupported."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Evacuation actions",
+              "url": "/emergencies/evacuation/"
+            },
+            {
+              "label": "Evacuation without a car",
+              "url": "/preparedness/evacuation-without-car/"
+            }
+          ]
+        }
+      ],
+      "references": []
+    }
   ]
 }
