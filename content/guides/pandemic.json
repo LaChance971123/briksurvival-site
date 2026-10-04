@@ -42,20 +42,7 @@
   "household": "Make the care plan workable with the people, room and supplies you have. Separate clean and dirty tasks, check high-risk household members and preserve access to essential medicines. Keep a written record of symptoms and exposure rather than relying on memory. For this situation, brief every person on the first action: find current guidance. Agree who will manage children, pets or mobility needs while that action happens. Do not transfer isolation durations or treatment advice from one disease to another.",
   "pack_now": "For pandemic & disease outbreak, prioritize only items needed for the first action and the fallback: Create a workable sick-person area, improve ventilation where safe and separate shared food, washing and care tasks. Keep medicines and a written symptom record. Obtain disease-specific guidance when possible; do not use unproven treatments or copy isolation rules from another outbreak. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Check current local health guidance for the specific disease. Reduce exposure, stay home when sick when feasible and seek care for severe symptoms. Recommended tests, vaccines, masks and isolation steps depend on the pathogen and your health risks. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For pandemic & disease outbreak, keep the specific hazard in view: Do not transfer isolation durations or treatment advice from one disease to another."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Know urgent signs. Seek emergency help for severe breathing difficulty, new confusion or other life-threatening symptoms. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

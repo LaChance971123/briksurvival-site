@@ -41,20 +41,7 @@
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: check your zone. Agree who will manage children, pets or mobility needs while that action happens. A calm eye is not an all-clear. Do not base flood safety on the wind category.",
   "pack_now": "For hurricane, prioritize only items needed for the first action and the fallback: Before roads become unsafe, move out of surge-prone areas using a route and destination you have checked. If already trapped by wind or water, stay in the safest intact interior space available, with flood risk in mind. Do not travel during the calm eye. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Check your evacuation zone and the current order. If told to evacuate, leave before conditions deteriorate. If staying outside an evacuation zone, shelter inside a sturdy building away from windows; storm surge and inland flooding can be deadly even far from the storm center. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For hurricane, keep the specific hazard in view: A calm eye is not an all-clear. Do not base flood safety on the wind category."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Watch for water. Keep out of flooded roads and basements. Follow separate flash-flood warnings and move to safer higher ground when necessary. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

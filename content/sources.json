@@ -221,8 +221,20 @@
   ],
   "home-fire": [
     [
-      "Home fire · official guidance",
-      "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/"
+      "USFA · Home fire escape plans",
+      "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+    ],
+    [
+      "USFA · Smoke alarms",
+      "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/smoke-alarms/"
+    ],
+    [
+      "USFA · Choosing and using fire extinguishers",
+      "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/"
+    ],
+    [
+      "American Red Cross · Home fire preparation and recovery",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/fire.html"
     ]
   ],
   "carbon-monoxide": [
@@ -1111,6 +1123,78 @@
     [
       "Florida emergency management · Manufactured-home planning (Florida example)",
       "https://www.floridadisaster.org/planprepare/home/manufacturedhomes/"
+    ]
+  ],
+  "cartridges-calibers-explained": [
+    [
+      "SAAMI · Cartridge compatibility questions",
+      "https://saami.org/faqs/"
+    ],
+    [
+      "SAAMI · Technical terminology",
+      "https://saami.org/glossary/"
+    ],
+    [
+      "SAAMI · Ammunition and firearm advisories",
+      "https://saami.org/publications-advisories/advisories/"
+    ],
+    [
+      "Florida FWC · Legal methods of taking game",
+      "https://myfwc.com/hunting/regulations/taking-game/"
+    ],
+    [
+      "NSSF · Firearm handling and ammunition rules",
+      "https://www.nssf.org/safety/rules-firearms-safety/"
+    ]
+  ],
+  "suppressor-fundamentals": [
+    [
+      "ATF · National Firearms Act resources",
+      "https://www.atf.gov/rules-and-regulations/laws-alcohol-tobacco-firearms-and-explosives/national-firearms-act"
+    ],
+    [
+      "NIOSH · Suppressor noise and auditory risk research",
+      "https://stacks.cdc.gov/view/cdc/111710"
+    ],
+    [
+      "NIOSH · Hearing conservation for firearm training",
+      "https://www.cdc.gov/niosh/bulletin/2017/firearms-training.html"
+    ],
+    [
+      "NSSF · Firearm handling and ammunition rules",
+      "https://www.nssf.org/safety/rules-firearms-safety/"
+    ]
+  ],
+  "night-vision-basics": [
+    [
+      "FLIR · Thermal imaging and night vision",
+      "https://www.flir.com/discover/ots/thermal-vs-night-vision/"
+    ],
+    [
+      "FLIR Marine · Low-light technology comparison",
+      "https://marine.flir.com/en-gb/support/learning/choosing-the-right-night-vision-technology-for-boating"
+    ],
+    [
+      "FLIR OEM · Active infrared versus thermal imaging",
+      "https://oem.flir.com/support/support-center/knowledge-base/what-is-the-difference-between-active-ir-and-thermal-imaging/"
+    ]
+  ],
+  "thermal-imaging-basics": [
+    [
+      "FLIR OEM · Choosing a thermal imager",
+      "https://www.oem.flir.com/learn/discover/choosing-the-right-thermal-imager-for-your-integrated-project/"
+    ],
+    [
+      "FLIR · Thermal sensitivity explained",
+      "https://www.flir.com/discover/security/perimeter-protection/the-importance-of-thermal-sensitivity-for-detection-accuracy/"
+    ],
+    [
+      "FLIR · Walls, glass and infrared limitations",
+      "https://www.flir.com/discover/home-outdoor/can-thermal-imaging-see-through-walls/"
+    ],
+    [
+      "FLIR · Fog and rain limitations",
+      "https://www.flir.com/discover/rd-science/can-thermal-imaging-see-through-fog-and-rain/"
     ]
   ]
 }

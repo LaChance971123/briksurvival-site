@@ -144,12 +144,14 @@
   },
   {
     "id": "firearms-tools",
-    "title": "Firearms, ammunition & tool safety",
+    "title": "Firearms, ammunition & observation equipment",
     "subcategories": [
       "Safe ownership",
       "Secure storage",
       "Ammunition",
-      "Tools & training"
+      "Tools & training",
+      "Suppressors",
+      "Observation equipment"
     ]
   }
 ]

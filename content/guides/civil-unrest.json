@@ -39,20 +39,7 @@
   "household": "Choose two reunion places and an out-of-area contact. Keep children with a trusted caregiver and carry a written contact card. Share sensitive addresses and travel details only with people who need them; avoid posting live locations or images of other families without consent. For this situation, brief every person on the first action: separate the event from your location. Agree who will manage children, pets or mobility needs while that action happens. Do not assume a protest is violent or that a citywide alert applies equally to every neighborhood. If an order applies, read its location, hours, and exceptions.",
   "pack_now": "For civil unrest, prioritize only items needed for the first action and the fallback: Use what you can see safely from your location to judge immediate danger; do not approach a crowd to investigate. Agree on a place to regroup away from the disturbance. If officials or armed personnel are involved in threats, use trusted private contacts or independently verified humanitarian help when safe. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Move away from violence or dangerous crowd movement by a safe route, or shelter in a secure place if movement is riskier. Avoid confrontation, keep family members together and check the actual conditions on your route. Do not assume official presence makes an area safe. If authorities are involved in threats, seek independently verified local or humanitarian help when safe. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For civil unrest, keep the specific hazard in view: Do not assume a protest is violent or that a citywide alert applies equally to every neighborhood. If an order applies, read its location, hours, and exceptions."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Regroup deliberately. Arrange a meeting point and a backup contact if mobile networks are strained. Wait for reliable updates before returning to a disrupted area. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

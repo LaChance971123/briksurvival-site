@@ -42,20 +42,7 @@
   "household": "Keep the family together in the correct shelter for the hazard and separate potentially contaminated items from the living area. Use covered food and safe water. Prepare a bag for relocation, but do not send someone outside for it during an active release. For this situation, brief every person on the first action: leave the release area. Agree who will manage children, pets or mobility needs while that action happens. A dust mask or N95 does not protect against toxic gases.",
   "pack_now": "For chemical release, prioritize only items needed for the first action and the fallback: If no reliable instruction arrives, move away from the visible release or affected area without passing through it. If leaving would put you into contaminated outdoor air, use an intact indoor space, shut openings and turn off outdoor-air intake while seeking trustworthy information. Do not identify a gas by sniffing it. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Move away from a chemical release and follow official instructions about evacuation or sheltering indoors. If exposed, get the chemical off and seek help. For severe symptoms, call emergency services; in the U.S., Poison Control is 1-800-222-1222. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For chemical release, keep the specific hazard in view: A dust mask or N95 does not protect against toxic gases."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Get medical help. Tell responders what was involved if known, your location and symptoms. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

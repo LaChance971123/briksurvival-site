@@ -42,20 +42,7 @@
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: check official monitoring. Agree who will manage children, pets or mobility needs while that action happens. A particle respirator does not protect against volcanic gases.",
   "pack_now": "For volcanic eruption, prioritize only items needed for the first action and the fallback: Keep away from river valleys, exclusion areas and visible ash plumes. Use the best reachable intact shelter for ashfall while checking evacuation information. Avoid driving through heavy ash unless leaving a more immediate threat; ash can impair engines and visibility. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Follow the local volcano evacuation order and stay out of restricted zones. If ash is falling and you are not told to evacuate, stay indoors with windows and doors closed. Avoid river valleys where volcanic mudflows may travel. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For volcanic eruption, keep the specific hazard in view: A particle respirator does not protect against volcanic gases."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Keep roads clear. Avoid driving in ash unless necessary; visibility and engines can be affected. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

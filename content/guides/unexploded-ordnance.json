@@ -53,20 +53,7 @@
   "urgency": "immediate",
   "review_status": "source-linked editorial review; not independent expert certification",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Do not approach, touch, move, collect or attempt to dismantle a suspicious object, munition or wire. Keep other people away from a safe position. Avoid abandoned positions, disturbed ground and routes that have not been assessed after fighting. Report only through a safe verified channel; do not enter a hazardous area to identify an object. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For mines & unexploded ordnance, keep the specific hazard in view: Never burn, bury, throw, transport or disturb an object. This guide cannot determine a safe distance or a safe escape path through mined ground."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Do not attempt a rescue into suspect ground. Call specialist help when reachable. Entering a suspected mined area can create additional casualties; do not improvise a clearance or dismantling method. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

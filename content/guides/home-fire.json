@@ -4,7 +4,7 @@
   "category": "home-building",
   "subcategory": "Fire",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-04",
   "aliases": [
     "house fire",
     "apartment fire",
@@ -55,7 +55,235 @@
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-04",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-01-04",
+  "sections": [
+    {
+      "heading": "An active fire: protect people before property",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A fire response begins with getting away from danger. Do not use a household checklist as a reason to collect documents, photograph damage or investigate the source. Once outside, stay outside. Contact the appropriate emergency service from a safe place and tell responders if someone or a pet may still be inside. If a route is unsafe or blocked, use the trapped-person action in the immediate checklist rather than forcing your way into smoke."
+        },
+        {
+          "type": "table",
+          "caption": "Keep the decision clear",
+          "columns": [
+            "Situation",
+            "Protective priority"
+          ],
+          "rows": [
+            [
+              "Smoke or fire inside",
+              "Use the nearest safe escape route and stay out."
+            ],
+            [
+              "A route is blocked",
+              "Separate yourself from smoke with closed doors and signal your location."
+            ],
+            [
+              "Someone is unaccounted for",
+              "Report their possible location; do not reenter to search."
+            ],
+            [
+              "The building becomes quiet",
+              "Remain outside until the fire department permits reentry."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This is a general home-fire guide. An apartment or high-rise also needs its building-specific plan; follow the companion guide and obtain that plan before an emergency. Do not improvise an elevator or window escape."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Home fire preparation and recovery",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/fire.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Make an escape plan that fits the actual home",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before an emergency, draw a simple floor plan and identify the available exits from each room. USFA recommends two ways out where possible, an outside meeting place and practising the plan. Include anyone who needs assistance. A route that works for one adult may not work for a child, a wheelchair user or someone waking from sleep."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the planning exercise to record unresolved practical questions. Does a visitor know where the exit is? Does a door require a key that is not accessible? Has furniture narrowed the route? Is an assumed exit unavailable after a renovation? Put each problem on a short action list with a responsible adult and a review date. For a rental or shared building, request the actual safety arrangements from the responsible provider."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Write the meeting place in plain language everyone understands.",
+            "Include visitors and overnight guests in the explanation.",
+            "Keep supplies and furniture out of the route.",
+            "Revisit the plan after a move, renovation or change in mobility."
+          ]
+        }
+      ],
+      "references": [
+        [
+          "USFA · Home fire escape plans",
+          "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/"
+        ]
+      ]
+    },
+    {
+      "heading": "Alarms need a maintenance system, not a one-time purchase",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "USFA recommends smoke alarms in every sleeping room, outside each separate sleeping area and on every level of the home. It advises monthly testing and replacement of alarms at ten years. Follow the product’s instructions for power, maintenance and replacement; choose suitable accessible alerting equipment for anyone who may not hear a conventional alarm."
+        },
+        {
+          "type": "table",
+          "caption": "Make maintenance visible",
+          "columns": [
+            "Record",
+            "Household action"
+          ],
+          "rows": [
+            [
+              "Location and model",
+              "List each alarm so none is forgotten."
+            ],
+            [
+              "Installation or replacement date",
+              "Keep the date with the household maintenance record."
+            ],
+            [
+              "Test responsibility",
+              "Choose an adult and a repeatable reminder."
+            ],
+            [
+              "Fault or missing equipment",
+              "Record it as an action requiring prompt resolution."
+            ],
+            [
+              "Accessibility need",
+              "Ask the appropriate provider about a suitable alerting arrangement."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If a landlord or another provider is responsible for equipment, make the question explicit and follow up on unresolved faults. Keep the record separate from a shopping list so a purchased but uninstalled alarm does not appear as a completed protection. An alarm notification is a prompt to act, not an invitation to ignore danger until everyone agrees on its cause."
+        }
+      ],
+      "references": [
+        [
+          "USFA · Smoke alarms",
+          "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/smoke-alarms/"
+        ]
+      ]
+    },
+    {
+      "heading": "An extinguisher has strict limits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "USFA’s extinguisher guidance makes escape the overriding priority. It describes extinguisher use only when everyone has left or is leaving, the fire department has been called, the fire is small and contained, smoke does not put the user at risk, and a clear escape route remains. If those conditions are not all satisfied, leave. Owning an extinguisher does not establish the skill or conditions to use it."
+        },
+        {
+          "type": "paragraph",
+          "text": "For preparation, ask a qualified local provider about appropriate equipment, hands-on instruction and inspection. Read the exact product label and identify who is responsible for its condition. Do not make an internet summary your only training. Keep the distinction between having equipment and having a usable plan visible in the household record."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Prioritise evacuation over an attempt to save property.",
+            "Arrange appropriate instruction before relying on unfamiliar equipment.",
+            "Keep inspection and service information with the product record.",
+            "Treat uncertainty about the fire, smoke or escape route as a reason to leave."
+          ]
+        }
+      ],
+      "references": [
+        [
+          "USFA · Choosing and using fire extinguishers",
+          "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/"
+        ]
+      ]
+    },
+    {
+      "heading": "Practise roles without creating a hazard",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a calm household walkthrough in ordinary safe conditions. Explain that a real fire does not wait for the practice routine. Walk the intended route, describe the alternate and identify the meeting place. Discuss who helps a dependent and who stays with children once outside. Do not create smoke, darken stairs dangerously, block an exit or stage a frightening surprise to make the exercise seem realistic."
+        },
+        {
+          "type": "table",
+          "caption": "A short household review",
+          "columns": [
+            "Question",
+            "What to resolve beforehand"
+          ],
+          "rows": [
+            [
+              "Who needs assistance?",
+              "An arrangement that fits the person, building and available support."
+            ],
+            [
+              "Who may be absent?",
+              "A backup responsibility when the usual adult is away."
+            ],
+            [
+              "Where do visitors go?",
+              "A clear route explanation and meeting place."
+            ],
+            [
+              "What about pets?",
+              "A preparation plan that never asks someone to reenter a fire."
+            ],
+            [
+              "How is the plan maintained?",
+              "A review after changes and a visible list of outstanding tasks."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the review specific. “Everyone knows what to do” is difficult to verify; “we walked the route and found an obstructed door” gives the household an actionable improvement. Record the problem, resolve it and then check the corrected arrangement. Use a qualified provider when the building or a person’s needs create a question the household cannot answer."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "After the fire: separate reentry, support and recovery",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once everyone is outside, keep the meeting place organised and tell responders who is missing. Do not go back for a medicine, wallet or phone. Reentry depends on the fire department’s permission and the building’s condition, not on whether flames are visible. The Red Cross provides preparation and recovery resources and a route to local support; assistance and capacity depend on location and circumstances."
+        },
+        {
+          "type": "paragraph",
+          "text": "For household recovery planning, identify temporary accommodation options, a way to contact an insurer or landlord, and private backups of essential records before an incident. These are advance planning tasks, not things to retrieve during a fire. Keep the contact record somewhere separate from the home when practical. Ask relevant providers how essential prescriptions or access equipment could be replaced if belongings cannot be recovered."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Prepare a private list of insurance, landlord and care-provider contacts.",
+            "Identify an accommodation option suitable for the actual household.",
+            "Keep replacement questions separate from dangerous retrieval attempts.",
+            "Follow the building assessment and relevant provider instructions before cleanup."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Recovery can involve several decisions at once. Keep a simple dated record of instructions, outstanding questions and the next safe action rather than trying to solve everything immediately."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Home fire preparation and recovery",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/fire.html"
+        ]
+      ]
+    }
+  ]
 }

@@ -51,20 +51,7 @@
   "urgency": "planning",
   "review_status": "source-linked editorial review; not independent expert certification",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Build a small support network with people you already trust: agree check-ins, practical tasks and boundaries before a crisis. Share verified information and safe assistance without advertising stockpiles or exposing vulnerable people’s locations. Do not organise untrained rescues or assume outside supplies will arrive. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For a trusted neighbourhood support plan, keep the specific hazard in view: Mutual aid should never require handing over identity documents, leaving children with strangers or entering a dangerous building."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Review together. Practise a short check-in and update the plan after household needs change. Keep information current and private. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

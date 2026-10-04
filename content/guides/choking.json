@@ -42,20 +42,7 @@
   "household": "Give someone the specific task of calling or locating care while another person provides first aid. Keep the patient warm or cool as the condition requires and record what happened and when. Do not put yourself into the same hazard or assume an ambulance has been dispatched until confirmed. For this situation, brief every person on the first action: assess the cough. Agree who will manage children, pets or mobility needs while that action happens. Do not use abdominal thrusts on an infant under one year; infant care uses back blows and chest thrusts.",
   "pack_now": "For adult & child choking, prioritize only items needed for the first action and the fallback: Begin the first-aid sequence immediately while another person calls if possible. If the person becomes unresponsive, lower them safely and begin CPR. Look for a visible object before breaths; never sweep blindly inside the mouth. A delayed ambulance is not a reason to delay first aid. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "If someone cannot speak, breathe or cough effectively, call emergency services. For a responsive adult or child, give 5 back blows followed by 5 abdominal thrusts, repeating until the blockage clears or they become unresponsive. Use chest thrusts when pregnant or when you cannot encircle the abdomen. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For adult & child choking, keep the specific hazard in view: Do not use abdominal thrusts on an infant under one year; infant care uses back blows and chest thrusts."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: If unresponsive. Lower them safely and start CPR as directed. Remove only a clearly visible object; never blindly sweep the mouth. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

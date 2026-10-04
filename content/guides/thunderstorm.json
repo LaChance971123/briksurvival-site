@@ -41,20 +41,7 @@
   "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: get indoors. Agree who will manage children, pets or mobility needs while that action happens. Every thunderstorm can produce lightning, even without a severe thunderstorm warning.",
   "pack_now": "For thunderstorm, prioritize only items needed for the first action and the fallback: Use a substantial building or enclosed hard-top vehicle even when warnings cannot be checked. Avoid plumbing and wired electrical equipment during lightning. Watch for rising water and damaging wind without going outside to observe the storm. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
   "decisions": [],
-  "faqs": [
-    [
-      "What matters before collecting supplies?",
-      "Go inside a substantial building or a fully enclosed hard-top vehicle when thunder is heard. Stay away from windows and monitor warnings for damaging wind, hail, tornadoes and flash flooding. Collect items only if doing so does not delay this action."
-    ],
-    [
-      "What should another household member do?",
-      "Use a second person to handle communication or dependents while the first carries out the immediate action. For thunderstorm, keep the specific hazard in view: Every thunderstorm can produce lightning, even without a severe thunderstorm warning."
-    ],
-    [
-      "What should be written down?",
-      "Record when the situation changed, what action was taken and what remains uncertain. For this situation, start with: Wait before returning. After the last thunder, wait at least 30 minutes before resuming outdoor activity. Keep personal notes private; they are not submitted to Osprey Zero."
-    ]
-  ],
+  "faqs": [],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",

@@ -1,0 +1,284 @@
+{
+  "slug": "thermal-imaging-basics",
+  "title": "Thermal imaging: specifications, interpretation and household uses",
+  "category": "firearms-tools",
+  "subcategory": "Observation equipment",
+  "content_type": "Preparedness guide",
+  "updated": "2026-10-04",
+  "published": "2026-10-04",
+  "source_checked": "2026-10-04",
+  "next_review": "2027-01-04",
+  "aliases": [
+    "thermal",
+    "thermals",
+    "thermal camera",
+    "NETD",
+    "infrared camera"
+  ],
+  "keywords": [
+    "thermal",
+    "thermals",
+    "thermal camera",
+    "NETD",
+    "infrared camera"
+  ],
+  "tldr": "Thermal cameras display infrared contrast, not a guaranteed identification or a view through walls. Compare the actual sensor, sensitivity and intended task, then verify any important finding by an appropriate independent method.",
+  "steps": [
+    [
+      "Define the job",
+      "Distinguish outdoor observation from building inspection or calibrated temperature measurement. These require different capabilities."
+    ],
+    [
+      "Separate sensor and screen claims",
+      "Check native thermal sensor resolution, field of view, sensitivity and whether the device supports temperature measurement."
+    ],
+    [
+      "Recognize image limits",
+      "Ordinary glass, reflective surfaces, weather and obstructions affect interpretation. A bright patch alone does not identify its cause."
+    ],
+    [
+      "Confirm before acting",
+      "Use qualified help for electrical, structural or medical concerns. Do not open hazardous equipment to investigate an interesting image."
+    ]
+  ],
+  "sections": [
+    {
+      "heading": "A thermal image is an interpretation of radiation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A thermal camera forms an image from infrared radiation and translates differences into a display. A coloured palette is a visual convention rather than the scene’s visible colour. Some imagers also provide calibrated temperature estimates; others are intended chiefly for observation. Establish which kind of device you have before interpreting a number on the screen as a meaningful measurement."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a household, the useful question is often whether an image suggests something worth checking by another method. An unusual surface pattern may justify a professional inspection, but it does not independently diagnose water damage, a wiring fault or a medical condition. Keep the observation separate from the conclusion. Write down what was seen, the conditions and what would be needed to confirm it."
+        }
+      ],
+      "references": [
+        [
+          "FLIR OEM · Choosing a thermal imager",
+          "https://www.oem.flir.com/learn/discover/choosing-the-right-thermal-imager-for-your-integrated-project/"
+        ]
+      ]
+    },
+    {
+      "heading": "Specifications that deserve a place on the comparison sheet",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Compare the underlying capability",
+          "columns": [
+            "Specification",
+            "What it describes",
+            "Question to ask"
+          ],
+          "rows": [
+            [
+              "Native sensor resolution",
+              "The thermal detector’s pixel grid.",
+              "Is the advertised number the sensor or only the screen?"
+            ],
+            [
+              "Field of view",
+              "The scene width and height visible through the lens.",
+              "Does it fit the intended observation or inspection task?"
+            ],
+            [
+              "Thermal sensitivity / NETD",
+              "The ability to distinguish small thermal differences under stated conditions.",
+              "Under what test conditions was the value specified?"
+            ],
+            [
+              "Temperature measurement",
+              "Whether the system estimates temperature, rather than only displaying contrast.",
+              "What calibration, limits and settings apply?"
+            ],
+            [
+              "Focus and operating limits",
+              "How and where the device can produce a usable image.",
+              "What conditions does the manual actually permit?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Thermal sensitivity and spatial resolution answer different questions. More detector pixels do not by themselves establish sensitivity, accurate temperature measurement or a useful lens for your task. Compare manufacturers’ datasheets rather than collecting the largest number in each advertisement. Keep incompatible test conditions visible instead of treating unlike specifications as a fair ranking."
+        }
+      ],
+      "references": [
+        [
+          "FLIR · Thermal sensitivity explained",
+          "https://www.flir.com/discover/security/perimeter-protection/the-importance-of-thermal-sensitivity-for-detection-accuracy/"
+        ],
+        [
+          "FLIR OEM · Choosing a thermal imager",
+          "https://www.oem.flir.com/learn/discover/choosing-the-right-thermal-imager-for-your-integrated-project/"
+        ]
+      ]
+    },
+    {
+      "heading": "What glass, walls and reflections change",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Ordinary thermal imaging does not provide a movie-style view through walls. A wall’s surface pattern may change because of conditions within the building, but that is a surface observation rather than direct sight of what is behind it. Ordinary window glass also prevents the expected view through the window for typical long-wave thermal cameras; reflections can dominate the image. Shiny surfaces create similar interpretation problems."
+        },
+        {
+          "type": "table",
+          "caption": "Common interpretation traps",
+          "columns": [
+            "Scene",
+            "Potential mistake",
+            "More useful response"
+          ],
+          "rows": [
+            [
+              "A bright patch on glass",
+              "Assuming it is an object beyond the window.",
+              "Consider reflection and use an appropriate ordinary view."
+            ],
+            [
+              "A pattern on a wall",
+              "Assuming it identifies a hidden fault.",
+              "Record conditions and seek a suitable building assessment."
+            ],
+            [
+              "A shiny metal surface",
+              "Treating apparent temperature as unquestionable.",
+              "Check measurement limitations and manufacturer guidance."
+            ],
+            [
+              "A partially hidden object",
+              "Assuming missing detail proves nothing is present.",
+              "Retain uncertainty and use another safe source of information."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not open electrical panels, climb onto a damaged roof or enter a compromised structure just to chase a thermal pattern. An image can support a question for a qualified provider; it does not remove the hazard involved in obtaining an answer."
+        }
+      ],
+      "references": [
+        [
+          "FLIR · Walls, glass and infrared limitations",
+          "https://www.flir.com/discover/home-outdoor/can-thermal-imaging-see-through-walls/"
+        ]
+      ]
+    },
+    {
+      "heading": "Weather and the difference between detection and identification",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Rain and fog can reduce thermal viewing performance. The amount depends on atmospheric conditions and equipment; thermal imaging is not an all-weather guarantee. An outdoor image also depends on whether the subject contrasts sufficiently with its surroundings. Treat any advertised distance as a claim tied to a test and a specific observation task, not as a promise of clear identification in every scene."
+        },
+        {
+          "type": "paragraph",
+          "text": "Detection means noticing something in the image. Recognition or identification requires enough reliable detail to determine what it is. For a civilian wildlife observation, a shape that might be an animal is still uncertain until appropriate detail or another safe observation establishes it. Never approach a hazard or act against a person because an ambiguous thermal shape appears on a screen."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Record weather and surroundings during a demonstration.",
+            "Compare a live image, not only an edited promotional clip.",
+            "Describe which detail was actually visible.",
+            "Keep uncertainty when objects overlap, contrast is weak or the scene is obstructed."
+          ]
+        }
+      ],
+      "references": [
+        [
+          "FLIR · Fog and rain limitations",
+          "https://www.flir.com/discover/rd-science/can-thermal-imaging-see-through-fog-and-rain/"
+        ]
+      ]
+    },
+    {
+      "heading": "Household inspection: use the image to ask a better question",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A practical, low-risk inspection record contains the room or area, date, normal visible photograph where appropriate, thermal image, relevant conditions and the question for a qualified professional. For example, a repeated unusual surface pattern near a window can be recorded as “please assess this area,” rather than declared a leak from the image alone. Include changes in weather, heating or cooling that could affect comparison."
+        },
+        {
+          "type": "flow",
+          "caption": "A responsible inspection workflow",
+          "items": [
+            [
+              "Observe",
+              "From an ordinary safe position, record the pattern."
+            ],
+            [
+              "Describe",
+              "Write the conditions and the uncertainty."
+            ],
+            [
+              "Refer",
+              "Ask the appropriate qualified provider about the actual concern."
+            ],
+            [
+              "Confirm",
+              "Use the inspection or another suitable method before choosing a repair."
+            ]
+          ],
+          "note": "An educational decision aid, not equipment certification or a live assessment."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not use a consumer camera as a replacement for carbon monoxide alarms, smoke alarms, electrical inspection or medical assessment. It is not a reason to stay in a building during a fire or gas concern. During a disaster, damaged structures and contaminated areas remain hazardous even if the image looks ordinary. The correct first action is protective distance and appropriate help, not collecting a better picture."
+        },
+        {
+          "type": "paragraph",
+          "text": "If using images for a landlord or contractor, keep the original files and describe them plainly. Avoid implying specialist certification that neither the operator nor the equipment provides."
+        }
+      ],
+      "references": []
+    },
+    {
+      "heading": "Power, records and a sensible purchase decision",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before purchase, decide how often the device will be used, whether it needs a phone, and what still works without an app account or network. Check battery arrangements, permitted environmental conditions, warranty support and availability of service. A specialised inspection camera and an observation monocular may both be called thermal but provide very different interfaces and capabilities. Select for the actual task."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Write one primary civilian use and a realistic frequency of use.",
+            "Compare native sensor data separately from display resolution.",
+            "Ask for sample files and a live demonstration for the intended task.",
+            "Check recording, wireless features and personal-data handling.",
+            "Include protection, service and any training in the total budget."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Store images privately when they show a home’s layout or household activity. Set a maintenance reminder and keep the manual with the equipment record. For an occasional household question, hiring a qualified inspection service may make more sense than purchasing a device and trying to interpret an unfamiliar image. For an established observation hobby, a carefully defined trial can show whether the device adds value."
+        },
+        {
+          "type": "paragraph",
+          "text": "Return to basic preparedness priorities if the purchase would consume the money needed for water, medicines, safe temperature, communication or transport. Advanced technology is most useful when it supports a clear plan and an appropriate verification process. It should not create confidence beyond what the image actually establishes."
+        }
+      ],
+      "references": []
+    }
+  ],
+  "without_help": "Keep unresolved legal, equipment or interpretation questions unresolved in the plan. Use ordinary supplies and safe alternatives rather than guessing; contact the manufacturer or an appropriately qualified provider when available.",
+  "household": "Choose who manages the equipment records, maintenance and access. Account for vision, hearing, dexterity, shared devices, children and visitors. Keep sensitive household and ownership records private.",
+  "pack_now": "Keep the exact model manual, permitted batteries or protection, and necessary private records with the equipment. Separate unfamiliar equipment from ordinary shared household supplies.",
+  "next": "Write the specific civilian task, one unresolved question and the source that can answer it. Review that answer before buying or relying on the equipment.",
+  "watch": "A specification, appearance or online demonstration is not a certification. Use current legal requirements and manufacturer instructions, and verify important findings independently.",
+  "sources": "thermal-imaging-basics",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "decisions": [],
+  "faqs": [],
+  "scope": "Civilian equipment education and editorial planning; U.S. references are labelled and rules vary. Manufacturer references explain technology and are not independent product endorsements. No tactical instruction, legal advice or specialist certification.",
+  "related": [
+    "cartridges-calibers-explained",
+    "suppressor-fundamentals",
+    "night-vision-basics",
+    "firearm-safety-basics"
+  ]
+}
