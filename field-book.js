@@ -17,6 +17,7 @@
    pages.forEach(p=>{p.classList.remove('is-leaving');p.style.removeProperty('will-change');});
   }
   function sync(announce){
+   const focusedControl=doc.activeElement;
    pages.forEach((p,i)=>{
     const active=i===current;p.classList.toggle('is-current',active);p.hidden=false;p.inert=!active;
     if(active){p.removeAttribute('inert');p.removeAttribute('aria-hidden');}else{p.setAttribute('inert','');p.setAttribute('aria-hidden','true');}
@@ -26,7 +27,7 @@
    prev.disabled=current===0;next.disabled=current===pages.length-1;
    count.textContent=String(current+1).padStart(2,'0')+' / '+String(pages.length).padStart(2,'0')+' · '+pages[current].dataset.title;
    if(announce)status.textContent='Page '+(current+1)+' of '+pages.length+': '+pages[current].dataset.title;
-   if((doc.activeElement===prev&&prev.disabled)||(doc.activeElement===next&&next.disabled))root.focus({preventScroll:true});
+   if((focusedControl===prev&&prev.disabled)||(focusedControl===next&&next.disabled))root.focus({preventScroll:true});
   }
   function go(to,announce=true){
    const target=clamp(to,pages.length);if(target===current)return false;
