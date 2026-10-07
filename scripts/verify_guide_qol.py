@@ -30,9 +30,23 @@ for route_name in ['emergencies', 'preparedness', 'guides', 'resources']:
     assert levels[0] == 1
     assert all(second <= first + 1 for first, second in zip(levels, levels[1:])), (route_name, 'heading levels must not skip')
 
+taxonomy = json.loads((ROOT / 'content/taxonomy.json').read_text())
+browse_routes = ['library', 'emergencies', 'preparedness', 'guides', 'emergencies/severe-weather'] + ['library/' + category['id'] for category in taxonomy]
+for route_name in browse_routes:
+    d = html.fromstring((DIST / route_name / 'index.html').read_text())
+    jumps = d.xpath('//section[contains(@class,"library-heading")]/a[contains(@class,"browse-start-link") and @href="#browse-results"]')
+    assert len(jumps) == 1, route_name
+    jump = jumps[0]
+    assert jump.getprevious().tag == 'p' and 'Choose a subject or search' in jump.getprevious().text_content(), route_name
+    assert jump.getnext().tag == 'nav' and jump.getnext().get('class') == 'browse-modes', route_name
+    expected_label = 'Choose a subject' if route_name == 'library' else 'Choose a guide'
+    assert jump.text_content().strip() == expected_label + ' ↓', route_name
+    targets = d.xpath('//div[@id="browse-results" and @tabindex="-1"]')
+    assert len(targets) == 1 and targets[0].xpath('.//a[@href]'), route_name
+
 catalog = json.loads((ROOT / 'content/toolkits.json').read_text())
 if not any(product['kind'] == 'topic' and product['status'] == 'ready' for product in catalog['products']):
     d = html.fromstring((DIST / 'resources/index.html').read_text())
     copy = ' '.join(d.xpath('//*[contains(@class,"reference-toolkit-note")]//text()'))
     assert 'Purchases are paused' in copy and 'Checkout is opening soon' not in copy
-print('PASS: immediate action links, semantic ordered contents, contextual destinations, hub heading levels and truthful reference shelf.')
+print('PASS: immediate action links, semantic ordered contents, contextual destinations, hub heading levels, immediate browse jumps and truthful reference shelf.')
