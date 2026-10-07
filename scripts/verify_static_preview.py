@@ -14,3 +14,7 @@ g=json.loads((R/'content/guides/power-outage.json').read_text())
 for title,body in g['steps'][:2]:assert title in a[0].text_content() and body in a[0].text_content()
 assert not (R/'field-book.js').exists()
 print('PASS: one static source-accurate preview after complete search/topic flow; carousel removed.')
+
+assert 'Practical guidance for emergencies and everyday preparedness.' in s
+assert not d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," home-hero-actions ")]')
+assert len(d.xpath('//*[@id="emergency-search"]'))==1
