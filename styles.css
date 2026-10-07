@@ -527,3 +527,6 @@ html{scroll-padding-top:94px}
 @media(max-width:480px){.guide-section-heading{flex-wrap:wrap;gap:6px;margin-bottom:12px}.guide-section-heading>h2{flex-basis:100%;margin-bottom:0}.guide-section-heading .section-copy-link{margin-left:auto}.quick-answer .guide-section-heading{flex-wrap:nowrap}.quick-answer .guide-section-heading>h2{flex-basis:auto}}
 @media(prefers-reduced-motion:reduce){.field-book .field-read-link{transition:none}}
 @media print{.book-browse-cue{display:none}}
+
+.field-book .field-spine{top:32px}.field-book::before{top:40px}.field-book::after{top:42px}.book-browse-cue{position:relative;z-index:4}
+@media(max-width:700px){.field-book .field-spine{top:36px}.field-book::before{top:43px}}
