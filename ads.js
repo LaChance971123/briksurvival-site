@@ -22,9 +22,6 @@
     root.dataset.ozAdCsp = event.effectiveDirective + ':' + event.blockedURI;
   });
   load('vignette', 'https://n6wxm.com/vignette.min.js', '11941449');
-  // Push is a separate subscription format, not MultiTag or an inline banner.
-  // Offer it on browsing hubs, rather than repeating it on each article.
-  if (['/library', '/preparedness', '/topics', '/resources', '/about'].includes(path)) {
-    load('push', 'https://5gvci.com/act/files/tag.min.js?z=11941494');
-  }
+  // The separate push-subscription prompt is disabled. Leave the supplied root
+  // worker and existing browser permissions unchanged; they are not offline caches.
 })();

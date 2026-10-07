@@ -13,4 +13,4 @@ The aggregate public build covers 170 pages, internal links and public asset bou
 Rendered review and exact release evidence are recorded in PR #13. Physical mobile testing and independent clinical certification are not claimed. Existing instructions are retained; added links distinguish pediatric CPR and hands-only fallback limitations.
 
 ## Advertising
-Advertising decisions follow the owner's latest explicit instruction. No blanket ad removal is part of this visual redesign. The vignette and separate push format are distinct; provider advertising is not guidance or endorsement.
+The owner confirmed removal of the push-notification prompt (zone 11941494) while preserving vignette 11941449 and its existing route eligibility. Existing browser permissions/subscriptions are not silently revoked. The known third-party vignette creative risk remains; provider advertising is not guidance or endorsement.

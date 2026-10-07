@@ -9,21 +9,25 @@ function fixture(path) {
 }
 for(const p of ['/','/index.html','/index','/indexv3.html','/search/','/search/index.html','/emergencies/','/emergencies/tornado/','/emergencies/cpr/index.html','/emergencies/armed-conflict/','/emergencies/returning-home/','/privacy/','/contact/','/contact/index.html','/thanks/','/toolkits/','/toolkits/complete-toolkit/','/offline/','/retired-downloads.html','/unknown','/planner/','/planner/app/','/planner/app/index.html']) assert.equal(fixture(p).scripts.length,0,p);
 for(const p of ['/library/','/library/index.html','/library/conflict/','/preparedness/go-bag/','/preparedness/','/guides/','/guides/water-purification/index.html','/topics/','/resources/','/about/','/emergencies/disaster-scams/','/emergencies/verify-information/index.html']) {
- const x=fixture(p),base=p.replace(/\/index\.html$/,'').replace(/\/$/,'');
- const hub=['/library','/preparedness','/topics','/resources','/about'].includes(base);
- assert.equal(x.scripts.length,hub?2:1,p);
+ const x=fixture(p);
+ assert.equal(x.scripts.length,1,p);
  const v=x.scripts.find(s=>s.dataset.ozAd==='vignette');assert.equal(v.dataset.zone,'11941449');assert.equal(v.src,'https://n6wxm.com/vignette.min.js');assert.equal(v.async,true);
  v.events.load();assert.equal(v.dataset.ozState,'loaded');v.events.error();assert.equal(v.dataset.ozState,'error');
- if(hub){const push=x.scripts.find(s=>s.dataset.ozAd==='push');assert.equal(push.src,'https://5gvci.com/act/files/tag.min.js?z=11941494');assert.equal(push.dataset.cfasync,'false');}
- x.rerun();assert.equal(x.scripts.length,hub?2:1,'No duplicate formats');
+ assert(!x.scripts.some(s=>s.dataset.ozAd==='push'),'Push-subscription prompt is disabled');
+ x.rerun();assert.equal(x.scripts.length,1,'No duplicate formats');
  x.events.securitypolicyviolation({effectiveDirective:'script-src-elem',blockedURI:'inline'});assert.equal(x.root.dataset.ozAdCsp,'script-src-elem:inline');
 }
 assert(!/oz-focus|oz-ad-start|Continue with ads|ad-stop-button/.test(code));
 assert(!fs.readFileSync('app.js','utf8').includes('n6wxm'));
-assert(fs.readFileSync('scripts/refine_site.py','utf8').includes('/ads.js?v=oz8" async'));
+assert(!/11941494|5gvci|tag\.min\.js/.test(code),'Disabled push tag must not be initialized');
+assert(fs.readFileSync('scripts/refine_site.py','utf8').includes('/ads.js?v=oz9" async'));
 assert.equal(fs.readFileSync('dist/ads.js','utf8'),code,'Published ad loader must match the verified policy');
 assert(fs.readFileSync('sw.js','utf8').includes('11941494'));
-console.log('PASS: early vignette coverage, secondary push hubs, critical-page exclusions, no duplicate formats, delivery diagnostics.');
+const privacy=fs.readFileSync('dist/privacy/index.html','utf8');
+assert(privacy.includes('The separate push-subscription prompt has been disabled.'));
+assert(privacy.includes('Previously granted notification permissions are not automatically revoked.'));
+assert(!privacy.includes('browsing hubs also load the push-subscription zone'));
+console.log('PASS: vignette coverage preserved, push prompt disabled, prior permissions retained, critical-page exclusions, no duplicate formats, delivery diagnostics.');
 
 const policies=JSON.parse(fs.readFileSync('config/security-policy.json','utf8'));
 assert(!policies.default.includes("script-src-elem 'self' https: 'unsafe-inline'"));
