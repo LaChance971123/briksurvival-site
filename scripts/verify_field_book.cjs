@@ -1,0 +1,22 @@
+const assert=require('node:assert/strict');const {createBook,clamp,swipe}=require('../field-book.js');
+class E{
+ constructor(data={}){this.dataset=data;this.attrs={};this.events={};this.hidden=false;this.disabled=false;this.inert=false;this.style={removeProperty:()=>{}};this.set=new Set();this.classList={add:(x)=>this.set.add(x),remove:(x)=>this.set.delete(x),toggle:(x,on)=>on?this.set.add(x):this.set.delete(x)};this.children=[];}
+ setAttribute(k,v){this.attrs[k]=v}getAttribute(k){return this.attrs[k]??null}removeAttribute(k){delete this.attrs[k]}hasAttribute(k){return k in this.attrs}
+ addEventListener(k,f){this.events[k]=f}contains(el){return el===this||this.children.includes(el)}closest(){return this.interactive?this:null}focus(){this.ownerDocument.activeElement=this}querySelectorAll(){return this.children}
+ fire(k,extra={}){const e={target:this,preventDefault(){this.prevented=true},...extra};this.events[k]?.(e);return e}
+ animate(){const a={cancelled:false,cancel(){this.cancelled=true}};this.animations??=[];this.animations.push(a);return a}
+}
+function fixture(reduced=false){const doc={activeElement:null},root=new E(),pages=Array.from({length:5},(_,i)=>new E({title:'Guide '+i})),dots=pages.map((_,i)=>new E({bookGo:String(i)}));const prev=new E(),next=new E(),controls=new E(),count=new E(),status=new E(),hint=new E();hint.id='hint';let change;const win={matchMedia:()=>({matches:reduced,addEventListener:(k,f)=>change=f}),setTimeout:()=>1,clearTimeout:()=>{},addEventListener:(k,f)=>win[k]=f};
+ const map={'[data-book-prev]':prev,'[data-book-next]':next,'[data-book-controls]':controls,'[data-book-count]':count,'[data-book-status]':status,'[data-book-hint]':hint};root.ownerDocument=doc;root.querySelector=k=>map[k];root.querySelectorAll=k=>k==='[data-book-page]'?pages:dots;root.children=[...pages,prev,next,...dots];root.setPointerCapture=id=>root.captured=id;root.hasPointerCapture=id=>root.captured===id;root.releasePointerCapture=()=>root.captured=null;
+ for(const p of pages){const link=new E();link.interactive=true;link.ownerDocument=doc;p.children=[link];p.ownerDocument=doc;}for(const e of [prev,next,...dots])e.ownerDocument=doc;
+ const api=createBook(root,win);return{api,root,pages,dots,prev,next,count,status,doc,win,change:()=>change()};}
+assert.equal(clamp(-1,5),0);assert.equal(clamp(9,5),4);assert.equal(swipe(-60,4),1);assert.equal(swipe(60,5),-1);assert.equal(swipe(12,1),0);assert.equal(swipe(80,90),0);
+let f=fixture();assert.equal(f.status.textContent,undefined);assert(f.prev.disabled);assert(f.pages.slice(1).every(p=>p.inert&&p.children[0].getAttribute('tabindex')==='-1'));
+f.next.fire('click');assert.equal(f.api.index,1);assert.match(f.status.textContent,/Page 2 of 5/);assert(f.pages[0].inert);assert(!f.pages[1].inert);assert.equal(f.pages[1].children[0].getAttribute('tabindex'),null);
+const stale=f.pages[1].animations[0].onfinish;f.api.go(4);stale?.();assert.equal(f.api.index,4);assert(f.next.disabled);assert.equal(f.dots[4].getAttribute('aria-current'),'true');f.change();assert(f.pages.every(p=>!p.set.has('is-leaving')));
+f.root.fire('keydown',{key:'Home'});assert.equal(f.api.index,0);f.root.fire('keydown',{key:'ArrowRight',ctrlKey:true});assert.equal(f.api.index,0);f.root.fire('keydown',{key:'ArrowRight'});assert.equal(f.api.index,1);
+function gesture(dx,dy,cancel=false,target=f.pages[f.api.index]){f.root.fire('pointerdown',{target,pointerId:1,clientX:150,clientY:100,pointerType:'touch',isPrimary:true});const move=f.root.fire('pointermove',{target,pointerId:1,clientX:150+dx,clientY:100+dy,cancelable:true});f.root.fire(cancel?'pointercancel':'pointerup',{target,pointerId:1,clientX:150+dx,clientY:100+dy});return move;}
+assert(gesture(-80,5).prevented);assert.equal(f.api.index,2);assert(!gesture(5,80).prevented);assert.equal(f.api.index,2);gesture(-80,5,true);assert.equal(f.api.index,2);gesture(-80,5,false,f.pages[2].children[0]);assert.equal(f.api.index,2);f.win.resize();assert(!f.root.set.has('is-dragging'));
+f.doc.activeElement=f.pages[2].children[0];f.api.go(3);assert.equal(f.doc.activeElement,f.root);f.doc.activeElement=f.next;f.api.go(4);assert.equal(f.doc.activeElement,f.root);
+f=fixture(true);f.api.go(1);assert(!f.pages[1].animations);assert(f.pages.every(p=>!p.set.has('is-leaving')));
+console.log('PASS: bounded book navigation, keyboard/announcements, inert focus isolation, rapid turns, reduced motion, horizontal-only swipe, link exclusion, cancel and resize.');
