@@ -143,3 +143,28 @@ if (browseType) {
     status.textContent = count + (count === 1 ? ' guide shown' : ' guides shown');
   });
 }
+
+// Progressive enhancement only: content stays visible without JS or with reduced motion.
+(() => {
+  if (typeof window.matchMedia !== 'function') return;
+  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (motion.matches || !('IntersectionObserver' in window)) return;
+  const sections = [...document.querySelectorAll('.home-common,.home-toolkits,.home-start,.home-encyclopedia,.home-planner,.home-mission,.home-clipjar')];
+  const observer = new IntersectionObserver(entries => {
+    for (const entry of entries) if (entry.isIntersecting) {
+      entry.target.classList.add('oz-revealed');
+      observer.unobserve(entry.target);
+    }
+  }, { threshold: 0.04, rootMargin: '0px 0px 32px 0px' });
+  for (const section of sections) {
+    section.classList.add('oz-reveal-ready');
+    observer.observe(section);
+  }
+  // Keyboard navigation never lands in visually hidden content.
+  for (const section of sections) section.addEventListener('focusin', () => {
+    section.classList.add('oz-revealed'); observer.unobserve(section);
+  });
+  motion.addEventListener('change', e => {
+    if (e.matches) { sections.forEach(s => s.classList.add('oz-revealed')); observer.disconnect(); }
+  });
+})();

@@ -5,7 +5,8 @@ from toolkit_catalog import load_catalog
 R=Path(__file__).resolve().parents[1];p=html.fromstring((R/'dist/index.html').read_text())
 assert len(p.xpath('//h1'))==1
 hero=p.xpath('//section[contains(@class,"home-hero")]')[0]
-assert hero[0].get('class')=='hero-urgent', 'Immediate actions precede the hero'
+assert hero[0].get('class')=='home-hero-stage', 'The hero leads; topics follow it'
+assert list(hero).index(p.xpath('//*[@class="hero-urgent"]')[0])>0
 assert p.xpath('//*[@class="home-hero-intro"]//*[@id="emergency-search"]'), 'Search stays in primary hero column'
 assert len(p.xpath('//input[@type="search"]'))==1
 assert p.xpath('//*[@id="emergency-search"]/@aria-controls')==['home-search-results']

@@ -325,3 +325,61 @@ html{scroll-padding-top:94px}
  .guide-heading h1{max-width:none}.guide-section[id],.quick-answer[id],.home-page [id]{scroll-margin-top:85px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.home-situation:hover,.home-kit-card:hover .home-kit-preview img{transform:none}}
+/* Keep footer navigation inside phone-width viewports and enlarged text. */
+@media(max-width:700px){.footer-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 20px}.footer-nav>div{min-width:0}.footer-nav a{overflow-wrap:anywhere}}
+
+/* Signature editorial pass: the hero leads, supporting actions follow. */
+.home-hero{padding-block:52px 36px}
+.home-hero-stage{align-items:center;gap:clamp(40px,6vw,88px);margin-bottom:28px}
+.home-hero-intro .kicker{font-size:11px;letter-spacing:.15em;margin-bottom:22px}
+.home-hero h1{font-size:clamp(60px,6.8vw,94px);line-height:.99;letter-spacing:-.065em;margin:0 0 27px}
+.home-hero h1 span{color:#d7d1c4}
+.home-hero h1 em{font-style:normal;color:#f47b51;display:inline-block}
+.home-hero-intro .home-lede{max-width:550px;font-size:17px;line-height:1.75!important}
+.home-hero-promise{letter-spacing:.01em}
+.home-hero .home-finder{margin-top:27px;border-radius:8px;box-shadow:0 8px 24px #0002;position:relative}
+.home-hero .home-finder:focus-within{box-shadow:0 0 0 2px #ff946d,0 8px 24px #0003}
+.home-readiness{padding:24px 28px 20px;border:1px solid #454c4d;border-top:3px solid var(--orange);background:#121719;box-shadow:12px 12px 0 #0e1214,12px 12px 0 1px #2d3436;border-radius:8px}
+.readiness-brand{margin-bottom:22px;gap:13px}.readiness-brand img{width:46px;height:46px}.readiness-brand>span{font-size:14px;letter-spacing:.035em}.readiness-brand small{font-size:9px;letter-spacing:.08em}
+.home-readiness .readiness-title{font-size:clamp(30px,3.2vw,42px);line-height:1.06;letter-spacing:-.045em;margin:0 0 22px;color:#e9e4da}
+.readiness-stats{display:flex;gap:28px;margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid #3b4243}
+.readiness-stats>span{font:400 9px/1.5 var(--mono);letter-spacing:.06em;color:#9fa9a5}
+.readiness-stats b{display:block;color:#f2eee6;font:600 25px/1.2 var(--display);letter-spacing:-.045em;margin-bottom:3px}
+.home-readiness>a{border-top:0;border-bottom:1px solid #303739;padding:16px 0;grid-template-columns:24px minmax(0,1fr) 20px}
+.home-readiness>a:last-of-type{border-bottom:0}.home-readiness>a strong{font-size:16px}.home-readiness a div>span{font-size:12px}.home-readiness>p{border-top:1px solid #3b4243;margin-top:12px;padding-top:15px;font-size:9px}
+.home-hero .hero-urgent{margin:0 0 22px;padding:12px 0;border:0;border-block:1px solid #32393a;background:transparent;border-radius:0;gap:8px}
+.home-hero .hero-urgent>span{font-size:12px;color:#bfc6c1}
+.home-hero .hero-urgent>span::before{content:none}
+.home-hero .hero-urgent a{background:#171c1e;border-color:#454d4f;font-size:12px;padding-inline:14px}
+.home-hero .hero-urgent a:hover{background:#29211b;border-color:#f78d66}
+.home-hero-actions .button{min-height:48px;padding-inline:22px}
+.button-primary{box-shadow:0 3px 0 #8c3216;transition:background .2s,transform .2s,box-shadow .2s}
+.button-primary:hover{transform:translateY(-2px);box-shadow:0 5px 0 #8c3216}
+.button-primary:active{transform:translateY(1px);box-shadow:0 1px 0 #8c3216}
+.button>span{transition:transform .2s}.button:hover>span{transform:translateX(4px)}
+.home-hero-actions .button-outline:hover>span{transform:translateY(3px)}
+.home-situation{overflow:hidden}.home-situation::after{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--orange);transform:scaleY(0);transform-origin:bottom;transition:transform .22s}
+.home-situation:hover::after,.home-situation:focus-visible::after{transform:scaleY(1)}
+.home-situation:hover>b{transform:translate(2px,-2px)}.home-situation>b{transition:transform .2s}
+.home-subject-grid>a{position:relative;overflow:hidden}.home-subject-grid>a:hover{box-shadow:inset 0 -2px var(--orange)}
+.home-kit-card{transition:border-color .2s,box-shadow .2s}.home-kit-card:hover{box-shadow:0 12px 28px #0003}
+.home-start-grid>li{position:relative}.home-start-grid>li::before{content:'';position:absolute;top:-1px;left:0;width:34px;height:2px;background:var(--orange)}
+.home-page .text-link{transition:color .18s,border-color .18s}.home-page .text-link:hover{color:#ffad8c;border-color:#ffad8c}
+@media(prefers-reduced-motion:no-preference){
+ @keyframes oz-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+ .home-hero-intro{animation:oz-arrive .55s cubic-bezier(.2,.7,.2,1) both}
+ .home-readiness{animation:oz-arrive .65s .08s cubic-bezier(.2,.7,.2,1) both}
+ .home-hero .hero-urgent{animation:oz-arrive .5s .12s cubic-bezier(.2,.7,.2,1) both}
+ .oz-reveal-ready{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s cubic-bezier(.2,.7,.2,1)}
+ .oz-reveal-ready.oz-revealed{opacity:1;transform:none}
+}
+@media(max-width:1000px){.home-readiness{padding:22px}.home-readiness .readiness-title{font-size:34px}.readiness-stats{gap:20px}.home-hero h1{font-size:clamp(52px,6.7vw,74px)}}
+@media(max-width:700px){
+ .home-hero{padding-top:34px;padding-bottom:28px}.home-hero-stage{margin-bottom:22px}.home-hero-intro .kicker{font-size:10px;letter-spacing:.1em;margin-bottom:18px}
+ .home-hero h1{font-size:clamp(46px,12vw,72px);line-height:1.02;letter-spacing:-.06em;margin:0 0 22px}.home-hero h1 span{display:inline}
+ .home-hero-intro .home-lede{font-size:16px;line-height:1.7!important}.home-hero .home-finder{margin-top:23px}
+ .home-hero .hero-urgent{padding:14px 0;margin-bottom:20px;gap:7px}.home-hero .hero-urgent>span{padding:0 0 3px;font-size:12px}.home-hero .hero-urgent a{min-height:44px;padding:8px 10px;font-size:12px}
+ .home-hero-actions .button{padding:11px 9px;font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){.oz-reveal-ready{opacity:1;transform:none}.button:hover,.button:active,.button:hover>span,.home-situation:hover>b{transform:none}.button-primary:hover{box-shadow:0 3px 0 #8c3216}}
+@media print{.oz-reveal-ready{opacity:1!important;transform:none!important}}
