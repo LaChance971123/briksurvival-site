@@ -532,7 +532,7 @@ html{scroll-padding-top:94px}
 @media(max-width:700px){.field-book .field-spine{top:36px}.field-book::before{top:43px}}
 /* Mobile edition: a full portrait page, with room to read. */
 @media(max-width:700px){
- .field-book-stack{aspect-ratio:2 / 3;min-block-size:660px}.field-book .field-sheet{min-block-size:660px;padding:22px 22px 20px}
+ .field-book-stack{min-inline-size:0;min-block-size:660px}.field-book .field-sheet{min-block-size:660px;padding:22px 22px 20px}
  .field-book .field-sheet h2{font-size:clamp(38px,10vw,48px);line-height:1.05;margin:25px 0 17px}.field-book .field-sheet-deck{font-size:14px!important;line-height:1.6!important;margin-bottom:24px}
  .field-book .field-answer-label{padding:12px 10px;font-size:9px}.field-book .field-preview-steps li{padding-block:18px;gap:10px}.field-book .field-preview-steps h3{font-size:15px;line-height:1.4}.field-book .field-preview-steps p{font-size:13px!important;line-height:1.65!important}.field-book .field-read-link{min-height:54px;margin-bottom:12px}.field-book .field-preview-note{font-size:11px!important}
 }
