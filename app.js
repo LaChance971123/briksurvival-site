@@ -121,8 +121,6 @@ if(thanks){const type=new URLSearchParams(location.search).get('request');if(typ
 (() => {
   const guide = document.querySelector('.guide-page');
   if (!guide) return;
-  const status = guide.querySelector('[data-guide-status]');
-  const announce = text => { if (status) status.textContent = text; };
   const toc = guide.querySelector('.guide-toc');
   const links = [...guide.querySelectorAll('.guide-jumps a[href^="#"],.rail-panel a[href^="#"]')];
   const sections = [...guide.querySelectorAll('.quick-answer[id],.guide-section[id]')];
@@ -159,33 +157,6 @@ if(thanks){const type=new URLSearchParams(location.search).get('request');if(typ
       if (first) markCurrent(first.id);
     }, {rootMargin: '-105px 0px -60% 0px', threshold: 0});
     sections.forEach(section => observer.observe(section));
-  }
-  if (navigator.clipboard?.writeText) {
-    for (const section of sections) {
-      const heading = section.querySelector('h2');
-      if (!heading) continue;
-      const label = heading.textContent.trim().replace(/\.$/, '');
-      const button = document.createElement('button');
-      button.type = 'button'; button.className = 'section-copy-link';
-      button.textContent = 'Copy link';
-      button.setAttribute('aria-label', 'Copy link to ' + label);
-      // A separate control keeps the heading name concise for screen readers.
-      const headingRow = document.createElement('div');
-      headingRow.className = 'guide-section-heading';
-      heading.replaceWith(headingRow); headingRow.append(heading, button);
-      let reset;
-      button.addEventListener('click', async () => {
-        clearTimeout(reset);
-        try {
-          await navigator.clipboard.writeText(location.origin + location.pathname + '#' + section.id);
-          button.textContent = 'Copied'; announce('Link to ' + label + ' copied.');
-        } catch {
-          button.textContent = 'Copy failed';
-          announce('The link could not be copied. Open this section from the contents and copy your browser address.');
-        }
-        reset = setTimeout(() => { button.textContent = 'Copy link'; }, 2500);
-      });
-    }
   }
   const print = guide.querySelector('[data-print-guide]');
   if (print && typeof window.print === 'function') {

@@ -10,28 +10,25 @@ function element(props = {}) {
     addEventListener(name, fn) { this.events[name] = fn; },
     setAttribute(name, value) { this.attrs[name] = value; },
     removeAttribute(name) { delete this.attrs[name]; },
-    append(...items) { this.children.push(...items); },
-    replaceWith(replacement) { this.replacement = replacement; },
     focus(options) { this.focused = options; }
   };
 }
-function guideFixture({clipboard = true, failure = false} = {}) {
-  const status = element(), print = element(), toc = element({open: true}), start = element({hash: '#do-now'});
+function guideFixture() {
+  const print = element(), toc = element({open: true}), start = element({hash: '#do-now'});
   const links = ['quick-answer', 'do-now', 'household'].map(id => element({hash: '#' + id}));
   const sections = links.map(link => {
     const heading = element({textContent: link.hash.slice(1) + '.'});
     return element({id: link.hash.slice(1), heading, querySelector: () => heading});
   });
-  const details = [element(), element({open: true})], copied = [], events = {};
+  const details = [element(), element({open: true})], events = {};
   toc.contains = link => links.includes(link);
-  const guide = {querySelector: selector => ({'[data-guide-status]': status, '[data-print-guide]': print, '.guide-toc': toc})[selector],
+  const guide = {querySelector: selector => ({'[data-print-guide]': print, '.guide-toc': toc})[selector],
     querySelectorAll: selector => selector.includes('.quick-answer') ? sections : selector === '.guide-start-link' ? [start] : selector.includes(':not([open])') ? details.filter(detail => !detail.open) : links};
-  const document = {querySelector: () => guide, createElement: () => element(), getElementById: id => sections.find(section => section.id === id)};
+  const document = {querySelector: () => guide, createElement: () => { throw Error('Guide headings must remain plain; no section controls'); }, getElementById: id => sections.find(section => section.id === id)};
   const window = {addEventListener: (name, fn) => { events[name] = fn; }, print: () => { events.beforeprint(); events.beforeprint(); }};
-  const navigator = clipboard ? {clipboard: {writeText: async text => { if (failure) throw Error('denied'); copied.push(text); }}} : {};
   const location = {origin: 'https://ospreyzero.com', pathname: '/emergencies/power-outage/', hash: '#household'};
-  vm.runInNewContext(guideCode, {document, window, navigator, location, setTimeout: () => 1, clearTimeout() {}});
-  return {sections, links, toc, start, print, details, events, copied, status};
+  vm.runInNewContext(guideCode, {document, window, location});
+  return {sections, links, toc, start, print, details, events};
 }
 function browseFixture({state = null, blocked = false, wide = false} = {}) {
   const cards = ['Emergency guide', 'Preparedness guide'].map(type => element({hidden: false, dataset: {guideType: type}}));
@@ -44,8 +41,10 @@ function browseFixture({state = null, blocked = false, wide = false} = {}) {
   vm.runInNewContext(browseCode, {document, window, history, location: {pathname: '/library/utilities/'}});
   return {cards, groups, subject, filter, status, events, media, history};
 }
-(async () => {
-  let g = guideFixture();
+(() => {
+  const g = guideFixture();
+  assert.deepEqual(g.sections.map(section => section.id), ['quick-answer', 'do-now', 'household']);
+  assert.deepEqual(g.sections.map(section => section.heading.textContent), ['quick-answer.', 'do-now.', 'household.']);
   assert.equal(g.links[2].attrs['aria-current'], 'location');
   let prevented = false;
   g.links[1].events.click({preventDefault() { prevented = true; }});
@@ -53,15 +52,9 @@ function browseFixture({state = null, blocked = false, wide = false} = {}) {
   assert.equal(g.toc.open, false); assert.equal(g.sections[1].tabIndex, -1); assert(g.sections[1].focused.preventScroll);
   assert.equal(g.links[1].attrs['aria-current'], 'location'); assert.equal(g.links[2].attrs['aria-current'], undefined);
   g.sections[1].focused = null; g.start.events.click({ctrlKey: true}); assert.equal(g.sections[1].focused, null);
-  const copy = g.sections[1].heading.replacement.children[1];
-  assert.equal(copy.attrs['aria-label'], 'Copy link to do-now');
-  await copy.events.click();
-  assert.equal(g.copied[0], 'https://ospreyzero.com/emergencies/power-outage/#do-now'); assert.equal(copy.textContent, 'Copied');
   assert.equal(g.print.hidden, false); g.print.events.click(); assert(g.details.every(detail => detail.open));
   g.events.afterprint(); assert.equal(g.details[0].open, false); assert.equal(g.details[1].open, true);
-  g = guideFixture({failure: true}); await g.sections[0].heading.replacement.children[1].events.click();
-  assert.match(g.status.textContent, /could not be copied/);
-  g = guideFixture({clipboard: false}); assert.equal(g.sections[0].heading.replacement, undefined); g.start.events.click({}); assert(g.sections[1].focused);
+  g.start.events.click({}); assert(g.sections[1].focused);
 
   let b = browseFixture(); assert.equal(b.subject.open, false); assert.equal(b.status.textContent, '2 guides shown');
   b.groups[0].open = true; b.groups[0].events.toggle();
@@ -75,5 +68,5 @@ function browseFixture({state = null, blocked = false, wide = false} = {}) {
   b = browseFixture({blocked: true, wide: true}); assert.equal(b.subject.open, true);
   b.filter.value = 'Emergency guide'; b.filter.events.change(); assert.equal(b.cards[1].hidden, true);
   b.media.change({matches: false}); assert.equal(b.subject.open, false);
-  console.log('PASS: section jump/focus/history, copy success/failure, print disclosure restoration, browse filters/group Back state and blocked-history fallback.');
-})().catch(error => { console.error(error); process.exitCode = 1; });
+  console.log('PASS: plain section headings, section jump/focus/history, print disclosure restoration, browse filters/group Back state and blocked-history fallback.');
+})();
