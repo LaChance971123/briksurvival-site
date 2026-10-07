@@ -22,7 +22,6 @@ commands = [
     ['node', 'scripts/verify_search_privacy.cjs'],
     ['node', 'scripts/verify_search_interactions.cjs'],
     ['node', 'scripts/verify_search_return.cjs'],
-    ['node', 'scripts/verify_motion.cjs'],
     [sys.executable, 'scripts/verify_static_preview.py'],
     [sys.executable, 'scripts/verify_audit_fixes.py'],
     ['node', 'scripts/verify_ads.cjs'],

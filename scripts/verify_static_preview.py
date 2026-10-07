@@ -18,3 +18,8 @@ print('PASS: one static source-accurate preview after complete search/topic flow
 assert 'Practical guidance for emergencies and everyday preparedness.' in s
 assert not d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," home-hero-actions ")]')
 assert len(d.xpath('//*[@id="emergency-search"]'))==1
+
+assert s.index('id="encyclopedia-title"') < s.index('id="start-title"') < s.index('class="wrap home-static-sample"') < s.index('id="access-title"')
+assert 'oz-reveal-ready' not in (R/'app.js').read_text()
+assert not d.xpath('//div[@class="home-kit-preview"]')
+assert d.xpath('//a[@href="/planner/app/"]')
