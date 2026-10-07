@@ -13,10 +13,10 @@ f=lambda name,size:ImageFont.truetype(str(R/'Assets/fonts'/name),size)
 d.rectangle((60,65,140,69),fill='#F05A2A');d.text((60,100),'OSPREY',font=f('SpaceGrotesk-700.ttf',42),fill='#F2EEE6');d.text((241,100),'ZERO',font=f('SpaceGrotesk-700.ttf',42),fill='#F05A2A');d.text((60,235),'When systems fail,',font=f('SpaceGrotesk-700.ttf',75),fill='#F2EEE6');d.text((60,325),'skill remains.',font=f('SpaceGrotesk-700.ttf',75),fill='#D7D1C4');d.line((60,495,1140,495),fill='#35393D',width=2);d.text((60,530),'SKILL BEATS PANIC. EVERY TIME.',font=f('IBMPlexMono-400.ttf',21),fill='#D7D1C4');d.text((865,530),'OSPREYZERO.COM',font=f('IBMPlexMono-400.ttf',21),fill='#F05A2A');im.save(R/'Assets/oz-share.png',optimize=True)
 for p in [R/'templates/shell.html',*[R/name for name in sorted(public_pages(R))]]:
  s=p.read_text();s=re.sub(r'\s*<link[^>]*(?:fonts.googleapis.com|fonts.gstatic.com)[^>]*>','',s)
- s=re.sub(r'/(styles.css|app.js|search.js)\?v=oz\d+',lambda m:'/'+m[1]+'?v=oz19',s)
+ s=re.sub(r'/(styles.css|app.js|search.js)\?v=oz\d+',lambda m:'/'+m[1]+'?v=oz20',s)
  if p==R/'offline/index.html':
   s=re.sub(r'<script src="/ads.js[^"]*"[^>]*></script>','',s)
-  if '/app.js?' not in s:s=s.replace('</head>','<script src="/app.js?v=oz19" defer></script></head>')
+  if '/app.js?' not in s:s=s.replace('</head>','<script src="/app.js?v=oz20" defer></script></head>')
  if p==R/'404.html' and 'http-equiv="Content-Security-Policy"' not in s:
   policy=json.loads((R/'config/security-policy.json').read_text())['default']
   s=s.replace('<head>','<head><meta http-equiv="Content-Security-Policy" content="'+e(policy,quote=True)+'">')
@@ -47,7 +47,7 @@ for p in [R/'templates/shell.html',*[R/name for name in sorted(public_pages(R))]
  s=s.replace('</head>',metas+'<script type="application/ld+json">'+json.dumps(schema).replace('</','<\\/')+'</script></head>')
  p.write_text("\n".join(line.rstrip() for line in s.splitlines())+"\n")
 # Aliases appear in A-Z without hiding the canonical titles.
-p=R/'topics/index.html';s=p.read_text();aliases=sorted({(a,g['title'],g['slug'],g['content_type']) for g in G.values() for a in g['aliases']},key=lambda x:x[0].casefold())
+p=R/'topics/index.html';s=p.read_text();aliases=sorted({(a,g['title'],g['slug'],g['content_type']) for g in G.values() for a in g['aliases']},key=lambda x:(x[0].casefold(),x[1].casefold(),x[2],x[3],x[0]))
 if 'id="common-phrases"' not in s:s=s.replace('</main>','<section class="wrap az-list" id="common-phrases"><h2>Common phrases & alternate names.</h2><p>These aliases open the same full guide as the main title.</p><ul>'+''.join(f'<li><a href="/{"preparedness" if t=="Preparedness guide" else "guides" if t=="Field guide" else "emergencies"}/{slug}/">{e(a)}</a><span>{e(title)}</span></li>' for a,title,slug,t in aliases)+'</ul></section></main>');p.write_text(s)
 manifest={'name':'Osprey Zero','short_name':'Osprey Zero','id':'/','start_url':'/','scope':'/','display':'browser','background_color':'#0B0D0F','theme_color':'#0B0D0F','icons':[{'src':'/Assets/favicon-192x192.png','sizes':'192x192','type':'image/png'},{'src':'/Assets/android-chrome-512x512.png','sizes':'512x512','type':'image/png'}]};(R/'Assets/site.webmanifest').write_text(json.dumps(manifest))
 print('Polished local typography, mobile entry, metadata, aliases, review context and signup feedback.')

@@ -18,6 +18,7 @@ commands = [
     [sys.executable, 'scripts/verify_homepage.py'],
     ['node', 'scripts/verify_search.cjs'],
     ['node', 'scripts/verify_search_privacy.cjs'],
+    ['node', 'scripts/verify_search_interactions.cjs'],
     [sys.executable, 'scripts/verify_audit_fixes.py'],
     ['node', 'scripts/verify_ads.cjs'],
     ['node', 'scripts/verify_offline_retirement.cjs'],

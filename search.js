@@ -11,9 +11,13 @@
   const short=a.length<b.length?a:b,long=a.length<b.length?b:a;let i=0,j=0,miss=0;
   while(i<short.length&&j<long.length){if(short[i]===long[j]){i++;j++;}else{j++;if(++miss>1)return false;}}return true;
  };
+ function prepare(items){
+  if(!models.has(items)){const records=items.map(d=>({d,title:normalize(d.title),aliases:(d.aliases||[]).map(normalize),fields:[words(d.title),words((d.aliases||[]).join(' ')),words(d.category+' '+d.subcategory),words(d.summary+' '+d.text)]}));models.set(items,{records,vocabulary:new Set(records.flatMap(r=>r.fields.flat()))});}
+  return models.get(items);
+ }
  function rank(items,query,category='',type=''){
   const q=normalize(query),terms=[...new Set(words(q).filter(t=>!stop.has(t)))];
-  if(!models.has(items)){const records=items.map(d=>({d,title:normalize(d.title),aliases:(d.aliases||[]).map(normalize),fields:[words(d.title),words((d.aliases||[]).join(' ')),words(d.category+' '+d.subcategory),words(d.summary+' '+d.text)]}));models.set(items,{records,vocabulary:new Set(records.flatMap(r=>r.fields.flat()))});}
+  prepare(items);
   const records=models.get(items).records.filter(r=>(!category||r.d.category_id===category)&&(!type||r.d.content_type===type));
   const vocabulary=models.get(items).vocabulary;
   // Correct a typo only when the query word has no exact match anywhere.
@@ -59,7 +63,7 @@
  const results=document.querySelector('#search-results')||document.querySelector('#home-search-results');
  const status=document.querySelector('#search-status')||document.querySelector('#finder-count');
  const category=document.querySelector('#search-category'),type=document.querySelector('#search-type');
- const form=document.querySelector('#global-search-form');let data=[],ready=false,limit=30;
+ const form=document.querySelector('#global-search-form');let data=[],ready=false,limit=30,loading=null,failed=false;
  document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)&&!document.activeElement?.isContentEditable){e.preventDefault();if(input)input.focus();else location.href='/search/';}});
  if(!input||!results)return;
  const params=new URLSearchParams(location.search);if(form){
@@ -69,7 +73,15 @@
   type.value=params.get('type')||history.state?.ozSearch?.type||'';
  }
  function render(reset=true){
-  if(!ready)return;
+  // Clearing must restore browsing immediately, even while the index is loading.
+  if(!form&&!input.value.trim()){
+   results.hidden=true;results.replaceChildren();
+   document.querySelectorAll('.topic-grid,.topic-card').forEach(x=>x.hidden=false);
+   const empty=document.querySelector('#no-results');if(empty)empty.hidden=true;
+   if(status)status.textContent='SEARCH ALL TOPICS';
+   return;
+  }
+  if(!ready){if(failed)showError();else load();return;}
   if(reset)limit=30;
   const query=input.value.trim(),items=rank(data,query,category?.value||'',type?.value||'');
   if(form){const p=new URLSearchParams();if(category.value)p.set('category',category.value);if(type.value)p.set('type',type.value);history.replaceState({...history.state,ozSearch:{query,category:category.value,type:type.value}},'','/search/'+(p.size?'?'+p.toString():''));}
@@ -86,11 +98,45 @@
   }
   if(items.length>limit){const button=document.createElement('button');button.type='button';button.className='button button-outline';button.textContent='Show more results ('+(items.length-limit)+' remaining)';button.addEventListener('click',()=>{const previous=limit;limit+=30;render(false);results.querySelectorAll('a.search-result')[previous]?.focus();});results.append(button);}
  }
- let timer;input.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(render,100);});
- input.addEventListener('keydown',e=>{if(e.key==='ArrowDown'){e.preventDefault();results.querySelector('a')?.focus();}if(e.key==='Escape'){input.value='';render();}});
+ let timer;
+ function update(){clearTimeout(timer);render();}
+ input.addEventListener('input',()=>{
+  clearTimeout(timer);
+  if(!input.value.trim()){render();return;}
+  load();timer=setTimeout(render,100);
+ });
+ input.addEventListener('focus',()=>{if(!ready&&!failed)load();});
+ input.addEventListener('keydown',e=>{
+  if(e.key==='ArrowDown'){e.preventDefault();update();results.querySelector('a')?.focus();}
+  if(e.key==='Escape'){e.preventDefault();input.value='';update();}
+ });
  results.addEventListener('keydown',e=>{const links=[...results.querySelectorAll('a')],i=links.indexOf(document.activeElement);if(e.key==='ArrowDown'){e.preventDefault();links[Math.min(i+1,links.length-1)]?.focus();}if(e.key==='ArrowUp'){e.preventDefault();if(i<=0)input.focus();else links[i-1]?.focus();}if(e.key==='Escape')input.focus();});
- if(form)form.addEventListener('submit',e=>{e.preventDefault();clearTimeout(timer);render();});
- category?.addEventListener('change',render);type?.addEventListener('change',render);
- document.querySelector('#search-reset')?.addEventListener('click',()=>{category.value='';type.value='';render();input.focus();});
- function load(){if(status)status.textContent='Loading the library…';fetch('/search-index.json?v=oz19').then(r=>{if(!r.ok)throw Error('index');return r.json();}).then(d=>{data=d;ready=true;const list=document.createElement('datalist');list.id='topic-suggestions';for(const item of data.filter(x=>x.priority===10)){const option=document.createElement('option');option.value=item.title;list.append(option);}document.body.append(list);input.setAttribute('list',list.id);render();}).catch(()=>{if(status)status.textContent='Search could not load. Try again or browse all topics.';results.hidden=false;results.replaceChildren();const b=document.createElement('button');b.textContent='Retry search';b.addEventListener('click',load);const a=document.createElement('a');a.href='/library/';a.textContent='Browse all topics';results.append(b,a);});}load();
+ if(form)form.addEventListener('submit',e=>{e.preventDefault();update();});
+ category?.addEventListener('change',update);type?.addEventListener('change',update);
+ document.querySelector('#search-reset')?.addEventListener('click',()=>{category.value='';type.value='';update();input.focus();});
+ function showError(){
+  if(!form&&!input.value.trim()){render();return;}
+  if(status)status.textContent='Search could not load. Try again or browse all topics.';
+  results.hidden=false;results.replaceChildren();
+  const b=document.createElement('button');b.type='button';b.textContent='Retry search';b.addEventListener('click',()=>load());
+  const a=document.createElement('a');a.href='/library/';a.textContent='Browse all topics';results.append(b,a);
+ }
+ function load(){
+  if(ready)return loading;
+  if(form||input.value.trim()){if(status)status.textContent='Loading the library…';}
+  if(loading)return loading;
+  failed=false;results.setAttribute('aria-busy','true');
+  loading=fetch('/search-index.json?v=oz19').then(r=>{if(!r.ok)throw Error('index');return r.json();}).then(d=>{
+   // Build normalized records once after loading, not on the first keystroke.
+   prepare(d);data=d;
+   const list=document.createElement('datalist');list.id='topic-suggestions';
+   for(const item of data.filter(x=>x.priority===10)){const option=document.createElement('option');option.value=item.title;list.append(option);}
+   document.body.append(list);input.setAttribute('list',list.id);ready=true;loading=null;
+   results.setAttribute('aria-busy','false');clearTimeout(timer);render();
+  }).catch(()=>{loading=null;failed=true;results.setAttribute('aria-busy','false');showError();});
+  return loading;
+ }
+ // Dedicated search pages show the library immediately. Homepage browsing does
+ // not need the full index until the visitor focuses or types into search.
+ if(form||input.value.trim())load();
 })(typeof window!=='undefined'?window:globalThis);
