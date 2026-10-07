@@ -511,3 +511,19 @@ html{scroll-padding-top:94px}
 }
 @media(prefers-reduced-motion:reduce){.field-book,.field-book:hover{transform:none!important;animation:none!important}.book-arrow,.book-page-dots button,.book-page-dots button::after{transition:none!important}.book-arrow:active:not(:disabled){transform:none}}
 @media print{.field-book-controls,.field-book-help,.book-live-status{display:none!important}}
+
+/* Field-manual finishing pass: clear affordances and comfortable reading. */
+.book-browse-cue{display:flex;justify-content:space-between;gap:14px;margin:0 0 12px;font:400 9px/1.5 var(--mono);letter-spacing:.06em;color:#b0bdaf}.book-browse-cue>span:last-child{color:#eaaa85;white-space:nowrap}
+.field-book .field-preview-steps p{font-size:12px!important;line-height:1.6!important}
+.field-book .field-read-link{border-top:1px solid #9ba391;background:rgba(255,255,255,.16);padding-inline:10px;transition:background .18s,color .18s}.field-book .field-read-link:hover{background:#c4cdbb;color:#1b3224}
+.book-page-dots{gap:5px;margin-top:8px;padding-bottom:6px}.book-page-dots button{border:1px solid transparent;border-radius:2px;font-size:11px;min-height:44px;min-width:44px}.book-page-dots button[aria-current=true]{background:#38291f;border-color:#9f6749;color:#ffd0b4}.book-page-dots button:hover{background:#223329}.book-page-dots button::after{bottom:5px}
+.field-book-help{font-size:10px!important;line-height:1.6!important;max-width:none;text-align:center;color:#a8b7aa;min-block-size:32px}.field-book .field-preview-caption{font-size:9px;line-height:1.5}
+.book-arrow:focus-visible,.book-page-dots button:focus-visible{outline:2px solid #ffad83;outline-offset:3px}
+.rail-panel{max-height:calc(100dvh - 141px)}
+@media(max-width:700px){
+ .field-book{animation:none!important;transform:none!important}.book-browse-cue{font-size:8px;gap:8px;margin-bottom:10px;letter-spacing:0}.book-browse-cue>span:first-child{max-width:19ch}.book-browse-cue>span:last-child{align-self:center}
+ .field-book .field-sheet h2{min-block-size:0;font-size:36px;line-height:1.08;margin-top:16px}.field-book .field-preview-steps p{font-size:12px!important;line-height:1.55!important}.field-book .field-sheet-deck{font-size:13px!important;margin-bottom:15px}.field-book .field-preview-note{font-size:10px!important;line-height:1.5!important}.field-book .field-read-link{font-size:13px}.field-book-help{font-size:10px!important}.field-book .field-preview-caption{font-size:8px}.field-book .field-spine{bottom:188px}.field-book::before{bottom:180px}
+}
+@media(max-width:480px){.guide-section-heading{flex-wrap:wrap;gap:6px;margin-bottom:12px}.guide-section-heading>h2{flex-basis:100%;margin-bottom:0}.guide-section-heading .section-copy-link{margin-left:auto}.quick-answer .guide-section-heading{flex-wrap:nowrap}.quick-answer .guide-section-heading>h2{flex-basis:auto}}
+@media(prefers-reduced-motion:reduce){.field-book .field-read-link{transition:none}}
+@media print{.book-browse-cue{display:none}}
