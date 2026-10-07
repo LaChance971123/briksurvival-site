@@ -63,7 +63,7 @@
  const results=document.querySelector('#search-results')||document.querySelector('#home-search-results');
  const status=document.querySelector('#search-status')||document.querySelector('#finder-count');
  const category=document.querySelector('#search-category'),type=document.querySelector('#search-type');
- const form=document.querySelector('#global-search-form');let data=[],ready=false,limit=30,loading=null,failed=false;
+ const form=document.querySelector('#global-search-form'),pageSize=form?30:5;let data=[],ready=false,limit=pageSize,loading=null,failed=false;
  if(!input||!results)return;
  let savedSearch=null;try{savedSearch=history.state?.ozSearch||null;}catch{}
  let restorePosition=null,lastResult=null,viewVersion=0;
@@ -104,11 +104,11 @@
    return;
   }
   if(!ready){if(failed)showError();else load();return;}
-  if(reset)limit=30;
+  if(reset)limit=pageSize;
   const query=input.value.trim(),items=rank(data,query,category?.value||'',type?.value||'');
   if(form)saveState();
-  else{results.hidden=!query;document.querySelectorAll('.topic-grid,.topic-card').forEach(x=>x.hidden=Boolean(query));const empty=document.querySelector('#no-results');if(empty)empty.hidden=true;if(!query){if(status)status.textContent='SEARCH ALL TOPICS';return;}}
-  results.replaceChildren();if(status)status.textContent=items.length+' '+(items.length===1?'result':'results')+(query?' for “'+query+'”':'');
+  else{results.hidden=!query;document.querySelectorAll('.topic-grid,.topic-card').forEach(x=>x.hidden=false);const empty=document.querySelector('#no-results');if(empty)empty.hidden=true;if(!query){if(status)status.textContent='SEARCH ALL TOPICS';return;}}
+  results.replaceChildren();if(status)status.textContent=(items.length>limit?'Showing '+limit+' of ':'')+items.length+' '+(items.length===1?'result':'results')+(query?' for “'+query+'”':'');
   if(!items.length){const p=document.createElement('p');p.className='search-empty';p.textContent='No matching guidance found. Try the main hazard or symptom, clear filters, or browse by subject. Search cannot assess a medical emergency.';const link=document.createElement('a');link.href='/library/';link.textContent='Browse all topics';results.append(p,link);restoreScroll();return;}
   for(const d of items.slice(0,limit)){
    const a=document.createElement('a');a.className='search-result';a.href=d.url;
@@ -120,13 +120,13 @@
    a.addEventListener('click',()=>{lastResult=d.url;saveState();});
    results.append(a);
   }
-  if(items.length>limit){const button=document.createElement('button');button.type='button';button.className='button button-outline';button.textContent='Show more results ('+(items.length-limit)+' remaining)';button.addEventListener('click',()=>{const previous=limit;limit+=30;render(false);results.querySelectorAll('a.search-result')[previous]?.focus();});results.append(button);}
+  if(items.length>limit){const button=document.createElement('button');button.type='button';button.className='button button-outline';button.textContent='Show more results ('+(items.length-limit)+' remaining)';button.addEventListener('click',()=>{const previous=limit;limit+=pageSize;render(false);results.querySelectorAll('a.search-result')[previous]?.focus();});results.append(button);}
   restoreScroll();
  }
  let timer;
  function update(){viewVersion++;clearTimeout(timer);restorePosition=null;lastResult=null;render();}
  input.addEventListener('input',()=>{
-  viewVersion++;restorePosition=null;lastResult=null;limit=30;clearTimeout(timer);
+  viewVersion++;restorePosition=null;lastResult=null;limit=pageSize;clearTimeout(timer);
   if(!input.value.trim()){render();return;}
   load();timer=setTimeout(render,100);
  });
@@ -153,10 +153,7 @@
   failed=false;results.setAttribute('aria-busy','true');
   loading=fetch('/search-index.json?v=oz19').then(r=>{if(!r.ok)throw Error('index');return r.json();}).then(d=>{
    // Build normalized records once after loading, not on the first keystroke.
-   prepare(d);data=d;
-   const list=document.createElement('datalist');list.id='topic-suggestions';
-   for(const item of data.filter(x=>x.priority===10)){const option=document.createElement('option');option.value=item.title;list.append(option);}
-   document.body.append(list);input.setAttribute('list',list.id);ready=true;loading=null;
+   prepare(d);data=d;ready=true;loading=null;
    results.setAttribute('aria-busy','false');clearTimeout(timer);render(false);
   }).catch(()=>{loading=null;failed=true;results.setAttribute('aria-busy','false');showError();});
   return loading;
