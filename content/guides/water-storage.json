@@ -320,5 +320,11 @@
         ]
       ]
     }
+  ],
+  "contextual_links": [
+    {
+      "slug": "drought-water-plan",
+      "label": "Household drought and water-saving plan"
+    }
   ]
 }

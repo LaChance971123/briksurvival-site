@@ -4,46 +4,498 @@
   "category": "natural-hazards",
   "subcategory": "Tropical weather",
   "content_type": "Emergency guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-07",
   "aliases": [
     "cyclone",
-    "hurricane coming"
+    "hurricane coming",
+    "hurricane evacuation",
+    "tropical storm preparedness"
   ],
   "keywords": [
-    "Tropical weather"
+    "Tropical weather",
+    "evacuation zone",
+    "storm surge",
+    "flood zone map",
+    "hurricane preparation"
   ],
-  "tldr": "Check your evacuation zone and the current order. If told to evacuate, leave before conditions deteriorate. If staying outside an evacuation zone, shelter inside a sturdy building away from windows; storm surge and inland flooding can be deadly even far from the storm center.",
+  "tldr": "Check local evacuation instructions for your address. If told to leave, evacuate before wind or water makes travel unsafe. Otherwise, use a sturdy shelter away from windows and above flood risk. The forecast cone and wind category do not show every dangerous impact.",
   "steps": [
     [
-      "Check your zone",
-      "Read local evacuation and storm-surge instructions for your address, not just the forecast track."
+      "Check your location",
+      "Read the current local order and identify your evacuation zone. Visitors should check their present address, not their home address."
     ],
     [
       "Leave when directed",
-      "Use official routes to a destination outside the hazard area. Bring medications, identification, pets and phone power."
+      "Use official routes to a safer destination. Bring people, pets, medicines, identification and phone power; do not delay for belongings."
     ],
     [
-      "Shelter for wind",
-      "If the building is safe and evacuation is not required, stay in an interior room away from windows during strong winds."
+      "Shelter from wind",
+      "If evacuation is not required and the building is suitable, use a small interior room on the lowest level that is not likely to flood."
     ],
     [
-      "Watch for water",
-      "Keep out of flooded roads and basements. Follow separate flash-flood warnings and move to safer higher ground when necessary."
+      "Respond to rising water",
+      "Never enter floodwater. If trapped in a building, move higher and contact emergency services; stay out of a closed attic."
     ]
   ],
-  "next": "Expect extended outages. Store water, protect documents and charge devices before the storm. Return only after officials allow reentry.",
-  "watch": "A calm eye is not an all-clear. Do not base flood safety on the wind category.",
-  "sources": "hurricane",
+  "next": "Check the latest local instructions, confirm a safe destination and transport, then complete preparations before travel becomes dangerous. Keep monitoring separate flood warnings after the strongest winds pass.",
+  "watch": "The calm eye is not an all-clear. Wind category, the cone, and FEMA flood-zone shading cannot tell you whether a route is safe or whether your local evacuation order applies.",
+  "sources": "hurricane-full-guide",
   "shopping": [],
   "urgency": "immediate",
-  "review_status": "source-linked editorial review; not independent expert certification",
-  "without_help": "Before roads become unsafe, move out of surge-prone areas using a route and destination you have checked. If already trapped by wind or water, stay in the safest intact interior space available, with flood risk in mind. Do not travel during the calm eye.",
-  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: check your zone. Agree who will manage children, pets or mobility needs while that action happens. A calm eye is not an all-clear. Do not base flood safety on the wind category.",
-  "pack_now": "For hurricane, prioritize only items needed for the first action and the fallback: Before roads become unsafe, move out of surge-prone areas using a route and destination you have checked. If already trapped by wind or water, stay in the safest intact interior space available, with flood risk in mind. Do not travel during the calm eye. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [],
-  "faqs": [],
-  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "without_help": "If communications fail, use battery radio and the departure plan you prepared. Do not wait for an online map to load before following an evacuation order. If already trapped, stay clear of floodwater, move higher when water threatens and signal for help from a safe position; rescue may be delayed.",
+  "household": "Count everyone before leaving and at the destination. Keep children with a designated adult, pets secured for travel, and medicines and access aids with their users. Give each helper one clear task and a backup contact.",
+  "pack_now": "Take medicines, identification, essential medical and access equipment, phone power, keys, water, a light and pet supplies already within reach. Leave immediately if directed; do not detour to retrieve a complete kit.",
+  "decisions": [
+    [
+      "My evacuation zone has been ordered out. Should I wait for the next forecast?",
+      "No. Follow the current local order while travel remains safe. Forecast updates do not cancel an order."
+    ],
+    [
+      "The home is outside the evacuation zone. Is staying automatically safe?",
+      "No. Consider building strength, local flood risk, access needs and the ability to cope with outages. Arrange a safer destination early if the home is unsuitable."
+    ],
+    [
+      "My planned road is flooded. Should I follow navigation anyway?",
+      "No. Turn around without entering the water, obey closures and use current official route guidance."
+    ]
+  ],
+  "faqs": [
+    [
+      "Where is the flood-zone map?",
+      "Use the FEMA Flood Map Service Center linked above for U.S. flood-risk planning. Get evacuation-zone maps and actual orders separately from local emergency management."
+    ],
+    [
+      "Can an inland location be affected?",
+      "Yes. Tropical cyclones can bring damaging wind and rainfall flooding far inland. Check your local forecast and warnings, not only the coastal forecast."
+    ]
+  ],
+  "scope": "Civilian hurricane preparedness and response. Resources focus on U.S. systems and identified NOAA coverage, not worldwide evacuation mapping. Local orders and emergency instructions take precedence. This is source-linked editorial guidance, not a property assessment, live warning service or independent expert certification.",
+  "source_checked": "2026-10-07",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-07",
+  "sections": [
+    {
+      "heading": "Choose the right action before conditions deteriorate",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A hurricane brings several hazards that need separate decisions: wind, storm surge, rainfall flooding and sometimes tornadoes. A hurricane watch means hurricane conditions are possible; a warning means they are expected. Preparations must finish before dangerous winds arrive. Read the full local notice, including its location, issue time and instructions."
+        },
+        {
+          "type": "flow",
+          "caption": "Evacuate early, or shelter according to the hazard",
+          "items": [
+            [
+              "ORDER TO LEAVE?",
+              "Yes: use the directed evacuation route while travel is safe. Do not wait for water to appear."
+            ],
+            [
+              "NO ORDER, BUT UNSAFE HOME?",
+              "Arrange a safer building before the storm. Mobile homes and RVs are not safe shelters for tropical-storm or hurricane-force winds."
+            ],
+            [
+              "STAYING IN A SUITABLE BUILDING?",
+              "Choose an interior wind shelter above the expected flood risk; keep warnings on."
+            ],
+            [
+              "ALREADY CUT OFF?",
+              "Do not cross floodwater. Move to the safest accessible higher space if water threatens and call for help."
+            ]
+          ],
+          "note": "Read these as decision branches, not a countdown. An evacuation order overrides a plan to stay. This diagram cannot assess a building or a route."
+        },
+        {
+          "type": "callout",
+          "title": "The category is only about wind",
+          "text": "A lower wind category, a weakening storm, or a forecast track farther away does not make storm surge or rainfall flooding safe."
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service · Hurricane watches and warnings",
+          "https://www.weather.gov/safety/hurricane-ww"
+        ],
+        [
+          "American Red Cross · Hurricane preparedness",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/hurricane.html"
+        ],
+        [
+          "FEMA · Shelter-in-place for hurricanes (PDF)",
+          "https://www.fema.gov/sites/default/files/documents/fema_shelter-in-place_guidance-hurricane.pdf"
+        ],
+        [
+          "NOAA NHC · Saffir–Simpson Hurricane Wind Scale",
+          "https://www.nhc.noaa.gov/aboutsshws.php"
+        ]
+      ]
+    },
+    {
+      "heading": "Open the right map for the question",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use your exact address and the correct jurisdiction. An evacuation zone is a locally defined area; an evacuation order tells you whether to leave now. Check both on your city, county, parish, tribal or territorial emergency-management website. Zone letters are local labels and cannot be transferred between jurisdictions."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "FEMA · Flood Map Service Center",
+              "url": "https://msc.fema.gov/portal/home",
+              "description": "U.S. flood-zone lookup for insurance and long-term planning. Enter an address or coordinates. This is NOT an evacuation-zone map and does not show current flooding."
+            },
+            {
+              "label": "NOAA National Hurricane Center · Current tropical cyclones",
+              "url": "https://www.nhc.noaa.gov/",
+              "description": "Current Atlantic and eastern North Pacific tropical-cyclone advisories, with Central Pacific information linked. Open the named storm and read its latest Key Messages, warnings and hazards."
+            },
+            {
+              "label": "NOAA NHC · Forecast graphics explained",
+              "url": "https://www.nhc.noaa.gov/aboutnhcgraphics.shtml",
+              "description": "Explains NHC cone, wind-arrival and storm-surge products. The cone concerns the storm center; hazardous weather extends outside it. Check each graphic’s issue time."
+            },
+            {
+              "label": "NOAA NHC · National Storm Surge Risk Maps",
+              "url": "https://www.nhc.noaa.gov/nationalsurge/",
+              "description": "Community-level storm-surge planning for the coasts and territories listed on the site. Coverage is not worldwide, and this map must not replace local evacuation-zone maps."
+            },
+            {
+              "label": "National Weather Service · Local forecasts and active alerts",
+              "url": "https://www.weather.gov/",
+              "description": "U.S. local forecasts, warnings and Hurricane Local Statements. Search your location for expected local wind, flood and other impacts."
+            },
+            {
+              "label": "FEMA · State and territory resources",
+              "url": "https://www.fema.gov/locations",
+              "description": "FEMA’s U.S. state and territory resource finder is a starting point for reaching your emergency-management authority. Then use the local authority’s website for its evacuation map and current orders."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Map colors are not a departure instruction",
+          "text": "FEMA flood zones, NHC surge forecasts and local evacuation zones answer different questions. A blank map area is not proof of safety. For places outside U.S. coverage, use the national weather service and local disaster authority."
+        }
+      ],
+      "references": [
+        [
+          "FEMA · Flood Map Service Center",
+          "https://msc.fema.gov/portal/home"
+        ],
+        [
+          "NOAA NHC · Forecast graphics explained",
+          "https://www.nhc.noaa.gov/aboutnhcgraphics.shtml"
+        ],
+        [
+          "NOAA NHC · National Storm Surge Risk Maps",
+          "https://www.nhc.noaa.gov/nationalsurge/"
+        ],
+        [
+          "National Weather Service · Local forecasts and active alerts",
+          "https://www.weather.gov/"
+        ],
+        [
+          "FEMA · State and territory resources",
+          "https://www.fema.gov/locations"
+        ]
+      ]
+    },
+    {
+      "heading": "Write a short departure plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before a storm is close, decide where you will go, how you will get there and who needs assistance. Confirm the destination is outside the relevant flood and evacuation area and suitable for wind protection. A nearby safe destination may be more practical than a long trip. Keep a second option in case the first is unavailable."
+        },
+        {
+          "type": "table",
+          "caption": "Osprey planning worksheet: fill this in before departure",
+          "columns": [
+            "Decision",
+            "Write down"
+          ],
+          "rows": [
+            [
+              "Destination",
+              "Address, contact, whether they expect you, and a backup location."
+            ],
+            [
+              "Route",
+              "Official route, an alternative permitted by officials, and where closures are reported."
+            ],
+            [
+              "Transport",
+              "Driver or pickup provider, seats, mobility-device space and agreed pickup time."
+            ],
+            [
+              "Household",
+              "Who collects each person, who carries medicines, and who handles pets."
+            ],
+            [
+              "Communication",
+              "One contact outside the affected area, a check-in time, and paper phone numbers."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Treat unknown answers as work to finish now. “We will find somewhere” is not a usable destination. If you need public evacuation transport, contact local officials before services stop; ask where to wait and what equipment can travel with you. Recheck departure instructions when the storm changes."
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service · Before a hurricane",
+          "https://www.weather.gov/safety/hurricane-plan"
+        ],
+        [
+          "CDC · Preparing for hurricanes",
+          "https://www.cdc.gov/hurricanes/safety/index.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Prepare supplies without delaying departure",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Gather medicines, medical information, identification, keys, cash, charging cables, a power bank, a flashlight and a battery-powered radio. Include essentials for children and pets.",
+            "Fuel or charge your vehicle while conditions are safe. Download or print the route and essential contacts before internet service becomes unreliable.",
+            "Complete shutters and other planned home protection early. Do not climb, board windows or retrieve outdoor objects once wind or flooding makes the work unsafe."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For stored water, CDC recommends at least one U.S. gallon per person per day for three days, and a two-week supply where feasible. Allow more for heat, illness and pets. Use suitable clean food-grade containers; do not reuse chemical containers. Store drinking water separately from water intended only for washing."
+        },
+        {
+          "type": "callout",
+          "title": "Osprey packing check",
+          "text": "Place the bag by the exit and have the person who will carry it lift it. Keep essential medicine and communication aids immediately accessible. A large supply pile that cannot fit in your transport is not a departure plan."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "CDC · Create an emergency water supply",
+              "url": "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html",
+              "description": "Practical U.S. guidance on safe water containers, quantities and storage. Build supplies before the emergency; packing must not delay an evacuation."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CDC · Preparing for hurricanes",
+          "https://www.cdc.gov/hurricanes/safety/index.html"
+        ],
+        [
+          "CDC · Create an emergency water supply",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ]
+      ]
+    },
+    {
+      "heading": "If staying, resolve wind shelter and flood risk together",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For wind, use a small windowless interior space in a sturdy building, on the lowest level that is not likely to flood. Stay away from windows and glass doors. A basement that could fill with water is not a suitable hurricane refuge. In an apartment or multistory building, ask management for the building’s designated shelter and evacuation arrangements beforehand."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Keep your shoes, light, radio, phone and essential supplies together in the shelter space.",
+            "Continue listening for separate flood and tornado warnings. Follow the warning for the hazard affecting your location.",
+            "Stay inside during the calm eye. Strong winds can return suddenly from a different direction."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If water rises dangerously and you cannot leave safely, move to a higher level and call emergency services. Do not climb into a closed attic. Higher-floor shelter is a last-resort response to rising water, not a substitute for leaving a storm-surge evacuation area when directed."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Storm surge: the immediate coastal-water response",
+              "url": "/emergencies/storm-surge/"
+            },
+            {
+              "label": "Flash flood: act on rapidly rising water",
+              "url": "/emergencies/flash-flood/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service · When a hurricane threatens",
+          "https://www.weather.gov/safety/hurricane-action"
+        ],
+        [
+          "American Red Cross · Hurricane preparedness",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/hurricane.html"
+        ],
+        [
+          "FEMA · Shelter-in-place for hurricanes (PDF)",
+          "https://www.fema.gov/sites/default/files/documents/fema_shelter-in-place_guidance-hurricane.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Plan around access, medical and caregiving needs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Ask each person what assistance works for them. Confirm accessible transport and shelter arrangements early with local services, rather than assuming a ride or a space will appear. Tell shelter staff about access and health needs on arrival. Keep a concise care summary, medicines and assistive equipment with the person who uses them."
+        },
+        {
+          "type": "paragraph",
+          "text": "An assistance registry is not a rescue guarantee. CDC warns that responders and medical services may be unable to reach people promptly. Build a personal backup plan with caregivers or trusted contacts."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Osprey planning prompt: if your usual caregiver cannot come, who knows the essential routine and can help?",
+            "Osprey planning prompt: if the lift or medical-device power fails, what destination and transport have you already arranged?",
+            "Osprey planning prompt: does everyone receive the warning in an accessible language or format, and can they repeat the first action?"
+          ]
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "CDC · Sheltering and evacuating",
+              "url": "https://www.cdc.gov/disability-emergency-preparedness/people-with-disabilities/sheltering-and-evacuating.html",
+              "description": "CDC guidance on accessible evacuation, communicating needs at shelters, and service animals."
+            },
+            {
+              "label": "American Red Cross · Find an open shelter",
+              "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+              "description": "U.S. Red Cross open-shelter information. Check the current listing and local announcements before traveling; locations can change."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CDC · Sheltering and evacuating",
+          "https://www.cdc.gov/disability-emergency-preparedness/people-with-disabilities/sheltering-and-evacuating.html"
+        ],
+        [
+          "CDC · Emergency preparedness for people with disabilities",
+          "https://www.cdc.gov/disability-emergency-preparedness/people-with-disabilities/index.html"
+        ],
+        [
+          "American Red Cross · Find an open shelter",
+          "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Handle outages without creating a second emergency",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use battery-powered lighting. Never operate a portable generator indoors, in a garage or in another enclosed space, even with doors open. Keep it outdoors at least 20 feet from doors, windows and vents, with a working battery-powered or battery-backup carbon-monoxide alarm inside. Never run a grill or camp stove indoors."
+        },
+        {
+          "type": "paragraph",
+          "text": "If a carbon-monoxide alarm sounds, get everyone into fresh air and call emergency services. Avoid all fallen wires and wet electrical equipment. Do not enter water to reach a breaker or attempt to restart flood-damaged equipment."
+        },
+        {
+          "type": "callout",
+          "title": "Osprey outage log",
+          "text": "Write down when power was lost, which medical or communication devices remain powered, and the next action if backup power is running low. Keep a separate note of the water utility’s current advisory. Do not assume a restored light means the water supply or every appliance is safe."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Generator placement and operation",
+              "url": "/emergencies/generator-safety/"
+            },
+            {
+              "label": "Food after a power outage",
+              "url": "/emergencies/food-safety-outage/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CDC · Power-outage safety",
+          "https://www.cdc.gov/natural-disasters/response/what-to-do-protect-yourself-during-a-power-outage.html"
+        ],
+        [
+          "CDC · Electrical hazards after a disaster",
+          "https://www.cdc.gov/natural-disasters/response/what-to-do-protect-yourself-from-electrical-hazards.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Return only when the route and building are cleared",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An improving forecast does not mean you can return. Wait for official reentry instructions and continue checking flood warnings and road closures. Do not enter damaged buildings, buildings surrounded by floodwater, or places where you smell gas. Keep away from fallen wires and weakened trees or structures."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Use official updates to establish which roads and neighborhoods have reopened. Avoid unnecessary travel through damaged areas.",
+            "Follow the local water advisory exactly. Do not eat food contaminated by floodwater; check outage guidance for refrigerated food.",
+            "If safe, record damage from a safe position and contact your insurer. Leave electrical, structural and other hazardous repairs to qualified people."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Osprey recovery checklist: record your temporary address, who still needs a check-in, urgent medication or equipment needs, and the next official update time. Keep receipts and a dated damage record. Separate today’s essentials from repairs that can wait, and stop any task if the building, weather or your health becomes unsafe."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Flood cleanup: safe reentry and limits",
+              "url": "/emergencies/flood-cleanup/"
+            },
+            {
+              "label": "Record damage and claim documents",
+              "url": "/preparedness/disaster-claim-records/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service · After a hurricane",
+          "https://www.weather.gov/safety/hurricane-after"
+        ],
+        [
+          "CDC · After a hurricane or tropical storm",
+          "https://www.cdc.gov/hurricanes/safety/how-to-safely-stay-safe-after-a-hurricane-or-other-tropical-storm.html"
+        ],
+        [
+          "National Weather Service · After a flood",
+          "https://www.weather.gov/safety/flood-after"
+        ],
+        [
+          "CDC · Food safety after a disaster",
+          "https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html"
+        ]
+      ]
+    }
+  ],
+  "related": [
+    "storm-surge",
+    "flash-flood",
+    "flooding",
+    "evacuation",
+    "accessible-evacuation",
+    "evacuation-without-car",
+    "power-outage",
+    "flood-cleanup"
+  ]
 }

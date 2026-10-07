@@ -1,0 +1,439 @@
+{
+  "content_type": "Preparedness guide",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "updated": "2026-10-07",
+  "published": "2026-10-07",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-04-07",
+  "slug": "drought-water-plan",
+  "title": "Household drought and water-saving plan",
+  "category": "natural-hazards",
+  "subcategory": "Heat & dry conditions",
+  "urgency": "planning",
+  "aliases": [
+    "drought planning",
+    "water restrictions",
+    "household water conservation",
+    "water shortage plan"
+  ],
+  "keywords": [
+    "drought",
+    "water restrictions",
+    "water conservation",
+    "water meter",
+    "private well",
+    "safe drinking water",
+    "leaks",
+    "heat"
+  ],
+  "tldr": "Follow your water provider’s current restrictions, cut avoidable use, and repair leaks. Protect drinking, food preparation, medical needs, and essential hygiene. A drought restriction is not automatically a contamination warning or a water outage; each needs its own response. Plan now for accessible safe water if service becomes unreliable.",
+  "steps": [
+    [
+      "Read your current notice",
+      "Check the official restriction stage for your address, its start date, affected uses, and update channel."
+    ],
+    [
+      "Cut avoidable use",
+      "Pause unnecessary or prohibited outdoor demand and report leaks."
+    ],
+    [
+      "Protect essential needs",
+      "Maintain drinking, food safety, hygiene, and prescribed care. Seek help if water limits threaten these needs."
+    ],
+    [
+      "Check your fallback",
+      "Plan accessible safe-water collection or delivery before service becomes unreliable."
+    ]
+  ],
+  "sections": [
+    {
+      "heading": "Know what the notice actually means",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Drought is prolonged dry weather. A household shortage depends on the system supplying you, which may draw water from far away. Rain in your street does not establish that its supply recovered. Use your provider’s notice to decide what restrictions apply."
+        },
+        {
+          "type": "flow",
+          "caption": "Match the water problem to the response",
+          "items": [
+            [
+              "Restriction only",
+              "If supply and quality remain normal, reduce the specified uses; check quality notices separately."
+            ],
+            [
+              "Quality advisory",
+              "Follow the exact boil-water, do-not-drink, or do-not-use instructions."
+            ],
+            [
+              "No usable supply",
+              "Report the interruption and switch to your water-outage plan."
+            ],
+            [
+              "Essential needs at risk",
+              "Contact the provider and care team promptly for a safe alternative."
+            ]
+          ],
+          "note": "Choose the condition that applies; these cards are alternatives, not steps to perform in sequence. Drought-map categories do not determine your household’s restrictions or prove tap-water safety."
+        },
+        {
+          "type": "paragraph",
+          "text": "Save the notice, date, and official contact number for offline use, but check for updates. Ask the provider about unclear instructions."
+        }
+      ],
+      "references": [
+        [
+          "EPA WaterSense: drought versus a water shortage",
+          "https://www.epa.gov/watersense/be-drought-aware"
+        ],
+        [
+          "CDC: drinking water advisories explained",
+          "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Make a baseline you can actually use",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a recent bill or usage portal. Record its period and unit; longer billing periods and more occupants can increase totals without new waste. Compare like periods."
+        },
+        {
+          "type": "paragraph",
+          "text": "If permitted meter access is safe, EPA suggests comparing readings over two hours with no water use. A change suggests a leak or another demand to investigate; automatic equipment can also use water. Never interrupt essential medical equipment or open a locked utility enclosure for this check."
+        },
+        {
+          "type": "table",
+          "caption": "Osprey Zero example log: fictional values, not a usage target",
+          "columns": [
+            "Day",
+            "Reading in gallons",
+            "Household notes"
+          ],
+          "rows": [
+            [
+              "Monday, 8 a.m.",
+              "12,000",
+              "Four people home; usual routine"
+            ],
+            [
+              "Tuesday, 8 a.m.",
+              "12,240",
+              "Difference: 240 gallons; two laundry loads"
+            ],
+            [
+              "Wednesday, 8 a.m.",
+              "12,430",
+              "Difference: 190 gallons; laundry postponed"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This fictional example teaches subtraction, not a household allowance. One quiet day does not prove savings. Note visitors, irrigation, laundry, and repairs. With shared bills or no meter access, track activities and report faults instead of estimating individual use."
+        }
+      ],
+      "references": [
+        [
+          "EPA WaterSense: drought versus a water shortage",
+          "https://www.epa.gov/watersense/be-drought-aware"
+        ],
+        [
+          "EPA WaterSense: finding household leaks",
+          "https://www.epa.gov/watersense/fix-leak-week"
+        ]
+      ]
+    },
+    {
+      "heading": "Reduce indoor waste while keeping healthy routines",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Turn off taps while brushing teeth or shaving. Shorten showers when doing so is compatible with care and accessibility needs.",
+            "Run laundry and dishwashers with full, appropriate loads and the manufacturer’s recommended settings. Do not overload machines or skip cleaning that is needed for health.",
+            "Keep an eye on toilets that keep refilling, dripping taps, and wet areas under appliances. Report leaks to the landlord or arrange an appropriate repair.",
+            "Thaw frozen food in the refrigerator rather than under a running tap. Follow safe food-handling directions for the food.",
+            "When fixtures need replacement, compare efficient models, including WaterSense-labeled products, and check for local rebates before buying."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Conserve water, not essential care",
+          "text": "Do not ration necessary drinking water or stop handwashing to meet an arbitrary household target. Continue prescribed fluid limits or other medical instructions; ask the care team how to prepare if safe water becomes scarce."
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose a few sustainable changes. If use remains unusually high, investigate a leak or equipment problem rather than assuming someone is careless."
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service: taking action during drought",
+          "https://www.weather.gov/safety/drought-action"
+        ],
+        [
+          "American Red Cross: drought preparedness and conservation",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/drought.html"
+        ],
+        [
+          "EPA WaterSense: drought and water conservation",
+          "https://www.epa.gov/watersense/drought-watersense"
+        ],
+        [
+          "CDC: health impacts of drought",
+          "https://www.cdc.gov/drought-health/health-implications/index.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Make the largest outdoor changes first",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Outdoor demand is often the easiest place to reduce nonessential use. Local watering limits override generic advice to water early or use drip irrigation."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Pause optional lawn watering, vehicle washing, or topping up decorative water features when restricted or unnecessary.",
+            "Check that irrigation is not leaking, watering pavement, or running on an old schedule. Arrange help for an underground or complex fault.",
+            "If watering is permitted, follow local guidance for the particular landscape and conditions. Avoid inventing a universal lawn schedule.",
+            "For future landscaping, ask local horticultural or extension services about suitable drought-tolerant plants and establishment needs. Even suitable new plants may need watering."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Do not improvise a second water system",
+          "text": "Rainwater and used household water are not automatically safe drinking water. Greywater reuse depends on local rules, plumbing design, and the intended use. Do not cross-connect it to drinking-water plumbing or create a homemade drinking-water supply."
+        },
+        {
+          "type": "paragraph",
+          "text": "If irrigation is shared, ask whoever controls it to confirm the required changes."
+        }
+      ],
+      "references": [
+        [
+          "EPA WaterSense: drought and water conservation",
+          "https://www.epa.gov/watersense/drought-watersense"
+        ],
+        [
+          "American Red Cross: drought preparedness and conservation",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/drought.html"
+        ],
+        [
+          "EPA WaterSense: finding household leaks",
+          "https://www.epa.gov/watersense/fix-leak-week"
+        ],
+        [
+          "CDC: health impacts of drought",
+          "https://www.cdc.gov/drought-health/health-implications/index.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Prepare for supply problems, including a private well",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Private-well owners are responsible for water safety; public utility results do not describe their well. Keep maintenance and testing records. If supply or quality changes, contact a qualified well professional and the health department rather than altering the pump or deepening the well."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use bottled or another known safe source if contamination is suspected. Clear appearance, a new filter, or returning flow does not establish water safety."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a short interruption, CDC recommends storing at least one U.S. gallon, about 3.8 litres, per person per day for at least three days; a two-week supply is preferable when practical. Needs can be higher in heat, illness, pregnancy, and for pets. This is a preparedness baseline, not a drinking-water limit. Keep supplies in suitable containers and use the water-storage guide for details."
+        },
+        {
+          "type": "paragraph",
+          "text": "Confirm local emergency-water reporting, delivery, container, and assistance arrangements before depending on them."
+        }
+      ],
+      "references": [
+        [
+          "CDC: private well water safety",
+          "https://www.cdc.gov/drinking-water/safety/"
+        ],
+        [
+          "CDC: creating an emergency water supply",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Build access and health needs into the plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Drought can overlap with heat, smoke, dust, and wildfire risk. Follow those warnings alongside water restrictions; seek care promptly if someone becomes unwell."
+        },
+        {
+          "type": "paragraph",
+          "text": "This Osprey Zero planning exercise identifies access gaps; it does not set a medical water allowance."
+        },
+        {
+          "type": "table",
+          "caption": "Write one workable answer for each need",
+          "columns": [
+            "Need",
+            "Planning question"
+          ],
+          "rows": [
+            [
+              "Water-dependent treatment or equipment",
+              "Who in the care team can specify the required water quality, quantity, and backup location?"
+            ],
+            [
+              "Limited strength or mobility",
+              "Who can collect or deliver small containers, and can they reach the home?"
+            ],
+            [
+              "Children or other dependants",
+              "Who will supervise safe drinking water and keep non-drinking water clearly separate?"
+            ],
+            [
+              "Pets",
+              "Where is their drinking supply, and who can bring more?"
+            ],
+            [
+              "Low income or limited storage",
+              "Which local assistance or distribution option can be used without a large up-front purchase?"
+            ],
+            [
+              "Communication needs",
+              "Who can obtain notices in a usable language or accessible format?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose who checks notices and a backup helper or transport option. Report access barriers early; registration does not guarantee delivery or uninterrupted service."
+        }
+      ],
+      "references": [
+        [
+          "CDC: health impacts of drought",
+          "https://www.cdc.gov/drought-health/health-implications/index.html"
+        ],
+        [
+          "National Weather Service: taking action during drought",
+          "https://www.weather.gov/safety/drought-action"
+        ]
+      ]
+    },
+    {
+      "heading": "Review the plan as conditions change",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Keep following restrictions until the responsible authority changes them. Local rain may not replenish your supply. Keep useful conservation habits when restrictions ease."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Weekly during restrictions, check the official stage, essential-water access, and unresolved leaks. Check sooner when notices change.",
+            "If service becomes unreliable, move from the conservation plan to the water-outage plan. Check separately for water-quality advice.",
+            "After a notice ends, follow any provider instructions about flushing or restarting equipment. Do not perform a large, unnecessary flush simply because drought conditions improved.",
+            "Compare usage over similar periods, accounting for repairs, occupancy, and season before claiming savings."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The weekly review is an Osprey Zero suggestion, not an official requirement. Update the plan after moving or changing care arrangements."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "Drought.gov current conditions",
+              "url": "https://www.drought.gov/",
+              "description": "U.S. regional drought maps and outlooks; check your utility for actual restrictions."
+            },
+            {
+              "label": "EPA household leak checklist",
+              "url": "https://www.epa.gov/watersense/fix-leak-week",
+              "description": "Practical leak-detection guidance and an official downloadable checklist."
+            },
+            {
+              "label": "CDC drinking-water advisories",
+              "url": "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html",
+              "description": "Explains boil-water, do-not-drink, and do-not-use notices."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "EPA WaterSense: drought and water conservation",
+          "https://www.epa.gov/watersense/drought-watersense"
+        ],
+        [
+          "EPA WaterSense: drought versus a water shortage",
+          "https://www.epa.gov/watersense/be-drought-aware"
+        ]
+      ]
+    }
+  ],
+  "without_help": "If collection is impossible or safe water is running short, contact the provider, emergency management office, or community assistance service before essential needs go unmet.",
+  "household": "Keep tasks practical for age, disability, tenancy, and who controls shared equipment. Protect essential hygiene and prescribed care.",
+  "pack_now": "Keep the current notice, contacts, small safe-water containers, care instructions, and collection plan together. Separate and label non-drinking water.",
+  "next": "Read a bill, resolve the most obvious leak, and agree on a safe-water fallback.",
+  "watch": "Monitor official restrictions, quality advisories, unexpected use, well-supply changes, heat, smoke, and fire warnings.",
+  "decisions": [
+    [
+      "Restriction only; water remains available and safe",
+      "Follow the listed limits and reduce avoidable use."
+    ],
+    [
+      "New contamination advisory",
+      "Follow its specific instructions; use the water-disruption guide."
+    ],
+    [
+      "No usable water",
+      "Use stored safe water and the water-outage plan; report the problem."
+    ],
+    [
+      "Essential care or hygiene cannot be maintained",
+      "Contact the provider and care team immediately for a safe alternative."
+    ],
+    [
+      "Private-well supply or quality changes",
+      "Seek a well professional and local health-department advice."
+    ],
+    [
+      "Rain arrives but no official change is announced",
+      "Keep following the current restrictions."
+    ]
+  ],
+  "faqs": [
+    [
+      "Does drought make tap water unsafe?",
+      "Not automatically. Follow water-quality notices separately."
+    ],
+    [
+      "Should we store enough water for the whole drought?",
+      "Keep a practical emergency reserve and replenishment plan. A drought may outlast household storage."
+    ],
+    [
+      "Does meter movement prove a leak?",
+      "It is a clue; automatic equipment or shared connections can also cause use. Investigate unexpected demand."
+    ],
+    [
+      "Can we reuse washing water?",
+      "Follow local health and plumbing rules and obtain qualified advice; this guide supplies no greywater recipe."
+    ]
+  ],
+  "related": [
+    "water-storage",
+    "water-outage",
+    "water-disruption",
+    "emergency-hygiene",
+    "extreme-heat",
+    "wildfire"
+  ],
+  "scope": "Household planning for drought, water-use restrictions, and possible supply interruptions. U.S. primary sources inform the guide, but restrictions, assistance, private-well rules, and reuse permissions are local. It does not prescribe fluid intake, water treatment, well alterations, or plumbing systems.",
+  "sources": "drought-water-plan-primary-2026-10"
+}

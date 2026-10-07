@@ -1,5 +1,6 @@
 """Rich editorial sections, with support for the original heading/body pairs."""
 from html import escape as e
+from urllib.parse import urlsplit
 from guide_illustrations import illustration
 
 
@@ -15,6 +16,16 @@ def text(value):
 
 def heading(section):
     return section['heading'] if isinstance(section, dict) else section[0]
+
+
+def resource_url(value):
+    if not isinstance(value, str) or any(ord(c) <= 32 or ord(c) == 127 for c in value):
+        raise ValueError('Practical resource URL must be a nonempty HTTPS URL')
+    parsed = urlsplit(value)
+    if parsed.scheme != 'https' or not parsed.hostname or parsed.username is not None or parsed.password is not None:
+        raise ValueError('Practical resource URL must use HTTPS without embedded credentials')
+    parsed.port  # Reject malformed port numbers before rendering.
+    return value
 
 
 def render_sections(sections):
@@ -41,6 +52,14 @@ def render_sections(sections):
             elif kind == 'links':
                 assert all(x['url'].startswith('/') and not x['url'].startswith('//') for x in b['items'])
                 body.append('<nav class="guide-companions" aria-label="Related detail">' + ''.join(f'<a href="{e(x["url"], quote=True)}">{e(x["label"])}</a>' for x in b['items']) + '</nav>')
+            elif kind == 'resources':
+                cards = []
+                for item in b['items']:
+                    if not all(isinstance(item.get(key), str) and item[key].strip() for key in ('label', 'url', 'description')):
+                        raise ValueError('Practical resource requires a label, URL and description')
+                    url = resource_url(item['url'])
+                    cards.append(f'<a class="resource-button" href="{e(url, quote=True)}" target="_blank" rel="noopener noreferrer"><span>{e(item["label"])}</span><small>{e(item["description"])}</small><small>External resource · opens in a new tab</small></a>')
+                body.append(f'<nav class="resource-grid" aria-label="{e(title, quote=True)} resources">' + ''.join(cards) + '</nav>')
             elif kind == 'illustration':
                 body.append(illustration(b['kind'], b['caption'], b['description']))
             else:

@@ -3,45 +3,522 @@
   "title": "Flooding",
   "label": "FLOOD",
   "deck": "Distance from floodwater is the first safety decision.",
-  "tldr": "Move to higher ground if water is rising or a flash-flood warning affects you. Never walk, swim, or drive through floodwater; depth, current, contamination, and road damage are hard to judge. Follow evacuation orders and avoid basements or low areas that can fill rapidly.",
+  "tldr": "Move away from rising water to safe higher ground without crossing floodwater. Follow evacuation orders. Never walk, swim or drive through a flooded route. If trapped in a building, move to a higher level, avoid a closed attic, and call emergency services with your location.",
   "steps": [
     [
-      "Get above the water",
-      "Leave low ground and move to a safe higher location. If a road is flooded, turn around and choose another route."
+      "Get out of the water’s path",
+      "Leave low ground before routes flood. If water is already blocking your route, do not cross it."
     ],
     [
-      "Read the local notice",
-      "Check alerts, road closures, and evacuation instructions. Do not rely on the road being open because it was open earlier."
+      "Read the current warning",
+      "Check the affected area, issue time, instructions and road closures. A familiar road can become impassable quickly."
     ],
     [
-      "Keep away from hazards",
-      "Floodwater may hide energized wires, debris, sewage, chemicals, and missing road surface. Keep children and pets away."
+      "Keep people away from hazards",
+      "Keep children and pets out of floodwater and away from drains, culverts, electrical equipment and damaged structures."
     ],
     [
-      "If trapped, call for help",
-      "Give your precise location to emergency services. Move to a higher level if possible; avoid entering a closed attic where you could become trapped by rising water."
+      "If trapped, ask for help",
+      "Give emergency services your exact location, floor, number of people and access or medical needs. Move higher if water threatens."
     ]
   ],
-  "next": "Return only when officials say it is safe. Photograph damage without entering unstable structures, use protective gear for cleanup, and check the water supply for advisories.",
-  "watch": "Flooding can begin far from the heaviest rain. Do not attempt to cross flowing water to reach a vehicle, home, or belongings.",
-  "sources": "flood",
+  "next": "Keep monitoring warnings, river forecasts and local closures from your safe location. Return only when authorities permit it, and treat building, electrical, water and cleanup safety as separate checks.",
+  "watch": "Floodwater can arrive from upstream rain, and roads may fail beneath it. Never interpret a flood-zone map, gauge reading, navigation route or another driver’s crossing as proof that a road is safe.",
+  "sources": "flooding-full-guide",
   "category": "natural-hazards",
   "subcategory": "Flooding",
   "content_type": "Emergency guide",
-  "updated": "2026-10-03",
-  "aliases": [],
+  "updated": "2026-10-07",
+  "aliases": [
+    "flood",
+    "river flooding",
+    "rising floodwater",
+    "flood zone map"
+  ],
   "keywords": [
-    "Flooding"
+    "Flooding",
+    "flood maps",
+    "higher ground",
+    "river forecast",
+    "flood warning",
+    "evacuation"
   ],
   "urgency": "immediate",
-  "review_status": "source-linked editorial review; not independent expert certification",
-  "without_help": "Identify higher ground reachable without crossing water. Pack essentials while routes remain dry; if they are already cut off, use the safest elevated space available and signal for help. Stay out of a basement that is taking on water.",
-  "household": "Account for children, older people, pets and anyone who needs assistance before moving. Keep shoes, medicines and a torch in the shelter area. Decide who helps whom and who carries the essential supplies; do not send a lone child to retrieve items. For this situation, brief every person on the first action: get above the water. Agree who will manage children, pets or mobility needs while that action happens. Flooding can begin far from the heaviest rain. Do not attempt to cross flowing water to reach a vehicle, home, or belongings.",
-  "pack_now": "For flooding, prioritize only items needed for the first action and the fallback: Identify higher ground reachable without crossing water. Pack essentials while routes remain dry; if they are already cut off, use the safest elevated space available and signal for help. Stay out of a basement that is taking on water. Keep the relevant checklist and contact information within reach. Equipment retrieval must not delay the protective step.",
-  "decisions": [],
-  "faqs": [],
-  "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-02",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "without_help": "Move to safer higher ground while you have a dry route. If routes are already flooded, stay out of the water and use the safest accessible elevated location. Try emergency services, give a precise location and signal safely. Do not improvise a crossing because assistance is delayed.",
+  "household": "Assign an adult to each child or person requesting help. Keep pets secured and access aids with their users. Count everyone at departure and arrival. A helper should not enter floodwater to collect belongings or reach another household.",
+  "pack_now": "Take only reachable essentials: medicines, phone and power bank, identification, keys, a light, water, access aids and pet supplies. Carry documents protected from water. Do not go into a basement or across water to complete the bag.",
+  "decisions": [
+    [
+      "My street is outside the mapped high-risk zone. Can I ignore a warning?",
+      "No. A long-term flood-risk classification does not cancel current warnings or local evacuation orders."
+    ],
+    [
+      "Water is entering the basement. Should I save appliances or switch off the power?",
+      "Do not enter water to retrieve items or reach a breaker. Keep clear and ask the utility or an electrician for safe isolation."
+    ],
+    [
+      "The rain stopped. Can I drive home?",
+      "Only when the route is open and safe and any reentry restrictions are lifted. Water and road damage can remain after rain ends."
+    ]
+  ],
+  "faqs": [
+    [
+      "Where can I look up my flood zone?",
+      "Enter your address in the FEMA Flood Map Service Center linked above. This U.S. planning and insurance tool is separate from evacuation zones and current flooding."
+    ],
+    [
+      "Where can I see water levels?",
+      "Use NOAA’s National Water Prediction Service for U.S. gauge observations and forecasts. Check timestamps and coverage, and read local warnings separately. It cannot certify a safe road crossing."
+    ]
+  ],
+  "scope": "Civilian flood preparedness and immediate protective actions. Map and alert resources focus on U.S. coverage; elsewhere use local authorities. This is not a live flood report, rescue manual, electrical procedure or structural assessment. Official instructions and visible danger take priority.",
+  "source_checked": "2026-10-07",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-07",
+  "sections": [
+    {
+      "heading": "Make the first decision from the water, not the map",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Flooding can build slowly or arrive with little warning. It can happen while the rain is falling somewhere else. If rising water threatens you, move toward a safe higher location immediately; do not wait for an app to confirm what you can already see. Staying out of the water is the central rule."
+        },
+        {
+          "type": "flow",
+          "caption": "Choose the safest reachable place",
+          "items": [
+            [
+              "LOW GROUND + DRY ESCAPE",
+              "Move promptly to safe higher ground. Follow evacuation directions and take essentials already at hand."
+            ],
+            [
+              "WATER ACROSS THE ROUTE",
+              "Stop. Do not test the depth, walk through, or follow another vehicle. Turn around if you can do so safely."
+            ],
+            [
+              "BUILDING CUT OFF",
+              "Use the highest accessible safe level if water is rising. Do not enter a closed attic; call for help."
+            ],
+            [
+              "ALREADY SAFELY ABOVE THE FLOOD",
+              "Stay away from the water, keep warnings on and follow instructions. Do not travel into the affected area."
+            ]
+          ],
+          "note": "Use the condition that applies; these are alternatives, not steps to follow in sequence. This is a protective-action diagram, not a route map. Current warnings, evacuation orders and visible hazards take priority over a saved plan."
+        },
+        {
+          "type": "callout",
+          "title": "No safe crossing depth",
+          "text": "Do not use depth estimates, vehicle size, swimming ability or a map color to justify entering floodwater. Hidden road damage, current and electrical hazards can make appearances misleading."
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service · During a flood",
+          "https://www.weather.gov/safety/flood-during"
+        ],
+        [
+          "Ready.gov · Floods",
+          "https://www.ready.gov/floods"
+        ],
+        [
+          "National Weather Service · Flood watches and warnings",
+          "https://www.weather.gov/safety/flood-watch-warning"
+        ]
+      ]
+    },
+    {
+      "heading": "Use flood-risk maps and live forecasts for different jobs",
+      "blocks": [
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "FEMA · Flood Map Service Center",
+              "url": "https://msc.fema.gov/portal/home",
+              "description": "Find your U.S. flood zone by address. FEMA’s official flood-hazard maps support insurance, planning and floodplain management. They are NOT evacuation zones or a real-time flooding map."
+            },
+            {
+              "label": "FEMA / NFIP · Flood zones and maps",
+              "url": "https://www.floodsmart.gov/flood-zones-and-maps/what-is-my-flood-zone",
+              "description": "FEMA / NFIP explains flood-zone labels. A lower-risk or unmapped-looking location does not establish zero flood risk."
+            },
+            {
+              "label": "National Weather Service · Local forecasts and active alerts",
+              "url": "https://www.weather.gov/",
+              "description": "Read current U.S. flood and flash-flood warnings and your local forecast. Search your location and open the full warning, not just the map color."
+            },
+            {
+              "label": "NOAA · National Water Prediction Service",
+              "url": "https://water.noaa.gov/",
+              "description": "NOAA’s U.S. river and water portal provides gauge observations, forecasts and available flood-inundation layers. Check the location, units, observation time, forecast time and layer legend."
+            },
+            {
+              "label": "National Weather Service · NWPS product and users guide (PDF)",
+              "url": "https://www.weather.gov/media/owp/operations/nwps_user_guide.pdf",
+              "description": "Explains NWPS map layers, hydrographs, observations and forecasts. Some gauges or layers may be unavailable, stale or outside the area you need."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For a planning check, search your home, school or workplace in FEMA’s Map Service Center, confirm the map covers the correct location, and save the map date with your notes. Ask the local floodplain administrator if the boundary or coverage is unclear. Then separately identify local evacuation instructions, higher ground and road-closure information."
+        },
+        {
+          "type": "callout",
+          "title": "A gauge is not a road inspection",
+          "text": "A river gauge describes its measurement location; a forecast is a prediction. Neither proves that a particular street, bridge or underpass is safe. Missing data and areas without mapped flooding are not an all-clear. Never enter water because a map appears reassuring."
+        },
+        {
+          "type": "paragraph",
+          "text": "Outside U.S. coverage, find equivalent tools from your national weather or hydrology service and local disaster authority. An overseas map or a nearby river’s graph cannot substitute for information about your location."
+        }
+      ],
+      "references": [
+        [
+          "FEMA · Flood Map Service Center",
+          "https://msc.fema.gov/portal/home"
+        ],
+        [
+          "FEMA / NFIP · Flood zones and maps",
+          "https://www.floodsmart.gov/flood-zones-and-maps/what-is-my-flood-zone"
+        ],
+        [
+          "National Weather Service · Local forecasts and active alerts",
+          "https://www.weather.gov/"
+        ],
+        [
+          "NOAA · National Water Prediction Service",
+          "https://water.noaa.gov/"
+        ],
+        [
+          "National Weather Service · NWPS product and users guide (PDF)",
+          "https://www.weather.gov/media/owp/operations/nwps_user_guide.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Read alerts and choose an early departure trigger",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "What the U.S. warning language means",
+          "columns": [
+            "Notice",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Flood watch",
+              "Flooding is possible. Check the forecast, prepare transport and supplies, and be ready to act."
+            ],
+            [
+              "Flood warning",
+              "Flooding is occurring or imminent. Read the location and protective instructions and act."
+            ],
+            [
+              "Flash-flood warning",
+              "Rapid flooding is occurring or imminent. If in a flood-prone area, move immediately to higher ground."
+            ],
+            [
+              "Evacuation order",
+              "Follow the local order and specified route or destination. Do not wait for water to reach the doorstep."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Osprey planning worksheet: write down which warning or official instruction starts your departure, who receives it, and what happens if that person is away. Choose the higher-ground destination and a backup before rain begins. Identify the point at which a route is no longer usable; any floodwater or closure means you do not use that route."
+        },
+        {
+          "type": "paragraph",
+          "text": "For river flooding, keep following forecasts even after local rain stops. For sudden flash flooding, use the short response guide below. Storm surge needs a coastal evacuation plan made before the water arrives."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Flash flood: the fast-response brief",
+              "url": "/emergencies/flash-flood/"
+            },
+            {
+              "label": "Storm surge: coastal evacuation decisions",
+              "url": "/emergencies/storm-surge/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service · Flood watches and warnings",
+          "https://www.weather.gov/safety/flood-watch-warning"
+        ],
+        [
+          "American Red Cross · Flood safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/flood.html"
+        ],
+        [
+          "National Weather Service · Before a flood",
+          "https://www.weather.gov/safety/flood-before"
+        ]
+      ]
+    },
+    {
+      "heading": "Prepare before the route is threatened",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Pack food, safe water, medicines, lights, charging equipment and essential documents before an evacuation becomes urgent. Include children’s and pets’ needs.",
+            "Identify low spots, underpasses, stream crossings and roads that commonly flood along your usual journeys. Know a safer destination and more than one possible route.",
+            "Keep documents in a water-resistant container and save copies securely. Charge devices and keep a battery radio available.",
+            "Move valuables only while it is safe and time allows. Sandbags and property protection must never delay leaving."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Osprey practice exercise: starting from a normal evening at home, identify who finds the alert, who calls the pickup driver and who carries essentials. Walk the indoor exit route while conditions are safe. Check whether the plan still works in darkness or if the usual driver is at work. Change any step that depends on a single missing person or device."
+        },
+        {
+          "type": "callout",
+          "title": "Prepare buildings before the emergency",
+          "text": "Ask qualified professionals about drainage, backflow prevention, pumps and building-level risk reduction. During flooding, do not enter a wet basement to save a pump or reach electrical controls. Property protection is not a reason to remain in danger."
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service · Before a flood",
+          "https://www.weather.gov/safety/flood-before"
+        ],
+        [
+          "CDC · Electrical hazards after a disaster",
+          "https://www.cdc.gov/natural-disasters/response/what-to-do-protect-yourself-from-electrical-hazards.html"
+        ],
+        [
+          "Ready.gov · Floods",
+          "https://www.ready.gov/floods"
+        ]
+      ]
+    },
+    {
+      "heading": "Make the plan usable for everyone",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Flood departure plans need to reflect how people actually move and communicate. Include the person who needs assistance in the decisions. Review accessible exits, transport, medication and equipment with caregivers, building management and local emergency services before the threat develops. Plan an alternative if a helper, vehicle or normal route is unavailable."
+        },
+        {
+          "type": "table",
+          "caption": "Osprey household check",
+          "columns": [
+            "Question",
+            "Complete answer"
+          ],
+          "rows": [
+            [
+              "Who needs help leaving?",
+              "Name the person’s requested support, the primary helper and a backup."
+            ],
+            [
+              "What must travel with them?",
+              "List essential medicines, access aids, communication aids and medical information."
+            ],
+            [
+              "Can everyone use the exit?",
+              "Check the route with the person who uses it; arrange an accessible alternative in advance."
+            ],
+            [
+              "Where can everyone stay?",
+              "Confirm accessibility, equipment needs and arrangements for pets and service animals."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not rely on an assistance registry as your only plan; responders may be delayed. If you need help now because a flood is threatening, contact emergency services and explain your location and what assistance is needed. If the danger is not immediate, use local transport or emergency-management contacts to resolve the arrangements early."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "American Red Cross · Inclusive preparedness resources",
+              "url": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/inclusive-preparedness-resources.html",
+              "description": "Red Cross planning prompts for disability-related access, support networks, communication and evacuation."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross · Inclusive preparedness resources",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/inclusive-preparedness-resources.html"
+        ],
+        [
+          "CDC · Emergency preparedness for people with disabilities",
+          "https://www.cdc.gov/disability-emergency-preparedness/people-with-disabilities/index.html"
+        ],
+        [
+          "CDC · Sheltering and evacuating",
+          "https://www.cdc.gov/disability-emergency-preparedness/people-with-disabilities/sheltering-and-evacuating.html"
+        ]
+      ]
+    },
+    {
+      "heading": "If water cuts you off, change the plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In a building with dangerously rising water, move to the highest accessible level and call emergency services. Do not climb into a closed attic where rising water could trap you. Go onto the roof only if necessary and signal for help. Do not enter floodwater to retrieve a vehicle, equipment or belongings."
+        },
+        {
+          "type": "paragraph",
+          "text": "If a vehicle is trapped in rapidly moving water, Ready.gov advises staying inside; if water is rising inside, seek refuge on the roof. Contact emergency services if possible. This is an emergency fallback, not permission to drive into water or attempt a water rescue."
+        },
+        {
+          "type": "callout",
+          "title": "Osprey emergency-call prompt",
+          "text": "“We are at [address or landmark], on [floor or vehicle location]. There are [number] people. Water is [where it is now] and [rising or unknown]. We need [mobility, medical or other assistance]. My callback number is [number].” Answer the dispatcher’s questions and follow their instructions."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the call cannot connect, keep trying when possible, use a safe visible signal and conserve phone power. Stay with your group in the safest accessible location. Do not send someone into the water to look for a signal or improvise a rescue. No response time can be assumed."
+        }
+      ],
+      "references": [
+        [
+          "FEMA · Shelter-in-place for flooding and flash flooding (PDF)",
+          "https://www.fema.gov/sites/default/files/documents/fema_shelter-in-place_guidance-flooding.pdf"
+        ],
+        [
+          "Ready.gov · Floods",
+          "https://www.ready.gov/floods"
+        ],
+        [
+          "National Weather Service · During a flood",
+          "https://www.weather.gov/safety/flood-during"
+        ]
+      ]
+    },
+    {
+      "heading": "Wait for reentry, then check hazards before cleanup",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Receding water does not clear a building or a road. Wait for authorities to permit return, obey barriers and avoid unnecessary trips through affected areas. Do not enter a flood-damaged building until it has been declared safe. Water can weaken floors, walls and other structures."
+        },
+        {
+          "type": "flow",
+          "caption": "Reentry is a sequence of separate checks",
+          "items": [
+            [
+              "AREA REOPENED?",
+              "If not, stay out. Follow official notices rather than the absence of visible water."
+            ],
+            [
+              "BUILDING SAFE?",
+              "Structural damage, gas smells or remaining floodwater require stopping and qualified assessment."
+            ],
+            [
+              "ELECTRICAL SYSTEM CHECKED?",
+              "Stay out of water near electricity. Wet circuits and equipment need qualified inspection before use."
+            ],
+            [
+              "SAFE TO BEGIN LIMITED CLEANUP?",
+              "Use health guidance, suitable protective equipment and help; stop if conditions or your health worsen."
+            ]
+          ],
+          "note": "A positive answer to one question does not answer the next. This checklist cannot certify a building, utility or appliance."
+        },
+        {
+          "type": "paragraph",
+          "text": "Never stand in water to turn power on or off. Have the utility or a qualified electrician deal with inaccessible controls and damaged wiring. An appliance that looks dry may still need inspection. Photograph damage only from safe positions, then ask the insurer what records are needed."
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service · After a flood",
+          "https://www.weather.gov/safety/flood-after"
+        ],
+        [
+          "CDC · Electrical hazards after a disaster",
+          "https://www.cdc.gov/natural-disasters/response/what-to-do-protect-yourself-from-electrical-hazards.html"
+        ],
+        [
+          "CDC · After a hurricane or tropical storm",
+          "https://www.cdc.gov/hurricanes/safety/how-to-safely-stay-safe-after-a-hurricane-or-other-tropical-storm.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Protect health during the recovery days",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Floodwater can carry sewage, chemicals and sharp debris. Keep children and pets away. If skin contacts it, wash with soap and clean water as soon as possible. Seek medical attention for contaminated puncture wounds, embedded debris or signs of infection such as increasing redness, swelling, pain or fever."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Use the local drinking-water advisory for drinking, food preparation and hygiene. Do not assume the tap is safe because service has returned.",
+            "Discard food contaminated by floodwater and check the separate guidance for food affected by power loss. Never taste food to decide whether it is safe.",
+            "Keep generators outside and at least 20 feet from windows, doors and vents. Never run fuel-burning equipment in a home, garage or enclosed shelter."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Osprey recovery worksheet: list safe accommodation, drinking water, essential care, transport and a working phone contact first. Record damage and expenses separately. Decide what requires a professional and what can safely wait. Arrange someone to check in during cleanup, and stop for exhaustion, illness, new hazards or renewed warnings."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Flood cleanup and when to stop",
+              "url": "/emergencies/flood-cleanup/"
+            },
+            {
+              "label": "Food safety after an outage",
+              "url": "/emergencies/food-safety-outage/"
+            },
+            {
+              "label": "Downed power lines",
+              "url": "/emergencies/downed-power-lines/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CDC · Floodwater safety",
+          "https://www.cdc.gov/floods/safety/floodwater-after-a-disaster-or-emergency-safety.html"
+        ],
+        [
+          "CDC · After a hurricane or tropical storm",
+          "https://www.cdc.gov/hurricanes/safety/how-to-safely-stay-safe-after-a-hurricane-or-other-tropical-storm.html"
+        ],
+        [
+          "CDC · Power-outage safety",
+          "https://www.cdc.gov/natural-disasters/response/what-to-do-protect-yourself-during-a-power-outage.html"
+        ],
+        [
+          "American Red Cross · Flood safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/flood.html"
+        ],
+        [
+          "CDC · Food safety after a disaster",
+          "https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html"
+        ]
+      ]
+    }
+  ],
+  "related": [
+    "flash-flood",
+    "storm-surge",
+    "hurricane",
+    "flood-cleanup",
+    "downed-power-lines",
+    "evacuation",
+    "accessible-evacuation",
+    "boil-water-advisory"
+  ]
 }

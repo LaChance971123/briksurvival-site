@@ -25,7 +25,7 @@ for page in sorted(OUT.rglob('*.html')):
     route = '/' + relative
     paths = [route]
     if page.name == 'index.html':
-        canonical = '/' + str(page.parent.relative_to(OUT)).replace('.', '').strip('/')
+        canonical = '/' + page.parent.relative_to(OUT).as_posix().replace('.', '').strip('/')
         paths.extend([canonical + '/' if canonical != '/' else '/', canonical])
     else:
         canonical = route

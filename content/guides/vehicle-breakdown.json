@@ -45,5 +45,15 @@
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "contextual_links": [
+    {
+      "slug": "dust-storm-driving",
+      "label": "Driving near a dust storm"
+    },
+    {
+      "slug": "winter-vehicle-stranding",
+      "label": "Winter vehicle stranding"
+    }
+  ]
 }

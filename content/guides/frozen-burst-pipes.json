@@ -1,0 +1,381 @@
+{
+  "content_type": "Emergency guide",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "updated": "2026-10-07",
+  "published": "2026-10-07",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-04-07",
+  "slug": "frozen-burst-pipes",
+  "title": "Frozen and burst pipes",
+  "category": "home-building",
+  "subcategory": "Heating",
+  "urgency": "immediate",
+  "aliases": [
+    "frozen plumbing",
+    "burst water pipe",
+    "pipe freeze",
+    "no water in freezing weather"
+  ],
+  "keywords": [
+    "frozen pipes",
+    "burst pipe",
+    "water shutoff",
+    "winter plumbing",
+    "leaking pipe",
+    "renter",
+    "thawing",
+    "water damage"
+  ],
+  "tldr": "A frozen pipe may have little or no flow; a burst pipe is a leak emergency. Keep people away from water near electricity. Stop a leak at a known, permitted household shutoff only if you can reach it safely, then contact the building manager or a qualified plumber. Never use a flame to thaw plumbing.",
+  "steps": [
+    [
+      "Check for danger",
+      "Stay out of water near electricity and away from sagging ceilings. Call emergency services for an immediate threat to people."
+    ],
+    [
+      "Look for a leak",
+      "Escaping water needs isolation and repair. Reduced flow without a visible leak needs outage checks and assessment for freezing."
+    ],
+    [
+      "Call the right responder",
+      "Contact the building manager if you rent; otherwise a qualified plumber for household plumbing or the utility for supply problems."
+    ],
+    [
+      "Use safe water",
+      "Use stored safe water and check for water-quality advisories."
+    ]
+  ],
+  "sections": [
+    {
+      "heading": "Work out which problem you have",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Cold weather and low flow are clues, not a diagnosis. A single affected tap can indicate a local problem; several affected homes can suggest a utility interruption. Ask a neighbor or building manager and check official outage information, without delaying action on a visible leak. Briefly check other accessible taps, then close those you are not monitoring."
+        },
+        {
+          "type": "flow",
+          "caption": "Choose the safe pipe response",
+          "items": [
+            [
+              "Danger present?",
+              "Water near electricity or a sagging ceiling: stay clear and seek emergency help."
+            ],
+            [
+              "Water escaping?",
+              "Use a known, permitted household shutoff only if safely reachable; call for repair."
+            ],
+            [
+              "No visible leak?",
+              "Check utility and building outages before assuming freezing."
+            ],
+            [
+              "Frozen section uncertain?",
+              "Hidden, inaccessible, damaged, or hard to assess: use a qualified plumber."
+            ]
+          ],
+          "note": "Choose the condition that applies; these cards are alternatives, not steps to perform in sequence. This is a decision aid, not permission to operate shared or utility valves."
+        },
+        {
+          "type": "paragraph",
+          "text": "Tell the responder where the problem is, when it began, and whether water is near electricity. You do not need to locate the exact break first."
+        }
+      ],
+      "references": [
+        [
+          "Philadelphia Water Department: frozen pipes and damaged pipes",
+          "https://water.phila.gov/drops/frozen-pipes/"
+        ]
+      ]
+    },
+    {
+      "heading": "An active leak: isolate it without entering danger",
+      "blocks": [
+        {
+          "type": "steps",
+          "items": [
+            "Keep people and pets away from the wet area. Warn nearby occupants if water may reach their space.",
+            "Close the correct household shutoff only when you know its operation, have permission, and can reach it safely. Do not force it.",
+            "If access is unsafe or uncertain, or isolation fails, request help from the building contact, utility, or plumber.",
+            "Leave the supply off pending repair advice. Tell the household, and ask the professional about affected heating or hot-water equipment."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Shared buildings and utility valves",
+          "text": "Renters should use only a valve they have been shown and may operate. Do not operate shared mains, fire-sprinkler valves, street valves, or unfamiliar meter fittings. Utility rules about customer-operated valves are location-specific."
+        },
+        {
+          "type": "paragraph",
+          "text": "Never enter standing water to reach an electrical panel. Do not touch wet electrical equipment or use a mains-powered appliance in the wet area. If power must be isolated but the route or panel is unsafe, have the electricity provider or an electrician handle it. Wet equipment needs assessment before reuse."
+        }
+      ],
+      "references": [
+        [
+          "Seattle Public Utilities: water shutoff access and valve limits",
+          "https://seattle.gov/utilities/your-services/water/metering/how-to-shut-off"
+        ],
+        [
+          "Seattle Public Utilities: frozen pipes in winter weather",
+          "https://seattle.gov/utilities/your-services/water/frozen-pipes"
+        ],
+        [
+          "CDC: cleaning safely after a disaster",
+          "https://www.cdc.gov/natural-disasters/safety/index.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Suspected freezing with no visible leak",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Consider gentle warming only when the suspected section is visible, safely accessible, apparently intact, and local or building instructions allow it. Know who can isolate the water and stay present: an unseen crack may appear during thawing. Otherwise, use a qualified plumber."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "For an intact suspected frozen line, keep the affected faucet open while it is being thawed, as advised by the utility or plumber. This is different from leaving multiple taps running unattended.",
+            "Gently warm the surrounding room with the normal heating system. Warm towels around an accessible pipe may help. Avoid scalding water and surfaces.",
+            "Never use a torch, open flame, fuel-burning heater, or improvised electrical thawing equipment. Do not use electric thawing devices in standing water or a wet area.",
+            "Do not cut into walls, dismantle joints, strike the pipe, or attempt to thaw underground or concealed plumbing.",
+            "If water starts escaping, stop warming and switch to the leak response. If access is uncertain or flow does not return, use a licensed or otherwise locally qualified plumber."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not leave a warming attempt unattended or treat restored flow as proof that nothing cracked."
+        }
+      ],
+      "references": [
+        [
+          "Seattle Public Utilities: frozen pipes in winter weather",
+          "https://seattle.gov/utilities/your-services/water/frozen-pipes"
+        ],
+        [
+          "EPA: winter weather and indoor air quality",
+          "https://www.epa.gov/emergencies-iaq/winter-weather-and-indoor-air-quality"
+        ]
+      ]
+    },
+    {
+      "heading": "Before the next freeze",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Make vulnerable plumbing a maintenance job before severe weather. Exterior-wall pipes and unheated spaces deserve attention. Have insulation and any pipe-heating product selected for the actual pipe and location and installed according to the manufacturer’s directions."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Disconnect outdoor hoses and arrange proper winterization of exterior taps and irrigation. The correct draining steps depend on the installation.",
+            "Keep normal indoor heat steady. If away during cold weather, the Red Cross recommends leaving heat on at no less than 55°F / 13°C; that is a minimum precaution, not a guarantee for every building.",
+            "Open under-sink cabinet doors to let room heat circulate where appropriate. Move cleaners and other hazards out of children’s and pets’ reach.",
+            "Keep a garage containing water pipes closed. Arrange repairs to drafts near plumbing without blocking required ventilation.",
+            "Ask the local utility whether a controlled drip is appropriate and allowed during the particular freeze. Do not override water restrictions or leave running water unattended in an empty building."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "If heat fails",
+          "text": "A thermostat setting cannot protect pipes when the heating system is not working. Contact the building manager or heating service and make a safe place-to-stay plan; plumbing winterization may require a professional."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross: preventing and thawing frozen pipes",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/winter-storm/frozen-pipes.html"
+        ],
+        [
+          "EPA: winter weather and indoor air quality",
+          "https://www.epa.gov/emergencies-iaq/winter-weather-and-indoor-air-quality"
+        ]
+      ]
+    },
+    {
+      "heading": "Manage the wait and essential needs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use this planning checklist for a repair delay; it does not predict a response time."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Choose one household contact. Record the job number, responder, update time, and isolation instructions.",
+            "Tell the responder if there is no functioning toilet, no safe drinking water, or a water-dependent care need. Ask what temporary arrangements are available.",
+            "Use small, manageable stored-water containers. Decide who can collect water and who can carry it; do not assume everyone can lift a large container or use stairs.",
+            "Arrange another place to stay if cold, water damage, or access makes the home unsafe.",
+            "In an apartment, ask which facilities remain usable and whether a leak affects other units. Do not test communal valves yourself."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A returning supply can still be subject to a boil-water, do-not-drink, or do-not-use notice. Follow the exact local advisory. Boiling does not solve chemical contamination. The water-outage and emergency-hygiene guides cover the separate problem of living without usable tap water."
+        }
+      ],
+      "references": [
+        [
+          "CDC: drinking water advisories explained",
+          "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+        ],
+        [
+          "CDC: creating an emergency water supply",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Recovery starts after the leak is controlled",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Have damaged plumbing repaired and ask how the supply should be restored and checked. Observe accessible repaired areas when service returns; report renewed wetness or unexplained flow promptly. Do not repeatedly reopen the supply to see whether a broken line has improved."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once safe, act promptly on moisture. EPA advises drying wet materials within 24–48 hours to reduce mold growth. A surface wipe cannot establish that hidden spaces or soaked materials are dry; arrange restoration help when needed."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Photograph damage from safe locations, record when it was discovered, and keep repair and temporary-living receipts. Contact the insurer or landlord about documentation.",
+            "Do not switch on wet appliances, sockets, or heating equipment to speed drying. Obtain electrical advice first.",
+            "Ask for restoration help for widespread or concealed wetting, contaminated water, persistent dampness, or mold. Do not cover damp surfaces with paint or new finishes.",
+            "Record the repair and the cause the professional identified. Schedule the prevention work rather than assuming warmer weather fixed the underlying problem."
+          ]
+        }
+      ],
+      "references": [
+        [
+          "EPA: mold, moisture, and your home",
+          "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home"
+        ],
+        [
+          "CDC: cleaning safely after a disaster",
+          "https://www.cdc.gov/natural-disasters/safety/index.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Make a five-minute household pipe card",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This Osprey Zero worksheet is a planning aid, not a plumbing procedure. Fill it in with the landlord, utility, or plumber and keep it accessible."
+        },
+        {
+          "type": "table",
+          "caption": "Suggested pipe-card fields",
+          "columns": [
+            "Record",
+            "Include"
+          ],
+          "rows": [
+            [
+              "Permitted shutoff",
+              "Exact location, a photo or label, who may operate it, and any access barrier."
+            ],
+            [
+              "Emergency contacts",
+              "Building manager, water utility, plumber, and electricity provider."
+            ],
+            [
+              "Known vulnerable areas",
+              "Previously frozen taps or pipes and any maintenance already recommended."
+            ],
+            [
+              "Household backup",
+              "Where safe water is stored, an accessible toilet option, and a warm place to stay."
+            ],
+            [
+              "Away-from-home plan",
+              "Who can check the property and how they can reach the person responsible for repairs."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Arrange safer valve access before winter if operation requires unusual force or entry into a cramped space."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "Red Cross pipe-freeze checklist",
+              "url": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/winter-storm/frozen-pipes.html",
+              "description": "National preparation and thawing guidance; local utility directions take priority."
+            },
+            {
+              "label": "Seattle utility shutoff example",
+              "url": "https://seattle.gov/utilities/your-services/water/metering/how-to-shut-off",
+              "description": "Seattle-specific valve permissions, illustrating why rules must be checked locally."
+            },
+            {
+              "label": "EPA moisture recovery guide",
+              "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home",
+              "description": "Drying, moisture control, and when professional help may be needed."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Seattle Public Utilities: water shutoff access and valve limits",
+          "https://seattle.gov/utilities/your-services/water/metering/how-to-shut-off"
+        ]
+      ]
+    }
+  ],
+  "without_help": "If help is delayed, prioritize safe water and somewhere warm to stay. Keep a safely isolated leaking supply off and avoid improvised repairs.",
+  "household": "Agree who calls for help, assists anyone with limited mobility, and keeps children and pets away. Share temporary toilet and care arrangements.",
+  "pack_now": "Keep a flashlight, charged phone, contacts, safe water, essential medicines, and warm clothing ready for a safe wait or temporary move.",
+  "next": "Update the pipe card after repair and arrange recommended prevention work.",
+  "watch": "Watch for fresh wetness, renewed leaks during thawing, and rooms losing heat.",
+  "decisions": [
+    [
+      "Active leak and a known permitted valve is safely reachable",
+      "Isolate the water and call for repair."
+    ],
+    [
+      "Active leak but unsafe or uncertain access",
+      "Stay clear and request isolation help."
+    ],
+    [
+      "No flow but no visible leak",
+      "Check for a wider outage; use only limited, safe warming of an accessible intact pipe."
+    ],
+    [
+      "Frozen area is hidden or warming is unsuccessful",
+      "Stop and use a qualified plumber."
+    ],
+    [
+      "Water returns after a wider service interruption",
+      "Check the utility’s water-quality and restart instructions."
+    ]
+  ],
+  "faqs": [
+    [
+      "Should every tap drip?",
+      "No. Ask the local utility which fixture, if any, should drip. Follow restrictions and do not leave running water in an empty building."
+    ],
+    [
+      "Can a leak appear after thawing?",
+      "Yes. Check accessible areas after flow returns and report fresh wetness."
+    ],
+    [
+      "Can tape repair a break?",
+      "Do not rely on a makeshift patch to restore pressurized service. Use a qualified plumber."
+    ]
+  ],
+  "related": [
+    "water-outage",
+    "water-storage",
+    "heating-failure",
+    "winter-storm",
+    "home-hardening",
+    "disaster-claim-records"
+  ],
+  "scope": "Household recognition, safe first actions, preparation, and recovery for freezing or leaking water-supply pipes. U.S. primary sources inform this guide; local utility rules, building procedures, and qualified professional advice take priority. It does not teach plumbing repairs, electrical work, or fire-sprinkler operation.",
+  "sources": "frozen-burst-pipes-primary-2026-10"
+}

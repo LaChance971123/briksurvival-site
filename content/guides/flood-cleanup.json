@@ -64,5 +64,15 @@
   ],
   "source_checked": "2026-10-02",
   "published": "2026-10-02",
-  "next_review": "2027-04-02"
+  "next_review": "2027-04-02",
+  "contextual_links": [
+    {
+      "slug": "flooded-private-well",
+      "label": "Private wells after flooding"
+    },
+    {
+      "slug": "flooded-septic-system",
+      "label": "Septic systems after flooding"
+    }
+  ]
 }

@@ -329,5 +329,15 @@
       ],
       "references": []
     }
+  ],
+  "contextual_links": [
+    {
+      "slug": "frozen-burst-pipes",
+      "label": "Frozen or burst household pipes"
+    },
+    {
+      "slug": "flooded-private-well",
+      "label": "Private wells after flooding"
+    }
   ]
 }

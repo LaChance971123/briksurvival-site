@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 from lxml import html
-from guide_content import text
+from guide_content import text, resource_url
 
 ROOT = Path(__file__).resolve().parents[1]
 index = json.loads((ROOT / 'search-index.json').read_text())
@@ -31,6 +31,14 @@ for file in (ROOT / 'content/guides').glob('*.json'):
                     assert all(cell in entry['text'] for cell in row), (file, 'unsearchable table')
             if block['type'] == 'illustration':
                 assert block['caption'] in entry['text'] and block['description'] in entry['text'], file
+            if block['type'] == 'resources':
+                for item in block['items']:
+                    url = resource_url(item['url'])
+                    assert item['label'] in entry['text'] and item['description'] in entry['text'], (file, 'unsearchable practical resource')
+                    links = d.xpath('//nav[@class="resource-grid"]/a[@class="resource-button" and @href=$url]', url=url)
+                    assert any(link.get('target') == '_blank' and link.get('rel') == 'noopener noreferrer'
+                               and item['label'] in link.text_content() and item['description'] in link.text_content()
+                               for link in links), (file, 'missing practical resource card')
     for table in d.xpath('//table[@class="guide-table"]'):
         assert table.xpath('./caption') and table.xpath('./thead/tr/th[@scope="col"]'), file
         assert all(row.xpath('./th[@scope="row"]') for row in table.xpath('./tbody/tr')), file
