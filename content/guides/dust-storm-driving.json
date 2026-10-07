@@ -1,0 +1,388 @@
+{
+  "content_type": "Emergency guide",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "updated": "2026-10-07",
+  "published": "2026-10-07",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-04-07",
+  "slug": "dust-storm-driving",
+  "title": "Driving near a dust storm",
+  "category": "vehicle-travel",
+  "subcategory": "Roadside",
+  "urgency": "immediate",
+  "aliases": [
+    "haboob driving",
+    "blowing dust on the highway",
+    "dust storm lights off"
+  ],
+  "keywords": [
+    "dust storm",
+    "haboob",
+    "visibility",
+    "highway",
+    "pull aside",
+    "roadside",
+    "monsoon",
+    "pileup"
+  ],
+  "sources": "dust-storm-driving-primary",
+  "tldr": "Avoid entering blowing dust. Find a visible, safe place completely clear of traffic. Only after stopping fully off the traveled roadway, turn off all lights, set the parking brake, and release the brake pedal. Stay buckled. Fire, flooding, or immediate collision danger can change the waiting plan.",
+  "steps": [
+    [
+      "Avoid entering dust",
+      "Take a safe exit or established stop while the route is still visible."
+    ],
+    [
+      "Pull clear carefully",
+      "Check traffic, slow progressively, and use ground you can actually see and safely reach."
+    ],
+    [
+      "Go dark only after the safe stop",
+      "Completely clear of traffic and stopped: parking brake on, all lights off, foot off brake."
+    ],
+    [
+      "Wait and reassess",
+      "Stay buckled; watch changing threats and confirm a safe route before continuing."
+    ]
+  ],
+  "sections": [
+    {
+      "heading": "Recognize the decision before visibility disappears",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Dust can be a large approaching wall or a narrow plume crossing one part of a road. Either can hide stopped traffic. Do not use another driver’s willingness to continue as your test of safety. A warning is a reason to change the trip; visible dust is a reason to act even if your phone has not alerted."
+        },
+        {
+          "type": "flow",
+          "caption": "Avoid first; go dark only after the safe stop",
+          "items": [
+            [
+              "Dust ahead",
+              "Use a safe exit or established stop before reaching it."
+            ],
+            [
+              "Already encountering dust",
+              "Slow carefully and look for visible, safe ground completely clear of traffic."
+            ],
+            [
+              "Safely stopped off the traveled roadway",
+              "Set the parking brake; switch off all lights and release the brake pedal."
+            ],
+            [
+              "Waiting",
+              "Remain buckled. Reassess any new danger; resume only after visibility and safe access return."
+            ]
+          ],
+          "note": "If no safe pull-off exists, the lights-off stage does not apply. Never turn lights off while moving or treat an active lane as a safe waiting place."
+        },
+        {
+          "type": "paragraph",
+          "text": "Planning example: a passenger handles navigation while the driver concentrates on traffic. Alone, change navigation only after stopping safely."
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service: Dust Storms and Haboobs",
+          "https://www.weather.gov/safety/wind-dust-storm"
+        ],
+        [
+          "Arizona DOT: Driving through a dust storm is never safe",
+          "https://azdot.gov/adot-blog/driving-through-dust-storm-never-safe"
+        ]
+      ]
+    },
+    {
+      "heading": "Choose a safe pull-off without creating a second emergency",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Look around before slowing or moving sideways. ADOT recommends leaving the highway completely when possible and avoiding travel lanes and emergency lanes as waiting places. The goal is separation from moving traffic, not merely reaching the pavement edge."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Use an exit or established parking area you can still see.",
+            "Beyond pavement, check for a ditch, wash, soft ground, slope, or barrier before moving onto it. Never blindly leave the pavement.",
+            "Do not reverse on the highway, cross a median, or get out to scout an unseen route."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "If no safe pull-off is visible",
+          "text": "Keep your lights on while moving, reduce speed to match what you can see, and keep looking for a safe way out of traffic. Do not intentionally choose an active lane as a waiting place. If traffic stops or the vehicle becomes disabled, treat that as an emergency; the parked-off-road lights rule does not make your position safe."
+        }
+      ],
+      "references": [
+        [
+          "Arizona DOT: Pull Aside, Stay Alive safety card",
+          "https://www.weather.gov/media/twc/DustSafetyADOT2014Bold.pdf"
+        ],
+        [
+          "National Weather Service: Dust Storms and Haboobs",
+          "https://www.weather.gov/safety/wind-dust-storm"
+        ]
+      ]
+    },
+    {
+      "heading": "Once stopped clear of traffic, manage lights and restraints",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Other drivers may follow visible vehicle lights through dust and strike a parked car. After reaching a safe location fully clear of the traveled roadway and coming to a complete stop, select the appropriate parked gear, apply the parking brake, and take your foot off the brake pedal. Switch off headlights, taillights, emergency flashers, and interior lights."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Keep everyone buckled in their seat or correctly fitted child restraint.",
+            "Wait inside rather than opening doors to watch the storm.",
+            "Do not step into the dust to check whether rear lights are off. Learn the controls while safely parked before a trip."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "This is a narrowly defined lights-off instruction",
+          "text": "It applies to the dust-storm pull-off described here. It does not mean driving without lights, going dark in a traffic lane, or ignoring a responder’s direct instructions."
+        }
+      ],
+      "references": [
+        [
+          "Arizona DOT: After you Pull Aside, Stay Alive",
+          "https://azdot.gov/news/after-you-pull-aside-stay-alive-what-comes-next"
+        ],
+        [
+          "Arizona DOT: Pull Aside, Stay Alive safety card",
+          "https://www.weather.gov/media/twc/DustSafetyADOT2014Bold.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Keep the wait organized and make your location usable",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once secure, one adult can watch people and conditions while another handles necessary communication. Avoid competing calls and instructions."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Note road, direction, marker or exit, side of road, and vehicle description. Add a map location if available.",
+            "Update a contact and ask them not to drive into the storm to meet you.",
+            "Keep essentials in the cabin so no one needs to unload luggage."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Original message template",
+          "text": "“Stopped off [road/direction], near [marker], in [vehicle]. [Number] people. We are waiting for visibility and will update when conditions change.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "In an emergency, give dispatch your location, callback number, and the danger. Explain any live-lane position or urgent medical need, then follow instructions."
+        }
+      ],
+      "references": [
+        [
+          "National 911 Program: Calling and Texting 911",
+          "https://www.911.gov/calling-911/frequently-asked-questions/"
+        ],
+        [
+          "Arizona DOT: Driving through a dust storm is never safe",
+          "https://azdot.gov/adot-blog/driving-through-dust-storm-never-safe"
+        ]
+      ]
+    },
+    {
+      "heading": "Know when waiting in the vehicle is no longer the right plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Staying buckled is the normal waiting plan. Smoke, fire, nearby impacts, rising water, or urgent illness may change it. Report the specific new danger."
+        },
+        {
+          "type": "table",
+          "caption": "Exceptions that need a new decision",
+          "columns": [
+            "Threat",
+            "Response"
+          ],
+          "rows": [
+            [
+              "Vehicle fire or growing smoke",
+              "Stop if moving, shut off the vehicle, get everyone out, and move away from it and traffic. Call 911. Do not open the hood or return for belongings."
+            ],
+            [
+              "Water rising around a low stopping place",
+              "Call 911 and seek higher ground if it can be reached safely. Do not drive or walk into floodwater."
+            ],
+            [
+              "Immediate collision threat or a crash",
+              "Call 911 and describe the road position. Follow scene-specific instructions; do not blindly step into moving traffic."
+            ],
+            [
+              "Serious breathing difficulty, collapse, or other urgent illness",
+              "Request emergency help immediately and follow the call-taker’s instructions."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A vehicle fire requires substantial separation: U.S. Fire Administration advises at least 100 feet and well away from traffic. Do not expose yourself to another hazard just to retrieve supplies."
+        }
+      ],
+      "references": [
+        [
+          "U.S. Fire Administration: Vehicle Fire Safety",
+          "https://www.usfa.fema.gov/prevention/vehicle-fires/"
+        ],
+        [
+          "National Weather Service: During a Flood",
+          "https://www.weather.gov/safety/flood-during"
+        ],
+        [
+          "National 911 Program: Calling and Texting 911",
+          "https://www.911.gov/calling-911/frequently-asked-questions/"
+        ]
+      ]
+    },
+    {
+      "heading": "Leave the pull-off only after checking the whole route",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A brief view of the lane is not an all-clear. Dust may be followed by rain, damage, or flooding. Check visibility, the re-entry route, and official road information."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "From the protected position, look for debris, disabled vehicles, emergency crews, water, and renewed dust.",
+            "Check the next usable destination rather than assuming your original route is still sensible. An established safe stop may be the better goal.",
+            "Restore normal driving lights and use normal signals before moving. Rejoin only when you can see that it is safe.",
+            "If the vehicle is damaged, warning lights appear, or you cannot assess the pull-off surface, arrange assistance instead of forcing a restart."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Once safely parked elsewhere, update your contact, document damage, and replace supplies. Do not inspect the car from an exposed shoulder."
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service Tucson: Monsoon Safety",
+          "https://www.weather.gov/twc/monsoonsafety"
+        ],
+        [
+          "Arizona DOT: Driving through a dust storm is never safe",
+          "https://azdot.gov/adot-blog/driving-through-dust-storm-never-safe"
+        ]
+      ]
+    },
+    {
+      "heading": "Prepare the people and the decision, not just the bag",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before leaving, identify reasonable stopping places and check the full route’s forecast and road reports. Save the relevant official services below."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Agree on who will navigate, contact family, and support a child or person who becomes distressed.",
+            "Keep a written location/contact card if phones or communication aids fail.",
+            "Ask each passenger what help they would need to leave the vehicle in an actual emergency; do not assume everyone can walk on rough ground.",
+            "Keep pets secured so opening a door during an emergency does not release them into traffic."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Common mistakes to avoid",
+          "text": "Do not race the dust, copy another driver’s route, wait until you are blind to consider stopping, or turn lights off while still moving. Avoid treating “off the road” as permission to drive onto ground you cannot judge."
+        },
+        {
+          "type": "paragraph",
+          "text": "While safely parked at home, practice parking-brake and light controls, including automatic lights and brake hold. Check the manual; do not experiment beside a highway."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "NWS local forecasts and warnings",
+              "url": "https://www.weather.gov/",
+              "description": "United States: enter a location and check alerts for the route. Weather information does not confirm a road is open."
+            },
+            {
+              "label": "FHWA state road-condition directory",
+              "url": "https://highways.dot.gov/traffic-info",
+              "description": "United States: choose the state for its road-information service. Coverage and updates vary; obey local closures."
+            },
+            {
+              "label": "AZ511 road conditions",
+              "url": "https://az511.gov/",
+              "description": "Arizona: road closures, incidents, cameras, and weather layers. This is state-specific and is not a rescue request service."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Arizona DOT: Driving through a dust storm is never safe",
+          "https://azdot.gov/adot-blog/driving-through-dust-storm-never-safe"
+        ],
+        [
+          "Arizona DOT: After you Pull Aside, Stay Alive",
+          "https://azdot.gov/news/after-you-pull-aside-stay-alive-what-comes-next"
+        ]
+      ]
+    }
+  ],
+  "without_help": "Without calls or road updates, wait in the safe pull-off while visibility remains poor, unless immediate danger requires moving. Do not walk out to find reception. Preserve phone power and retry. An unsent message or map pin does not establish rescue.",
+  "household": "Plan for the least mobile passenger. Keep restraints fitted, medicines and communication aids reachable, and pets secured. Tell responders about transfer, mobility, hearing, language, or medical needs.",
+  "pack_now": "Water; charged phone and cable; power bank; necessary medication; written contacts and roadside-assistance details; accessible vehicle manual; a simple route plan. Pack for a delay without putting essential items beneath luggage.",
+  "next": "Revise your arrival plan and check road conditions. Arrange assessment or assistance for a damaged vehicle.",
+  "watch": "Watch for renewed dust, approaching vehicles, smoke, rising water, excessive cabin heat, or worsening health.",
+  "decisions": [
+    [
+      "Dust is ahead and a safe stopping option is available",
+      "Stop before entering it."
+    ],
+    [
+      "You are still moving or remain in an active lane",
+      "Do not apply the parked-off-road lights-off instruction."
+    ],
+    [
+      "The only pull-off leads into unseen terrain",
+      "Do not blindly leave the pavement; keep looking for a safe option."
+    ],
+    [
+      "You are fully stopped in a safe place clear of traffic",
+      "Use the dust-storm lights-off sequence and remain buckled."
+    ]
+  ],
+  "faqs": [
+    [
+      "Should I switch off hazard lights?",
+      "Yes, after completing the safe dust-storm pull-off and stopping completely clear of the traveled roadway. ADOT includes emergency flashers in the lights-off advice. This does not apply while driving or sitting in a live lane."
+    ],
+    [
+      "Can I just follow the car ahead?",
+      "No. Its lights do not prove it is moving, in a lane, or on safe ground. Following lights is one reason parked vehicles can be struck."
+    ],
+    [
+      "How many minutes should I wait?",
+      "There is no reliable countdown. Wait for restored visibility, a safe re-entry, and any official all-clear or route instructions."
+    ],
+    [
+      "Should I get out to film or check the road?",
+      "Stay buckled during the wait. Leave only for immediate danger or responder instructions."
+    ]
+  ],
+  "related": [
+    "vehicle-breakdown",
+    "damaging-winds",
+    "thunderstorm",
+    "flash-flood",
+    "vehicle-emergency-kit",
+    "emergency-contact-plan"
+  ],
+  "scope": "U.S.-focused guidance for passenger-vehicle occupants approaching or caught in blowing dust. It does not cover commercial-driver operating requirements or every crash scene. Follow local closures and emergency responders; no pull-off location is guaranteed safe."
+}

@@ -1,0 +1,419 @@
+{
+  "slug": "flooded-private-well",
+  "title": "Private wells after flooding",
+  "category": "utilities",
+  "subcategory": "Water",
+  "content_type": "Emergency guide",
+  "urgency": "situational",
+  "aliases": [
+    "flooded well",
+    "well water after a flood",
+    "private well contamination",
+    "well recovery"
+  ],
+  "keywords": [
+    "well",
+    "flood",
+    "drinking water",
+    "pump",
+    "coliform",
+    "E. coli",
+    "testing",
+    "disinfection",
+    "chemical contamination"
+  ],
+  "tldr": "If floodwater reached your well or contamination is possible, stop using its water and switch to a known-safe supply. Arrange professional inspection, recovery and laboratory testing. Clear-looking water, restored power and a chlorine smell do not establish safety.",
+  "steps": [
+    [
+      "Switch supplies",
+      "Use bottled water or another confirmed safe source. Tell everyone the well is out of service."
+    ],
+    [
+      "Keep away from hazards",
+      "Do not enter a well pit or restart flooded pumping equipment. A qualified professional must assess it."
+    ],
+    [
+      "Make a recovery plan",
+      "Call the local health department and a well or pump contractor. Report any possible fuel, pesticide or sewage exposure."
+    ],
+    [
+      "Wait for appropriate results",
+      "Have the repaired and disinfected system tested under local guidance before resuming drinking-water use."
+    ]
+  ],
+  "sections": [
+    {
+      "heading": "Decide whether the well may be contaminated",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Treat a well reached or covered by floodwater as contaminated, even when the tap water looks normal. A damaged cap or casing, nearby sewage, or a change in water quality is also a reason to stop and seek advice. Floodwater can carry both germs and chemicals."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Do not drink the water, cook with it or brush teeth with it while its safety is unresolved.",
+            "A well that was not visibly submerged may still need testing after nearby flooding. Describe what happened to the local health department.",
+            "A public utility lifting its neighborhood water notice does not establish the safety of a separate private well."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Chemical exposure needs a different response",
+          "text": "If fuel, heating oil, pesticides or other chemicals could have reached the well, stop using the water for any purpose and contact local health or environmental officials. Boiling and ordinary well disinfection do not remove these hazards."
+        }
+      ],
+      "references": [
+        [
+          "Minnesota Department of Health: Flood Precautions for Private Water Wells",
+          "https://www.health.mn.gov/communities/environment/water/wells/natural/floodprecautions.html"
+        ],
+        [
+          "New York State Department of Health: Drinking Water Flood Recovery",
+          "https://www.health.ny.gov/environmental/water/drinking/flooding/"
+        ],
+        [
+          "CDC: Well Water Safety",
+          "https://www.cdc.gov/drinking-water/safety/"
+        ],
+        [
+          "CDC: Guidelines for Treating Well Water",
+          "https://www.cdc.gov/drinking-water/safety/guidelines-for-treating-well-water.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Set up a safe-water household",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use unopened commercially bottled water where available. CDC recommends storing at least one gallon per person per day for three days, with a two-week supply if practical. Allow extra for pets, illness, pregnancy and hot weather. This is a starting supply, not a promise that well recovery will finish within three days."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Do not use refrigerator water or ice made from the suspect supply; include drinks and food preparation in the safe-water plan.",
+            "Keep stored drinking water in clean, closed food-grade containers. Never reuse containers that held pesticides or other toxic chemicals.",
+            "Keep using the alternative supply during repair, disinfection and the wait for test results.",
+            "Do not bathe or wash with water from a flooded well until the relevant restrictions have been resolved with your health department."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Household planning checklist (editorial)",
+          "text": "Write down where today’s water comes from, how much remains and who will arrange the next supply. Put reminders at taps and appliances so guests and caregivers know the plan. Include water needs for meals, medicines, pets and any care equipment; check equipment instructions with its provider. Arrange an accessible place to wash or stay if the household cannot manage safely at home."
+        }
+      ],
+      "references": [
+        [
+          "CDC: How to Create an Emergency Water Supply",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ],
+        [
+          "EPA: What to Do With Your Private Well After a Flood",
+          "https://www.epa.gov/sites/default/files/2015-05/documents/epa816f05021.pdf"
+        ],
+        [
+          "CDC: Drinking Water Advisories — An Overview",
+          "https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Leave the well and electrical work to qualified people",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Flooded wiring and pumps can cause electric shock or equipment damage. Do not turn a flooded pump back on because the outside looks dry. Have a qualified electrician, well contractor or pump contractor check the equipment. Never enter a well pit; hazardous gases can collect there."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Stay clear of wires, unstable ground, open holes and flooded electrics. Do not enter water to reach a breaker.",
+            "If floodwater entered the well, have a well contractor inspect for damaged components and sediment. Running the pump to remove heavy debris can damage it.",
+            "Do not remove the cap, pour chemicals into the well or attempt electrical repairs as a household recovery shortcut."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Call-preparation checklist (editorial): gather the well record, previous tests and treatment-equipment names. Describe the highest flood level and visible damage from a safe location. Ask who will coordinate the contractor, electrician and laboratory."
+        }
+      ],
+      "references": [
+        [
+          "CDC: How to Disinfect Wells After an Emergency",
+          "https://www.cdc.gov/water-emergency/about/how-to-disinfect-wells-after-an-emergency.html"
+        ],
+        [
+          "EPA: What to Do With Your Private Well After a Flood",
+          "https://www.epa.gov/sites/default/files/2015-05/documents/epa816f05021.pdf"
+        ],
+        [
+          "Minnesota Department of Health: Flood Precautions for Private Water Wells",
+          "https://www.health.mn.gov/communities/environment/water/wells/natural/floodprecautions.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Understand the recovery sequence",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The contractor assesses damage, makes repairs, removes sediment as appropriate, then flushes and disinfects. Disinfection alone cannot fix a damaged entry route. This guide gives no bleach quantities or do-it-yourself well-opening procedure."
+        },
+        {
+          "type": "flow",
+          "caption": "Well recovery: two safety questions, not one",
+          "items": [
+            [
+              "Possible contamination",
+              "Use a safe alternative supply."
+            ],
+            [
+              "Chemical exposure possible?",
+              "Tell health officials; germ treatment alone cannot clear it."
+            ],
+            [
+              "System restored",
+              "A contractor inspects, repairs and disinfects as appropriate."
+            ],
+            [
+              "Relevant results reviewed",
+              "Resume only the uses supported by testing and local guidance."
+            ]
+          ],
+          "note": "A bacterial result and a chemical-risk assessment answer different questions. Keep restrictions until the relevant concerns are resolved."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Ask the contractor to describe the work for your well type and the household plumbing connected to it.",
+            "Identify filters, softeners and other treatment equipment before work starts. Their manufacturer’s cleaning or bypass instructions may differ.",
+            "Agree on where flushing water will go. It must not overload a recovering septic system or discharge concentrated chlorinated water into streams or ponds.",
+            "Keep the household out-of-service plan in place until disinfection, flushing and the required testing are complete."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Contractor handover checklist (editorial): request the repairs, disinfection date, equipment needing service, allowed uses, sample date and results contact in writing."
+        }
+      ],
+      "references": [
+        [
+          "New York State Department of Health: Restoring and Testing Your Private Well After a Flood",
+          "https://www.health.ny.gov/publications/6562/"
+        ],
+        [
+          "CDC: How to Disinfect Wells After an Emergency",
+          "https://www.cdc.gov/water-emergency/about/how-to-disinfect-wells-after-an-emergency.html"
+        ],
+        [
+          "EPA: What to Do With Your Private Well After a Flood",
+          "https://www.epa.gov/sites/default/files/2015-05/documents/epa816f05021.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Test the right things at the right time",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a state-certified drinking-water laboratory and follow its collection and delivery instructions. Ask the health department which tests fit the incident. Post-flood testing normally includes bacterial indicators, with additional chemical testing selected for local hazards."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "CDC’s post-disinfection guidance calls for sampling at least 7–10 days after disinfection and only after chlorine has been flushed out. Confirm the actual sampling plan with your health department and laboratory.",
+            "For microbial assessment, CDC specifies total coliform and either E. coli or fecal coliform testing. A positive result needs further action and repeat testing.",
+            "Report nearby spills, agriculture, damaged fuel storage or failing septic systems so the test plan addresses relevant chemical risks."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "A negative bacteria result has limits",
+          "text": "It does not test for every contaminant. A bacteria-only report cannot clear suspected fuel, pesticide, nitrate or other chemical contamination. Ask the health department to interpret the actual tests performed before changing restrictions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Results checklist (editorial): keep the full report, sample location and date. Record the advice, permitted uses and next sample appointment. Follow the laboratory’s bottle and sampling instructions exactly."
+        }
+      ],
+      "references": [
+        [
+          "CDC: Guidelines for Testing Well Water",
+          "https://www.cdc.gov/drinking-water/safety/guidelines-for-testing-well-water.html"
+        ],
+        [
+          "CDC: How to Disinfect Wells After an Emergency",
+          "https://www.cdc.gov/water-emergency/about/how-to-disinfect-wells-after-an-emergency.html"
+        ],
+        [
+          "EPA: What to Do With Your Private Well After a Flood",
+          "https://www.epa.gov/sites/default/files/2015-05/documents/epa816f05021.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Resume use with a follow-up plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Restart drinking-water use only when the required work and relevant testing support it under local guidance. A household filter is not a universal fallback: treatment must match the identified contaminant. If contamination persists, the health department and contractor may need to investigate the well’s construction or continuing pollution source."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "CDC recommends follow-up bacterial tests 2–4 weeks and 3–4 months after the initial post-disinfection test. Your local plan may require more testing.",
+            "Seek advice again after another flood, a new change in water quality or further well repairs.",
+            "Keep a separate decision about septic use. A safe drinking-water result does not show that a flooded drainfield can accept wastewater."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Recovery record (editorial): save invoices, safe-to-take photos, test reports and contacts. Before the next wet season, ask which site-specific improvements could reduce repeat flooding."
+        }
+      ],
+      "references": [
+        [
+          "CDC: Guidelines for Treating Well Water",
+          "https://www.cdc.gov/drinking-water/safety/guidelines-for-treating-well-water.html"
+        ],
+        [
+          "CDC: How to Disinfect Wells After an Emergency",
+          "https://www.cdc.gov/water-emergency/about/how-to-disinfect-wells-after-an-emergency.html"
+        ],
+        [
+          "CDC: Guidelines for Testing Well Water",
+          "https://www.cdc.gov/drinking-water/safety/guidelines-for-testing-well-water.html"
+        ],
+        [
+          "EPA: What to Do With Your Private Well After a Flood",
+          "https://www.epa.gov/sites/default/files/2015-05/documents/epa816f05021.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Avoid the shortcuts that create a false all-clear",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Common decisions",
+          "columns": [
+            "Situation",
+            "Safer next move"
+          ],
+          "rows": [
+            [
+              "The water looks or smells normal",
+              "Keep the testing plan; appearance alone is not evidence of safety."
+            ],
+            [
+              "Someone suggests boiling chemically suspect water",
+              "Use the safe alternative supply and get health-department advice."
+            ],
+            [
+              "A filter claims to improve taste",
+              "Check whether it treats the specific contaminant; taste improvement is not clearance."
+            ],
+            [
+              "The town’s water service is restored",
+              "Check your private well’s own recovery status."
+            ],
+            [
+              "The contractor or lab is delayed",
+              "Keep the alternative-water arrangement; ask about local water distribution."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Escalation plan (editorial): assign the health-department call, contractor follow-up and next water supply. For a shared or rental well, ask the owner to circulate one written status to every household."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "Find your state’s private-well program",
+              "url": "https://www.epa.gov/privatewells/private-drinking-water-well-programs-your-state",
+              "description": "Start here for state-specific advice and help locating the right local contact."
+            },
+            {
+              "label": "Find state-certified drinking-water laboratories",
+              "url": "https://www.epa.gov/dwlabcert/forms/contact-us-about-certification-laboratories-drinking-water",
+              "description": "EPA links to state laboratory-certification programs. Confirm the lab handles the tests you need."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CDC: Guidelines for Treating Well Water",
+          "https://www.cdc.gov/drinking-water/safety/guidelines-for-treating-well-water.html"
+        ],
+        [
+          "CDC: Well Water Safety",
+          "https://www.cdc.gov/drinking-water/safety/"
+        ],
+        [
+          "CDC: Guidelines for Testing Well Water",
+          "https://www.cdc.gov/drinking-water/safety/guidelines-for-testing-well-water.html"
+        ]
+      ]
+    }
+  ],
+  "without_help": "Keep using the safe alternative supply while arranging help. Do not experiment with a flooded pump or improvise well disinfection. If safe water and basic hygiene cannot be maintained, arrange temporary access elsewhere.",
+  "household": "Household checklist (editorial): everyone knows which water to use; guests and caregivers are informed; pets and care needs are included; one person tracks supplies; contractor and laboratory contacts are saved; the next decision has an owner.",
+  "pack_now": "Preparation list (editorial): drinking water, suitable closed containers, tap reminder labels, phone charger, well records, recent test reports and a notebook for recovery instructions.",
+  "next": "Confirm the first service appointment, the laboratory’s sampling instructions and how the household will obtain water until results are reviewed.",
+  "watch": "Watch for another flood, changed water quality, repeated positive tests or a newly reported nearby spill. Any of these may require a new assessment.",
+  "decisions": [
+    [
+      "Floodwater reached the well",
+      "Treat it as contaminated and arrange contractor-led recovery."
+    ],
+    [
+      "Fuel or chemical contamination is possible",
+      "Stop all uses pending specific health or environmental guidance."
+    ],
+    [
+      "Only bacterial results are available",
+      "Do not use them to dismiss an unresolved chemical concern."
+    ],
+    [
+      "Tests remain positive after treatment",
+      "Continue the safe-water plan and request further investigation."
+    ]
+  ],
+  "faqs": [
+    [
+      "Can I simply shock-chlorinate it myself?",
+      "CDC recommends a well or pump contractor after a disaster. Electrical hazards, well construction, damaged equipment and the cause of contamination all matter."
+    ],
+    [
+      "Does one clear sample settle everything?",
+      "It covers the tested sample and contaminants, not all possible hazards or future contamination. Keep the recommended follow-up plan."
+    ],
+    [
+      "What if I cannot get bottled water?",
+      "Ask local emergency management or health officials for a safe supply. Boiling is a germ-control option only when chemical contamination is not a concern and local advice allows it."
+    ]
+  ],
+  "related": [
+    "flooded-septic-system",
+    "water-outage",
+    "water-storage",
+    "do-not-drink",
+    "do-not-use",
+    "boil-water-advisory",
+    "flood-cleanup",
+    "returning-home",
+    "emergency-hygiene"
+  ],
+  "scope": "U.S.-focused household private-well flood recovery. Local health and environmental instructions, laboratory protocols and qualified contractors govern the site-specific work. Not a well-disinfection dosing manual or a chemical-remediation plan.",
+  "sources": "private-well-flood-recovery-2026",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "updated": "2026-10-07",
+  "published": "2026-10-07",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-04-07"
+}

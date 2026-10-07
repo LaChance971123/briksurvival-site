@@ -10,6 +10,10 @@ assert(rank(data,'gas','natural-hazards').every(d=>d.category_id==='natural-haza
 assert.equal(rank(data,'zzzzzzzz').length,0);
 console.log('PASS: phrase matching, aliases, typo tolerance, category/type filters and no-result searches.');
 const regression={
+ 'frozen pipes':'Frozen and burst pipes','flooded well':'Private wells after flooding',
+ 'septic flood':'Septic systems after flooding','dust storm':'Driving near a dust storm',
+ 'stranded in snow':'Stranded in a vehicle during winter weather','drought':'Household drought and water-saving plan',
+ 'hurricane flood map':'Hurricane','flood zone map':'Flooding',
  'stroke':'Suspected stroke','heart attack':'Chest pain & suspected heart attack','chest pain':'Chest pain & suspected heart attack',
  'my baby is choking':'Infant choking','baby not breathing':'Child & infant CPR',
  'how do I survive a tornado':'Tornado','there is a fire in my kitchen':'Home fire',

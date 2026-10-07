@@ -1,0 +1,456 @@
+{
+  "content_type": "Emergency guide",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "updated": "2026-10-07",
+  "published": "2026-10-07",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-04-07",
+  "slug": "winter-vehicle-stranding",
+  "title": "Stranded in a vehicle during winter weather",
+  "category": "vehicle-travel",
+  "subcategory": "Roadside",
+  "urgency": "immediate",
+  "aliases": [
+    "snowbound car",
+    "stuck in a blizzard",
+    "waiting in a car in extreme cold"
+  ],
+  "keywords": [
+    "winter",
+    "stranded",
+    "snow",
+    "vehicle",
+    "warmth",
+    "carbon monoxide",
+    "rescue",
+    "exhaust",
+    "blizzard"
+  ],
+  "sources": "winter-vehicle-stranding-primary",
+  "tldr": "Stay with the vehicle while it remains the safest shelter. Establish contact and conserve warmth. Do not run a combustion engine if exhaust cannot stay clear or leakage is suspected. Short running intervals and an open window cannot guarantee carbon monoxide safety. Fire, flooding, or imminent collision danger can require leaving.",
+  "steps": [
+    [
+      "Assess the scene",
+      "Check traffic, fire, water, and injuries. Secure the vehicle; remain restrained while collision exposure continues."
+    ],
+    [
+      "Establish contact",
+      "Share location, occupants, vehicle description, health concerns, and access needs."
+    ],
+    [
+      "Insulate first",
+      "Use dry layers and blankets. Keep essentials reachable."
+    ],
+    [
+      "Reassess heat and health",
+      "Use engine heat only under safe conditions; report lost heat or worsening symptoms early."
+    ]
+  ],
+  "sections": [
+    {
+      "heading": "Decide whether the vehicle is still the safest shelter",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For a snowbound vehicle without an immediate threat, remaining with it is generally safer than walking into wind-driven snow. Visibility, distance, and footing are easy to misjudge. Do not leave merely because a map shows a nearby building or someone expects you at your destination."
+        },
+        {
+          "type": "flow",
+          "caption": "Choose the safest available shelter",
+          "items": [
+            [
+              "Immediate danger?",
+              "Fire, rising water, or an imminent collision threat can require leaving by the safest available route."
+            ],
+            [
+              "No immediate danger",
+              "Stay with the vehicle unless a usable refuge is clearly and safely reachable by everyone."
+            ],
+            [
+              "Waiting in the vehicle",
+              "Establish contact, insulate occupants, and assess whether any engine heat can be used safely."
+            ],
+            [
+              "Conditions worsen",
+              "Report the change and reassess shelter; do not wait for someone to collapse."
+            ]
+          ],
+          "note": "A map distance or distant lights cannot establish a safe walking route. Follow emergency responders when available."
+        },
+        {
+          "type": "paragraph",
+          "text": "Before considering a refuge, check the whole route, weather, mobility needs, and whether you can get inside. Do not split up to search blindly."
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service: Caught in a Winter Storm",
+          "https://www.weather.gov/safety/winter-during"
+        ],
+        [
+          "American Red Cross: Winter Storm Safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/winter-storm.html"
+        ],
+        [
+          "U.S. Fire Administration: Vehicle Fire Safety",
+          "https://www.usfa.fema.gov/prevention/vehicle-fires/"
+        ],
+        [
+          "National Weather Service: During a Flood",
+          "https://www.weather.gov/safety/flood-during"
+        ]
+      ]
+    },
+    {
+      "heading": "Give helpers a location and a realistic picture",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Call 911 for urgent danger or serious symptoms; use roadside assistance for a stable mechanical problem. Neither call guarantees an arrival time."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Give road, direction, marker, side, vehicle description, and occupant count. Add coordinates if available.",
+            "Describe lost heat, blocked exhaust, health changes, and assistance needed to transfer occupants.",
+            "Ask what to do while waiting and how to report changes."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Original location-note example",
+          "text": "“Road/direction: __. Marker: __. Vehicle/people: __. Risk: __. Callback: __. Last contact/time: __.” Keep this accessible to another occupant."
+        },
+        {
+          "type": "paragraph",
+          "text": "Call if you can; text 911 if you cannot and local service supports it. A failed text or bounce-back means contact was not established."
+        }
+      ],
+      "references": [
+        [
+          "National 911 Program: Calling and Texting 911",
+          "https://www.911.gov/calling-911/frequently-asked-questions/"
+        ]
+      ]
+    },
+    {
+      "heading": "Make a warmer cabin without creating a new hazard",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Put on dry layers, cover the head and hands, and wrap blankets or sleeping bags around the body. Insulate against cold seats and the floor with available dry material. Keep faces clear. Share warmth where practical without abandoning restraints when another impact remains possible."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Retrieve trunk supplies only when a brief exit is safe.",
+            "Move limbs gently; avoid sweating, exhausting digging, or pushing.",
+            "Drink water and eat snacks if fully alert and able to swallow normally. Do not eat snow.",
+            "Keep medication and assistive-device needs in the waiting plan."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "No improvised flame heat",
+          "text": "Do not use a candle, grill, stove, charcoal, or fuel-burning heater inside the vehicle. Fire and carbon monoxide can create an emergency before the cabin feels warm."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a child in a car seat, use thin warm layers under a snug harness and blankets over it. Bulky coats can compromise fit."
+        }
+      ],
+      "references": [
+        [
+          "CDC: Safety During and After a Winter Storm",
+          "https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html"
+        ],
+        [
+          "American Red Cross: Winter Storm Safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/winter-storm.html"
+        ],
+        [
+          "NHTSA: Winter Weather Driving Tips",
+          "https://www.nhtsa.gov/winter-driving-tips"
+        ],
+        [
+          "CDC: Carbon Monoxide Poisoning Basics",
+          "https://www.cdc.gov/carbon-monoxide/about/"
+        ]
+      ]
+    },
+    {
+      "heading": "Treat engine heat as conditional, not automatically safe",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Carbon monoxide has no reliable smell or visible warning. Snow blocking the tailpipe can allow deadly gas to build up in the cabin. Exhaust-system damage is another concern. If you cannot safely reach the exhaust, cannot keep snow from reblocking it, or suspect a leak or crash damage, do not run a combustion engine for heat."
+        },
+        {
+          "type": "paragraph",
+          "text": "NWS describes running a motor for about 10 minutes per hour with a window slightly open and exhaust cleared. This is conditional fuel-conservation guidance, not a safe-runtime guarantee. A clear tailpipe and cracked window do not prove the cabin is safe."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Before any running period, reassess snow accumulation, exhaust condition, and whether checking outside is itself safe.",
+            "Do not run an engine in an enclosed space, and do not sleep with it running.",
+            "If safe heat is unavailable, add insulation and tell responders that your shelter is cooling; do not substitute a flame."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Electric and hybrid vehicles",
+          "text": "Follow vehicle instructions and displayed charge; there is no universal heating-runtime estimate. A hybrid may start its combustion engine automatically, so engine and exhaust precautions still apply when that can occur."
+        }
+      ],
+      "references": [
+        [
+          "CDC: Clear Snow from Tailpipes",
+          "https://www.cdc.gov/natural-disasters/psa-toolkit/clear-snow-from-tailpipes.html"
+        ],
+        [
+          "National Weather Service: Caught in a Winter Storm",
+          "https://www.weather.gov/safety/winter-during"
+        ],
+        [
+          "NHTSA: Winter Weather Driving Tips",
+          "https://www.nhtsa.gov/winter-driving-tips"
+        ],
+        [
+          "CDC: Carbon Monoxide Poisoning Basics",
+          "https://www.cdc.gov/carbon-monoxide/about/"
+        ],
+        [
+          "NHTSA: Electric and Hybrid Vehicles",
+          "https://www.nhtsa.gov/vehicle-safety/electric-and-hybrid-vehicles"
+        ],
+        [
+          "Toyota 2025 Tundra Hybrid manual: model-specific hybrid-system example",
+          "https://www.toyota.com/owners/warranty-owners-manuals/digital/article/tundra-hv/2025/om0c067u/ch01se040401/"
+        ]
+      ]
+    },
+    {
+      "heading": "Set up a watch while help is delayed",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Check people first, then conditions and resources. With several adults, agree who remains alert. Do not rely on an assumed rescue time."
+        },
+        {
+          "type": "table",
+          "caption": "Original waiting checklist",
+          "columns": [
+            "Check",
+            "Record or action"
+          ],
+          "rows": [
+            [
+              "People",
+              "Can everyone answer normally? Is shivering worsening? Are hands becoming clumsy or skin numb? Absence of shivering does not establish safety."
+            ],
+            [
+              "Vehicle and weather",
+              "Is snow deepening? Is traffic approaching? Is exhaust status uncertain?"
+            ],
+            [
+              "Supplies",
+              "What warmth, water, medication, phone power, fuel, or charge remains?"
+            ],
+            [
+              "Help",
+              "Who actually acknowledged the request? What instructions were given? What change needs reporting now?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Make the vehicle easier to identify with a bright cloth or marker when you can place it safely. At night, an interior dome light can help rescuers see you; consider available battery power and scene-specific instructions. Do not stand in a lane to wave vehicles down. Lighting should suit your roadside position and responder directions; advice for a safely parked vehicle does not justify going dark in an active traffic lane."
+        },
+        {
+          "type": "paragraph",
+          "text": "Avoid unnecessary phone use while keeping it available for callbacks and alerts. Record important changes instead of repeatedly refreshing an unchanged map."
+        }
+      ],
+      "references": [
+        [
+          "American Red Cross: Winter Storm Safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/winter-storm.html"
+        ],
+        [
+          "CDC: Safety During and After a Winter Storm",
+          "https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html"
+        ],
+        [
+          "NHTSA: Winter Weather Driving Tips",
+          "https://www.nhtsa.gov/winter-driving-tips"
+        ],
+        [
+          "National Weather Service: During Extremely Cold Weather",
+          "https://www.weather.gov/safety/cold-during"
+        ]
+      ]
+    },
+    {
+      "heading": "Escalate cold injury, carbon monoxide, or a failing shelter",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Do not wait for a person to collapse before asking for urgent help. Confusion, slurred speech, unusual drowsiness, severe shivering, or worsening coordination can indicate hypothermia. Numb, pale, or white skin can indicate frostbite. Call for medical help and describe observations rather than trying to diagnose the person yourself."
+        },
+        {
+          "type": "paragraph",
+          "text": "Headache, dizziness, nausea, weakness, or confusion during engine use can be carbon monoxide poisoning. Shut off the engine, get occupants to fresh air away from exhaust as safely as the scene allows, and call 911. Do not restart just because symptoms improve. People who are asleep may not notice warning symptoms."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Handle a severely cold person gently and insulate the center of the body while following dispatcher guidance. Do not rub numb or frozen areas or use intense direct heat.",
+            "Report dwindling heat or essential medical-device power before it becomes a collapse.",
+            "If the vehicle catches fire, get out, stay away, and do not return. If water is rising, reassess immediately and avoid entering floodwater."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "During an escape, take immediately reachable essentials only. Belongings must not delay getting away from danger."
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service: Cold Weather Questions",
+          "https://www.weather.gov/safety/cold-outreach"
+        ],
+        [
+          "National Weather Service: During Extremely Cold Weather",
+          "https://www.weather.gov/safety/cold-during"
+        ],
+        [
+          "CDC: Carbon Monoxide Poisoning Basics",
+          "https://www.cdc.gov/carbon-monoxide/about/"
+        ],
+        [
+          "CDC/NIOSH: Carbon Monoxide Hazards",
+          "https://www.cdc.gov/niosh/carbon-monoxide/about/index.html"
+        ],
+        [
+          "U.S. Fire Administration: Vehicle Fire Safety",
+          "https://www.usfa.fema.gov/prevention/vehicle-fires/"
+        ],
+        [
+          "National Weather Service: During a Flood",
+          "https://www.weather.gov/safety/flood-during"
+        ]
+      ]
+    },
+    {
+      "heading": "Recover without turning a long wait into another emergency",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Tell responders about occupants’ condition, possible exhaust exposure, and transfer needs before discussing the vehicle. Report suspected exposure even if symptoms improved."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Confirm the destination and tell your contact when you leave the original location.",
+            "Keep people away from the traffic side and recovery equipment; follow the operator’s directions.",
+            "Before any later drive, clear snow from the vehicle and exhaust, check road conditions, and address damage or warning lights.",
+            "Reassess whether the driver is warm, alert, and fit to continue. Arrange a warm stop or another driver rather than pushing on through exhaustion."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Improved visibility does not reopen a closed road. Avoid exhausting digging or improvised towing as a substitute for safe recovery."
+        },
+        {
+          "type": "callout",
+          "title": "Prepare for the next trip",
+          "text": "Review forecast, route, fuel or charge, reachable warm clothing, and check-in arrangements. Use official resources below and the separate kit guide."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "NWS local forecasts and warnings",
+              "url": "https://www.weather.gov/",
+              "description": "United States: enter a location and check alerts for the route. Weather information does not confirm a road is open."
+            },
+            {
+              "label": "FHWA state road-condition directory",
+              "url": "https://highways.dot.gov/traffic-info",
+              "description": "United States: choose the state for its road-information service. Coverage and updates vary; obey local closures."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service: Caught in a Winter Storm",
+          "https://www.weather.gov/safety/winter-during"
+        ],
+        [
+          "American Red Cross: Winter Storm Safety",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/winter-storm.html"
+        ],
+        [
+          "NHTSA: Winter Weather Driving Tips",
+          "https://www.nhtsa.gov/winter-driving-tips"
+        ],
+        [
+          "CDC: Safety During and After a Winter Storm",
+          "https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html"
+        ]
+      ]
+    }
+  ],
+  "without_help": "If contact fails, conserve warmth and phone power while retrying from the safest shelter. Do not walk into whiteout conditions for reception. An unsent message or location pin alone does not establish rescue. Reassess immediately if staying becomes dangerous.",
+  "household": "Account for children, older adults, mobility or communication needs, service animals, and medical equipment. Keep vital items reachable and tell responders what assistance a transfer requires.",
+  "pack_now": "Dry layers, hats, mittens, blankets or sleeping bags, water, food, medication, phone and power bank, written contacts, marker cloth, flashlight, and accessible shovel. See vehicle-emergency-kit for the full equipment checklist.",
+  "next": "Once warm and safe, follow medical advice for suspected cold injury or exhaust exposure. Confirm arrival, arrange vehicle assessment, and restock.",
+  "watch": "Watch alertness, coordination, numb skin, headache or nausea, drifting snow, traffic, remaining energy, and whether help has acknowledged the request.",
+  "decisions": [
+    [
+      "No immediate danger and no clearly safe refuge",
+      "Stay with the vehicle and organize the wait."
+    ],
+    [
+      "Exhaust cannot safely be checked or kept clear",
+      "Leave the combustion engine off and report the loss of safe heat."
+    ],
+    [
+      "Someone becomes confused, unusually sleepy, or severely cold",
+      "Request urgent medical help now."
+    ],
+    [
+      "Possible carbon monoxide symptoms occur",
+      "Stop engine use, reach fresh air as safely as possible, and call 911."
+    ]
+  ],
+  "faqs": [
+    [
+      "Does ten minutes of engine use per hour make it safe?",
+      "No. Exhaust, drifting snow, ventilation, and vehicle damage still matter. Do not run the engine when those risks cannot be managed."
+    ],
+    [
+      "Should I walk to lights I can see?",
+      "Only consider a usable refuge safely reachable by every occupant. Uncertain lights or a map estimate are insufficient."
+    ],
+    [
+      "Can I sleep while waiting?",
+      "Do not sleep with a combustion engine running. Organize an adult watch; difficulty waking someone needs urgent attention."
+    ],
+    [
+      "How long will an electric vehicle keep us warm?",
+      "It varies with the vehicle, charge, temperature, and settings. Follow vehicle guidance and report dwindling heat early."
+    ]
+  ],
+  "scope": "U.S.-focused guidance for an extended winter delay or stranding in a passenger vehicle. It does not replace emergency dispatch, medical assessment, vehicle instructions, or local road closures. It cannot guarantee rescue timing or a safe engine-running duration.",
+  "related": [
+    "winter-storm",
+    "extreme-cold",
+    "carbon-monoxide",
+    "vehicle-breakdown",
+    "vehicle-emergency-kit",
+    "emergency-contact-plan"
+  ]
+}
