@@ -145,6 +145,10 @@
     [
       "NWS · Lightning tips",
       "https://www.weather.gov/safety/lightning-tips"
+    ],
+    [
+      "American Red Cross - Lightning Strike Injury (CPR and AED)",
+      "https://www.redcross.org/take-a-class/resources/learn-first-aid/lightning-strike-injury"
     ]
   ],
   "hail": [
@@ -531,12 +535,16 @@
   ],
   "infant-choking": [
     [
-      "American Red Cross - Infant Choking",
-      "https://www.redcross.org/take-a-class/resources/learn-first-aid/infant-choking"
+      "AHA / AAP - 2025 pediatric basic life support (heel-of-hand infant thrusts)",
+      "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-basic-life-support"
     ],
     [
       "AHA - 2025 choking update",
       "https://newsroom.heart.org/facts/cpr-cardiopulmonary-resuscitation-and-updated-guidelines-2025"
+    ],
+    [
+      "American Red Cross - Infant Choking (FAQ uses two fingers; this guide follows AHA / AAP 2025)",
+      "https://www.redcross.org/take-a-class/resources/learn-first-aid/infant-choking"
     ]
   ],
   "child-infant-cpr": [
@@ -585,6 +593,10 @@
     [
       "AHA / Red Cross - 2024 first-aid guidelines",
       "https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines"
+    ],
+    [
+      "AHA - 2025 opioid overdose resuscitation (CPR with breaths)",
+      "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation"
     ]
   ],
   "lost-outdoors": [

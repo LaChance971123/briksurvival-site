@@ -4,7 +4,7 @@
   "category": "medical",
   "subcategory": "Neurological",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-07",
   "aliases": [
     "stroke",
     "face drooping",
@@ -31,6 +31,20 @@
       "Watch responsiveness",
       "If unresponsive and not breathing normally, begin CPR and use an AED. Follow dispatcher instructions when available."
     ]
+  ],
+  "contextual_links": [
+    {
+      "slug": "cpr",
+      "label": "Adult hands-only CPR"
+    },
+    {
+      "slug": "child-infant-cpr",
+      "label": "Child & infant CPR with breaths"
+    },
+    {
+      "slug": "aed",
+      "label": "Using an AED"
+    }
   ],
   "without_help": "Keep attempting to reach urgent medical care while watching breathing and responsiveness. Tell a trusted person the exact location and last-known-well time. Do not make the affected person walk or drive. An inaccessible ambulance service does not make home observation a treatment.",
   "household": "Speech difficulty can prevent a person from telling others what they need. Use short questions, allow time and avoid asking them to repeat a long history. Keep children with another adult, clear access and prepare the medication list for handover.",

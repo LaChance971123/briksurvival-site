@@ -4,7 +4,7 @@
   "category": "medical",
   "subcategory": "Circulation",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-07",
   "aliases": [
     "heart attack",
     "chest pain",
@@ -30,6 +30,20 @@
       "If they collapse",
       "If unresponsive and not breathing normally, begin CPR and use an AED promptly. A heart attack can lead to cardiac arrest."
     ]
+  ],
+  "contextual_links": [
+    {
+      "slug": "cpr",
+      "label": "Adult hands-only CPR"
+    },
+    {
+      "slug": "aed",
+      "label": "Using an AED"
+    },
+    {
+      "slug": "child-infant-cpr",
+      "label": "Child & infant CPR with breaths"
+    }
   ],
   "without_help": "Keep contacting reachable medical care and a trusted local helper while the person rests. Confirm whether assistance is actually coming and ask a clinician about transport when ambulance access fails. The affected person must not drive; household planning cannot replace urgent treatment.",
   "household": "Choose one person to remain with the patient and one to communicate. Prepare a concise medication and allergy list, leave room for first aid and keep dependents supervised. If alone, put the call on speaker and share the location before giving a long history.",

@@ -4,7 +4,7 @@
   "category": "medical",
   "subcategory": "Allergy",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-07",
   "aliases": [
     "anaphylaxis",
     "severe allergic reaction",
@@ -30,6 +30,20 @@
       "Monitor and reassess",
       "If symptoms persist, follow the prescribed plan, product instructions or dispatcher for a repeat dose. If unresponsive and not breathing normally, begin CPR and use an AED."
     ]
+  ],
+  "contextual_links": [
+    {
+      "slug": "child-infant-cpr",
+      "label": "Child & infant CPR with breaths"
+    },
+    {
+      "slug": "cpr",
+      "label": "Adult compressions if breaths are not possible"
+    },
+    {
+      "slug": "aed",
+      "label": "Using an AED"
+    }
   ],
   "without_help": "Give prescribed epinephrine without waiting for a callback. Keep requesting urgent care and monitor breathing. Record the dose time and keep the used device for handover. Do not treat improvement as proof that the reaction has ended.",
   "household": "Ask caregivers where the prescribed medicine is kept before an outing. Practice with the correct trainer device, explain who will fetch it and who will stay with the person, and check storage and expiry instructions. A school or childcare plan should travel with the child.",

@@ -4,7 +4,7 @@
   "category": "medical",
   "subcategory": "Poisoning",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-07",
   "aliases": [
     "opioid overdose",
     "overdose",
@@ -30,6 +30,20 @@
       "Use naloxone and observe",
       "Follow the actual device instructions, including repeat dosing. Do not interrupt CPR to wait for a response. If normal breathing returns, place on their side as appropriate and keep monitoring."
     ]
+  ],
+  "contextual_links": [
+    {
+      "slug": "child-infant-cpr",
+      "label": "Child & infant CPR with breaths"
+    },
+    {
+      "slug": "cpr",
+      "label": "Adult compressions if breaths are not possible"
+    },
+    {
+      "slug": "aed",
+      "label": "Using an AED"
+    }
   ],
   "without_help": "Give available naloxone and resuscitation promptly while a helper seeks care. Keep monitoring after improvement: opioids can outlast naloxone and breathing can worsen again. Stay until a capable person takes over or the scene becomes unsafe.",
   "household": "Keep naloxone accessible wherever overdose risk exists and learn how the supplied product works. Share emergency roles without stigma; the immediate objective is breathing and medical care. Keep children and bystanders away from needles and unverified substances.",
