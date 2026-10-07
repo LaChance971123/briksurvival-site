@@ -4,7 +4,7 @@
   "category": "medical",
   "subcategory": "Airway",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-07",
   "aliases": [
     "baby choking",
     "my baby is choking",
@@ -30,6 +30,16 @@
       "Change to CPR if unresponsive",
       "Place on a firm flat surface and begin infant CPR. Before breaths, remove an object only if clearly visible. Never sweep the mouth blindly."
     ]
+  ],
+  "contextual_links": [
+    {
+      "slug": "child-infant-cpr",
+      "label": "Child & infant CPR with breaths"
+    },
+    {
+      "slug": "aed",
+      "label": "Using an AED"
+    }
   ],
   "without_help": "Begin the sequence immediately while a helper calls. If alone, use speakerphone if reachable without delay. If the infant becomes unresponsive, change to CPR rather than continuing responsive choking care. A delayed responder is not a reason to pause.",
   "household": "Have a second caregiver locate help and open access while the first provides care. Teach every regular caregiver the infant sequence using hands-on training; older-child abdominal thrusts are not appropriate for babies. Keep small objects and age-inappropriate food out of reach.",
@@ -62,7 +72,7 @@
     "Help requested / response confirmed",
     "Actions / times / next handover"
   ],
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-07",
   "published": "2026-10-02",
   "next_review": "2027-01-02"
 }

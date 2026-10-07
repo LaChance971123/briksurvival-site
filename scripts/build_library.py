@@ -45,6 +45,7 @@ def resource_keys(g):
  if g['category'] in ['preparedness','evacuation-shelter','conflict','chemical-radiation']:return ['fema']
  return []
 
+GUIDE_BY_SLUG={g['slug']:g for g in GUIDES}
 INDEX=[]
 for g in GUIDES:
  assert g['category'] in CAT and g['subcategory'] in CAT[g['category']]['subcategories']
@@ -69,11 +70,17 @@ for g in GUIDES:
  next_heading=g.get('next_heading','Next steps')
  watch_heading=g.get('watch_heading','Watch for')
  source_context=g.get('source_context','Osprey Zero combines source-based protective guidance with practical household planning. References provide context, not a promise of assistance. Some standards are U.S.-based; local risks, laws and services differ.')
+ contextual=[]
+ for link in g.get('contextual_links',[]):
+  assert isinstance(link,dict) and link.get('slug') in GUIDE_BY_SLUG and isinstance(link.get('label'),str) and link['label'].strip(), (g['slug'],'invalid contextual link',link)
+  contextual.append(f'<a href="{route(GUIDE_BY_SLUG[link["slug"]])}">{e(link["label"])}</a>')
+ contextual_nav=('<nav class="guide-contextual-links" aria-label="Related guidance for these steps"><p>Related guidance</p>'+''.join(contextual)+'</nav>') if contextual else ''
  steps=''.join(f'<li><span class="step-num">{n:02}</span><div><h3>{e(h)}</h3><p>{e(p)}</p></div></li>' for n,(h,p) in enumerate(g['steps'],1))
  decisions=''.join(f'<div class="decision-card"><h3>{e(h)}</h3><p>{e(p)}</p></div>' for h,p in g.get('decisions',[]))
  faq_link='<a href="#questions">Common questions</a>' if g.get('faqs') else ''
  faqs=''.join(f'<details class="guide-faq"><summary>{e(h)}</summary><p>{e(p)}</p></details>' for h,p in g.get('faqs',[]))
  faq_section=('<section class="guide-section" id="questions"><h2>Common questions.</h2>'+faqs+'</section>') if faqs else ''
+ toc_links=f'<a href="#quick-answer">Quick answer</a><a href="#do-now">{e(action_label)}</a>{detail_links}<a href="#without-help">{e(fallback_heading)}</a><a href="#household">{e(household_heading)}</a><a href="#next">{e(next_heading)}</a>{faq_link}<a href="#watch">{e(watch_heading)}</a><a href="#sources">Sources</a>'
  sources=''.join(f'<li><a href="{e(u,quote=True)}" target="_blank" rel="noopener noreferrer">{e(l)}</a></li>' for l,u in SOURCES[g['sources']])
  related=[x for x in GUIDES if x['slug']!=g['slug'] and x['category']==g['category'] and x['subcategory']==g['subcategory']][:3]
  extra={
@@ -113,14 +120,14 @@ for g in GUIDES:
  if extra!=['emergency-alerts','72-hour-kit','evacuation']:related=list(dict((x['slug'],x) for x in preferred+related).values())[:4]
  links=''.join(f'<a href="{route(x)}">{e(x["title"])}</a>' for x in related)
  main=f'''<main id="main" class="subpage guide-page"><nav class="wrap guide-breadcrumb" aria-label="Breadcrumb"><a href="/library/">Encyclopedia</a><span>/</span><a href="/library/{cat['id']}/">{e(cat['title'])}</a><span>/</span><a href="/library/{cat['id']}/#{cat['id']}-{re.sub('[^a-z0-9]+','-',g['subcategory'].lower()).strip('-')}">{e(g['subcategory'])}</a></nav>
- <article class="wrap guide-layout"><div class="guide-main"><header class="guide-heading"><span class="kicker">{e(g['content_type'])}</span><h1>{title}</h1></header>
+ <article class="wrap guide-layout"><div class="guide-main"><header class="guide-heading"><span class="kicker">{e(g['content_type'])}</span><h1>{title}</h1><a class="guide-start-link" href="#do-now">{e(action_label)} <span aria-hidden="true">↓</span></a></header>
  <section class="quick-answer" id="quick-answer" aria-labelledby="quick-title"><h2 class="quick-label" id="quick-title">QUICK ANSWER · START HERE</h2><p>{e(g['tldr'])}</p></section>
  <section class="guide-resources" aria-label="Trusted references"><h2>Trusted references.</h2><div class="resource-grid">{resources}</div><p class="resource-note">Published references provide deeper context. The practical steps are below; outside references need a connection.</p></section>
  <div class="guide-meta"><span>UPDATED {g['updated']}</span><span>FREE ONLINE GUIDE</span><span>{read_minutes} MIN READ</span></div>
- <div class="guide-actions"><button type="button" data-save-guide aria-pressed="false" hidden>Save to reading list</button><a href="/reading-list/">My reading list</a><button type="button" data-share-guide hidden>Copy guide link</button><span data-guide-status role="status" aria-live="polite"></span></div>
+ <div class="guide-actions"><button type="button" data-save-guide aria-pressed="false" hidden>Save to reading list</button><a href="/reading-list/">My reading list</a><button type="button" data-share-guide hidden>Copy guide link</button><button type="button" data-print-guide hidden>Print guide</button><span data-guide-status role="status" aria-live="polite"></span></div>
  <div class="guide-alert"><span>!</span><p>{e(context)}</p></div>
- <details class="guide-toc"><summary>On this page</summary><nav class="guide-jumps" aria-label="Skip to a section"><a href="#do-now">{action_label}</a>{detail_links}<a href="#without-help">{e(fallback_heading)}</a><a href="#household">{e(household_heading)}</a><a href="#next">{e(next_heading)}</a><a href="#watch">{e(watch_heading)}</a>{faq_link}<a href="#sources">Sources</a></nav></details>
- <section class="guide-section" id="do-now"><h2>{action_label}.</h2><ol class="action-list">{steps}</ol></section>
+ <details class="guide-toc"><summary>Jump to a section <span aria-hidden="true">+</span></summary><nav class="guide-jumps" aria-label="On this page">{toc_links}</nav></details>
+ <section class="guide-section" id="do-now"><h2>{e(action_label)}.</h2><ol class="action-list">{steps}</ol>{contextual_nav}</section>
  {diagram(g.get('diagram'))}
  {sections}
  <section class="guide-section no-help-panel" id="without-help">{fallback_kicker}<h2>{e(fallback_heading)}.</h2><p>{e(g['without_help'])}</p></section>
@@ -129,14 +136,14 @@ for g in GUIDES:
  {faq_section}
  <section class="guide-section guide-caution" id="watch"><h2>{e(watch_heading)}.</h2><p>{e(g['watch'])}</p></section>
  <section class="guide-section guide-sources" id="sources"><h2>Sources & context.</h2><p>{e(source_context)}</p><ul>{sources}</ul><p>Updated {g['updated']}. {'First-aid summaries support immediate response and training; they have not received independent clinical review.' if g['category']=='medical' else 'Editorially reviewed against linked references; not independently certified by a subject-matter expert.'+review_suffix}</p></section></div>
- <aside class="guide-rail" aria-label="Guide contents"><div class="rail-panel"><span>FIND IT FAST</span><a href="#quick-answer">Quick answer</a><a href="#do-now">{action_label}</a>{detail_links}<a href="#without-help">{e(fallback_heading)}</a><a href="#household">{e(household_heading)}</a><a href="#next">{e(next_heading)}</a><a href="#watch">{e(watch_heading)}</a>{faq_link}<a href="#sources">Sources</a><a href="#quick-answer" class="rail-back">↑ Back to quick answer</a><a href="/search/">Search another situation</a></div></aside></article>
+ <aside class="guide-rail" aria-label="Guide contents"><nav class="rail-panel" aria-label="On this page"><span>ON THIS PAGE</span>{toc_links}<a href="#quick-answer" class="rail-back">↑ Back to quick answer</a><a href="/search/">Search another situation</a></nav></aside></article>
  {guide_cta(g,CATALOG)}
  <section class="wrap guide-end"><h2>Related guidance.</h2><div class="related-links">{links}</div></section></main>'''
  page(url,g['title'],g['tldr'],main)
  INDEX.append(dict(title=g['title'],url=url,category=cat['title'],category_id=cat['id'],subcategory=g['subcategory'],content_type=g['content_type'],aliases=g.get('aliases',[]),summary=g['tldr'],text=section_text({k:g.get(k,[]) for k in ('deck','decisions','faqs','sections','next','watch','without_help','household','keywords','steps')}),priority=10))
 
 # Category and subcategory pages remain usable without JavaScript.
-def card(g):return f'<a class="library-card" data-guide-type="{e(g['content_type'])}" href="{route(g)}"><span>{e(g["content_type"])}</span><h3>{e(g["title"])}</h3><p>{e(g["tldr"].split(". ")[0]+".")}</p><small>{e(g["subcategory"])}</small></a>'
+def card(g):return f'<a class="library-card" data-guide-type="{e(g['content_type'])}" href="{route(g)}"><span>{e(g["content_type"])}</span><h4>{e(g["title"])}</h4><p>{e(g["tldr"].split(". ")[0]+".")}</p><small>{e(g["subcategory"])}</small></a>'
 def searchform():return '<form class="library-search" action="/search/" role="search"><label for="library-query">What do you need help with?</label><div><input id="library-query" name="q" type="search" placeholder="Try: smell gas, tornado warning, lights out" autocomplete="off"><button class="button button-primary" type="submit">Search</button></div></form>'
 def browse(path,title,selected):
  groups=''
@@ -145,7 +152,7 @@ def browse(path,title,selected):
   gs=[g for g in selected if g['category']==cat['id']]
   if not gs:continue
   collapsible=path in ['/emergencies/','/preparedness/','/guides/']
-  groups+=(f'<details class="browse-group"><summary>{e(cat["title"])}<small>{len(gs)} {"guide" if len(gs)==1 else "guides"}</small></summary>' if collapsible else f'<section class="library-group"><h2><a href="/library/{cat["id"]}/">{e(cat["title"])}</a><small>{len(gs)} {"guide" if len(gs)==1 else "guides"}</small></h2>')
+  groups+=(f'<details class="browse-group" id="subject-{cat["id"]}"><summary><h2>{e(cat["title"])}<small>{len(gs)} {"guide" if len(gs)==1 else "guides"}</small></h2></summary>' if collapsible else f'<section class="library-group"><h2><a href="/library/{cat["id"]}/">{e(cat["title"])}</a><small>{len(gs)} {"guide" if len(gs)==1 else "guides"}</small></h2>')
   for sub in cat['subcategories']:
    members=[g for g in gs if g['subcategory']==sub]
    if not members:continue
@@ -182,8 +189,9 @@ for product in CATALOG['products']:
   INDEX.append(dict(title=product['title']+(' · Coming soon' if product['status']=='planned' else ''),url=product_route(product),category='Preparation toolkits',category_id='',subcategory='Paid preparation tools',content_type='Toolkit',aliases=[],summary=product['summary']+(' In development; not available to purchase.' if product['status']=='planned' else ''),text=' '.join(product['components']),priority=0))
 write('search-index.json',json.dumps(INDEX,separators=(',',':')))
 # The reference shelf links to independently published sources.
-refs=''.join(f'<article class="library-card"><h3>{e(r["title"])}</h3><p>{e(r["description"])}</p><a href="{e(r["url"],quote=True)}" target="_blank" rel="noopener noreferrer">Open published PDF</a></article>' for r in MANUALS.values())
-page('/resources/','Reference shelf','Published manuals, humanitarian references and official information.',f'<main id="main" class="subpage"><section class="wrap library-heading"><p class="kicker">REFERENCE SHELF</p><h1>Published knowledge.</h1><p>Original quick answers remain in the encyclopedia. These published references provide deeper context; check their date and follow current local guidance.</p><div class="library-grid">{refs}</div><div class="reference-toolkit-note"><h2>Build your household plan.</h2><p>Explore four completed preparation toolkit editions with printable guides, checklists and Excel calculators. Checkout is opening soon. Our online guides remain free to read.</p><a class="button button-outline" href="/toolkits/">Explore the toolkits</a></div><h2>Current official information.</h2><div class="related-links"><a href="https://www.weather.gov/">National Weather Service</a><a href="https://www.ready.gov/">Ready.gov</a><a href="https://www.cdc.gov/">CDC</a><a href="https://www.redcross.org/get-help.html">American Red Cross</a></div></section></main>')
+refs=''.join(f'<article class="library-card"><h2>{e(r["title"])}</h2><p>{e(r["description"])}</p><a href="{e(r["url"],quote=True)}" target="_blank" rel="noopener noreferrer">Open published PDF</a></article>' for r in MANUALS.values())
+reference_toolkit_copy=('Explore available preparation toolkits with printable guides, checklists and household planning tools. Each product lists its current contents, edition and price.' if any(p['kind']=='topic' and p['status']=='ready' for p in CATALOG['products']) else 'Our preparation toolkits are being redesigned. Purchases are paused while we refine the contents and verify delivery. The free online guides remain available.')
+page('/resources/','Reference shelf','Published manuals, humanitarian references and official information.',f'<main id="main" class="subpage"><section class="wrap library-heading"><p class="kicker">REFERENCE SHELF</p><h1>Published knowledge.</h1><p>Original quick answers remain in the encyclopedia. These published references provide deeper context; check their date and follow current local guidance.</p><div class="library-grid">{refs}</div><div class="reference-toolkit-note"><h2>Build your household plan.</h2><p>{reference_toolkit_copy}</p><a class="button button-outline" href="/toolkits/">Explore the toolkits</a></div><h2>Current official information.</h2><div class="related-links"><a href="https://www.weather.gov/">National Weather Service</a><a href="https://www.ready.gov/">Ready.gov</a><a href="https://www.cdc.gov/">CDC</a><a href="https://www.redcross.org/get-help.html">American Red Cross</a></div></section></main>')
 rp=ROOT/'resources/index.html'
 rp.write_text(rp.read_text().replace('<h2>Current official information.</h2>','<h2>Independent humanitarian & civilian support.</h2><p>Verify contacts directly and share personal information only when safe. These services may have limited access or capacity and do not guarantee assistance.</p><div class="related-links"><a href="https://www.icrc.org/en/where-we-work">ICRC · Find a country operation</a><a href="https://help.unhcr.org/">UNHCR · Country-specific help</a><a href="https://www.icrc.org/en/what-we-do/reconnecting-families">Red Cross · Family reunification</a><a href="https://www.accessnow.org/help/">Access Now · Digital Security Helpline</a></div><h2>Official hazard & health references.</h2>'))
 # Add global navigation to preserved pages and make homepage search global.

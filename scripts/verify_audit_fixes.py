@@ -4,7 +4,8 @@ from lxml import html
 R=Path(__file__).resolve().parents[1];D=R/'dist'
 about=(D/'about/index.html').read_text();assert 'Topic toolkits are available through Payhip' not in about;assert 'Purchases are paused' in about
 planner=(D/'planner/index.html').read_text();assert 'final contents will be confirmed' in planner;assert 'The four topic kits include' not in planner
-home=html.fromstring((D/'index.html').read_text());assert home.xpath('//span[@class="readiness-number" and text()="02"]/parent::a/@href')==['/preparedness/household-emergency-plan/']
+home=html.fromstring((D/'index.html').read_text());assert home.xpath('//ol[@class="home-start-grid"]//a[@href="/preparedness/household-emergency-plan/"]'), 'Free household-plan entry remains available'
+assert home.xpath('//aside[@class="field-preview"]//a[@href="/emergencies/power-outage/"]'), 'Hero preview opens its real guide'
 contact=html.fromstring((D/'contact/index.html').read_text());f=contact.xpath('//form[@name="private-contact"]')[0]
 assert f.get('data-netlify')=='true' and f.get('method')=='POST' and f.get('netlify-honeypot')=='bot-field'
 assert f.xpath('.//input[@name="form-name"]/@value')==['private-contact']

@@ -117,32 +117,159 @@ if(thanks){const type=new URLSearchParams(location.search).get('request');if(typ
   window.addEventListener('storage', e => { if (e.key === key || e.key === null) { sync(); renderList(); } });
 })();
 
-// Compact subject browsing; full navigation also works without JavaScript.
-for (const menu of document.querySelectorAll('.subject-menu')) {
-  const wide = window.matchMedia('(min-width: 1021px)');
-  menu.open = wide.matches;
-  wide.addEventListener('change', e => { menu.open = e.matches; });
-}
-const browseType = document.querySelector('#browse-type');
-if (browseType) {
-  const cards = [...document.querySelectorAll('[data-guide-type]')], status = document.querySelector('#browse-status');
+// Guide controls enhance plain anchors; section history remains native.
+(() => {
+  const guide = document.querySelector('.guide-page');
+  if (!guide) return;
+  const status = guide.querySelector('[data-guide-status]');
+  const announce = text => { if (status) status.textContent = text; };
+  const toc = guide.querySelector('.guide-toc');
+  const links = [...guide.querySelectorAll('.guide-jumps a[href^="#"],.rail-panel a[href^="#"]')];
+  const sections = [...guide.querySelectorAll('.quick-answer[id],.guide-section[id]')];
+  const markCurrent = id => links.forEach(link => {
+    if (link.hash === '#' + id) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
+  const markHash = () => {
+    const id = location.hash.slice(1);
+    if (sections.some(section => section.id === id)) markCurrent(id);
+  };
+  markHash();
+  window.addEventListener('hashchange', markHash);
+  // Keep native anchor navigation and Back behavior; only move keyboard focus.
+  for (const link of [...links, ...guide.querySelectorAll('.guide-start-link')]) {
+    link.addEventListener('click', event => {
+      if (event.button || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const target = document.getElementById(link.hash.slice(1));
+      if (!target) return;
+      target.tabIndex = -1;
+      target.focus({preventScroll: true});
+      if (toc?.contains(link)) toc.open = false;
+      markCurrent(target.id);
+    });
+  }
+  if ('IntersectionObserver' in window) {
+    const visible = new Set();
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) visible.add(entry.target);
+        else visible.delete(entry.target);
+      }
+      const first = sections.find(section => visible.has(section));
+      if (first) markCurrent(first.id);
+    }, {rootMargin: '-105px 0px -60% 0px', threshold: 0});
+    sections.forEach(section => observer.observe(section));
+  }
+  if (navigator.clipboard?.writeText) {
+    for (const section of sections) {
+      const heading = section.querySelector('h2');
+      if (!heading) continue;
+      const label = heading.textContent.trim().replace(/\.$/, '');
+      const button = document.createElement('button');
+      button.type = 'button'; button.className = 'section-copy-link';
+      button.textContent = 'Copy link';
+      button.setAttribute('aria-label', 'Copy link to ' + label);
+      // A separate control keeps the heading name concise for screen readers.
+      const headingRow = document.createElement('div');
+      headingRow.className = 'guide-section-heading';
+      heading.replaceWith(headingRow); headingRow.append(heading, button);
+      let reset;
+      button.addEventListener('click', async () => {
+        clearTimeout(reset);
+        try {
+          await navigator.clipboard.writeText(location.origin + location.pathname + '#' + section.id);
+          button.textContent = 'Copied'; announce('Link to ' + label + ' copied.');
+        } catch {
+          button.textContent = 'Copy failed';
+          announce('The link could not be copied. Open this section from the contents and copy your browser address.');
+        }
+        reset = setTimeout(() => { button.textContent = 'Copy link'; }, 2500);
+      });
+    }
+  }
+  const print = guide.querySelector('[data-print-guide]');
+  if (print && typeof window.print === 'function') {
+    print.hidden = false;
+    let expanded = [];
+    const openDetails = () => {
+      if (expanded.length) return;
+      expanded = [...guide.querySelectorAll('.guide-faq:not([open]),.pack-details:not([open])')];
+      expanded.forEach(detail => { detail.open = true; });
+    };
+    const restoreDetails = () => { expanded.forEach(detail => { detail.open = false; }); expanded = []; };
+    window.addEventListener('beforeprint', openDetails);
+    window.addEventListener('afterprint', restoreDetails);
+    print.addEventListener('click', () => window.print());
+  }
+})();
+
+// Browse choices live on this history entry, never in an account or a query URL.
+(() => {
+  const subject = document.querySelector('.subject-menu');
+  const browseType = document.querySelector('#browse-type');
   const groups = [...document.querySelectorAll('.browse-group')];
-  let originalOpen;
-  browseType.addEventListener('change', () => {
-    if (browseType.value && !originalOpen) originalOpen = groups.map(g => g.open);
+  if (!subject && !browseType && !groups.length) return;
+  const cards = [...document.querySelectorAll('[data-guide-type]')];
+  const status = document.querySelector('#browse-status');
+  const wide = window.matchMedia('(min-width: 1021px)');
+  const snapshot = () => {
+    try { return history.state?.ozBrowse?.path === location.pathname ? history.state.ozBrowse : null; }
+    catch { return null; }
+  };
+  let originalOpen = null;
+  let restoring = false;
+  const save = () => {
+    if (restoring) return;
+    try {
+      history.replaceState({...history.state, ozBrowse: {
+        path: location.pathname, type: browseType?.value || '',
+        open: groups.filter(group => group.open).map(group => group.id),
+        originalOpen, subjectOpen: subject?.open, width: wide.matches
+      }}, '');
+    } catch { /* Browsing still works when history storage is unavailable. */ }
+  };
+  const applyFilter = () => {
+    const type = browseType?.value || '';
     let count = 0;
-    for (const card of cards) { card.hidden = Boolean(browseType.value && card.dataset.guideType !== browseType.value); if (!card.hidden) count++; }
+    for (const card of cards) {
+      card.hidden = Boolean(type && card.dataset.guideType !== type);
+      if (!card.hidden) count++;
+    }
     for (const group of document.querySelectorAll('.library-subgroup,.library-group,.browse-group')) {
       group.hidden = ![...group.querySelectorAll('[data-guide-type]')].some(card => !card.hidden);
-      if (group.matches('.browse-group') && browseType.value && !group.hidden) group.open = true;
     }
     for (const chip of document.querySelectorAll('.subcategory-chips a')) {
-      const target = document.getElementById(chip.hash.slice(1)); chip.hidden = Boolean(target?.hidden);
+      chip.hidden = Boolean(document.getElementById(chip.hash.slice(1))?.hidden);
     }
-    if (!browseType.value && originalOpen) { groups.forEach((g, i) => { g.open = originalOpen[i]; }); originalOpen = undefined; }
-    status.textContent = count + (count === 1 ? ' guide shown' : ' guides shown');
+    if (status) status.textContent = count + (count === 1 ? ' guide shown' : ' guides shown');
+  };
+  const restore = () => {
+    restoring = true;
+    const state = snapshot();
+    if (subject) subject.open = state && state.width === wide.matches && typeof state.subjectOpen === 'boolean' ? state.subjectOpen : wide.matches;
+    if (browseType) browseType.value = state?.type || '';
+    if (state && Array.isArray(state.open)) groups.forEach(group => { group.open = state.open.includes(group.id); });
+    originalOpen = Array.isArray(state?.originalOpen) ? state.originalOpen : null;
+    applyFilter(); restoring = false;
+  };
+  restore();
+  subject?.addEventListener('toggle', save);
+  groups.forEach(group => group.addEventListener('toggle', save));
+  wide.addEventListener('change', event => { if (subject) subject.open = event.matches; save(); });
+  browseType?.addEventListener('change', () => {
+    if (browseType.value) {
+      if (!originalOpen) originalOpen = groups.filter(group => group.open).map(group => group.id);
+      applyFilter(); groups.forEach(group => { if (!group.hidden) group.open = true; });
+    } else {
+      applyFilter();
+      if (originalOpen) groups.forEach(group => { group.open = originalOpen.includes(group.id); });
+      originalOpen = null;
+    }
+    save();
   });
-}
+  window.addEventListener('pagehide', save);
+  window.addEventListener('popstate', restore);
+})();
 
 // Progressive enhancement only: content stays visible without JS or with reduced motion.
 (() => {

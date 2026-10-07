@@ -4,7 +4,7 @@
   "category": "natural-hazards",
   "subcategory": "Severe storms",
   "content_type": "Emergency guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-07",
   "aliases": [
     "lightning strike"
   ],
@@ -29,6 +29,20 @@
       "Help a struck person",
       "Call emergency services. A lightning victim carries no electrical charge; give CPR if needed and follow dispatcher instructions."
     ]
+  ],
+  "contextual_links": [
+    {
+      "slug": "child-infant-cpr",
+      "label": "Child & infant CPR with breaths"
+    },
+    {
+      "slug": "cpr",
+      "label": "Adult compressions if breaths are not possible"
+    },
+    {
+      "slug": "aed",
+      "label": "Using an AED"
+    }
   ],
   "next": "Check forecasts before outdoor activity and identify shelter before leaving it.",
   "watch": "Lightning can strike beyond rainfall. Do not wait for rain to seek shelter.",

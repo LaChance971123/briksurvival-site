@@ -13,14 +13,15 @@ f=lambda name,size:ImageFont.truetype(str(R/'Assets/fonts'/name),size)
 d.rectangle((60,65,140,69),fill='#F05A2A');d.text((60,100),'OSPREY',font=f('SpaceGrotesk-700.ttf',42),fill='#F2EEE6');d.text((241,100),'ZERO',font=f('SpaceGrotesk-700.ttf',42),fill='#F05A2A');d.text((60,235),'When systems fail,',font=f('SpaceGrotesk-700.ttf',75),fill='#F2EEE6');d.text((60,325),'skill remains.',font=f('SpaceGrotesk-700.ttf',75),fill='#D7D1C4');d.line((60,495,1140,495),fill='#35393D',width=2);d.text((60,530),'SKILL BEATS PANIC. EVERY TIME.',font=f('IBMPlexMono-400.ttf',21),fill='#D7D1C4');d.text((865,530),'OSPREYZERO.COM',font=f('IBMPlexMono-400.ttf',21),fill='#F05A2A');im.save(R/'Assets/oz-share.png',optimize=True)
 for p in [R/'templates/shell.html',*[R/name for name in sorted(public_pages(R))]]:
  s=p.read_text();s=re.sub(r'\s*<link[^>]*(?:fonts.googleapis.com|fonts.gstatic.com)[^>]*>','',s)
- s=re.sub(r'/(styles.css|app.js|search.js)\?v=oz\d+',lambda m:'/'+m[1]+'?v=oz21',s)
+ s=re.sub(r'/(styles.css|app.js|search.js)\?v=oz\d+',lambda m:'/'+m[1]+'?v=oz22',s)
  if p==R/'offline/index.html':
   s=re.sub(r'<script src="/ads.js[^"]*"[^>]*></script>','',s)
-  if '/app.js?' not in s:s=s.replace('</head>','<script src="/app.js?v=oz21" defer></script></head>')
+  if '/app.js?' not in s:s=s.replace('</head>','<script src="/app.js?v=oz22" defer></script></head>')
  if p==R/'404.html' and 'http-equiv="Content-Security-Policy"' not in s:
   policy=json.loads((R/'config/security-policy.json').read_text())['default']
   s=s.replace('<head>','<head><meta http-equiv="Content-Security-Policy" content="'+e(policy,quote=True)+'">')
  s=s.replace('https://monetag.com/privacy-policy/','https://monetag.com/privacy/')
+ if 'class="mobile-search"' not in s:s=s.replace('<button class="menu-toggle"','<a class="mobile-search" href="/search/" aria-label="Search guides"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></a><button class="menu-toggle"')
  if 'apple-touch-icon' not in s:s=s.replace('</head>','<link rel="apple-touch-icon" href="/Assets/apple-touch-icon.png"></head>')
  if p==R/'index.html' and 'hero-urgent' not in s:
   m=re.search(r'<div class="finder-bar">.*?</div><span class="finder-count".*?</span></div>',s,re.S)

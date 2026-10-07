@@ -4,7 +4,7 @@
   "category": "medical",
   "subcategory": "Neurological",
   "content_type": "Emergency guide",
-  "updated": "2026-10-02",
+  "updated": "2026-10-07",
   "aliases": [
     "seizure",
     "convulsions",
@@ -30,6 +30,20 @@
       "Act if normal breathing stops",
       "If unresponsive and not breathing normally, begin CPR and use an AED. Do not assume abnormal breathing is simply a normal recovery."
     ]
+  ],
+  "contextual_links": [
+    {
+      "slug": "cpr",
+      "label": "Adult hands-only CPR"
+    },
+    {
+      "slug": "child-infant-cpr",
+      "label": "Child & infant CPR with breaths"
+    },
+    {
+      "slug": "aed",
+      "label": "Using an AED"
+    }
   ],
   "without_help": "Continue protecting from hazards and observing breathing while a helper seeks medical access. Use prescribed rescue medicine only under the existing care plan and appropriate training. If urgent criteria apply, keep seeking care rather than leaving the person alone to recover.",
   "household": "Reduce noise and spectators and give the person privacy. Afterward, speak calmly and explain what happened. Assign dependents to another adult and prepare the care plan, medication list and seizure timeline for a trusted receiving clinician.",

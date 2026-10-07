@@ -64,13 +64,35 @@
  const status=document.querySelector('#search-status')||document.querySelector('#finder-count');
  const category=document.querySelector('#search-category'),type=document.querySelector('#search-type');
  const form=document.querySelector('#global-search-form');let data=[],ready=false,limit=30,loading=null,failed=false;
- document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)&&!document.activeElement?.isContentEditable){e.preventDefault();if(input)input.focus();else location.href='/search/';}});
  if(!input||!results)return;
+ let savedSearch=null;try{savedSearch=history.state?.ozSearch||null;}catch{}
+ let restorePosition=null,lastResult=null,viewVersion=0;
  const params=new URLSearchParams(location.search);if(form){
   let transferred=null;try{transferred=sessionStorage.getItem(transferKey);sessionStorage.removeItem(transferKey);}catch{}
-  input.value=params.get('q')??transferred??history.state?.ozSearch?.query??'';
-  category.value=params.get('category')||history.state?.ozSearch?.category||'';
-  type.value=params.get('type')||history.state?.ozSearch?.type||'';
+  input.value=params.get('q')??transferred??savedSearch?.query??'';
+  category.value=params.get('category')||savedSearch?.category||'';
+  type.value=params.get('type')||savedSearch?.type||'';
+  if(!params.has('q')&&transferred===null&&savedSearch){
+   limit=Number.isInteger(savedSearch.limit)?Math.max(30,Math.min(savedSearch.limit,1000)):30;
+   if(Number.isFinite(savedSearch.scrollY))restorePosition=Math.max(0,savedSearch.scrollY);
+   lastResult=typeof savedSearch.result==='string'?savedSearch.result:null;
+  }
+ }
+ function saveState(){
+  if(!form)return;
+  const p=new URLSearchParams();if(category.value)p.set('category',category.value);if(type.value)p.set('type',type.value);
+  try{history.replaceState({...history.state,ozSearch:{query:input.value.trim(),category:category.value,type:type.value,limit,scrollY:restorePosition??root.scrollY??0,result:lastResult}},'','/search/'+(p.size?'?'+p.toString():''));}catch{}
+ }
+ function restoreScroll(){
+  if(restorePosition===null)return;
+  const y=restorePosition,version=viewVersion;restorePosition=null;
+  if(typeof root.requestAnimationFrame!=='function')return;
+  root.requestAnimationFrame(()=>{
+   if(version!==viewVersion)return;
+   const link=[...results.querySelectorAll('a.search-result')].find(a=>a.getAttribute('href')===lastResult);
+   if(link)link.focus({preventScroll:true});
+   if(!location.hash&&typeof root.scrollTo==='function')root.scrollTo({top:y,behavior:'instant'});
+  });
  }
  function render(reset=true){
   // Clearing must restore browsing immediately, even while the index is loading.
@@ -84,24 +106,27 @@
   if(!ready){if(failed)showError();else load();return;}
   if(reset)limit=30;
   const query=input.value.trim(),items=rank(data,query,category?.value||'',type?.value||'');
-  if(form){const p=new URLSearchParams();if(category.value)p.set('category',category.value);if(type.value)p.set('type',type.value);history.replaceState({...history.state,ozSearch:{query,category:category.value,type:type.value}},'','/search/'+(p.size?'?'+p.toString():''));}
+  if(form)saveState();
   else{results.hidden=!query;document.querySelectorAll('.topic-grid,.topic-card').forEach(x=>x.hidden=Boolean(query));const empty=document.querySelector('#no-results');if(empty)empty.hidden=true;if(!query){if(status)status.textContent='SEARCH ALL TOPICS';return;}}
   results.replaceChildren();if(status)status.textContent=items.length+' '+(items.length===1?'result':'results')+(query?' for “'+query+'”':'');
-  if(!items.length){const p=document.createElement('p');p.className='search-empty';p.textContent='No matching guidance found. Try the main hazard or symptom, clear filters, or browse by subject. Search cannot assess a medical emergency.';const link=document.createElement('a');link.href='/library/';link.textContent='Browse all topics';results.append(p,link);return;}
+  if(!items.length){const p=document.createElement('p');p.className='search-empty';p.textContent='No matching guidance found. Try the main hazard or symptom, clear filters, or browse by subject. Search cannot assess a medical emergency.';const link=document.createElement('a');link.href='/library/';link.textContent='Browse all topics';results.append(p,link);restoreScroll();return;}
   for(const d of items.slice(0,limit)){
    const a=document.createElement('a');a.className='search-result';a.href=d.url;
    if(d.url.startsWith('https://')){a.target='_blank';a.rel='noopener noreferrer';}
    const meta=document.createElement('span');meta.className='result-meta';meta.textContent=d.content_type+' · '+d.category+' / '+d.subcategory;
    const h=document.createElement('h2');h.textContent=d.title;
    const p=document.createElement('p');p.textContent=d.summary.length>240?d.summary.slice(0,237)+'…':d.summary;
-   a.append(meta,h,p);results.append(a);
+   a.append(meta,h,p);
+   a.addEventListener('click',()=>{lastResult=d.url;saveState();});
+   results.append(a);
   }
   if(items.length>limit){const button=document.createElement('button');button.type='button';button.className='button button-outline';button.textContent='Show more results ('+(items.length-limit)+' remaining)';button.addEventListener('click',()=>{const previous=limit;limit+=30;render(false);results.querySelectorAll('a.search-result')[previous]?.focus();});results.append(button);}
+  restoreScroll();
  }
  let timer;
- function update(){clearTimeout(timer);render();}
+ function update(){viewVersion++;clearTimeout(timer);restorePosition=null;lastResult=null;render();}
  input.addEventListener('input',()=>{
-  clearTimeout(timer);
+  viewVersion++;restorePosition=null;lastResult=null;limit=30;clearTimeout(timer);
   if(!input.value.trim()){render();return;}
   load();timer=setTimeout(render,100);
  });
@@ -132,10 +157,11 @@
    const list=document.createElement('datalist');list.id='topic-suggestions';
    for(const item of data.filter(x=>x.priority===10)){const option=document.createElement('option');option.value=item.title;list.append(option);}
    document.body.append(list);input.setAttribute('list',list.id);ready=true;loading=null;
-   results.setAttribute('aria-busy','false');clearTimeout(timer);render();
+   results.setAttribute('aria-busy','false');clearTimeout(timer);render(false);
   }).catch(()=>{loading=null;failed=true;results.setAttribute('aria-busy','false');showError();});
   return loading;
  }
+ if(form&&typeof root.addEventListener==='function')root.addEventListener('pagehide',saveState);
  // Dedicated search pages show the library immediately. Homepage browsing does
  // not need the full index until the visitor focuses or types into search.
  if(form||input.value.trim())load();

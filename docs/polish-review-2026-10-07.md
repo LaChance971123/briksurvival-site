@@ -1,25 +1,16 @@
-# Emergency-first polish review
+# Osprey Zero digital field manual release
 
-## Scope
-- Put the existing urgent-situation links before the marketing hero.
-- Keep one search field beside the main message on desktop, with a compact single-column phone layout.
-- Refine solid charcoal/ash/orange surfaces, navigation, cards, typography, focus and reduced-motion states.
-- Load the full homepage search index only on search intent, with deduplicated requests, immediate clear/Escape handling and recoverable errors.
-- Make alias ordering deterministic across builds.
+## Implemented
+- A hero built around the inherited slogan and an excerpt from the actual free power-outage guide. Headline, actions and search lead on phones; subject navigation appears before paused products.
+- Four primary navigation links with always-visible mobile search, numbered sections, ash/charcoal/orange visual hierarchy and short progressive motion.
+- Immediate Do now entry, mobile section jump, desktop active contents, copy-section links, print controls and visible reading-list states.
+- Browser-history restoration of browsing filters/open groups and expanded search results/scroll; unmodified single-character shortcut removed.
+- Seven condition-specific CPR/AED handoffs, AHA/AAP source prominence for infant choking, catalog-aware product copy, consistent heading hierarchy and nonblocking planner fonts.
 
-Guide content, advertising configuration, sales availability, signup behavior and paid-file boundaries are unchanged.
+## Validation
+The aggregate public build covers 170 pages, internal links and public asset boundaries; search ranking, privacy and return state; guide navigation/copy/print behavior; reduced-motion/fallback behavior; ads, toolkit availability and paid planner boundaries. Run `python scripts/build_site.py`.
 
-## Verified locally
-- Complete `python scripts/build_site.py` pipeline passes.
-- 170 public pages, library/navigation links, editorial boundaries, search ranking/privacy, ads, offline retirement, toolkit and planner gates pass.
-- New interaction tests cover deferred loading, races, keyboard focus and recovery.
-- Repeated builds produce identical changed files.
-- Independent source review completed; search focus specificity corrected.
-- `git diff --check` passes.
+Rendered review and exact release evidence are recorded in PR #13. Physical mobile testing and independent clinical certification are not claimed. Existing instructions are retained; added links distinguish pediatric CPR and hands-only fallback limitations.
 
-## Pending
-- Desktop and phone rendered review, overflow, contrast and interaction checks.
-- CI/Netlify preview verification after review-branch publication is authorized.
-- User approval before production publication.
-
-The cloud browser cannot open localhost, and the local browser test process is blocked by the environment socket policy. No screenshots or browser-based accessibility result are claimed yet.
+## Advertising
+Advertising decisions follow the owner's latest explicit instruction. No blanket ad removal is part of this visual redesign. The vignette and separate push format are distinct; provider advertising is not guidance or endorsement.
