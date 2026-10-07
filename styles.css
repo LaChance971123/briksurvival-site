@@ -383,3 +383,5 @@ html{scroll-padding-top:94px}
 }
 @media(prefers-reduced-motion:reduce){.oz-reveal-ready{opacity:1;transform:none}.button:hover,.button:active,.button:hover>span,.home-situation:hover>b{transform:none}.button-primary:hover{box-shadow:0 3px 0 #8c3216}}
 @media print{.oz-reveal-ready{opacity:1!important;transform:none!important}}
+/* Keyboard focus is immediate, never gated behind an entrance transition. */
+.oz-reveal-ready:focus-within{opacity:1;transform:none;transition:none}

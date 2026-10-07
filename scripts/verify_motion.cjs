@@ -20,3 +20,4 @@ t.sections[0].events.focusin();assert(t.sections[0].classes.has('oz-revealed'));
 t.callback([{isIntersecting:true,target:t.sections[1]}]);assert(t.sections[1].classes.has('oz-revealed'));
 t.change({matches:true});assert(t.disconnected);assert(t.sections.every(s=>s.classes.has('oz-revealed')));
 console.log('PASS: reduced-motion, unsupported-browser, keyboard-focus and scroll-reveal fallbacks.');
+assert.match(fs.readFileSync('styles.css','utf8'), /\.oz-reveal-ready:focus-within\{[^}]*opacity:1;[^}]*transform:none;[^}]*transition:none/);
