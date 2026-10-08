@@ -1,6 +1,6 @@
 {
   "slug": "rifle-setup-basics",
-  "title": "Rifle selection and setup: fit, equipment and ownership",
+  "title": "Rifle components, fit and equipment: a civilian ownership guide",
   "category": "firearms-tools",
   "subcategory": "Safe ownership",
   "content_type": "Preparedness guide",
@@ -13,126 +13,132 @@
     "sporting rifle selection"
   ],
   "keywords": [
-    "Define the job before choosing the equipment",
-    "Read a complete factory specification",
-    "Assess fit as comfort and access",
-    "Choose equipment by a defined ordinary task",
-    "Compare ownership cost with an illustrative worksheet",
-    "Organize manufacturer-directed care and service",
-    "Make a shortlist that another person can review"
+    "rifle components",
+    "stock",
+    "comb",
+    "length of pull",
+    "barrel contour",
+    "rifle balance",
+    "fixed magnification",
+    "variable magnification",
+    "eye relief",
+    "eyebox",
+    "first focal plane",
+    "second focal plane",
+    "material finish",
+    "manufacturer care"
   ],
   "sections": [
     {
-      "heading": "Define the job before choosing the equipment",
+      "heading": "Understand the component map before the catalogue",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Write a short use statement: the activity, venue or hunting jurisdiction, intended user, transport method and storage arrangement. A rifle for regular supervised range use and one carried during lawful outdoor sporting activity face different practical constraints. Describe those constraints without turning the comparison into a tactical or people-targeting exercise."
+          "text": "A rifle description becomes easier to read when each name has a physical role. The receiver supports the action, the barrel contains the bore and chamber, and the stock provides the surfaces that the user holds or supports. The chamber and magazine are different spaces. A specification that names the magazine type therefore says little about the shape of the stock or the arrangement of the controls."
         },
         {
           "type": "table",
-          "caption": "An original requirements sheet",
+          "caption": "Terms used in factory rifle descriptions",
           "columns": [
-            "Requirement",
-            "Useful entry"
+            "Component",
+            "What the term identifies",
+            "Ownership relevance"
           ],
           "rows": [
             [
-              "Activity",
-              "Named sporting discipline or lawful hunting context; applicable organizer or regulator requirements."
+              "Receiver and action",
+              "The main supporting structure and the mechanism associated with the cartridge cycle.",
+              "Exact model and action family determine the applicable manual and service parts."
             ],
             [
-              "User",
-              "Handedness, ordinary clothing, glasses, comfortable reach and ability to handle the complete mass."
+              "Barrel, chamber and muzzle",
+              "The tube, its cartridge-holding rear portion, and its forward opening.",
+              "Chamber designation establishes the ammunition question; overall dimensions establish case and storage space."
             ],
             [
-              "Journey",
-              "Case size, normal transport method, destination rules and travel-policy questions."
+              "Stock, butt, comb and fore-end",
+              "The supporting body, rear end, upper cheek-support surface and forward hand-support area.",
+              "Their shape and dimensions affect reach, contact and comfort."
             ],
             [
-              "Ownership",
-              "Storage space, annual budget, service access and a source of compatible consumables."
+              "Magazine",
+              "The cartridge supply, fixed or detachable according to the design.",
+              "A broad magazine-family name does not confirm that every example fits the model."
+            ],
+            [
+              "Sights and optic",
+              "The factory sighting equipment or optical instrument supplied with the product.",
+              "Some rifles have sights; others are sold with a base but no optic. The package description matters."
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "Rank the requirements as necessary, useful or optional. This makes trade-offs visible. If transport space is fixed, a configuration that cannot fit its appropriate case may not be workable even if other features appeal. If a particular venue has restrictions, confirm them before comparing products. Keep the requirements sheet short enough to take to a retailer."
+          "text": "An exploded parts illustration is useful for names and service enquiries. Its separated shapes do not supply an assembly sequence, dimensions, fit tolerances or permission to substitute parts. When a retailer lists a receiver family or a stock style, identify the actual factory model rather than assuming that everything in the family is interchangeable."
         }
       ],
       "references": [
         [
-          "Ruger · Official instruction manual finder",
-          "https://ruger.com/dataProcess/serialHistory/manuals.php"
-        ]
-      ]
-    },
-    {
-      "heading": "Read a complete factory specification",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Use the exact model identifier and the manufacturer’s current specification sheet. Record chamber designation, action type, supplied configuration, listed dimensions and mass. Note which accessories are included. The family name may cover several versions; a photograph or abbreviated shop listing is not enough to know which one is being sold."
-        },
-        {
-          "type": "paragraph",
-          "text": "Compare products in the same units and at the same level of completeness. A bare rifle’s mass cannot fairly be compared with a package including case or observation equipment. Keep the published figure and your own complete-system measurement in separate columns. For a used item, ask which original features remain and which documentation establishes the present configuration."
-        },
-        {
-          "type": "table",
-          "caption": "Separate three kinds of information",
-          "columns": [
-            "Information",
-            "What it can establish"
-          ],
-          "rows": [
-            [
-              "Factory specification",
-              "The manufacturer’s description of a particular product version."
-            ],
-            [
-              "Exact-model manual",
-              "Its operating, care and service boundaries; read the appropriate revision."
-            ],
-            [
-              "Retail package description",
-              "What that seller includes and the terms of that particular purchase."
-            ]
-          ]
-        }
-      ],
-      "references": [
-        [
-          "Ruger · Official instruction manual finder",
-          "https://ruger.com/dataProcess/serialHistory/manuals.php"
-        ]
-      ]
-    },
-    {
-      "heading": "Assess fit as comfort and access",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Fit is more than overall length. Discuss comfortable reach, support, balance and access to the model’s controls with a qualified retailer or instructor in a controlled setting. Compare suitable factory options while wearing the glasses and ordinary clothing relevant to the activity. A short shop demonstration and a longer sporting session may reveal different comfort constraints."
-        },
-        {
-          "type": "paragraph",
-          "text": "Length of pull is commonly used to describe the stock-to-trigger relationship; comb shape describes the upper stock surface and its support relationship to the user. These terms help you ask questions, but a single dimension does not establish fit. Avoid treating an online body-measurement formula as a universal answer. The guide is about recognizing a suitable configuration, not altering components or optimizing an aiming system."
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Record which configuration was evaluated and which clothing or glasses were worn.",
-            "Describe discomfort plainly: excessive reach, awkward support or difficulty handling the complete mass.",
-            "Ask about manufacturer-supported factory options before assuming parts can be changed.",
-            "If several adults will use the equipment, assess each person rather than averaging their needs."
-          ]
-        }
-      ],
-      "references": [
-        [
-          "SAAMI · Glossary",
+          "SAAMI · Industry glossary",
           "https://saami.org/saami-glossary/"
+        ],
+        [
+          "Ruger · American Rifle Generation II manual",
+          "https://ruger-docs.s3.amazonaws.com/_manuals/RAR-GenerationII.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Action families describe mechanisms, not quality grades",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Bolt, lever, break-action and semiautomatic are categories of action. A manually operated action and a self-cycling action can both appear in sporting catalogues. Semiautomatic means one shot per trigger actuation, with the mechanism cycling using energy from the shot. It does not mean fully automatic. A generation name or a premium finish is a separate description."
+        },
+        {
+          "type": "table",
+          "caption": "Compare the categories at the ownership level",
+          "columns": [
+            "Family",
+            "Broad distinction",
+            "Practical question"
+          ],
+          "rows": [
+            [
+              "Bolt action",
+              "A manually operated bolt arrangement; right- and left-handed factory versions may differ.",
+              "Does the actual version suit the user's reach and handedness, and is local service available?"
+            ],
+            [
+              "Lever action",
+              "A lever-operated mechanism; magazine arrangements vary between models.",
+              "Does the stock and lever arrangement feel comfortable for the intended user and clothing?"
+            ],
+            [
+              "Break action",
+              "A hinged opening design, commonly with a single chamber or more than one barrel.",
+              "Do its factory dimensions and carrying case suit the ordinary sporting activity?"
+            ],
+            [
+              "Semiautomatic",
+              "A self-cycling action; underlying operating systems and controls vary.",
+              "Does the exact manual explain the required ordinary care, consumables and service support clearly?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "There is no sensible universal ranking of these families by convenience. A familiar category can still contain an unfamiliar control layout, a different magazine system or a different care burden. Evaluate the supplied product as a whole. An owner's experience with one sporting rifle does not establish compatibility or permitted maintenance for another."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Industry glossary",
+          "https://saami.org/saami-glossary/"
+        ],
+        [
+          "SAAMI · Semiautomatic action",
+          "https://saami.org/glossary/semiautomatic-action/"
         ],
         [
           "Ruger · Official instruction manual finder",
@@ -141,91 +147,113 @@
       ]
     },
     {
-      "heading": "Choose equipment by a defined ordinary task",
+      "heading": "Stock fit is a relationship between several dimensions",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Start with support items that solve an ownership need: secure storage, an appropriate case, permitted hearing/eye protection, compatible care supplies and the documentation required for travel or a venue. For any optional equipment, write the task it serves and ask the maker which exact combinations are supported. Shared dimensions or a broad label such as universal do not settle compatibility."
+          "text": "Length of pull describes the stock-to-trigger distance; it is not the rifle's overall length. The comb is the upper stock surface against which the cheek is supported. Grip angle, fore-end shape and the contact surface at the butt add separate dimensions to comfort. A single body measurement cannot account for all of them."
         },
         {
           "type": "paragraph",
-          "text": "Evaluate carrying convenience separately from use. A complete case must accommodate the actual factory configuration and protect it as specified; the smallest advertised case is not automatically the best choice. Ask whether the carrying arrangement leaves a caregiver or mobility-aid user able to manage their other responsibilities. Avoid accumulating items that make a simple routine harder to store, document or maintain."
-        },
-        {
-          "type": "flow",
-          "caption": "A useful equipment selection order",
-          "items": [
-            [
-              "Need",
-              "Name the ordinary sporting or ownership task that remains unresolved."
-            ],
-            [
-              "Evidence",
-              "Check the exact manufacturer-supported option and relevant instructions."
-            ],
-            [
-              "Burden",
-              "Compare added cost, mass, case/storage space and ongoing care."
-            ],
-            [
-              "Decision",
-              "Choose the documented option or leave the item off the list."
-            ]
-          ],
-          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
-        }
-      ],
-      "references": [
-        [
-          "Ruger · Official instruction manual finder",
-          "https://ruger.com/dataProcess/serialHistory/manuals.php"
-        ]
-      ]
-    },
-    {
-      "heading": "Compare ownership cost with an illustrative worksheet",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "The advertised purchase price is only one part of the first year. Make a worksheet for the firearm, suitable storage, case, compatible consumables, venue or club fees, professional instruction and expected service. Use real local quotes; none of the invented amounts below is a market-price estimate."
+          "text": "A long reach can feel awkward even when the total mass is manageable. Conversely, a comfortable reach does not solve a fore-end that is too bulky for the hand or an arrangement that makes the user crane the neck. Clothing, glasses, handedness, joint movement and the duration of the activity can change the assessment. Compare suitable factory configurations with qualified assistance in a controlled setting, describing the actual discomfort rather than forcing the body to suit a catalogue number."
         },
         {
           "type": "table",
-          "caption": "Invented comparison in unspecified currency units",
+          "caption": "Separate the fit questions",
           "columns": [
-            "Item",
-            "Option A",
-            "Option B"
+            "Feature",
+            "Useful observation"
           ],
           "rows": [
             [
-              "Factory package",
-              "700",
-              "900"
+              "Length of pull",
+              "Whether the factory reach suits the person in the clothing actually used."
             ],
             [
-              "Storage and case",
-              "300",
-              "220"
+              "Comb and cheek contact",
+              "Whether the supplied upper stock shape permits comfortable support without sustained neck strain."
             ],
             [
-              "First-year ordinary use and care",
-              "400",
-              "350"
+              "Grip and fore-end",
+              "Whether hand contact, gloves and ordinary control access suit the actual user."
             ],
             [
-              "Example first-year total",
-              "1,400",
-              "1,470"
+              "Butt contact",
+              "Whether the shape and padding sit comfortably against the body."
+            ],
+            [
+              "Handedness",
+              "Whether the supplied arrangement suits the person rather than merely being advertised as ambidextrous."
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "The lower purchase price does not necessarily create the lower complete cost, and a small total difference may be less important than fit or service support. Record recurring costs separately from purchases that remain useful for years. Ask what consumables can be sourced locally and what a warranty actually covers. Do not assume an expensive package includes every required compatible item."
+          "text": "Factory-adjustable describes options the maker has designed and documented; it does not mean every stock or accessory can be exchanged. A fixed factory configuration can be entirely suitable, while an adjustable one can remain unsuitable if its range or shape does not address the user's needs. Keep installation or alteration questions with the manufacturer or qualified service provider."
         }
       ],
       "references": [
+        [
+          "SAAMI · Gauge, grain and grip terminology",
+          "https://saami.org/saami-glossary/?letter=G"
+        ],
+        [
+          "Ruger · Model 46902 factory specification",
+          "https://ruger.com/products/americanRifleGenII/specSheets/46902.html"
+        ],
+        [
+          "Ruger · American Rifle Generation II manual",
+          "https://ruger-docs.s3.amazonaws.com/_manuals/RAR-GenerationII.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Mass, balance and dimensions answer different questions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Total mass is the amount the owner carries. Balance concerns where that mass is distributed. Two products of equal mass can feel different because a larger share sits farther toward the front or rear. This is an ergonomic comparison, not a promise about sporting results. Judge the complete supplied configuration rather than a bare-product figure that excludes ordinary equipment."
+        },
+        {
+          "type": "paragraph",
+          "text": "Barrel length and barrel contour are also separate descriptions. Length is a dimension; contour describes the barrel's external profile. A thick profile, a lighter factory profile and a fluted profile need not have the same mass or balance. Their labels do not establish a universal best choice. For ownership, consider fatigue during transport, the space required in a case and the room needed inside secure storage."
+        },
+        {
+          "type": "paragraph",
+          "text": "A lighter package may be easier to carry but still have an uncomfortable stock. A heavier package may feel manageable briefly in a shop yet become burdensome during the actual journey. A carrying aid can reduce how long an item is held in the hands, but adds its own attachment, wear and storage questions. None of these tradeoffs is captured by the purchase price alone."
+        },
+        {
+          "type": "table",
+          "caption": "Read like-for-like dimensions",
+          "columns": [
+            "Published field",
+            "What must also be known"
+          ],
+          "rows": [
+            [
+              "Bare mass",
+              "Which magazine, sights or other supplied items are included in the figure."
+            ],
+            [
+              "Overall length",
+              "The factory configuration to which the measurement applies."
+            ],
+            [
+              "Case dimensions",
+              "Usable internal space and clearance, rather than only the case's exterior size."
+            ],
+            [
+              "Storage capacity",
+              "The actual stock and fitted-equipment envelope, rather than a nominal rifle count."
+            ]
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Ruger · Model 46902 factory specification",
+          "https://ruger.com/products/americanRifleGenII/specSheets/46902.html"
+        ],
         [
           "Ruger · Official instruction manual finder",
           "https://ruger.com/dataProcess/serialHistory/manuals.php"
@@ -233,33 +261,169 @@
       ]
     },
     {
-      "heading": "Organize manufacturer-directed care and service",
+      "heading": "Sight and optic categories: terminology and ownership",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Find the exact manual before buying cleaning products. Make a care sheet listing owner-permitted tasks, compatible products, storage requirements and the maker’s service contact. Follow the model-specific instructions rather than merging several tutorials into a universal routine. This page does not reproduce disassembly or adjustment steps."
+          "text": "A factory sight uses visible reference features; a magnified scope forms an optical image and includes a reticle; a non-magnifying electronic sight presents an illuminated reference. A binocular or observation monocular is a separate handheld viewing instrument. These categories are not interchangeable. The product's manual determines its intended role, compatibility and care."
         },
         {
-          "type": "paragraph",
-          "text": "Record the date, exposure, work performed and any unresolved observation. Use product labels for chemical handling and surface compatibility. Separate ordinary owner care from work that requires professional diagnosis. A recurring fault or undocumented used-equipment alteration needs clarification, not a more aggressive cleaning experiment."
-        },
-        {
-          "type": "paragraph",
-          "text": "Keep a private support packet with the manual, original configuration, purchase terms and service receipts. If you later change the lawful sporting activity or storage arrangement, reassess the requirements sheet. An equipment choice can remain sound while the surrounding ownership plan needs revision."
-        },
-        {
-          "type": "resources",
-          "items": [
-            {
-              "label": "Ruger · Official instruction manual finder",
-              "url": "https://ruger.com/dataProcess/serialHistory/manuals.php",
-              "description": "Use the official finder for the exact model and revision; manufacturer maintenance instructions control the owner-care plan."
-            }
+          "type": "table",
+          "caption": "Common optical terms",
+          "columns": [
+            "Term",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "Magnification",
+              "Apparent image enlargement. A fixed-power optic has one value; a variable-power optic has a range."
+            ],
+            [
+              "Objective and ocular",
+              "The objective is toward the scene; the ocular is toward the eye."
+            ],
+            [
+              "Eye relief and eyebox",
+              "Eye relief is the distance for a full image; eyebox describes the region in which the eye can retain that view."
+            ],
+            [
+              "Field of view",
+              "The amount of scene visible, stated as an angle or a width at a stated distance."
+            ],
+            [
+              "First and second focal plane",
+              "In a variable-power scope, a first-plane reticle changes apparent size with magnification; a second-plane reticle retains its apparent size."
+            ],
+            [
+              "Diopter",
+              "The eyepiece focus provision for the individual's view of the reticle; it is distinct from scene focus."
+            ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "Two current manufacturer examples show why the exact version matters: Ruger publishes a separate American Rifle Generation II manual and a 10/22 Standard manual limited to model numbers 32000 and higher. Use the finder for another version. Read the relevant maintenance and service sections for the actual model rather than transferring a procedure between these examples."
+          "text": "A large magnification number does not describe viewing comfort, a broad field, lens quality or support. Compare field-of-view figures at the same stated distance and magnification. A large exterior tube or front lens is another dimension, not a complete quality score. If illumination is electronic, include the permitted battery, controls and what remains usable when power is unavailable in the ownership assessment."
+        },
+        {
+          "type": "paragraph",
+          "text": "For observing a landscape or wildlife, keep a separate observation instrument available rather than treating a firearm-mounted optic as a general viewing device. The conceptual vocabulary here helps explain a product description; mounting, alignment and adjustment work belong with the exact instructions and qualified assistance."
+        }
+      ],
+      "references": [
+        [
+          "Leupold · Optics glossary",
+          "https://www.leupold.com/support/resources/glossary"
+        ],
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ]
+      ]
+    },
+    {
+      "heading": "Accessory categories add different kinds of burden",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A case protects equipment during an appropriate journey; secure storage controls access at the destination. A soft padded case is usually easier to stow than a rigid case, while a rigid case occupies a defined envelope and may have different locking provisions. Neither format's name establishes a transport approval, water rating or permanent storage arrangement. Internal fit and the carrier's current policy remain separate questions."
+        },
+        {
+          "type": "table",
+          "caption": "Understand what is being bought",
+          "columns": [
+            "Category",
+            "Ordinary role",
+            "Tradeoff to understand"
+          ],
+          "rows": [
+            [
+              "Carrying strap or sling",
+              "Supports carrying when the maker permits the arrangement.",
+              "Width, adjustment range, padding and hardware affect comfort, pack interaction and bulk."
+            ],
+            [
+              "Case",
+              "Protects and contains the supplied equipment during transport.",
+              "External size, internal usable space, closure and manufacturer-rated environmental protection differ."
+            ],
+            [
+              "Lens covers and protective caps",
+              "Protect the specified exposed optical surfaces.",
+              "They must suit the exact product and remain easy to keep with it."
+            ],
+            [
+              "Care supplies",
+              "Support the owner-permitted care described in the manual.",
+              "Material compatibility matters more than the number of pieces in a universal kit."
+            ],
+            [
+              "Secure enclosure",
+              "Controls unauthorized access in the actual household.",
+              "Interior fit, installation, access needs and independently documented ratings add their own costs."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A compatible item is one that the relevant makers support for the exact combination. A shared nominal dimension or interface name is only part of that answer. Price the supplied rifle, its necessary ownership equipment and recurring consumables separately so an inexpensive package is not mistaken for an inexpensive complete routine. Leave optional items out when their purpose or compatibility remains unclear."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Cartridge and component terms",
+          "https://saami.org/saami-glossary/?letter=C"
+        ],
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ],
+        [
+          "Project ChildSafe · Storage options",
+          "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Materials and finishes explain the care differences",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Material and finish are different fields. A steel component can have a protective finish; a coating can also be applied over another substrate. The visible colour therefore does not identify every material underneath. Ruger's Generation II manual separates stainless-component care from Cerakote-finish care, while its current 10/22 Standard manual includes an explicit restriction on abrasives for clear-coated aluminum parts. Those are specific product examples, not a universal cleaning recipe."
+        },
+        {
+          "type": "table",
+          "caption": "Separate the owner-care jobs",
+          "columns": [
+            "Job",
+            "What the manual must establish"
+          ],
+          "rows": [
+            [
+              "Cleaning",
+              "Which residue or contamination the approved product is intended to remove, and which surfaces permit it."
+            ],
+            [
+              "Lubrication",
+              "Where a lubricant is permitted and what quantity or product the model requires."
+            ],
+            [
+              "Corrosion protection",
+              "How exterior materials are protected for the stated storage conditions."
+            ],
+            [
+              "Inspection and service",
+              "Which visible concerns require assessment rather than more cleaning."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Stainless does not mean corrosion cannot occur. Ruger specifically discusses moisture, salt air and chemical exposure. A protective coating also has its own chemical and abrasion limits. Using one aggressive product on every visible surface can ignore those differences. Read the material-specific part of the actual manual before selecting consumables, and keep firearm chemicals separate from ammunition, food and care items."
+        },
+        {
+          "type": "paragraph",
+          "text": "Routine owner care preserves the documented product condition. An unexplained mechanical symptom, damage or a safety notice creates a service question; it is not an invitation to adjust parts. The linked manuals contain procedures for their own models. Use them directly and use the official finder for a different version."
         },
         {
           "type": "resources",
@@ -267,21 +431,17 @@
             {
               "label": "Ruger · American Rifle Generation II manual",
               "url": "https://ruger-docs.s3.amazonaws.com/_manuals/RAR-GenerationII.pdf",
-              "description": "Official Generation II manual, revision 3/2026 R4. Match the exact firearm and use the manufacturer’s owner-care and service sections."
+              "description": "Official 3/2026 R4 manual. Read its material-specific care and service sections for American Rifle Generation II models."
             },
             {
               "label": "Ruger · 10/22 Standard manual: models 32000 and higher",
               "url": "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf",
-              "description": "Official 6/2026 R1 manual for this model-number range. Other 10/22 versions use different manuals; resolve them with the official finder."
+              "description": "Official 6/2026 R1 manual for Standard model numbers 32000 and higher. Other versions require their own manuals."
             }
           ]
         }
       ],
       "references": [
-        [
-          "Ruger · Official instruction manual finder",
-          "https://ruger.com/dataProcess/serialHistory/manuals.php"
-        ],
         [
           "Ruger · American Rifle Generation II manual",
           "https://ruger-docs.s3.amazonaws.com/_manuals/RAR-GenerationII.pdf"
@@ -289,50 +449,74 @@
         [
           "Ruger · 10/22 Standard manual: models 32000 and higher",
           "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf"
+        ],
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
         ]
       ]
     },
     {
-      "heading": "Make a shortlist that another person can review",
+      "heading": "Decode a real specification without turning it into a recommendation",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Limit the shortlist to a few exact configurations and compare them against the same requirements. Put unresolved questions in their own column. A blank compatibility or support answer should remain visibly unresolved rather than becoming an assumption because the product is attractive."
+          "text": "A current factory example makes the distinctions concrete. Ruger's model 46902 sheet lists overall length, barrel length, length of pull, mass, magazine type, material and supplied sighting equipment as separate fields. It lists a scope base while stating that no sights are supplied. A base is therefore not evidence that an optic is included. This is a reading example, not a recommendation for a chambering or configuration."
         },
         {
-          "type": "steps",
-          "items": [
-            "Write the ordinary activity and the non-negotiable constraints.",
-            "Collect exact model specifications and manuals.",
-            "Assess factory fit and handling comfort with qualified assistance.",
-            "Request written answers for compatibility and service questions.",
-            "Price the complete ownership package with dated local quotes.",
-            "Choose only after the necessary questions are resolved."
+          "type": "table",
+          "caption": "Questions answered by different fields",
+          "columns": [
+            "Field group",
+            "What it can establish"
+          ],
+          "rows": [
+            [
+              "Model and chamber designation",
+              "The exact product identity and the starting point for the manufacturer's ammunition guidance."
+            ],
+            [
+              "Overall length, barrel length and length of pull",
+              "Three different dimensions: storage envelope, barrel dimension and stock reach."
+            ],
+            [
+              "Material and finish",
+              "The substrate and its surface treatment, which can have different care restrictions."
+            ],
+            [
+              "Included equipment",
+              "What arrives in the package rather than what merely appears in an illustration."
+            ],
+            [
+              "Manual and support",
+              "Which instructions and service route apply to the actual version."
+            ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "Keep the result as a one-page decision record. It should explain why the selected configuration suits the actual person and activity, what it costs to own and where official instructions are found. That record remains useful when replacing a case, arranging service or explaining the equipment to an authorized helper."
+          "text": "For a comparison, first establish the ordinary sporting activity and any venue or hunting rules. Then compare two complete factory products in the same units, with the included items clearly identified. Give fit, carrying burden, useful case and storage space, local consumable availability and service support their own place in the decision. These are separate tradeoffs, so no single number should be used as a universal score."
         },
         {
-          "type": "links",
+          "type": "paragraph",
+          "text": "A used example can differ from its original catalogue entry. Resolve the supplied configuration and condition with the maker or qualified inspection before relying on a current specification sheet. Keep unresolved compatibility questions visible; choose a documented alternative when the necessary answer cannot be obtained."
+        },
+        {
+          "type": "resources",
           "items": [
             {
-              "label": "Parts and maintenance vocabulary",
-              "url": "/preparedness/firearm-safety-basics/"
-            },
-            {
-              "label": "Cartridge and caliber terminology",
-              "url": "/preparedness/cartridges-calibers-explained/"
-            },
-            {
-              "label": "Storage selection",
-              "url": "/preparedness/firearm-storage/"
+              "label": "Ruger · Model 46902 factory specification",
+              "url": "https://ruger.com/products/americanRifleGenII/specSheets/46902.html",
+              "description": "A current factory sheet illustrating separate dimensions, material, magazine and included-equipment fields; it is not an endorsement."
             }
           ]
         }
       ],
       "references": [
+        [
+          "Ruger · Model 46902 factory specification",
+          "https://ruger.com/products/americanRifleGenII/specSheets/46902.html"
+        ],
         [
           "Ruger · Official instruction manual finder",
           "https://ruger.com/dataProcess/serialHistory/manuals.php"
@@ -356,46 +540,51 @@
   ],
   "faqs": [
     [
-      "Is there one ideal rifle setup?",
-      "No. A factory configuration suitable for one sporting discipline, user or travel arrangement may be inconvenient for another. Compare the complete system against written requirements."
+      "Is length of pull the same as overall length?",
+      "No. Length of pull describes the stock-to-trigger distance; overall length describes the product's envelope. They answer fit and storage questions respectively."
     ],
     [
-      "Should I buy accessories first?",
-      "Start with the exact model, documented compatibility and ordinary tasks. An accessory without a clear purpose can add cost, mass and service questions."
+      "Does a scope base mean an optic is included?",
+      "No. The base, rings and optic are separate items. Read the exact supplied-package list."
+    ],
+    [
+      "Does a corrosion-resistant finish remove the need for care?",
+      "No. The substrate, coating and exposure have their own restrictions. Follow the material-specific section of the exact manual."
     ]
   ],
-  "scope": "Civilian educational planning. Product specifications and local rules differ. Worked examples and decision worksheets are Osprey Zero editorial suggestions.",
+  "scope": "Civilian equipment education for ordinary sporting ownership. Product examples illustrate terminology, not endorsements. Exact-model manuals govern handling and care; installation, modification and adjustment procedures are outside this guide.",
   "equipment_layout": true,
   "fallback_heading": "When a specification is unclear",
   "household_heading": "Fit and shared ownership",
-  "next_heading": "Make a shortlist",
+  "next_heading": "Compare complete products",
   "watch_heading": "Compatibility and service boundaries",
-  "tldr": "Choose a factory rifle configuration around the civilian sporting task, the person’s fit and the complete ownership burden. Compare documented dimensions, mass, controls, compatible equipment and support. Use the exact manufacturer manual for care and professional service for work outside owner instructions.",
+  "tldr": "Learn the rifle as a complete factory product: its action, stock dimensions, mass distribution, supplied sights or optics, carrying equipment and material-specific care. Fit and ownership burden are separate from headline specifications. Use exact-model documentation and qualified help for hands-on assessment.",
   "steps": [
     [
-      "Define the use",
-      "Name the sporting discipline or lawful hunting context, venue requirements, travel and storage arrangements."
+      "Identify the product",
+      "Read the exact model, chamber designation, action family and included equipment."
     ],
     [
-      "Compare the complete configuration",
-      "Record the exact model, chamber designation, supplied equipment, dimensions and total price."
+      "Separate the fit dimensions",
+      "Compare factory reach, comb, grip, fore-end and handedness with the actual user and qualified help."
     ],
     [
-      "Assess fit with qualified help",
-      "Compare factory configurations in a controlled setting; consider reach, comfort, glasses, clothing and handedness."
+      "Interpret the specifications",
+      "Keep mass, balance, dimensions and optical terms separate; compare the complete package."
     ],
     [
-      "Plan ownership",
-      "Budget storage, case, compatible consumables, venue costs and manufacturer-directed care."
+      "Understand ownership",
+      "Match case and secure storage, approved material care, consumables and service support to the actual product."
     ]
   ],
   "without_help": "If compatibility or the manual is unclear, keep the item off the purchase shortlist until the manufacturer or qualified retailer resolves it. Use equipment already documented and suitable for the ordinary activity.",
   "household": "Compare the actual intended users rather than assuming a configuration fits everyone. Record who owns and maintains the equipment, how access is controlled and how information is handed to an authorized helper.",
-  "pack_now": "A private requirements sheet, exact-model manual, written compatibility questions, measured storage/case space and a complete cost worksheet.",
-  "next": "Compare two or three complete factory configurations with the same requirements sheet and a qualified retailer or instructor.",
+  "pack_now": "Exact-model manual, current factory sheet, suitable case, secure destination storage and manufacturer-compatible care supplies. Keep a separate observation instrument for ordinary viewing.",
+  "next": "Compare complete factory products on fit, carrying burden, included equipment and service support after confirming the ordinary sporting activity's requirements.",
   "watch": "This guide covers selection, fit and ownership literacy. It provides no installation, modification, tuning, aiming, zeroing or repair procedures.",
-  "updated": "2026-10-07",
-  "source_checked": "2026-10-07",
-  "next_review": "2027-01-07",
-  "sources": "rifle-setup-basics-full-20261007"
+  "updated": "2026-10-08",
+  "source_checked": "2026-10-08",
+  "next_review": "2027-01-08",
+  "sources": "rifle-setup-basics-full-20261007",
+  "source_context": "Civilian equipment education for ordinary sporting ownership. Product examples illustrate terminology, not endorsements. Exact-model manuals govern handling and care; installation, modification and adjustment procedures are outside this guide."
 }

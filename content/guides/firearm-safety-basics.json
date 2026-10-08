@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Safe ownership",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "published": "2026-10-03",
-  "source_checked": "2026-10-07",
-  "next_review": "2027-01-07",
+  "source_checked": "2026-10-08",
+  "next_review": "2027-01-08",
   "aliases": [
     "guns",
     "weapons",
@@ -19,7 +19,12 @@
     "weapons",
     "gun safety",
     "Turn the parts list into an ownership file",
-    "Cleaning is a product-specific workflow"
+    "Cleaning is a product-specific workflow",
+    "exploded view",
+    "part number",
+    "stainless steel",
+    "coated aluminum",
+    "cleaning lubrication preservation"
   ],
   "tldr": "Understand the exact model as an ownership system: action, chamber designation, fit, documentation and routine care. Use its official manual to distinguish owner maintenance from service work, and compare the complete equipment cost before adding accessories.",
   "steps": [
@@ -305,44 +310,57 @@
       ]
     },
     {
-      "heading": "Turn the parts list into an ownership file",
+      "heading": "Read a parts drawing as a naming system",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Knowing component names becomes more useful when they connect to a particular rifle. Keep a short record with the model, complete chamber designation, manual edition, stock configuration as supplied, included accessories and support contact. Store serial numbers and purchase records privately; the bag label or public photograph does not need that information. For a used firearm, record which items are documented and which require clarification."
+          "text": "A parts drawing normally pairs numbered shapes with a list of named components and part numbers. The number beside a shape is a cross-reference, not a size, a tightening specification or a sequence of work. Exploded views separate components so their relationships can be seen; the apparent gaps are not operating clearances."
         },
         {
           "type": "table",
-          "caption": "A model-specific care record",
+          "caption": "What a drawing can and cannot answer",
           "columns": [
-            "Field",
-            "Useful entry"
+            "Item on the page",
+            "Useful information",
+            "What remains unresolved"
           ],
           "rows": [
             [
-              "Manual",
-              "Exact model family, revision and where the relevant care section begins."
+              "Drawing label",
+              "The name used by this manufacturer for the depicted component.",
+              "Whether a similar-looking part belongs to another model."
             ],
             [
-              "Consumables",
-              "Manufacturer-approved cleaning products and the surfaces each is intended for."
+              "Part number",
+              "A catalogue identity for the listed version.",
+              "Whether replacement is owner-permitted or requires service."
             ],
             [
-              "Routine observations",
-              "Date, weather/storage exposure, visible condition and care performed."
+              "Separated shapes",
+              "A conceptual relationship between components.",
+              "Assembly sequence, fit, dimensions and adjustments."
             ],
             [
-              "Service question",
-              "Observed symptom, when it appeared and any manufacturer response."
+              "Model heading and notes",
+              "The variant and exceptions covered by the illustration.",
+              "Condition and undocumented alterations of an individual example."
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "Photograph ordinary external condition for your private records without trying to diagnose internal faults from an image. A dated note such as “returned wet from transport; care completed according to manual” is more informative than “cleaned.” Keep service receipts with that record so a future owner or technician can distinguish observation from work actually performed."
+          "text": "The current Ruger 10/22 Standard manual is explicitly limited to model numbers 32000 and higher. That version boundary illustrates why the familiar name alone is insufficient. A current drawing may omit an older variant, and a used example may no longer match its original configuration. Read the heading and exceptions before using the list for a service enquiry."
+        },
+        {
+          "type": "paragraph",
+          "text": "A precise description can name the external component, model and change observed without claiming an internal diagnosis. If a support agent asks for a photograph, provide the requested view securely. Keep the difference between identifying a part and undertaking work on it clear; the manufacturer's service policy controls the latter."
         }
       ],
       "references": [
+        [
+          "Ruger · 10/22 Standard manual: models 32000 and higher",
+          "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf"
+        ],
         [
           "Ruger · Official instruction manual finder",
           "https://ruger.com/dataProcess/serialHistory/manuals.php"
@@ -350,48 +368,49 @@
       ]
     },
     {
-      "heading": "Cleaning is a product-specific workflow",
+      "heading": "Cleaning, lubrication and preservation are different jobs",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "A useful maintenance plan names the work area, compatible products, owner-authorized tasks and how the equipment returns to storage. Start with the manual’s maintenance section and product labels. Keep the instructions available while working; a video for a visually similar model may refer to a different mechanism or revision. This overview does not provide disassembly, adjustment, tuning or repair instructions."
+          "text": "Cleaning removes specified contamination. Lubrication reduces friction at locations the maker permits. Preservation protects surfaces during the stated storage conditions. A product may combine some functions, but the marketing phrase all-in-one does not prove that it is suitable for every surface or every location within a firearm. Select by the actual manual and product label."
         },
         {
-          "type": "flow",
-          "caption": "Organize a care session",
-          "items": [
-            [
-              "Identify",
-              "Confirm the model and applicable manual; list the tasks the owner is permitted to perform."
-            ],
-            [
-              "Prepare",
-              "Provide good light, ventilation appropriate to the product labels, a stable workspace and separate storage for ammunition."
-            ],
-            [
-              "Document",
-              "Record the work and observations, account for the equipment, and follow the manual’s return-to-storage requirements."
-            ]
+          "type": "table",
+          "caption": "Material and surface distinctions",
+          "columns": [
+            "Description",
+            "What it teaches about care"
           ],
-          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
-        },
-        {
-          "type": "paragraph",
-          "text": "Buy cleaning equipment around the manual rather than a large universal kit. Consider which materials are compatible with finishes, which consumables can be replenished locally, and whether the included instructions are understandable. A maintenance log also supports decisions about recurring consumable cost and professional service. Do not establish a universal schedule such as a fixed number of shots: exposure, storage and model requirements differ."
-        },
-        {
-          "type": "resources",
-          "items": [
-            {
-              "label": "Ruger · Official instruction manual finder",
-              "url": "https://ruger.com/dataProcess/serialHistory/manuals.php",
-              "description": "Find the manual for the exact model; read the maintenance and service boundaries before buying a cleaning kit."
-            }
+          "rows": [
+            [
+              "Stainless steel",
+              "More corrosion resistance than some other steels does not mean immunity to moisture, salt air or chemical exposure."
+            ],
+            [
+              "Blued steel",
+              "A surface treatment over steel; the underlying material and the maker's corrosion-protection requirements still matter."
+            ],
+            [
+              "Coated metal or polymer",
+              "The coating and the substrate can have separate chemical and abrasion limits."
+            ],
+            [
+              "Clear-coated aluminum",
+              "A cleaning method permitted for a different metal may damage the protective coating."
+            ],
+            [
+              "Optical surface",
+              "Lens coatings need the optical maker's own cleaning instructions, rather than a general firearm solvent."
+            ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "Two current manufacturer examples show why the exact version matters: Ruger publishes a separate American Rifle Generation II manual and a 10/22 Standard manual limited to model numbers 32000 and higher. Use the finder for another version. Read the relevant maintenance and service sections for the actual model rather than transferring a procedure between these examples."
+          "text": "Ruger's Generation II manual distinguishes stainless-component care from Cerakote care and warns against aggressive solvents or hard metallic brushes on that finish. Its 10/22 Standard manual separately prohibits abrasives on clear-coated aluminum parts. These examples explain material compatibility; they are not instructions to polish, strip or refinish an item."
+        },
+        {
+          "type": "paragraph",
+          "text": "A cleaning kit's large piece count does not establish usefulness. Separate the tools and chemicals required for owner-permitted cleaning from products intended for protection or service work. Keep the manufacturer's quantity and location limits: flooding every accessible space with oil is not the same as following a care specification."
         },
         {
           "type": "resources",
@@ -399,21 +418,17 @@
             {
               "label": "Ruger · American Rifle Generation II manual",
               "url": "https://ruger-docs.s3.amazonaws.com/_manuals/RAR-GenerationII.pdf",
-              "description": "Official Generation II manual, revision 3/2026 R4. Match the exact firearm and use the manufacturer’s owner-care and service sections."
+              "description": "Read the stainless-component and Cerakote sections in the exact-model manual; use its service policy for work beyond ordinary owner care."
             },
             {
               "label": "Ruger · 10/22 Standard manual: models 32000 and higher",
               "url": "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf",
-              "description": "Official 6/2026 R1 manual for this model-number range. Other 10/22 versions use different manuals; resolve them with the official finder."
+              "description": "The current Standard manual's model-number limit and coated-aluminum caution show why version and material must be identified."
             }
           ]
         }
       ],
       "references": [
-        [
-          "Ruger · Official instruction manual finder",
-          "https://ruger.com/dataProcess/serialHistory/manuals.php"
-        ],
         [
           "Ruger · American Rifle Generation II manual",
           "https://ruger-docs.s3.amazonaws.com/_manuals/RAR-GenerationII.pdf"
@@ -421,6 +436,10 @@
         [
           "Ruger · 10/22 Standard manual: models 32000 and higher",
           "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf"
+        ],
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
         ]
       ]
     }

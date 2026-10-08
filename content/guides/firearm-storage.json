@@ -4,15 +4,19 @@
   "category": "firearms-tools",
   "subcategory": "Secure storage",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "published": "2026-10-03",
-  "source_checked": "2026-10-07",
-  "next_review": "2027-01-07",
+  "source_checked": "2026-10-08",
+  "next_review": "2027-01-08",
   "aliases": [],
   "keywords": [
     "Secure storage",
     "Choose storage around the room and household",
-    "Keep a storage handover and maintenance record"
+    "Keep a storage handover and maintenance record",
+    "interior capacity",
+    "relative humidity",
+    "dew point",
+    "desiccant"
   ],
   "tldr": "Choose storage for three separate jobs: prevent unauthorized access, resist theft and protect condition. A cable lock, lockbox, cabinet and safe offer different levels of protection. Compare independent ratings, installation, humidity and backup access; a heavy enclosure or “fireproof” label is not a complete storage plan.",
   "steps": [
@@ -298,79 +302,131 @@
       ]
     },
     {
-      "heading": "Choose storage around the room and household",
+      "heading": "Nominal capacity and usable geometry are different",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Compare the installed arrangement, not just the advertised box. Measure the usable room, access path, door swing and actual interior space. Consider whether shelves, cases and other stored items reduce usable capacity. Plan an appropriate installation with the manufacturer and a qualified installer when structural attachment is involved; this guide does not supply anchoring or building-load specifications."
+          "text": "A quoted rifle count is not a measurement of the usable space for your actual equipment. Thick stocks, fitted equipment, cases, shelves and door pockets occupy parts of the same interior. The enclosure's outer dimensions include its walls and door; multiplying those figures does not establish the available interior volume."
         },
         {
           "type": "table",
-          "caption": "Storage selection worksheet",
+          "caption": "Capacity terms worth separating",
           "columns": [
-            "Constraint",
-            "Question to resolve"
+            "Term",
+            "What it describes"
           ],
           "rows": [
             [
-              "Available space",
-              "Will the unit fit through the access route and open without blocking the household’s exit?"
+              "Exterior dimensions",
+              "The delivery and room-space envelope, including stated projections."
             ],
             [
-              "Household access",
-              "Who can use it, who must not have access, and what changes when a visitor or caregiver arrives?"
+              "Interior dimensions",
+              "The manufacturer's usable internal envelope, subject to shelves, partitions and door clearance."
             ],
             [
-              "Power and keys",
-              "What does the manufacturer specify for a depleted battery or unavailable key?"
+              "Nominal rifle count",
+              "A product-specific packing claim rather than a universal space allowance per rifle."
             ],
             [
-              "Environment",
-              "What care and monitoring does this exact unit require in this room?"
+              "Door opening and swing",
+              "The space needed to reach the interior while the enclosure remains properly positioned."
             ],
             [
-              "Serviceability",
-              "Can the maker provide parts, instructions and support for the model?"
+              "Payload and installed mass",
+              "Contents plus enclosure mass, relevant to the supporting structure and delivery arrangement."
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "A large cabinet can become inconvenient if normal household activity obstructs its door. A smaller unit may serve the real collection better when it has a suitable location and documented access controls. Review the plan when the household changes instead of assuming the purchase permanently settles the question."
+          "text": "Even interior volume alone does not answer fit. As an invented geometric example, a long thin compartment and a short broad compartment can have equal volume while only one accommodates a long rigid case. The longest usable dimension, projections and closure clearance matter alongside the volume. Do not force the door against equipment to make a nominal count work."
+        },
+        {
+          "type": "paragraph",
+          "text": "Evaluate the arrangement the household will actually use: reach to shelves, room for an authorized user's glasses or mobility aid, and the normal path through the room. Reducing crowding can make inspection and access more manageable, but choosing a larger enclosure adds delivery, floor-loading and installation questions. Obtain those answers from the maker and an appropriate installer before delivery."
         }
       ],
       "references": [
         [
-          "Project ChildSafe · Storage options",
-          "https://projectchildsafe.org/wp-content/uploads/2023/11/Benefits-Of-Lock-Box-One-Pager_V3.pdf"
+          "Project ChildSafe · Storage categories",
+          "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
+        ],
+        [
+          "Liberty Safe · Use and care",
+          "https://libertysafe.com/pages/gun-safe-use-and-care"
         ]
       ]
     },
     {
-      "heading": "Keep a storage handover and maintenance record",
+      "heading": "Moisture control: measure the air and understand the method",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Use a private storage sheet to distinguish equipment facts from household arrangements. Record model, official instructions, service contact, required consumables and the review date. Keep recovery information in an appropriately protected place that the authorized owner can reach; do not store the only recovery route inside the locked unit."
+          "text": "Relative humidity compares the actual water vapour present with saturation at the air's current temperature. It changes when temperature changes, even if the amount of water vapour does not. Dew point describes the temperature at which that air becomes saturated. This explains why a cold metal item can collect condensation after entering warmer humid air; locking it in a box does not remove the water."
+        },
+        {
+          "type": "table",
+          "caption": "Devices marketed for moisture control",
+          "columns": [
+            "Device",
+            "Main role",
+            "Important distinction"
+          ],
+          "rows": [
+            [
+              "Hygrometer",
+              "Measures relative humidity where its sensor is located.",
+              "Measurement does not remove moisture; a room reading need not equal the enclosure reading."
+            ],
+            [
+              "Desiccant",
+              "Takes up moisture within its finite capacity.",
+              "The product's saturation indicator and renewal instructions matter."
+            ],
+            [
+              "Approved warming/circulation accessory",
+              "Changes the enclosure's local temperature and air movement as designed.",
+              "It requires a suitable power arrangement and the enclosure maker's approval."
+            ],
+            [
+              "Room climate control",
+              "Changes conditions around the enclosure.",
+              "A suitable room reduces the burden placed on small interior accessories."
+            ]
+          ]
         },
         {
           "type": "paragraph",
-          "text": "For shared housing, agree who is responsible for checking access after visits, maintenance or a move. Discuss how necessary information is passed to an authorized helper during an illness or evacuation without casually sharing access with everyone. Document any professional service so a later problem is not guessed at from memory."
+          "text": "Liberty discusses silica-gel products and warns that calcium-chloride absorbers can produce corrosive brine. That distinction is more useful than treating every packet or tub marked dehumidifier as the same technology. Choose a product approved for the enclosure and stored materials, with a clear indication of when it needs attention."
         },
         {
-          "type": "bullets",
+          "type": "paragraph",
+          "text": "Follow the maker's actual environmental targets rather than assuming the driest possible air is best for every mixed collection. Wood, documents, coatings and metals have different care concerns. Inspect conditions after a leak or a power outage, and address the source of moisture instead of adding more packets to an unsuitable room. Do not improvise electrical heaters or modify the enclosure to fit an accessory."
+        },
+        {
+          "type": "resources",
           "items": [
-            "After a move, reassess the new room and installation with the manufacturer rather than reusing assumptions from the old location.",
-            "When changing an access arrangement, follow the product instructions and check that the authorized person can still use it.",
-            "Keep proof of purchase and identifying records separate from public photographs and visible labels.",
-            "Treat a lost key, unreliable lock or unknown access history as a reason to resolve the storage arrangement promptly."
+            {
+              "label": "Liberty Safe · Moisture-control methods",
+              "url": "https://libertysafe.com/blogs/the-vault/how-to-keep-moisture-out-of-your-gun-safe",
+              "description": "Manufacturer discussion of measurement, desiccants and approved moisture-control products. Product-specific instructions take priority."
+            }
           ]
         }
       ],
       "references": [
         [
-          "Project ChildSafe · Responsible ownership",
-          "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
+          "National Weather Service · Relative humidity and dew point",
+          "https://www.weather.gov/arx/why_dewpoint_vs_humidity"
+        ],
+        [
+          "Liberty Safe · Moisture-control methods",
+          "https://libertysafe.com/blogs/the-vault/how-to-keep-moisture-out-of-your-gun-safe"
+        ],
+        [
+          "Liberty Safe · Use and care",
+          "https://libertysafe.com/pages/gun-safe-use-and-care"
         ]
       ]
     }

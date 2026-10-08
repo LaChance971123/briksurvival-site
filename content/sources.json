@@ -1859,16 +1859,16 @@
       "https://myfwc.com/hunting/regulations/taking-game/"
     ],
     [
-      "SAAMI · FAQs and compatibility",
-      "https://saami.org/faqs/"
+      "SAAMI · Cartridge and component terms",
+      "https://saami.org/saami-glossary/?letter=C"
     ],
     [
-      "SAAMI · Glossary",
-      "https://saami.org/saami-glossary/"
+      "SAAMI · Rim and receiver terminology",
+      "https://saami.org/saami-glossary/?letter=R"
     ],
     [
-      "Florida FWC · Taking game",
-      "https://myfwc.com/hunting/regulations/taking-game/"
+      "SAAMI · Gauge, grain and grip terminology",
+      "https://saami.org/saami-glossary/?letter=G"
     ]
   ],
   "ammunition-storage-full-20261007": [
@@ -1935,12 +1935,8 @@
       "https://saami.org/wp-content/uploads/2025/03/Guidance-on-Firearms-and-Ammunition-Exposed-to-Fire-2-21-2025.pdf"
     ],
     [
-      "Project ChildSafe · Storage options",
-      "https://projectchildsafe.org/wp-content/uploads/2023/11/Benefits-Of-Lock-Box-One-Pager_V3.pdf"
-    ],
-    [
-      "Project ChildSafe · Responsible ownership",
-      "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
+      "National Weather Service · Relative humidity and dew point",
+      "https://www.weather.gov/arx/why_dewpoint_vs_humidity"
     ]
   ],
   "suppressor-fundamentals-full-20261007": [
@@ -1971,14 +1967,6 @@
     [
       "SilencerCo · Care requirements (manufacturer reference)",
       "https://silencerco.com/blog/how-to-clean-a-suppressor"
-    ],
-    [
-      "SilencerCo · Suppressor overview",
-      "https://silencerco.com/blog/how-do-suppressors-work"
-    ],
-    [
-      "NIOSH · Firearm noise research",
-      "https://stacks.cdc.gov/view/cdc/111710"
     ]
   ],
   "night-vision-basics-full-20261007": [
@@ -1999,8 +1987,12 @@
       "https://cdn.photonis.com/system/files/2023-12/Photonis_Night%20Vision%20and%20Image%20Intensifiers%20market_EN_17102023.pdf"
     ],
     [
-      "FLIR · Thermal and night vision",
-      "https://www.flir.com/discover/ots/thermal-vs-night-vision/"
+      "Bushnell · Equinox X650 digital night-vision manual",
+      "https://cdn.shopify.com/s/files/1/0947/2796/2920/files/EquinoxX650_DigitalNightVision_6LIM_Web.pdf"
+    ],
+    [
+      "Leupold · Binocular viewing and individual-eye focus",
+      "https://www.leupold.com/blog/post/binoculars"
     ]
   ],
   "thermal-imaging-basics-full-20261007": [
@@ -2027,14 +2019,6 @@
     [
       "FLIR · Radiometric image files",
       "https://docs.flir.com/T810587/en-US/latest/s08.html"
-    ],
-    [
-      "FLIR · Emissivity",
-      "https://www.flir.com/discover/professional-tools/how-does-emissivity-affect-thermal-imaging/"
-    ],
-    [
-      "FLIR · Thermal sensitivity",
-      "https://www.flir.com/discover/security/perimeter-protection/the-importance-of-thermal-sensitivity-for-detection-accuracy/"
     ]
   ],
   "go-bag-full-20261007": [
@@ -2145,6 +2129,30 @@
     [
       "Ruger · 10/22 Standard manual: models 32000 and higher",
       "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf"
+    ],
+    [
+      "SAAMI · Semiautomatic action",
+      "https://saami.org/glossary/semiautomatic-action/"
+    ],
+    [
+      "SAAMI · Gauge, grain and grip terminology",
+      "https://saami.org/saami-glossary/?letter=G"
+    ],
+    [
+      "Ruger · Model 46902 factory specification",
+      "https://ruger.com/products/americanRifleGenII/specSheets/46902.html"
+    ],
+    [
+      "Leupold · Optics glossary",
+      "https://www.leupold.com/support/resources/glossary"
+    ],
+    [
+      "SAAMI · Cartridge and component terms",
+      "https://saami.org/saami-glossary/?letter=C"
+    ],
+    [
+      "Project ChildSafe · Storage options",
+      "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
     ]
   ],
   "grey-man-basics-full-20261007": [

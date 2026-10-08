@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Ammunition",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "published": "2026-10-03",
-  "source_checked": "2026-10-07",
-  "next_review": "2027-01-07",
+  "source_checked": "2026-10-08",
+  "next_review": "2027-01-08",
   "aliases": [
     "ammo",
     "cartridges"
@@ -296,79 +296,53 @@
       "references": []
     },
     {
-      "heading": "Build an inventory that supports use and recall checks",
+      "heading": "Transport packaging protects a different part of the problem",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Organize stored ammunition by complete product identity rather than by appearance. A practical inventory includes manufacturer, cartridge designation, product code, lot identifier if supplied, quantity, purchase date and storage location. Record where the original label is kept. Count sealed boxes and opened boxes separately so the list does not imply precision it does not have."
+          "text": "At home, storage combines access control, condition and product identification. For travel, an additional question is whether the actual packaging satisfies the carrier and applicable rules. A sturdy container is not automatically approved travel packaging, and a lock does not prevent loose contents from moving inside it."
+        },
+        {
+          "type": "paragraph",
+          "text": "For U.S. air travel, the FAA's current PackSafe page requires small-arms ammunition to be in checked baggage and securely packed in boxes or devices designed to carry small amounts of ammunition. Clips and magazines must also be securely boxed so ammunition is not loose or exposed. The page distinguishes factory cartridges and shotshells from powder, primers and other excluded components."
         },
         {
           "type": "table",
-          "caption": "Editorial inventory example",
+          "caption": "Read the travel terms literally",
           "columns": [
-            "Record",
-            "Purpose"
+            "Term",
+            "Practical distinction"
           ],
           "rows": [
             [
-              "Product and lot",
-              "Lets you compare a notice with the actual stock rather than a broad caliber name."
+              "Checked baggage",
+              "Different from permission to carry the item into the passenger cabin."
             ],
             [
-              "Quantity and package state",
-              "Shows what was opened, moved or reserved for a planned sporting session."
+              "Purpose-designed packaging",
+              "The package contains and protects the ammunition rather than merely enclosing loose rounds."
             ],
             [
-              "Storage event",
-              "Documents flooding, heat, leakage or an uncertain period in transit for manufacturer advice."
+              "Gross weight",
+              "Includes packaging, unlike the printed projectile mass on an ammunition label."
             ],
             [
-              "Location and review date",
-              "Avoids losing stock behind newer containers and makes the next inspection accountable."
+              "Airline limit",
+              "Can add conditions beyond the general FAA description; the actual carrier must confirm them."
+            ],
+            [
+              "Destination and itinerary",
+              "Introduce separate possession, transport and sporting-use rules."
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "Use a short transaction note when a box is moved or used. Do not scrape identifying information away to fit smaller containers. Keep the record private but available to the responsible owner. Rotation is an inventory practice, not a declaration that old ammunition is sound: condition and exposure still need their own assessment."
-        }
-      ],
-      "references": [
-        [
-          "SAAMI · FAQs and compatibility",
-          "https://saami.org/faqs/"
-        ]
-      ]
-    },
-    {
-      "heading": "Separate home storage from a transport itinerary",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Storage containers and travel rules solve different problems. Before travel, make a checklist for the carrier, destination and each jurisdiction on the journey. For U.S. air travel, FAA PackSafe identifies ammunition as checked-baggage material subject to packaging requirements; airline and other applicable rules also need checking. Do not infer permission from the fact that a storage can closes securely."
-        },
-        {
-          "type": "flow",
-          "caption": "Prepare the travel paperwork",
-          "items": [
-            [
-              "Identify the journey",
-              "Record the carrier, route, destination and official rule pages you will use."
-            ],
-            [
-              "Confirm the packaging",
-              "Ask the carrier about the actual package and quantity; compare its answer with the applicable official requirements."
-            ],
-            [
-              "Keep the check dated",
-              "Save the relevant policy and confirmation for the trip, then recheck when the itinerary changes."
-            ]
-          ],
-          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+          "text": "FAA notes that international rules and some U.S. airlines limit this allowance to 5 kg (11 pounds) gross per passenger. This is a dated U.S. source example, not a universal allowance or an entitlement on every airline. Weigh the complete intended package and check the carrier, TSA screening requirements and all relevant jurisdictions before departure."
         },
         {
           "type": "paragraph",
-          "text": "Avoid publishing the travel inventory or private identifiers in a packing photograph. If a trip is postponed, return the stock to the normal documented storage arrangement rather than leaving it indefinitely in a vehicle. If the carrier’s wording is ambiguous, resolve it before departure; an airport queue is a poor place to discover that two authorities describe packaging differently."
+          "text": "As an invented arithmetic example, 4.7 kg of contents plus 0.5 kg of packaging totals 5.2 kg gross. Comparing only the contents with a 5 kg gross limit would miss the packaging. This calculation teaches the term; it does not certify a package or itinerary. Keep product and lot information with the stock through the journey and return it to suitable secured storage afterward."
         },
         {
           "type": "resources",
@@ -376,7 +350,7 @@
             {
               "label": "FAA · PackSafe ammunition",
               "url": "https://www.faa.gov/hazmat/packsafe/ammunition",
-              "description": "Read current U.S. air-transport ammunition conditions and confirm additional airline requirements for the actual itinerary."
+              "description": "Read the current U.S. air-travel scope, packaging requirements and gross-weight caveat; confirm additional carrier and itinerary requirements."
             }
           ]
         }

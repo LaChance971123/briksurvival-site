@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Observation equipment",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "published": "2026-10-04",
-  "source_checked": "2026-10-07",
-  "next_review": "2027-01-07",
+  "source_checked": "2026-10-08",
+  "next_review": "2027-01-08",
   "aliases": [
     "night vision",
     "NVG",
@@ -20,7 +20,14 @@
     "digital night vision",
     "image intensifier",
     "Use a repeatable observation shortlist",
-    "Budget for a usable observation system"
+    "Budget for a usable observation system",
+    "image chain",
+    "photocathode",
+    "FOM",
+    "signal-to-noise ratio",
+    "digital zoom",
+    "display focus",
+    "recording medium"
   ],
   "tldr": "Image-intensified night vision, digital low-light cameras and thermal imagers use different signals. Choose observation equipment around a specific civilian task, verify its limitations and retain ordinary lighting and navigation backups.",
   "steps": [
@@ -207,45 +214,65 @@
       ]
     },
     {
-      "heading": "A practical demonstration log",
+      "heading": "Follow the image from the scene to the eye",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Use the same simple log when comparing devices. Write down the location type, weather, available lighting, approximate observation distance, selected settings and whether the view was live or recorded. Record what you could actually distinguish, not just whether an object was visible. If the purpose is watching wildlife, note whether you could confidently identify the animal without approaching or disturbing it."
+          "text": "An image intensifier converts incoming light at a photocathode into electrons, multiplies the signal through its internal structure and converts it back into visible light at a phosphor screen. The eyepiece presents that image to the user. Green or white display colour is part of the screen presentation; a colour name alone does not establish sensitivity, resolution or the quality of the complete device."
         },
         {
-          "type": "flow",
-          "caption": "Compare the view honestly",
-          "items": [
-            [
-              "Set a task",
-              "Write down the detail you need to observe."
-            ],
-            [
-              "Record conditions",
-              "Describe lighting, weather and the viewing position."
-            ],
-            [
-              "Observe",
-              "Compare a live view with an ordinary reference where safe."
-            ],
-            [
-              "Decide",
-              "List what remained uncertain before choosing equipment."
-            ]
+          "type": "paragraph",
+          "text": "A digital low-light viewer instead uses an electronic image sensor, processing and a display. Bushnell's handheld Equinox X650 manual describes a CMOS sensor and LCD, with an infrared illuminator for low-light conditions. This is reflected-light imaging, not measurement of the scene's heat. The sensor's image, the display view and a recorded file are different stages of the same chain."
+        },
+        {
+          "type": "table",
+          "caption": "Do not mix the stages in a specification",
+          "columns": [
+            "Stage",
+            "What belongs to it"
           ],
-          "note": "An educational decision aid, not equipment certification or a live assessment."
+          "rows": [
+            [
+              "Scene and illumination",
+              "The light available to the system; performance with supplemental illumination is a different condition."
+            ],
+            [
+              "Sensor or intensifier",
+              "The underlying signal and detail capability."
+            ],
+            [
+              "Optics",
+              "Scene coverage, focus and how the image is presented."
+            ],
+            [
+              "Display",
+              "The view delivered to the eye, including its own pixel grid or phosphor presentation."
+            ],
+            [
+              "Recording",
+              "The format, compression and output file, where the device supports them."
+            ]
+          ]
         },
         {
           "type": "paragraph",
-          "text": "For example, “a moving shape was visible” is different from “the scene detail was clear enough for this observation task.” Keep uncertainty in the record. An observation log helps avoid turning a striking promotional video into an expectation that the product will identify everything outside the home. It also makes return-period testing more structured and useful."
-        },
-        {
-          "type": "paragraph",
-          "text": "Do not stage a dangerous demonstration, point bright sources into sensitive equipment, or expose the device to conditions beyond its instructions just to test a claim. Ask the manufacturer about an unresolved specification instead."
+          "text": "This makes a promotional resolution claim easier to question: does it identify the sensor, the display or an exported image? Enlarging a small image to a large file does not supply missing scene detail. Likewise, a bright-looking display can be easy to view without representing a strong underlying low-light signal. Read the stage and the test conditions alongside the number."
         }
       ],
-      "references": []
+      "references": [
+        [
+          "Photonis · Image-intensifier specifications",
+          "https://cdn.photonis.com/system/files/2023-12/Photonis_Night%20Vision%20and%20Image%20Intensifiers%20market_EN_17102023.pdf"
+        ],
+        [
+          "Bushnell · Equinox X650 digital night-vision manual",
+          "https://cdn.shopify.com/s/files/1/0947/2796/2920/files/EquinoxX650_DigitalNightVision_6LIM_Web.pdf"
+        ],
+        [
+          "FLIR · Thermal imaging and night vision",
+          "https://www.flir.com/discover/ots/thermal-vs-night-vision/"
+        ]
+      ]
     },
     {
       "heading": "Ownership includes power, care and privacy",
@@ -272,98 +299,169 @@
       "references": []
     },
     {
-      "heading": "Choose the simplest tool that meets the need",
+      "heading": "Handheld viewing comfort is part of the optical system",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "For many households, dependable lighting, spare power and knowing the local terrain solve the immediate preparedness problem at much lower cost. Advanced observation equipment can support a defined hobby or inspection task, but it also adds expense and maintenance. Before buying, write the specific problem in one sentence and identify the simplest way to address it. If the answer is merely “see better at night,” narrow the task further."
+          "text": "A monocular supplies a view to one eye; a binocular provides separate viewing paths for two. Neither format alone establishes field of view, depth perception, image source or fit. A digital device marketed as binocular may show processed imagery through its own display arrangement, so inspect the exact optical and display description rather than relying on the body shape."
         },
         {
           "type": "paragraph",
-          "text": "An occasional user benefits from a short operating card with the power control, focus adjustment, battery type and permitted care. Test it with the actual user: glasses, eye relief, weight and dexterity can determine whether an otherwise capable device is comfortable. Keep the card specific to the model so the controls remain familiar after a few months without use."
-        },
-        {
-          "type": "paragraph",
-          "text": "Revisit the choice after a real, safe trial. Decide whether to retain it, return it or seek training for the specific activity. Purchase price is only one factor: the long-term value depends on actual use, support, repair options and whether it solves the intended observation problem consistently."
-        }
-      ],
-      "references": []
-    },
-    {
-      "heading": "Use a repeatable observation shortlist",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Write the job in ordinary terms before comparing devices: seeing a campsite path, observing wildlife where permitted, checking an outbuilding, or inspecting an area from a fixed position. Include whether the device will be handheld, how long it must operate, whether you wear glasses, and whether image recording is actually useful. A specification table cannot decide how comfortable a device is in your hands."
+          "text": "For two-eye viewing, the user's eye spacing and focus relationship matter. Leupold's binocular explanation separates the focus needs of each eye. For an electronic viewer, distinguish a sharp display from a sharp scene: text and icons can look clear while the viewed object remains blurred, or the reverse. The exact manual identifies the separate controls."
         },
         {
           "type": "table",
-          "caption": "A repeatable demonstration record",
+          "caption": "Different causes of an uncomfortable view",
           "columns": [
-            "Field",
-            "Record"
+            "Observation",
+            "Specification or fit question"
           ],
           "rows": [
             [
-              "Conditions",
-              "Ambient light, weather, nearby artificial light and the viewing location."
+              "Incomplete image with glasses",
+              "Does the eyepiece arrangement provide a usable full view for the actual user?"
             ],
             [
-              "Task",
-              "The stationary object or ordinary feature you are trying to distinguish."
+              "One eye remains uncomfortable",
+              "Does the viewing format and individual-eye adjustment suit the person?"
             ],
             [
-              "Usability",
-              "Focus/control access, display comfort, glasses fit and carrying fatigue."
+              "Clear icons, blurred scene",
+              "Is the subject within the device's permitted focus range, and what does its manual say about scene focus?"
             ],
             [
-              "Power",
-              "Battery arrangement, stated runtime conditions, spare availability and charging needs."
+              "Clear scene, blurred display text",
+              "Does the display/eyepiece focus provision suit the user's eyesight?"
             ],
             [
-              "Result",
-              "What you could confidently describe, what remained uncertain and the settings used."
+              "Fatigue in hands or neck",
+              "Does the complete mass and viewing position suit the duration of the stationary task?"
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "Compare products during the same demonstration rather than combining impressive images from unrelated locations. Ask what processing, recording compression or illumination was used in promotional samples. A short trial from a shop doorway does not represent every outdoor environment. Keep an uncertainty note so a later purchase decision does not remember only the clearest image."
+          "text": "A stationary civilian observation trial should answer these questions on familiar permitted ground, with ordinary lighting available when needed. A pleasing wildlife image does not establish a safe walking surface, a navigable route or the ability to identify every distant shape. Keep the intended viewing task distinct from travel decisions."
         }
       ],
       "references": [
         [
-          "FLIR · Thermal and night vision",
-          "https://www.flir.com/discover/ots/thermal-vs-night-vision/"
+          "Leupold · Binocular viewing and individual-eye focus",
+          "https://www.leupold.com/blog/post/binoculars"
+        ],
+        [
+          "Bushnell · Equinox X650 digital night-vision manual",
+          "https://cdn.shopify.com/s/files/1/0947/2796/2920/files/EquinoxX650_DigitalNightVision_6LIM_Web.pdf"
         ]
       ]
     },
     {
-      "heading": "Budget for a usable observation system",
+      "heading": "Equal FOM scores can hide different underlying values",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Add the carrying case, permitted power supplies, consumables and any necessary service to the budget. Confirm the maker’s environmental rating, care instructions and storage limits for the exact device. Terms such as waterproof or rugged need a published qualification; they do not mean indefinite exposure to any weather or neglect."
+          "text": "For an image-intensifier specification, figure of merit combines signal-to-noise ratio and limiting resolution. The product is useful shorthand but loses information about its two inputs. Retain those inputs when comparing data. A generation label and a single combined score cannot describe the entire view, optics, condition or ergonomics."
+        },
+        {
+          "type": "table",
+          "caption": "Invented arithmetic example, not actual tube ratings",
+          "columns": [
+            "Illustrative entry",
+            "Signal-to-noise ratio",
+            "Resolution in lp/mm",
+            "Product"
+          ],
+          "rows": [
+            [
+              "Example A",
+              "28",
+              "64",
+              "1,792"
+            ],
+            [
+              "Example B",
+              "32",
+              "56",
+              "1,792"
+            ]
+          ]
         },
         {
           "type": "paragraph",
-          "text": "For a household, consider whether another adult can operate the controls and understand the display without reconfiguring the device. A simpler device used well may answer the real observation question better than a feature-heavy product that stays in storage. Preserve privacy when recording around other homes, and follow applicable access and wildlife rules. Observation equipment does not establish that a route or building is safe to enter."
+          "text": "The equal products do not mean the two imaginary entries have identical characteristics. One input is higher and the other lower. The calculation demonstrates why a combined score should be unpacked; it does not predict which real device would suit a particular scene. Do not treat line pairs per millimetre as the pixel dimensions of a digital camera or display."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a real product, distinguish a guaranteed specification from a typical value or the measured record supplied for a particular tube. Ask which exact item the data covers and which test conditions apply. A resale listing describing only a housing family cannot establish the condition or specifications of its installed image system. Resolve the documentation with the maker or qualified service provider rather than opening or modifying the device."
+        }
+      ],
+      "references": [
+        [
+          "Photonis · Image-intensifier specifications",
+          "https://cdn.photonis.com/system/files/2023-12/Photonis_Night%20Vision%20and%20Image%20Intensifiers%20market_EN_17102023.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Digital enlargement, focus and recording solve separate jobs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Optical magnification and digital enlargement are different processes. Digital zoom enlarges or crops the existing image; it does not create scene detail that the sensor failed to capture. A larger displayed shape may be easier to examine, while providing less surrounding context. Compare the native sensor and original view separately from the enlarged output."
+        },
+        {
+          "type": "table",
+          "caption": "Read the feature list by function",
+          "columns": [
+            "Feature",
+            "What it answers"
+          ],
+          "rows": [
+            [
+              "Scene focus",
+              "Whether the viewed subject is represented sharply within the model's focus range."
+            ],
+            [
+              "Eyepiece or display focus",
+              "Whether the displayed image and text appear clear to this user's eye."
+            ],
+            [
+              "Digital zoom",
+              "How the existing image is enlarged or cropped on screen."
+            ],
+            [
+              "Recording medium",
+              "Where a photo or video is stored and what works without that medium."
+            ],
+            [
+              "External connection",
+              "Whether the port supplies power, video, file transfer or another specific function."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The Equinox X650 manual is a useful product-specific example: it distinguishes scene focus from display focus and permits live viewing without a memory card while recording requires a suitable card. These are separate capabilities. A USB socket's presence should not be treated as proof of every possible connection function."
+        },
+        {
+          "type": "paragraph",
+          "text": "For ownership, confirm the permitted power source, memory requirements, file access and environmental limits of the exact device. Use the manual's care instructions for lenses, seals and ports; do not infer immersion protection or brightness tolerance from a rugged-looking body. Keep recordings private when they reveal another household's routines. The useful comparison is a clear live view and an understandable interface for the intended civilian task."
         },
         {
           "type": "resources",
           "items": [
             {
-              "label": "FLIR · Technology comparison",
-              "url": "https://www.flir.com/discover/ots/thermal-vs-night-vision/",
-              "description": "Compare the basic sensing technologies, then request the selected model’s current manual and environmental specifications."
+              "label": "Bushnell · Equinox X650 digital night-vision manual",
+              "url": "https://cdn.shopify.com/s/files/1/0947/2796/2920/files/EquinoxX650_DigitalNightVision_6LIM_Web.pdf",
+              "description": "Official handheld-viewer manual illustrating separate scene/display focus, digital zoom and live-view versus recording requirements. It describes this model only."
             }
           ]
         }
       ],
       "references": [
         [
-          "FLIR · Thermal and night vision",
-          "https://www.flir.com/discover/ots/thermal-vs-night-vision/"
+          "Bushnell · Equinox X650 digital night-vision manual",
+          "https://cdn.shopify.com/s/files/1/0947/2796/2920/files/EquinoxX650_DigitalNightVision_6LIM_Web.pdf"
         ]
       ]
     }

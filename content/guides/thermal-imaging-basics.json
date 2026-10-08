@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Observation equipment",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "published": "2026-10-04",
-  "source_checked": "2026-10-07",
-  "next_review": "2027-01-07",
+  "source_checked": "2026-10-08",
+  "next_review": "2027-01-08",
   "aliases": [
     "thermal",
     "thermals",
@@ -22,7 +22,13 @@
     "NETD",
     "infrared camera",
     "Choose observation or measurement deliberately",
-    "Compare purchase support and repeatability"
+    "Compare purchase support and repeatability",
+    "native resolution",
+    "digital zoom",
+    "interpolation",
+    "NETD versus accuracy",
+    "millikelvin",
+    "palette scale"
   ],
   "tldr": "Thermal cameras display infrared contrast, not a guaranteed identification or a view through walls. Compare the actual sensor, sensitivity and intended task, then verify any important finding by an appropriate independent method.",
   "steps": [
@@ -304,64 +310,102 @@
       "references": []
     },
     {
-      "heading": "Choose observation or measurement deliberately",
+      "heading": "Spatial detail, field of view and digital zoom",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Decide whether the job is to notice a thermal contrast or to make a documented temperature measurement. A household observer locating an unusual warm area and a professional measuring equipment are asking different questions. Compare the manufacturer’s intended use, calibration/service provisions, data export and the meaning of the displayed values. A colorful image alone is not a diagnosis."
+          "text": "Native detector resolution counts the thermal samples across and down the sensor. Field of view describes how much scene those samples cover. Read them together: an equal pixel grid covering a wider scene assigns each sample a larger share of that scene. The lens, focus and imaging conditions still determine which detail is actually resolved."
         },
         {
           "type": "table",
-          "caption": "A thermal observation note",
+          "caption": "An invented same-view sampling comparison",
           "columns": [
-            "Field",
-            "Why record it"
+            "Illustrative grid",
+            "Total detector elements",
+            "What the arithmetic establishes"
           ],
           "rows": [
             [
-              "Object and location",
-              "Distinguishes the actual surface from an assumed source behind it."
+              "160 × 120",
+              "19,200",
+              "The number of samples in this illustrative grid."
             ],
             [
-              "Time and conditions",
-              "Allows a later comparison under similar circumstances."
+              "320 × 240",
+              "76,800",
+              "Twice as many samples along each axis and four times as many overall."
             ],
             [
-              "View and settings",
-              "Explains why two images may look different."
-            ],
-            [
-              "Interpretation",
-              "Separates “this area looks different” from an unverified explanation."
-            ],
-            [
-              "Follow-up",
-              "Names the appropriate qualified inspection when a building or equipment fault is suspected."
+              "Enlarged 160 × 120 output",
+              "Still 19,200 original detector samples",
+              "More output pixels do not imply more independently captured thermal information."
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "For example, a warmer patch near a window is an observation. The next question is whether normal heating, sunlight, reflection, an open window or a building issue could explain it. Use comparable observations and professional assessment where the consequence matters. Do not dismantle electrical equipment or enter a hazardous area to improve an image."
+          "text": "The example assumes the same field of view and discusses sampling only. It does not establish identification distance, temperature accuracy, lens quality or superiority under different weather. A high-resolution display can make the view comfortable without changing the thermal information captured by a lower-resolution detector."
+        },
+        {
+          "type": "paragraph",
+          "text": "Digital zoom crops or enlarges the existing view. Interpolated output estimates extra display values; it does not measure new points in the scene. A narrow view may show a smaller part of an inspection area at once, while a wider view supplies more context. For a household inspection, note which actual surface the image includes rather than interpreting an enlarged patch as a complete view of the area."
+        },
+        {
+          "type": "paragraph",
+          "text": "Compare native detector pixels, field of view, focus range and exported-image dimensions in separate columns. Reject a comparison that silently changes one of those conditions. A camera should be selected for a defined observation or inspection question, with an independent method for conclusions that affect safety."
         }
       ],
       "references": [
         [
-          "FLIR · Emissivity",
-          "https://www.flir.com/discover/professional-tools/how-does-emissivity-affect-thermal-imaging/"
+          "FLIR OEM · Choosing a thermal imager",
+          "https://www.oem.flir.com/learn/discover/choosing-the-right-thermal-imager-for-your-integrated-project/"
         ]
       ]
     },
     {
-      "heading": "Compare purchase support and repeatability",
+      "heading": "Sensitivity, measurement accuracy and palette contrast",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Ask whether the listed sensor, optics, field of view and power arrangement describe the exact version being sold. Record firmware/manual edition and the maker’s support route. If measurement is important, ask about calibration documentation and ongoing service cost. If observation is the purpose, prioritize usability and a repeatable view of the real task over a promotional distance claim."
+          "text": "NETD describes thermal sensitivity under stated test conditions. Absolute temperature accuracy answers a different question: how close a supported measurement is to the actual surface temperature within its specified uncertainty. A camera can resolve small differences while still needing calibration and correct interpretation for reliable temperature values."
+        },
+        {
+          "type": "table",
+          "caption": "Keep three claims separate",
+          "columns": [
+            "Claim",
+            "Meaning",
+            "What it does not promise"
+          ],
+          "rows": [
+            [
+              "Sensitivity / NETD",
+              "Ability to distinguish small thermal differences under the stated test.",
+              "Absolute temperature accuracy or a universal detection range."
+            ],
+            [
+              "Measurement accuracy",
+              "The specified uncertainty of a supported temperature estimate under defined conditions.",
+              "A correct estimate on every material without appropriate settings or interpretation."
+            ],
+            [
+              "Displayed contrast",
+              "How the image's range is mapped to shades or colours.",
+              "A corresponding difference in physical severity."
+            ]
+          ]
         },
         {
           "type": "paragraph",
-          "text": "A household trial can use the same familiar stationary scene at two times, with observations recorded separately. That exercise helps you understand how the image changes; it does not certify detection range or an ability to identify people. Keep recorded images private where they reveal another household’s routines. For building inspection, request a qualified interpretation rather than using a consumer image to declare a wall dry or wiring sound."
+          "text": "As an invented unit example, 50 mK is a temperature difference of 0.05 °C. That sensitivity figure would not mean an absolute temperature measurement is accurate to ±0.05 °C. Compare the separate accuracy statement and its conditions if measurement matters. An observation-only device may provide useful contrast without supporting calibrated temperature measurement at all."
+        },
+        {
+          "type": "paragraph",
+          "text": "A palette is a display convention. If two images use different displayed ranges, a small physical difference can occupy a large part of one palette and a small part of the other. Read the scale and conditions before comparing colours. A dramatic red area is not automatically hotter than every red area in another image."
+        },
+        {
+          "type": "paragraph",
+          "text": "Surface emission and reflection further affect interpretation. FLIR illustrates polished metal reflecting surrounding thermal radiation; an apparent warm area can therefore reflect another heat source. Record the surface and conditions and use qualified thermography or building assessment when the consequence matters. Do not treat colour, a single pixel or a consumer measurement as an electrical, structural or medical diagnosis."
         },
         {
           "type": "resources",
@@ -369,7 +413,12 @@
             {
               "label": "FLIR · Thermal sensitivity",
               "url": "https://www.flir.com/discover/security/perimeter-protection/the-importance-of-thermal-sensitivity-for-detection-accuracy/",
-              "description": "Understand what sensitivity describes and ask how the selected model’s published conditions relate to your ordinary observation task."
+              "description": "Manufacturer explanation of sensitivity and why equal pixel counts can have different thermal-noise performance."
+            },
+            {
+              "label": "FLIR · Emissivity and reflections",
+              "url": "https://www.flir.com/discover/professional-tools/how-does-emissivity-affect-thermal-imaging/",
+              "description": "Manufacturer examples showing why polished surfaces and reflected radiation complicate temperature interpretation."
             }
           ]
         }
@@ -378,6 +427,14 @@
         [
           "FLIR · Thermal sensitivity",
           "https://www.flir.com/discover/security/perimeter-protection/the-importance-of-thermal-sensitivity-for-detection-accuracy/"
+        ],
+        [
+          "FLIR OEM · Choosing a thermal imager",
+          "https://www.oem.flir.com/learn/discover/choosing-the-right-thermal-imager-for-your-integrated-project/"
+        ],
+        [
+          "FLIR · Emissivity and reflections",
+          "https://www.flir.com/discover/professional-tools/how-does-emissivity-affect-thermal-imaging/"
         ]
       ]
     }

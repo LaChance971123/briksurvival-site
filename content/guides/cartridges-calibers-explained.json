@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Ammunition",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "published": "2026-10-04",
-  "source_checked": "2026-10-07",
-  "next_review": "2027-01-07",
+  "source_checked": "2026-10-08",
+  "next_review": "2027-01-08",
   "aliases": [
     "calibers",
     "calibres",
@@ -30,7 +30,13 @@
     "308",
     "rifle ammunition",
     "Read an ammunition label as separate fields",
-    "Compare cost and carried mass without a performance ranking"
+    "Compare cost and carried mass without a performance ranking",
+    "rimmed",
+    "rimless",
+    "case mouth",
+    "case shoulder",
+    "grain versus gram",
+    "gross weight"
   ],
   "tldr": "Read the complete cartridge or shotshell designation, then compare manufacturer compatibility, sporting context, local availability, package cost and carried mass. Similar names and nominal bullet diameters do not establish interchangeability.",
   "steps": [
@@ -308,120 +314,134 @@
       "references": []
     },
     {
-      "heading": "Read an ammunition label as separate fields",
+      "heading": "Case shape and primer location are separate descriptions",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Treat the package as several descriptions rather than one caliber number. The recognized cartridge designation identifies the cartridge family. The bullet or shot description, stated projectile weight, package count and product/lot identification describe that particular product. These fields answer different questions. A weight printed in grains describes mass; it is not a powder-loading instruction."
+          "text": "Rimmed and rimless describe the case-head relationship to the case body. Rimfire and centerfire describe the priming arrangement. The similar words belong to different classifications. A rimmed case can be centerfire; rimless does not mean that the case lacks an extraction surface."
         },
         {
           "type": "table",
-          "caption": "Illustrative label-reading worksheet",
+          "caption": "Case vocabulary in a product description",
           "columns": [
-            "Example field",
-            "What it tells you",
-            "What remains to check"
+            "Term",
+            "Conceptual meaning"
           ],
           "rows": [
             [
-              "9mm Luger",
-              "A complete cartridge designation, rather than the broad phrase “9mm.”",
-              "The exact firearm manual and any additional product restrictions."
+              "Rimmed",
+              "A projecting rim is wider than the main case body."
             ],
             [
-              "124 grain",
-              "The stated projectile mass for this example product.",
-              "Its manufacturer-described intended use; this number alone is not a compatibility decision."
+              "Rimless",
+              "The head is about the case body's diameter, with an extraction groove ahead of it."
             ],
             [
-              "50 cartridges",
-              "The quantity sold in this example box.",
-              "Cost per cartridge and whether several listings use the same package size."
+              "Case mouth",
+              "The opening at the forward end of the case."
             ],
             [
-              "12 gauge / shell length",
-              "Two distinct shotshell identity fields.",
-              "The complete chamber and ammunition specifications in the shotgun manual."
+              "Neck and shoulder",
+              "On a bottleneck case, the narrowed forward portion and the transition to the wider body."
+            ],
+            [
+              "Case length",
+              "The case dimension; it is different from the length of the complete loaded cartridge."
+            ],
+            [
+              "Rimfire or centerfire",
+              "The priming category, not a guarantee of interchangeability or a case-shape description."
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "These are invented worksheet entries, not a recommendation for a particular firearm. Copy a real package’s full wording before comparing products. Product names can sound nearly identical while identifying different offerings. Keep the original label and lot reference with stored ammunition; a handwritten caliber abbreviation drops information you may need for a recall or manufacturer question."
+          "text": "These terms help distinguish specifications that a shortened calibre name conceals. Two products can share an approximate projectile diameter while having different case geometry and chamber requirements. A photograph can show the broad shape but cannot establish the relevant dimensions, pressure standard or manufacturer approval."
+        },
+        {
+          "type": "paragraph",
+          "text": "Headstamp wording is another identification clue, while the original package identifies the particular product and lot. Neither a similar-looking case nor a round that seems to fit establishes permission to use it. The exact chamber marking, recognized cartridge designation and firearm manufacturer's guidance remain the compatibility evidence. This vocabulary is for reading factory products, not altering or making ammunition."
         }
       ],
       "references": [
         [
-          "SAAMI · FAQs and compatibility",
-          "https://saami.org/faqs/"
+          "SAAMI · Cartridge and component terms",
+          "https://saami.org/saami-glossary/?letter=C"
         ],
         [
-          "SAAMI · Glossary",
-          "https://saami.org/saami-glossary/"
+          "SAAMI · Rim and receiver terminology",
+          "https://saami.org/saami-glossary/?letter=R"
+        ],
+        [
+          "SAAMI · Cartridge compatibility FAQ",
+          "https://saami.org/faqs/"
         ]
       ]
     },
     {
-      "heading": "Compare cost and carried mass without a performance ranking",
+      "heading": "Mass, speed and package count must keep their units",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Separate compatibility from preference. First confirm that a product is appropriate for the exact firearm and permitted for the sporting activity and location. Then compare the things that affect ownership: availability, packaging, recurring purchase cost, storage space and actual transport mass. A cartridge family does not have one fixed price or one universal legal sporting use."
+          "text": "A grain is a unit of mass used on ammunition labels: 7,000 grains equal one pound. It is distinct from a gram and from a single granule of propellant. A printed projectile mass does not give the mass of a complete cartridge, and it is not a loading instruction."
         },
         {
           "type": "table",
-          "caption": "An original comparison example; prices are invented",
+          "caption": "Read each figure as its own quantity",
           "columns": [
-            "Offer",
-            "Calculation",
-            "Planning result"
+            "Label field",
+            "What it describes",
+            "What it does not establish"
           ],
           "rows": [
             [
-              "Box A: 50 for 25 currency units",
-              "25 ÷ 50",
-              "0.50 per cartridge before taxes or delivery."
+              "Projectile mass in gr",
+              "The mass of the projectile specified for that product.",
+              "Complete-cartridge or complete-box transport mass."
             ],
             [
-              "Box B: 100 for 46 currency units",
-              "46 ÷ 100",
-              "0.46 per cartridge; compare the same product type and applicable costs."
+              "Payload mass in oz",
+              "The specified shotshell payload.",
+              "A shell's total mass or chamber compatibility."
             ],
             [
-              "Stored case: 8 kg, container: 1 kg",
-              "8 + 1",
-              "9 kg total to lift and transport; projectile weight is not complete-cartridge weight."
+              "Velocity in ft/s or m/s",
+              "A speed under the stated test conditions.",
+              "An identical result in every firearm or environment."
             ],
             [
-              "Annual planning",
-              "Expected purchases + venue fees + consumables + service",
-              "Use your own routine rather than an advertised one-time equipment price."
+              "Package count",
+              "The number of factory rounds or shells in the package.",
+              "The mass of the packaging or condition of the contents."
+            ],
+            [
+              "Product and lot code",
+              "The manufacturer's particular offering and production identity.",
+              "Interchangeability merely because another product shares a calibre abbreviation."
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "For a sporting comparison, write the relevant discipline or species, land-manager rules, ammunition restrictions, likely availability near the destination and your qualified instructor’s or outfitter’s requirements. Do not turn “larger,” “magnum” or a numerical energy listing into a universal recommendation. For hunting, verify current rules for that jurisdiction and species; the linked Florida example applies to Florida and cannot establish rules elsewhere."
+          "text": "An invented unit-reading example illustrates the distinction: a projectile marked 124 gr has a mass of approximately 8.04 g. Fifty such projectiles total about 402 g, but fifty complete factory cartridges also contain cases, primers and propellant, and a transport box adds packaging. Weigh the actual complete package when gross mass matters. Do not substitute projectile arithmetic for a carrier's weight check."
         },
         {
-          "type": "resources",
-          "items": [
-            {
-              "label": "Florida FWC · Taking game",
-              "url": "https://myfwc.com/hunting/regulations/taking-game/",
-              "description": "A jurisdiction-specific example of hunting method and ammunition rules; check the regulator for your actual location."
-            }
-          ]
+          "type": "paragraph",
+          "text": "Comparing two velocity listings also requires consistent units and matching test context. Keep the manufacturer's test information with the value rather than treating the largest printed number as a complete account of a sporting product. Availability, compatible factory designation, venue or species restrictions, and ordinary ownership costs are separate questions that a single number cannot settle."
         }
       ],
       "references": [
         [
-          "SAAMI · FAQs and compatibility",
-          "https://saami.org/faqs/"
+          "SAAMI · Gauge, grain and grip terminology",
+          "https://saami.org/saami-glossary/?letter=G"
         ],
         [
-          "Florida FWC · Taking game",
-          "https://myfwc.com/hunting/regulations/taking-game/"
+          "SAAMI · Industry glossary",
+          "https://saami.org/saami-glossary/"
+        ],
+        [
+          "Winchester · Reading a shotshell box",
+          "https://winchester.com/Blog/2020/11/Whats-on-a-Box-of-Shells"
         ]
       ]
     }
