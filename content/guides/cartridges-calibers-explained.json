@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Ammunition",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-08",
   "published": "2026-10-04",
-  "source_checked": "2026-10-04",
-  "next_review": "2027-01-04",
+  "source_checked": "2026-10-08",
+  "next_review": "2027-01-08",
   "aliases": [
     "calibers",
     "calibres",
@@ -28,9 +28,17 @@
     "7.62",
     "223",
     "308",
-    "rifle ammunition"
+    "rifle ammunition",
+    "Read an ammunition label as separate fields",
+    "Compare cost and carried mass without a performance ranking",
+    "rimmed",
+    "rimless",
+    "case mouth",
+    "case shoulder",
+    "grain versus gram",
+    "gross weight"
   ],
-  "tldr": "The full cartridge name matters more than the caliber number. .22 LR is common for inexpensive target practice and small-game hunting; centerfire handgun and rifle cartridges serve different sporting roles. Compare the exact chambering, ammunition cost, recoil and lawful use—not a bigger-number ranking.",
+  "tldr": "Read the complete cartridge or shotshell designation, then compare manufacturer compatibility, sporting context, local availability, package cost and carried mass. Similar names and nominal bullet diameters do not establish interchangeability.",
   "steps": [
     [
       "Read the complete designation",
@@ -304,6 +312,138 @@
         }
       ],
       "references": []
+    },
+    {
+      "heading": "Case shape and primer location are separate descriptions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Rimmed and rimless describe the case-head relationship to the case body. Rimfire and centerfire describe the priming arrangement. The similar words belong to different classifications. A rimmed case can be centerfire; rimless does not mean that the case lacks an extraction surface."
+        },
+        {
+          "type": "table",
+          "caption": "Case vocabulary in a product description",
+          "columns": [
+            "Term",
+            "Conceptual meaning"
+          ],
+          "rows": [
+            [
+              "Rimmed",
+              "A projecting rim is wider than the main case body."
+            ],
+            [
+              "Rimless",
+              "The head is about the case body's diameter, with an extraction groove ahead of it."
+            ],
+            [
+              "Case mouth",
+              "The opening at the forward end of the case."
+            ],
+            [
+              "Neck and shoulder",
+              "On a bottleneck case, the narrowed forward portion and the transition to the wider body."
+            ],
+            [
+              "Case length",
+              "The case dimension; it is different from the length of the complete loaded cartridge."
+            ],
+            [
+              "Rimfire or centerfire",
+              "The priming category, not a guarantee of interchangeability or a case-shape description."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These terms help distinguish specifications that a shortened calibre name conceals. Two products can share an approximate projectile diameter while having different case geometry and chamber requirements. A photograph can show the broad shape but cannot establish the relevant dimensions, pressure standard or manufacturer approval."
+        },
+        {
+          "type": "paragraph",
+          "text": "Headstamp wording is another identification clue, while the original package identifies the particular product and lot. Neither a similar-looking case nor a round that seems to fit establishes permission to use it. The exact chamber marking, recognized cartridge designation and firearm manufacturer's guidance remain the compatibility evidence. This vocabulary is for reading factory products, not altering or making ammunition."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Cartridge and component terms",
+          "https://saami.org/saami-glossary/?letter=C"
+        ],
+        [
+          "SAAMI · Rim and receiver terminology",
+          "https://saami.org/saami-glossary/?letter=R"
+        ],
+        [
+          "SAAMI · Cartridge compatibility FAQ",
+          "https://saami.org/faqs/"
+        ]
+      ]
+    },
+    {
+      "heading": "Mass, speed and package count must keep their units",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A grain is a unit of mass used on ammunition labels: 7,000 grains equal one pound. It is distinct from a gram and from a single granule of propellant. A printed projectile mass does not give the mass of a complete cartridge, and it is not a loading instruction."
+        },
+        {
+          "type": "table",
+          "caption": "Read each figure as its own quantity",
+          "columns": [
+            "Label field",
+            "What it describes",
+            "What it does not establish"
+          ],
+          "rows": [
+            [
+              "Projectile mass in gr",
+              "The mass of the projectile specified for that product.",
+              "Complete-cartridge or complete-box transport mass."
+            ],
+            [
+              "Payload mass in oz",
+              "The specified shotshell payload.",
+              "A shell's total mass or chamber compatibility."
+            ],
+            [
+              "Velocity in ft/s or m/s",
+              "A speed under the stated test conditions.",
+              "An identical result in every firearm or environment."
+            ],
+            [
+              "Package count",
+              "The number of factory rounds or shells in the package.",
+              "The mass of the packaging or condition of the contents."
+            ],
+            [
+              "Product and lot code",
+              "The manufacturer's particular offering and production identity.",
+              "Interchangeability merely because another product shares a calibre abbreviation."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "An invented unit-reading example illustrates the distinction: a projectile marked 124 gr has a mass of approximately 8.04 g. Fifty such projectiles total about 402 g, but fifty complete factory cartridges also contain cases, primers and propellant, and a transport box adds packaging. Weigh the actual complete package when gross mass matters. Do not substitute projectile arithmetic for a carrier's weight check."
+        },
+        {
+          "type": "paragraph",
+          "text": "Comparing two velocity listings also requires consistent units and matching test context. Keep the manufacturer's test information with the value rather than treating the largest printed number as a complete account of a sporting product. Availability, compatible factory designation, venue or species restrictions, and ordinary ownership costs are separate questions that a single number cannot settle."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Gauge, grain and grip terminology",
+          "https://saami.org/saami-glossary/?letter=G"
+        ],
+        [
+          "SAAMI · Industry glossary",
+          "https://saami.org/saami-glossary/"
+        ],
+        [
+          "Winchester · Reading a shotshell box",
+          "https://winchester.com/Blog/2020/11/Whats-on-a-Box-of-Shells"
+        ]
+      ]
     }
   ],
   "without_help": "Set unidentified or mixed ammunition aside in secured, clearly marked packaging. Do not try it in a firearm to discover whether it fits. A photograph of markings and the original box can help the manufacturer identify the product.",
@@ -311,7 +451,7 @@
   "pack_now": "Manufacturer, full cartridge name, product code, lot number, quantity, purchase date and the exact firearm manual.",
   "next": "List the chambering of each sporting firearm you own and link the corresponding manufacturer manual. Use that list for purchases rather than memory.",
   "watch": "Ammunition remains hazardous regardless of its size. Keep it secured and correctly identified; never force a cartridge into a firearm or use damaged, recalled or disaster-exposed ammunition without the manufacturer’s clearance.",
-  "sources": "cartridges-calibers-explained",
+  "sources": "cartridges-calibers-explained-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],

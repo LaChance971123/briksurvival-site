@@ -1,0 +1,352 @@
+{
+  "slug": "grey-man-basics",
+  "title": "Grey man basics: ordinary discretion, privacy and de-escalation",
+  "category": "communications",
+  "subcategory": "Verification & privacy",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-07",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "aliases": [
+    "gray man",
+    "grey man",
+    "low profile privacy",
+    "ordinary discretion"
+  ],
+  "keywords": [
+    "Define discretion as an ordinary household skill",
+    "Choose clothing and bags for the real setting",
+    "Share information by audience and purpose",
+    "Keep a simple interaction plan",
+    "Plan waiting and meeting without unnecessary exposure",
+    "Make the trade-offs visible to the household",
+    "Practice a small review rather than a disguise exercise"
+  ],
+  "sections": [
+    {
+      "heading": "Define discretion as an ordinary household skill",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The useful version of low-profile behavior is mundane: a person can travel, wait and communicate without advertising possessions or unnecessary personal details. The goal is a manageable routine, not becoming untraceable. A recognizable contact arrangement and accessible identity or care information can be important when something goes wrong."
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with your actual settings: work, school, a station, a clinic, a shared building or a destination during disruption. Ask what makes the routine easier and what disclosure has no purpose. The answer may be putting documents away, reducing loose gear or sending an update privately. It does not require changing your identity, inventing a story or treating every stranger as a threat."
+        },
+        {
+          "type": "table",
+          "caption": "Useful discretion versus an unmet need",
+          "columns": [
+            "Situation",
+            "Practical choice"
+          ],
+          "rows": [
+            [
+              "Crowded commute",
+              "A manageable bag that closes and does not block movement."
+            ],
+            [
+              "Clinic visit",
+              "Necessary care information available to the appropriate person."
+            ],
+            [
+              "Household departure",
+              "Private check-in to the agreed contact rather than a public empty-home post."
+            ],
+            [
+              "Outdoor emergency",
+              "Visible clothing and clear location information when seeking rescue."
+            ]
+          ]
+        }
+      ],
+      "references": [
+        [
+          "FTC · Share with care",
+          "https://consumer.ftc.gov/articles/heads-up"
+        ]
+      ]
+    },
+    {
+      "heading": "Choose clothing and bags for the real setting",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Prioritize weather protection, comfort, movement and access to essential items. Ordinary clothing appropriate to the journey often draws less unnecessary attention than conspicuous equipment, but no clothing choice guarantees how others react. Do not sacrifice visibility around traffic or during a search-and-rescue emergency for an aesthetic."
+        },
+        {
+          "type": "paragraph",
+          "text": "A useful bag closes, keeps documents and care items accessible and leaves the person able to use handrails, assist dependents or operate a mobility aid. Avoid loosely attached valuables or labels that reveal more than a legitimate return arrangement needs. Test the load during normal travel and remove items with no defined task."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a shared household, let people choose workable clothing within their own needs and culture. A medical aid, service animal or accessibility requirement is not an embarrassment to hide. Plan how the group moves together and how someone requests help if overwhelmed. Discretion should reduce friction rather than creating a costume that makes the day harder."
+        }
+      ],
+      "references": [
+        [
+          "Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Share information by audience and purpose",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before a public post, consider what it reveals about time, location, dependents, documents or an empty home. FTC’s privacy guidance emphasizes that posts can reach a larger audience and persist through screenshots even when privacy settings or deletion features are used. Ask permission before sharing another person’s photo or information."
+        },
+        {
+          "type": "table",
+          "caption": "An editorial disclosure worksheet",
+          "columns": [
+            "Information",
+            "Who needs it",
+            "Useful method"
+          ],
+          "rows": [
+            [
+              "Current location and destination",
+              "Agreed household contact or appropriate responder.",
+              "Private message or direct conversation."
+            ],
+            [
+              "Care detail",
+              "The helper or clinician who requires it.",
+              "An accessible private care card or suitable direct exchange."
+            ],
+            [
+              "Travel photo",
+              "People pictured and the audience you choose.",
+              "Review what appears in the background before posting."
+            ],
+            [
+              "Identification copy",
+              "A legitimate service when actually required.",
+              "Provide only the required information through a verified channel."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep a private contact card distinct from a public bag label. Review photographs for addresses, identifying documents and visible possessions before sharing them. Location sharing can help a trusted contact when deliberately arranged; decide its audience and purpose rather than treating all sharing as either essential or forbidden."
+        }
+      ],
+      "references": [
+        [
+          "FTC · Share with care",
+          "https://consumer.ftc.gov/articles/heads-up"
+        ]
+      ]
+    },
+    {
+      "heading": "Keep a simple interaction plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Most everyday disagreements do not require a complex script. Use a short, courteous statement, avoid crowding another person and keep the exchange focused on the immediate practical issue. CISA’s de-escalation guide stresses calm communication, respect for personal space, limits on intervention and seeking safety when a hostile act is imminent. Its context is organizational violence prevention; this page adapts only ordinary civilian communication principles."
+        },
+        {
+          "type": "paragraph",
+          "text": "Prepare phrases that fit your routine: “I need a moment to check that,” “Please show me the written information,” or “I’m going to leave this conversation.” Do not insist on finishing an argument when the situation becomes volatile. If leaving is safe, prioritize the departure and the people with you. Appropriate staff, security or emergency assistance may be needed; there is no promise that calm words can stop violence."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a person who has difficulty processing speech under stress, agree a simple cue with a trusted companion. The companion can help ask for space or clarify the practical request. Avoid diagnosing another person’s intent from appearance or identity. Assess observable behavior and the actual situation."
+        }
+      ],
+      "references": [
+        [
+          "CISA · De-escalation action guide",
+          "https://www.cisa.gov/sites/default/files/2024-12/CISA_De-escalation-Action-Guide_v508_20241202.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Plan waiting and meeting without unnecessary exposure",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose a suitable waiting place for a disrupted journey and agree how the contact learns where you are. Confirm access, opening arrangements and any care needs. A place that was open yesterday may not be available during the disruption, so keep a separately checked alternative."
+        },
+        {
+          "type": "flow",
+          "caption": "An ordinary disruption plan",
+          "items": [
+            [
+              "Wait",
+              "Use a suitable confirmed place if travel is uncertain and the current location is safe."
+            ],
+            [
+              "Update",
+              "Privately state location, condition, intended action and next check-in."
+            ],
+            [
+              "Reassess",
+              "Check route, destination and household needs before moving."
+            ],
+            [
+              "Seek help",
+              "Use appropriate assistance when the situation exceeds the household’s workable plan."
+            ]
+          ],
+          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "The diagram describes an editorial communication routine, not a covert movement plan. Avoid public meeting instructions containing a child’s location or sensitive care information. Make the meeting point unambiguous to the people using it: the actual entrance, accessible path and fallback if the building closes. If the plan changes, update it explicitly rather than expecting others to infer your new destination."
+        }
+      ],
+      "references": [
+        [
+          "Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Make the trade-offs visible to the household",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Privacy can conflict with convenience, and discretion can conflict with necessary visibility. Discuss those trade-offs explicitly. A trusted helper may need an address or care card; a public post does not. A person on a dark roadside needs to be seen; blending into the surroundings would undermine the immediate task. During a search, responders need accurate location and useful identifying information."
+        },
+        {
+          "type": "paragraph",
+          "text": "Give each person an age-appropriate role. A child can know the trusted contact and meeting arrangement without carrying a complete collection of adult documents. An adult using assistive technology should retain the settings and support they need. Respect consent when sharing location, and avoid quietly imposing monitoring arrangements on another person."
+        },
+        {
+          "type": "paragraph",
+          "text": "If a threatening or coercive situation affects the household, obtain appropriate specialist support and make decisions around the real circumstances. General discretion tips are not a substitute for an individualized protection plan. Avoid escalating confrontation to test whether the household can stay calm."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Get-home planning",
+              "url": "/preparedness/get-home-plan/"
+            },
+            {
+              "label": "Civilian distress signaling",
+              "url": "/guides/survival-signaling/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ],
+        [
+          "CISA · De-escalation action guide",
+          "https://www.cisa.gov/sites/default/files/2024-12/CISA_De-escalation-Action-Guide_v508_20241202.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Practice a small review rather than a disguise exercise",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose one routine and inspect it calmly. Look at the packed bag, a recent draft post and the household’s current check-in arrangement. Identify what serves a useful need and what simply reveals extra information or creates a carrying problem."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Name the ordinary setting and the weather/access needs.",
+            "Close and carry the actual bag; check necessary items remain reachable.",
+            "Review one photo or message for unnecessary identifying details.",
+            "Write a short private check-in with location, intention and next update.",
+            "Rehearse one polite way to end an unproductive exchange.",
+            "Keep one correction and review it after the next real journey."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Judge the result by practical questions: can the person move comfortably, receive help, contact the right people and manage their needs? No exercise can certify invisibility or prevent every bad interaction. Keep the useful routines simple enough to use when tired, and preserve clear rescue signaling for actual emergencies."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "FTC · Share with care",
+              "url": "https://consumer.ftc.gov/articles/heads-up",
+              "description": "Review online sharing, audience and location-setting considerations."
+            },
+            {
+              "label": "CISA · De-escalation action guide",
+              "url": "https://www.cisa.gov/sites/default/files/2024-12/CISA_De-escalation-Action-Guide_v508_20241202.pdf",
+              "description": "Read the concise official communication and intervention-limit guidance; this external PDF is not an Osprey download."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "FTC · Share with care",
+          "https://consumer.ftc.gov/articles/heads-up"
+        ],
+        [
+          "CISA · De-escalation action guide",
+          "https://www.cisa.gov/sites/default/files/2024-12/CISA_De-escalation-Action-Guide_v508_20241202.pdf"
+        ]
+      ]
+    }
+  ],
+  "decisions": [
+    [
+      "An argument is becoming volatile?",
+      "Prioritize distance and a safe departure; seek appropriate assistance rather than proving a point."
+    ],
+    [
+      "Someone needs your location?",
+      "Use the agreed private contact method and precise current information."
+    ],
+    [
+      "You are lost or need rescue?",
+      "Make yourself findable; ordinary discretion no longer serves the immediate need."
+    ]
+  ],
+  "faqs": [
+    [
+      "Does grey man mean dressing in one special color?",
+      "No. Practical fit with the setting, weather and your needs matters more than a costume."
+    ],
+    [
+      "Should I avoid asking for help?",
+      "No. Requesting appropriate help and being findable during an emergency take priority over reducing ordinary attention."
+    ]
+  ],
+  "scope": "Civilian educational planning. Product specifications and local rules differ. Worked examples and decision worksheets are Osprey Zero editorial suggestions.",
+  "tldr": "Reduce avoidable attention in everyday travel and disruption: dress for the setting and weather, keep possessions organized, share information selectively, and leave escalating arguments when it is safe to do so. Stay reachable to trusted contacts and make yourself visible when you need rescue.",
+  "steps": [
+    [
+      "Match the ordinary setting",
+      "Choose practical clothing and a manageable bag for the weather, journey and access needs."
+    ],
+    [
+      "Limit unnecessary disclosure",
+      "Share location and care information privately with the people who need it; avoid public empty-home announcements."
+    ],
+    [
+      "Keep interactions calm",
+      "Use short, courteous statements and respect personal space. Do not intervene in a volatile situation beyond your ability."
+    ],
+    [
+      "Retain a help plan",
+      "Keep a trusted contact, meeting place and accessible written information; discretion must not prevent help or rescue."
+    ]
+  ],
+  "without_help": "Use a confirmed suitable waiting place, maintain private check-ins when possible and keep essential care accessible. If communication fails, follow the previously agreed household plan rather than improvising concealment or risky travel.",
+  "household": "Explain what information is shared with whom. Include children, sensory needs, service animals and mobility aids without expecting anyone to disguise their identity or suppress necessary assistance.",
+  "pack_now": "An ordinary manageable bag, essential care items, weather layer, water, light, phone power and a private contact card. Keep sensitive documents protected and only the necessary copies available.",
+  "next": "Review one everyday journey, one public post and one household check-in arrangement. Remove unnecessary disclosure while preserving useful contact and assistance.",
+  "watch": "Ordinary discretion does not guarantee invisibility or safety. This guide provides no impersonation, surveillance evasion, escape-from-capture or avoidance-of-lawful-authority instructions.",
+  "updated": "2026-10-07",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
+  "sources": "grey-man-basics-full-20261007"
+}

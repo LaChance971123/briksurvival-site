@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Safe ownership",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-08",
   "published": "2026-10-03",
-  "source_checked": "2026-10-04",
-  "next_review": "2027-01-04",
+  "source_checked": "2026-10-08",
+  "next_review": "2027-01-08",
   "aliases": [
     "guns",
     "weapons",
@@ -17,25 +17,32 @@
     "Safe ownership",
     "guns",
     "weapons",
-    "gun safety"
+    "gun safety",
+    "Turn the parts list into an ownership file",
+    "Cleaning is a product-specific workflow",
+    "exploded view",
+    "part number",
+    "stainless steel",
+    "coated aluminum",
+    "cleaning lubrication preservation"
   ],
-  "tldr": "Learn the exact model’s parts, action type, chamber marking and controls before relying on it. The magazine and chamber are different locations; removing a magazine does not establish that a firearm is unloaded. Use the manufacturer’s manual for handling and maintenance, and recognize faults that require stopping use.",
+  "tldr": "Understand the exact model as an ownership system: action, chamber designation, fit, documentation and routine care. Use its official manual to distinguish owner maintenance from service work, and compare the complete equipment cost before adding accessories.",
   "steps": [
     [
-      "Identify the exact model",
-      "Record the manufacturer, model, chamber designation and applicable manual revision. Check for manufacturer safety notices."
+      "Make a model record",
+      "Record the exact model and chamber designation, manual revision, acquisition information and manufacturer support route."
     ],
     [
-      "Learn the terminology",
-      "Distinguish the chamber, magazine, barrel, muzzle, action and safety controls. Familiar names do not guarantee familiar controls."
+      "Choose a useful ownership context",
+      "List your sporting or range requirements, transport, storage, fit and annual cost."
     ],
     [
-      "Understand the action type",
-      "Bolt, lever, pump, break-action, revolver and semiautomatic describe different mechanisms. Single-action and double-action describe trigger functions."
+      "Plan routine care",
+      "Use the exact manual to select compatible cleaning products, permitted owner tasks and inspection intervals."
     ],
     [
-      "Set maintenance boundaries",
-      "Separate manufacturer-authorized routine care from repair, modification and fault diagnosis. Keep ammunition away from the maintenance area."
+      "Keep service records",
+      "Record care, unusual wear, storage exposure and manufacturer advice; service questions belong with the manufacturer or qualified professional."
     ]
   ],
   "sections": [
@@ -301,6 +308,140 @@
           "https://www.nssf.org/safety/rules-firearms-safety/"
         ]
       ]
+    },
+    {
+      "heading": "Read a parts drawing as a naming system",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A parts drawing normally pairs numbered shapes with a list of named components and part numbers. The number beside a shape is a cross-reference, not a size, a tightening specification or a sequence of work. Exploded views separate components so their relationships can be seen; the apparent gaps are not operating clearances."
+        },
+        {
+          "type": "table",
+          "caption": "What a drawing can and cannot answer",
+          "columns": [
+            "Item on the page",
+            "Useful information",
+            "What remains unresolved"
+          ],
+          "rows": [
+            [
+              "Drawing label",
+              "The name used by this manufacturer for the depicted component.",
+              "Whether a similar-looking part belongs to another model."
+            ],
+            [
+              "Part number",
+              "A catalogue identity for the listed version.",
+              "Whether replacement is owner-permitted or requires service."
+            ],
+            [
+              "Separated shapes",
+              "A conceptual relationship between components.",
+              "Assembly sequence, fit, dimensions and adjustments."
+            ],
+            [
+              "Model heading and notes",
+              "The variant and exceptions covered by the illustration.",
+              "Condition and undocumented alterations of an individual example."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The current Ruger 10/22 Standard manual is explicitly limited to model numbers 32000 and higher. That version boundary illustrates why the familiar name alone is insufficient. A current drawing may omit an older variant, and a used example may no longer match its original configuration. Read the heading and exceptions before using the list for a service enquiry."
+        },
+        {
+          "type": "paragraph",
+          "text": "A precise description can name the external component, model and change observed without claiming an internal diagnosis. If a support agent asks for a photograph, provide the requested view securely. Keep the difference between identifying a part and undertaking work on it clear; the manufacturer's service policy controls the latter."
+        }
+      ],
+      "references": [
+        [
+          "Ruger · 10/22 Standard manual: models 32000 and higher",
+          "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf"
+        ],
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ]
+      ]
+    },
+    {
+      "heading": "Cleaning, lubrication and preservation are different jobs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Cleaning removes specified contamination. Lubrication reduces friction at locations the maker permits. Preservation protects surfaces during the stated storage conditions. A product may combine some functions, but the marketing phrase all-in-one does not prove that it is suitable for every surface or every location within a firearm. Select by the actual manual and product label."
+        },
+        {
+          "type": "table",
+          "caption": "Material and surface distinctions",
+          "columns": [
+            "Description",
+            "What it teaches about care"
+          ],
+          "rows": [
+            [
+              "Stainless steel",
+              "More corrosion resistance than some other steels does not mean immunity to moisture, salt air or chemical exposure."
+            ],
+            [
+              "Blued steel",
+              "A surface treatment over steel; the underlying material and the maker's corrosion-protection requirements still matter."
+            ],
+            [
+              "Coated metal or polymer",
+              "The coating and the substrate can have separate chemical and abrasion limits."
+            ],
+            [
+              "Clear-coated aluminum",
+              "A cleaning method permitted for a different metal may damage the protective coating."
+            ],
+            [
+              "Optical surface",
+              "Lens coatings need the optical maker's own cleaning instructions, rather than a general firearm solvent."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Ruger's Generation II manual distinguishes stainless-component care from Cerakote care and warns against aggressive solvents or hard metallic brushes on that finish. Its 10/22 Standard manual separately prohibits abrasives on clear-coated aluminum parts. These examples explain material compatibility; they are not instructions to polish, strip or refinish an item."
+        },
+        {
+          "type": "paragraph",
+          "text": "A cleaning kit's large piece count does not establish usefulness. Separate the tools and chemicals required for owner-permitted cleaning from products intended for protection or service work. Keep the manufacturer's quantity and location limits: flooding every accessible space with oil is not the same as following a care specification."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "Ruger · American Rifle Generation II manual",
+              "url": "https://ruger-docs.s3.amazonaws.com/_manuals/RAR-GenerationII.pdf",
+              "description": "Read the stainless-component and Cerakote sections in the exact-model manual; use its service policy for work beyond ordinary owner care."
+            },
+            {
+              "label": "Ruger · 10/22 Standard manual: models 32000 and higher",
+              "url": "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf",
+              "description": "The current Standard manual's model-number limit and coated-aluminum caution show why version and material must be identified."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Ruger · American Rifle Generation II manual",
+          "https://ruger-docs.s3.amazonaws.com/_manuals/RAR-GenerationII.pdf"
+        ],
+        [
+          "Ruger · 10/22 Standard manual: models 32000 and higher",
+          "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf"
+        ],
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ]
+      ]
     }
   ],
   "without_help": "Keep the firearm secured and unused while you identify it and obtain its manual or inspection. Do not substitute a similar-looking model’s instructions or attempt a repair to make unfamiliar equipment usable.",
@@ -308,7 +449,7 @@
   "pack_now": "Exact manual, model and variant, chamber designation, safety-notice check date, maintenance record and manufacturer service contact.",
   "next": "Choose one model-specific question and find its answer in the manual or through qualified instruction. Start with controls, loaded-condition verification or routine care.",
   "watch": "Damage, suspected bore obstruction, abnormal operation, a manufacturer safety notice and flood or fire exposure require a pause and appropriate assessment. Do not continue sporting use to “see if it happens again.”",
-  "sources": "firearm-safety-basics",
+  "sources": "firearm-safety-basics-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],

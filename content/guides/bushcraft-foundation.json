@@ -4,10 +4,10 @@
   "category": "field-skills",
   "subcategory": "Bushcraft",
   "content_type": "Field guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-07",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [
     "bushcraft",
     "bushcrafting"
@@ -15,7 +15,14 @@
   "keywords": [
     "Bushcraft",
     "bushcraft",
-    "bushcrafting"
+    "bushcrafting",
+    "Choose skills with immediate value",
+    "Food, water and fire boundaries",
+    "Pick a supported site and a modest objective",
+    "Organize the camp by what must remain usable",
+    "Learn materials through the actual equipment",
+    "Run a one-skill session with a visible finish",
+    "Evaluate the result and plan the next ordinary trip"
   ],
   "tldr": "Learn shelter, navigation, water planning and equipment care on short, supported trips. Bring reliable essentials first; practice should not depend on catching food, making fire or improvising every item.",
   "steps": [
@@ -37,25 +44,332 @@
     ]
   ],
   "sections": [
-    [
-      "Choose skills with immediate value",
-      "A tarp pitched securely, dry clothing and a known route home usually offer more value than dramatic survival experiments. Test your equipment with the people who will use it. Record what failed: a cord too short, wet insulation, a leaking bottle, an unreachable headlamp or an overly heavy pack."
-    ],
-    [
-      "Food, water and fire boundaries",
-      "Bring food rather than relying on hunting or foraging. Clear water is not automatically safe. A filter must match the contamination hazard and its instructions; chemical contamination can require another source. Treat fire as optional: restrictions, wind, wet conditions and fuel availability may prevent safe use. Do not build a trip plan around a fire you may be unable or prohibited to light."
-    ]
+    {
+      "heading": "Choose skills with immediate value",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Start with tasks that improve ordinary trips: keeping sleeping equipment dry, organizing a manageable pack, reading the area map, describing your location, using suitable water equipment and carrying out the site’s waste requirements. These tasks connect directly to a comfortable return and a workable delay plan."
+        },
+        {
+          "type": "table",
+          "caption": "An original introductory skill sequence",
+          "columns": [
+            "Session",
+            "Useful result"
+          ],
+          "rows": [
+            [
+              "Equipment access",
+              "Find weather layers, light, care items and signal without emptying the bag."
+            ],
+            [
+              "Shelter system",
+              "Use the actual supported configuration and keep ground/sleep layers organized."
+            ],
+            [
+              "Navigation",
+              "Explain the start, intended route and known return on a familiar map."
+            ],
+            [
+              "Water planning",
+              "Describe carried volume, verified source and the actual treatment instructions."
+            ],
+            [
+              "Repair and packing",
+              "Complete one known non-critical task, then account for tools and waste."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose one session at a time and keep all real essentials available. A good session ends with a clear observation and one correction, not a claim of wilderness mastery. If the whole group will use the equipment, involve the least experienced person so the plan does not depend entirely on the strongest adult."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Food, water and fire boundaries",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Carry food that suits the people and can be eaten as packed. A supported beginner trip should not depend on hunting, trapping or identifying wild plants. Keep planned meals and spare food distinct so a late return has a visible reserve rather than a vague promise to find something."
+        },
+        {
+          "type": "paragraph",
+          "text": "For natural water, the source, likely contamination and treatment method matter. NPS describes treatment as a process requiring suitable equipment and the product’s instructions. Clear appearance does not prove safe drinking water. If contamination cannot be addressed by your method, use a different suitable source or change the trip."
+        },
+        {
+          "type": "paragraph",
+          "text": "Build the session so it remains workable without a campfire. Current rules, conditions and site protection may prevent fire use. Carry lighting, weather protection and food directly rather than assuming flame will solve missing equipment. If an activity requires combustion, resolve a suitable permitted system separately; it is not an automatic addition to every practice trip."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Water treatment methods",
+          "https://www.nps.gov/articles/2wayspurifywater.htm"
+        ],
+        [
+          "NPS · Leave no trace",
+          "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Pick a supported site and a modest objective",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a permitted location with an easy known return and suitable support. Check the current rules, weather and access before packing. Name the session’s objective in one sentence, such as “set up and repack our shelter system” or “explain the familiar route from paper.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Write the stop conditions: changing weather, uncertainty about the route, discomfort, unsuitable equipment or insufficient time to finish and return. Keep a trusted contact informed about the actual plan. The practice site should let you stop without creating a second problem, especially with children or people needing assistance."
+        },
+        {
+          "type": "table",
+          "caption": "Practice-plan fields",
+          "columns": [
+            "Field",
+            "Example of a useful entry"
+          ],
+          "rows": [
+            [
+              "Objective",
+              "One ordinary task with a recognizable result."
+            ],
+            [
+              "Site",
+              "Permitted location and known access/return."
+            ],
+            [
+              "Time",
+              "Session length and a clear return/check-in arrangement."
+            ],
+            [
+              "Support",
+              "Appropriate instructor/helper and essential equipment kept available."
+            ],
+            [
+              "Stop",
+              "A condition that ends the exercise without an endurance test."
+            ]
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Hike smart",
+          "https://www.nps.gov/articles/hiking-safety.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Organize the camp by what must remain usable",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Keep critical items accessible and separate wet equipment from protected sleeping layers. Decide where the group enters, where bags rest and where food, water, care items and lights are kept. Keep the arrangement simple enough that another adult can find the necessary item."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use named pouches or a short location list if it helps. A person assisting someone else may need a lighter load and an accessible care pouch. Avoid spreading small items over the whole site, where they can be lost or become a trip problem. Give each person an appropriate personal light and signal rather than relying on one shared bag for every need."
+        },
+        {
+          "type": "paragraph",
+          "text": "During supported practice, ask someone else to retrieve a specific item. Record the exact problem if they cannot: unclear label, awkward opening, deep packing or a missing part. Fix that organization at home. Good field competence includes being able to repack equipment correctly while tired, without leaving fittings or rubbish behind."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Learn materials through the actual equipment",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Read the maker’s care instructions for the tarp, pad, bedding, pack and water equipment you own. Record compatible repair supplies and which tasks the owner can reasonably perform. A collection of generic materials is less useful than one patch or spare part whose purpose is known."
+        },
+        {
+          "type": "paragraph",
+          "text": "Inspect seams, closures, fittings and guards before the trip. A visible issue should become a decision: correct it as permitted, arrange service, select an alternative or postpone the session. Do not pack damaged equipment on the assumption that improvisation will make the trip more educational."
+        },
+        {
+          "type": "paragraph",
+          "text": "For hand tools, choose the material and ordinary task first, then obtain instruction in the specific tool. Keep the tool guarded when not in use. Do not harvest branches or alter a site simply to produce a demonstration object. Existing compatible equipment and permitted materials can teach the useful organization skill with less impact."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Hand-tool selection and care",
+              "url": "/preparedness/knife-tool-safety/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CCOHS · Hand tool ergonomics",
+          "https://www.ccohs.ca/oshanswers/ergonomics/handtools/tooldesign.html"
+        ],
+        [
+          "NPS · Leave no trace",
+          "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Run a one-skill session with a visible finish",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Begin with the objective and the instructions for the actual equipment. Arrange the suitable practice area, keep essential supplies available and assign roles. The person learning should explain what they intend to do before the task begins."
+        },
+        {
+          "type": "flow",
+          "caption": "A supported skill session",
+          "items": [
+            [
+              "Prepare",
+              "Choose one task, read the relevant instructions and confirm the site and stop conditions."
+            ],
+            [
+              "Demonstrate",
+              "Use the actual equipment and permitted material with suitable instruction."
+            ],
+            [
+              "Explain",
+              "Have the learner describe the task, its limits and how to stop."
+            ],
+            [
+              "Reset",
+              "Account for parts, pack the equipment and leave the site clean."
+            ],
+            [
+              "Improve",
+              "Record one correction and the person responsible for it."
+            ]
+          ],
+          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "Examples include repacking a dry sleeping system, locating a map junction or finding the personal light with gloves. Do not remove the real backup or wait until dark to create a problem. If the exercise reveals missing equipment or understanding, treat that as useful information and end the session while the return remains easy."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Hike smart",
+          "https://www.nps.gov/articles/hiking-safety.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Evaluate the result and plan the next ordinary trip",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Keep a short log: date, task, equipment, conditions, result and correction. Replace broad judgments such as “worked well” with a fact: the supplied cords reached the approved supports, the care pouch opened with gloves, or the map print was too small for one person to read."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Compare the result with the one-sentence objective.",
+            "Ask each person what was difficult to find or understand.",
+            "Inspect and care for equipment according to its instructions.",
+            "Account for waste and small fittings.",
+            "Make one correction before repeating the task.",
+            "Increase only one ordinary complication at a time, with support still available."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A next trip can add a slightly different permitted site or a longer supported session without removing essentials. Keep route, weather and household limits in the planning. Practical bushcraft is a continuing collection of reliable habits; no single weekend establishes the ability to manage every wilderness emergency."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "NPS · Ten essentials",
+              "url": "https://www.nps.gov/articles/10essentials.htm",
+              "description": "Use the equipment systems framework to check what the session still needs."
+            },
+            {
+              "label": "NPS · Leave no trace",
+              "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+              "description": "Review site-impact principles and the specific land manager’s rules."
+            },
+            {
+              "label": "NPS · Water treatment methods",
+              "url": "https://www.nps.gov/articles/2wayspurifywater.htm",
+              "description": "Read the treatment-method distinctions before practicing with your selected equipment."
+            }
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Trip accountability",
+              "url": "/guides/outdoor-trip-plan/"
+            },
+            {
+              "label": "Complete tarp/sleep system",
+              "url": "/guides/tarp-shelter/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Leave no trace",
+          "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm"
+        ]
+      ]
+    }
   ],
   "without_help": "Use the equipment and safe route you brought. Turn back early if conditions exceed your ability, your group is tiring or essential equipment fails. If lost, stop and use the lost-outdoors plan rather than experimenting with shortcuts.",
   "household": "Choose distance and terrain for the least mobile person. Include individual medicines, warm layers and snacks. Give every person a light, whistle and simple instructions for separation.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "pack_now": "Dependable navigation, personal light and signal, a suitable shelter/sleep system, weather layers, safe water with familiar treatment equipment, ready-to-eat food, individual care and a small task-matched repair pouch.",
   "next": "Run a daylight shelter-and-packing session close to home. Finish with a gear check and a written lesson learned.",
   "watch": "No eating unidentified plants, unsafe knife experiments, destructive shelters or unsupervised fire practice. Outdoor skills require hands-on training and judgment.",
-  "sources": "outdoor-skills",
+  "sources": "bushcraft-foundation-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
-  "decisions": [],
-  "faqs": [],
+  "decisions": [
+    [
+      "The practice site or conditions are unsuitable?",
+      "Use a permitted easier setting or postpone the session."
+    ],
+    [
+      "A skill depends on removing essential equipment?",
+      "Keep the real equipment available and practice the skill separately."
+    ],
+    [
+      "A supply or route assumption fails?",
+      "Use the known return or checked alternative before increasing the consequence."
+    ]
+  ],
+  "faqs": [
+    [
+      "Must bushcraft involve making everything from natural materials?",
+      "No. Reliable equipment, useful field organization and supported practice have immediate value. Follow site rules and avoid damaging the area for a demonstration."
+    ],
+    [
+      "Should I rely on foraging for a practice trip?",
+      "Bring suitable familiar food. Identification and local permission require specialized knowledge; an introductory trip should not depend on finding food."
+    ]
+  ],
   "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
   "related": [
     "tarp-shelter",

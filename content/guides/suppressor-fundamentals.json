@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Suppressors",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-08",
   "published": "2026-10-04",
-  "source_checked": "2026-10-04",
-  "next_review": "2027-01-04",
+  "source_checked": "2026-10-08",
+  "next_review": "2027-01-08",
   "aliases": [
     "suppressor",
     "silencer",
@@ -16,9 +16,15 @@
   "keywords": [
     "suppressor",
     "silencer",
-    "hearing safe"
+    "hearing safe",
+    "Compare the whole ownership package",
+    "Read sound claims and legal pages as dated evidence",
+    "material rating",
+    "user-serviceable",
+    "sealed",
+    "modular"
   ],
-  "tldr": "A suppressor reduces the muzzle-report component of firearm noise by managing the release of propellant gas. It does not make a firearm silent: projectile shock waves, mechanical noise and reflections remain. Compare intended firearm compatibility, weight, care and measured noise data, while retaining hearing protection.",
+  "tldr": "Compare suppressors by manufacturer-confirmed compatibility, complete-system size and mass, stated use limits, serviceability and total ownership cost. Sound reduction figures need test context; they do not establish hearing protection or interchangeability.",
   "steps": [
     [
       "Separate the sound sources",
@@ -224,31 +230,59 @@
       ]
     },
     {
-      "heading": "A useful range and maintenance record",
+      "heading": "An alloy name is not a complete product rating",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Keep an equipment record with the exact model, serial number where applicable, purchase documentation, current manual and service correspondence. Store the record privately rather than on a public checklist. A short dated maintenance note is more useful than trying to remember what happened over several range visits."
+          "text": "Material names describe ingredients, while the finished product has its own design and manufacturer limits. Titanium, stainless steel and aluminum appear in commercial products with different masses, finishes and care requirements. A product may also use different materials in different components. The outer body's material alone cannot establish the properties of the complete assembly."
         },
         {
-          "type": "bullets",
-          "items": [
-            "Before a visit: confirm the manufacturer-approved application and current range rules; pack hearing protection.",
-            "After the equipment has cooled as directed: follow the manual’s inspection and care process.",
-            "Record an abnormal change in sound, looseness, visible damage or performance; discontinue use pending an appropriate assessment.",
-            "Check whether the storage case accommodates the documented configuration without forcing parts or placing strain on equipment.",
-            "Keep service and warranty instructions accessible so a fault becomes a repair question rather than an improvised experiment."
+          "type": "table",
+          "caption": "What to learn from material descriptions",
+          "columns": [
+            "Description",
+            "Useful distinction"
+          ],
+          "rows": [
+            [
+              "Titanium",
+              "Often discussed for its strength relative to mass; the product's complete weight and support requirements still matter."
+            ],
+            [
+              "Stainless steel",
+              "A corrosion-resistant material family; density and the finished product's dimensions affect carrying burden."
+            ],
+            [
+              "Aluminum",
+              "A relatively light material with chemical and mechanical-care limits that differ from steel."
+            ],
+            [
+              "Surface coating",
+              "A treatment over the substrate; a cleaner can affect the finish even when the underlying material tolerates it."
+            ],
+            [
+              "Mixed-material product",
+              "Different components may impose different care restrictions."
+            ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "Distinguish cosmetic marks from manufacturer-defined rejection criteria. An internet photograph cannot establish the condition of your own equipment. When reporting a concern, provide the model and a clear description of what changed. The useful question is specific—“does this observed damage meet your inspection criteria?”—rather than asking for reassurance based on a brand name."
+          "text": "SilencerCo's manufacturer overview discusses these materials as tradeoffs. It should not be read as permission to select a product for use outside its published limits. Compare the exact finished item and manual rather than extrapolating from an alloy's reputation or an online statement about another brand."
+        },
+        {
+          "type": "paragraph",
+          "text": "The practical ownership consequence is material-specific support: which consumables are approved, which observations require service and whether the complete supplied product fits the intended case and secure storage. An expensive material is not a guarantee of low maintenance, a universal lifetime or immunity to damage."
         }
       ],
       "references": [
         [
-          "NSSF · Firearm handling principles",
-          "https://www.nssf.org/safety/rules-firearms-safety/"
+          "SilencerCo · Suppressor materials",
+          "https://silencerco.com/blog/unlocking-power-of-titanium-in-silencers"
+        ],
+        [
+          "SilencerCo · Material-specific care",
+          "https://silencerco.com/blog/how-to-clean-a-suppressor"
         ]
       ]
     },
@@ -261,7 +295,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Legal source review: 4 October 2026. Use current ATF guidance together with the rules for the location of ownership, transfer and intended sporting use. Confirm how any recent legal change applies to your situation with an appropriately licensed dealer or qualified legal adviser. A lawful purchase in one jurisdiction does not establish lawful possession, transport or hunting use in another."
+          "text": "Legal source review: 8 October 2026. Use current ATF guidance together with the rules for the location of ownership, transfer and intended sporting use. Confirm how any recent legal change applies to your situation with an appropriately licensed dealer or qualified legal adviser. A lawful purchase in one jurisdiction does not establish lawful possession, transport or hunting use in another."
         },
         {
           "type": "paragraph",
@@ -274,6 +308,70 @@
           "https://www.atf.gov/rules-and-regulations/laws-alcohol-tobacco-firearms-and-explosives/national-firearms-act"
         ]
       ]
+    },
+    {
+      "heading": "User-serviceable, sealed and modular mean different things",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "User-serviceable means that the manufacturer permits a defined owner-maintenance process. Sealed or fully welded describes a construction for which ordinary owner disassembly is not provided. Modular describes documented configuration choices. A product can combine some of these descriptions, so none is a substitute for the exact manual."
+        },
+        {
+          "type": "table",
+          "caption": "Read the service terms literally",
+          "columns": [
+            "Term",
+            "Ownership meaning",
+            "Do not infer"
+          ],
+          "rows": [
+            [
+              "User-serviceable",
+              "Specified owner care is documented for the exact product.",
+              "Every component, cleaning method or replacement is owner-authorized."
+            ],
+            [
+              "Sealed or fully welded",
+              "The ordinary service route may remain with the maker.",
+              "Lack of an owner disassembly procedure means there is no care or inspection requirement."
+            ],
+            [
+              "Modular",
+              "The maker provides specific approved configuration options.",
+              "Unrelated components or improvised combinations are permitted."
+            ],
+            [
+              "Manufacturer service",
+              "Defined inspection, repair or replacement support.",
+              "A warranty covers every exposure, chemical or alteration."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Cleaning methods are material-dependent. SilencerCo's care overview explains that methods acceptable for steel can damage aluminum, and that some solvents can remove finishes. It also directs owners to the product manual. The useful knowledge is that chemistry, abrasion and product construction are separate restrictions; an industrial cleaning machine is not a universally suitable upgrade."
+        },
+        {
+          "type": "paragraph",
+          "text": "Include service availability and consumables in the ownership comparison, but keep the decision tied to the product's actual care burden. A maintainable item is one for which its owner understands the permitted routine and can obtain the specified support. This page supplies neither a disassembly sequence nor a method for changing suppression performance."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "SilencerCo · Material-specific care",
+              "url": "https://silencerco.com/blog/how-to-clean-a-suppressor",
+              "description": "Manufacturer explanation of service categories and material restrictions. Follow the exact product manual for permitted owner care; do not generalize its procedures."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "SilencerCo · Material-specific care",
+          "https://silencerco.com/blog/how-to-clean-a-suppressor"
+        ]
+      ]
     }
   ],
   "without_help": "Pause use or purchase until you have the exact manual, approved applications and service instructions. Do not infer compatibility from the product’s external diameter, appearance or a seller’s informal description.",
@@ -281,7 +379,7 @@
   "pack_now": "Suitable hearing and eye protection, the exact manual, a permitted storage arrangement and the manufacturer’s service contact.",
   "next": "Compare three documented models using approved applications, complete weight, care requirements, warranty support and fully described noise tests. Resolve compatibility before price.",
   "watch": "An unexpected noise change, visible damage or a loose component warrants stopping use and following the manufacturer’s inspection process. Do not attempt repairs or modifications based on an online example.",
-  "sources": "suppressor-fundamentals",
+  "sources": "suppressor-fundamentals-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],

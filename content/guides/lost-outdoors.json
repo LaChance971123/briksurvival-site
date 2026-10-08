@@ -4,14 +4,22 @@
   "category": "field-skills",
   "subcategory": "Navigation & shelter",
   "content_type": "Field guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-07",
   "aliases": [
     "lost hiking",
     "lost in woods",
     "lost outdoors",
     "lost on trail"
   ],
-  "keywords": [],
+  "keywords": [
+    "Avoid making the search area larger",
+    "Make a precise help message",
+    "Choose a waiting place for protection and discovery",
+    "Make the available weather system usable",
+    "Manage water, food and energy during the delay",
+    "Coordinate the people and the signals",
+    "Use accountability and close the incident accurately"
+  ],
   "tldr": "Stop moving, stay together and assess your last known position. If there is no immediate threat, stay put, protect yourself from weather and signal for help. Share your location if communication works; do not wander in search of a shortcut.",
   "steps": [
     [
@@ -33,10 +41,10 @@
   ],
   "without_help": "Use the supplies and shelter you already have; do not assume a rescue is underway until communication confirms it. Leave a clear note of time, direction and destination only if immediate danger forces a move. Avoid dividing the party or attempting unverified routes in darkness.",
   "household": "Keep children and less mobile companions beside an adult. Check everyone for cold, heat and exhaustion and inventory each person’s supplies. Before a trip, leave a route, return time and overdue plan with a trusted contact.",
-  "pack_now": "Keep the action checklist and written contact details accessible. Use the equipment named in this guide only when available and appropriate. Assign someone to check access, batteries and expiry dates before an incident; retrieving a kit must not delay the immediate protective action.",
+  "pack_now": "Accessible weather protection and ground insulation, drinking water and food, individual light and signal, appropriate map, communication device and power, necessary care and the trip-contact information.",
   "next": "Give rescuers coordinates, last known location, group size, injuries and equipment. When a location is shared, stay there unless a direct threat forces a move.",
   "watch": "A phone compass or GPS reading is not a safe route by itself. Do not climb hazardous ridges for a signal or enter moving water.",
-  "sources": "lost-outdoors",
+  "sources": "lost-outdoors-full-20261007",
   "shopping": [
     "Whistle",
     "Offline map and compass you know how to use",
@@ -50,18 +58,34 @@
   "scope": "Civilian household planning. U.S. references; local conditions, services and building procedures differ.",
   "decisions": [
     [
-      "No signal",
-      "Prepare a short location message, reduce battery use and use visible or audible signals. Do not wander solely to make the phone work."
+      "Immediate hazard where you stopped?",
+      "Reach a nearby safer position with the group, record it and update contact if possible."
     ],
     [
-      "Immediate threat at the waiting place",
-      "Relocate the shortest practical distance to lower danger and record the new location. Staying put is conditional on the site being safe."
+      "Suitable site but position uncertain?",
+      "Remain findable, organize protection and send the best factual location information."
+    ],
+    [
+      "No phone service?",
+      "Use the prepared equipment and trip-contact plan; do not roam solely for reception."
+    ],
+    [
+      "Another person is missing?",
+      "Keep the remaining group coordinated and use the appropriate reporting plan; avoid an unplanned off-trail search."
     ]
   ],
   "faqs": [
     [
-      "Should someone go for help?",
-      "Splitting up can create additional lost people. Use communication or a trusted passing person where possible; avoid an unplanned solo search for a road."
+      "Should I follow a stream downhill?",
+      "No universal rule makes that a suitable route. Watercourses can introduce cliffs, flooding or difficult access. Use the known facts and the lost-person plan rather than a shortcut guess."
+    ],
+    [
+      "Can staying put still require moving?",
+      "Yes, if the current site has an immediate threat. Make the protective purpose clear, keep the group together and record/update the new position."
+    ],
+    [
+      "Does sending a message mean rescue is on the way?",
+      "No. Distinguish attempted, delivered and acknowledged messages, follow received instructions and continue practical protection."
     ]
   ],
   "worksheet": [
@@ -69,17 +93,263 @@
     "Help requested / response confirmed",
     "Actions / times / next handover"
   ],
-  "source_checked": "2026-10-02",
+  "source_checked": "2026-10-07",
   "published": "2026-10-02",
-  "next_review": "2027-04-02",
+  "next_review": "2027-01-07",
   "sections": [
-    [
-      "Avoid making the search area larger",
-      "Stop at a safe position, assess immediate hazards and use your last reliable map location. Stay put when lost unless the location itself is unsafe. Unplanned downhill travel, river following or shortcuts can introduce cliffs, floodwater and greater distance from your itinerary."
-    ],
-    [
-      "Make a precise help message",
-      "Report location or the last confirmed landmark, group size, injuries, weather exposure and available supplies. State if you must move for immediate safety. Use safe visible signaling and your trip contact’s overdue plan; do not exhaust yourself repeatedly shouting or searching for a phone signal."
-    ]
+    {
+      "heading": "Avoid making the search area larger",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you realize the route or position is uncertain, stop unnecessary movement and keep the group together. NPS recommends staying put when lost unless there is an immediate threat to life. Establish the safest workable waiting position and the best location information available."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the last confirmed fact distinct from a guess. Write the last reliable landmark, approximate time and what happened afterward. Do not turn “we think that was the junction” into a certain starting point for a new journey. Use the map, signs and available device information without discarding a clear mismatch on the ground."
+        },
+        {
+          "type": "table",
+          "caption": "A quick factual assessment",
+          "columns": [
+            "Question",
+            "Record"
+          ],
+          "rows": [
+            [
+              "People",
+              "Who is present and any urgent condition or care need."
+            ],
+            [
+              "Place",
+              "Current confirmed/estimated location and the last reliable landmark."
+            ],
+            [
+              "Conditions",
+              "Immediate hazards, weather and remaining daylight."
+            ],
+            [
+              "Supplies",
+              "Accessible weather system, water, food, light, signal and communication power."
+            ],
+            [
+              "Contact",
+              "Who has the trip plan and what messages have actually been sent."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Avoid unplanned downhill travel, river following or a guessed shortcut to a road. The desire to take action is understandable, but action should have a clear protective purpose rather than merely create distance from the known itinerary."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Make a precise help message",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Give current coordinates with their format if available, or the last confirmed landmark and time. State whether the position is known or estimated, the number of people, urgent needs, immediate hazards and the intended action. Keep a reply method available."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, use the structure “Location [known fact and uncertainty]; people [number and relevant needs]; event [what changed]; hazards [current conditions]; intention [remain or necessary protective move]; contact [available channel].” Fill it with real facts. Do not send invented practice coordinates as an emergency message."
+        },
+        {
+          "type": "paragraph",
+          "text": "Read back numbers when speaking to a recipient. A map pin may help only if it can be transmitted and opened. If a message cannot be delivered, preserve it for a later suitable attempt and use the equipment’s instructions for power management. Record the attempt and any response so the group does not confuse a saved draft with contact achieved."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Choose a waiting place for protection and discovery",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The waiting place should support the people while keeping the location usable for contact or search. Assess nearby water changes, overhead hazards, unstable ground and exposure. Do not climb or enter difficult terrain simply for a more visible position or better phone display."
+        },
+        {
+          "type": "flow",
+          "caption": "Conditional position decision",
+          "items": [
+            [
+              "Immediate threat at the site",
+              "Move the group to a nearby safer position when necessary; keep the protective reason and new location clear."
+            ],
+            [
+              "Suitable site",
+              "Remain findable, organize protection and use the communication/signal plan."
+            ],
+            [
+              "Conditions change",
+              "Reassess the people and place, and update the location if a necessary move occurs."
+            ]
+          ],
+          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "The choices are conditional. “Stay put” does not require remaining in rising water or under a damaged branch. Conversely, discomfort alone should not become a speculative journey with no known destination. If an actual responder provides appropriate instructions, clarify anything unclear and communicate the group’s real ability and needs."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Make the available weather system usable",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Find the protected layers and suitable shelter equipment, then organize the occupied area around the actual people. Use ground insulation and dry sleeping items where appropriate. Keep lights, care equipment, water and the communication device accessible instead of completing a complicated camp before meeting immediate needs."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the equipment’s tested configuration and instructions. A roof alone is not a complete cold-weather system, and an improvised fire is not a guaranteed source of warmth. Never bring a fuel-burning appliance into a tent or tarp enclosure. If the conditions exceed the equipment, explain that in the help request and continue achievable protection without hazardous improvisation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Assign simple tasks by ability. One adult can arrange the suitable layers while another records location and contact attempts. Keep assistance with a person who needs it. Do not make everyone unpack every bag or separate the group to collect speculative materials."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Complete shelter/sleep system",
+              "url": "/guides/tarp-shelter/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ],
+        [
+          "CDC · Carbon monoxide",
+          "https://www.cdc.gov/carbon-monoxide/about/index.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Manage water, food and energy during the delay",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Inventory what is actually available and keep necessary drinking water and familiar food accessible. Separate usable supplies from empty containers or products requiring equipment you do not have. Include individual care requirements and the time needed for any appropriate water treatment."
+        },
+        {
+          "type": "paragraph",
+          "text": "Reduce avoidable exertion such as repeated uncertain walks or prolonged shouting. Do not withhold essential hydration to follow an invented endurance rule. If a natural source is being considered, the source and treatment hazard matter; clear water is not automatically suitable. Use the selected product’s instructions and the known plan rather than improvising a dose."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep a short record of supplies used and changing needs without turning the wait into a contest. Share appropriate food and equipment according to actual requirements, not the assumption that every person has identical needs. Worsening symptoms or an urgent care gap should be communicated as facts through the available appropriate channel."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Water treatment",
+          "https://www.nps.gov/articles/2wayspurifywater.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Coordinate the people and the signals",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Give each person a clear place in the waiting arrangement and count the group after any necessary move. Use an appropriate whistle, personal light or visible material from a suitable position. Do not assume a signal has been noticed simply because it was used. Keep local signals separate from an electronic distress alert and follow the actual device instructions."
+        },
+        {
+          "type": "paragraph",
+          "text": "If a child is lost, the prior family plan should emphasize stopping and staying findable rather than hiding because they fear blame. Reassure the person and use age-appropriate instructions. For sensory or communication needs, use the familiar accessible method and a calm helper."
+        },
+        {
+          "type": "paragraph",
+          "text": "If another person is missing, keep the remaining group coordinated and report the known last location, time, identifying information and relevant needs through the appropriate plan. An unplanned off-trail search can create additional lost people. Do not send a lone unprepared participant on a speculative search for help or the missing person."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Use accountability and close the incident accurately",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The trusted trip contact should already have the intended route and overdue action. That arrangement remains valuable when reception fails. If contact works, explain any change in location or intention and state the next update when feasible. Keep the device available for follow-up rather than packing it away after one attempt."
+        },
+        {
+          "type": "paragraph",
+          "text": "When the situation is resolved, confirm return or transfer of care with the contact and any appropriate responder. Do not leave an active overdue plan running. Afterward, record the factual sequence while it is fresh: last confirmed position, uncertainty, weather, equipment access, messages and decisions."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Confirm everyone is accounted for and any continuing care need is handled.",
+            "Close the trip/overdue arrangement with the trusted contact.",
+            "Replenish used supplies and inspect the equipment.",
+            "Identify the first point where the plan became uncertain.",
+            "Make one practical route, equipment or communication correction.",
+            "Use supported instruction before taking on a more demanding trip."
+          ]
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "NPS · Outdoor emergency plan",
+              "url": "https://www.nps.gov/articles/gtgemergencyplan.htm",
+              "description": "Read the official lost/injured-person actions and adapt the emergency plan before the next trip."
+            },
+            {
+              "label": "NPS · Hike smart",
+              "url": "https://www.nps.gov/articles/hiking-safety.htm",
+              "description": "Review preparation, group pace and return limits."
+            }
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Distress message and signaling",
+              "url": "/guides/survival-signaling/"
+            },
+            {
+              "label": "Trip accountability",
+              "url": "/guides/outdoor-trip-plan/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    }
   ]
 }

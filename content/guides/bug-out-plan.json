@@ -4,10 +4,10 @@
   "category": "evacuation-shelter",
   "subcategory": "Bug out & bug in",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-07",
   "published": "2026-10-03",
-  "source_checked": "2026-10-04",
-  "next_review": "2027-04-04",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [
     "bug out",
     "bugout"
@@ -21,7 +21,9 @@
     "Develop two destinations and check their assumptions",
     "Connect routes, vehicles, and carrying capacity",
     "Prepare roles, bags, and change messages",
-    "Rehearse one failed assumption at a time"
+    "Rehearse one failed assumption at a time",
+    "Put the plan on a one-page departure card",
+    "Test the decision before rehearsing the departure"
   ],
   "tldr": "A useful bug-out plan names when to leave, where to go, how to travel and what to do if the first option fails. The destination matters more than an overloaded bag.",
   "steps": [
@@ -318,6 +320,114 @@
           "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
         ]
       ]
+    },
+    {
+      "heading": "Put the plan on a one-page departure card",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "A filled-in planning example; replace the details",
+          "columns": [
+            "Field",
+            "Example entry"
+          ],
+          "rows": [
+            [
+              "Trigger",
+              "A hazard-specific evacuation instruction applies, or essential care cannot be sustained at home."
+            ],
+            [
+              "Destination A",
+              "A previously contacted relative; address, acceptance and access requirements recorded privately."
+            ],
+            [
+              "Destination B",
+              "A separately checked alternative outside the same likely disruption."
+            ],
+            [
+              "Transport",
+              "Named driver or agreed pickup arrangement, capacity and fallback if unavailable."
+            ],
+            [
+              "Roles",
+              "One adult checks people and care equipment; another handles transport and the accessible bags."
+            ],
+            [
+              "Message",
+              "Departure time, destination and next check-in sent privately to the agreed contact."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This is a template, not an assessment of a live hazard. Replace vague fields such as “leave when bad” with conditions the household can recognize. Give every role a backup and keep the card where it can be found during normal household activity. An immediate fire escape takes priority over collecting the card or completing these roles."
+        },
+        {
+          "type": "paragraph",
+          "text": "A destination record should include the assumptions on which it depends: permission to stay, opening/access arrangements, safe water, sanitation, pets and care. Record when it was checked. Treat a long distance and a rural setting as travel details, not proof of suitability. Review any alternative for shared dependencies, such as the same bridge or host who may also need to evacuate."
+        }
+      ],
+      "references": [
+        [
+          "Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Test the decision before rehearsing the departure",
+      "blocks": [
+        {
+          "type": "flow",
+          "caption": "A change-of-plan exercise",
+          "items": [
+            [
+              "Choose the condition",
+              "For example, the first destination is unavailable or the usual vehicle cannot be used."
+            ],
+            [
+              "Reassess the household",
+              "Identify the effect on people, care, travel time and carried supplies."
+            ],
+            [
+              "Use a confirmed alternative",
+              "Select the previously checked option only if current access and conditions support it."
+            ],
+            [
+              "Update the contact",
+              "State where you are actually going and when to expect the next message."
+            ]
+          ],
+          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "Time the practical preparation separately from the travel estimate. Record how long it takes to locate daily-use items, assist dependents and load the actual transport. Do not treat a fast empty-house rehearsal as representative of the whole household. Keep the route review tied to current hazard information; several saved map lines may all share the same closure."
+        },
+        {
+          "type": "paragraph",
+          "text": "After the exercise, change one weak assumption rather than buying a larger bag. A missing pet acceptance check needs a destination correction. An overloaded helper needs a role or transport correction. A phone-only plan needs accessible written information. Repeat the relevant part once the correction is made, and leave the complete plan usable for another adult."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Manageable go-bag",
+              "url": "/preparedness/go-bag/"
+            },
+            {
+              "label": "Get-home planning",
+              "url": "/preparedness/get-home-plan/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
     }
   ],
   "without_help": "Work from confirmed reachable options and supplies already accessible. Help may be delayed, so keep your own contacts, route notes and essential care information available without internet.",
@@ -325,7 +435,7 @@
   "pack_now": "The trigger and role sheet, two checked destinations, current route information, transport contacts, care essentials, manageable bags and the daily-use grab list. Use an immediate-escape plan separately.",
   "next": "Time a calm departure rehearsal with the actual people, bags and transport. Record the slowest step and fix it.",
   "watch": "No universal bug-out destination or timetable suits every disaster. Avoid flooded roads and do not enter an active danger area for supplies.",
-  "sources": "bug-out-plan-expanded",
+  "sources": "bug-out-plan-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],

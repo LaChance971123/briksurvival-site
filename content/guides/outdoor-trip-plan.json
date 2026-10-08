@@ -4,13 +4,20 @@
   "category": "field-skills",
   "subcategory": "Navigation & shelter",
   "content_type": "Field guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-07",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [],
   "keywords": [
-    "Navigation & shelter"
+    "Navigation & shelter",
+    "Checkpoints that mean something",
+    "A safe return is the measure",
+    "Leave enough information for the trusted contact",
+    "Check conditions and shared dependencies",
+    "Set a turnaround condition people can recognize",
+    "Distribute essentials and communication roles",
+    "Agree the overdue response and close the plan"
   ],
   "tldr": "Leave a specific itinerary with a trusted contact, set a turnaround time, and carry enough essentials for delays. A rescue plan starts before you lose reception.",
   "steps": [
@@ -32,25 +39,322 @@
     ]
   ],
   "sections": [
-    [
-      "Checkpoints that mean something",
-      "Use recognizable map locations and realistic time windows. Discuss what happens if the group misses a checkpoint or changes route. Update the trusted contact when you can do so safely. A shared phone location can supplement the plan, but reception, battery and device failure make it unsuitable as the only accountability method."
-    ],
-    [
-      "A safe return is the measure",
-      "Travel at a pace the whole group can sustain. Keep people together through junctions and difficult ground. If someone is tired or injured, stop and reassess rather than sending them back alone. Avoid unplanned shortcuts: they can introduce steeper terrain, water crossings and navigation problems not reflected in your itinerary."
-    ]
+    {
+      "heading": "Checkpoints that mean something",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose checkpoints that can be recognized on the map and on the ground. A named junction or known access point is more useful than “halfway.” Record the expected order, what confirms it and the next known return option. Keep the information understandable to another group member."
+        },
+        {
+          "type": "table",
+          "caption": "Original route/checkpoint record",
+          "columns": [
+            "Field",
+            "Useful entry"
+          ],
+          "rows": [
+            [
+              "Start",
+              "Named trailhead, actual departure point and private vehicle details if relevant."
+            ],
+            [
+              "Checkpoint",
+              "A recognizable location with its map name or description."
+            ],
+            [
+              "Expected sequence",
+              "What should come before and after it."
+            ],
+            [
+              "Limit",
+              "A time or condition that triggers reassessment or return."
+            ],
+            [
+              "Contact",
+              "Who holds the route and what they do if the return/check-in is missed."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A checkpoint is a decision opportunity, not a race marker. If the group reaches it late, compare remaining daylight, weather, supplies and people with the known return. Do not preserve an ambitious destination by ignoring the conditions that made the limit necessary."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Hike smart",
+          "https://www.nps.gov/articles/hiking-safety.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "A safe return is the measure",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Plan around the whole group rather than the fastest adult. Include terrain, care, rest and equipment access in the time estimate. NPS recommends keeping the group together and matching pace to the slowest hiker. That principle affects the route choice before the trip, not just the speed afterward."
+        },
+        {
+          "type": "paragraph",
+          "text": "Give the return plan equal attention to the outward journey. A steep descent outward can mean a demanding ascent home. A late arrival can change light and weather conditions. Use supported experience and current local information to choose a modest route; a map distance alone cannot establish duration."
+        },
+        {
+          "type": "flow",
+          "caption": "A coordinated return decision",
+          "items": [
+            [
+              "Check the people",
+              "Count everyone and identify fatigue, care or mobility changes."
+            ],
+            [
+              "Check the conditions",
+              "Compare current weather, time, route confidence and supplies."
+            ],
+            [
+              "Choose the known option",
+              "Continue only when the plan remains workable; otherwise use the appropriate return or checked alternative."
+            ],
+            [
+              "Update accountability",
+              "Tell the contact about a meaningful change when possible."
+            ]
+          ],
+          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not send an exhausted person back alone as a convenient fix. Stop and choose an arrangement that accounts for everyone and the actual route. Serious injury or illness can require urgent assistance and a different plan."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Hike smart",
+          "https://www.nps.gov/articles/hiking-safety.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Leave enough information for the trusted contact",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The contact should hold the actual itinerary, group details, expected return or check-in and the agreed action if overdue. NPS’s trip-planning guidance recommends leaving that plan with someone outside the group. Confirm they are available and willing to perform the role."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep identifying and care information private. Share what is useful for the task rather than broadcasting the whole itinerary publicly. Describe the communication equipment and its limits so an absence of live tracking is not misread as proof of location. The contact also needs to know who else can provide relevant information."
+        },
+        {
+          "type": "table",
+          "caption": "Contact handover worksheet",
+          "columns": [
+            "Information",
+            "Why it helps"
+          ],
+          "rows": [
+            [
+              "Intended route and access point",
+              "Describes where the group planned to travel."
+            ],
+            [
+              "Group and relevant needs",
+              "Helps communicate who is involved and urgent care considerations."
+            ],
+            [
+              "Timing and limits",
+              "Separates the plan from a vague hope of returning “later.”"
+            ],
+            [
+              "Overdue action",
+              "Names the appropriate local contact/reporting route and when to use it."
+            ],
+            [
+              "Changes",
+              "Explains how a revised route or return is confirmed."
+            ]
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Hike smart",
+          "https://www.nps.gov/articles/hiking-safety.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Check conditions and shared dependencies",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Verify current weather, route access, closures, expected daylight and any water or transport assumption before departure. Keep the relevant land manager’s information with the planning record. A saved map or old photograph does not establish that a route remains open today."
+        },
+        {
+          "type": "paragraph",
+          "text": "Look for dependencies shared by your alternatives. Two routes using the same crossing may fail together. Two water plans using the same seasonal source may not be independent. A group whose essential equipment is all in one bag may lose several systems at once if that bag becomes inaccessible."
+        },
+        {
+          "type": "paragraph",
+          "text": "Record which assumptions remain uncertain and resolve the necessary ones. If a required condition cannot be confirmed, choose a more modest checked activity or postpone the trip. Keep current restrictions separate from broad planning guidance: a general outdoor article does not override the actual site’s rules."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Hike smart",
+          "https://www.nps.gov/articles/hiking-safety.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Set a turnaround condition people can recognize",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use time and condition limits appropriate to the actual route and group. Write the known return option and the reason for the limit. Include conditions such as worsening weather, uncertain navigation, insufficient water or a person unable to continue comfortably. Choose the criteria while the group is calm."
+        },
+        {
+          "type": "paragraph",
+          "text": "An illustrative plan might say: “At the agreed checkpoint, compare the remaining journey with the recorded return limit; use the known return if the plan no longer fits.” Fill in the real checkpoint and timing from supported route information. The example is a decision template, not a recommended hour or universal margin."
+        },
+        {
+          "type": "paragraph",
+          "text": "Give the person responsible for noticing the limit a clear role, and let any participant raise a concern. Reassess rather than arguing that equipment or distance proves the trip must continue. A changed route must receive the same review as the original; do not call it a shortcut simply because it appears shorter on the screen."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Hike smart",
+          "https://www.nps.gov/articles/hiking-safety.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Distribute essentials and communication roles",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Each person should have practical access to suitable layers, water, light and a simple signal where appropriate. Shared shelter or communication equipment still needs a named carrier and backup access plan. Consider the mass assigned to someone who also assists a child or dependent adult."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the map and contact information available to more than one adult. Explain how the communication equipment is used and what it cannot do. A selected messenger’s routine check-in is different from a distress alert. Keep emergency procedures with the device and use only designated routine or test functions in practice."
+        },
+        {
+          "type": "paragraph",
+          "text": "Agree how the group handles a junction, a restroom stop or an equipment problem without unplanned separation. A child’s role can be to stay with the designated adult and locate their own light or contact card. Include sensory and dexterity needs so instructions do not depend only on a shouted message or a tiny screen."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ],
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Agree the overdue response and close the plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before departure, ask the contact to explain what they would do after the agreed overdue condition. They should gather known facts, attempt the agreed communication methods and use the appropriate local reporting route when the circumstances warrant it. Avoid a plan that sends an unprepared friend into unfamiliar terrain to search."
+        },
+        {
+          "type": "paragraph",
+          "text": "After return, explicitly close the plan with the contact. Otherwise a well-intentioned overdue action can begin after the group is already home. If the return is delayed but communication works, provide the current location, condition, revised action and next update rather than only saying “late.”"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Give the contact the final itinerary and confirm receipt.",
+            "Review the overdue condition and appropriate local reporting details.",
+            "Check the equipment and route card before departure.",
+            "Send meaningful changes when possible.",
+            "Confirm return and close the plan.",
+            "Record one improvement for the next trip."
+          ]
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "NPS · Hike smart",
+              "url": "https://www.nps.gov/articles/hiking-safety.htm",
+              "description": "Read the official trip, group and turnaround recommendations."
+            },
+            {
+              "label": "NPS · Outdoor emergency plan",
+              "url": "https://www.nps.gov/articles/gtgemergencyplan.htm",
+              "description": "Use the outdoor emergency framework to prepare for a lost or injured person."
+            }
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Lost outdoors",
+              "url": "/guides/lost-outdoors/"
+            },
+            {
+              "label": "Distress signaling",
+              "url": "/guides/survival-signaling/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    }
   ],
   "without_help": "Your contact should already know the overdue threshold and the relevant local response channel. If communications fail, follow the agreed route and turnaround decision; do not climb into danger merely to get a signal.",
   "household": "Give children and companions a simple separation plan: stop, stay in a safe visible place and signal. Check medications, mobility needs and individual water access before leaving.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "pack_now": "The written route and turnaround card, private trip-contact details, appropriate area map, personal weather layers, safe water and food, accessible care, individual light/signal and tested communication power.",
   "next": "Write a plan for a familiar short walk and ask your contact to explain exactly what they would do if you failed to return.",
   "watch": "A trip plan does not guarantee rescue. Weather, terrain and distance can delay help substantially.",
-  "sources": "outdoor-skills",
+  "sources": "outdoor-trip-plan-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
-  "decisions": [],
-  "faqs": [],
+  "decisions": [
+    [
+      "A key condition is unconfirmed?",
+      "Resolve it or select a modest checked alternative before departure."
+    ],
+    [
+      "The turnaround limit arrives?",
+      "Use the agreed known return while accounting for current conditions and the group."
+    ],
+    [
+      "The route changes?",
+      "Assess the change and update the trusted contact when possible; do not silently substitute an unplanned route."
+    ],
+    [
+      "Someone is overdue?",
+      "Use the agreed contact/escalation plan and known facts rather than starting an unplanned off-trail search."
+    ]
+  ],
+  "faqs": [
+    [
+      "Is live phone tracking a complete trip plan?",
+      "No. Battery, reception and device limits can prevent updates. Keep a specific written itinerary and an agreed overdue response."
+    ],
+    [
+      "Does an estimated return time include only walking?",
+      "Include the complete journey, breaks, care, route checks and realistic margins. Use the group’s supported experience rather than one person’s best pace."
+    ],
+    [
+      "Should a tired person return alone?",
+      "Reassess the group and use a coordinated plan; avoid creating an unplanned separation or another person needing help."
+    ]
+  ],
   "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
   "related": [
     "lost-outdoors",

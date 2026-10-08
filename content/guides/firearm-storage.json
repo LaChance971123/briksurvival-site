@@ -4,13 +4,19 @@
   "category": "firearms-tools",
   "subcategory": "Secure storage",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-08",
   "published": "2026-10-03",
-  "source_checked": "2026-10-04",
-  "next_review": "2027-01-04",
+  "source_checked": "2026-10-08",
+  "next_review": "2027-01-08",
   "aliases": [],
   "keywords": [
-    "Secure storage"
+    "Secure storage",
+    "Choose storage around the room and household",
+    "Keep a storage handover and maintenance record",
+    "interior capacity",
+    "relative humidity",
+    "dew point",
+    "desiccant"
   ],
   "tldr": "Choose storage for three separate jobs: prevent unauthorized access, resist theft and protect condition. A cable lock, lockbox, cabinet and safe offer different levels of protection. Compare independent ratings, installation, humidity and backup access; a heavy enclosure or “fireproof” label is not a complete storage plan.",
   "steps": [
@@ -294,6 +300,135 @@
           "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
         ]
       ]
+    },
+    {
+      "heading": "Nominal capacity and usable geometry are different",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A quoted rifle count is not a measurement of the usable space for your actual equipment. Thick stocks, fitted equipment, cases, shelves and door pockets occupy parts of the same interior. The enclosure's outer dimensions include its walls and door; multiplying those figures does not establish the available interior volume."
+        },
+        {
+          "type": "table",
+          "caption": "Capacity terms worth separating",
+          "columns": [
+            "Term",
+            "What it describes"
+          ],
+          "rows": [
+            [
+              "Exterior dimensions",
+              "The delivery and room-space envelope, including stated projections."
+            ],
+            [
+              "Interior dimensions",
+              "The manufacturer's usable internal envelope, subject to shelves, partitions and door clearance."
+            ],
+            [
+              "Nominal rifle count",
+              "A product-specific packing claim rather than a universal space allowance per rifle."
+            ],
+            [
+              "Door opening and swing",
+              "The space needed to reach the interior while the enclosure remains properly positioned."
+            ],
+            [
+              "Payload and installed mass",
+              "Contents plus enclosure mass, relevant to the supporting structure and delivery arrangement."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Even interior volume alone does not answer fit. As an invented geometric example, a long thin compartment and a short broad compartment can have equal volume while only one accommodates a long rigid case. The longest usable dimension, projections and closure clearance matter alongside the volume. Do not force the door against equipment to make a nominal count work."
+        },
+        {
+          "type": "paragraph",
+          "text": "Evaluate the arrangement the household will actually use: reach to shelves, room for an authorized user's glasses or mobility aid, and the normal path through the room. Reducing crowding can make inspection and access more manageable, but choosing a larger enclosure adds delivery, floor-loading and installation questions. Obtain those answers from the maker and an appropriate installer before delivery."
+        }
+      ],
+      "references": [
+        [
+          "Project ChildSafe · Storage categories",
+          "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
+        ],
+        [
+          "Liberty Safe · Use and care",
+          "https://libertysafe.com/pages/gun-safe-use-and-care"
+        ]
+      ]
+    },
+    {
+      "heading": "Moisture control: measure the air and understand the method",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Relative humidity compares the actual water vapour present with saturation at the air's current temperature. It changes when temperature changes, even if the amount of water vapour does not. Dew point describes the temperature at which that air becomes saturated. This explains why a cold metal item can collect condensation after entering warmer humid air; locking it in a box does not remove the water."
+        },
+        {
+          "type": "table",
+          "caption": "Devices marketed for moisture control",
+          "columns": [
+            "Device",
+            "Main role",
+            "Important distinction"
+          ],
+          "rows": [
+            [
+              "Hygrometer",
+              "Measures relative humidity where its sensor is located.",
+              "Measurement does not remove moisture; a room reading need not equal the enclosure reading."
+            ],
+            [
+              "Desiccant",
+              "Takes up moisture within its finite capacity.",
+              "The product's saturation indicator and renewal instructions matter."
+            ],
+            [
+              "Approved warming/circulation accessory",
+              "Changes the enclosure's local temperature and air movement as designed.",
+              "It requires a suitable power arrangement and the enclosure maker's approval."
+            ],
+            [
+              "Room climate control",
+              "Changes conditions around the enclosure.",
+              "A suitable room reduces the burden placed on small interior accessories."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Liberty discusses silica-gel products and warns that calcium-chloride absorbers can produce corrosive brine. That distinction is more useful than treating every packet or tub marked dehumidifier as the same technology. Choose a product approved for the enclosure and stored materials, with a clear indication of when it needs attention."
+        },
+        {
+          "type": "paragraph",
+          "text": "Follow the maker's actual environmental targets rather than assuming the driest possible air is best for every mixed collection. Wood, documents, coatings and metals have different care concerns. Inspect conditions after a leak or a power outage, and address the source of moisture instead of adding more packets to an unsuitable room. Do not improvise electrical heaters or modify the enclosure to fit an accessory."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "Liberty Safe · Moisture-control methods",
+              "url": "https://libertysafe.com/blogs/the-vault/how-to-keep-moisture-out-of-your-gun-safe",
+              "description": "Manufacturer discussion of measurement, desiccants and approved moisture-control products. Product-specific instructions take priority."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "National Weather Service · Relative humidity and dew point",
+          "https://www.weather.gov/arx/why_dewpoint_vs_humidity"
+        ],
+        [
+          "Liberty Safe · Moisture-control methods",
+          "https://libertysafe.com/blogs/the-vault/how-to-keep-moisture-out-of-your-gun-safe"
+        ],
+        [
+          "Liberty Safe · Use and care",
+          "https://libertysafe.com/pages/gun-safe-use-and-care"
+        ]
+      ]
     }
   ],
   "without_help": "Keep equipment away from shared supplies and unauthorized people. Use a previously verified lawful storage alternative where available. Flood- or fire-exposed equipment needs assessment before reuse; do not assume the enclosure rating proves it is unaffected.",
@@ -301,7 +436,7 @@
   "pack_now": "Enclosure and lock manuals, installation record, authorized-access list, service information and a verified destination-storage plan. Keep backup keys and codes secure.",
   "next": "Check one enclosure: actual capacity, closure, permitted anchoring, backup-key security, lock service and interior moisture. Fix the weakest link before purchasing accessories.",
   "watch": "Keep firearms unloaded and locked with ammunition separately secured. Manufacturer-approved installation, controlled keys and periodic review are essential; neither concealment nor a child’s promise replaces storage.",
-  "sources": "firearm-storage",
+  "sources": "firearm-storage-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],

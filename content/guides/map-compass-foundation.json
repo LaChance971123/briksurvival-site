@@ -5,12 +5,12 @@
   "subcategory": "Navigation & shelter",
   "content_type": "Field guide",
   "published": "2026-10-03",
-  "updated": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "updated": "2026-10-07",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
-  "sources": "map-compass",
+  "sources": "map-compass-foundation-full-20261007",
   "tldr": "Learn your map, compass and route before going somewhere unfamiliar. Carry a physical map alongside electronic navigation and a way to keep the phone powered. A compass indicates direction; it cannot tell you whether terrain is passable or whether you are on the correct trail.",
   "steps": [
     [
@@ -31,38 +31,360 @@
     ]
   ],
   "sections": [
-    [
-      "A simple route card",
-      "Editorial fields: start, intended route, obvious junctions, turnaround point, expected return and alternate exit. Use landmarks you can recognize on the ground. Keep the first practice route short and familiar so a mistaken turn is easy to notice and correct."
-    ],
-    [
-      "A compass is one part of the decision",
-      "Practice with qualified instruction for bearings, map orientation and local magnetic declination before relying on those techniques. Do not choose a straight-line shortcut merely because the compass points that way. Rivers, cliffs, private land and weather can make a direction unusable."
-    ],
-    [
-      "Practice a failed-phone scenario",
-      "On a familiar safe route, compare the physical map with known junctions while keeping the phone available for real emergencies. Can everyone identify the start, return route and turnaround point? Stop the exercise if you become unsure of your position."
-    ]
+    {
+      "heading": "A simple route card",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Build the route card while the map, local information and group are available. Record start and finish, named junctions, intended route, the known return option, turnaround condition and contact/check-in arrangement. Use landmarks you can recognize on the ground rather than an arbitrary distance alone."
+        },
+        {
+          "type": "table",
+          "caption": "Original route-card template",
+          "columns": [
+            "Field",
+            "What to enter"
+          ],
+          "rows": [
+            [
+              "Start",
+              "Named access point and where the group begins."
+            ],
+            [
+              "Route",
+              "The intended marked route and important junctions."
+            ],
+            [
+              "Checks",
+              "Recognizable landmarks and the next expected feature."
+            ],
+            [
+              "Limit",
+              "Time or condition that triggers a known return decision."
+            ],
+            [
+              "Alternative",
+              "A checked option whose access and terrain suit the group."
+            ],
+            [
+              "Contact",
+              "Who has the plan and what they do if the agreed return is missed."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the card short and privately accessible. It supplements the map; it does not replace the wider area view. If a junction or route is unconfirmed, label it unresolved and obtain information before relying on it. Share the main route and return choice with the whole group so one phone is not the only source of the plan."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Hike smart",
+          "https://www.nps.gov/articles/hiking-safety.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "A compass is one part of the decision",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A conventional compass indicates a magnetic direction. NOAA explains that magnetic north and geographic north usually differ, and that the angle between them—declination—changes with place and time. Learn how the selected map and compass handle that relationship through appropriate instruction before relying on bearings."
+        },
+        {
+          "type": "paragraph",
+          "text": "The tool does not tell you whether a river is crossable, a cliff has a path or private land allows access. A direction can be correct while the intended journey is inappropriate. Keep map interpretation, current access information and the group’s ability in the same decision."
+        },
+        {
+          "type": "table",
+          "caption": "Separate the questions",
+          "columns": [
+            "Question",
+            "Useful tool or evidence"
+          ],
+          "rows": [
+            [
+              "Which direction?",
+              "A properly understood compass and relevant north/declination information."
+            ],
+            [
+              "Where am I?",
+              "A known location supported by the map, landmarks and appropriate device information."
+            ],
+            [
+              "Can we travel there?",
+              "Current route conditions, legal access, terrain and group ability."
+            ],
+            [
+              "Should we continue?",
+              "Weather, time, supplies and the agreed trip limits."
+            ]
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NOAA NCEI · Magnetic declination and the WMM",
+          "https://www.ncei.noaa.gov/products/world-magnetic-model"
+        ]
+      ]
+    },
+    {
+      "heading": "Practice a failed-phone scenario",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a familiar short route in ordinary conditions with the phone still available for a real emergency. The exercise is to explain the route from paper and landmarks, not to become genuinely lost. Begin at a confirmed start and agree where the practice ends."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Find the start, intended route and return option on the paper map.",
+            "Explain the next recognizable junction before moving.",
+            "At the familiar junction, compare the map’s representation with the ground.",
+            "Identify the next expected feature and the known return.",
+            "Stop if the location becomes uncertain; end the exercise using available support.",
+            "Record one map-reading or equipment-access gap and obtain instruction."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Rotate the explaining role so the least experienced person can identify the start and return. Do not follow an unmarked shortcut to make the exercise harder. A useful practice result is a clear explanation of ordinary decisions and a list of skills to learn next."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Read the map’s own legend and scale",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Map symbols depend on the product and edition. USGS notes that no single sheet explains all symbols across every USGS map. Begin with the actual map’s legend, title, date, scale, units and north information. A familiar color or line style on another map may mean something different."
+        },
+        {
+          "type": "paragraph",
+          "text": "Scale is a proportion. In an illustrative 1:25,000 map, one centimetre represents 25,000 centimetres, or 250 metres, on the ground. That arithmetic describes horizontal map distance; it does not include climbs, bends in the path or time. Verify the print settings because resizing can invalidate a ruler calculation based on the stated representative fraction."
+        },
+        {
+          "type": "table",
+          "caption": "Map-reading checks before departure",
+          "columns": [
+            "Item",
+            "What to confirm"
+          ],
+          "rows": [
+            [
+              "Coverage",
+              "The intended route and enough surrounding area for the known return or alternate."
+            ],
+            [
+              "Legend",
+              "The meaning of the relevant paths, water, boundaries and other features on this map."
+            ],
+            [
+              "Scale and units",
+              "A readable scale bar, appropriate print size and consistent distance/elevation units."
+            ],
+            [
+              "Date and current conditions",
+              "What the map can describe and what needs checking with current local information."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Contour lines describe elevation; read the stated contour interval before comparing slopes. Closely spaced contours indicate a steeper represented slope than widely spaced contours at the same scale and interval. They do not certify passability. Learn terrain interpretation with an instructor and compare it with familiar ground."
+        }
+      ],
+      "references": [
+        [
+          "USGS · Topographic map symbols",
+          "https://www.usgs.gov/educational-resources/topographic-map-symbols"
+        ],
+        [
+          "USGS · Which symbol sheet applies?",
+          "https://www.usgs.gov/faqs/where-can-i-find-a-topographic-map-symbol-sheet"
+        ],
+        [
+          "USGS · Topographic maps",
+          "https://www.usgs.gov/programs/national-geospatial-program/topographic-maps"
+        ]
+      ]
+    },
+    {
+      "heading": "Keep position checks separate from guesses",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At a confirmed start, identify a few ordinary features you expect along the route. Compare the map with the actual junctions and signs as you reach them. Record the last confirmed position and time if uncertainty develops. A guessed location should remain a guess rather than becoming the foundation for another guessed route."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use several compatible clues: a named junction, a visible landmark, the route traveled and appropriate device information. If they disagree, pause to resolve the disagreement. A dot on a phone is useful evidence but does not erase an obvious mismatch with the ground. Avoid choosing only the clue that supports the direction you hoped to travel."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a magnetic compass, follow its instructions and learn about interference in a supported setting. Do not try to diagnose an unfamiliar instrument during a real navigation problem. Keep the compass accessible and protected, and treat a damaged or unreliable tool as a reason to change the plan."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ],
+        [
+          "NOAA NCEI · Magnetic declination and the WMM",
+          "https://www.ncei.noaa.gov/products/world-magnetic-model"
+        ]
+      ]
+    },
+    {
+      "heading": "Organize the navigation kit for the actual users",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Protect the paper map from weather while keeping it readable. Fold or organize it so the current route and wider context can be found without losing pages. Carry a simple writing tool and route card if useful. On the phone, check that the needed map and location functions work under the planned conditions, then provide compatible power."
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose print size and contrast around the actual person’s vision. If the map is resized, verify the scale relationship before using measured distances. Use a carry arrangement that a person with gloves or a mobility aid can access. A shared group map should not be packed so deeply that nobody can use it at a junction."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the trip plan with a trusted person outside the group. Review the intended route together and count personal lights and suitable layers. Navigation planning connects to shelter, water and accountability; an accurate bearing cannot compensate for a trip whose essential systems are unsuitable."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Hike smart",
+          "https://www.nps.gov/articles/hiking-safety.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Progress from familiar checks to instructed skills",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Begin with map identity, legend, scale and ordinary route-card work. Next, obtain practical instruction in compass orientation, local declination, bearings and position interpretation. Practice on permitted familiar terrain with an easy return before considering a more demanding trip."
+        },
+        {
+          "type": "flow",
+          "caption": "A modest learning progression",
+          "items": [
+            [
+              "Read",
+              "Explain the actual map’s title, legend, units and scale."
+            ],
+            [
+              "Relate",
+              "Match familiar junctions and terrain with the map."
+            ],
+            [
+              "Learn the compass",
+              "Use suitable instruction for the specific tool and local north relationship."
+            ],
+            [
+              "Plan",
+              "Write a short route and turnaround card."
+            ],
+            [
+              "Review",
+              "Record uncertainty and correct it before increasing the consequence."
+            ]
+          ],
+          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "The progression is a learning plan, not a navigation certification. Keep real assistance and essential equipment available during practice. If a trip becomes uncertain, stop extending it and use the lost-outdoors plan. There is no obligation to finish a route merely because it was drawn on the map."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "USGS · Topographic map symbols",
+              "url": "https://www.usgs.gov/educational-resources/topographic-map-symbols",
+              "description": "Use the USGS teaching resource alongside the legend for your actual map."
+            },
+            {
+              "label": "NOAA NCEI · Magnetic declination and the WMM",
+              "url": "https://www.ncei.noaa.gov/products/world-magnetic-model",
+              "description": "Read how magnetic declination varies and find current location/date information."
+            },
+            {
+              "label": "USGS · Topographic maps",
+              "url": "https://www.usgs.gov/programs/national-geospatial-program/topographic-maps",
+              "description": "Find current U.S. topographic-map products and official training options."
+            }
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Lost outdoors",
+              "url": "/guides/lost-outdoors/"
+            },
+            {
+              "label": "Trip accountability",
+              "url": "/guides/outdoor-trip-plan/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "USGS · Topographic map symbols",
+          "https://www.usgs.gov/educational-resources/topographic-map-symbols"
+        ],
+        [
+          "NOAA NCEI · Magnetic declination and the WMM",
+          "https://www.ncei.noaa.gov/products/world-magnetic-model"
+        ],
+        [
+          "USGS · Topographic maps",
+          "https://www.usgs.gov/programs/national-geospatial-program/topographic-maps"
+        ]
+      ]
+    }
   ],
   "without_help": "When navigation becomes uncertain, stop making the situation worse. Reassess your known location, daylight, weather and group needs. Use the lost-outdoors guide rather than walking on a guess.",
   "household": "Match distance, pace and turnaround time to the slowest group member. Share the intended route and keep the group together at junctions so one person’s navigation error does not separate everyone.",
-  "pack_now": "Area map, familiar compass, phone and power, trip-contact details and weather-appropriate supplies.",
+  "pack_now": "The correct current area map with readable legend and scale, familiar compass, protected route card, phone and compatible power, personal light and a trip-contact plan. Check that the paper print remains legible.",
   "next": "Choose a safe introductory navigation session and a short familiar practice walk. Expand only when you can explain your route and backup without relying on one screen.",
   "watch": "Electronic location can be inaccurate or unavailable. A bearing does not establish a safe crossing, legal access or a clear path through unfamiliar terrain.",
   "faqs": [
     [
-      "Will a compass work without mobile reception?",
-      "A conventional magnetic compass does not need reception, but you still need the right map, a known position and the skills to interpret them."
+      "Does a magnetic compass need phone reception?",
+      "No. It still needs a suitable map, location knowledge and interpretation skills."
+    ],
+    [
+      "Does a larger printed map change its scale?",
+      "Resizing can change the printed representative fraction’s relationship to a ruler. Use an appropriately printed map and its scale bar; verify the printing instructions."
+    ],
+    [
+      "Can I use an old map?",
+      "It can supply context, but it does not establish current paths, access, closures or magnetic declination. Use suitable current information for the actual trip."
     ]
   ],
   "decisions": [
     [
-      "You cannot identify your position?",
-      "Stop and reassess rather than inventing a route."
+      "The map does not match the area or edition?",
+      "Obtain an appropriate map and check current route information before departure."
     ],
     [
-      "The planned terrain is unsafe?",
-      "Use the turnaround or alternate plan."
+      "You cannot explain your position?",
+      "Stop at a suitable place and reassess; a bearing is not a substitute for a known location."
+    ],
+    [
+      "The route is unsafe or access is closed?",
+      "Use the known turnaround or alternate plan rather than a straight-line shortcut."
     ]
   ],
   "related": [
@@ -80,7 +402,14 @@
     "map and compass",
     "navigation basics",
     "paper map",
-    "compass beginner"
+    "compass beginner",
+    "A simple route card",
+    "A compass is one part of the decision",
+    "Practice a failed-phone scenario",
+    "Read the map’s own legend and scale",
+    "Keep position checks separate from guesses",
+    "Organize the navigation kit for the actual users",
+    "Progress from familiar checks to instructed skills"
   ],
   "scope": "Civilian guidance using the linked U.S. reference. Local conditions and services differ. Household planning examples are Osprey Zero editorial suggestions; this is not a live alert or specialist certification."
 }

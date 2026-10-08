@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Ammunition",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-08",
   "published": "2026-10-03",
-  "source_checked": "2026-10-04",
-  "next_review": "2027-01-04",
+  "source_checked": "2026-10-08",
+  "next_review": "2027-01-08",
   "aliases": [
     "ammo",
     "cartridges"
@@ -15,7 +15,9 @@
   "keywords": [
     "Ammunition",
     "ammo",
-    "cartridges"
+    "cartridges",
+    "Build an inventory that supports use and recall checks",
+    "Separate home storage from a transport itinerary"
   ],
   "tldr": "Store ammunition locked, dry and clearly identified, preferably in its original labelled packaging. Preserve product and lot numbers, inspect for damage and separate suspect stock. Flooding, fire exposure and corrosion require a different response from routine storage—not drying, polishing or test-firing to “check” a round.",
   "steps": [
@@ -292,6 +294,73 @@
         }
       ],
       "references": []
+    },
+    {
+      "heading": "Transport packaging protects a different part of the problem",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "At home, storage combines access control, condition and product identification. For travel, an additional question is whether the actual packaging satisfies the carrier and applicable rules. A sturdy container is not automatically approved travel packaging, and a lock does not prevent loose contents from moving inside it."
+        },
+        {
+          "type": "paragraph",
+          "text": "For U.S. air travel, the FAA's current PackSafe page requires small-arms ammunition to be in checked baggage and securely packed in boxes or devices designed to carry small amounts of ammunition. Clips and magazines must also be securely boxed so ammunition is not loose or exposed. The page distinguishes factory cartridges and shotshells from powder, primers and other excluded components."
+        },
+        {
+          "type": "table",
+          "caption": "Read the travel terms literally",
+          "columns": [
+            "Term",
+            "Practical distinction"
+          ],
+          "rows": [
+            [
+              "Checked baggage",
+              "Different from permission to carry the item into the passenger cabin."
+            ],
+            [
+              "Purpose-designed packaging",
+              "The package contains and protects the ammunition rather than merely enclosing loose rounds."
+            ],
+            [
+              "Gross weight",
+              "Includes packaging, unlike the printed projectile mass on an ammunition label."
+            ],
+            [
+              "Airline limit",
+              "Can add conditions beyond the general FAA description; the actual carrier must confirm them."
+            ],
+            [
+              "Destination and itinerary",
+              "Introduce separate possession, transport and sporting-use rules."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "FAA notes that international rules and some U.S. airlines limit this allowance to 5 kg (11 pounds) gross per passenger. This is a dated U.S. source example, not a universal allowance or an entitlement on every airline. Weigh the complete intended package and check the carrier, TSA screening requirements and all relevant jurisdictions before departure."
+        },
+        {
+          "type": "paragraph",
+          "text": "As an invented arithmetic example, 4.7 kg of contents plus 0.5 kg of packaging totals 5.2 kg gross. Comparing only the contents with a 5 kg gross limit would miss the packaging. This calculation teaches the term; it does not certify a package or itinerary. Keep product and lot information with the stock through the journey and return it to suitable secured storage afterward."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "FAA · PackSafe ammunition",
+              "url": "https://www.faa.gov/hazmat/packsafe/ammunition",
+              "description": "Read the current U.S. air-travel scope, packaging requirements and gross-weight caveat; confirm additional carrier and itinerary requirements."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "FAA · PackSafe ammunition",
+          "https://www.faa.gov/hazmat/packsafe/ammunition"
+        ]
+      ]
     }
   ],
   "without_help": "Keep suspect ammunition secured and segregated. Mark the exposure or identification problem and wait for product-specific instructions. Do not dry, dismantle, polish or test-fire it as a substitute for an assessment.",
@@ -299,7 +368,7 @@
   "pack_now": "Box-label photographs, product and lot numbers, container locations, review dates and manufacturer support information.",
   "next": "Check the lock, moisture evidence, packaging, lot records and manufacturer warning page. Correct missing labels before increasing the inventory.",
   "watch": "Cracks, deformation, corrosion, unidentified cartridges and flood or fire exposure are reasons to separate stock and seek instructions. A normal exterior is not proof of unaffected primers or propellant.",
-  "sources": "ammunition-storage",
+  "sources": "ammunition-storage-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],

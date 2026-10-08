@@ -4,7 +4,7 @@
   "category": "preparedness",
   "subcategory": "Kits & supplies",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-07",
   "aliases": [
     "bug out bag",
     "evacuation bag"
@@ -16,7 +16,9 @@
     "Separate prepacked items from the last-minute grab list",
     "Test weight, access, and the actual carry method",
     "Keep pets and children in the movement plan",
-    "Maintain, rehearse, and use it at the right moment"
+    "Maintain, rehearse, and use it at the right moment",
+    "Work through an illustrative carried load",
+    "Stage personal, vehicle and destination supplies separately"
   ],
   "tldr": "Pack a portable bag with the essentials you need to leave quickly: medicines, documents, contact information, water, food, light, phone power and weather-appropriate clothing. Keep it light enough to carry and a separate grab list for items used every day.",
   "steps": [
@@ -39,7 +41,7 @@
   ],
   "next": "Keep bags accessible and plan for pets, infants and mobility equipment.",
   "watch": "Never delay an urgent evacuation to finish packing.",
-  "sources": "go-bag-expanded",
+  "sources": "go-bag-full-20261007",
   "shopping": [
     "Portable bag",
     "Water and ready-to-eat snacks",
@@ -66,9 +68,9 @@
     ]
   ],
   "scope": "Civilian educational guidance. Linked references may use U.S. emergency systems; local warning methods, laws, services and conditions differ.",
-  "source_checked": "2026-10-04",
+  "source_checked": "2026-10-07",
   "published": "2026-10-02",
-  "next_review": "2027-04-04",
+  "next_review": "2027-01-07",
   "sections": [
     {
       "heading": "Pack for a destination, not an imagined wilderness",
@@ -296,6 +298,134 @@
         }
       ],
       "references": []
+    },
+    {
+      "heading": "Work through an illustrative carried load",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a scale and one unit of mass to make the packing decision visible. The example below is an invented adult load for a journey to a confirmed indoor destination. It is not a prescribed kit, a complete three-day water supply or a suitable load for every person. Actual medicines, assistive equipment, clothing, containers and food may change it substantially."
+        },
+        {
+          "type": "table",
+          "caption": "Illustrative load; replace every entry with your measured mass",
+          "columns": [
+            "Group",
+            "Example mass"
+          ],
+          "rows": [
+            [
+              "Empty bag",
+              "0.80 kg"
+            ],
+            [
+              "2 litres drinking water",
+              "Approximately 2.00 kg"
+            ],
+            [
+              "Water containers",
+              "0.20 kg"
+            ],
+            [
+              "Ready-to-eat food",
+              "0.50 kg"
+            ],
+            [
+              "Weather layers",
+              "0.80 kg"
+            ],
+            [
+              "Light, charging equipment and cables",
+              "0.45 kg"
+            ],
+            [
+              "Personal care essentials",
+              "0.35 kg"
+            ],
+            [
+              "Hygiene supplies",
+              "0.25 kg"
+            ],
+            [
+              "Contact/document pouch",
+              "0.10 kg"
+            ],
+            [
+              "Example total",
+              "5.45 kg"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The water arithmetic is the main lesson: about one kilogram per litre before the container. An additional litre adds about one kilogram. A U.S. gallon is approximately 3.785 litres, so three gallons are about 11.36 kilograms of water alone. CDC’s household reserve guidance therefore cannot simply be squeezed into every personal bag. Keep the reserve goal visible while planning transport and a verified next water source; reducing the carried portion does not reduce the person’s need."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weigh the packed bag, not merely the inventory. Include the bag itself, filled containers, daily-use additions and anything clipped outside. Test the actual stairs and carry method in calm conditions with a helper where needed. Record the result and choose the load around the person who must use it."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Stored emergency water",
+          "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Stage personal, vehicle and destination supplies separately",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Three different places for different loads",
+          "columns": [
+            "Stage",
+            "What belongs there",
+            "Failure question"
+          ],
+          "rows": [
+            [
+              "On the person / personal bag",
+              "Care essentials, contact card, light, weather layer, manageable water and phone power.",
+              "If separated from the vehicle, can this person still manage the next immediate needs?"
+            ],
+            [
+              "Vehicle reserve",
+              "Additional water, clothing and shared supplies secured appropriately for the trip.",
+              "If the vehicle becomes unavailable, which essentials remain personally accessible?"
+            ],
+            [
+              "Confirmed destination",
+              "Host-agreed spare supplies or known services.",
+              "What changes if the destination cannot be reached or accepted?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Avoid the two extremes: putting every reserve into a backpack, or putting every useful item into the vehicle. Pack the personal core first, then document what the vehicle adds. A shared pouch should have a named carrier; otherwise everyone may assume another bag contains it. Keep materials subject to temperature limits in suitable storage rather than assuming a parked vehicle is a permanent cache."
+        },
+        {
+          "type": "paragraph",
+          "text": "Before departure, count people, care equipment, bags and seats together. Take the accessible personal core even for a short drive. For a planned move to family, agree what the host can actually supply, such as bedding or a suitable meal, and keep a fallback for a changed arrangement. Reassess at each transfer: vehicle to waiting room, waiting room to transport, transport to destination."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "Red Cross · Kit supplies",
+              "url": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html",
+              "description": "Use the source checklist to identify needs, then measure and distribute the actual household load."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Red Cross · Kit supplies",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+        ]
+      ]
     }
   ]
 }

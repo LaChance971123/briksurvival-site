@@ -4,10 +4,10 @@
   "category": "field-skills",
   "subcategory": "Survival priorities",
   "content_type": "Field guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-07",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [
     "SERE",
     "survival priorities"
@@ -15,7 +15,14 @@
   "keywords": [
     "Survival priorities",
     "SERE",
-    "survival priorities"
+    "survival priorities",
+    "What “SERE-inspired” means here",
+    "Priorities change with conditions",
+    "Use a short assessment loop",
+    "Make stay-or-move decisions explicit",
+    "Protect the weather and water systems",
+    "Organize people, communications and energy",
+    "Practice a five-minute civilian scenario"
   ],
   "tldr": "Use preparation, composure and simple priorities to prevent a bad situation from getting worse: avoid immediate hazards, stabilize your location, protect against weather, manage water, and make yourself findable.",
   "steps": [
@@ -37,25 +44,315 @@
     ]
   ],
   "sections": [
-    [
-      "What “SERE-inspired” means here",
-      "This civilian guide uses preparation and survival decision-making, not military evasion, resistance or escape training. It is not certification and does not teach concealment from rescuers or confrontation. A civilian objective is to avoid harm, remain accountable and return to a safe place."
-    ],
-    [
-      "Priorities change with conditions",
-      "There is no universal countdown that makes a fixed survival rule correct. Cold rain, extreme heat, injury, water supply, daylight and the ability to reach safe shelter alter what matters first. Reassess after each action. A task that consumes more energy, daylight or water than it saves may be the wrong task."
-    ]
+    {
+      "heading": "What “SERE-inspired” means here",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This civilian guide uses preparation, composure and resource management from the broad survival idea. It does not teach military evasion, resistance or escape from capture. The useful everyday goal is to prevent a small outdoor problem from growing: recognize what changed, keep people together, use the equipment you brought and preserve a workable return or rescue plan."
+        },
+        {
+          "type": "paragraph",
+          "text": "Think of survival competence as a set of ordinary tasks. Can you describe your location, protect a dry layer, find the personal light, open the food and explain when the group turns back? A dramatic skill is less useful if those basics remain inaccessible in the bottom of a bag. Begin with a supported trip and equipment the actual group can use."
+        },
+        {
+          "type": "paragraph",
+          "text": "Separate preparation from emergency action. At home, resolve equipment and route gaps. On a trip, notice deteriorating conditions early. In an emergency, prioritize the immediate needs and communicate the facts. None of those stages requires testing hunger, dehydration or exposure to prove resilience."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Priorities change with conditions",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Changing-priority scenarios; an editorial decision aid",
+          "columns": [
+            "Situation",
+            "First useful question",
+            "Next practical focus"
+          ],
+          "rows": [
+            [
+              "Wet, windy delay",
+              "Is the current site hazardous, and who needs urgent assistance?",
+              "Use appropriate weather protection and ground insulation, then organize communication and supplies."
+            ],
+            [
+              "Hot exposed wait",
+              "Can the group reach a nearby suitable shaded position without an unverified journey?",
+              "Reduce avoidable exertion, manage available drinking water and reassess the trip."
+            ],
+            [
+              "Lost with adequate equipment",
+              "Is the site suitable for remaining findable?",
+              "Establish the location information, communicate and organize the waiting system."
+            ],
+            [
+              "Injury or serious illness",
+              "What immediate assistance is needed within the group’s training?",
+              "Seek urgent help, share location and avoid adding an unsafe improvised evacuation."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The rows are different starting conditions, not a fixed numbered hierarchy. People, weather and location can change simultaneously. Give the next task to a specific person and check it is completed. “We should get warmer” is vague; “bring the protected dry layers to this waiting area” is a task someone can perform."
+        },
+        {
+          "type": "paragraph",
+          "text": "Avoid folklore clocks that imply every person has the same time without shelter or water. The group’s actual condition and environment matter. If a person has concerning symptoms or the situation exceeds your training, seek appropriate urgent assistance while continuing achievable protection."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Hike smart",
+          "https://www.nps.gov/articles/hiking-safety.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Use a short assessment loop",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Pause unnecessary movement and make a quick factual inventory: who is here, what changed, what is immediately hazardous, what equipment is accessible and what location is known. Do not convert uncertainty into a confident route because the group wants a plan quickly. Identify the last confirmed fact and the first unresolved question."
+        },
+        {
+          "type": "flow",
+          "caption": "Repeat after a meaningful change",
+          "items": [
+            [
+              "People",
+              "Count everyone, identify urgent needs and check who can carry or assist."
+            ],
+            [
+              "Place",
+              "Assess the current site and record the known location or last reliable landmark."
+            ],
+            [
+              "Protection",
+              "Use suitable weather, ground and care equipment already available."
+            ],
+            [
+              "Contact",
+              "Send the location and situation through the available appropriate channel."
+            ],
+            [
+              "Review",
+              "Reassess when weather, condition, supplies or reliable information changes."
+            ]
+          ],
+          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the loop short enough to use without paperwork. A notebook entry can include time, location confidence, the action taken and next question. Do not make everyone perform the same task at once. One person can organize layers while another prepares a help message, provided the group remains coordinated and the task is within their ability."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Make stay-or-move decisions explicit",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When lost, NPS advises staying put unless there is an immediate threat to life. That does not mean ignoring rising water or falling branches. It means avoiding speculative movement that changes the reported position and expands the problem. A necessary move should have a clear protective purpose and a new location record."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a planned trip that has not yet become a lost-person emergency, an early return can remain a practical option. Use the known route, current conditions and the group’s ability; do not substitute an unplanned shortcut. If unsure whether the route is still known, treat that uncertainty as a reason to reassess rather than pressing forward."
+        },
+        {
+          "type": "table",
+          "caption": "A movement decision record",
+          "columns": [
+            "Question",
+            "Useful answer"
+          ],
+          "rows": [
+            [
+              "Why move?",
+              "A named immediate hazard or a confirmed practical return option."
+            ],
+            [
+              "Where?",
+              "A specific nearby safer position or known destination, not simply “downhill.”"
+            ],
+            [
+              "Who?",
+              "The whole group and its care/mobility needs."
+            ],
+            [
+              "Contact update?",
+              "New location and intention communicated if possible."
+            ]
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Protect the weather and water systems",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Treat the clothing, shelter and sleep equipment as one system. Keep the dry items protected, provide suitable ground insulation and know the equipment’s limits before the trip. If the system is unsuitable for anticipated conditions, change the trip or arrange a suitable alternative while you still have the opportunity."
+        },
+        {
+          "type": "paragraph",
+          "text": "Water planning includes the amount carried, expected activity, verified sources and the time needed for the actual treatment method. A map symbol does not confirm a source is available today. The linked NPS treatment guidance distinguishes filtration and disinfection; the product instructions and contamination hazard matter. Do not assume a clear stream is safe or that every treatment process addresses chemical contamination."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use familiar ready-to-eat food so a delayed day does not create an improvised cooking problem. Check package access and individual dietary needs at home. A full bag is not enough if the person cannot open the bottle or reach a protected layer. Keep essential personal care alongside these systems rather than treating it as an optional extra."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Dry shelter system",
+              "url": "/guides/tarp-shelter/"
+            },
+            {
+              "label": "No-fire camp planning",
+              "url": "/guides/bushcraft-no-fire/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Water treatment",
+          "https://www.nps.gov/articles/2wayspurifywater.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Organize people, communications and energy",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use short instructions and ask the person to repeat the important detail. Assign tasks by ability and keep support with anyone needing assistance. A child can locate their own light or contact card without becoming responsible for navigation. A tired adult may need a simpler role than the one agreed at the start."
+        },
+        {
+          "type": "paragraph",
+          "text": "Prepare one concise message with current location or last confirmed landmark, number of people, urgent needs, immediate hazards and intended action. Distinguish an observation from a guess. “We cannot identify the junction” is more useful than inventing a trail name. Record what was sent and whether any response actually arrived."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the communication equipment’s instructions to manage power and follow-up. Do not exhaust the group with repetitive shouting or uncertain signal-seeking walks. Keep supplies organized for a possible extended delay, and revisit the people’s condition after any meaningful change. Rescue timing depends on real conditions and resources; no equipment guarantees a quick arrival."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Practice a five-minute civilian scenario",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose an ordinary setting with easy support and all essential supplies available. For example: a planned day walk runs late, rain starts and the phone has no service. Each participant explains the first three practical actions using the equipment actually present."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "State the scenario and keep real help available.",
+            "Identify the known location and immediate site hazards.",
+            "Locate the dry/weather equipment, water and personal lights.",
+            "Choose a conditional stay/return action with a clear reason.",
+            "Draft the factual help message without transmitting an emergency alert.",
+            "Record one equipment or communication gap and correct it before the next trip."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Repeat with a different starting condition, such as a hot delay or an unavailable water source. The exercise should expose a weak assumption rather than reward dramatic improvisation. Stop practice if anyone becomes distressed or the real conditions change. Expand to practical field sessions with suitable instruction and a modest route."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "NPS · Ten essentials",
+              "url": "https://www.nps.gov/articles/10essentials.htm",
+              "description": "Use the systems checklist to identify equipment gaps before practice."
+            },
+            {
+              "label": "NPS · Outdoor emergency plan",
+              "url": "https://www.nps.gov/articles/gtgemergencyplan.htm",
+              "description": "Read the official lost/injured-person framework and adapt the emergency plan to the actual trip."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ],
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    }
   ],
   "without_help": "Focus on achievable protective actions with existing equipment. Set a simple review cycle: check people, weather, water, location and signaling again after a change. Avoid separating the group or making speculative journeys.",
   "household": "Distribute warmth, water, light and signaling equipment so that dependents can use them. Give one calm instruction at a time and check whether everyone understands it.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "pack_now": "An appropriate weather/sleep system, safe water and familiar treatment equipment, ready-to-eat food, navigation, personal light and signal, phone power and a trip-contact card. Keep essential care immediately accessible.",
   "next": "At home, run a five-minute scenario: unexpected delay, cold rain and no phone service. Identify your first three safe actions using the equipment you actually own.",
   "watch": "Survival articles cannot replace outdoor training or a suitable trip plan. Do not practice deprivation, dangerous exposure or escape scenarios to test resilience.",
-  "sources": "outdoor-skills",
+  "sources": "survival-priorities-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
-  "decisions": [],
-  "faqs": [],
+  "decisions": [
+    [
+      "Immediate hazard at the site?",
+      "Reach a nearby safer position before organizing a waiting plan."
+    ],
+    [
+      "Lost at a suitable site?",
+      "Stay findable and use communications rather than extending an unverified journey."
+    ],
+    [
+      "Weather protection is inadequate?",
+      "Use the early-return or suitable-shelter option while it remains feasible."
+    ],
+    [
+      "A necessary supply is uncertain?",
+      "Reassess the trip before the group depends on that supply."
+    ]
+  ],
+  "faqs": [
+    [
+      "Is there a fixed survival priority order?",
+      "No. An immediate injury, wet cold, severe heat or unsafe site can change what needs attention first. Reassess the people and conditions."
+    ],
+    [
+      "Should practice include going without water or shelter?",
+      "No. Keep real help and essential supplies available. Practice decisions and equipment, not dangerous deprivation."
+    ]
+  ],
   "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
   "related": [
     "lost-outdoors",

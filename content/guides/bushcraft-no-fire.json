@@ -4,10 +4,10 @@
   "category": "field-skills",
   "subcategory": "Bushcraft",
   "content_type": "Field guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-07",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [
     "campfire alternative",
     "fireless survival"
@@ -15,7 +15,14 @@
   "keywords": [
     "Bushcraft",
     "campfire alternative",
-    "fireless survival"
+    "fireless survival",
+    "A fire-independent campsite",
+    "Cold conditions need honest limits",
+    "Build meals from what can be eaten as packed",
+    "Resolve drinking water without assuming boiling",
+    "Give light and power their own plan",
+    "Keep combustion out of the shelter fallback",
+    "Rehearse one ordinary evening without lighting anything"
   ],
   "tldr": "Plan a trip that remains safe without a fire. Shelter, insulation, ready-to-eat food, lighting and early return options are more dependable than assuming you can light a campfire in any conditions.",
   "steps": [
@@ -37,25 +44,302 @@
     ]
   ],
   "sections": [
-    [
-      "A fire-independent campsite",
-      "Pitch shelter before dark, protect insulation, keep food organized and choose a site away from runoff and overhead hazards. Give each person their own light so a shared lamp does not leave someone unable to move safely. Arrange the campsite so critical equipment can be found in the dark."
-    ],
-    [
-      "Cold conditions need honest limits",
-      "Food and exercise do not compensate for inadequate sleeping insulation or severe wet exposure. A cold-weather trip requires equipment and experience suited to conditions. Turn back or reach a safer shelter early if the system is insufficient; do not keep pushing because a hoped-for fire might fix it later."
-    ]
+    {
+      "heading": "A fire-independent campsite",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A fire-independent plan supplies warmth, shelter, food and light directly. It can be useful where fires are restricted, undesirable or impractical. The objective is a workable trip without combustion, rather than a failed campfire plan patched with optimism."
+        },
+        {
+          "type": "table",
+          "caption": "Replace the task, not just the flame",
+          "columns": [
+            "Need",
+            "Fire-independent system"
+          ],
+          "rows": [
+            [
+              "Weather protection",
+              "Suitable shelter, ground protection and weather layers."
+            ],
+            [
+              "Sleep",
+              "Appropriate pad and sleeping insulation kept dry."
+            ],
+            [
+              "Food",
+              "Familiar ready-to-eat meals with necessary opener and utensils."
+            ],
+            [
+              "Light",
+              "Personal lights and compatible spare power."
+            ],
+            [
+              "Drinking water",
+              "Carried safe water and a suitable non-boiling treatment method if required."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Check the complete system before departure. One missing task can undermine the rest: food that needs heat, a water plan dependent on boiling or an inadequate sleeping arrangement. If a task cannot be supported without combustion, choose a different trip or resolve the equipment in an appropriate permitted setting."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Cold conditions need honest limits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The roof, ground insulation, sleeping insulation and clothing serve different roles. Choose them for the actual conditions and people. A protected spare layer is useful only if it remains dry and accessible; an emergency blanket does not automatically replace a complete sleeping system."
+        },
+        {
+          "type": "paragraph",
+          "text": "Before the trip, identify the condition that triggers a return or suitable alternative shelter. Use the maker’s equipment information and the group’s actual experience rather than a universal temperature claim. If the equipment is insufficient, change the trip while conditions are ordinary. A hoped-for campfire is not an independent backup."
+        },
+        {
+          "type": "paragraph",
+          "text": "During a delay, organize the suitable weather and sleep equipment promptly while maintaining access and ventilation appropriate to the product. Do not create a real cold-exposure exercise to test it. If the person’s condition becomes concerning or the situation exceeds your ability, seek appropriate urgent assistance and continue achievable protection."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Hike smart",
+          "https://www.nps.gov/articles/hiking-safety.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Build meals from what can be eaten as packed",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Write a sample day of food for each person. Check the label for storage, preparation and handling after opening. Include dietary requirements, texture needs and package access. Avoid selecting a meal merely because the package says camping; some products need substantial hot water or cooking."
+        },
+        {
+          "type": "table",
+          "caption": "Editorial two-day menu-count example",
+          "columns": [
+            "Group",
+            "Count",
+            "Check"
+          ],
+          "rows": [
+            [
+              "Main meals",
+              "2 days × 3 meals = 6 personal meal portions.",
+              "This is an organizational example, not a nutritional prescription."
+            ],
+            [
+              "Snacks",
+              "A separately planned familiar amount.",
+              "Do not count it as an invisible substitute for meals or necessary care."
+            ],
+            [
+              "Openers and utensils",
+              "What the selected packages require.",
+              "The person can open and eat the actual food."
+            ],
+            [
+              "Waste storage",
+              "Enough suitable containment for used packaging.",
+              "Follow site rules and wildlife-related food/waste requirements."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For a group, label what is shared and who carries it. Keep emergency delay food distinct from the planned meals. Choose portions that do not produce leftovers you cannot safely store. Try the packages at home so an unfamiliar seal or utensil does not become the first field task."
+        }
+      ],
+      "references": [
+        [
+          "Red Cross · Kit supplies",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Resolve drinking water without assuming boiling",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A no-fire trip must make its water method explicit. Carry appropriate safe drinking water and verify any planned natural source. Read the instructions for the selected filter or disinfectant and understand what it addresses. NPS distinguishes filtration, chemical disinfection and other methods; treatment needs time and correct use."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep clean and untreated containers organized so their purposes are clear. Do not improvise contact times or concentrations from a different product. If a source is unavailable or the contamination hazard exceeds the method, use the known alternate or change the trip rather than treating appearance as proof."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the planning record, note the carried volume, the source’s current confirmation, the treatment method, consumables, time and any dependence on battery power. Add individual care needs. This page does not prescribe a fixed outdoor water quantity for every climate or activity; the plan must match the real conditions and people."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Water treatment",
+              "url": "/guides/water-purification/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Water treatment methods",
+          "https://www.nps.gov/articles/2wayspurifywater.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Give light and power their own plan",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Provide an appropriate personal light so one person’s departure does not leave the rest without usable illumination. Keep the light accessible and test its controls before the trip. Record compatible spare power and how the actual equipment indicates a low battery."
+        },
+        {
+          "type": "paragraph",
+          "text": "Separate the tasks: moving around the camp, locating care equipment, reading a map and maintaining communications. A single bright shared lamp may not serve all of them at once. Check that the person can use the light with expected gloves, glasses or dexterity needs, and avoid arrangements that force another person to hold it continually."
+        },
+        {
+          "type": "paragraph",
+          "text": "Read manufacturer runtime conditions rather than treating the largest advertised figure as a promise. A phone battery and a torch battery may require different charging or storage. Test the complete cable and power arrangement at home. Keep a suitable backup for essential tasks and do not depend on burning material for light."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Keep combustion out of the shelter fallback",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Fuel-burning stoves, charcoal, lanterns and heaters can create carbon monoxide and fire hazards in an enclosure. CDC’s portable-appliance guidance supports keeping such combustion out of indoor or enclosed spaces. An open flap does not establish a safe improvised indoor cooking or heating arrangement."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not redefine no-fire as “a stove under the sleeping tarp.” If a separate permitted outdoor cooking system is required, follow the exact product instructions and land rules; that is a different plan with its own siting, fuel and care requirements. Keep the fire-independent food and sleep arrangements viable without it."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the group wants a warm meal for comfort, discuss whether a supported destination or different trip format meets that wish better. Equipment needs should be resolved before departure. During an actual delay, concentrate on the complete shelter, suitable clothing, ready food and accurate communications instead of inventing a heat source."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Carbon monoxide",
+          "https://www.cdc.gov/carbon-monoxide/about/index.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Rehearse one ordinary evening without lighting anything",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a permitted supported setting and keep real help, utilities and essential care available. Set up the intended shelter system, open a planned meal, locate personal lights and explain the water method. The practice should reveal whether the system works as packed."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Inventory each task normally associated with a fire.",
+            "Name the direct equipment or ready-to-use supply replacing it.",
+            "Read the instructions and choose a suitable practice site.",
+            "Set up, eat and organize the evening in ordinary conditions.",
+            "Check the early-return option before darkness or fatigue adds consequence.",
+            "Pack, inspect, account for waste and record one correction."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Include the actual people and care requirements. A solo trial does not test whether a helper can support a dependent while handling the bags. Repeat the part that failed after correcting it. Keep the learning goal modest: a complete usable routine, not a demonstration that everyone can tolerate discomfort."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "NPS · Water treatment methods",
+              "url": "https://www.nps.gov/articles/2wayspurifywater.htm",
+              "description": "Check non-boiling treatment distinctions and follow the chosen product’s instructions."
+            },
+            {
+              "label": "CDC · Carbon monoxide",
+              "url": "https://www.cdc.gov/carbon-monoxide/about/index.html",
+              "description": "Read the official combustion and portable-appliance warning."
+            },
+            {
+              "label": "NPS · Leave no trace",
+              "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+              "description": "Review site impact and follow current local restrictions."
+            }
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Complete shelter system",
+              "url": "/guides/tarp-shelter/"
+            },
+            {
+              "label": "Trip accountability",
+              "url": "/guides/outdoor-trip-plan/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Leave no trace",
+          "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm"
+        ]
+      ]
+    }
   ],
   "without_help": "Use dry insulation and shelter you already have, reduce unnecessary exposure and choose the safe return plan. Do not search for fuel through dangerous terrain or use a cooking appliance inside a shelter.",
   "household": "Include ready-to-eat food that suits allergies, chewing needs and children’s preferences. Check that everyone has a light and can access their warm clothing.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "pack_now": "A suitable complete shelter/sleep system, protected weather layers, ready-to-eat meals and openers, safe water with familiar treatment equipment, personal lights and spare power, care essentials and a known return plan.",
   "next": "Prepare a no-fire meal and shelter routine during a short daylight practice session close to home.",
   "watch": "Never use charcoal, fuel-burning heaters or stoves inside tents or improvised enclosed shelters. A campfire is not an essential-care or overnight heating guarantee.",
-  "sources": "outdoor-skills",
+  "sources": "bushcraft-no-fire-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
-  "decisions": [],
-  "faqs": [],
+  "decisions": [
+    [
+      "The trip requires a fire to stay viable?",
+      "Change the equipment, destination or conditions before departure."
+    ],
+    [
+      "The food needs heat or unavailable water?",
+      "Choose a suitable ready-to-eat alternative and check the package."
+    ],
+    [
+      "The weather exceeds the system?",
+      "Use the early-return or suitable-shelter alternative while practical."
+    ]
+  ],
+  "faqs": [
+    [
+      "Does no-fire mean no campfire but an indoor stove is fine?",
+      "No. This plan works without combustion. Never use a fuel-burning appliance inside a tent or improvised shelter."
+    ],
+    [
+      "Can I choose ordinary food?",
+      "Yes. Use familiar food that is safe to store and eat as carried, matched to dietary needs and the trip. Include required openers and utensils."
+    ]
+  ],
   "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
   "related": [
     "tarp-shelter",
