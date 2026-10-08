@@ -4,10 +4,10 @@
   "category": "field-skills",
   "subcategory": "Survival priorities",
   "content_type": "Field guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-07",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [
     "distress signal",
     "rescue signal"
@@ -15,7 +15,14 @@
   "keywords": [
     "Survival priorities",
     "distress signal",
-    "rescue signal"
+    "rescue signal",
+    "Build a usable distress message",
+    "Equipment has limits",
+    "Make location information easy to interpret",
+    "Use signals without creating another hazard",
+    "Understand registration and acknowledgments",
+    "Keep a follow-up and waiting record",
+    "Practice routine functions, never a false emergency"
   ],
   "tldr": "Be easy to locate without creating a new hazard. Carry a whistle, light and suitable communications equipment, know your position, and keep signals distinct from routine activity.",
   "steps": [
@@ -37,25 +44,303 @@
     ]
   ],
   "sections": [
-    [
-      "Build a usable distress message",
-      "Practice saying: our location, what happened, how many people, immediate hazards, urgent needs and how to contact us. Read coordinates carefully and confirm the receiver understands them. A pin dropped on a map is useful only if it can be transmitted and opened by the recipient."
-    ],
-    [
-      "Equipment has limits",
-      "Satellite messengers and personal locator beacons have different subscriptions, activation procedures and capabilities. Learn the exact device before carrying it. Do not assume every device supports two-way replies or operates under tree cover, indoors or with a depleted battery. A whistle is inexpensive but cannot guarantee anyone is within hearing range."
-    ]
+    {
+      "heading": "Build a usable distress message",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A help message should reduce uncertainty. Give the current location or last confirmed landmark, what happened, number of people, urgent needs, immediate hazards and a way to contact you. Say whether the position is confirmed or estimated and whether the group can remain there."
+        },
+        {
+          "type": "table",
+          "caption": "An editorial message template",
+          "columns": [
+            "Field",
+            "Practice wording"
+          ],
+          "rows": [
+            [
+              "Location",
+              "“At [confirmed trail/junction or coordinates with format]; position [confirmed/estimated].”"
+            ],
+            [
+              "People",
+              "“[Number] people; [brief urgent needs or condition].”"
+            ],
+            [
+              "Event",
+              "“[Lost, injured or delayed]; [what changed].”"
+            ],
+            [
+              "Hazards",
+              "“[Relevant weather, water, terrain or exposure].”"
+            ],
+            [
+              "Intention",
+              "“We intend to [remain here / move only for immediate safety to stated place].”"
+            ],
+            [
+              "Contact",
+              "“Reply through [available device/channel]; battery [relevant condition].”"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Read numbers slowly and ask the recipient to repeat the location back when possible. Do not silently mix decimal degrees with degrees-and-minutes notation. Use the format shown by the device and state it. A dropped pin can supplement the message but may not open on the receiving system. Keep the message accurate rather than filling every field with an assumption."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Equipment has limits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Distinguish a phone, a satellite messaging product and a 406 MHz personal locator beacon. A phone depends on its available service. A selected messenger’s routine messages, emergency service, subscription and reply functions depend on the product and active service. NOAA describes PLBs as portable 406 MHz distress beacons; they are not ordinary two-way texting devices."
+        },
+        {
+          "type": "table",
+          "caption": "Device-selection questions",
+          "columns": [
+            "Device",
+            "Question to resolve before departure"
+          ],
+          "rows": [
+            [
+              "Phone",
+              "Can the area be contacted, and can the map/location information be accessed without reception?"
+            ],
+            [
+              "Satellite messenger",
+              "What active service, sky view, power, message and SOS procedures does this exact model require?"
+            ],
+            [
+              "406 MHz PLB",
+              "Is it correctly registered, within its battery/service requirements and accessible to the user?"
+            ],
+            [
+              "Whistle / light / visible material",
+              "Can the person reach and use it, and is anyone likely to be close enough to notice?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Learn the selected device while support is readily available. Record the exact instructions and ordinary test method. Do not assume every product permits replies, tracking or user-replaceable batteries. A single shared device may be unavailable to another person if the group separates; plan personal lights and simple signals accordingly."
+        }
+      ],
+      "references": [
+        [
+          "NOAA · 406 MHz distress beacons",
+          "https://www.sarsat.noaa.gov/emergency-406-beacons/"
+        ]
+      ]
+    },
+    {
+      "heading": "Make location information easy to interpret",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before the trip, find the location display and note its coordinate format. Check the units and map information required for the area with appropriate instruction. Keep the local trail names, access point and intended route on a written card. During an actual request, state the coordinates as displayed and identify whether the location is current or the last reliable position."
+        },
+        {
+          "type": "paragraph",
+          "text": "A good location description adds context without pretending to be more precise than the evidence. “Near the signed junction last seen at [time]” is different from “at the junction now.” A saved screenshot may be old. A map dot may need checking against visible landmarks. If uncertainty remains, communicate it explicitly and keep the device available for follow-up."
+        },
+        {
+          "type": "paragraph",
+          "text": "Practice the read-back with another person indoors: one reads a non-emergency example and the other writes it down, including format and hemisphere or sign. Compare the result. Do not send practice coordinates to an emergency service or imply that an invented example is a live request."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Use signals without creating another hazard",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a suitable position and equipment you can operate from it. A whistle can reduce the need for sustained shouting; a personal light or visible material can help someone notice the group. Their usefulness depends on distance, conditions and whether someone is actually looking or listening."
+        },
+        {
+          "type": "paragraph",
+          "text": "Plan visibility with the rescue task in mind. Bright clothing or a visible signal can be helpful when a person needs locating, even if their ordinary travel preference is discreet clothing. Do not climb unstable terrain, approach a hazardous road edge or wander for a better angle merely to improve a signal. Keep the group and essential equipment together."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the device’s instructions and any responder instructions received. Avoid uncontrolled fire, smoke or aircraft interference; never point a laser at an aircraft. Local signaling customs and equipment differ, so learn the guidance relevant to the activity before the trip. No repeated pattern guarantees that a nearby person recognizes a distress request."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ],
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Understand registration and acknowledgments",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For U.S.-coded 406 MHz beacons, NOAA requires registration and current owner/contact information. It also describes a two-year registration renewal cycle. Confirm the beacon identity against the registration confirmation and update changes. A non-U.S.-coded beacon uses its applicable registration authority; NOAA’s database is not the destination for every country code."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a beacon with Return Link Service, NOAA says the indication confirms the distress alert was received and localized by the system and forwarded for action. It does not mean a rescue has been organized or launched. Continue the practical weather, care and location plan rather than using the acknowledgment as an arrival estimate."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep registration administration separate from the emergency procedure. At home, check contacts, service dates and the authorized self-test. In a real emergency, use the exact activation instructions and any appropriate follow-up received. If an alert is accidentally activated, follow the manufacturer and relevant authority’s cancellation/reporting instructions rather than assuming silence resolves it."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "NOAA · Beacon registration",
+              "url": "https://www.sarsat.noaa.gov/register-your-beacon/",
+              "description": "Check the applicable U.S.-coded beacon registration and renewal requirements."
+            },
+            {
+              "label": "NOAA · 406 MHz distress beacons",
+              "url": "https://www.sarsat.noaa.gov/emergency-406-beacons/",
+              "description": "Compare distress-beacon types and read the exact meaning of a Return Link Service indication."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NOAA · Beacon registration",
+          "https://www.sarsat.noaa.gov/register-your-beacon/"
+        ],
+        [
+          "NOAA · 406 MHz distress beacons",
+          "https://www.sarsat.noaa.gov/emergency-406-beacons/"
+        ]
+      ]
+    },
+    {
+      "heading": "Keep a follow-up and waiting record",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Write down the time, position, channel used, message sent and response received. Separate “attempted,” “sent” and “acknowledged” according to what the device actually reports. A spinning icon or saved draft does not establish that someone has the message."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the group must move because of an immediate hazard, record and communicate the new position where possible. Keep the reason for moving clear. Do not update a message with an uncertain destination and then travel elsewhere without explanation. Make the device accessible to the responsible person instead of burying it in a packed shelter bag."
+        },
+        {
+          "type": "paragraph",
+          "text": "Prepare for delay while keeping contact possible: weather protection, essential care, drinking water, food and personal lights. Review the people and the site as conditions change. Avoid exhausting batteries through unplanned repeated attempts, and follow the selected device’s power and use instructions. If communication remains unavailable, the trip contact’s overdue plan and suitable local signaling still matter."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Practice routine functions, never a false emergency",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Run a supported check before traveling. Each user should locate the signal equipment, read the device instructions and explain the ordinary test boundary. Use a designated self-test or routine message only where the maker permits it."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Find the location screen and identify the format.",
+            "Read a practice location aloud and check the read-back.",
+            "Locate the whistle, light and visible material without emptying the bag.",
+            "Review beacon registration or messenger service and battery requirements.",
+            "Send only an ordinary permitted message to a consenting trusted contact.",
+            "Record the result and correct any access or understanding gap."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Include the person with the least familiarity and any sensory or dexterity needs. An emergency-only device can remain useful without routine messaging, but everyone should understand that distinction. Keep the trip plan with the trusted contact and revise it when the route or timing changes."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Trip accountability",
+              "url": "/guides/outdoor-trip-plan/"
+            },
+            {
+              "label": "Lost outdoors",
+              "url": "/guides/lost-outdoors/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NOAA · Beacon registration",
+          "https://www.sarsat.noaa.gov/register-your-beacon/"
+        ],
+        [
+          "NPS · Outdoor emergency plan",
+          "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        ]
+      ]
+    }
   ],
   "without_help": "Use the trip plan and remain at a safe known location if lost. Continue safe signaling without exhausting yourself or starting a fire that could escape control.",
   "household": "Give every person their own whistle and light when appropriate. Teach children what the agreed signal means and how to respond without walking toward unknown voices.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "pack_now": "An accessible whistle and personal light, suitable visible material, phone with compatible power, a location/contact card and any selected beacon or messenger with its current instructions and registration/service checks.",
   "next": "Practice reading your location aloud and checking a device battery. Test routine functions rather than triggering an emergency alert.",
   "watch": "No signal guarantees timely rescue. Avoid unsafe climbs, roadside exposure, uncontrolled smoke or interference with aircraft.",
-  "sources": "outdoor-skills",
+  "sources": "survival-signaling-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
-  "decisions": [],
-  "faqs": [],
+  "decisions": [
+    [
+      "You can send a message?",
+      "Send location and situation first, then confirm the intended action and follow-up."
+    ],
+    [
+      "Only local visual/audible signaling is available?",
+      "Use it from a suitable safe position without assuming anyone is within range."
+    ],
+    [
+      "A beacon acknowledgment appears?",
+      "Interpret the exact feature correctly; receipt is not a rescue-arrival promise."
+    ]
+  ],
+  "faqs": [
+    [
+      "Does a return-link acknowledgment mean rescue has launched?",
+      "No. NOAA explains that RLS confirms the alert was received, located and routed; it does not confirm that a rescue has been organized or launched."
+    ],
+    [
+      "Can I practice the SOS function?",
+      "Use only the manufacturer’s designated test or routine functions. Never create a real distress alert as a practice exercise."
+    ],
+    [
+      "Is a location pin enough?",
+      "Include readable coordinates with their format when available, a useful landmark and access information; a pin is useful only if the recipient can receive and interpret it."
+    ]
+  ],
   "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
   "related": [
     "outdoor-trip-plan",

@@ -4,13 +4,15 @@
   "category": "firearms-tools",
   "subcategory": "Secure storage",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-07",
   "published": "2026-10-03",
-  "source_checked": "2026-10-04",
-  "next_review": "2027-01-04",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [],
   "keywords": [
-    "Secure storage"
+    "Secure storage",
+    "Choose storage around the room and household",
+    "Keep a storage handover and maintenance record"
   ],
   "tldr": "Choose storage for three separate jobs: prevent unauthorized access, resist theft and protect condition. A cable lock, lockbox, cabinet and safe offer different levels of protection. Compare independent ratings, installation, humidity and backup access; a heavy enclosure or “fireproof” label is not a complete storage plan.",
   "steps": [
@@ -294,6 +296,83 @@
           "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
         ]
       ]
+    },
+    {
+      "heading": "Choose storage around the room and household",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Compare the installed arrangement, not just the advertised box. Measure the usable room, access path, door swing and actual interior space. Consider whether shelves, cases and other stored items reduce usable capacity. Plan an appropriate installation with the manufacturer and a qualified installer when structural attachment is involved; this guide does not supply anchoring or building-load specifications."
+        },
+        {
+          "type": "table",
+          "caption": "Storage selection worksheet",
+          "columns": [
+            "Constraint",
+            "Question to resolve"
+          ],
+          "rows": [
+            [
+              "Available space",
+              "Will the unit fit through the access route and open without blocking the household’s exit?"
+            ],
+            [
+              "Household access",
+              "Who can use it, who must not have access, and what changes when a visitor or caregiver arrives?"
+            ],
+            [
+              "Power and keys",
+              "What does the manufacturer specify for a depleted battery or unavailable key?"
+            ],
+            [
+              "Environment",
+              "What care and monitoring does this exact unit require in this room?"
+            ],
+            [
+              "Serviceability",
+              "Can the maker provide parts, instructions and support for the model?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A large cabinet can become inconvenient if normal household activity obstructs its door. A smaller unit may serve the real collection better when it has a suitable location and documented access controls. Review the plan when the household changes instead of assuming the purchase permanently settles the question."
+        }
+      ],
+      "references": [
+        [
+          "Project ChildSafe · Storage options",
+          "https://projectchildsafe.org/wp-content/uploads/2023/11/Benefits-Of-Lock-Box-One-Pager_V3.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Keep a storage handover and maintenance record",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use a private storage sheet to distinguish equipment facts from household arrangements. Record model, official instructions, service contact, required consumables and the review date. Keep recovery information in an appropriately protected place that the authorized owner can reach; do not store the only recovery route inside the locked unit."
+        },
+        {
+          "type": "paragraph",
+          "text": "For shared housing, agree who is responsible for checking access after visits, maintenance or a move. Discuss how necessary information is passed to an authorized helper during an illness or evacuation without casually sharing access with everyone. Document any professional service so a later problem is not guessed at from memory."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "After a move, reassess the new room and installation with the manufacturer rather than reusing assumptions from the old location.",
+            "When changing an access arrangement, follow the product instructions and check that the authorized person can still use it.",
+            "Keep proof of purchase and identifying records separate from public photographs and visible labels.",
+            "Treat a lost key, unreliable lock or unknown access history as a reason to resolve the storage arrangement promptly."
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Project ChildSafe · Responsible ownership",
+          "https://projectchildsafe.org/wp-content/uploads/2023/11/FirearmsResp15_small_1.pdf"
+        ]
+      ]
     }
   ],
   "without_help": "Keep equipment away from shared supplies and unauthorized people. Use a previously verified lawful storage alternative where available. Flood- or fire-exposed equipment needs assessment before reuse; do not assume the enclosure rating proves it is unaffected.",
@@ -301,7 +380,7 @@
   "pack_now": "Enclosure and lock manuals, installation record, authorized-access list, service information and a verified destination-storage plan. Keep backup keys and codes secure.",
   "next": "Check one enclosure: actual capacity, closure, permitted anchoring, backup-key security, lock service and interior moisture. Fix the weakest link before purchasing accessories.",
   "watch": "Keep firearms unloaded and locked with ammunition separately secured. Manufacturer-approved installation, controlled keys and periodic review are essential; neither concealment nor a child’s promise replaces storage.",
-  "sources": "firearm-storage",
+  "sources": "firearm-storage-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],

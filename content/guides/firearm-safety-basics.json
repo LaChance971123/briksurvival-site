@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Safe ownership",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-07",
   "published": "2026-10-03",
-  "source_checked": "2026-10-04",
-  "next_review": "2027-01-04",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [
     "guns",
     "weapons",
@@ -17,25 +17,27 @@
     "Safe ownership",
     "guns",
     "weapons",
-    "gun safety"
+    "gun safety",
+    "Turn the parts list into an ownership file",
+    "Cleaning is a product-specific workflow"
   ],
-  "tldr": "Learn the exact model’s parts, action type, chamber marking and controls before relying on it. The magazine and chamber are different locations; removing a magazine does not establish that a firearm is unloaded. Use the manufacturer’s manual for handling and maintenance, and recognize faults that require stopping use.",
+  "tldr": "Understand the exact model as an ownership system: action, chamber designation, fit, documentation and routine care. Use its official manual to distinguish owner maintenance from service work, and compare the complete equipment cost before adding accessories.",
   "steps": [
     [
-      "Identify the exact model",
-      "Record the manufacturer, model, chamber designation and applicable manual revision. Check for manufacturer safety notices."
+      "Make a model record",
+      "Record the exact model and chamber designation, manual revision, acquisition information and manufacturer support route."
     ],
     [
-      "Learn the terminology",
-      "Distinguish the chamber, magazine, barrel, muzzle, action and safety controls. Familiar names do not guarantee familiar controls."
+      "Choose a useful ownership context",
+      "List your sporting or range requirements, transport, storage, fit and annual cost."
     ],
     [
-      "Understand the action type",
-      "Bolt, lever, pump, break-action, revolver and semiautomatic describe different mechanisms. Single-action and double-action describe trigger functions."
+      "Plan routine care",
+      "Use the exact manual to select compatible cleaning products, permitted owner tasks and inspection intervals."
     ],
     [
-      "Set maintenance boundaries",
-      "Separate manufacturer-authorized routine care from repair, modification and fault diagnosis. Keep ammunition away from the maintenance area."
+      "Keep service records",
+      "Record care, unusual wear, storage exposure and manufacturer advice; service questions belong with the manufacturer or qualified professional."
     ]
   ],
   "sections": [
@@ -301,6 +303,126 @@
           "https://www.nssf.org/safety/rules-firearms-safety/"
         ]
       ]
+    },
+    {
+      "heading": "Turn the parts list into an ownership file",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Knowing component names becomes more useful when they connect to a particular rifle. Keep a short record with the model, complete chamber designation, manual edition, stock configuration as supplied, included accessories and support contact. Store serial numbers and purchase records privately; the bag label or public photograph does not need that information. For a used firearm, record which items are documented and which require clarification."
+        },
+        {
+          "type": "table",
+          "caption": "A model-specific care record",
+          "columns": [
+            "Field",
+            "Useful entry"
+          ],
+          "rows": [
+            [
+              "Manual",
+              "Exact model family, revision and where the relevant care section begins."
+            ],
+            [
+              "Consumables",
+              "Manufacturer-approved cleaning products and the surfaces each is intended for."
+            ],
+            [
+              "Routine observations",
+              "Date, weather/storage exposure, visible condition and care performed."
+            ],
+            [
+              "Service question",
+              "Observed symptom, when it appeared and any manufacturer response."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Photograph ordinary external condition for your private records without trying to diagnose internal faults from an image. A dated note such as “returned wet from transport; care completed according to manual” is more informative than “cleaned.” Keep service receipts with that record so a future owner or technician can distinguish observation from work actually performed."
+        }
+      ],
+      "references": [
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ]
+      ]
+    },
+    {
+      "heading": "Cleaning is a product-specific workflow",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A useful maintenance plan names the work area, compatible products, owner-authorized tasks and how the equipment returns to storage. Start with the manual’s maintenance section and product labels. Keep the instructions available while working; a video for a visually similar model may refer to a different mechanism or revision. This overview does not provide disassembly, adjustment, tuning or repair instructions."
+        },
+        {
+          "type": "flow",
+          "caption": "Organize a care session",
+          "items": [
+            [
+              "Identify",
+              "Confirm the model and applicable manual; list the tasks the owner is permitted to perform."
+            ],
+            [
+              "Prepare",
+              "Provide good light, ventilation appropriate to the product labels, a stable workspace and separate storage for ammunition."
+            ],
+            [
+              "Document",
+              "Record the work and observations, account for the equipment, and follow the manual’s return-to-storage requirements."
+            ]
+          ],
+          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "Buy cleaning equipment around the manual rather than a large universal kit. Consider which materials are compatible with finishes, which consumables can be replenished locally, and whether the included instructions are understandable. A maintenance log also supports decisions about recurring consumable cost and professional service. Do not establish a universal schedule such as a fixed number of shots: exposure, storage and model requirements differ."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "Ruger · Official instruction manual finder",
+              "url": "https://ruger.com/dataProcess/serialHistory/manuals.php",
+              "description": "Find the manual for the exact model; read the maintenance and service boundaries before buying a cleaning kit."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Two current manufacturer examples show why the exact version matters: Ruger publishes a separate American Rifle Generation II manual and a 10/22 Standard manual limited to model numbers 32000 and higher. Use the finder for another version. Read the relevant maintenance and service sections for the actual model rather than transferring a procedure between these examples."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "Ruger · American Rifle Generation II manual",
+              "url": "https://ruger-docs.s3.amazonaws.com/_manuals/RAR-GenerationII.pdf",
+              "description": "Official Generation II manual, revision 3/2026 R4. Match the exact firearm and use the manufacturer’s owner-care and service sections."
+            },
+            {
+              "label": "Ruger · 10/22 Standard manual: models 32000 and higher",
+              "url": "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf",
+              "description": "Official 6/2026 R1 manual for this model-number range. Other 10/22 versions use different manuals; resolve them with the official finder."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ],
+        [
+          "Ruger · American Rifle Generation II manual",
+          "https://ruger-docs.s3.amazonaws.com/_manuals/RAR-GenerationII.pdf"
+        ],
+        [
+          "Ruger · 10/22 Standard manual: models 32000 and higher",
+          "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf"
+        ]
+      ]
     }
   ],
   "without_help": "Keep the firearm secured and unused while you identify it and obtain its manual or inspection. Do not substitute a similar-looking model’s instructions or attempt a repair to make unfamiliar equipment usable.",
@@ -308,7 +430,7 @@
   "pack_now": "Exact manual, model and variant, chamber designation, safety-notice check date, maintenance record and manufacturer service contact.",
   "next": "Choose one model-specific question and find its answer in the manual or through qualified instruction. Start with controls, loaded-condition verification or routine care.",
   "watch": "Damage, suspected bore obstruction, abnormal operation, a manufacturer safety notice and flood or fire exposure require a pause and appropriate assessment. Do not continue sporting use to “see if it happens again.”",
-  "sources": "firearm-safety-basics",
+  "sources": "firearm-safety-basics-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],

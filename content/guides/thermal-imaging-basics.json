@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Observation equipment",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-07",
   "published": "2026-10-04",
-  "source_checked": "2026-10-04",
-  "next_review": "2027-01-04",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [
     "thermal",
     "thermals",
@@ -20,7 +20,9 @@
     "thermals",
     "thermal camera",
     "NETD",
-    "infrared camera"
+    "infrared camera",
+    "Choose observation or measurement deliberately",
+    "Compare purchase support and repeatability"
   ],
   "tldr": "Thermal cameras display infrared contrast, not a guaranteed identification or a view through walls. Compare the actual sensor, sensitivity and intended task, then verify any important finding by an appropriate independent method.",
   "steps": [
@@ -300,6 +302,84 @@
         }
       ],
       "references": []
+    },
+    {
+      "heading": "Choose observation or measurement deliberately",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Decide whether the job is to notice a thermal contrast or to make a documented temperature measurement. A household observer locating an unusual warm area and a professional measuring equipment are asking different questions. Compare the manufacturer’s intended use, calibration/service provisions, data export and the meaning of the displayed values. A colorful image alone is not a diagnosis."
+        },
+        {
+          "type": "table",
+          "caption": "A thermal observation note",
+          "columns": [
+            "Field",
+            "Why record it"
+          ],
+          "rows": [
+            [
+              "Object and location",
+              "Distinguishes the actual surface from an assumed source behind it."
+            ],
+            [
+              "Time and conditions",
+              "Allows a later comparison under similar circumstances."
+            ],
+            [
+              "View and settings",
+              "Explains why two images may look different."
+            ],
+            [
+              "Interpretation",
+              "Separates “this area looks different” from an unverified explanation."
+            ],
+            [
+              "Follow-up",
+              "Names the appropriate qualified inspection when a building or equipment fault is suspected."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, a warmer patch near a window is an observation. The next question is whether normal heating, sunlight, reflection, an open window or a building issue could explain it. Use comparable observations and professional assessment where the consequence matters. Do not dismantle electrical equipment or enter a hazardous area to improve an image."
+        }
+      ],
+      "references": [
+        [
+          "FLIR · Emissivity",
+          "https://www.flir.com/discover/professional-tools/how-does-emissivity-affect-thermal-imaging/"
+        ]
+      ]
+    },
+    {
+      "heading": "Compare purchase support and repeatability",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Ask whether the listed sensor, optics, field of view and power arrangement describe the exact version being sold. Record firmware/manual edition and the maker’s support route. If measurement is important, ask about calibration documentation and ongoing service cost. If observation is the purpose, prioritize usability and a repeatable view of the real task over a promotional distance claim."
+        },
+        {
+          "type": "paragraph",
+          "text": "A household trial can use the same familiar stationary scene at two times, with observations recorded separately. That exercise helps you understand how the image changes; it does not certify detection range or an ability to identify people. Keep recorded images private where they reveal another household’s routines. For building inspection, request a qualified interpretation rather than using a consumer image to declare a wall dry or wiring sound."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "FLIR · Thermal sensitivity",
+              "url": "https://www.flir.com/discover/security/perimeter-protection/the-importance-of-thermal-sensitivity-for-detection-accuracy/",
+              "description": "Understand what sensitivity describes and ask how the selected model’s published conditions relate to your ordinary observation task."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "FLIR · Thermal sensitivity",
+          "https://www.flir.com/discover/security/perimeter-protection/the-importance-of-thermal-sensitivity-for-detection-accuracy/"
+        ]
+      ]
     }
   ],
   "without_help": "If a pattern has no clear explanation, keep the original image and record the conditions rather than assigning it a cause. Use ordinary visible inspection where safe; obtain appropriate assessment for electrical, structural or moisture concerns.",
@@ -307,7 +387,7 @@
   "pack_now": "Model, native sensor resolution, measurement capability, battery requirements, manual, care limits and an inspection-log template.",
   "next": "Compare live images under the same conditions. Check field of view, native resolution, thermal sensitivity, focus and whether original measurement files can be exported.",
   "watch": "A hot-looking patch may be a reflection, and an observation imager may not measure temperature. Do not use a consumer camera to replace alarms or open hazardous equipment to investigate an image.",
-  "sources": "thermal-imaging-basics",
+  "sources": "thermal-imaging-basics-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],

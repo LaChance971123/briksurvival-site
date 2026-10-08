@@ -1,25 +1,33 @@
 {
   "slug": "knife-tool-safety",
-  "title": "Knives, saws and hand tools: useful skills, safe limits",
+  "title": "Knives, saws and hand tools: selection, care and practical use",
   "category": "firearms-tools",
   "subcategory": "Tools & training",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-07",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [
     "knife",
-    "weapons safety",
-    "tools"
+    "saw",
+    "hand tool selection",
+    "repair kit"
   ],
   "keywords": [
     "Tools & training",
     "knife",
     "weapons safety",
-    "tools"
+    "tools",
+    "Build the kit from a task list",
+    "Compare form, grip and work setting",
+    "Separate carrying convenience from usefulness",
+    "Prepare the whole work session",
+    "Choose a modest repair pouch",
+    "Store and maintain the tools as a set",
+    "Practice one useful skill in ordinary conditions"
   ],
-  "tldr": "Choose tools for a defined task, learn their instructions and keep cutting work separate from people. Tools are part of practical preparedness; they should not add avoidable injuries or become improvised weapons.",
+  "tldr": "Choose a tool for a specific ordinary task, compare grip and maintenance burden, and carry it in a suitable guard or case. Build a small repair kit around work you know how to do; use supervised practice for unfamiliar cutting tasks.",
   "steps": [
     [
       "Choose the task and tool",
@@ -39,25 +47,320 @@
     ]
   ],
   "sections": [
-    [
-      "A compact repair kit",
-      "Start with the tools needed to maintain your existing equipment: suitable fasteners, manufacturer-approved repair materials, a small screwdriver set and a practical cutting tool if trained to use it. A larger blade or axe is not automatically more useful. Carrying weight, skill, permitted use and injury consequences all matter."
-    ],
-    [
-      "Protect the whole work session",
-      "Check what is behind or under the material, who can enter the area and how a tool will be put down safely. Gloves may help for an appropriate task but do not make poor technique safe. Never improvise load-bearing repairs, cut live electrical equipment or use a tool in a way the manufacturer prohibits."
-    ]
+    {
+      "heading": "Build the kit from a task list",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "List the work you actually expect: opening packaging, repairing a loose non-critical fastener, cutting cord or maintaining a permitted campsite item. Name the material, location and user. A home kit, a vehicle pouch and a day-hike kit need different tools. Start with familiar tasks rather than the largest blade or most elaborate multitool."
+        },
+        {
+          "type": "table",
+          "caption": "Task-first selection examples",
+          "columns": [
+            "Task",
+            "Question before packing"
+          ],
+          "rows": [
+            [
+              "Packaging and cord",
+              "Would suitable scissors or a guarded cutter serve the task more conveniently?"
+            ],
+            [
+              "Small ordinary fastener",
+              "Does the correct dedicated driver fit and reach the actual fastener?"
+            ],
+            [
+              "Permitted wood work",
+              "Is cutting permitted, is it needed and have you learned the specific tool?"
+            ],
+            [
+              "Field repair",
+              "Can the repair restore an ordinary non-critical item, or does it require proper service?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep specialist work outside the small kit’s promise. An electrical, vehicle-control, load-bearing or medical problem may require qualified assessment. Tape and a multitool do not establish that a critical repair is sound. Choose an existing workable alternative when a repair would introduce uncertainty."
+        }
+      ],
+      "references": [
+        [
+          "CCOHS · Hand tool ergonomics",
+          "https://www.ccohs.ca/oshanswers/ergonomics/handtools/tooldesign.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Compare form, grip and work setting",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A tool should fit the task and the hand using it. CCOHS’s ergonomics guidance links tool shape, weight, handle fit and workstation layout with the effort required. It recommends selecting tools that allow an appropriate neutral wrist position. The lesson for a small kit is to evaluate the actual working arrangement rather than choosing a handle from a photograph."
+        },
+        {
+          "type": "paragraph",
+          "text": "Compare the grip while wearing any gloves normally required for the task. Check whether the tool can be controlled comfortably and whether another user can use it without excessive reach or force. Consider access to the work: a compact multitool may pack neatly while a dedicated driver fits an awkward fastener better."
+        },
+        {
+          "type": "table",
+          "caption": "A practical comparison record",
+          "columns": [
+            "Feature",
+            "What to inspect"
+          ],
+          "rows": [
+            [
+              "Handle",
+              "Comfort, grip with expected gloves and access for the intended user."
+            ],
+            [
+              "Mass and balance",
+              "How it feels during the actual ordinary task rather than only when lifted."
+            ],
+            [
+              "Guard or sheath",
+              "Fit, retention, access and protection of other packed items."
+            ],
+            [
+              "Instructions",
+              "Clear task limits, care directions and the maker’s service route."
+            ]
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CCOHS · Hand tool ergonomics",
+          "https://www.ccohs.ca/oshanswers/ergonomics/handtools/tooldesign.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Separate carrying convenience from usefulness",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A folding tool can occupy less space, while a purpose-made dedicated tool may offer a better grip or easier access for a repeated job. Compare those properties at the task level. Do not assume a locking mechanism makes every cutting use appropriate, or that one format is universally superior."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a saw, compare the manufacturer’s stated material and task suitability, guard arrangement, carry dimensions and replaceable consumables. For a knife or cutter, check the intended task, grip and protection in storage. Ask the maker about care for the particular materials and finish rather than applying a universal corrosion or sharpening recipe."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep edge-care procedures with the product instructions and obtain practical instruction if unfamiliar. An unsuitable edge or damaged mechanism can change the effort needed, but trying an unlearned maintenance process during a disruption can create another problem. Choose equipment you can inspect and maintain under ordinary conditions."
+        }
+      ],
+      "references": [
+        [
+          "CCOHS · Hand tool ergonomics",
+          "https://www.ccohs.ca/oshanswers/ergonomics/handtools/tooldesign.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Prepare the whole work session",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The tool is only one part of the job. Arrange stable support, adequate light, a manageable material and enough space to keep other people outside the working area. Plan how the material stays controlled without placing a hand in the tool’s path. Use task-specific instruction for the actual cutting or sawing technique; this guide does not substitute a universal motion for every tool."
+        },
+        {
+          "type": "flow",
+          "caption": "A controlled ordinary task",
+          "items": [
+            [
+              "Define",
+              "Name the material, desired result and appropriate tool."
+            ],
+            [
+              "Arrange",
+              "Provide light, stable support, suitable protection and a clear work area."
+            ],
+            [
+              "Work within instruction",
+              "Use the task-specific method you have learned and stop if control or conditions deteriorate."
+            ],
+            [
+              "Finish",
+              "Guard the tool, account for parts and scraps, and record any care or service need."
+            ]
+          ],
+          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep fatigue and distraction visible in the decision. If the job can wait, move it to a better-lit or more suitable place. In a household, agree who supervises children and pets while the work occurs. Do not give the tool user a simultaneous caregiving role that prevents attention to the task."
+        }
+      ],
+      "references": [
+        [
+          "CCOHS · Hand tool ergonomics",
+          "https://www.ccohs.ca/oshanswers/ergonomics/handtools/tooldesign.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Choose a modest repair pouch",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A small repair pouch is useful when it supports known non-critical tasks. Build it from your equipment’s likely needs and test it during ordinary maintenance. Keep each consumable’s purpose clear rather than packing several unidentified scraps."
+        },
+        {
+          "type": "table",
+          "caption": "Editorial repair-pouch worksheet",
+          "columns": [
+            "Item group",
+            "Useful role",
+            "Boundary"
+          ],
+          "rows": [
+            [
+              "Correct small drivers",
+              "Known ordinary fasteners on suitable non-critical equipment.",
+              "No forced fit or improvised repair of safety-critical systems."
+            ],
+            [
+              "Manufacturer-compatible repair material",
+              "A permitted patch or repair for the specific bag or shelter.",
+              "Follow curing and surface instructions; temporary repair is not a structural certification."
+            ],
+            [
+              "Spare ordinary fittings",
+              "Known replacement for a lost compatible non-critical part.",
+              "Label it so the intended equipment is clear."
+            ],
+            [
+              "Guarded cutting tool",
+              "A defined packaging, cord or repair task.",
+              "Use only the method and material you understand."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Test the kit by finding the needed item and explaining its purpose to another adult. If the repair requires a missing specialized tool, decide whether to carry it, obtain proper service before departure or use an alternative item. The pouch should reduce the need to improvise, not encourage attempts beyond the equipment or user’s limits."
+        }
+      ],
+      "references": [
+        [
+          "CCOHS · Hand tool ergonomics",
+          "https://www.ccohs.ca/oshanswers/ergonomics/handtools/tooldesign.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Store and maintain the tools as a set",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Put guards, sheaths or cases on before packing, and keep the tools from moving loose among food, care items or clothing. Store the set so the authorized adult can find it without exposing a child to unguarded edges. Clean and dry as the manufacturer directs; product labels control any oil or solvent use."
+        },
+        {
+          "type": "paragraph",
+          "text": "Inspect the handle, guard, moving mechanisms and visible condition before a trip. Record a damaged item as unavailable rather than leaving it in the kit with a vague promise to fix it later. Keep service or replacement information with the inventory. If a tool was borrowed, check its condition and return the complete guarded item."
+        },
+        {
+          "type": "paragraph",
+          "text": "Review ordinary access rules for the actual destination and carrier. A tool useful at home may be restricted in a venue or transport setting. Resolve that before departure and choose an allowed task alternative if needed. This page does not make a universal legality claim for knives or tools."
+        }
+      ],
+      "references": [
+        [
+          "CCOHS · Hand tool ergonomics",
+          "https://www.ccohs.ca/oshanswers/ergonomics/handtools/tooldesign.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Practice one useful skill in ordinary conditions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose a small task with a clear result and a suitable instructor when needed. Use permitted material in a controlled setting, keep help available and stop if the work becomes awkward. Practice is most useful when it clarifies the tool’s limits and the arrangement required for the task."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Name one task and its material.",
+            "Locate the manufacturer instructions and needed protection.",
+            "Set up the work area and supervision.",
+            "Perform only the method you have learned.",
+            "Check the result against the ordinary task, then guard and pack the tool.",
+            "Record what needs changing before carrying it on a trip."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Repeat with the intended user and expected gloves if that is relevant. Avoid making the exercise a test of endurance or speed. A short successful session followed by a clear inventory note gives more usable information than a bag filled with unfamiliar equipment."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "CCOHS · Hand tool ergonomics",
+              "url": "https://www.ccohs.ca/oshanswers/ergonomics/handtools/tooldesign.html",
+              "description": "Use the official ergonomic design discussion to compare task, handle fit, mass and working position."
+            }
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Bushcraft foundations",
+              "url": "/guides/bushcraft-foundation/"
+            },
+            {
+              "label": "Working without a fire",
+              "url": "/guides/bushcraft-no-fire/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "CCOHS · Hand tool ergonomics",
+          "https://www.ccohs.ca/oshanswers/ergonomics/handtools/tooldesign.html"
+        ]
+      ]
+    }
   ],
   "without_help": "Stop the job if adequate light, footing or competent instruction is unavailable. Use a simpler existing solution or arrange qualified help; finishing a repair is not worth an avoidable serious injury.",
   "household": "Keep tools away from shared food and children’s bags. Choose accessible handles and suitable task roles rather than assuming everyone can safely use the same tool.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "pack_now": "The task-matched guarded tool, its instructions, suitable protective equipment, a compact repair pouch and the care supplies the maker specifies. Leave equipment without a defined task at home.",
   "next": "Inspect a small tool kit, identify one damaged item and arrange a supervised lesson for one useful task.",
-  "watch": "This guide does not cover combat use, weapon construction, traps or hazardous field surgery. Specific cutting techniques need practical instruction.",
-  "sources": "outdoor-skills",
+  "watch": "Pause work when the tool, material, light, footing or user condition is unsuitable. A large tool does not compensate for lack of task-specific instruction.",
+  "sources": "knife-tool-safety-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
-  "decisions": [],
-  "faqs": [],
+  "decisions": [
+    [
+      "The job is unclear?",
+      "Describe the material and task before choosing a tool."
+    ],
+    [
+      "You need unusual force or cannot control the work?",
+      "Stop and reassess the tool and workholding with qualified instruction."
+    ],
+    [
+      "A tool is damaged or its mechanism is unreliable?",
+      "Use a sound alternative and follow manufacturer service advice."
+    ]
+  ],
+  "faqs": [
+    [
+      "Is a multitool enough for every repair?",
+      "No. It can cover selected small tasks, but access, grip and tool size may make a dedicated tool more workable."
+    ],
+    [
+      "Should the largest knife be the main field tool?",
+      "Choose around the actual tasks and user. Size adds carrying burden and does not establish suitability or skill."
+    ]
+  ],
   "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
   "related": [
     "bushcraft-foundation",

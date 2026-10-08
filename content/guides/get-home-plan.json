@@ -5,12 +5,12 @@
   "subcategory": "Without a car",
   "content_type": "Preparedness guide",
   "published": "2026-10-03",
-  "updated": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "updated": "2026-10-07",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
-  "sources": "care-network",
+  "sources": "get-home-plan-full-20261007",
   "tldr": "Choose a safe waiting place, a backup way home and a check-in plan before your commute fails. Getting home is a decision, not an instruction to walk through danger.",
   "steps": [
     [
@@ -31,27 +31,299 @@
     ]
   ],
   "sections": [
-    [
-      "A route is more than a line on a map",
-      "Editorial route check: look for legal pedestrian access, lighting, terrain, shelter, water access and places where the route could be blocked. A road journey that takes twenty minutes can be a very different trip on foot. Do not assume an unfamiliar shortcut, rail corridor or highway shoulder is usable."
-    ],
-    [
-      "Decide whether to travel at all",
-      "Compare the conditions outside with the waiting place you already have. Weather, smoke, flooding, injury or unrest can make a journey worse than a delay. Discuss that tradeoff with your household in advance so an overdue arrival does not automatically trigger a second unsafe journey by someone looking for you."
-    ]
+    {
+      "heading": "Start with the journey you actually make",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Pick one recurring journey: work, school, a clinic or a family visit. Write the start, normal destination, transport method and likely times. List the places where the route depends on one service: a bridge, ferry, train line, lift, interchange or person providing a ride. This is a dependency map, not an instruction to replace every failed service with walking."
+        },
+        {
+          "type": "paragraph",
+          "text": "For each dependency, name a reachable place to wait and an alternative destination. Confirm permission and accessibility with the relevant person or organization. A shop, station or public building may close; record an outside-opening-hours alternative. For a person using medication or assistive equipment, include the effect of a delay on essential care before estimating how far they could travel."
+        },
+        {
+          "type": "table",
+          "caption": "A private route card",
+          "columns": [
+            "Field",
+            "Write down"
+          ],
+          "rows": [
+            [
+              "Regular journey",
+              "Start, destination, normal service and usual times."
+            ],
+            [
+              "Waiting place",
+              "Address, permission, opening/access arrangements and alternate."
+            ],
+            [
+              "Pickup",
+              "Named helper, confirmed meeting point and limits on the arrangement."
+            ],
+            [
+              "Overnight fallback",
+              "A destination that has agreed to receive the person."
+            ],
+            [
+              "Care handover",
+              "Who covers dependents if the usual adult is delayed."
+            ]
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Decide whether movement improves the situation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Getting home is one option. Staying at a suitable waiting place, reaching a confirmed nearby host or delaying the journey can be more practical. Compare the conditions at your current place with those along the complete route and at the destination. Uncertainty about family does not make an unverified journey safer."
+        },
+        {
+          "type": "flow",
+          "caption": "Conditional travel decision",
+          "items": [
+            [
+              "Immediate danger here",
+              "Move to a nearby safer position if the current place is hazardous; seek urgent assistance where available."
+            ],
+            [
+              "Place suitable, route uncertain",
+              "Use the agreed waiting arrangement, protect essential needs and gather current information."
+            ],
+            [
+              "Route and destination confirmed",
+              "Choose the transport that the person can actually use and tell the contact what has changed."
+            ]
+          ],
+          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "The branches are alternatives, not a fixed sequence. Check weather, daylight, closures, legal access, physical ability and whether the intended destination can receive you. Do not ask a helper to cross the same hazard merely to collect you. If a route requires a bridge, check whether pedestrian access actually exists and remains usable. A navigation app’s vehicle estimate is not a walking assessment."
+        }
+      ],
+      "references": [
+        [
+          "NHTSA · Winter driving",
+          "https://www.nhtsa.gov/winter-driving-tips"
+        ]
+      ]
+    },
+    {
+      "heading": "Build a small delay kit around real needs",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The everyday bag supports a realistic delay rather than an imagined expedition. Start with daily care, communication, weather protection, a light and manageable drinking water. Carry suitable footwear when ordinary work shoes would make a verified pedestrian journey uncomfortable. Include food you can eat as packed and information you can read without a charged phone."
+        },
+        {
+          "type": "table",
+          "caption": "Ordinary delay-kit trade-offs",
+          "columns": [
+            "Need",
+            "Useful decision"
+          ],
+          "rows": [
+            [
+              "Phone power",
+              "Test the cable and battery with the actual device; record where they are kept."
+            ],
+            [
+              "Weather layer",
+              "Match season and waiting conditions, including a cool indoor space."
+            ],
+            [
+              "Water",
+              "Measure the filled container; water adds about one kilogram per litre."
+            ],
+            [
+              "Care",
+              "Follow individual storage needs and arrange a workable backup with the relevant provider."
+            ],
+            [
+              "Information",
+              "Keep addresses and numbers privately accessible without exposing unnecessary identifiers."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Weigh the complete bag and test it during a normal, safe journey. If it conflicts with a mobility aid, childcare or manual work, change the carry method or load. Larger vehicle supplies can supplement it but should not contain the only essential contact or care information. Review the bag when work location, phone connector, season or household responsibilities change."
+        }
+      ],
+      "references": [
+        [
+          "Red Cross · Kit supplies",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Make check-ins specific enough to use",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Agree who receives the first update and who informs the rest of the household. A useful message gives your actual location, condition, intended action and next check-in. For example: “At the agreed office waiting room, okay, train service stopped, staying here while we check the alternate, next message at our agreed time.” Use your own arrangement; the example is not a universal timetable."
+        },
+        {
+          "type": "paragraph",
+          "text": "Decide what a missed check-in means before a disruption. A delayed message might reflect battery or network failure. The contact should know which steps to take, whom to ask and when the circumstances justify seeking help. Avoid repeated speculative messages that change destinations without confirming them. If you leave the waiting place, update the contact with the new destination and arrival/check-in expectation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep routine updates private. Do not publish an empty-home announcement or a dependent person’s care details to a public feed. If communications fail, use the previously agreed plan and reassess conditions. There is no need to keep moving merely because a message has not been delivered."
+        }
+      ],
+      "references": [
+        [
+          "Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ],
+        [
+          "FTC · Share with care",
+          "https://consumer.ftc.gov/articles/heads-up"
+        ]
+      ]
+    },
+    {
+      "heading": "Plan the dependent-care handover",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A commute failure affects more than the traveler. List school pickup, an adult needing assistance, pets, time-sensitive care and any household member who cannot be left alone. Agree the permitted helper and confirm how the relevant organization verifies pickup or access. Record the helper’s limits: availability, transport capacity and whether they can provide the necessary care."
+        },
+        {
+          "type": "paragraph",
+          "text": "Give the helper the minimum information required for the role and keep it current. Avoid making a child responsible for deciding whether to leave a school or meeting an unfamiliar driver. For an adult needing assistance, include their preferences and the equipment actually required. If the backup helper is unavailable, identify who can reassess the care arrangement without starting another unsafe journey."
+        },
+        {
+          "type": "paragraph",
+          "text": "Rehearse the handover as a conversation while everyone is available. Ask the backup person to explain their role in their own words and locate the written information. Resolve gaps now rather than assuming a trusted relationship automatically supplies practical knowledge."
+        }
+      ],
+      "references": [
+        [
+          "Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Treat a stranded vehicle as its own decision",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A vehicle provides a different waiting environment from a transit stop. Use the applicable roadside and weather guidance for the actual situation. NHTSA’s winter guidance recommends staying with a stranded car, making it visible and managing carbon-monoxide risks. An active roadway, fire, rising water or another immediate hazard changes the assessment; the decision must account for the specific site."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the phone, essential medicines, suitable layers and useful light accessible rather than buried under luggage. Tell the contact the location and whether assistance is arranged. Do not use a planned urban walk as a blanket answer to rural roadside stranding. The vehicle’s position, traffic, weather, people and available help determine what is feasible."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Vehicle breakdown",
+              "url": "/emergencies/vehicle-breakdown/"
+            },
+            {
+              "label": "Vehicle emergency kit",
+              "url": "/preparedness/vehicle-emergency-kit/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NHTSA · Winter driving",
+          "https://www.nhtsa.gov/winter-driving-tips"
+        ]
+      ]
+    },
+    {
+      "heading": "Rehearse one failure and keep a dated card",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose a normal journey and imagine one dependency failing. Keep real services available while testing the plan. Find the written card, identify the waiting place and explain the care handover. Check the alternate destination’s agreement and accessibility rather than relying only on its address."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Choose one journey and one failure, such as a stopped train or unavailable pickup.",
+            "Name the first suitable waiting place and the reason it is suitable.",
+            "Check the realistic carry load and daily care requirements.",
+            "Draft a private update with location, intention and next check-in.",
+            "Ask the contact what they would do after a missed update.",
+            "Record one correction, an owner and a review date."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Repeat after a work move, change in dependent care or transport schedule. Keep a short card with confirmed facts and a longer private plan if needed. The useful result is an arrangement another adult can understand, not a thick collection of untested routes."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "NHTSA · Winter driving",
+              "url": "https://www.nhtsa.gov/winter-driving-tips",
+              "description": "Read the weather and stranded-vehicle guidance when a failed journey involves a car."
+            },
+            {
+              "label": "Red Cross · Make a plan",
+              "url": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html",
+              "description": "Use the household communication and meeting-place framework to coordinate the people affected by a disrupted journey."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Red Cross · Make a plan",
+          "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html"
+        ]
+      ]
+    }
   ],
   "without_help": "If transit and communications fail, use the previously agreed waiting place or backup destination if accessible and safe. Reassess conditions rather than setting off simply because messages are not arriving.",
   "household": "Plan school pickup authority, care handover, mobility limits and pets left at home. Make sure your backup helper knows what they can realistically do and where their responsibility ends.",
-  "pack_now": "Written addresses and contact numbers, walking shoes if needed, weather layer, light and a charged phone or compatible power bank.",
+  "pack_now": "A private contact and route card, necessary daily care items, suitable shoes and weather layers, manageable water and food, a light, phone and compatible power. Keep the confirmed waiting-place details accessible.",
   "next": "Choose one regular journey and identify the first safe waiting place, one backup destination and a person who knows the plan.",
   "watch": "Do not cross floodwater or enter restricted routes to shorten a journey. Avoid meeting arrangements that force someone else to travel into the same hazard.",
   "faqs": [
     [
-      "Is this the same as a bug-out bag?",
-      "No. This plan starts with a disrupted everyday journey. Keep the carry load small and matched to the distance and weather; evacuation planning covers leaving the home for a different destination."
+      "Should a get-home plan always end at home?",
+      "No. A confirmed safe waiting place or overnight destination may be more workable while travel conditions are unsafe."
+    ],
+    [
+      "How much should the everyday bag hold?",
+      "Enough for your realistic delay and care needs at a manageable mass. Measure it and keep larger reserves separately; do not assume a heavy pack makes an unsafe journey viable."
     ]
   ],
-  "decisions": [],
+  "decisions": [
+    [
+      "Your usual service stops?",
+      "Check current conditions and the agreed waiting place before deciding to travel."
+    ],
+    [
+      "The pedestrian route is unverified?",
+      "Use the waiting or overnight alternative; a road route does not establish a walking route."
+    ],
+    [
+      "You change destination?",
+      "Send the new destination and next check-in privately to the agreed contact."
+    ]
+  ],
   "related": [
     "offline-maps",
     "emergency-contact-plan",
@@ -65,7 +337,14 @@
   "keywords": [
     "get home bag",
     "commute disruption",
-    "stranded at work"
+    "stranded at work",
+    "Start with the journey you actually make",
+    "Decide whether movement improves the situation",
+    "Build a small delay kit around real needs",
+    "Make check-ins specific enough to use",
+    "Plan the dependent-care handover",
+    "Treat a stranded vehicle as its own decision",
+    "Rehearse one failure and keep a dated card"
   ],
   "scope": "Civilian household planning. U.S. references; local services and rules differ. Planning examples are editorial suggestions, not promises of assistance."
 }

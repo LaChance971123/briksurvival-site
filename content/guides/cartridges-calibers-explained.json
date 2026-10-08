@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Ammunition",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-07",
   "published": "2026-10-04",
-  "source_checked": "2026-10-04",
-  "next_review": "2027-01-04",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [
     "calibers",
     "calibres",
@@ -28,9 +28,11 @@
     "7.62",
     "223",
     "308",
-    "rifle ammunition"
+    "rifle ammunition",
+    "Read an ammunition label as separate fields",
+    "Compare cost and carried mass without a performance ranking"
   ],
-  "tldr": "The full cartridge name matters more than the caliber number. .22 LR is common for inexpensive target practice and small-game hunting; centerfire handgun and rifle cartridges serve different sporting roles. Compare the exact chambering, ammunition cost, recoil and lawful use—not a bigger-number ranking.",
+  "tldr": "Read the complete cartridge or shotshell designation, then compare manufacturer compatibility, sporting context, local availability, package cost and carried mass. Similar names and nominal bullet diameters do not establish interchangeability.",
   "steps": [
     [
       "Read the complete designation",
@@ -304,6 +306,124 @@
         }
       ],
       "references": []
+    },
+    {
+      "heading": "Read an ammunition label as separate fields",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Treat the package as several descriptions rather than one caliber number. The recognized cartridge designation identifies the cartridge family. The bullet or shot description, stated projectile weight, package count and product/lot identification describe that particular product. These fields answer different questions. A weight printed in grains describes mass; it is not a powder-loading instruction."
+        },
+        {
+          "type": "table",
+          "caption": "Illustrative label-reading worksheet",
+          "columns": [
+            "Example field",
+            "What it tells you",
+            "What remains to check"
+          ],
+          "rows": [
+            [
+              "9mm Luger",
+              "A complete cartridge designation, rather than the broad phrase “9mm.”",
+              "The exact firearm manual and any additional product restrictions."
+            ],
+            [
+              "124 grain",
+              "The stated projectile mass for this example product.",
+              "Its manufacturer-described intended use; this number alone is not a compatibility decision."
+            ],
+            [
+              "50 cartridges",
+              "The quantity sold in this example box.",
+              "Cost per cartridge and whether several listings use the same package size."
+            ],
+            [
+              "12 gauge / shell length",
+              "Two distinct shotshell identity fields.",
+              "The complete chamber and ammunition specifications in the shotgun manual."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These are invented worksheet entries, not a recommendation for a particular firearm. Copy a real package’s full wording before comparing products. Product names can sound nearly identical while identifying different offerings. Keep the original label and lot reference with stored ammunition; a handwritten caliber abbreviation drops information you may need for a recall or manufacturer question."
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · FAQs and compatibility",
+          "https://saami.org/faqs/"
+        ],
+        [
+          "SAAMI · Glossary",
+          "https://saami.org/saami-glossary/"
+        ]
+      ]
+    },
+    {
+      "heading": "Compare cost and carried mass without a performance ranking",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Separate compatibility from preference. First confirm that a product is appropriate for the exact firearm and permitted for the sporting activity and location. Then compare the things that affect ownership: availability, packaging, recurring purchase cost, storage space and actual transport mass. A cartridge family does not have one fixed price or one universal legal sporting use."
+        },
+        {
+          "type": "table",
+          "caption": "An original comparison example; prices are invented",
+          "columns": [
+            "Offer",
+            "Calculation",
+            "Planning result"
+          ],
+          "rows": [
+            [
+              "Box A: 50 for 25 currency units",
+              "25 ÷ 50",
+              "0.50 per cartridge before taxes or delivery."
+            ],
+            [
+              "Box B: 100 for 46 currency units",
+              "46 ÷ 100",
+              "0.46 per cartridge; compare the same product type and applicable costs."
+            ],
+            [
+              "Stored case: 8 kg, container: 1 kg",
+              "8 + 1",
+              "9 kg total to lift and transport; projectile weight is not complete-cartridge weight."
+            ],
+            [
+              "Annual planning",
+              "Expected purchases + venue fees + consumables + service",
+              "Use your own routine rather than an advertised one-time equipment price."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For a sporting comparison, write the relevant discipline or species, land-manager rules, ammunition restrictions, likely availability near the destination and your qualified instructor’s or outfitter’s requirements. Do not turn “larger,” “magnum” or a numerical energy listing into a universal recommendation. For hunting, verify current rules for that jurisdiction and species; the linked Florida example applies to Florida and cannot establish rules elsewhere."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "Florida FWC · Taking game",
+              "url": "https://myfwc.com/hunting/regulations/taking-game/",
+              "description": "A jurisdiction-specific example of hunting method and ammunition rules; check the regulator for your actual location."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · FAQs and compatibility",
+          "https://saami.org/faqs/"
+        ],
+        [
+          "Florida FWC · Taking game",
+          "https://myfwc.com/hunting/regulations/taking-game/"
+        ]
+      ]
     }
   ],
   "without_help": "Set unidentified or mixed ammunition aside in secured, clearly marked packaging. Do not try it in a firearm to discover whether it fits. A photograph of markings and the original box can help the manufacturer identify the product.",
@@ -311,7 +431,7 @@
   "pack_now": "Manufacturer, full cartridge name, product code, lot number, quantity, purchase date and the exact firearm manual.",
   "next": "List the chambering of each sporting firearm you own and link the corresponding manufacturer manual. Use that list for purchases rather than memory.",
   "watch": "Ammunition remains hazardous regardless of its size. Keep it secured and correctly identified; never force a cartridge into a firearm or use damaged, recalled or disaster-exposed ammunition without the manufacturer’s clearance.",
-  "sources": "cartridges-calibers-explained",
+  "sources": "cartridges-calibers-explained-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],

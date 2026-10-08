@@ -1,0 +1,401 @@
+{
+  "slug": "rifle-setup-basics",
+  "title": "Rifle selection and setup: fit, equipment and ownership",
+  "category": "firearms-tools",
+  "subcategory": "Safe ownership",
+  "content_type": "Preparedness guide",
+  "published": "2026-10-07",
+  "urgency": "planning",
+  "review_status": "Source-linked editorial review; not independent expert certification",
+  "aliases": [
+    "rifle setup",
+    "rifle fit",
+    "sporting rifle selection"
+  ],
+  "keywords": [
+    "Define the job before choosing the equipment",
+    "Read a complete factory specification",
+    "Assess fit as comfort and access",
+    "Choose equipment by a defined ordinary task",
+    "Compare ownership cost with an illustrative worksheet",
+    "Organize manufacturer-directed care and service",
+    "Make a shortlist that another person can review"
+  ],
+  "sections": [
+    {
+      "heading": "Define the job before choosing the equipment",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Write a short use statement: the activity, venue or hunting jurisdiction, intended user, transport method and storage arrangement. A rifle for regular supervised range use and one carried during lawful outdoor sporting activity face different practical constraints. Describe those constraints without turning the comparison into a tactical or people-targeting exercise."
+        },
+        {
+          "type": "table",
+          "caption": "An original requirements sheet",
+          "columns": [
+            "Requirement",
+            "Useful entry"
+          ],
+          "rows": [
+            [
+              "Activity",
+              "Named sporting discipline or lawful hunting context; applicable organizer or regulator requirements."
+            ],
+            [
+              "User",
+              "Handedness, ordinary clothing, glasses, comfortable reach and ability to handle the complete mass."
+            ],
+            [
+              "Journey",
+              "Case size, normal transport method, destination rules and travel-policy questions."
+            ],
+            [
+              "Ownership",
+              "Storage space, annual budget, service access and a source of compatible consumables."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Rank the requirements as necessary, useful or optional. This makes trade-offs visible. If transport space is fixed, a configuration that cannot fit its appropriate case may not be workable even if other features appeal. If a particular venue has restrictions, confirm them before comparing products. Keep the requirements sheet short enough to take to a retailer."
+        }
+      ],
+      "references": [
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ]
+      ]
+    },
+    {
+      "heading": "Read a complete factory specification",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use the exact model identifier and the manufacturer’s current specification sheet. Record chamber designation, action type, supplied configuration, listed dimensions and mass. Note which accessories are included. The family name may cover several versions; a photograph or abbreviated shop listing is not enough to know which one is being sold."
+        },
+        {
+          "type": "paragraph",
+          "text": "Compare products in the same units and at the same level of completeness. A bare rifle’s mass cannot fairly be compared with a package including case or observation equipment. Keep the published figure and your own complete-system measurement in separate columns. For a used item, ask which original features remain and which documentation establishes the present configuration."
+        },
+        {
+          "type": "table",
+          "caption": "Separate three kinds of information",
+          "columns": [
+            "Information",
+            "What it can establish"
+          ],
+          "rows": [
+            [
+              "Factory specification",
+              "The manufacturer’s description of a particular product version."
+            ],
+            [
+              "Exact-model manual",
+              "Its operating, care and service boundaries; read the appropriate revision."
+            ],
+            [
+              "Retail package description",
+              "What that seller includes and the terms of that particular purchase."
+            ]
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ]
+      ]
+    },
+    {
+      "heading": "Assess fit as comfort and access",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Fit is more than overall length. Discuss comfortable reach, support, balance and access to the model’s controls with a qualified retailer or instructor in a controlled setting. Compare suitable factory options while wearing the glasses and ordinary clothing relevant to the activity. A short shop demonstration and a longer sporting session may reveal different comfort constraints."
+        },
+        {
+          "type": "paragraph",
+          "text": "Length of pull is commonly used to describe the stock-to-trigger relationship; comb shape describes the upper stock surface and its support relationship to the user. These terms help you ask questions, but a single dimension does not establish fit. Avoid treating an online body-measurement formula as a universal answer. The guide is about recognizing a suitable configuration, not altering components or optimizing an aiming system."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Record which configuration was evaluated and which clothing or glasses were worn.",
+            "Describe discomfort plainly: excessive reach, awkward support or difficulty handling the complete mass.",
+            "Ask about manufacturer-supported factory options before assuming parts can be changed.",
+            "If several adults will use the equipment, assess each person rather than averaging their needs."
+          ]
+        }
+      ],
+      "references": [
+        [
+          "SAAMI · Glossary",
+          "https://saami.org/saami-glossary/"
+        ],
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ]
+      ]
+    },
+    {
+      "heading": "Choose equipment by a defined ordinary task",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Start with support items that solve an ownership need: secure storage, an appropriate case, permitted hearing/eye protection, compatible care supplies and the documentation required for travel or a venue. For any optional equipment, write the task it serves and ask the maker which exact combinations are supported. Shared dimensions or a broad label such as universal do not settle compatibility."
+        },
+        {
+          "type": "paragraph",
+          "text": "Evaluate carrying convenience separately from use. A complete case must accommodate the actual factory configuration and protect it as specified; the smallest advertised case is not automatically the best choice. Ask whether the carrying arrangement leaves a caregiver or mobility-aid user able to manage their other responsibilities. Avoid accumulating items that make a simple routine harder to store, document or maintain."
+        },
+        {
+          "type": "flow",
+          "caption": "A useful equipment selection order",
+          "items": [
+            [
+              "Need",
+              "Name the ordinary sporting or ownership task that remains unresolved."
+            ],
+            [
+              "Evidence",
+              "Check the exact manufacturer-supported option and relevant instructions."
+            ],
+            [
+              "Burden",
+              "Compare added cost, mass, case/storage space and ongoing care."
+            ],
+            [
+              "Decision",
+              "Choose the documented option or leave the item off the list."
+            ]
+          ],
+          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+        }
+      ],
+      "references": [
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ]
+      ]
+    },
+    {
+      "heading": "Compare ownership cost with an illustrative worksheet",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The advertised purchase price is only one part of the first year. Make a worksheet for the firearm, suitable storage, case, compatible consumables, venue or club fees, professional instruction and expected service. Use real local quotes; none of the invented amounts below is a market-price estimate."
+        },
+        {
+          "type": "table",
+          "caption": "Invented comparison in unspecified currency units",
+          "columns": [
+            "Item",
+            "Option A",
+            "Option B"
+          ],
+          "rows": [
+            [
+              "Factory package",
+              "700",
+              "900"
+            ],
+            [
+              "Storage and case",
+              "300",
+              "220"
+            ],
+            [
+              "First-year ordinary use and care",
+              "400",
+              "350"
+            ],
+            [
+              "Example first-year total",
+              "1,400",
+              "1,470"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The lower purchase price does not necessarily create the lower complete cost, and a small total difference may be less important than fit or service support. Record recurring costs separately from purchases that remain useful for years. Ask what consumables can be sourced locally and what a warranty actually covers. Do not assume an expensive package includes every required compatible item."
+        }
+      ],
+      "references": [
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ]
+      ]
+    },
+    {
+      "heading": "Organize manufacturer-directed care and service",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Find the exact manual before buying cleaning products. Make a care sheet listing owner-permitted tasks, compatible products, storage requirements and the maker’s service contact. Follow the model-specific instructions rather than merging several tutorials into a universal routine. This page does not reproduce disassembly or adjustment steps."
+        },
+        {
+          "type": "paragraph",
+          "text": "Record the date, exposure, work performed and any unresolved observation. Use product labels for chemical handling and surface compatibility. Separate ordinary owner care from work that requires professional diagnosis. A recurring fault or undocumented used-equipment alteration needs clarification, not a more aggressive cleaning experiment."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep a private support packet with the manual, original configuration, purchase terms and service receipts. If you later change the lawful sporting activity or storage arrangement, reassess the requirements sheet. An equipment choice can remain sound while the surrounding ownership plan needs revision."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "Ruger · Official instruction manual finder",
+              "url": "https://ruger.com/dataProcess/serialHistory/manuals.php",
+              "description": "Use the official finder for the exact model and revision; manufacturer maintenance instructions control the owner-care plan."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Two current manufacturer examples show why the exact version matters: Ruger publishes a separate American Rifle Generation II manual and a 10/22 Standard manual limited to model numbers 32000 and higher. Use the finder for another version. Read the relevant maintenance and service sections for the actual model rather than transferring a procedure between these examples."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "Ruger · American Rifle Generation II manual",
+              "url": "https://ruger-docs.s3.amazonaws.com/_manuals/RAR-GenerationII.pdf",
+              "description": "Official Generation II manual, revision 3/2026 R4. Match the exact firearm and use the manufacturer’s owner-care and service sections."
+            },
+            {
+              "label": "Ruger · 10/22 Standard manual: models 32000 and higher",
+              "url": "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf",
+              "description": "Official 6/2026 R1 manual for this model-number range. Other 10/22 versions use different manuals; resolve them with the official finder."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ],
+        [
+          "Ruger · American Rifle Generation II manual",
+          "https://ruger-docs.s3.amazonaws.com/_manuals/RAR-GenerationII.pdf"
+        ],
+        [
+          "Ruger · 10/22 Standard manual: models 32000 and higher",
+          "https://ruger-docs.s3.amazonaws.com/_manuals/Ruger_1022.pdf"
+        ]
+      ]
+    },
+    {
+      "heading": "Make a shortlist that another person can review",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Limit the shortlist to a few exact configurations and compare them against the same requirements. Put unresolved questions in their own column. A blank compatibility or support answer should remain visibly unresolved rather than becoming an assumption because the product is attractive."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Write the ordinary activity and the non-negotiable constraints.",
+            "Collect exact model specifications and manuals.",
+            "Assess factory fit and handling comfort with qualified assistance.",
+            "Request written answers for compatibility and service questions.",
+            "Price the complete ownership package with dated local quotes.",
+            "Choose only after the necessary questions are resolved."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the result as a one-page decision record. It should explain why the selected configuration suits the actual person and activity, what it costs to own and where official instructions are found. That record remains useful when replacing a case, arranging service or explaining the equipment to an authorized helper."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Parts and maintenance vocabulary",
+              "url": "/preparedness/firearm-safety-basics/"
+            },
+            {
+              "label": "Cartridge and caliber terminology",
+              "url": "/preparedness/cartridges-calibers-explained/"
+            },
+            {
+              "label": "Storage selection",
+              "url": "/preparedness/firearm-storage/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "Ruger · Official instruction manual finder",
+          "https://ruger.com/dataProcess/serialHistory/manuals.php"
+        ]
+      ]
+    }
+  ],
+  "decisions": [
+    [
+      "The basic requirements are unclear?",
+      "Resolve the civilian activity and venue requirements before comparing accessories."
+    ],
+    [
+      "Fit depends on changing parts?",
+      "Compare suitable factory options and seek manufacturer-qualified advice rather than assuming interchangeability."
+    ],
+    [
+      "A used rifle has undocumented changes?",
+      "Resolve the configuration and service history before relying on its specification sheet."
+    ]
+  ],
+  "faqs": [
+    [
+      "Is there one ideal rifle setup?",
+      "No. A factory configuration suitable for one sporting discipline, user or travel arrangement may be inconvenient for another. Compare the complete system against written requirements."
+    ],
+    [
+      "Should I buy accessories first?",
+      "Start with the exact model, documented compatibility and ordinary tasks. An accessory without a clear purpose can add cost, mass and service questions."
+    ]
+  ],
+  "scope": "Civilian educational planning. Product specifications and local rules differ. Worked examples and decision worksheets are Osprey Zero editorial suggestions.",
+  "equipment_layout": true,
+  "fallback_heading": "When a specification is unclear",
+  "household_heading": "Fit and shared ownership",
+  "next_heading": "Make a shortlist",
+  "watch_heading": "Compatibility and service boundaries",
+  "tldr": "Choose a factory rifle configuration around the civilian sporting task, the person’s fit and the complete ownership burden. Compare documented dimensions, mass, controls, compatible equipment and support. Use the exact manufacturer manual for care and professional service for work outside owner instructions.",
+  "steps": [
+    [
+      "Define the use",
+      "Name the sporting discipline or lawful hunting context, venue requirements, travel and storage arrangements."
+    ],
+    [
+      "Compare the complete configuration",
+      "Record the exact model, chamber designation, supplied equipment, dimensions and total price."
+    ],
+    [
+      "Assess fit with qualified help",
+      "Compare factory configurations in a controlled setting; consider reach, comfort, glasses, clothing and handedness."
+    ],
+    [
+      "Plan ownership",
+      "Budget storage, case, compatible consumables, venue costs and manufacturer-directed care."
+    ]
+  ],
+  "without_help": "If compatibility or the manual is unclear, keep the item off the purchase shortlist until the manufacturer or qualified retailer resolves it. Use equipment already documented and suitable for the ordinary activity.",
+  "household": "Compare the actual intended users rather than assuming a configuration fits everyone. Record who owns and maintains the equipment, how access is controlled and how information is handed to an authorized helper.",
+  "pack_now": "A private requirements sheet, exact-model manual, written compatibility questions, measured storage/case space and a complete cost worksheet.",
+  "next": "Compare two or three complete factory configurations with the same requirements sheet and a qualified retailer or instructor.",
+  "watch": "This guide covers selection, fit and ownership literacy. It provides no installation, modification, tuning, aiming, zeroing or repair procedures.",
+  "updated": "2026-10-07",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
+  "sources": "rifle-setup-basics-full-20261007"
+}

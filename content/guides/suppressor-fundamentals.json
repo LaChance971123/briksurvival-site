@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Suppressors",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-07",
   "published": "2026-10-04",
-  "source_checked": "2026-10-04",
-  "next_review": "2027-01-04",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [
     "suppressor",
     "silencer",
@@ -16,9 +16,11 @@
   "keywords": [
     "suppressor",
     "silencer",
-    "hearing safe"
+    "hearing safe",
+    "Compare the whole ownership package",
+    "Read sound claims and legal pages as dated evidence"
   ],
-  "tldr": "A suppressor reduces the muzzle-report component of firearm noise by managing the release of propellant gas. It does not make a firearm silent: projectile shock waves, mechanical noise and reflections remain. Compare intended firearm compatibility, weight, care and measured noise data, while retaining hearing protection.",
+  "tldr": "Compare suppressors by manufacturer-confirmed compatibility, complete-system size and mass, stated use limits, serviceability and total ownership cost. Sound reduction figures need test context; they do not establish hearing protection or interchangeability.",
   "steps": [
     [
       "Separate the sound sources",
@@ -261,7 +263,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Legal source review: 4 October 2026. Use current ATF guidance together with the rules for the location of ownership, transfer and intended sporting use. Confirm how any recent legal change applies to your situation with an appropriately licensed dealer or qualified legal adviser. A lawful purchase in one jurisdiction does not establish lawful possession, transport or hunting use in another."
+          "text": "Legal source review: 7 October 2026. Use current ATF guidance together with the rules for the location of ownership, transfer and intended sporting use. Confirm how any recent legal change applies to your situation with an appropriately licensed dealer or qualified legal adviser. A lawful purchase in one jurisdiction does not establish lawful possession, transport or hunting use in another."
         },
         {
           "type": "paragraph",
@@ -274,6 +276,89 @@
           "https://www.atf.gov/rules-and-regulations/laws-alcohol-tobacco-firearms-and-explosives/national-firearms-act"
         ]
       ]
+    },
+    {
+      "heading": "Compare the whole ownership package",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A useful shortlist starts with the exact manufacturer-supported combination and the civilian sporting context. Ask for written compatibility confirmation and the documentation that applies to the model. Then compare the practical burden: complete dimensions and mass as supplied, included versus separately purchased items, service options and recurring care costs. A product’s headline weight may describe a different configuration from the one priced."
+        },
+        {
+          "type": "table",
+          "caption": "Questions for a manufacturer or qualified retailer",
+          "columns": [
+            "Topic",
+            "Ask for a specific answer"
+          ],
+          "rows": [
+            [
+              "Configuration",
+              "Which exact supported combination and factory documentation apply?"
+            ],
+            [
+              "Listed dimensions",
+              "What is included in the measured configuration and purchase price?"
+            ],
+            [
+              "Care",
+              "What owner care is permitted, and which products or processes are excluded?"
+            ],
+            [
+              "Service",
+              "How are inspection, damaged-product questions and warranty service handled?"
+            ],
+            [
+              "Cost",
+              "Which required services or compatible components are outside the advertised price?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This worksheet concerns equipment literacy, not an installation or firing procedure. Do not use similar names, a shared nominal diameter or an online compatibility chart as a substitute for the maker’s exact answer. Keep the reply with the product record, especially when choosing between a serviceable design and one the manufacturer treats as a sealed assembly."
+        }
+      ],
+      "references": [
+        [
+          "SilencerCo · Suppressor overview",
+          "https://silencerco.com/blog/how-do-suppressors-work"
+        ]
+      ]
+    },
+    {
+      "heading": "Read sound claims and legal pages as dated evidence",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A sound number is meaningful only with its measurement conditions. Compare like-for-like published tests and note what the maker actually measured. Do not convert a reduction figure into a promise that hearing protection is unnecessary. The NIOSH material linked below discusses firearm impulse-noise exposure and the limitations of relying on suppressors alone."
+        },
+        {
+          "type": "paragraph",
+          "text": "For ownership and travel, keep a dated list of current official requirements for your location, destination and itinerary. Federal material does not establish every state or local rule, and a retailer summary can become outdated. This guide intentionally avoids quoting a universal fee, waiting period or blanket legality statement. Resolve the actual requirements before making a purchase commitment."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "NIOSH · Firearm noise research",
+              "url": "https://stacks.cdc.gov/view/cdc/111710",
+              "description": "Read the research context behind suppressor noise claims and hearing-protection considerations."
+            },
+            {
+              "label": "ATF · National Firearms Act",
+              "url": "https://www.atf.gov/rules-and-regulations/laws-alcohol-tobacco-firearms-and-explosives/national-firearms-act",
+              "description": "Start with current U.S. federal information; separately verify your applicable state, local and travel requirements."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NIOSH · Firearm noise research",
+          "https://stacks.cdc.gov/view/cdc/111710"
+        ]
+      ]
     }
   ],
   "without_help": "Pause use or purchase until you have the exact manual, approved applications and service instructions. Do not infer compatibility from the product’s external diameter, appearance or a seller’s informal description.",
@@ -281,7 +366,7 @@
   "pack_now": "Suitable hearing and eye protection, the exact manual, a permitted storage arrangement and the manufacturer’s service contact.",
   "next": "Compare three documented models using approved applications, complete weight, care requirements, warranty support and fully described noise tests. Resolve compatibility before price.",
   "watch": "An unexpected noise change, visible damage or a loose component warrants stopping use and following the manufacturer’s inspection process. Do not attempt repairs or modifications based on an online example.",
-  "sources": "suppressor-fundamentals",
+  "sources": "suppressor-fundamentals-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],

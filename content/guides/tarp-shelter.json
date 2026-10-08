@@ -4,10 +4,10 @@
   "category": "field-skills",
   "subcategory": "Navigation & shelter",
   "content_type": "Field guide",
-  "updated": "2026-10-03",
+  "updated": "2026-10-07",
   "published": "2026-10-03",
-  "source_checked": "2026-10-03",
-  "next_review": "2027-04-03",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [
     "tarp",
     "survival shelter"
@@ -15,7 +15,14 @@
   "keywords": [
     "Navigation & shelter",
     "tarp",
-    "survival shelter"
+    "survival shelter",
+    "A complete shelter system",
+    "Know when to leave",
+    "Select the site before unpacking the system",
+    "Use a tested configuration and inspect it",
+    "Protect the dry sleeping area",
+    "Keep cooking and combustion outside the shelter",
+    "Rehearse the full system and leave the site usable"
   ],
   "tldr": "A shelter needs a safe site, wind and rain protection, and insulation from the ground. Test your tarp and sleeping equipment before a trip; a tarp alone does not make cold or severe weather safe.",
   "steps": [
@@ -37,25 +44,306 @@
     ]
   ],
   "sections": [
-    [
-      "A complete shelter system",
-      "Think in layers: roof or wind barrier, ground protection, insulating pad, sleeping insulation and dry clothing. A foil emergency blanket is not equivalent to a complete cold-weather sleep system. Test entry, exit, rain coverage and the space needed for a dependent person before relying on it outdoors."
-    ],
-    [
-      "Know when to leave",
-      "A tarp does not protect adequately against all weather. Thunderstorms, severe wind, flooding or cold beyond the equipment’s rating call for a safer shelter or an early return. A sheltered-looking hollow can collect water, and a tree can become an overhead hazard. Decide early while there is daylight and energy to move safely."
-    ]
+    {
+      "heading": "A complete shelter system",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Think in separate layers: overhead weather barrier, ground protection, ground insulation, sleeping insulation and dry clothing. Each has a different job. A tarp can reduce wind or rain exposure in an appropriate configuration; it does not provide the ground insulation of a pad or the sleeping insulation of suitable bedding."
+        },
+        {
+          "type": "table",
+          "caption": "An original system inventory",
+          "columns": [
+            "Layer",
+            "Practical check"
+          ],
+          "rows": [
+            [
+              "Roof / wind barrier",
+              "Coverage, compatible supports, entry/exit and manufacturer-supported configuration."
+            ],
+            [
+              "Ground barrier",
+              "Fit beneath the occupied area and a placement that avoids collecting runoff."
+            ],
+            [
+              "Insulating pad",
+              "Condition, size and suitability for the expected ground conditions."
+            ],
+            [
+              "Sleeping insulation",
+              "Manufacturer-described use conditions, fit and protection from wetting."
+            ],
+            [
+              "Dry clothing",
+              "Accessible protected layers matched to the actual person."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Test the complete arrangement at home or a permitted supported site before a trip. Include the bags, shoes, personal light and space needed to assist another person. A shelter that technically fits two sleeping bodies may not provide the usable space the household needs for care or an orderly exit."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Know when to leave",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A tarp is an equipment choice with limits, not a substitute for every building or tent. Set the early-return or alternative-shelter decision before the trip. Check weather, daylight, the group’s condition and the manufacturer’s stated limits for the complete equipment."
+        },
+        {
+          "type": "paragraph",
+          "text": "An apparently sheltered hollow can collect water; overhead damaged branches and exposed edges introduce other hazards. Do not settle on an unsuitable site merely because it is easier to pitch there. If the conditions exceed the system or the group’s ability, change the plan while the known return remains practical."
+        },
+        {
+          "type": "flow",
+          "caption": "Conditional shelter choice",
+          "items": [
+            [
+              "Suitable site and complete system",
+              "Use the tested configuration and inspect how people, equipment and exits fit."
+            ],
+            [
+              "Site unsuitable",
+              "Move to a nearby suitable position before arranging the shelter."
+            ],
+            [
+              "System or conditions unsuitable",
+              "Use the confirmed alternative or early return rather than promising that extra improvisation solves the gap."
+            ]
+          ],
+          "note": "Osprey Zero planning aid. These are conditional choices; current conditions and individual needs control the decision."
+        },
+        {
+          "type": "paragraph",
+          "text": "These are alternatives. A tarp does not make severe wind, flooding or a thunderstorm safe. If immediate danger develops, protect the people first and seek appropriate help; do not stay to finish a tidy pitch or retrieve nonessential equipment."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Hike smart",
+          "https://www.nps.gov/articles/hiking-safety.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Select the site before unpacking the system",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Review the occupied area and surrounding hazards in daylight when possible. Identify drainage, water changes, overhead condition, slope, access and the route back to a known place. Choose permitted durable ground and follow the site’s current rules. A visually flat patch is not the entire assessment."
+        },
+        {
+          "type": "paragraph",
+          "text": "Think about the whole group: a dependent person may need room for assistance, and a mobility aid may require a suitable approach. Plan an entry that can be found in darkness and keep the path clear of loose equipment. Do not dig trenches, cut branches or create new structural anchors as a default way to force the site to fit the equipment."
+        },
+        {
+          "type": "table",
+          "caption": "Site review worksheet",
+          "columns": [
+            "Question",
+            "Useful check"
+          ],
+          "rows": [
+            [
+              "Water",
+              "Could runoff, a drainage channel or rising water affect this position?"
+            ],
+            [
+              "Overhead",
+              "Are damaged branches or other overhead hazards present?"
+            ],
+            [
+              "Access",
+              "Can each person enter, exit and reach the known return route?"
+            ],
+            [
+              "Permission",
+              "Is camping allowed here and what site protections apply?"
+            ],
+            [
+              "Weather",
+              "Can the complete equipment serve the expected conditions here?"
+            ]
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Leave no trace",
+          "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Use a tested configuration and inspect it",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Follow the selected shelter’s instructions and compatible supplied or manufacturer-approved supports. Practice the actual configuration before departure, including cord access and the tools needed for it. Do not assume every tarp, attachment point or support can accept the same arrangement."
+        },
+        {
+          "type": "paragraph",
+          "text": "During ordinary setup, keep the occupied area and exits clear, arrange the ground and sleep layers, then check the overhead coverage and ventilation appropriate to the product. Look for sagging areas where water may collect and cord or stake positions that create a trip problem. Use the maker’s instructions for any adjustment; this guide does not provide structural loads or a universal knot/anchor recipe."
+        },
+        {
+          "type": "paragraph",
+          "text": "Check the pitch again after a meaningful weather change and before sleeping. Account for everyone’s access and the location of lights, shoes and care equipment. If the setup cannot remain usable without continual improvised fixes, reassess the configuration or site rather than treating persistence as proof of adequacy."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Protect the dry sleeping area",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Organize the shelter so the dry system remains protected during entry and packing. Keep wet outer equipment separate from bedding where practical, and leave enough room to handle the care tasks the group actually needs. Mark which bag contains the protected sleeping layers so another person can find them."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the pad and bedding according to their instructions. Compare the manufacturer’s conditions and rating method rather than assuming one printed temperature has the same meaning across every product. Include the person’s fit and care needs in the decision. If a system has not been tested in ordinary supported use, do not discover its limits on an isolated severe-weather trip."
+        },
+        {
+          "type": "paragraph",
+          "text": "A foil emergency blanket can be one contingency item, but it is not equivalent to a complete sleeping system. Do not pack it as the sole solution to an expected cold overnight stay. Keep the return or suitable-shelter plan available instead of depending on an improvised heat source."
+        }
+      ],
+      "references": [
+        [
+          "NPS · Ten essentials",
+          "https://www.nps.gov/articles/10essentials.htm"
+        ]
+      ]
+    },
+    {
+      "heading": "Keep cooking and combustion outside the shelter",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Plan food that can be eaten as carried when the trip must work without fire. Fuel-burning appliances can generate carbon monoxide; CDC warns against indoor use of portable fuel-burning appliances. Never use a stove, charcoal, lantern or improvised heater inside a tent or tarp enclosure to replace missing insulation."
+        },
+        {
+          "type": "paragraph",
+          "text": "For any permitted outdoor cooking, use the exact appliance’s siting and operation instructions and current local restrictions. An open entrance or a cracked edge does not certify a safe combustion arrangement. Keep hot equipment and incompatible chemicals away from sleeping and care materials."
+        },
+        {
+          "type": "paragraph",
+          "text": "The simplest shelter meal is one that introduces no setup problem: suitable ready-to-eat food, a workable container and the needed utensils. Check the package while planning and keep water needs visible. If warm food is important to the trip, resolve a suitable permitted cooking system separately; do not conceal it inside the shelter plan."
+        }
+      ],
+      "references": [
+        [
+          "CDC · Carbon monoxide",
+          "https://www.cdc.gov/carbon-monoxide/about/index.html"
+        ]
+      ]
+    },
+    {
+      "heading": "Rehearse the full system and leave the site usable",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Practice at a permitted supported location with an easy stop and all real help available. Test entry, exit, dry-layer access, personal lighting and how equipment is packed again. A photograph of an empty pitch cannot show whether the people can use it."
+        },
+        {
+          "type": "steps",
+          "items": [
+            "Inventory the complete shelter and sleep layers.",
+            "Choose a suitable permitted practice site and read the instructions.",
+            "Use the intended compatible configuration.",
+            "Place the actual bedding, bags and care equipment.",
+            "Check access and lighting without creating a real cold or wet exposure test.",
+            "Pack and inspect the system, carry out waste and record one correction."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "After ordinary use, follow the manufacturer’s cleaning and drying instructions before storage. Account for stakes, cords and small fittings. Leave the site without trenches, cut vegetation or scraps. Correct missing parts at home so the next trip does not begin with an untested substitute."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "NPS · Ten essentials",
+              "url": "https://www.nps.gov/articles/10essentials.htm",
+              "description": "Review the shelter, insulation and lighting systems in the essentials framework."
+            },
+            {
+              "label": "NPS · Leave no trace",
+              "url": "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm",
+              "description": "Read site-use and impact principles, then follow the specific land manager’s current rules."
+            }
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "No-fire camp planning",
+              "url": "/guides/bushcraft-no-fire/"
+            },
+            {
+              "label": "Outdoor trip plan",
+              "url": "/guides/outdoor-trip-plan/"
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "NPS · Leave no trace",
+          "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm"
+        ]
+      ]
+    }
   ],
   "without_help": "Use the safest reachable shelter and keep the group together. Reduce wind exposure and ground heat loss with available equipment; do not undertake a risky climb or river crossing to find a prettier campsite.",
   "household": "Fit shelter and sleeping systems to actual body sizes, mobility needs and weather. A person who cannot help pitch the tarp still needs a dry, insulated place and an accessible exit.",
-  "pack_now": "Keep the equipment and written information described above where the responsible person can reach them. Test access in darkness, with a tired household, and while carrying the items you actually need.",
+  "pack_now": "A complete weather-appropriate shelter/sleep system: tarp or selected shelter, supplied compatible supports and cords, ground barrier, insulating pad, sleeping insulation, protected dry layers and personal lights. Keep the instructions with the kit.",
   "next": "Pitch your actual shelter before dark, simulate rain with a hose at home, and check pooling, runoff and exit access.",
   "watch": "Improvised anchors are not climbing protection. Do not cut structural branches, sleep beneath unstable trees or rely on a campfire for overnight warmth.",
-  "sources": "outdoor-skills",
+  "sources": "tarp-shelter-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
-  "decisions": [],
-  "faqs": [],
+  "decisions": [
+    [
+      "The site has a hazard?",
+      "Choose a nearby suitable position before arranging shelter."
+    ],
+    [
+      "The complete system is inadequate for forecast conditions?",
+      "Use a suitable alternative or return early; a roof alone is not sufficient."
+    ],
+    [
+      "The pitch needs unfamiliar improvised supports?",
+      "Use the tested manufacturer-supported configuration or change the plan."
+    ]
+  ],
+  "faqs": [
+    [
+      "Does a tarp keep a person warm by itself?",
+      "It can provide a weather barrier, but ground insulation, sleeping insulation, clothing and conditions determine whether the complete system is suitable."
+    ],
+    [
+      "Can I use a stove under the shelter to compensate?",
+      "Do not use fuel-burning cooking or heating equipment inside a tent or improvised shelter. It creates carbon-monoxide and fire risks rather than fixing inadequate insulation."
+    ]
+  ],
   "scope": "Civilian educational planning. References include U.S. systems; local laws, conditions and services differ.",
   "related": [
     "bushcraft-foundation",

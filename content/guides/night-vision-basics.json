@@ -4,10 +4,10 @@
   "category": "firearms-tools",
   "subcategory": "Observation equipment",
   "content_type": "Preparedness guide",
-  "updated": "2026-10-04",
+  "updated": "2026-10-07",
   "published": "2026-10-04",
-  "source_checked": "2026-10-04",
-  "next_review": "2027-01-04",
+  "source_checked": "2026-10-07",
+  "next_review": "2027-01-07",
   "aliases": [
     "night vision",
     "NVG",
@@ -18,7 +18,9 @@
     "night vision",
     "NVG",
     "digital night vision",
-    "image intensifier"
+    "image intensifier",
+    "Use a repeatable observation shortlist",
+    "Budget for a usable observation system"
   ],
   "tldr": "Image-intensified night vision, digital low-light cameras and thermal imagers use different signals. Choose observation equipment around a specific civilian task, verify its limitations and retain ordinary lighting and navigation backups.",
   "steps": [
@@ -286,6 +288,84 @@
         }
       ],
       "references": []
+    },
+    {
+      "heading": "Use a repeatable observation shortlist",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Write the job in ordinary terms before comparing devices: seeing a campsite path, observing wildlife where permitted, checking an outbuilding, or inspecting an area from a fixed position. Include whether the device will be handheld, how long it must operate, whether you wear glasses, and whether image recording is actually useful. A specification table cannot decide how comfortable a device is in your hands."
+        },
+        {
+          "type": "table",
+          "caption": "A repeatable demonstration record",
+          "columns": [
+            "Field",
+            "Record"
+          ],
+          "rows": [
+            [
+              "Conditions",
+              "Ambient light, weather, nearby artificial light and the viewing location."
+            ],
+            [
+              "Task",
+              "The stationary object or ordinary feature you are trying to distinguish."
+            ],
+            [
+              "Usability",
+              "Focus/control access, display comfort, glasses fit and carrying fatigue."
+            ],
+            [
+              "Power",
+              "Battery arrangement, stated runtime conditions, spare availability and charging needs."
+            ],
+            [
+              "Result",
+              "What you could confidently describe, what remained uncertain and the settings used."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Compare products during the same demonstration rather than combining impressive images from unrelated locations. Ask what processing, recording compression or illumination was used in promotional samples. A short trial from a shop doorway does not represent every outdoor environment. Keep an uncertainty note so a later purchase decision does not remember only the clearest image."
+        }
+      ],
+      "references": [
+        [
+          "FLIR · Thermal and night vision",
+          "https://www.flir.com/discover/ots/thermal-vs-night-vision/"
+        ]
+      ]
+    },
+    {
+      "heading": "Budget for a usable observation system",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Add the carrying case, permitted power supplies, consumables and any necessary service to the budget. Confirm the maker’s environmental rating, care instructions and storage limits for the exact device. Terms such as waterproof or rugged need a published qualification; they do not mean indefinite exposure to any weather or neglect."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a household, consider whether another adult can operate the controls and understand the display without reconfiguring the device. A simpler device used well may answer the real observation question better than a feature-heavy product that stays in storage. Preserve privacy when recording around other homes, and follow applicable access and wildlife rules. Observation equipment does not establish that a route or building is safe to enter."
+        },
+        {
+          "type": "resources",
+          "items": [
+            {
+              "label": "FLIR · Technology comparison",
+              "url": "https://www.flir.com/discover/ots/thermal-vs-night-vision/",
+              "description": "Compare the basic sensing technologies, then request the selected model’s current manual and environmental specifications."
+            }
+          ]
+        }
+      ],
+      "references": [
+        [
+          "FLIR · Thermal and night vision",
+          "https://www.flir.com/discover/ots/thermal-vs-night-vision/"
+        ]
+      ]
     }
   ],
   "without_help": "When a shape lacks detail, record only what you can actually distinguish. Use ordinary lighting for a safe stationary check when appropriate. Keep a headlamp and a normal navigation plan available if power or visibility is poor.",
@@ -293,7 +373,7 @@
   "pack_now": "Model and manual, battery type, normal power and focus controls, permitted storage conditions, care instructions and warranty contact.",
   "next": "Compare live views of familiar objects from a safe stationary location under similar lighting. Record image detail, field of view, focus effort, comfort and real battery use.",
   "watch": "A bright-looking scene can still hide nearby obstacles. Follow the device’s light-exposure limits; a screen image does not establish safe terrain or identify an ambiguous subject.",
-  "sources": "night-vision-basics",
+  "sources": "night-vision-basics-full-20261007",
   "urgency": "planning",
   "review_status": "Source-linked editorial review; not independent expert certification",
   "decisions": [],
