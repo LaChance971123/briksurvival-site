@@ -4,7 +4,7 @@ import { normalizeNwsGeo } from './sources.mjs';
 
 export const SCHEMA_VERSION = 1;
 export const NORMALIZATION_VERSION = 2;
-export const PRESENTATION_VERSION = 1;
+export const PRESENTATION_VERSION = 2;
 export const STALE_AFTER_MS = 14 * 60 * 60 * 1000;
 export const RETENTION_MS = 14 * 24 * 60 * 60 * 1000;
 export const MAX_EVENTS_PER_SOURCE = 120;

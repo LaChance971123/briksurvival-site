@@ -108,3 +108,28 @@ test('contiguous excerpts keep lead prohibitions and cannot promote a less restr
   assert.doesNotMatch(result.displaySummary,/Residents may need shelter/);
  }
 });
+
+test('actual Tropical Storm Watch record keeps structured CAP assessments out of narrative presentation',()=>{
+ const event={
+  id:'nws-11411a469b3b3fd69d37',category:'weather',
+  title:'Tropical Storm Watch issued October 10 at 8:02AM PDT by NWS San Diego CA',
+  summary:'* LOCATIONS AFFECTED - Julian - Pine Valley * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 20-30 mph with gusts to 45 mph - THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST UNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 39 to 57 mph - The wind threat has remained nearly steady from the previous assessment. - PLAN: Plan for hazardous wind of equivalent tropical storm force. - PREPARE: Remaining efforts to protect property should be completed as soon as possible. Prepare for limited wind damage. - ACT: Move to safe shelter before the wind becomes hazard',
+  location:{label:'San Diego County Mountains',scope:'US',codes:['CA'],precision:'source-area'},
+ };
+ const before=structuredClone(event);const result=presentationFor(event);
+ assert.equal(result.displaySummaryKind,'source-metadata');
+ assert.equal(result.displaySummary,'The National Weather Service issued a tropical storm watch for San Diego County Mountains, CA. Open the source for its affected areas and instructions.');
+ assert.doesNotMatch(result.displaySummary,/LOCATIONS|LATEST LOCAL|THREAT TO|PLAN:|PREPARE:|ACT:|20-30|39 to 57/);
+ assert.deepEqual(event,before,'Original source text and its forecast uncertainty remain unchanged.');
+});
+
+test('structured weather labels end an excerpt without stripping qualifiers or promoting later instructions',()=>{
+ for(const label of ['LOCATIONS AFFECTED - Example','LATEST LOCAL FORECAST: Below tropical storm force wind','THREAT TO LIFE AND PROPERTY: Potential wind impacts','PLAN: Plan only if conditions change','PREPARE: Preparation may be needed','ACT: Follow source instructions','POTENTIAL IMPACTS: Uncertain']) {
+  const result=presentationFor({category:'weather',title:'Tropical Storm Watch',summary:`${label}. Residents may need shelter.`});
+  assert.equal(result.displaySummaryKind,'source-metadata');assert.doesNotMatch(result.displaySummary,/Residents may need shelter/);
+ }
+ const bounded=presentationFor({category:'weather',title:'Tropical Storm Watch',summary:'Tropical storm conditions are possible. PLAN: Plan only if conditions change. Residents may need shelter.'});
+ assert.equal(bounded.displaySummary,'Tropical storm conditions are possible.');
+ const unsafeWhat=presentationFor({category:'weather',title:'Tropical Storm Watch',summary:'* WHAT...LATEST LOCAL FORECAST: Below tropical storm force wind. * WHERE...Example.'});
+ assert.match(unsafeWhat.displaySummary,/National Weather Service issued/);
+});

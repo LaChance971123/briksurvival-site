@@ -252,3 +252,15 @@ test('the genuine captured derivative can be re-presented inside the same public
   assert.equal(migrated.sources[id].events.length,lane.events.length);
  }
 });
+
+test('an older cached presentation is corrected without falsely refreshing a failed source check',()=>{
+ const first=assembleSnapshot(null,[result([{...raw,title:'Tropical Storm Watch',summary:'LOCATIONS AFFECTED - Example. PLAN: Plan only if conditions change. Residents may need shelter.'}])],now);
+ const legacy={...first.sources.nws.events[0],presentationVersion:PRESENTATION_VERSION-1,displaySummary:'LOCATIONS AFFECTED - Example. PLAN: Plan only if conditions change.'};
+ first.sources.nws.events=[legacy];first.snapshot.events=[legacy];
+ const next=assembleSnapshot(first,[{source,ok:false,error:'Source unavailable'}],'2026-10-10T13:00:00Z');
+ const event=next.snapshot.events[0];
+ assert.equal(event.presentationVersion,PRESENTATION_VERSION);assert.equal(event.displaySummaryKind,'source-metadata');
+ assert.doesNotMatch(event.displaySummary,/LOCATIONS|PLAN:|Residents may need shelter/);
+ assert.equal(event.lastCheckedAt,now);assert.equal(next.sources.nws.lastSuccessAt,now);
+ for(const key of ['id','sourceEventId','title','summary','instructions','publishedAt','updatedAt','contentHash','updates'])assert.deepEqual(event[key],legacy[key],key);
+});

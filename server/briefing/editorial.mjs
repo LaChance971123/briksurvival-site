@@ -64,6 +64,9 @@ export function newsRelevance(event) {
     : {relevance:'background',relevanceReason:'Policy, advocacy or other background reporting; not a current household incident or local alert.'};
 }
 
+// These are structured CAP assessment/action fields, not prose paragraphs.
+// Never detach their numbers or instructions from the accompanying qualifiers.
+const WEATHER_STRUCTURED_LABEL = /\b(?:LOCATIONS AFFECTED|LATEST LOCAL FORECAST|THREAT TO LIFE AND PROPERTY|POTENTIAL IMPACTS)\b|\b(?:PLAN|PREPARE|ACT)\s*:/i;
 const segmenter = new Intl.Segmenter('en', {granularity:'sentence'});
 const HAS_PREDICATE = /\b(?:is|are|was|were|will|can|could|may|might|must|has|have|had|remains?|continues?|causes?|poses?|contains?|includes?|affects?|allows?|recalls?|issued|announced|reports?|warns?|threatens?|occurred|struck|began|ended|reached|produces?|affect|cause|sweep|damage|lead|expect|expecting|reported|help|helps|protect|protects|violate|violates|adopted|treats|recalling|says|said|explains|explained|describes|described|do|avoid|use|check|stay|seek|follow|stop|keep|leave|never|refrain)\b/i;
 function completeSentences(text, {weather=false,maximum=560} = {}) {
@@ -79,6 +82,7 @@ function completeSentences(text, {weather=false,maximum=560} = {}) {
   for(const part of cleaned.split('∷').flatMap(section=>[...segmenter.segment(section)])) {
     const sentence=part.segment.replace(/^[.∷\s-]+/,'').replace(/\s+([,;!?])/g,'$1').trim();
     if(!sentence)continue;
+    if(weather && WEATHER_STRUCTURED_LABEL.test(sentence))break;
     // Only known CAP metadata can be skipped. Rejected substantive content ends
     // the excerpt: never surface a later sentence after dropping its caution.
     if(weather && /\b(?:NEW INFORMATION|CHANGES TO WATCHES|STORM INFORMATION|CURRENT WATCHES|This product covers|FOR THE FOLLOWING (?:AREAS|RIVERS)|forecasts (?:reflect|represent))\b/i.test(sentence))continue;
@@ -118,13 +122,13 @@ export function presentationFor(event) {
     // Preserve the entire headline, including negations and conditions. Never
     // turn a possible/conditional/negative impact heading into an assertion.
     const banner=String(event.summary || '').match(/\*\*(Impacts? from [^*]{1,340})\*\*/i)?.[1];
-    if(banner) {
+    if(banner && !WEATHER_STRUCTURED_LABEL.test(banner)) {
       displaySummary=`The NWS headline states: “${banner}”.`;
       displaySummaryKind='source-metadata';
     }
     if(!displaySummary) {
       const what=String(event.summary || '').match(/\*\s*WHAT\.{2,}\s*([\s\S]*?)(?=\s*\*\s*(?:WHERE|WHEN|IMPACTS?|ADDITIONAL DETAILS)\.{2,}|$)/i)?.[1]?.trim();
-      if(what && /[^.]\.$/.test(what) && !/\.{2,}|[∷…]/.test(what) && what.length<380 && !/[<>]/.test(what)) {
+      if(what && !WEATHER_STRUCTURED_LABEL.test(what) && /[^.]\.$/.test(what) && !/\.{2,}|[∷…]/.test(what) && what.length<380 && !/[<>]/.test(what)) {
         displaySummary=`The notice lists “${what.replace(/\.$/,'')}” as the hazard.`;
         displaySummaryKind='source-metadata';
       }
