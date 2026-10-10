@@ -18,7 +18,7 @@ for p in [ROOT/'templates/shell.html',*[ROOT/name for name in sorted(public_page
  s=s.replace('Save the checklist, follow practical steps and read the limits.','Follow practical steps and read the limits.')
  s=s.replace('Sources, review date &amp; printable checklist','Sources, scope &amp; review date').replace('Sources, review date & printable checklist','Sources, scope & review date')
  s=re.sub(r'<script src="/ads\.js[^"]*"[^>]*></script>\s*', '', s)
- if not p.relative_to(ROOT).as_posix().startswith('planner/'):
+ if not p.relative_to(ROOT).as_posix().startswith(('planner/', 'briefing/')):
   s=s.replace('</head>', '<script src="/ads.js?v=oz9" async></script>\n</head>')
  s=s.replace('FIELD KNOWLEDGE / V1.0','CIVILIAN KNOWLEDGE / FREE ACCESS')
  s=s.replace('When an emergency is active, follow local official instructions.','Act on danger. Verify information. Plan for help to be unavailable.')
@@ -46,6 +46,8 @@ for p in [ROOT/'templates/shell.html',*[ROOT/name for name in sorted(public_page
   s=s.replace(marker,paths+'\n'+marker)
  if '<footer' in s and 'href="/reading-list/"' not in s[s.index('<footer'):]:
   s=s.replace('<a href="/privacy/">Privacy</a>','<a href="/reading-list/">My reading list</a><a href="/privacy/">Privacy</a>')
+ if '<footer' in s and 'href="/briefing/"' not in s[s.index('<footer'):]:
+  s=s.replace('<a href="/resources/">Reference shelf</a>', '<a href="/resources/">Reference shelf</a><a href="/briefing/">Current-events briefing</a>')
  if '<footer' in s and 'href="/contact/"' not in s[s.index('<footer'):]:
   s=s.replace('<a href="/privacy/">Privacy</a>','<a href="/privacy/">Privacy</a><a href="/contact/">Contact & corrections</a>')
  if not LIVE_TOPICS:

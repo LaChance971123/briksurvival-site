@@ -7,6 +7,7 @@ Civilian emergency knowledge for individuals and households who may lack utiliti
 Python 3.12 and Node 22:
 
 ```sh
+npm ci
 pip install -r requirements-build.txt
 python scripts/build_site.py
 ```
@@ -38,3 +39,7 @@ Stripe is connected in Payhip and the four topic checkout links are enabled. Cus
 Homepage, search, urgent response, toolkit, privacy, signup confirmation and retired-access pages initialise no advertising providers. Existing eligible browsing/preparedness/field pages plus disaster-scams and verify-information retain vignette 11941449 with unchanged coverage. The separate push-subscription tag for zone 11941494 is disabled on every route, so the site no longer initialises its notification-permission prompt. This stops new subscriptions through that tag while keeping vignette monetization.
 
 The supplied root advertising worker and existing browser permissions remain unchanged. Previously subscribed advertising notifications may continue until the visitor revokes notification permission in browser site settings. No MultiTag stacking, replacement zones, opt-in gate, ad-off control or site cooldown is added. Provider script loading is not evidence of paid fill or revenue. Exact rules live in AGENTS.md and the ad-policy checks.
+
+## Current-events preparedness briefing
+
+The homepage and `/briefing/` connect twice-daily source snapshots to existing guidance. These are not live alerts or comprehensive hazard coverage. A pooled schedule updates shared JSON in Netlify Blobs; visitors read a cached snapshot without contacting upstream sources. No API keys or AI are used. See [operations, safety and launch gates](docs/briefing-operations.md) and [source scope and reuse policies](docs/briefing-sources.md). Production publication requires approval; preview schedules are inactive.

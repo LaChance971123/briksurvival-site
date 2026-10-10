@@ -111,3 +111,18 @@
   for = "/planner/app/*"
   [headers.values]
     X-Robots-Tag = "noindex"
+
+# The shared data refresh does not rebuild or redeploy the site.
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/briefing.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/briefing.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

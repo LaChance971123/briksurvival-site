@@ -6,6 +6,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 commands = [
     [sys.executable, 'scripts/build_library.py'],
+    [sys.executable, 'scripts/build_briefing.py'],
     [sys.executable, 'scripts/refine_site.py'],
     [sys.executable, 'scripts/release_paths.py'],
     [sys.executable, 'scripts/build_homepage.py'],
@@ -24,9 +25,12 @@ commands = [
     ['node', 'scripts/verify_search_return.cjs'],
     [sys.executable, 'scripts/verify_static_preview.py'],
     [sys.executable, 'scripts/verify_audit_fixes.py'],
+    ['npm', 'test'],
+    [sys.executable, 'scripts/verify_briefing.py'],
+    ['node', 'scripts/verify_briefing_ui.cjs'],
     ['node', 'scripts/verify_ads.cjs'],
     ['node', 'scripts/verify_offline_retirement.cjs'],
-    *[['node', '--check', name] for name in ('app.js', 'search.js', 'ads.js', 'offline/sw.js','planner/app/launcher.js','planner/app/sw.js')],
+    *[['node', '--check', name] for name in ('briefing.js', 'app.js', 'search.js', 'ads.js', 'offline/sw.js','planner/app/launcher.js','planner/app/sw.js')],
     [sys.executable, 'scripts/verify_release.py'],
     [sys.executable, 'scripts/verify_toolkits.py'],
     [sys.executable, 'scripts/verify_planner.py'],

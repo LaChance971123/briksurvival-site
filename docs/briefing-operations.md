@@ -1,0 +1,47 @@
+# Twice-daily preparedness briefing
+
+This release adds `/briefing/`, `/briefing/event/?id=…`, and a compact three-card homepage block. It replaces the larger “Prepare ahead” section while retaining its three planning links. Briefing routes remain ad-free. Existing emergency guidance, search, paid-product boundaries, forms, and advertising rules remain intact.
+
+## Data and schedule
+
+- Eight fixed source targets are pooled into one scheduled Netlify function. See [source policies](briefing-sources.md) for the scope, reuse basis and omissions of each feed.
+- Production-only cron: `0 0,12 * * *`, or **00:00 and 12:00 UTC**. This is 8 p.m./8 a.m. Eastern Daylight Time and 7 p.m./7 a.m. Eastern Standard Time. UTC cron does not adjust for daylight saving. These are planned collection times, not delivery guarantees.
+- In a 30-day month: 60 scheduled jobs and at most 480 source requests, before explicit manual tests/captures. Conditional requests still count. There is no per-visitor source request, hidden client polling, AI call, site rebuild or deployment per refresh.
+- Collection uses maximum concurrency 3, a 6.5-second per-source timeout and a 21-second overall fetch budget. Storage requests (including response bodies) are bounded to two seconds each with default SDK retry loops disabled; the scheduled storage client has a 28-second wall-clock deadline, leaving headroom inside Netlify's 30-second scheduled-function limit. Responses are capped at 4 MiB. Redirects are not followed. Each source fails independently; previous good records survive outages. ETag and Last-Modified are reused. Retry-After suppresses early requests; no immediate retries occur inside a batch.
+- Netlify Blobs holds latest-state and 28 rotating half-day version slots. A complete version is written before one atomic latest-state replacement. The shared store is production-only; previews use their deploy-isolated store. No new user token, account or secret is required. Latest-state replacement is atomic: readers see a complete previous or new value, even when acknowledgement of a timed-out write is uncertain. If a reader cannot access storage, it serves the explicitly dated initial snapshot with an outage notice.
+- The CDN caches the read endpoint for five minutes plus at most one minute of stale-while-revalidate. The browser fetches once per page load, calculates expiry/overdue state with its clock, and never polls. The cache lifetime is not upstream polling.
+- Each source contributes at most 120 records; the public response is bounded to 500 records and 3 MiB. Omitted records mark coverage partial, with received/stored counts shown in source health. Official instructions over 12,000 sanitized characters are omitted in full, with a direction to the original source rather than a silently truncated directive. NWS cancellation queries are capped at 100; pagination is disclosed instead of fetched. CPSC covers the last 30 days of publication changes; KEV covers additions in the last 30 days; USGS covers significant earthquakes in the past seven days. RSS windows are publisher-defined.
+
+## Editorial and safety boundaries
+
+Source text is untrusted data: adapters validate feeds/items; the core strips markup, limits fields and validates HTTPS source hosts/dates; the browser uses text-only DOM insertion and checks URLs again. XML external entities/document types are rejected. No source instructions are executed. No feed images, full news articles, model summaries, publisher-country geolocation or precise user location are used.
+
+Official instructions are separate from fixed editorial planning. Existing guides are selected deterministically in server/briefing/editorial.mjs, with exact routes checked during builds. Recall records require exact product/model/lot matching, use inventory/information-verification guides, and defer to the original remedy. KEV describes vulnerabilities, never infers household compromise, and never turns federal deadlines into consumer expiry. News cannot carry official urgency/instructions. Byline, original source, policy, license and shortened-excerpt attribution accompany news text.
+
+A successful check is not a complete hazard inventory. Missing is not cancelled. Explicit CAP cancellations link to referenced notices; expired notices say only that a source validity/end time passed. Neither establishes that hazards ended. Retained official notices absent from a successful refresh are labeled no-longer-listed and age out after the bounded retention window. News omitted in a successful refresh is removed, including rights exclusions. An outage retains last-permitted data with its original check time.
+
+The UI flags source checks older than 14 hours, partial coverage, source/storage failure and missing detail records. It never offers an all-clear. Publication, update, snapshot and last-check times are distinct, in UTC. Device clocks can be wrong; source links remain authoritative. Broad location filters stay in browser-local storage, without transmission to source services. US recall jurisdiction is not state-level distribution; earthquake epicenters are not affected-area boundaries; news topic tags do not establish affected geography.
+
+## Development and preview
+
+```sh
+npm ci
+pip install -r requirements-build.txt
+python scripts/build_site.py
+```
+
+The complete build includes backend/adapters, frontend DOM tests, original search/navigation/privacy/ad-policy checks, exact guide links and public-file boundary checks. Inert fixtures remain outside public output; no fake emergencies are shipped.
+
+An explicit live initial capture is available with `npm run briefing:seed -- --fresh`. It is **not** part of builds. This local script permits 12 seconds per source and 40 seconds total for initialization; it does not change scheduled limits. Inspect statuses, rights exclusions, timestamp and counts before committing the capture. Omitting --fresh preserves prior good source data through outages. Do not use fake records to make a preview look populated.
+
+Deploy previews read the bundled genuine dated snapshot. Netlify does not fire schedules on previews, and the refresh function rejects non-production contexts. The public read endpoint cannot trigger ingestion. A preview/unit test does not prove production cadence, Blobs writes or quota sufficiency.
+
+## Launch gates and operation
+
+1. Review the draft PR, genuine snapshot, desktop/mobile UI and source policies. Production release requires owner approval.
+2. Check the existing Netlify plan's remaining allowance and storage/function availability. The observed Personal account does not establish remaining credits. No paid service is added, but compute, CDN requests, bandwidth, builds and storage use the shared allowance.
+3. After approved production release, verify both functions are deployed, optionally invoke the schedule through Netlify's authorized dashboard, and confirm /api/briefing changes from initial-snapshot to ok with persisted source statuses. Inspect logs; observe the next scheduled UTC run before claiming cadence is proven.
+4. Source failure keeps last-good data and an honest warning. For scheduler/store failure, inspect Netlify logs/usage. Never mask an outage by refreshing timestamps or adding per-visitor upstream calls.
+5. Roll back the code deploy if needed. Production storage is schema-versioned (osprey-briefing-v1); previews cannot mutate it. Never insert incidents or delete history to conceal problems.
+
+Deferred: comprehensive international hazards, additional publishers, editorial review tooling, personalized alerts, maps, accounts, push notifications, paid news APIs and AI.
