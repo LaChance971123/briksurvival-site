@@ -10,7 +10,8 @@ assert list(hero).index(p.xpath('//*[@class="hero-urgent"]')[0])>0
 assert p.xpath('//*[@class="home-hero-intro"]//*[@id="emergency-search"]'), 'Search stays in primary hero column'
 assert len(p.xpath('//input[@type="search"]'))==1
 assert p.xpath('//*[@id="emergency-search"]/@aria-controls')==['home-search-results']
-assert len(p.xpath('//nav[@id="primary-nav"]/a'))==4
+assert len(p.xpath('//nav[@id="primary-nav"]/a[not(contains(@class,"nav-mobile-briefing"))]'))==4
+assert len(p.xpath('//nav[@id="primary-nav"]/a[@class="nav-mobile-briefing" and @href="/briefing/"]'))==1
 assert len(p.xpath('//a[contains(@class,"home-situation")]'))==6
 assert len(p.xpath('//div[@class="home-subject-grid"]/a'))==14
 text=(R/'dist/index.html').read_text();assert text.index('id="find-help"')<text.index('id="encyclopedia-title"')<text.index('id="start-title"')<text.index('id="guide-access"')

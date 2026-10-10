@@ -17,4 +17,5 @@ jobs:
         with:
           node-version: '22'
       - run: pip install -r requirements-build.txt
+      - run: npm ci
       - run: python scripts/build_site.py

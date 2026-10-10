@@ -1,0 +1,18 @@
+{
+  "name": "osprey-zero-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static preparedness library and twice-daily source briefings",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test server/briefing/*.test.mjs",
+    "briefing:seed": "node scripts/collect_briefing.mjs",
+    "build": "python scripts/build_site.py"
+  },
+  "dependencies": {
+    "@netlify/blobs": "11.1.4",
+    "fast-xml-parser": "5.11.2"
+  }
+}
