@@ -508,14 +508,16 @@
       cancelRestore();cancelLocationWork();const attempt=zipAttempt;
       if(typeof navigator==='undefined' || !navigator.geolocation || window.isSecureContext===false){zipStatus.textContent='Device location is unavailable in this browser. Search a ZIP, city or state.';return;}
       geoPending=true;geoButton.disabled=true;geoButton.textContent='Locating…';zipClear.hidden=false;
-      zipStatus.textContent='Waiting for browser location permission. You can search an area instead.';
+      zipStatus.textContent='Finding your area. Allow location if your browser asks. You can search instead.';
       const fail=error=>{
         if(attempt!==zipAttempt)return;cancelLocationWork();if(error?.code===1)rememberLocationAttempt('denied');
-        zipStatus.textContent=error?.code===1?(automatic?'Automatic location was not available. Choose Use my location or search an area.':'Location access was not granted. Browser or site permission may need changing. Search an area, or check permission and choose Use my location.'):error?.code===3?'Location request timed out. Search an area or choose Use my location to retry.':'Device location could not be determined. Search an area or choose Use my location to retry.';
+        zipStatus.textContent=error?.code===1?(automatic?'Automatic location was not available. Choose Use my location or search an area.':'Location access was not granted. Browser or site permission may need changing. Search an area, or check permission and choose Use my location.'):error?.code===3?'Your device did not provide a location in time. Search an area or choose Use my location to retry.':'Device location could not be determined. Search an area or choose Use my location to retry.';
       };
       // Browser timeout excludes permission wait. Release the UI without discarding a late grant.
       // A manual choice, retry or navigation still invalidates this request via zipAttempt.
-      geoTimer=setTimeout(()=>{if(attempt!==zipAttempt)return;stopGeolocation();zipStatus.textContent='Still waiting for browser location permission. You can allow it, search an area, or choose Use my location to retry.';},GEO_DEADLINE_MS);
+      geoTimer=setTimeout(()=>{if(attempt!==zipAttempt)return;stopGeolocation();zipStatus.textContent='Still finding your area. Check any browser permission prompt, or search an area.';},GEO_DEADLINE_MS);
+      // One low-power acquisition: allow a recent browser-held fix and give a slow fix 30s.
+      // Only an explicit user retry starts another request on this visit.
       try { navigator.geolocation.getCurrentPosition(async position=>{
         if(attempt!==zipAttempt)return;
         stopGeolocation();geoButton.disabled=true;geoButton.textContent='Matching…';geoPending=true;zipStatus.textContent='Matching an approximate county in this browser…';
@@ -530,7 +532,7 @@
           else if(result.status==='ambiguous' && result.matches?.length)presentChoices(result.matches,{fromLocation:true,accuracyLabel});
           else zipStatus.textContent=lookupMessage(result,'geolocation');
         } catch {if(attempt!==zipAttempt)return;areaDataRequests.delete(COUNTY_DATA_URL);stopGeolocation();zipStatus.textContent='County lookup unavailable. Search a state name or code, or use More filters. Use my location can retry.';}
-      },fail,{enableHighAccuracy:false,maximumAge:0,timeout:10000}); } catch {fail({code:2});}
+      },fail,{enableHighAccuracy:false,maximumAge:60000,timeout:30000}); } catch {fail({code:2});}
     }
     geoButton.addEventListener('click',()=>startGeolocation());
     zipInput.addEventListener('keydown',event=>{
