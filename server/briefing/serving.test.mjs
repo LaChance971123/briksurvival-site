@@ -6,7 +6,7 @@ const seed={id:'test-only',generatedAt:'2026-10-10T12:00:00Z',sources:[],events:
 test('snapshot endpoint reads only shared storage and supports CDN/ETag caching',async()=>{
  let reads=0;const load=async()=>{reads++;return {snapshot:seed}};
  const response=await serveSnapshot(new Request('https://example.test/api/briefing'),{load,seed});
- assert.equal(reads,1);assert.equal(response.status,200);assert.match(response.headers.get('Netlify-CDN-Cache-Control'),/s-maxage=300/);
+ assert.equal(reads,1);assert.equal(response.status,200);assert.match(response.headers.get('Netlify-CDN-Cache-Control'),/durable, s-maxage=300/);
  const again=await serveSnapshot(new Request('https://example.test/api/briefing',{headers:{'if-none-match':response.headers.get('etag')}}),{load,seed});
  assert.equal(again.status,304);
 });
