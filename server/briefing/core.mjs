@@ -1,10 +1,10 @@
 import { createHash } from 'node:crypto';
-import { editorialFor, presentationFor } from './editorial.mjs';
+import { cisaCatalogId, editorialFor, presentationFor } from './editorial.mjs';
 import { normalizeNwsGeo } from './sources.mjs';
 
 export const SCHEMA_VERSION = 1;
 export const NORMALIZATION_VERSION = 2;
-export const PRESENTATION_VERSION = 2;
+export const PRESENTATION_VERSION = 3;
 export const STALE_AFTER_MS = 14 * 60 * 60 * 1000;
 export const RETENTION_MS = 14 * 24 * 60 * 60 * 1000;
 export const MAX_EVENTS_PER_SOURCE = 120;
@@ -49,7 +49,7 @@ export function presentEvent(event, {summary = event.summary, eventType = event.
   const zone=nws && typeof sourceReaderZoneId==='string' && /^[A-Z]{2}Z\d{3}$/.test(sourceReaderZoneId) && states.has(sourceReaderZoneId.slice(0,2)) && !sourceReaderZoneId.endsWith('000') ? sourceReaderZoneId : null;
   const sourceUrl=nws ? zone?`https://forecast.weather.gov/MapClick.php?zoneid=${zone}`:'https://www.weather.gov/' : event.url;
   const sourceUrlKind=nws ? zone?'current-zone-forecast':'current-alerts-map' : event.category==='cyber'?'source-catalog':'original-notice';
-  const sourceLinkLabel=nws ? zone?`Check current NWS forecast and alerts for zone ${zone}`:'Check current NWS alerts (map)' : event.category==='recall'?'Open the original recall and remedy':event.category==='cyber'?'Open the CISA vulnerability catalog':event.category==='earthquake'?'Open the USGS earthquake record':'Read the original reporting';
+  const sourceLinkLabel=nws ? zone?`Check current NWS forecast and alerts for zone ${zone}`:'Check current NWS alerts (map)' : event.category==='recall'?'Open the original recall and remedy':event.category==='cyber'?`Open the CISA catalog${cisaCatalogId(event)?`; search ${cisaCatalogId(event)}`:''}`:event.category==='earthquake'?'Open the USGS earthquake record':'Read the original reporting';
   return {...event,...display,...editorialFor({...context,eventType:display.eventType}),sourceUrl,sourceUrlKind,sourceLinkLabel,
     sourceReaderZoneId:zone,presentationVersion:PRESENTATION_VERSION};
 }

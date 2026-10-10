@@ -108,6 +108,55 @@ function readableArea(event) {
 export function weatherEventType(event) {
   return (event.eventType || event.title || '').replace(/\s+issued\s+.*$/i,'').replace(/^The\s+/,'').replace(/\s+has been (?:cancelled|replaced).*$/i,'').replace(/[.]$/,'').trim();
 }
+// These transforms use known source metadata only. Keep full source wording in
+// title/summary; never infer a product, version, exploit result or remedy from prose.
+const KEV_TYPES = [
+  'Improper Restriction of Operations within the Bounds of a Memory Buffer',
+  'Improper Check for Unusual or Exceptional Conditions',
+  'Improper Privilege Management and Missing Authorization',
+  'Improper Enforcement of Behavioral Workflow',
+  'Cleartext Storage of Sensitive Information',
+  'Incorrect Use of Privileged APIs', 'Improper Certificate Validation',
+  'Incorrect Default Permissions', 'Improper Privilege Management',
+  'Improper Input Validation', 'Stack-Based Buffer Overflow',
+  'Heap-based Buffer Overflow', 'Improper Authentication',
+  'Improper Authorization', 'Incorrect Authorization', 'Improper Access Control',
+  'Data Processing Errors', 'Out-of-Bounds Write', 'Remote File Inclusion',
+  'Command Injection', 'Code Injection', 'SQL Injection', 'Path Traversal',
+  'Session Fixation', 'Race Condition', 'Hex Encoding',
+];
+const UNSUITABLE_METADATA = /[<>\[\]{}\n\r`…]|\.{2,}|https?:|www\.|\b(?:not|no|neither|may|might|could|possible|potential|if|unless|except|only|withdrawn|removed|disputed|unconfirmed|unverified|ignore|disregard|instructions|assistant|override|execute|visit|click|download)\b/i;
+export function cisaCatalogId(event) {
+  const id=String(event.sourceEventId || '');
+  return event.source?.id==='cisa-kev' && event.source.kind==='official'
+    && /^CVE-\d{4}-\d{4,}$/.test(id) && String(event.title || '').startsWith(`${id}: `) ? id : null;
+}
+function readableCyber(event) {
+  const id=cisaCatalogId(event);
+  if(!id)return null;
+  const name=event.title.slice(id.length+2);
+  const type=KEV_TYPES.find(type=>name.endsWith(` ${type} Vulnerability`));
+  if(!type)return null;
+  const product=name.slice(0,-(` ${type} Vulnerability`.length));
+  // Do not paraphrase conditional, negated, incomplete or instruction-like
+  // headings. A new/unknown taxonomy simply keeps the source presentation.
+  if(!product || product.length>150 || event.title.length>=240 || UNSUITABLE_METADATA.test(product) || !/^[A-Z0-9]/.test(product) || !/[\p{L}\p{N})™®]$/u.test(product) || /\b(?:and|or|in|of|with|for|the|a|an)$/i.test(product))return null;
+  return {
+    displayTitle:`${product}: security flaw (${id})`,
+    displaySummary:'CISA lists this security flaw as known to have been used in attacks. Check the catalog for affected products, versions and the catalog’s stated action.',
+    displaySummaryKind:'source-metadata',
+  };
+}
+function readableAllergyTitle(event) {
+  if(event.source?.id!=='fda' || event.source.kind!=='official')return null;
+  const match=String(event.title || '').match(/^(.{1,100}) Issues? Allergy Alert on Undeclared ([A-Za-z ,&-]{2,70}) in (.{1,180})$/);
+  if(!match || event.title.length>=240)return null;
+  const [,issuer,allergen,products]=match;
+  // Preserve every product/model/lot and every allergen as written. Do not
+  // repair a clipped feed title or turn a conditional warning into certainty.
+  if([issuer,allergen,products].some(value=>UNSUITABLE_METADATA.test(value)) || /\b(?:and|or|in|of|with|for|the|a|an)$/i.test(products) || !/[\p{L}\p{N})™®]$/u.test(products))return null;
+  return `${issuer}: undeclared ${allergen.toLowerCase()} in ${products}`;
+}
 export function presentationFor(event) {
   let displayTitle=event.title || '';
   let displaySummary=completeSentences(event.summary,{weather:event.category==='weather'});
@@ -152,15 +201,17 @@ export function presentationFor(event) {
       displaySummaryKind='source-metadata';
     }
   } else if(event.category==='recall') {
-    displayTitle=displayTitle.replace(/\s+(?:Due to|Because of)\s+.*$/i,'').replace(/;\s*(?:Sold|Violates?|Fail).*$/i,'').replace(/\bRecalls\b/,'recalls');
+    displayTitle=readableAllergyTitle(event) || displayTitle.replace(/\s+(?:Due to|Because of)\s+.*$/i,'').replace(/;\s*(?:Sold|Violates?|Fail).*$/i,'').replace(/\bRecalls\b/,'recalls');
     if(displayTitle.length>190 || /…$/.test(displayTitle)) {
-      const issuer=displayTitle.split(/\s+(?:Expands?\s+)?Recalls?\b/i)[0];
-      if(issuer.length<100)displayTitle=`${issuer}: product recall notice`;
+      const issuer=displayTitle.match(/^(.{1,99}?)\s+(?:Expands?\s+)?Recalls?\b/i)?.[1];
+      if(issuer && !UNSUITABLE_METADATA.test(issuer))displayTitle=`${issuer}: product recall notice`;
     }
   } else if(event.category==='cyber') {
     const match=displayTitle.match(/^(CVE-\d{4}-\d+):\s*(.+)$/);
     if(match)displayTitle=`${match[2]} (${match[1]})`;
     displaySummary=completeSentences((event.summary || '').replace(/^Known exploited vulnerability:\s*/i,''));
+    const readable=readableCyber(event);
+    if(readable)({displayTitle,displaySummary,displaySummaryKind}=readable);
   }
   if(!displaySummary) {
     displaySummary=event.category==='recall'?'The feed does not provide a complete short summary. Open the original notice for affected products and instructions.':'The feed does not provide a complete short summary. Open the original source for context.';

@@ -264,3 +264,26 @@ test('an older cached presentation is corrected without falsely refreshing a fai
  assert.equal(event.lastCheckedAt,now);assert.equal(next.sources.nws.lastSuccessAt,now);
  for(const key of ['id','sourceEventId','title','summary','instructions','publishedAt','updatedAt','contentHash','updates'])assert.deepEqual(event[key],legacy[key],key);
 });
+
+test('CISA catalog links identify the shared destination and exact CVE without invented deep links',()=>{
+ const event={...raw,source:{id:'cisa-kev',kind:'official'},sourceEventId:'CVE-2026-12345',category:'cyber',title:'CVE-2026-12345: Example Router Path Traversal Vulnerability',url:'https://www.cisa.gov/known-exploited-vulnerabilities-catalog'};
+ const shown=presentEvent(event);
+ assert.equal(shown.sourceUrl,event.url);assert.equal(shown.sourceUrlKind,'source-catalog');
+ assert.equal(shown.sourceLinkLabel,'Open the CISA catalog; search CVE-2026-12345');
+ assert.equal(presentEvent({...event,sourceEventId:'CVE-2026-12345<script>'}).sourceLinkLabel,'Open the CISA catalog');
+});
+
+test('readability migration is idempotent and preserves every captured source record and its evidence',()=>{
+ const captured=JSON.parse(readFileSync(new URL('./bootstrap.json',import.meta.url),'utf8'));
+ const migrated=refreshStoredPresentation(captured),again=refreshStoredPresentation(migrated);
+ assert.deepEqual(again,migrated);assert.equal(migrated.snapshot.events.length,captured.snapshot.events.length);
+ for(const [id,lane] of Object.entries(captured.sources)){
+  const after=migrated.sources[id];
+  for(const key of ['lastSuccessAt','lastAttemptAt','status','normalizationVersion','etag','lastModified'])assert.deepEqual(after[key],lane[key],`${id}.${key}`);
+  for(let i=0;i<lane.events.length;i++){
+   const before=lane.events[i],shown=after.events[i];
+   for(const key of ['id','sourceEventId','source','title','summary','instructions','instructionsOmitted','url','location','geo','publishedAt','updatedAt','expiresAt','endsAt','cancelledAt','status','urgency','lastCheckedAt','relatedIds','attribution','contentHash','updates'])assert.deepEqual(shown[key],before[key],`${id}.${before.id}.${key}`);
+   assert.equal(shown.presentationVersion,PRESENTATION_VERSION);
+  }
+ }
+});

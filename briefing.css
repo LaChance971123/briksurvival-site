@@ -221,3 +221,11 @@
 .briefing-original-summary{margin:20px 0;color:var(--briefing-quiet)}
 .home-briefing .briefing-status{margin-bottom:17px}
 @media(max-width:720px){.briefing-compact-header{padding-top:15px;padding-bottom:6px}.briefing-compact-header h1{font-size:29px}.briefing-schedule,.briefing-status{font-size:10px}.briefing-feed{padding-top:7px}.briefing-zip-controls label{display:none}.briefing-zip-controls input{max-width:none}.briefing-zip-controls button{font-size:12px}.briefing-zip-form{margin-bottom:9px}.briefing-filters{grid-template-columns:minmax(0,1fr) auto;gap:7px 10px}.briefing-filters .briefing-history-choice{font-size:11px}.briefing-card,.home-briefing .briefing-card{padding:18px}.briefing-card h3,.home-briefing .briefing-card h3{font-size:23px}.briefing-detail-header h1{font-size:29px}.briefing-detail{padding-top:13px}.briefing-context .briefing-notice{padding:13px}.briefing-detail-jumps{font-size:11px;gap:6px 15px;margin-top:17px}}
+
+/* Keep dismissible controls usable with a keyboard and small mobile viewports. */
+.briefing-filter-options>div{max-height:min(65vh,380px);overflow-y:auto;overscroll-behavior:contain}
+.briefing-zip-controls input[aria-invalid=true]{border-color:#f3a385;outline:1px solid #f3a385}
+.briefing-zip-controls button:disabled{opacity:.65;cursor:wait}
+.briefing-detail-header>.briefing-card-source{font-size:11px;margin-bottom:12px}
+.briefing-card h3 a,.briefing-result-count{scroll-margin-top:110px}
+@media(max-width:720px){.briefing-zip-controls input{font-size:16px}.briefing-card h3 a,.briefing-result-count{scroll-margin-top:90px}}

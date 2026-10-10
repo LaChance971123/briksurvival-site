@@ -14,6 +14,12 @@ test('storage failures retain dated seed and disclose failure, not current/all c
  const response=await serveSnapshot(new Request('https://example.test/api/briefing'),{load:async()=>{throw Error('private internal path')},seed});
  const body=await response.json();assert.equal(body.storageStatus,'unavailable');assert.equal(body.generatedAt,seed.generatedAt);assert.ok(!JSON.stringify(body).includes('private internal path'));
 });
+test('an initial snapshot does not claim that production scheduling is inactive or already verified',async()=>{
+ const response=await serveSnapshot(new Request('https://example.test/api/briefing'),{load:async()=>null,seed});
+ const body=await response.json();assert.equal(body.storageStatus,'initial-snapshot');
+ assert.equal(body.generatedAt,seed.generatedAt);assert.match(body.storageNote,/saved scheduled refresh is not available yet/);
+ assert.doesNotMatch(body.storageNote,/preview|inactive|activated|all clear/i);
+});
 test('bounded version storage writes version before latest and stops on failed write',async()=>{
  const calls=[];const store={setJSON:async(key,value)=>{calls.push(key)}};
  await saveState(store,{snapshot:seed});assert.equal(calls[1],'latest-state');assert.match(calls[0],/^versions\/slot-\d\d$/);
