@@ -229,3 +229,31 @@
 .briefing-detail-header>.briefing-card-source{font-size:11px;margin-bottom:12px}
 .briefing-card h3 a,.briefing-result-count{scroll-margin-top:110px}
 @media(max-width:720px){.briefing-zip-controls input{font-size:16px}.briefing-card h3 a,.briefing-result-count{scroll-margin-top:90px}}
+
+/* Unified area search keeps every manual control available while location resolves. */
+.briefing-zip-controls{flex-wrap:wrap}
+.briefing-zip-controls input{flex:1 1 190px;max-width:400px}
+.briefing-zip-controls .briefing-geolocate{font-size:12px;color:var(--bone)}
+.briefing-location-caveat{color:var(--briefing-quiet)}
+.briefing-area-choices{display:flex;flex-direction:column;align-items:stretch;gap:5px;margin-top:10px;padding:12px;border:1px solid #656c60;background:#191d1e;max-width:660px;max-height:300px;overflow-y:auto;overscroll-behavior:contain}
+.briefing-area-choices[hidden]{display:none}
+.briefing-area-choices .briefing-choice-label{margin:0 0 4px;color:var(--bone)}
+.briefing-area-choice{text-align:left;background:#15191a;border:1px solid #656c60;color:var(--bone);padding:10px 12px;min-height:44px;font:400 14px/1.4 var(--body)}
+.briefing-area-choice:hover{border-color:var(--orange)}
+.briefing-area-choice:focus-visible,.briefing-zip-controls button:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+@media(max-width:720px){.briefing-zip-controls input{flex-basis:155px}.briefing-zip-controls .briefing-geolocate{margin-left:0}.briefing-area-choices{max-height:260px}.briefing-zip-form p{line-height:1.5}.briefing-location-caveat{font-size:10px!important}}
+
+/* Preparedness guides are a small reading list, visually separate from action buttons. */
+.briefing-card-guides{align-items:stretch;gap:0;border-left:2px solid #c8663f;padding-left:10px;margin-top:1px;margin-bottom:12px}
+.briefing-card-guides>span{font-size:9px;letter-spacing:.08em;color:#e7b89f;margin:0 0 4px}
+.briefing-card-guides a,.briefing-guide-links a{display:grid;grid-template-columns:15px minmax(0,1fr) 13px;align-items:center;gap:8px;text-decoration:none;background:none;border:0;border-radius:0;color:var(--bone);font-size:13px;font-weight:500;line-height:1.4;padding:5px 0;min-height:30px}
+.briefing-reading-title{text-decoration:underline;text-decoration-color:#766d60;text-underline-offset:4px}
+.briefing-reading-icon{display:block;width:15px;height:15px;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23cd906a' stroke-width='1.25'%3E%3Cpath d='M10 5C7 3 4 3 1 4v12c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Zm0 0v12'/%3E%3C/svg%3E")}
+.briefing-reading-arrow{color:#cf8a60;font-size:12px;opacity:.8;text-align:right}
+.briefing-card-guides a:hover .briefing-reading-title,.briefing-guide-links a:hover .briefing-reading-title{color:#ffc29d;text-decoration-color:var(--orange)}
+.briefing-card-guides a:focus-visible,.briefing-guide-links a:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.briefing-guide-links{gap:0 24px;border-left:2px solid #c8663f;padding-left:14px}
+.briefing-guide-links a{font-size:15px;min-height:44px;border-bottom:1px solid #ffffff12;padding:9px 0}
+.briefing-guide-links a .briefing-reading-title{color:var(--bone)}
+#related-guides h2{font:500 11px/1.5 var(--mono);text-transform:uppercase;letter-spacing:.07em;color:#e7b89f}
+@media(max-width:720px){.briefing-card-guides a{min-height:34px}.briefing-guide-links a{min-height:45px}}

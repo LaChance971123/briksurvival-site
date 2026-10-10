@@ -11,6 +11,23 @@
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
 
+# The Daily Brief index alone may ask for same-origin device location.
+# Keep these complete values after the global deny; verify served preview headers.
+[[headers]]
+  for = "/briefing"
+  [headers.values]
+    Permissions-Policy = "geolocation=(self), microphone=(), camera=()"
+
+[[headers]]
+  for = "/briefing/"
+  [headers.values]
+    Permissions-Policy = "geolocation=(self), microphone=(), camera=()"
+
+[[headers]]
+  for = "/briefing/index.html"
+  [headers.values]
+    Permissions-Policy = "geolocation=(self), microphone=(), camera=()"
+
 [[headers]]
   for = "/sw.js"
   [headers.values]
@@ -132,3 +149,20 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
     Content-Type = "application/json; charset=utf-8"
+
+[[headers]]
+  for = "/briefing/place-areas.json"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "application/json; charset=utf-8"
+
+[[headers]]
+  for = "/briefing/county-geometry.json"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "application/json; charset=utf-8"
+
+[[headers]]
+  for = "/briefing/local-area-lookup.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

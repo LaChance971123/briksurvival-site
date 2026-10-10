@@ -1,0 +1,3 @@
+# Explicit geographic-data rebuilding only; normal site builds use checked-in assets.
+pyshp==2.3.1
+shapely==2.1.2

@@ -8,7 +8,9 @@ STATIC_PAGES = {
     'reading-list/index.html', 'offline/index.html', 'toolkits/index.html', 'planner/index.html', 'planner/app/index.html',
 }
 STATIC_FILES = {
-    'briefing.js', 'briefing.css', 'briefing/zip-areas.json', 'app.js', 'ads.js', 'search.js', 'styles.css', 'search-index.json',
+    'briefing.js', 'briefing.css', 'briefing/zip-areas.json',
+    'briefing/local-area-lookup.js', 'briefing/place-areas.json', 'briefing/county-geometry.json',
+    'app.js', 'ads.js', 'search.js', 'styles.css', 'search-index.json',
     'sitemap.xml', 'robots.txt', 'sw.js', 'offline/sw.js',
     *{'planner/app/'+name for name in ('launcher.js','launcher.css','sw.js','manifest.webmanifest','icon-180.png','icon-192.png','icon-512.png','body.woff2','display.woff2','LICENSES.txt')},
 }
