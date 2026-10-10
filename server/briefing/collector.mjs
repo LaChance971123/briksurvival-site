@@ -1,5 +1,5 @@
 import { SOURCES, adaptSource, sourceRequestUrl } from './sources.mjs';
-import { assembleSnapshot } from './core.mjs';
+import { assembleSnapshot, NORMALIZATION_VERSION } from './core.mjs';
 
 const LIMIT_BYTES = 4 * 1024 * 1024;
 export async function readBounded(response, maxBytes = LIMIT_BYTES) {
@@ -36,14 +36,17 @@ export async function collectSource(source, prior, {now,fetchImpl = fetch,timeou
   try {
     if (signal?.aborted) controller.abort();
     const headers = {'User-Agent':'OspreyZeroBriefing/1.0 (https://ospreyzero.com/contact/)','Accept':source.format === 'json' ? 'application/geo+json, application/json' : 'application/rss+xml, application/xml, text/xml'};
-    if (prior?.etag) headers['If-None-Match'] = prior.etag;
-    if (prior?.lastModified) headers['If-Modified-Since'] = prior.lastModified;
+    // A legacy derivative lacks county keys and may have the former 120-item cap.
+    // Download once after normalization changes; failures still retain last-good data.
+    const normalized = prior?.normalizationVersion === NORMALIZATION_VERSION;
+    if (normalized && prior?.etag) headers['If-None-Match'] = prior.etag;
+    if (normalized && prior?.lastModified) headers['If-Modified-Since'] = prior.lastModified;
     const url = sourceRequestUrl(source,{now});
     const parsed = new URL(url);
     if (parsed.protocol !== 'https:' || parsed.username || parsed.password) throw new Error('Invalid configured source URL');
     // Source targets are code-reviewed constants, never visitor data or links from feed items.
     const response = await fetchImpl(url,{headers,signal:controller.signal,redirect:'error'});
-    if (response.status === 304 && prior?.lastSuccessAt) return {source,ok:true,notModified:true,etag:prior.etag,lastModified:prior.lastModified};
+    if (response.status === 304 && normalized && prior?.lastSuccessAt) return {source,ok:true,notModified:true,etag:prior.etag,lastModified:prior.lastModified};
     if (!response.ok) return {source,ok:false,error:`Source returned HTTP ${response.status}`,nextEligibleAt:retryAt(response.headers.get('retry-after'),now)};
     const raw = await readBounded(response);
     const parsedFeed = adaptSource(source.id,raw,{now});

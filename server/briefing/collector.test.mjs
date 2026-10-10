@@ -2,13 +2,26 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { collectSource, collectBriefing, readBounded, retryAt } from './collector.mjs';
 import { SOURCES } from './sources.mjs';
+import { NORMALIZATION_VERSION } from './core.mjs';
 const now='2026-10-10T12:00:00.000Z';
 const nws=SOURCES.find(s=>s.id==='nws');
 const feed={type:'FeatureCollection',features:[]};
 test('conditional headers and 304 avoid reprocessing while preserving source state',async()=>{
  let options;
- const result=await collectSource(nws,{lastSuccessAt:now,etag:'abc',lastModified:'Fri, 09 Oct 2026 12:00:00 GMT'},{now,fetchImpl:async(_url,opts)=>{options=opts;return new Response(null,{status:304});}});
+ const result=await collectSource(nws,{lastSuccessAt:now,normalizationVersion:NORMALIZATION_VERSION,etag:'abc',lastModified:'Fri, 09 Oct 2026 12:00:00 GMT'},{now,fetchImpl:async(_url,opts)=>{options=opts;return new Response(null,{status:304});}});
  assert.ok(result.notModified);assert.equal(options.headers['If-None-Match'],'abc');assert.equal(options.redirect,'error');
+});
+
+test('legacy source derivatives force a full refresh before geo matching or expanded retention',async()=>{
+ let options;
+ const result=await collectSource(nws,{lastSuccessAt:now,etag:'old',lastModified:'Fri, 09 Oct 2026 12:00:00 GMT'},{now,fetchImpl:async(_url,opts)=>{options=opts;return new Response(JSON.stringify(feed));}});
+ assert.equal(options.headers['If-None-Match'],undefined);assert.equal(options.headers['If-Modified-Since'],undefined);
+ assert.equal(result.ok,true);assert.equal(result.notModified,undefined);
+});
+
+test('unrequested304 cannot bless a legacy source derivative as freshly normalized',async()=>{
+ const result=await collectSource(nws,{lastSuccessAt:now,etag:'old'},{now,fetchImpl:async()=>new Response(null,{status:304})});
+ assert.equal(result.ok,false);assert.equal(result.notModified,undefined);
 });
 test('Retry-After suppresses early repeat requests without hidden retries',async()=>{
  let calls=0;

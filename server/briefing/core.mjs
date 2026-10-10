@@ -1,10 +1,15 @@
 import { createHash } from 'node:crypto';
 import { editorialFor } from './editorial.mjs';
+import { normalizeNwsGeo } from './sources.mjs';
 
 export const SCHEMA_VERSION = 1;
+export const NORMALIZATION_VERSION = 2;
 export const STALE_AFTER_MS = 14 * 60 * 60 * 1000;
 export const RETENTION_MS = 14 * 24 * 60 * 60 * 1000;
 export const MAX_EVENTS_PER_SOURCE = 120;
+export const MAX_ACTIVE_NWS_EVENTS = 800;
+export const MAX_PUBLIC_EVENTS = 1000;
+export const MAX_PUBLIC_EVENT_BYTES = 3 * 1024 * 1024;
 export const COVERAGE = 'Selected US weather and recall sources, significant earthquakes worldwide, CISA vulnerabilities and a limited rights-cleared news selection. Not every hazard, place or source is covered. Short-lived notices can appear and end between updates. No listed item never means all clear.';
 export const hash = value => createHash('sha256').update(typeof value === 'string' ? value : JSON.stringify(value)).digest('hex');
 export function plainText(value, limit = 1600) {
@@ -57,6 +62,7 @@ export function normalizeEvent(raw, source, now) {
     id: source.id + '-' + hash(sourceEventId).slice(0, 20), sourceEventId,
     source: {id:source.id,name:source.name,kind:source.kind,rightsUrl:source.rights.url,rightsLabel:source.rights.label,licenseUrl:source.rights.licenseUrl || null},
     category, title, summary:plainText(raw.summary, 620), instructions:instructionsOmitted ? '' : instructionText,instructionsOmitted, url, location,
+    geo:normalizeNwsGeo(source.kind === 'official' && ['nws','nws-cancellations'].includes(source.id) ? raw.geo : undefined),
     publishedAt, updatedAt:iso(raw.updatedAt) || publishedAt, expiresAt, endsAt, cancelledAt,
     status:cancelledAt || raw.status === 'cancelled' ? 'cancelled' : [expiresAt,endsAt].some(at => at && +new Date(at) <= +new Date(now)) ? 'expired' : 'current',
     urgency: source.kind === 'official' && ['immediate','expected'].includes(raw.urgency) ? raw.urgency : 'unknown',
@@ -67,6 +73,9 @@ export function normalizeEvent(raw, source, now) {
   return {...event,...editorialFor(event),updates:[{at:iso(now),kind:'first-seen',text:'First included in this briefing. Check the original source for earlier history.'}]};
 }
 export function emptyState() { return {schemaVersion:SCHEMA_VERSION,sources:{},snapshot:null}; }
+const retentionPriority = event => event.status === 'current' ? 0 : event.status === 'cancelled' ? 1 : 2;
+const retentionTime = event => event.status === 'cancelled' ? event.cancelledAt || event.updatedAt : event.updatedAt;
+const retentionOrder = (a,b) => retentionPriority(a) - retentionPriority(b) || retentionTime(b).localeCompare(retentionTime(a)) || a.id.localeCompare(b.id);
 export function assembleSnapshot(previous, results, now = new Date().toISOString()) {
   const state = previous?.schemaVersion === SCHEMA_VERSION ? previous : emptyState();
   const sources = {};
@@ -101,12 +110,9 @@ export function assembleSnapshot(previous, results, now = new Date().toISOString
           }
         }
         const rejected = (result.events || []).length - normalized.length;
-        const capped = events.length > MAX_EVENTS_PER_SOURCE;
-        coverage = { ...(typeof result.coverage === 'object' ? result.coverage : {}), label:typeof source.coverage === 'string' ? source.coverage : source.coverage?.label || '', normalizedRejected:rejected, snapshotCapped:capped,
-          status:rejected || capped || result.coverage?.status === 'partial' ? 'partial' : 'ok'};
-        events.sort((a,b) => (a.status === 'current' ? 0 : 1) - (b.status === 'current' ? 0 : 1) || b.updatedAt.localeCompare(a.updatedAt));
-        events = events.slice(0,MAX_EVENTS_PER_SOURCE);
-        coverage.storedCount = events.length; coverage.limit = MAX_EVENTS_PER_SOURCE;
+        const incompleteGeography = events.filter(event => event.geo?.incomplete || event.geo?.truncated).length;
+        coverage = { ...(typeof result.coverage === 'object' ? result.coverage : {}), label:typeof source.coverage === 'string' ? source.coverage : source.coverage?.label || '', normalizedRejected:rejected, snapshotCapped:false,
+          incompleteGeography, status:rejected || incompleteGeography || result.coverage?.status === 'partial' ? 'partial' : 'ok'};
       } else {
         events = events.map(event => ({...event,lastCheckedAt:now}));
       }
@@ -115,6 +121,7 @@ export function assembleSnapshot(previous, results, now = new Date().toISOString
     sources[source.id] = {
       id:source.id,name:source.name,kind:source.kind,website:source.website,
       status:success ? 'ok' : prior?.lastSuccessAt ? 'stale' : 'unavailable',
+      normalizationVersion:success && !result.notModified ? NORMALIZATION_VERSION : prior?.normalizationVersion || null,
       lastSuccessAt:success ? now : prior?.lastSuccessAt || null,lastAttemptAt:now,
       error:success ? null : plainText(result.error,160) || (allInvalid ? 'Source items failed validation; previous data retained' : 'Source check unavailable'),
       coverage, etag:success ? result.etag || prior?.etag || null : prior?.etag || null,
@@ -133,26 +140,38 @@ export function assembleSnapshot(previous, results, now = new Date().toISOString
       }
     }
   }
+  // Apply cancellations before any cap. Current records precede cancellation history;
+  // recent explicit withdrawals precede other history and have their own source lane.
+  // Source and public caps are separate: storedCount must not be called displayedCount.
+  for (const source of Object.values(sources)) {
+    const limit = source.id === 'nws' ? MAX_ACTIVE_NWS_EVENTS : MAX_EVENTS_PER_SOURCE;
+    const dropped = Math.max(0,source.events.length - limit);
+    source.events = source.events.sort(retentionOrder).slice(0,limit);
+    source.coverage = {...source.coverage,limit,storedCount:source.events.length,sourceDroppedCount:dropped,
+      publicDroppedCount:0,publicCount:0};
+    if (dropped) source.coverage = {...source.coverage,status:'partial',snapshotCapped:true};
+  }
   // Cross-source URL copies are a single reporting origin, never corroboration.
   const unique = new Map();
-  for (const event of all) {
+  for (const event of Object.values(sources).flatMap(source => source.events)) {
     const key = event.source.kind === 'news' ? `news:${event.url}` : event.id;
     const old = unique.get(key);
     if (!old || event.status === 'cancelled' || event.updatedAt > old.updatedAt) unique.set(key,event);
   }
-  const publicEvents = [...unique.values()].sort((a,b) => b.updatedAt.localeCompare(a.updatedAt));
+  const publicEvents = [...unique.values()].sort(retentionOrder);
   let bytes = 0;
-  const boundedEvents = publicEvents.filter(event => {
+  const boundedEvents = [];
+  for (const event of publicEvents) {
     const size = Buffer.byteLength(JSON.stringify(event));
-    if (bytes + size > 3 * 1024 * 1024) {
-      sources[event.source.id].coverage = {...sources[event.source.id].coverage,status:'partial',snapshotCapped:true};
-      return false;
+    const source = sources[event.source.id];
+    if (boundedEvents.length >= MAX_PUBLIC_EVENTS || bytes + size > MAX_PUBLIC_EVENT_BYTES) {
+      source.coverage = {...source.coverage,status:'partial',snapshotCapped:true,publicDroppedCount:source.coverage.publicDroppedCount + 1};
+      continue;
     }
-    bytes += size; return true;
-  }).slice(0,500);
-  if (boundedEvents.length < publicEvents.length) {
-    for (const event of publicEvents.slice(500)) sources[event.source.id].coverage = {...sources[event.source.id].coverage,status:'partial',snapshotCapped:true};
+    bytes += size; boundedEvents.push(event);
+    source.coverage.publicCount += 1;
   }
+  boundedEvents.sort((a,b) => b.updatedAt.localeCompare(a.updatedAt));
   const snapshot = {
     schemaVersion:SCHEMA_VERSION,id:'briefing-' + now.replace(/[^0-9]/g,''),generatedAt:now,
     lastSuccessfulAt:anySuccess ? now : state.snapshot?.lastSuccessfulAt || null,

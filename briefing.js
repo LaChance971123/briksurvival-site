@@ -4,6 +4,8 @@
   const ENDPOINT = '/api/briefing';
   const STALE_AFTER_MS = 14 * 60 * 60 * 1000;
   const LOCATION_KEY = 'oz-briefing-broad-location-v1';
+  const ZIP_KEY = 'oz-briefing-zip-v1';
+  const ZIP_DATA_URL = '/briefing/zip-areas.json';
   const STATES = {AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',DC:'District of Columbia',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming',AS:'American Samoa',GU:'Guam',MP:'Northern Mariana Islands',PR:'Puerto Rico',VI:'U.S. Virgin Islands'};
   const CATEGORY_NAMES = {'severe-weather':'Severe weather','weather':'Weather','flooding':'Flooding','flood':'Flooding','earthquake':'Earthquakes','earthquakes':'Earthquakes','wildfire':'Wildfire','wildfire-smoke':'Wildfire & smoke','extreme-heat':'Extreme heat','extreme-cold':'Extreme cold','tropical-weather':'Tropical weather','utilities':'Utilities','public-health':'Public health','health':'Public health','conflict':'Civilian safety','civilian-safety':'Civilian safety','preparedness':'Preparedness','recall':'Product recalls','cyber':'Cybersecurity','news':'Reported news','other':'Other source reports'};
   const plain = (value, max = 6000) => typeof value === 'string' ? value.slice(0, max) : '';
@@ -69,12 +71,34 @@
   }
   function normalizeSnapshot(input) {
     if (!input || input.schemaVersion !== 1 || !Array.isArray(input.events) || !Array.isArray(input.sources)) throw Error('Unsupported snapshot');
-    const events = input.events.filter(event => event && typeof event.id === 'string' && event.id.length > 0 && typeof event.title === 'string' && event.title.trim() && event.source && ['official','news'].includes(event.source.kind) && externalUrl(event.url) && (event.source.kind !== 'news' || (plain(event.attribution).trim() && externalUrl(event.source.licenseUrl) && externalUrl(event.source.rightsUrl)))).slice(0, 500);
+    const events = input.events.filter(event => event && typeof event.id === 'string' && event.id.length > 0 && typeof event.title === 'string' && event.title.trim() && event.source && ['official','news'].includes(event.source.kind) && externalUrl(event.url) && (event.source.kind !== 'news' || (plain(event.attribution).trim() && externalUrl(event.source.licenseUrl) && externalUrl(event.source.rightsUrl)))).slice(0, 1000);
     const sources = input.sources.filter(source => source && typeof source.id === 'string' && typeof source.name === 'string').slice(0, 100);
     return {...input,events,sources,invalidRecords:input.events.length - events.length};
   }
   function filterEvents(events, category, location) {
     return events.filter(event => (category === 'all' || event.category === category) && (location === 'all' || (location.startsWith('US:') ? sourceStates(event).includes(location.slice(3)) : broadLocation(event) === location)));
+  }
+  function resolveZipArea(data, value) {
+    const zip = typeof value === 'string' ? value.trim() : '';
+    if (!/^\d{5}$/.test(zip)) return {status:'invalid',zip};
+    if (!data || data.schemaVersion !== 1 || !data.zipAreas || !data.counties || !data.states) throw Error('Unsupported ZIP mapping');
+    const codes = data.zipAreas[zip];
+    if (!Array.isArray(codes) || !codes.length) return {status:'unmapped',zip};
+    const counties = [...new Set(codes)].filter(code => typeof code === 'string' && /^\d{5}$/.test(code)).map(code => ({code,...data.counties[code]}));
+    if (counties.length !== new Set(codes).size || counties.some(county => !county.name || !data.states[county.state])) return {status:'unmapped',zip};
+    if (counties.some(county => (data.unsupportedStates || []).includes(county.state))) return {status:'unsupported',zip,counties};
+    return {status:'found',zip,counties,label:counties.map(county => county.name + ', ' + county.state).join('; '),vintage:plain(data.source?.vintage,30)};
+  }
+  function partitionAreaEvents(events, area, location) {
+    const groups = {local:[],products:[],other:[]};
+    const counties = new Set(area?.counties.map(county => county.code) || []);
+    for (const event of events) {
+      const official = event.source?.kind === 'official';
+      if (official && ['cpsc','fda','cisa-kev'].includes(event.source.id)) groups.products.push(event);
+      else if (area ? official && ['nws','nws-cancellations'].includes(event.source.id) && Array.isArray(event.geo?.countyFips) && event.geo.countyFips.some(code => counties.has(code)) : sourceStates(event).includes(location.slice(3))) groups.local.push(event);
+      else groups.other.push(event);
+    }
+    return groups;
   }
   function exactGuides(event) {
     const found = new Set();
@@ -104,7 +128,7 @@
     }
     return selected;
   }
-  const helpers = {STALE_AFTER_MS,LOCATION_KEY,STATES,stamp,externalUrl,guideUrl,categoryName,sourceKind,broadLocation,locationLabel,sourceStates,recordState,snapshotState,normalizeSnapshot,filterEvents,exactGuides,eventUrl,selectHomeEvents,nextTransitionAt};
+  const helpers = {STALE_AFTER_MS,LOCATION_KEY,ZIP_KEY,ZIP_DATA_URL,resolveZipArea,partitionAreaEvents,STATES,stamp,externalUrl,guideUrl,categoryName,sourceKind,broadLocation,locationLabel,sourceStates,recordState,snapshotState,normalizeSnapshot,filterEvents,exactGuides,eventUrl,selectHomeEvents,nextTransitionAt};
   if (typeof module !== 'undefined' && module.exports) module.exports = helpers;
   if (typeof document === 'undefined') return;
   const roots = [...document.querySelectorAll('[data-briefing]')];
@@ -153,21 +177,30 @@
   }
   function card(event, snapshot) {
     const article = el('article', 'briefing-card');
-    const top = el('div', 'briefing-card-top');
-    top.append(el('span', 'briefing-category', categoryName(event.category)), el('span', 'briefing-source-kind', sourceKind(event)));
     const title = el('h3'); title.append(link(plain(event.title, 500), eventUrl(event)));
-    article.append(top, el('p', 'briefing-location', locationLabel(event)), title);
+    article.append(el('p', 'briefing-category', categoryName(event.category)),title);
+    // Required author, original story and license stay above every news excerpt.
     if (event.source.kind === 'news') article.append(attributionBlock(event));
-    article.append(el('p', 'briefing-card-summary', excerpt(event.summary) || 'Open the original source for the available report details.'));
-    article.append(watchLabel(el('p', 'briefing-record-note'), () => { const state = recordState(event); return state.note ? state.label + '. This is not an all-clear.' : ''; }, true));
+    article.append(el('p', 'briefing-card-summary', excerpt(event.summary,220) || 'Open the original source for the available report details.'));
+    const meaning = plain(event.cardMeaning,420).trim();
+    if (meaning) { const context = el('p','briefing-card-meaning'); context.append(el('strong','','For you: '),el('span','',meaning)); article.append(context); }
+    const guides = exactGuides(event);
+    if (guides.length) {
+      const actions = el('nav', 'briefing-card-guides'); actions.setAttribute('aria-label','Relevant preparedness guides');
+      actions.append(el('span','','Relevant guides'));
+      for (const guide of guides) actions.append(link(plain(guide.title,140) + ' ↗',guide.url));
+      article.append(actions);
+    }
+    article.append(watchLabel(el('p', 'briefing-record-note'), () => { const state = recordState(event); return state.note ? state.label + '. Not an all-clear.' : ''; }, true));
     article.append(watchLabel(el('p', 'briefing-record-note'), () => sourceCheck(event,snapshot), true));
-    const times = el('div', 'briefing-card-time');
-    times.append(el('span', '', plain(event.source.name, 120)), timeLine('Source date', event.updatedAt || event.publishedAt), timeLine('Last checked', event.lastCheckedAt));
-    const actions = el('div', 'briefing-card-links');
-    actions.append(link('Read the brief →', eventUrl(event)));
-    const guide = exactGuides(event)[0];
-    if (guide) actions.append(link(plain(guide.title, 120) + ' ↗', guide.url));
-    article.append(times, actions);
+    const metadata = el('details','briefing-card-metadata');
+    metadata.append(el('summary','',sourceKind(event) + ' · source & dates'));
+    const times = el('div','briefing-card-time');
+    times.append(el('span','',locationLabel(event)),link(plain(event.source.name,160) + ' ↗',externalUrl(event.url)),timeLine('Source date',event.updatedAt || event.publishedAt),timeLine('Last checked',event.lastCheckedAt));
+    if (event.geo?.incomplete || event.geo?.truncated) times.append(el('span','','Some source area identifiers were unavailable; the geographic list is incomplete.'));
+    metadata.append(times);
+    const footer = el('div','briefing-card-footer'); footer.append(link('Full brief →',eventUrl(event)),metadata);
+    article.append(footer);
     return article;
   }
   function updateStatus(root, snapshot) {
@@ -204,7 +237,17 @@
       item.append(title,statusLabel);
       if (typeof source.coverage === 'string') item.append(el('p', '', plain(source.coverage, 1000)));
       else if (source.coverage?.label) item.append(el('p', '', plain(source.coverage.label, 1000)));
-      if (Number.isFinite(source.coverage?.storedCount) && Number.isFinite(source.coverage?.receivedCount)) item.append(el('p', '', source.coverage.storedCount + ' records stored from ' + source.coverage.receivedCount + ' source records received; storage cap ' + source.coverage.limit + ' per source. Relevance, rights and validation filters can reduce this further.'));
+      const coverage = source.coverage;
+      if (coverage && typeof coverage === 'object') {
+        const counts = [];
+        if (Number.isFinite(coverage.publicCount)) counts.push(coverage.publicCount + ' records included in this snapshot');
+        if (Number.isFinite(coverage.storedCount)) counts.push(coverage.storedCount + ' records stored, which may include prior retained records');
+        if (Number.isFinite(coverage.receivedCount)) counts.push(coverage.receivedCount + ' source records received on the latest successful response');
+        if (Number.isFinite(coverage.limit)) counts.push('source storage cap: ' + coverage.limit);
+        if (coverage.sourceDroppedCount > 0) counts.push(coverage.sourceDroppedCount + ' records omitted at the source cap');
+        if (coverage.publicDroppedCount > 0) counts.push(coverage.publicDroppedCount + ' stored records omitted from the public snapshot');
+        if (counts.length) item.append(el('p','',counts.join('. ') + '. Relevance, rights and validation filters can reduce coverage further.'));
+      }
       if (source.coverage?.status === 'partial') item.append(el('p', '', 'Partial source coverage. Some records were omitted or unavailable.'));
       for (const warning of safeTextList(source.coverage?.warnings)) item.append(el('p', '', warning));
       // Operational errors are summarized rather than displaying provider internals.
@@ -224,53 +267,116 @@
     root.querySelector('[data-briefing-fallback]').hidden = Boolean(records.length);
   }
   function option(value, label) { const node = el('option', '', label); node.value = value; return node; }
+  // The same static county map is loaded at most once, with no ZIP in any request.
+  let zipDataRequest;
+  function loadZipData() {
+    if (!zipDataRequest) {
+      const controller = typeof AbortController === 'function' ? new AbortController() : null;
+      const timeout = controller ? setTimeout(() => controller.abort(),12000) : null;
+      zipDataRequest = fetch(ZIP_DATA_URL,{credentials:'omit',headers:{Accept:'application/json'},...(controller ? {signal:controller.signal} : {})})
+        .then(response => { if (!response.ok) throw Error('ZIP mapping unavailable'); return response.json(); })
+        .finally(() => { if (timeout !== null) clearTimeout(timeout); });
+    }
+    return zipDataRequest;
+  }
   function renderIndex(root, snapshot) {
-    const filters = root.querySelector('[data-briefing-filters]');
-    const category = root.querySelector('[data-briefing-category]');
-    const location = root.querySelector('[data-briefing-location]');
-    const reset = root.querySelector('[data-briefing-reset]');
-    const cards = root.querySelector('[data-briefing-cards]');
-    const count = root.querySelector('[data-briefing-count]');
-    const empty = root.querySelector('[data-briefing-empty]');
-    const fallback = root.querySelector('[data-briefing-fallback]');
-    const more = root.querySelector('[data-briefing-more]');
-    let limit = 18;
+    const get = key => root.querySelector('[data-briefing-' + key + ']');
+    const filters = get('filters'), category = get('category'), location = get('location'), reset = get('reset');
+    const cards = get('cards'), count = get('count'), empty = get('empty'), fallback = get('fallback'), more = get('more');
+    const zipForm = get('zip-form'), zipInput = get('zip'), zipStatus = get('zip-status'), zipClear = get('zip-clear');
+    const areaHeading = get('area-heading'), areaNote = get('area-note'), areaGroups = get('area-groups');
+    let limit = 18, area = null, zipAttempt = 0;
+    const groupLimits = {products:6,other:6};
+    const resetLimits = () => { limit = 18; groupLimits.products = 6; groupLimits.other = 6; };
     const categories = [...new Set(snapshot.events.map(event => plain(event.category, 80)).filter(Boolean))].sort((a,b) => categoryName(a).localeCompare(categoryName(b)));
     category.replaceChildren(option('all','All categories'), ...categories.map(value => option(value,categoryName(value))));
-    const states = [...new Set(snapshot.events.flatMap(sourceStates))].sort((a,b) => STATES[a].localeCompare(STATES[b]));
+    const states = Object.keys(STATES).sort((a,b) => STATES[a].localeCompare(STATES[b]));
     location.replaceChildren(option('all','All locations'), option('US','United States'), ...states.map(code => option('US:' + code, STATES[code])), option('International','International'), option('Unknown','Location unknown'));
     category.value = 'all'; location.value = 'all';
     try {
       const stored = localStorage.getItem(LOCATION_KEY);
       if (['all','US','International','Unknown',...states.map(code => 'US:' + code)].includes(stored)) location.value = stored;
     } catch { /* Reading may be blocked in private/restricted browsing. */ }
+    function secondaryGroup(key, title, note, records) {
+      const group = el('section','briefing-area-group'), heading = el('h3','',title), grid = el('div','briefing-card-grid');
+      const tally = el('p','briefing-result-count'), button = el('button','briefing-more'); button.type = 'button';
+      let shown = groupLimits[key];
+      const paint = () => {
+        grid.replaceChildren(...records.slice(0,shown).map(event => card(event,snapshot)));
+        tally.textContent = Math.min(shown,records.length) + ' of ' + records.length + ' reports shown';
+        button.textContent = 'Show more ' + title.toLowerCase() + ' (' + Math.max(0,records.length-shown) + ' remaining)'; button.hidden = shown >= records.length;
+      };
+      button.addEventListener('click',() => { const firstNew = shown; shown += 18; groupLimits[key] = shown; paint(); grid.children[firstNew]?.querySelector('h3 a')?.focus(); });
+      group.append(heading,el('p','briefing-area-note',note),tally,grid,button); paint();
+      if (!records.length) group.append(el('p','briefing-area-note','No reports in this snapshot for this group and category. Coverage is incomplete; this is not an all-clear.'));
+      return group;
+    }
     function render() {
-      const matches = filterEvents(snapshot.events, category.value, location.value);
-      cards.replaceChildren(...matches.slice(0,limit).map(event => card(event, snapshot)));
+      const selected = filterEvents(snapshot.events,category.value,'all');
+      const grouped = Boolean(area) || location.value.startsWith('US:');
+      const groups = grouped ? partitionAreaEvents(selected,area,location.value) : null;
+      const matches = groups ? groups.local : filterEvents(selected,'all',location.value);
+      cards.replaceChildren(...matches.slice(0,limit).map(event => card(event,snapshot)));
       if (more) { more.hidden = matches.length <= limit; more.textContent = 'Show more reports (' + Math.max(0,matches.length-limit) + ' remaining)'; }
       cards.hidden = !matches.length;
-      count.textContent = (matches.length > limit ? `${limit} of ${matches.length} reports shown` : `${matches.length} ${matches.length === 1 ? 'report' : 'reports'} shown`) + ` · ${snapshot.events.length} in this snapshot`;
+      count.textContent = (matches.length > limit ? `${limit} of ${matches.length} reports shown` : `${matches.length} ${matches.length === 1 ? 'report' : 'reports'} shown`) + ` · ${snapshot.events.length} in this limited snapshot`;
+      areaHeading.hidden = !grouped; areaNote.hidden = !grouped;
+      areaHeading.textContent = area ? 'Relevant to your area' : 'Reports naming ' + (STATES[location.value.slice(3)] || 'your state');
+      areaNote.textContent = area ? 'ZIP ' + area.zip + ' overlaps ' + area.label + '. These reports name an overlapping county; they do not establish coverage at your address. Zone-only and other unmatched reports remain below. This is a limited snapshot, not a complete local alert feed.' : 'State-level source labels are broad, not address-level matches. Product notices and reports with other or unverified locations remain below. This is a limited snapshot, not a complete local alert feed.';
+      areaGroups.replaceChildren(); areaGroups.hidden = !grouped;
+      if (groups) areaGroups.append(
+        secondaryGroup('products','Product and software notices','U.S. recall notices and general software advisories are retained regardless of ZIP or state. Relevance depends on the product, lot or software you use; nationwide distribution or a local incident is not implied.',groups.products),
+        secondaryGroup('other','Other areas and unverified locations','Includes other locations, reported news, and records whose county overlap could not be verified, including zone-only reports. Some may still matter to you. Open the source to check its area and scope.',groups.other));
       empty.replaceChildren(); empty.hidden = Boolean(matches.length);
-      if (!matches.length) {
-        empty.append(el('h3','',snapshot.events.length ? 'No reports match these filters.' : 'No reports are available in this snapshot.'), el('p','','This is not an all-clear. Coverage is limited, and location details may be unknown. Check current source information; use the planning guides below.'));
-      }
-      fallback.hidden = Boolean(matches.length);
-      const intro = root.querySelector('.briefing-fallback-intro');
-      if (intro) intro.textContent = 'Prepare ahead with the household essentials.';
+      if (!matches.length) empty.append(el('h3','',grouped ? 'No verified area matches in this snapshot.' : snapshot.events.length ? 'No reports match these filters.' : 'No reports are available in this snapshot.'),el('p','','This is not an all-clear. Coverage is incomplete and some location details are unknown. Check current source information' + (grouped ? ' and the other report groups below.' : '; use the planning guides below.')));
+      fallback.hidden = Boolean(matches.length || (groups && (groups.products.length || groups.other.length)));
+      const intro = root.querySelector('.briefing-fallback-intro'); if (intro) intro.textContent = 'Prepare ahead with the household essentials.';
     }
-    category.addEventListener('change', () => { limit = 18; render(); });
+    function clearZip(message, clearInput = true) {
+      zipAttempt++; area = null; if (clearInput) zipInput.value = ''; zipClear.hidden = true;
+      zipStatus.textContent = message;
+      try { localStorage.removeItem(ZIP_KEY); } catch { /* Filtering works without storage. */ }
+    }
+    async function applyZip() {
+      const zip = zipInput.value.trim(); const attempt = ++zipAttempt;
+      area = null; resetLimits(); zipClear.hidden = false;
+      try { localStorage.removeItem(ZIP_KEY); } catch { /* No persistence required. */ }
+      if (!/^\d{5}$/.test(zip)) { zipStatus.textContent = 'Enter a five-digit U.S. ZIP code. Broad location browsing remains available.'; render(); return; }
+      zipStatus.textContent = 'Loading the bundled county lookup. Your ZIP stays in this browser.'; render();
+      try {
+        const result = resolveZipArea(await loadZipData(),zip);
+        if (attempt !== zipAttempt) return;
+        if (result.status === 'unsupported') zipStatus.textContent = 'County matching is unavailable for this ZIP because Connecticut county boundaries changed after the mapping vintage. Browse by state or United States below; no local safety conclusion can be drawn.';
+        else if (result.status !== 'found') zipStatus.textContent = 'This ZIP is not in the bundled geographic lookup. Some postal ZIPs have no mapped area. Choose a state or United States below; missing lookup data does not mean no alerts.';
+        else {
+          area = result; location.value = 'all';
+          zipStatus.textContent = 'Using ZIP ' + zip + ' locally. County-area approximation from ' + (result.vintage || 'the bundled') + ' mapping; not your precise location. Change the ZIP or clear it at any time.';
+          try { localStorage.setItem(ZIP_KEY,zip); localStorage.removeItem(LOCATION_KEY); } catch { /* The area still works in this tab. */ }
+        }
+        render();
+      } catch { if (attempt !== zipAttempt) return; zipStatus.textContent = 'The county lookup could not be loaded. Browse by state or broad location below. Current conditions are unknown; this is not an all-clear.'; render(); }
+    }
+    category.addEventListener('change', () => { resetLimits(); render(); });
     if (more) more.addEventListener('click', () => { const firstNew = limit; limit += 18; render(); cards.children[firstNew]?.querySelector('h3 a')?.focus(); });
     location.addEventListener('change', () => {
+      if (area || zipInput.value) clearZip('ZIP filter cleared. Browsing by broad location.');
       try { localStorage.setItem(LOCATION_KEY, location.value); } catch { /* Filtering still works without persistence. */ }
-      limit = 18; render();
+      resetLimits(); render();
     });
+    zipInput.addEventListener('input',() => {
+      zipAttempt++; zipClear.hidden = !area && !zipInput.value;
+      zipStatus.textContent = area ? 'Still showing ZIP ' + area.zip + '. Choose Use ZIP to apply your edit, or clear to browse all areas.' : 'Enter a five-digit U.S. ZIP and choose Use ZIP. Broad location browsing stays available.';
+    });
+    zipForm.addEventListener('submit',event => { event.preventDefault(); applyZip(); });
+    zipClear.addEventListener('click',() => { clearZip('ZIP filter cleared. No ZIP is saved in this browser.'); resetLimits(); render(); zipInput.focus(); });
     reset.addEventListener('click', () => {
-      category.value = 'all'; location.value = 'all'; limit = 18;
+      category.value = 'all'; location.value = 'all'; resetLimits(); clearZip('All location and category filters cleared.');
       try { localStorage.removeItem(LOCATION_KEY); } catch { /* No persistence required. */ }
       render();
     });
-    filters.hidden = false;
+    filters.hidden = false; zipForm.hidden = false;
     render(); health(root, snapshot);
+    try { const saved = localStorage.getItem(ZIP_KEY); if (/^\d{5}$/.test(saved || '')) { zipInput.value = saved; applyZip(); } } catch { /* Optional local preference only. */ }
   }
   function section(id, title) {
     const node = el('section', 'briefing-detail-section'); node.id = id;
@@ -294,13 +400,14 @@
     header.append(watchLabel(el('p','briefing-record-note'), () => recordState(event).note, true));
     header.append(watchLabel(el('p','briefing-record-note'), () => sourceCheck(event,snapshot), true));
     const jumps = el('nav','briefing-detail-jumps'); jumps.setAttribute('aria-label','On this page');
-    for (const [id,label] of [['at-a-glance','At a glance'],['what-this-means','What this means'],['official-instructions','Official instructions'],['preparedness-steps','Preparedness next steps'],['related-guides','Related guides'],['sources-updates','Sources and updates']]) jumps.append(link(label,'#' + id));
+    for (const [id,label] of [['related-guides','Relevant guides'],['what-this-means','What this means'],['official-instructions','Official instructions'],['preparedness-steps','Preparedness next steps'],['sources-updates','Sources and updates']]) jumps.append(link(label,'#' + id));
     if (event.source.kind === 'news') header.append(attributionBlock(event));
-    header.append(jumps);
     const glance = section('at-a-glance','At a glance');
     glance.append(el('p','',plain(event.summary) || 'The source did not provide a report summary. Read the original source for its available details.'));
+    header.append(glance);
     const facts = el('dl','briefing-facts');
     fact(facts,'Reported location',locationLabel(event));
+    if (event.geo?.incomplete || event.geo?.truncated) fact(facts,'Geographic coverage','Some source area identifiers were unavailable; the geographic list is incomplete.');
     fact(facts,'Source',plain(event.source.name,160) + ' · ' + sourceKind(event));
     fact(facts,'Published by source',stamp(event.publishedAt));
     fact(facts,'Updated by source',stamp(event.updatedAt));
@@ -308,7 +415,7 @@
     watchLabel(fact(facts,'Record status',''), () => recordState(event).label);
     if (event.expiresAt) fact(facts,'Source validity / expiry time',stamp(event.expiresAt));
     if (event.endsAt) fact(facts,'End time listed by source',stamp(event.endsAt));
-    glance.append(facts);
+    // Detailed timestamps remain available with the source history below.
     const meaning = section('what-this-means','What this means');
     meaning.append(el('p','',plain(event.whatThisMeans) || 'This is a stored source report. Verify its location, time and current source instructions before applying it to your situation.'), el('p','briefing-reviewed-note','Osprey Zero editorial context. It does not establish local conditions, an evacuation order or access to assistance.'));
     const official = section('official-instructions','Official instructions');
@@ -326,7 +433,7 @@
     const actions = safeTextList(event.preparedness);
     if (actions.length) { const list = el('ol'); for (const text of actions) list.append(el('li','',text)); steps.append(list); }
     else steps.append(el('p','','No reviewed preparedness steps are attached to this record. Use the original source and the linked guides for context.'));
-    const related = section('related-guides','Related guides');
+    const related = section('related-guides','Relevant guides');
     const guides = exactGuides(event);
     if (guides.length) { const links = el('div','briefing-guide-links'); for (const guide of guides) { const node = link(plain(guide.title,200),guide.url); const arrow = el('span','','↗'); arrow.setAttribute('aria-hidden','true'); node.append(arrow); links.append(node); } related.append(links); }
     else related.append(el('p','','No exact guide mapping is available for this record.'));
@@ -341,7 +448,7 @@
     if (license) { const item = el('li'); item.append(link('Source content license ↗',license)); sourceList.append(item); }
     const rights = externalUrl(event.source.rightsUrl);
     if (rights) { const item = el('li'); item.append(link(plain(event.source.rightsLabel,180) || 'Source reuse and attribution',rights)); sourceList.append(item); }
-    sources.append(sourceList);
+    sources.append(facts,sourceList);
     const updates = (Array.isArray(event.updates) ? event.updates : []).filter(update => update && plain(update.text)).slice(0,20);
     if (updates.length) {
       sources.append(el('h3','','Record history'));
@@ -350,7 +457,7 @@
       sources.append(list);
     }
     sources.append(el('p','briefing-reviewed-note','Snapshot generated: ' + stamp(snapshot.generatedAt) + '. Last successful refresh: ' + stamp(snapshot.lastSuccessfulAt) + '. Scheduled twice daily at 00:00 and 12:00 UTC. An expired, removed or unavailable record does not establish that a threat has ended.'));
-    target.replaceChildren(header,glance,meaning,official,steps,related,sources);
+    target.replaceChildren(header,related,jumps,meaning,official,steps,sources);
     target.hidden = false; root.querySelector('[data-briefing-fallback]').hidden = true;
     document.title = plain(event.title,180) + ' — Osprey Zero briefing';
   }

@@ -96,6 +96,14 @@ Reviewed against the publishers' official documentation and live responses on **
 
 ## API contract and invariants
 
+### Local ZIP-area matching (10 October 2026 update)
+
+NWS records now retain `geo.countyFips`, `geo.zoneIds`, `geo.sameCodes`, `geo.precision`, `geo.evidence`, `geo.incomplete` and `geo.truncated`. Only official NWS records receive matching keys. County FIPS come from a six-digit SAME value's final five digits when its state prefix is recognized, or a county `C` UGC combined with that state's numeric FIPS. Original SAME values retain the leading subdivision digit. Whole-state/all-country aggregate codes do not become counties. Marine SAME codes remain evidence without being treated as land counties; `Z` forecast/marine suffixes are never interpreted as county FIPS. Invalid, unknown or bounded codes leave an explicit incompleteness warning.
+
+The [NWS geolocation guide](https://www.weather.gov/media/documentation/docs/NWS_Geolocation.pdf) explains that zone notices include the counties they intersect in the SAME array. This implementation retains that membership rather than approximating with county or ZIP centroids. A client-side ZIP/ZCTA-to-county comparison means possible **county overlap**, never that an entire ZIP or exact address is inside the warning. Missing county evidence stays unmatched. Other official product/software notices and unknown-geography reporting remain separately labeled; they do not acquire local scope.
+
+Active NWS retention is capped at 800 records, other source lanes at 120, and the public snapshot at 1,000 records plus a 3 MiB event-byte budget. Explicit cancellations are applied before capping. Current records are retained first, then recent cancellations ahead of other history; old cancellations cannot displace new warnings, and the separate cancellation lane remains. Per-source stored/public counts and source/public drop counts are separate; every count/byte omission marks the actual source partial. Fetch size remains 4 MiB and the collection deadline remains 21 seconds. Normalization version 2 forces a full successful refresh of legacy derivatives before reusing conditional responses; failed refreshes still retain dated last-good records, which may lack local matching metadata.
+
 `SOURCES` is an immutable array of registered configuration records. `SOURCE_BY_ID` looks them up. Each record has `id`, `name`, `kind` (`official` or `news`), fixed HTTPS `url`, `format` (`json` or `xml`), `website`, `allowedHosts`, `rights` (`label`, provenance `url`, `allowedFields`, and a `licenseUrl` where applicable) and human-readable `coverage`.
 
 `sourceRequestUrl(sourceOrId, { now })` returns a registered fetch target. CPSC's bounded date query is the only variable target. The collector owns HTTP status checks, timeout and response-size limits, fetch concurrency, retries, conditional requests if used and last-good persistence. Adapters do no network I/O.

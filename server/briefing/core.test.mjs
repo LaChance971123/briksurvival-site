@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeEvent, assembleSnapshot, plainText, safeURL, emptyState } from './core.mjs';
+import { normalizeEvent, assembleSnapshot, plainText, safeURL, emptyState, NORMALIZATION_VERSION, MAX_ACTIVE_NWS_EVENTS, MAX_PUBLIC_EVENTS, MAX_PUBLIC_EVENT_BYTES } from './core.mjs';
 import { editorialFor } from './editorial.mjs';
 import { readFileSync, existsSync } from 'node:fs';
 const now = '2026-10-10T12:00:00.000Z';
@@ -110,4 +110,91 @@ test('rights exclusions override allowed duplicates and failed normalization',()
  assert.equal(duplicate.snapshot.events.length,0);
  const invalid=assembleSnapshot(first,[result([{...raw,id:'future',publishedAt:'2099-01-01T00:00:00Z'}],{excludedIds:['notice-1']})],now);
  assert.equal(invalid.snapshot.events.length,0);
+});
+
+test('normalized geo only trusts NWS SAME or C-zone evidence and preserves subdivision metadata',()=>{
+ const supplied={countyFips:['99999'],sameCodes:['006001','106001','099001'],zoneIds:['CAC001','CAZ003'],evidence:'<script>fake</script>'};
+ const event=normalizeEvent({...raw,geo:supplied},source,now);
+ assert.deepEqual(event.geo.countyFips,['06001']);assert.deepEqual(event.geo.sameCodes,['006001','106001','099001']);
+ assert.equal(event.geo.incomplete,true);assert.doesNotMatch(event.geo.evidence,/script|fake/);
+ for(const untrusted of [{...source,kind:'news'},{...source,id:'cpsc'},{...source,id:'nws-unregistered'}]) {
+  assert.deepEqual(normalizeEvent({...raw,geo:supplied},untrusted,now).geo.countyFips,[]);
+ }
+ assert.deepEqual(normalizeEvent({...raw,geo:null},source,now).geo.countyFips,[]);
+});
+
+test('partial geography warning survives normalization and stale-source retention',()=>{
+ const first=assembleSnapshot(null,[result([{...raw,geo:{sameCodes:['006001','099001']}}])],now);
+ assert.equal(first.sources.nws.coverage.incompleteGeography,1);assert.equal(first.sources.nws.coverage.status,'partial');
+ const stale=assembleSnapshot(first,[{source,ok:false}],now);
+ assert.equal(stale.snapshot.events[0].geo.incomplete,true);assert.equal(stale.sources.nws.coverage.status,'partial');
+});
+
+test('active NWS retains up to800 while other lanes keep120, with exact count disclosure',()=>{
+ const raws=Array.from({length:805},(_,i)=>({...raw,id:`active-${i}`,instructions:'',summary:''}));
+ const other={...source,id:'other-official'};
+ const state=assembleSnapshot(null,[result(raws),{source:other,ok:true,events:raws.slice(0,121)}],now);
+ assert.equal(MAX_ACTIVE_NWS_EVENTS,800);assert.equal(state.sources.nws.events.length,800);
+ assert.equal(state.sources.nws.coverage.sourceDroppedCount,5);assert.equal(state.sources.nws.coverage.limit,800);
+ assert.equal(state.sources['other-official'].events.length,120);assert.equal(state.sources['other-official'].coverage.sourceDroppedCount,1);
+ assert.equal(state.sources.nws.coverage.status,'partial');assert.equal(state.sources['other-official'].coverage.status,'partial');
+});
+
+test('cancellation references apply before capping without displacing current records',()=>{
+ const active=Array.from({length:801},(_,i)=>({...raw,id:`active-${i}`,instructions:'',summary:''}));
+ active[800]={...active[800],updatedAt:'2026-10-01T00:00:00Z'};
+ const cancelSource={...source,id:'nws-cancellations'};
+ const cancel={...raw,id:'cancel',status:'cancelled',cancelledAt:now,relatedIds:['active-800'],updatedAt:'2026-10-01T00:00:00Z'};
+ const state=assembleSnapshot(null,[result(active),{source:cancelSource,ok:true,events:[cancel]}],now);
+ assert.equal(state.sources.nws.events.find(event=>event.sourceEventId==='active-800'),undefined);
+ assert.equal(state.sources.nws.events.filter(event=>event.status==='current').length,800);
+ assert.ok(state.snapshot.events.some(event=>event.source.id==='nws-cancellations'));
+});
+
+test('public1000 cap marks only sources that lose actual records and separates public from stored counts',()=>{
+ const results=Array.from({length:9},(_,lane)=>({source:{...source,id:`lane-${lane}`},ok:true,events:Array.from({length:120},(_,i)=>({...raw,id:`notice-${i}`,title:'Notice',summary:'',instructions:'',location:null}))}));
+ const state=assembleSnapshot(null,results,now);
+ assert.equal(MAX_PUBLIC_EVENTS,1000);assert.equal(state.snapshot.events.length,1000);
+ assert.equal(Object.values(state.sources).reduce((sum,s)=>sum+s.coverage.publicDroppedCount,0),80);
+ for(const s of Object.values(state.sources)) {
+  const displayed=state.snapshot.events.filter(event=>event.source.id===s.id).length;
+  assert.equal(s.coverage.publicCount,displayed);assert.equal(s.coverage.storedCount,120);
+  assert.equal(s.coverage.publicDroppedCount,120-displayed);
+  assert.equal(s.coverage.status,displayed<120?'partial':'ok');
+ }
+});
+
+test('byte capping keeps current notices ahead of older cancellations and attributes every drop',()=>{
+ const results=Array.from({length:3},(_,lane)=>({source:{...source,id:lane===2?'nws-cancellations':`lane-${lane}`},ok:true,events:Array.from({length:120},(_,i)=>({...raw,id:`notice-${i}`,instructions:'x'.repeat(11999),...(lane===2?{status:'cancelled',cancelledAt:now,updatedAt:'2026-10-01T00:00:00Z'}:{})}))}));
+ const state=assembleSnapshot(null,results,now);
+ assert.equal(state.snapshot.events.filter(event=>event.source.id==='nws-cancellations').length,0);
+ assert.ok(state.snapshot.events.length>120);assert.ok(state.snapshot.events.every(event=>event.status==='current'));
+ assert.ok(state.snapshot.events.reduce((sum,event)=>sum+Buffer.byteLength(JSON.stringify(event)),0)<=MAX_PUBLIC_EVENT_BYTES);
+ for(const s of Object.values(state.sources)) {
+  const count=state.snapshot.events.filter(event=>event.source.id===s.id).length;
+  assert.equal(s.coverage.publicDroppedCount,s.events.length-count);
+  if(count<s.events.length) {assert.equal(s.coverage.status,'partial');assert.equal(s.coverage.snapshotCapped,true);}
+ }
+});
+
+test('800 old cancellations cannot starve a newly current NWS warning',()=>{
+ const cancelled=Array.from({length:800},(_,i)=>({...raw,id:`old-${i}`,status:'cancelled',cancelledAt:'2026-10-01T00:00:00Z',publishedAt:'2026-10-01T00:00:00Z',updatedAt:'2026-10-01T00:00:00Z',instructions:'',summary:''}));
+ const first=assembleSnapshot(null,[result(cancelled)],now);
+ const next=assembleSnapshot(first,[result([{...raw,id:'new-current-warning'}])],now);
+ assert.equal(next.sources.nws.events.length,800);
+ assert.equal(next.sources.nws.events[0].sourceEventId,'new-current-warning');
+ assert.equal(next.sources.nws.events[0].status,'current');
+ assert.ok(next.snapshot.events.some(event=>event.sourceEventId==='new-current-warning'));
+ assert.equal(next.sources.nws.coverage.sourceDroppedCount,1);
+});
+
+test('new normalization version is only acknowledged after a fresh successful source parse',()=>{
+ const first=assembleSnapshot(null,[result()],now);
+ assert.equal(first.sources.nws.normalizationVersion,NORMALIZATION_VERSION);
+ const legacy=structuredClone(first);delete legacy.sources.nws.normalizationVersion;delete legacy.sources.nws.events[0].geo;
+ const failed=assembleSnapshot(legacy,[{source,ok:false}],now);
+ assert.equal(failed.sources.nws.normalizationVersion,null);assert.equal(failed.snapshot.events[0].geo,undefined);
+ const refreshed=assembleSnapshot(legacy,[result([{...raw,geo:{sameCodes:['006001']}}])],now);
+ assert.equal(refreshed.sources.nws.normalizationVersion,NORMALIZATION_VERSION);
+ assert.deepEqual(refreshed.snapshot.events[0].geo.countyFips,['06001']);
 });

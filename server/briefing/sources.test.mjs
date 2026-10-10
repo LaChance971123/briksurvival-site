@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { SOURCES, SOURCE_BY_ID, sourceRequestUrl, adaptSource } from './sources.mjs';
+import { SOURCES, SOURCE_BY_ID, sourceRequestUrl, adaptSource, normalizeNwsGeo } from './sources.mjs';
 
 const NOW = '2026-10-10T12:00:00Z';
 const at = (id, data) => adaptSource(id, data, { now: NOW });
@@ -320,4 +320,68 @@ test('KEV exposes only additions in its documented rolling 30-day window', () =>
 test('EFF fundraising is excluded even when privacy boilerplate matches',()=>{
  const result=at('eff',rss(rssItem({link:'https://www.eff.org/deeplinks/example',title:"It’s DAF Day!",description:'Support our work for digital privacy and security.',authors:['Author']})));
  assert.equal(result.events.length,0);
+});
+
+test('NWS SAME preserves leading zeros and subdivision codes while deduplicating county membership',()=>{
+ const [event]=at('nws',collection([alert({geocode:{SAME:['006001','106001','006001'],UGC:['CAC001']}})])).events;
+ assert.deepEqual(event.geo.countyFips,['06001']);
+ assert.deepEqual(event.geo.sameCodes,['006001','106001']);
+ assert.deepEqual(event.geo.zoneIds,['CAC001']);
+ assert.equal(event.geo.precision,'county-or-zone');assert.equal(event.geo.incomplete,false);
+ assert.match(event.geo.evidence,/county overlap, not exact ZIP/);
+});
+
+test('whole-state SAME and all-US codes never become county FIPS',()=>{
+ const geo=normalizeNwsGeo({sameCodes:['006000','000000'],zoneIds:['CAC000']});
+ assert.deepEqual(geo.countyFips,[]);assert.deepEqual(geo.sameCodes,['006000','000000']);
+ assert.equal(geo.incomplete,true);assert.equal(geo.precision,'unknown');
+});
+
+test('county UGCs derive FIPS but forecast and marine Z suffixes do not',()=>{
+ const geo=normalizeNwsGeo({zoneIds:['CAC001','MDC033','PRC001','CAZ001','AMZ555']});
+ assert.deepEqual(geo.countyFips,['06001','24033','72001']);
+ assert.deepEqual(normalizeNwsGeo({zoneIds:['CAZ001','AMZ555']}).countyFips,[]);
+ const marine=normalizeNwsGeo({sameCodes:['075362','092521'],zoneIds:['AMZ362','LMZ521']});
+ assert.deepEqual(marine.sameCodes,['075362','092521']);assert.deepEqual(marine.countyFips,[]);
+});
+
+test('zone notices retain all intersecting SAME counties without centroid inference',()=>{
+ const [event]=at('nws',collection([alert({geocode:{UGC:['UTZ493'],SAME:['049001','049017','049027','049031','049055','049041']}})])).events;
+ assert.deepEqual(event.geo.countyFips,['49001','49017','49027','49031','49055','49041']);
+ assert.deepEqual(event.geo.zoneIds,['UTZ493']);
+});
+
+test('NWS official affectedZones retain county and forecast IDs without following URLs',()=>{
+ const [event]=at('nws',collection([alert({geocode:{},affectedZones:['https://api.weather.gov/zones/county/MDC033','https://api.weather.gov/zones/forecast/MDZ013']})])).events;
+ assert.deepEqual(event.geo.zoneIds,['MDC033','MDZ013']);assert.deepEqual(event.geo.countyFips,['24033']);
+});
+
+test('malicious or unknown geography never invents local membership and marks incompleteness',()=>{
+ const response=at('nws',collection([alert({geocode:{SAME:['006001','099001','06001',60001,'<script>006003</script>'],UGC:['CAC001','XXC999','CAZ<script>']},affectedZones:['https://evil.example/zones/county/CAC003','https://api.weather.gov.evil.example/zones/county/CAC005','https://user@api.weather.gov/zones/county/CAC007','https://api.weather.gov/zones/county/CAC009?anything=1']})]));
+ assert.deepEqual(response.events[0].geo.countyFips,['06001']);assert.equal(response.events[0].geo.incomplete,true);
+ assert.equal(response.coverage.status,'partial');assert.match(response.coverage.warnings.join(' '),/incomplete.*geographic/);
+ assert.doesNotMatch(JSON.stringify(response.events[0].geo),/script|evil|user@/);
+});
+
+test('missing geography remains unknown and cannot borrow county labels or caller-provided FIPS',()=>{
+ const [event]=at('nws',collection([alert({geocode:{},areaDesc:'Alameda County, California',affectedZones:[]})])).events;
+ assert.deepEqual(event.geo.countyFips,[]);assert.equal(event.geo.precision,'unknown');
+ assert.deepEqual(normalizeNwsGeo({countyFips:['06001']}).countyFips,[]);
+ assert.deepEqual(normalizeNwsGeo(null).countyFips,[]);
+});
+
+test('geo revisions and cancellations retain source code evidence through duplicate handling',()=>{
+ const response=at('nws-cancellations',collection([
+  alert({messageType:'Cancel',sent:'2026-10-10T10:00:00Z',geocode:{SAME:['006001']},references:[{identifier:'urn:test:prior'}]}),
+  alert({messageType:'Cancel',sent:'2026-10-10T11:00:00Z',geocode:{SAME:['006001','106003']},references:[{identifier:'urn:test:prior'}]}),
+ ]));
+ assert.equal(response.events.length,1);assert.equal(response.events[0].status,'cancelled');
+ assert.deepEqual(response.events[0].geo.countyFips,['06001','06003']);assert.deepEqual(response.events[0].relatedIds,['urn:test:prior']);
+});
+
+test('oversized geographic code sets stay bounded with an explicit incomplete-coverage warning',()=>{
+ const SAME=Array.from({length:600},(_,i)=>`006${String(i+1).padStart(3,'0')}`);
+ const response=at('nws',collection([alert({geocode:{SAME,UGC:[]}})]));
+ assert.equal(response.events[0].geo.countyFips.length,512);assert.equal(response.events[0].geo.sameCodes.length,512);
+ assert.equal(response.events[0].geo.truncated,true);assert.equal(response.coverage.status,'partial');
 });

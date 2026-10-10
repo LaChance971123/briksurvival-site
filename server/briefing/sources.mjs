@@ -73,6 +73,43 @@ export function sourceRequestUrl(sourceOrId, { now = new Date() } = {}) {
 
 const STATE_NAMES = Object.freeze({ Alabama: 'AL', Alaska: 'AK', Arizona: 'AZ', Arkansas: 'AR', California: 'CA', Colorado: 'CO', Connecticut: 'CT', Delaware: 'DE', Florida: 'FL', Georgia: 'GA', Hawaii: 'HI', Idaho: 'ID', Illinois: 'IL', Indiana: 'IN', Iowa: 'IA', Kansas: 'KS', Kentucky: 'KY', Louisiana: 'LA', Maine: 'ME', Maryland: 'MD', Massachusetts: 'MA', Michigan: 'MI', Minnesota: 'MN', Mississippi: 'MS', Missouri: 'MO', Montana: 'MT', Nebraska: 'NE', Nevada: 'NV', 'New Hampshire': 'NH', 'New Jersey': 'NJ', 'New Mexico': 'NM', 'New York': 'NY', 'North Carolina': 'NC', 'North Dakota': 'ND', Ohio: 'OH', Oklahoma: 'OK', Oregon: 'OR', Pennsylvania: 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC', 'South Dakota': 'SD', Tennessee: 'TN', Texas: 'TX', Utah: 'UT', Vermont: 'VT', Virginia: 'VA', Washington: 'WA', 'West Virginia': 'WV', Wisconsin: 'WI', Wyoming: 'WY', 'District of Columbia': 'DC', 'Puerto Rico': 'PR', Guam: 'GU', 'American Samoa': 'AS', 'Northern Mariana Islands': 'MP', 'U.S. Virgin Islands': 'VI' });
 const STATE_CODES = new Set(Object.values(STATE_NAMES));
+const STATE_FIPS = Object.freeze({ AL:'01', AK:'02', AZ:'04', AR:'05', CA:'06', CO:'08', CT:'09', DE:'10', DC:'11', FL:'12', GA:'13', HI:'15', ID:'16', IL:'17', IN:'18', IA:'19', KS:'20', KY:'21', LA:'22', ME:'23', MD:'24', MA:'25', MI:'26', MN:'27', MS:'28', MO:'29', MT:'30', NE:'31', NV:'32', NH:'33', NJ:'34', NM:'35', NY:'36', NC:'37', ND:'38', OH:'39', OK:'40', OR:'41', PA:'42', RI:'44', SC:'45', SD:'46', TN:'47', TX:'48', UT:'49', VT:'50', VA:'51', WA:'53', WV:'54', WI:'55', WY:'56', AS:'60', GU:'66', MP:'69', PR:'72', VI:'78' });
+const FIPS_STATES = new Set(Object.values(STATE_FIPS));
+const GEO_CODES_LIMIT = 512;
+const NWS_GEO_EVIDENCE = 'NWS CAP geocode and affectedZones; county overlap, not exact ZIP coverage';
+
+/** Validate and re-derive matching keys at both adapter and storage boundaries.
+ * The leading SAME digit is a county subdivision; Z-zone suffixes are NOT FIPS.
+ * County membership must never come from a polygon/zone centroid. */
+export function normalizeNwsGeo(input = {}) {
+  if (!input || typeof input !== 'object' || Array.isArray(input)) input = {};
+  const sameInput = list(input.sameCodes), zoneInput = list(input.zoneIds);
+  const validSame = code => typeof code === 'string' && /^\d{6}$/.test(code.trim());
+  const validZone = code => typeof code === 'string' && /^[A-Z]{2}[CZ]\d{3}$/.test(code.trim()) && code.trim().slice(3) !== '000' && (code.trim()[2] === 'Z' || STATE_CODES.has(code.trim().slice(0,2)));
+  const same = [...new Set(sameInput.filter(validSame).map(code => code.trim()))];
+  const zones = [...new Set(zoneInput.filter(validZone).map(code => code.trim()))];
+  const counties = [...new Set([
+    ...same.filter(code => FIPS_STATES.has(code.slice(1,3)) && code.slice(3) !== '000').map(code => code.slice(1)),
+    ...zones.filter(code => code[2] === 'C').map(code => `${STATE_FIPS[code.slice(0,2)]}${code.slice(3)}`),
+  ])];
+  return { countyFips:counties.slice(0,GEO_CODES_LIMIT), zoneIds:zones.slice(0,GEO_CODES_LIMIT), sameCodes:same.slice(0,GEO_CODES_LIMIT),
+    precision:counties.length || zones.length ? 'county-or-zone' : 'unknown',
+    evidence:counties.length || zones.length || same.length ? NWS_GEO_EVIDENCE : null,
+    incomplete:input.incomplete === true || sameInput.some(code => !validSame(code)) || same.some(code => !FIPS_STATES.has(code.slice(1,3))) || zoneInput.some(code => !validZone(code)),
+    truncated:input.truncated === true || [same,zones,counties].some(codes => codes.length > GEO_CODES_LIMIT) };
+}
+
+function nwsGeo(properties) {
+  const affected = list(properties.affectedZones).flatMap(value => {
+    try {
+      const url = new URL(scalar(value));
+      if (url.protocol !== 'https:' || url.hostname !== 'api.weather.gov' || url.username || url.password || url.port || url.search || url.hash) return [];
+      const match = url.pathname.match(/^\/zones\/(?:county|forecast|fire|marine)\/([A-Z]{2}[CZ]\d{3})$/);
+      return match ? [match[1]] : [];
+    } catch { return []; }
+  });
+  return normalizeNwsGeo({ sameCodes:properties.geocode?.SAME, zoneIds:[...list(properties.geocode?.UGC),...affected], incomplete:affected.length < list(properties.affectedZones).length });
+}
 // Deliberately exact. Unrecognised tags/places are unknown, never guessed.
 const COUNTRIES = new Set(('Afghanistan|Albania|Algeria|Angola|Argentina|Armenia|Australia|Austria|Azerbaijan|Bahrain|Bangladesh|Barbados|Belarus|Belgium|Belize|Benin|Bhutan|Bolivia|Bosnia and Herzegovina|Botswana|Brazil|Bulgaria|Burkina Faso|Burundi|Cambodia|Cameroon|Canada|Cape Verde|Chad|Chile|China|Colombia|Costa Rica|Croatia|Cuba|Cyprus|Czech Republic|Democratic Republic of Congo|Denmark|Dominican Republic|Ecuador|Egypt|El Salvador|Eritrea|Estonia|Eswatini|Ethiopia|Fiji|Finland|France|Gabon|Gambia|Georgia|Germany|Ghana|Greece|Guatemala|Guinea|Guyana|Haiti|Honduras|Hungary|Iceland|India|Indonesia|Iran|Iraq|Ireland|Israel|Italy|Jamaica|Japan|Jordan|Kazakhstan|Kenya|Kosovo|Kuwait|Kyrgyzstan|Laos|Latvia|Lebanon|Lesotho|Liberia|Libya|Lithuania|Luxembourg|Madagascar|Malawi|Malaysia|Maldives|Mali|Malta|Mauritania|Mauritius|Mexico|Moldova|Mongolia|Montenegro|Morocco|Mozambique|Myanmar|Namibia|Nepal|Netherlands|New Zealand|Nicaragua|Niger|Nigeria|North Korea|North Macedonia|Norway|Oman|Pakistan|Palestine|Panama|Papua New Guinea|Paraguay|Peru|Philippines|Poland|Portugal|Qatar|Romania|Russia|Rwanda|Saudi Arabia|Senegal|Serbia|Sierra Leone|Singapore|Slovakia|Slovenia|Solomon Islands|Somalia|South Africa|South Korea|South Sudan|Spain|Sri Lanka|Sudan|Suriname|Sweden|Switzerland|Syria|Taiwan|Tajikistan|Tanzania|Thailand|Timor-Leste|Togo|Trinidad and Tobago|Tunisia|Turkey|Türkiye|Turkmenistan|Uganda|Ukraine|United Arab Emirates|United Kingdom|Uruguay|Uzbekistan|Vanuatu|Venezuela|Vietnam|Yemen|Zambia|Zimbabwe').split('|'));
 
@@ -156,7 +193,7 @@ function adaptNws(item, config, now) {
   const endsAt = iso(p.ends);
   const expired = [expiresAt, endsAt].some((date) => date && Date.parse(date) <= now);
   return event(config, { id, title, category: 'weather', summary: scalar(p.description), instructions: scalar(p.instruction),
-    location: nwsLocation(p), publishedAt, updatedAt: publishedAt, expiresAt, endsAt,
+    location: nwsLocation(p), geo:nwsGeo(p), publishedAt, updatedAt: publishedAt, expiresAt, endsAt,
     cancelledAt: messageType === 'cancel' ? publishedAt : null,
     status: messageType === 'cancel' ? 'cancelled' : expired ? 'expired' : 'current',
     urgency: ['Immediate', 'Expected'].includes(p.urgency) ? p.urgency.toLowerCase() : 'unknown', url, relatedIds });
@@ -313,6 +350,8 @@ export function adaptSource(sourceId, raw, { now = new Date() } = {}) {
   if (rejectedCount) warnings.push(`${rejectedCount} malformed source item(s) were omitted.`);
   if (skippedReasons['missing-attribution']) warnings.push(`${skippedReasons['missing-attribution']} news item(s) omitted because their author attribution was missing.`);
   if (skippedReasons['rights-exception']) warnings.push(`${skippedReasons['rights-exception']} item(s) omitted due to possible source-specific rights restrictions.`);
+  const incompleteGeography = [...records.values()].filter(record => record.geo?.incomplete || record.geo?.truncated).length;
+  if (incompleteGeography) warnings.push(`${incompleteGeography} notice(s) have incomplete or bounded geographic codes; local matching may omit affected areas.`);
   return { events: [...records.values()], excludedIds, coverage: { sourceId, status: warnings.length ? 'partial' : 'ok',
     receivedCount: items.length, acceptedCount: records.size, rejectedCount, skippedCount, skippedReasons,
     duplicatesRemoved, sourceUpdatedAt, warnings, scope: config.coverage } };
