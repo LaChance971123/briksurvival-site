@@ -1,6 +1,6 @@
 """Public-source boundary and deterministic editorial mappings for briefings."""
 from pathlib import Path
-import json,re
+import json,re,tomllib
 from lxml import html
 R=Path(__file__).resolve().parents[1]
 for name in ['briefing/index.html','briefing/event/index.html']:
@@ -15,7 +15,14 @@ assert not (R/'dist/netlify').exists()
 assert not (R/'dist/node_modules').exists()
 js=(R/'briefing.js').read_text()
 assert not re.search(r'setInterval\s*\(',js), 'No browser polling'
-assert 'geolocation' not in js, 'No device location'
+assert 'watchPosition' not in js, 'No continuous location tracking'
+assert 'getCurrentPosition' in js, 'Only a one-shot device-area lookup'
+config=tomllib.loads((R/'netlify.toml').read_text())
+policies=[(rule['for'],rule.get('values',{}).get('Permissions-Policy')) for rule in config['headers']]
+assert policies[0] == ('/*','geolocation=(), microphone=(), camera=()')
+assert [(route,value) for route,value in policies if value and value != policies[0][1]] == [(route,'geolocation=(self), microphone=(), camera=()') for route in ['/briefing','/briefing/','/briefing/index.html']], 'Only Daily Brief index aliases may request location'
+for route in ['index.html','briefing/index.html']:
+ assert 'Daily Brief' in (R/'dist'/route).read_text()
 assert '/api/briefing' in js
 assert 'innerHTML' not in js, 'Source text must use DOM textContent'
 editorial=(R/'server/briefing/editorial.mjs').read_text()

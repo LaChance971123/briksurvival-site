@@ -7,7 +7,13 @@
   const ZIP_KEY = 'oz-briefing-zip-v1';
   const ZIP_DATA_URL = '/briefing/zip-areas.json';
   const RETURN_KEY = 'oz-briefing-return-v1';
+  const AREA_KEY = 'oz-daily-brief-area-v1';
+  const GEO_ATTEMPT_KEY = 'oz-daily-brief-location-attempt-v1';
+  const PLACE_DATA_URL = '/briefing/place-areas.json';
+  const COUNTY_DATA_URL = '/briefing/county-geometry.json';
+  const GEO_DEADLINE_MS = 15000;
   const PAGE_SIZE = 6;
+  const AREA_CHOICES_MAX = 20;
   const STATES = {AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',DC:'District of Columbia',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming',AS:'American Samoa',GU:'Guam',MP:'Northern Mariana Islands',PR:'Puerto Rico',VI:'U.S. Virgin Islands'};
   const CATEGORY_NAMES = {'severe-weather':'Severe weather','weather':'Weather','flooding':'Flooding','flood':'Flooding','earthquake':'Earthquakes','earthquakes':'Earthquakes','wildfire':'Wildfire','wildfire-smoke':'Wildfire & smoke','extreme-heat':'Extreme heat','extreme-cold':'Extreme cold','tropical-weather':'Tropical weather','utilities':'Utilities','public-health':'Public health','health':'Public health','conflict':'Civilian safety','civilian-safety':'Civilian safety','preparedness':'Preparedness','recall':'Product recalls','cyber':'Cybersecurity','news':'Reported news','other':'Other source reports'};
   const plain = (value, max = 6000) => typeof value === 'string' ? value.slice(0, max) : '';
@@ -42,7 +48,7 @@
     if (!value || value.version !== 1 || value.path !== '/briefing/' || !Number.isFinite(value.at) || now-value.at > 86400000 || value.at > now+60000) return null;
     const limits = {};
     for (const key of ['all','local','products','other']) limits[key] = Number.isInteger(value.limits?.[key]) ? Math.max(PAGE_SIZE,Math.min(1000,value.limits[key])) : PAGE_SIZE;
-    return {...value,zip:/^\d{5}$/.test(value.zip || '')?value.zip:'',category:plain(value.category,80),location:plain(value.location,40),group:['all','local','products','other'].includes(value.group)?value.group:'all',includeHistory:value.includeHistory===true,limits,scrollY:Number.isFinite(value.scrollY)?Math.max(0,Math.min(1e7,value.scrollY)):0,focusHref:typeof value.focusHref==='string' && /^\/briefing\/event\/\?id=[a-zA-Z0-9_%.-]+$/.test(value.focusHref)?value.focusHref:null};
+    return {...value,area:validArea(value.area),zip:/^\d{5}$/.test(value.zip || '')?value.zip:'',category:plain(value.category,80),location:plain(value.location,40),group:['all','local','products','other'].includes(value.group)?value.group:'all',includeHistory:value.includeHistory===true,limits,scrollY:Number.isFinite(value.scrollY)?Math.max(0,Math.min(1e7,value.scrollY)):0,focusHref:typeof value.focusHref==='string' && /^\/briefing\/event\/\?id=[a-zA-Z0-9_%.-]+$/.test(value.focusHref)?value.focusHref:null};
   }
   function externalUrl(value) {
     try {
@@ -106,6 +112,17 @@
   function filterEvents(events, category, location) {
     return events.filter(event => (category === 'all' || event.category === category) && (location === 'all' || (location.startsWith('US:') ? sourceStates(event).includes(location.slice(3)) : broadLocation(event) === location)));
   }
+  // Only allowlisted derived area fields can enter local/history storage. Never coordinates.
+  function validArea(value) {
+    if (!value || !['zip','city','geolocation'].includes(value.kind) || typeof value.label !== 'string' || !Array.isArray(value.counties) || !value.counties.length || value.counties.length > 100) return null;
+    const counties = value.counties.map(county => ({code:plain(county?.code,5),name:plain(county?.name,120),state:plain(county?.state,2)}));
+    if (counties.some(county => !/^\d{5}$/.test(county.code) || !county.name || !Object.hasOwn(STATES,county.state) || county.state === 'CT')) return null;
+    return {kind:value.kind,label:plain(value.label,400),counties,approximate:true,...(value.kind === 'zip' && /^\d{5}$/.test(value.zip || '') ? {zip:value.zip} : {})};
+  }
+  function stateQuery(value) {
+    const query = plain(value,120).trim().toLowerCase().replace(/\./g,'');
+    return Object.keys(STATES).find(code => code.toLowerCase() === query || STATES[code].toLowerCase() === query) || null;
+  }
   function resolveZipArea(data, value) {
     const zip = typeof value === 'string' ? value.trim() : '';
     if (!/^\d{5}$/.test(zip)) return {status:'invalid',zip};
@@ -115,11 +132,11 @@
     const counties = [...new Set(codes)].filter(code => typeof code === 'string' && /^\d{5}$/.test(code)).map(code => ({code,...data.counties[code]}));
     if (counties.length !== new Set(codes).size || counties.some(county => !county.name || !data.states[county.state])) return {status:'unmapped',zip};
     if (counties.some(county => (data.unsupportedStates || []).includes(county.state))) return {status:'unsupported',zip,counties};
-    return {status:'found',zip,counties,label:counties.map(county => county.name + ', ' + county.state).join('; '),vintage:plain(data.source?.vintage,30)};
+    return {status:'found',kind:'zip',zip,counties,label:counties.map(county => county.name + ', ' + county.state).join('; '),vintage:plain(data.source?.vintage,30)};
   }
   function partitionAreaEvents(events, area, location) {
     const groups = {local:[],products:[],other:[]};
-    const counties = new Set(area?.counties.map(county => county.code) || []);
+    const counties = new Set(area?.counties?.map(county => county.code) || []);
     for (const event of events) {
       const official = event.source?.kind === 'official';
       if (official && ['cpsc','fda','cisa-kev'].includes(event.source.id)) groups.products.push(event);
@@ -142,7 +159,7 @@
     }
     return selected;
   }
-  const helpers = {PAGE_SIZE,RETURN_KEY,shortStamp,displayTitle,displaySummary,sourceUrl,isCurrentRelevant,prioritizeEvents,validViewState,STALE_AFTER_MS,LOCATION_KEY,ZIP_KEY,ZIP_DATA_URL,resolveZipArea,partitionAreaEvents,STATES,stamp,externalUrl,guideUrl,categoryName,sourceKind,broadLocation,locationLabel,sourceStates,recordState,snapshotState,normalizeSnapshot,filterEvents,exactGuides,eventUrl,selectHomeEvents,nextTransitionAt};
+  const helpers = {AREA_KEY,GEO_ATTEMPT_KEY,PLACE_DATA_URL,COUNTY_DATA_URL,GEO_DEADLINE_MS,validArea,stateQuery,PAGE_SIZE,RETURN_KEY,shortStamp,displayTitle,displaySummary,sourceUrl,isCurrentRelevant,prioritizeEvents,validViewState,STALE_AFTER_MS,LOCATION_KEY,ZIP_KEY,ZIP_DATA_URL,resolveZipArea,partitionAreaEvents,STATES,stamp,externalUrl,guideUrl,categoryName,sourceKind,broadLocation,locationLabel,sourceStates,recordState,snapshotState,normalizeSnapshot,filterEvents,exactGuides,eventUrl,selectHomeEvents,nextTransitionAt};
   if (typeof module !== 'undefined' && module.exports) module.exports = helpers;
   if (typeof document === 'undefined') return;
   const roots = [...document.querySelectorAll('[data-briefing]')];
@@ -172,6 +189,11 @@
     element.href = href;
     if (href.startsWith('https://')) element.rel = 'noopener noreferrer';
     return element;
+  }
+  function readingLink(title,href) {
+    const anchor=link('',href),icon=el('span','briefing-reading-icon'),arrow=el('span','briefing-reading-arrow','↗');
+    icon.setAttribute('aria-hidden','true');arrow.setAttribute('aria-hidden','true');
+    anchor.append(icon,el('span','briefing-reading-title',title),arrow);return anchor;
   }
   function timeLine(label, value) { return el('span', '', label + ': ' + stamp(value)); }
   function safeTextList(value) { return Array.isArray(value) ? value.filter(item => typeof item === 'string' && item.trim()).slice(0, 12).map(item => plain(item)) : []; }
@@ -214,8 +236,8 @@
     const guides = exactGuides(event);
     if (guides.length) {
       const actions = el('nav', 'briefing-card-guides'); actions.setAttribute('aria-label','Relevant preparedness guides');
-      actions.append(el('span','','Relevant guides'));
-      for (const guide of guides) actions.append(link(plain(guide.title,140) + ' ↗',guide.url));
+      actions.append(el('span','','Prepare for this'));
+      for (const guide of guides) actions.append(readingLink(plain(guide.title,140),guide.url));
       article.append(actions);
     }
     article.append(watchLabel(el('p', 'briefing-record-note'), () => { const state = recordState(event); return state.note ? state.label + '. Not an all-clear.' : ''; }, true));
@@ -300,17 +322,31 @@
     paint();localTimeListeners.add(paint);
   }
   function option(value, label) { const node = el('option', '', label); node.value = value; return node; }
-  // The same static county map is loaded at most once, with no ZIP in any request.
-  let zipDataRequest;
-  function loadZipData() {
-    if (!zipDataRequest) {
+  // Same-origin public lookup assets are shared per page; queries never enter requests.
+  const areaDataRequests = new Map();
+  function loadAreaData(url) {
+    if (!areaDataRequests.has(url)) {
       const controller = typeof AbortController === 'function' ? new AbortController() : null;
-      const timeout = controller ? setTimeout(() => controller.abort(),12000) : null;
-      zipDataRequest = fetch(ZIP_DATA_URL,{credentials:'omit',headers:{Accept:'application/json'},...(controller ? {signal:controller.signal} : {})})
-        .then(response => { if (!response.ok) throw Error('ZIP mapping unavailable'); return response.json(); })
-        .finally(() => { if (timeout !== null) clearTimeout(timeout); });
+      let timeout;
+      const request = new Promise((resolve,reject)=>{
+        timeout=setTimeout(()=>{controller?.abort();reject(Error('Area lookup timed out'));},12000);
+        fetch(url,{credentials:'omit',headers:{Accept:'application/json'},...(controller ? {signal:controller.signal} : {})})
+          .then(response=>{if(!response.ok)throw Error('Area mapping unavailable');return response.json();}).then(resolve,reject);
+      }).catch(error=>{areaDataRequests.delete(url);throw error;}).finally(()=>clearTimeout(timeout));
+      areaDataRequests.set(url,request);
     }
-    return zipDataRequest;
+    return areaDataRequests.get(url);
+  }
+  function loadZipData() { return loadAreaData(ZIP_DATA_URL); }
+  function hasLocationAttempt() {
+    try { if (localStorage.getItem(GEO_ATTEMPT_KEY)) return true; } catch {}
+    try { if (sessionStorage.getItem(GEO_ATTEMPT_KEY)) return true; } catch {}
+    return false;
+  }
+  function rememberLocationAttempt() {
+    // If storage is unavailable, an automatic prompt cannot safely remember a denial.
+    try { localStorage.setItem(GEO_ATTEMPT_KEY,'1'); if (localStorage.getItem(GEO_ATTEMPT_KEY) === '1') return true; } catch {}
+    try { sessionStorage.setItem(GEO_ATTEMPT_KEY,'1'); return sessionStorage.getItem(GEO_ATTEMPT_KEY) === '1'; } catch { return false; }
   }
   function readReturnState() {
     try { return validViewState(JSON.parse(sessionStorage.getItem(RETURN_KEY))); } catch { return null; }
@@ -319,11 +355,12 @@
     const get = key => root.querySelector('[data-briefing-' + key + ']');
     const filters=get('filters'),category=get('category'),location=get('location'),reset=get('reset'),options=get('options'),historyChoice=get('history'),historyLabel=get('history-label');
     const cards=get('cards'),count=get('count'),empty=get('empty'),fallback=get('fallback'),more=get('more'),groupNav=get('group-nav');
-    const zipForm=get('zip-form'),zipInput=get('zip'),zipSubmit=get('zip-submit'),zipStatus=get('zip-status'),zipClear=get('zip-clear'),areaHeading=get('area-heading'),areaNote=get('area-note');
+    const zipForm=get('zip-form'),zipInput=get('zip'),zipSubmit=get('zip-submit'),zipStatus=get('zip-status'),zipClear=get('zip-clear'),areaHeading=get('area-heading'),areaNote=get('area-note'),geoButton=get('geolocate'),choices=get('area-choices');
     let saved = null;
     try { saved = validViewState(window.history?.state?.ozBriefing); } catch { /* Optional history storage. */ }
     if (!saved) saved = readReturnState();
     try { sessionStorage.removeItem(RETURN_KEY); } catch { /* Optional handoff. */ }
+    let geoTimer=null,geoPending=false;
     let area=null,zipAttempt=0,group=saved?.group || 'all',focusHref=saved?.focusHref || null,restoring=Boolean(saved),viewVersion=0;
     let restorePosition=saved?.scrollY ?? null;
     const limits={all:PAGE_SIZE,local:PAGE_SIZE,products:PAGE_SIZE,other:PAGE_SIZE,...saved?.limits};
@@ -335,7 +372,7 @@
     category.value=categories.includes(saved?.category)?saved.category:'all'; location.value=locations.includes(saved?.location)?saved.location:'all';
     historyChoice.checked=saved?.includeHistory || false; options.open=saved?.optionsOpen || false;
     if (!saved) try { const stored=localStorage.getItem(LOCATION_KEY); if(locations.includes(stored))location.value=stored; } catch { /* No persistence needed. */ }
-    function viewState() { return {version:1,path:'/briefing/',at:Date.now(),zip:area?.zip || '',category:category.value,location:location.value,group,includeHistory:historyChoice.checked,limits:{...limits},optionsOpen:options.open,scrollY:restorePosition ?? window.scrollY ?? 0,focusHref}; }
+    function viewState() { return {version:1,path:'/briefing/',at:Date.now(),zip:area?.zip || '',area:validArea(area),category:category.value,location:location.value,group,includeHistory:historyChoice.checked,limits:{...limits},optionsOpen:options.open,scrollY:restorePosition ?? window.scrollY ?? 0,focusHref}; }
     function save(forReturn=false) {
       if(restoring)return;
       const state=viewState();
@@ -378,7 +415,7 @@
       }
       areaHeading.hidden=!grouped;areaNote.hidden=!grouped;
       areaHeading.textContent={local:'Relevant to your area',products:'Product & software notices',other:'Other areas & reporting'}[group] || '';
-      areaNote.textContent=group==='local'?(area?area.label+' · county overlap only.':STATES[location.value.slice(3)]+' · broad state labels, not address matches.'):group==='products'?'Check your exact product, lot or software. A local incident is not implied.':'Other places or unverified locations. Some reports may still apply to you.';
+      areaNote.textContent=group==='local'?(area?area.label+' · approximate county overlap only; not your exact position or a hazard boundary. Local matches cover NWS county-coded reports only; zone-only and other reports remain in Other.':STATES[location.value.slice(3)]+' · broad state labels, not address matches.'):group==='products'?'Check your exact product, lot or software. A local incident is not implied.':'Other places or unverified locations. Some reports may still apply to you.';
       empty.replaceChildren();empty.hidden=Boolean(matches.length);
       if(!matches.length)empty.append(el('h3','',group==='local'?'No verified county/state matches.':'No reports in this view.'),el('p','','Not an all-clear. Check current sources'+(grouped?' or choose another report group above.':'. Try another category or include history.')));
       fallback.hidden=Object.values(groups).some(records=>records.length);
@@ -386,9 +423,14 @@
       if(intro)intro.textContent='No reports match this view. These general planning guides remain available.';
     }
     function zipBusy(busy) {
-      zipSubmit.disabled=busy;zipSubmit.textContent=busy?'Checking…':'Use ZIP';
+      zipSubmit.disabled=busy;zipSubmit.textContent=busy?'Searching…':'Search';
       zipInput.setAttribute('aria-busy',String(busy));
     }
+    function clearChoices() { choices.replaceChildren();choices.hidden=true;zipInput.setAttribute('aria-expanded','false'); }
+    function stopGeolocation() {
+      if(geoTimer!==null)clearTimeout(geoTimer);geoTimer=null;geoPending=false;geoButton.disabled=false;geoButton.textContent='Use my location';
+    }
+    function cancelLocationWork() { zipAttempt++;stopGeolocation();zipBusy(false);clearChoices(); }
     function closeOptions(restoreFocus=false) {
       if(!options.open)return;
       options.open=false;save();
@@ -397,32 +439,113 @@
     options.addEventListener('keydown',event=>{if(event.key==='Escape'&&options.open){event.preventDefault();closeOptions(true);}});
     document.addEventListener('click',event=>{if(!event.target?.closest?.('[data-briefing-options]'))closeOptions();});
     document.addEventListener('focusin',event=>{if(!event.target?.closest?.('[data-briefing-options]'))closeOptions();});
-    function clearZip(message) {zipAttempt++;zipBusy(false);zipInput.setAttribute('aria-invalid','false');area=null;zipInput.value='';zipClear.hidden=true;zipStatus.textContent=message;try{localStorage.removeItem(ZIP_KEY);}catch{}}
-    async function applyZip({restore=false}={}) {
-      if(!restore){cancelRestore();resetLimits();}
-      const zip=zipInput.value.trim(),attempt=++zipAttempt,restoreGroup=restore?group:null;zipBusy(false);zipInput.setAttribute('aria-invalid','false');area=null;zipClear.hidden=false;
-      try{localStorage.removeItem(ZIP_KEY);}catch{}
-      if(!/^\d{5}$/.test(zip)){zipInput.setAttribute('aria-invalid','true');zipStatus.textContent='Enter a five-digit U.S. ZIP. Broad location browsing is available under Filters.';render();restoreScroll();save();zipInput.focus();return;}
-      zipBusy(true);zipStatus.textContent='Checking county map locally…';render();
-      try{
-        const result=resolveZipArea(await loadZipData(),zip);if(attempt!==zipAttempt)return;zipBusy(false);
-        if(result.status==='unsupported')zipStatus.textContent='CT county matching is unavailable with this mapping vintage. Choose Connecticut under Filters; no safety conclusion can be drawn.';
-        else if(result.status!=='found')zipStatus.textContent='ZIP not in this geographic lookup. Choose a state under Filters; missing data does not mean no alerts.';
-        else{area=result;location.value='all';if(restoreGroup)group=restoreGroup;zipStatus.textContent='ZIP '+zip+' · county-area estimate';try{localStorage.setItem(ZIP_KEY,zip);localStorage.removeItem(LOCATION_KEY);}catch{}}
-        render();restoreScroll();save();
-      }catch{if(attempt!==zipAttempt)return;zipBusy(false);zipStatus.textContent='County lookup unavailable. Browse by state under Filters; conditions are unknown.';render();restoreScroll();save();}
+    function clearZip(message) {
+      cancelLocationWork();rememberLocationAttempt();zipInput.setAttribute('aria-invalid','false');area=null;zipInput.value='';zipClear.hidden=true;zipStatus.textContent=message;
+      try{localStorage.removeItem(ZIP_KEY);localStorage.removeItem(AREA_KEY);}catch{}
     }
+    function selectArea(result,{restore=false,restoreGroup=null,fromLocation=false,accuracyLabel=''}={}) {
+      cancelLocationWork();
+      if(!restore){cancelRestore();resetLimits();}
+      if(result.kind==='state' && Object.hasOwn(STATES,result.state)) {
+        area=null;location.value='US:'+result.state;zipInput.value=STATES[result.state];
+        zipStatus.textContent=STATES[result.state]+' · broad state matches, not address-level coverage.';
+        try{localStorage.setItem(LOCATION_KEY,location.value);localStorage.removeItem(ZIP_KEY);localStorage.removeItem(AREA_KEY);}catch{}
+      } else {
+        const nextArea=validArea(result);if(!nextArea)throw Error('Invalid derived area');area=nextArea;location.value='all';zipInput.value=area.zip || area.label;
+        zipStatus.textContent=(area.zip?'ZIP '+area.zip:area.label)+' · '+(fromLocation?'device-location county estimate'+(accuracyLabel?' · '+accuracyLabel:'')+'; map boundaries are approximate.':'county-area estimate.');
+        try{localStorage.setItem(AREA_KEY,JSON.stringify(area));localStorage.removeItem(LOCATION_KEY);if(area.zip)localStorage.setItem(ZIP_KEY,area.zip);else localStorage.removeItem(ZIP_KEY);}catch{}
+      }
+      zipInput.setAttribute('aria-invalid','false');zipClear.hidden=false;if(restoreGroup)group=restoreGroup;
+      render();restoreScroll();save();
+    }
+    function presentChoices(matches,{fromLocation=false,accuracyLabel=''}={}) {
+      clearChoices();choices.hidden=false;zipInput.setAttribute('aria-expanded','true');
+      choices.append(el('p','briefing-choice-label',fromLocation?'Location is near a boundary or has limited accuracy.'+(accuracyLabel?' '+accuracyLabel+'.':'')+' Choose the county to browse, or search manually:':'Choose a place. Cities with the same name can be in different states:'));
+      for(const match of matches.slice(0,AREA_CHOICES_MAX)){
+        const button=el('button','briefing-area-choice',match.label);button.type='button';
+        if(match.unsupported){button.disabled=true;button.textContent+=' · county matching unavailable';}
+        button.addEventListener('click',()=>{if(match.unsupported)return;rememberLocationAttempt();selectArea(match,{fromLocation,accuracyLabel});zipInput.focus({preventScroll:true});});choices.append(button);
+      }
+      zipStatus.textContent=(matches.length>AREA_CHOICES_MAX?'Showing '+AREA_CHOICES_MAX+' of '+matches.length+' matches. Add a state or use a fuller city name to narrow your search.':matches.length+' area '+(matches.length===1?'choice':'choices')+'.')+' Use Tab or the down arrow to choose; Escape closes the choices.';
+    }
+    function lookupMessage(result,kind) {
+      if(result.status==='unsupported')return 'Connecticut county matching is unavailable with this mapping vintage. Search Connecticut for broad state reports; no safety conclusion can be drawn.';
+      if(result.status==='imprecise')return 'Device location is too imprecise for a county estimate. Search a ZIP, city or state instead.';
+      if(kind==='zip')return 'ZIP not in this geographic lookup. Search a city or state; missing data does not mean no alerts.';
+      if(kind==='geolocation')return 'No supported U.S. county match was found. Search a U.S. ZIP, city or state, or browse other locations under More filters.';
+      return 'No matching city or state in this geographic lookup. Try a city with its state, or a five-digit ZIP. Missing data does not mean no alerts.';
+    }
+    async function applyZip({restore=false}={}) {
+      if(!restore){cancelRestore();rememberLocationAttempt();}
+      cancelLocationWork();const query=zipInput.value.trim(),attempt=zipAttempt,restoreGroup=restore?group:null;
+      zipInput.setAttribute('aria-invalid','false');zipClear.hidden=!query&&!area;
+      if(!query || query.length>120 || (/\d/.test(query) && !/^\d{5}$/.test(query))) {
+        zipInput.setAttribute('aria-invalid','true');zipStatus.textContent='Enter a five-digit U.S. ZIP, city name, or state name/code.';restoreScroll();save();zipInput.focus();return;
+      }
+      const state=stateQuery(query);if(state){selectArea({kind:'state',state},{restore,restoreGroup});return;}
+      zipBusy(true);zipStatus.textContent='Searching the area map in this browser…';
+      try {
+        let result;
+        if(/^\d{5}$/.test(query)) {const match=resolveZipArea(await loadZipData(),query);result={status:match.status,matches:match.status==='found'?[match]:[]};}
+        else {const data=await loadAreaData(PLACE_DATA_URL);if(!window.OspreyAreaLookup)throw Error('Area lookup module unavailable');result=window.OspreyAreaLookup.searchAreas(data,query);}
+        if(attempt!==zipAttempt)return;zipBusy(false);
+        if(result.status==='unavailable')throw Error('Area mapping unavailable');
+        if(result.status==='found' && result.matches?.length===1 && !result.matches[0].unsupported)selectArea(result.matches[0],{restore,restoreGroup});
+        else if(result.status==='found' && result.matches?.length>1){presentChoices(result.matches);restoreScroll();save();}
+        else{zipStatus.textContent=lookupMessage(result,/^\d{5}$/.test(query)?'zip':'city');restoreScroll();save();}
+      } catch {if(attempt!==zipAttempt)return;areaDataRequests.delete(/^\d{5}$/.test(query)?ZIP_DATA_URL:PLACE_DATA_URL);zipBusy(false);zipStatus.textContent='Area lookup unavailable. Search a state name or code, or use More filters. Try the city or ZIP again when connected.';restoreScroll();save();}
+    }
+    function startGeolocation(automatic=false) {
+      if(geoPending)return;
+      const remembered=rememberLocationAttempt();
+      if(automatic && !remembered){zipStatus.textContent='Location prompts cannot be remembered here. Search an area or choose Use my location.';return;}
+      cancelRestore();cancelLocationWork();const attempt=zipAttempt;
+      if(typeof navigator==='undefined' || !navigator.geolocation || window.isSecureContext===false){zipStatus.textContent='Device location is unavailable in this browser. Search a ZIP, city or state.';return;}
+      geoPending=true;geoButton.disabled=true;geoButton.textContent='Locating…';zipClear.hidden=false;
+      zipStatus.textContent='Waiting for browser location permission. You can search an area instead.';
+      const fail=error=>{
+        if(attempt!==zipAttempt)return;cancelLocationWork();
+        zipStatus.textContent=error?.code===1?'Location permission was not granted. Search an area, or change browser permission and choose Use my location.':error?.code===3?'Location request timed out. Search an area or choose Use my location to retry.':'Device location could not be determined. Search an area or choose Use my location to retry.';
+      };
+      // Browser timeout excludes time awaiting permission. This UI deadline also ignores late callbacks.
+      geoTimer=setTimeout(()=>fail({code:3}),GEO_DEADLINE_MS);
+      try { navigator.geolocation.getCurrentPosition(async position=>{
+        if(attempt!==zipAttempt)return;
+        stopGeolocation();geoButton.disabled=true;geoButton.textContent='Matching…';geoPending=true;zipStatus.textContent='Matching an approximate county in this browser…';
+        try {
+          const data=await loadAreaData(COUNTY_DATA_URL);if(attempt!==zipAttempt)return;
+          if(!window.OspreyAreaLookup)throw Error('Area lookup module unavailable');
+          const result=window.OspreyAreaLookup.resolveCoordinates(data,position.coords.latitude,position.coords.longitude,position.coords.accuracy);
+          if(attempt!==zipAttempt)return;stopGeolocation();
+          if(result.status==='unavailable')throw Error('County mapping unavailable');
+          const meters=position.coords.accuracy;const accuracyLabel=Number.isFinite(meters)?'browser accuracy about '+(meters>=1000?(meters/1000).toFixed(1)+' km':Math.ceil(meters)+' m'):'';
+          if(result.status==='found' && result.matches?.length===1)selectArea(result.matches[0],{fromLocation:true,accuracyLabel});
+          else if(result.status==='ambiguous' && result.matches?.length)presentChoices(result.matches,{fromLocation:true,accuracyLabel});
+          else zipStatus.textContent=lookupMessage(result,'geolocation');
+        } catch {if(attempt!==zipAttempt)return;areaDataRequests.delete(COUNTY_DATA_URL);stopGeolocation();zipStatus.textContent='County lookup unavailable. Search a state name or code, or use More filters. Use my location can retry.';}
+      },fail,{enableHighAccuracy:false,maximumAge:0,timeout:10000}); } catch {fail({code:2});}
+    }
+    geoButton.addEventListener('click',()=>startGeolocation());
+    zipInput.addEventListener('keydown',event=>{
+      if(event.key==='ArrowDown'&&!choices.hidden){event.preventDefault();[...choices.querySelectorAll('button')].find(button=>!button.disabled)?.focus();}
+      else if(event.key==='Escape'&&!choices.hidden){event.preventDefault();clearChoices();zipStatus.textContent='Area choices closed. Refine your search and choose Search.';}
+    });
+    choices.addEventListener('keydown',event=>{
+      const buttons=[...choices.querySelectorAll('button')].filter(button=>!button.disabled),index=buttons.indexOf(document.activeElement);
+      if(event.key==='Escape'){event.preventDefault();clearChoices();zipInput.focus();zipStatus.textContent='Area choices closed. Refine your search and choose Search.';}
+      else if(['ArrowDown','ArrowUp','Home','End'].includes(event.key)){event.preventDefault();const next=event.key==='Home'?0:event.key==='End'?buttons.length-1:event.key==='ArrowDown'?(index+1)%buttons.length:(index-1+buttons.length)%buttons.length;buttons[next]?.focus();}
+    });
     category.addEventListener('change',()=>{cancelRestore();resetLimits();render();save();});
     historyChoice.addEventListener('change',()=>{cancelRestore();resetLimits();render();save();});
     more.addEventListener('click',()=>{cancelRestore();const first=limits[group];limits[group]+=PAGE_SIZE;render();cards.children[first]?.querySelector('h3 a')?.focus();save();});
-    location.addEventListener('change',()=>{cancelRestore();if(area||zipInput.value)clearZip('Browsing by broad location.');try{localStorage.setItem(LOCATION_KEY,location.value);}catch{}resetLimits();render();save();});
-    zipInput.addEventListener('input',()=>{cancelRestore();zipAttempt++;zipBusy(false);zipInput.setAttribute('aria-invalid','false');zipClear.hidden=!area&&!zipInput.value;zipStatus.textContent=area?'Still using ZIP '+area.zip+'. Choose Use ZIP to apply your edit.':'';});
+    location.addEventListener('change',()=>{cancelRestore();clearZip('Browsing by broad location.');try{localStorage.setItem(LOCATION_KEY,location.value);}catch{}resetLimits();render();save();});
+    zipInput.addEventListener('input',()=>{cancelRestore();cancelLocationWork();rememberLocationAttempt();zipInput.setAttribute('aria-invalid','false');zipClear.hidden=!area&&!zipInput.value;zipStatus.textContent=area?'Still using '+(area.zip?'ZIP '+area.zip:area.label)+'. Choose Search to apply your edit.':'';});
     zipForm.addEventListener('submit',event=>{event.preventDefault();applyZip();});
-    zipClear.addEventListener('click',()=>{cancelRestore();clearZip('ZIP cleared.');resetLimits();render();save();zipInput.focus();});
+    zipClear.addEventListener('click',()=>{cancelRestore();clearZip('Area cleared.');location.value='all';try{localStorage.removeItem(LOCATION_KEY);}catch{}resetLimits();render();save();zipInput.focus();});
     reset.addEventListener('click',()=>{cancelRestore();category.value='all';location.value='all';historyChoice.checked=false;clearZip('All filters cleared.');resetLimits();try{localStorage.removeItem(LOCATION_KEY);}catch{}render();save();closeOptions(true);});
     options.addEventListener('toggle',()=>save());
     root.addEventListener('click',event=>{const anchor=event.target?.closest?.('a');const href=anchor?.getAttribute('href');if(href?.startsWith('/briefing/event/?id=')){focusHref=href;save(true);}});
-    window.addEventListener('pagehide',()=>save(true));
+    window.addEventListener('pagehide',()=>{cancelLocationWork();save(true);});
     window.addEventListener('pageshow',event=>{if(event.persisted){try{const state=validViewState(window.history?.state?.ozBriefing);if(state){restorePosition=state.scrollY;restoreScroll();}}catch{}}});
     let eligibility=snapshot.events.map(event=>Number(isCurrentRelevant(event))).join('');
     localTimeListeners.add(()=>{
@@ -439,8 +562,15 @@
       save();
     });
     filters.hidden=false;zipForm.hidden=false;render();health(root,snapshot);
-    let zip=saved?.zip || '';if(!saved)try{zip=localStorage.getItem(ZIP_KEY)||'';}catch{}
-    if(/^\d{5}$/.test(zip)){zipInput.value=zip;applyZip({restore:Boolean(saved)});}else{restoreScroll();save();}
+    let zip=saved?.zip || '',storedArea=saved?.area || null,hasManualPreference=Boolean(saved);
+    if(!saved){
+      try{zip=localStorage.getItem(ZIP_KEY)||'';hasManualPreference=Boolean(localStorage.getItem(LOCATION_KEY));}catch{}
+      try{storedArea=validArea(JSON.parse(localStorage.getItem(AREA_KEY)));}catch{}
+      hasManualPreference=hasManualPreference||Boolean(zip||storedArea||location.value!=='all');
+    }
+    if(storedArea){selectArea(storedArea,{restore:Boolean(saved),restoreGroup:saved?.group});}
+    else if(/^\d{5}$/.test(zip)){zipInput.value=zip;applyZip({restore:Boolean(saved)});}
+    else{restoreScroll();save();if(!hasManualPreference&&!hasLocationAttempt()){const attempt=zipAttempt;const launch=()=>{if(attempt===zipAttempt&&!hasLocationAttempt())startGeolocation(true);};if(window.requestAnimationFrame)window.requestAnimationFrame(launch);else setTimeout(launch,0);}}
   }
   function section(id, title) {
     const node = el('section', 'briefing-detail-section'); node.id = id;
@@ -502,9 +632,9 @@
     const actions = safeTextList(event.preparedness);
     if (actions.length) { const list = el('ol'); for (const text of actions) list.append(el('li','',text)); steps.append(list); }
     else steps.append(el('p','','No reviewed preparedness steps are attached to this record. Use the original source and the linked guides for context.'));
-    const related = section('related-guides','Relevant guides');
+    const related = section('related-guides','Prepare for this');
     const guides = exactGuides(event);
-    if (guides.length) { const links = el('div','briefing-guide-links'); for (const guide of guides) { const node = link(plain(guide.title,200),guide.url); const arrow = el('span','','↗'); arrow.setAttribute('aria-hidden','true'); node.append(arrow); links.append(node); } related.append(links); }
+    if (guides.length) { const links = el('div','briefing-guide-links'); for (const guide of guides) links.append(readingLink(plain(guide.title,200),guide.url)); related.append(links); }
     else related.append(el('p','','No exact guide mapping is available for this record.'));
     const sources = section('sources-updates','Sources and updates');
     const sourceList = el('ul','briefing-sources-list');
@@ -529,7 +659,7 @@
     sources.append(el('p','briefing-reviewed-note','Snapshot generated: ' + stamp(snapshot.generatedAt) + '. Last successful refresh: ' + stamp(snapshot.lastSuccessfulAt) + '. Scheduled twice daily at 00:00 and 12:00 UTC. An expired, removed or unavailable record does not establish that a threat has ended.'));
     target.replaceChildren(header,related,jumps,meaning,official,steps,sources);
     target.hidden = false; root.querySelector('[data-briefing-fallback]').hidden = true;
-    document.title = plain(displayTitle(event),180) + ' — Osprey Zero briefing';
+    document.title = plain(displayTitle(event),180) + ' — Osprey Zero Daily Brief';
   }
 
   function trackLocalTime(snapshot) {
@@ -575,5 +705,5 @@
       else if (mode === 'event') renderDetail(root,snapshot);
     }
     trackLocalTime(snapshot);
-  }).catch(() => roots.forEach(showFailure)).finally(() => { if (timeout !== null) clearTimeout(timeout); });
+  }).catch(() => roots.forEach(root=>{if(root.getAttribute('data-briefing')==='index')renderIndex(root,{events:[],sources:[]});showFailure(root);})).finally(() => { if (timeout !== null) clearTimeout(timeout); });
 }());
