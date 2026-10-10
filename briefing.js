@@ -444,14 +444,17 @@
       try{localStorage.removeItem(ZIP_KEY);localStorage.removeItem(AREA_KEY);}catch{}
     }
     function selectArea(result,{restore=false,restoreGroup=null,fromLocation=false,accuracyLabel=''}={}) {
+      const stateSelection=result?.kind==='state' && Object.hasOwn(STATES,result.state);
+      const nextArea=stateSelection?null:validArea(result);
+      if(!stateSelection&&!nextArea){zipBusy(false);stopGeolocation();zipStatus.textContent='Area matching is unavailable for this location. Your current area is unchanged. Search a supported U.S. state or use More filters.';return;}
       cancelLocationWork();
       if(!restore){cancelRestore();resetLimits();}
-      if(result.kind==='state' && Object.hasOwn(STATES,result.state)) {
+      if(stateSelection) {
         area=null;location.value='US:'+result.state;zipInput.value=STATES[result.state];
         zipStatus.textContent=STATES[result.state]+' · broad state matches, not address-level coverage.';
         try{localStorage.setItem(LOCATION_KEY,location.value);localStorage.removeItem(ZIP_KEY);localStorage.removeItem(AREA_KEY);}catch{}
       } else {
-        const nextArea=validArea(result);if(!nextArea)throw Error('Invalid derived area');area=nextArea;location.value='all';zipInput.value=area.zip || area.label;
+        area=nextArea;location.value='all';zipInput.value=area.zip || area.label;
         zipStatus.textContent=(area.zip?'ZIP '+area.zip:area.label)+' · '+(fromLocation?'device-location county estimate'+(accuracyLabel?' · '+accuracyLabel:'')+'; map boundaries are approximate.':'county-area estimate.');
         try{localStorage.setItem(AREA_KEY,JSON.stringify(area));localStorage.removeItem(LOCATION_KEY);if(area.zip)localStorage.setItem(ZIP_KEY,area.zip);else localStorage.removeItem(ZIP_KEY);}catch{}
       }
@@ -470,6 +473,7 @@
     }
     function lookupMessage(result,kind) {
       if(result.status==='unsupported')return 'Connecticut county matching is unavailable with this mapping vintage. Search Connecticut for broad state reports; no safety conclusion can be drawn.';
+      if(result.status==='invalid' && kind==='geolocation')return 'Device location could not be interpreted reliably. Search a ZIP, city or state instead.';
       if(result.status==='imprecise')return 'Device location is too imprecise for a county estimate. Search a ZIP, city or state instead.';
       if(kind==='zip')return 'ZIP not in this geographic lookup. Search a city or state; missing data does not mean no alerts.';
       if(kind==='geolocation')return 'No supported U.S. county match was found. Search a U.S. ZIP, city or state, or browse other locations under More filters.';
