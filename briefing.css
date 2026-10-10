@@ -162,3 +162,62 @@
 .briefing-method-grid p a{text-decoration:underline;text-underline-offset:3px}
 
 .briefing-zip-credit a{text-decoration:underline;text-underline-offset:3px;color:var(--bone)}
+
+/* Location-first briefing. Full methodology is available without blocking reports. */
+.briefing-sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.briefing-compact-header{padding-top:22px;padding-bottom:8px}
+.briefing-compact-header h1{font-size:38px;line-height:1.12;letter-spacing:-.045em;margin:0 0 8px}
+.briefing-schedule{font:500 11px/1.6 var(--mono);color:var(--bone);margin:0}
+.briefing-status{font:400 11px/1.6 var(--mono);padding:0;margin:3px 0 0;max-width:100%}
+.briefing-feed{padding-top:8px}
+.briefing-zip-form{display:block;background:transparent;padding:0;border:0;margin:0 0 10px}
+.briefing-zip-controls{display:flex;align-items:center;gap:7px;flex-wrap:nowrap}
+.briefing-zip-controls label{font-size:12px;white-space:nowrap;font-weight:600}
+.briefing-zip-controls input{flex:1;width:130px;max-width:200px;min-height:42px;padding:8px 10px;font-size:15px}
+.briefing-zip-controls button{min-height:42px;padding:8px 11px;white-space:nowrap}
+.briefing-zip-form p{font-size:11px;line-height:1.45;margin:5px 0 0;max-width:none}
+.briefing-zip-form [role=status]:empty{display:none}
+.briefing-filters{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:9px 12px;padding:0;border:0;margin:0 0 9px}
+.briefing-filters select{min-height:40px;font-size:13px;padding:7px 30px 7px 10px}
+.briefing-filter-options{position:relative;min-width:0}
+.briefing-filter-options>summary{padding:11px 12px;border:1px solid #616661;min-height:40px;font-size:12px;line-height:1.4;cursor:pointer;color:var(--bone)}
+.briefing-filter-options>div{position:absolute;z-index:15;right:0;top:48px;width:min(330px,85vw);padding:17px;background:#191d1e;border:1px solid #727366;box-shadow:0 8px 25px #0008;display:grid;gap:15px}
+.briefing-filters .briefing-history-choice{grid-column:1/-1;display:flex;align-items:center;gap:8px;font-size:12px;line-height:1.5;color:var(--briefing-quiet)}
+.briefing-history-choice input{width:17px;height:17px;accent-color:var(--orange);flex:none;margin:0}
+.briefing-group-nav{display:flex;gap:7px;margin:12px 0 10px;flex-wrap:wrap}
+.briefing-group-nav button{flex:1;min-height:38px;padding:8px 10px;border:1px solid #59635c;background:transparent;color:var(--bone);font:500 12px var(--body)}
+.briefing-group-nav button[aria-pressed=true]{background:var(--bone);color:var(--black);border-color:var(--bone)}
+.briefing-area-heading{font-size:21px;line-height:1.25;margin:12px 0 4px}
+.briefing-area-note{font-size:11px;line-height:1.55;margin:0 0 7px}
+.briefing-result-count{font:400 10px/1.5 var(--mono);margin:10px 0 12px;max-width:100%}
+.briefing-card,.home-briefing .briefing-card{padding:19px}
+.briefing-card>.briefing-category{font-size:9px;margin-bottom:7px}
+.briefing-card h3,.home-briefing .briefing-card h3{font-size:23px;line-height:1.15;margin-bottom:10px}
+.briefing-card-source{font:400 10px/1.6 var(--mono);color:var(--briefing-quiet);margin:0 0 4px}
+.briefing-card-source a{text-decoration:underline;text-underline-offset:3px;color:var(--bone)}
+.briefing-card-area{font-size:11px;line-height:1.5;color:var(--briefing-quiet);margin:0 0 12px}
+.briefing-card-summary,.briefing-card-meaning{font-size:14px;line-height:1.55;margin-bottom:12px}
+.briefing-card-guides{gap:5px;margin-bottom:12px}
+.briefing-card-guides a{font-size:13px;line-height:1.45;padding-block:3px}
+.briefing-card-metadata{margin-top:6px}
+.briefing-card-footer{padding-top:9px}
+.briefing-source-action{font-size:13px;color:var(--bone);text-decoration:underline;text-underline-offset:4px;margin-bottom:12px;font-weight:600}
+.briefing-context{margin:20px 0 0;border-top:1px solid var(--line);padding-top:13px;color:var(--briefing-quiet)}
+.briefing-context>summary{font-size:12px;line-height:1.5;color:var(--bone);cursor:pointer;padding-block:5px}
+.briefing-context>p,.briefing-status-detail{font-size:12px;line-height:1.7;margin:12px 0 0}
+.briefing-context .briefing-notice{margin-top:15px}
+.briefing-context a{text-decoration:underline;text-underline-offset:3px}
+.briefing-back{display:inline-block;color:var(--bone);font-size:13px;text-decoration:underline;text-underline-offset:4px;margin:17px 0 10px}
+.briefing-detail{padding-top:17px}
+.briefing-detail-header h1{font-size:clamp(30px,4.2vw,49px);margin:9px 0 14px;line-height:1.12}
+.briefing-detail-header>.briefing-category{margin:0 0 6px}
+.briefing-detail-header .briefing-source-kind{font-size:10px}
+.briefing-detail-header .briefing-detail-section p{font-size:15px;line-height:1.65}
+.briefing-detail-header .briefing-detail-section h2{margin:12px 0 7px}
+#related-guides{padding-top:19px}
+#related-guides h2{font-size:23px;margin-bottom:10px}
+.briefing-guide-links{gap:8px}
+.briefing-guide-links a{padding:13px 16px;font-size:14px;line-height:1.5}
+.briefing-original-summary{margin:20px 0;color:var(--briefing-quiet)}
+.home-briefing .briefing-status{margin-bottom:17px}
+@media(max-width:720px){.briefing-compact-header{padding-top:15px;padding-bottom:6px}.briefing-compact-header h1{font-size:29px}.briefing-schedule,.briefing-status{font-size:10px}.briefing-feed{padding-top:7px}.briefing-zip-controls label{display:none}.briefing-zip-controls input{max-width:none}.briefing-zip-controls button{font-size:12px}.briefing-zip-form{margin-bottom:9px}.briefing-filters{grid-template-columns:minmax(0,1fr) auto;gap:7px 10px}.briefing-filters .briefing-history-choice{font-size:11px}.briefing-card,.home-briefing .briefing-card{padding:18px}.briefing-card h3,.home-briefing .briefing-card h3{font-size:23px}.briefing-detail-header h1{font-size:29px}.briefing-detail{padding-top:13px}.briefing-context .briefing-notice{padding:13px}.briefing-detail-jumps{font-size:11px;gap:6px 15px;margin-top:17px}}

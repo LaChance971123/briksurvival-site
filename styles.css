@@ -479,3 +479,7 @@ html{scroll-padding-top:94px}
 /* Results belong below the field, never in a browser suggestion popup. */
 .field-hero #home-search-results{position:static;inset:auto;max-height:none;overflow:visible;overscroll-behavior:auto;transform:none;width:100%;margin:14px 0 0}.field-hero #home-search-results[hidden]{display:none}.field-hero #home-search-results .search-result{padding:17px 18px}.field-hero #home-search-results .search-result h2{font-size:23px}.field-hero #home-search-results .search-result p{font-size:13px;line-height:1.65}.field-hero #home-search-results>.button{width:100%;margin-top:8px}
 @media(max-width:700px){.field-hero #home-search-results .search-result{padding:15px 13px}.field-hero #home-search-results .search-result h2{font-size:21px}.field-hero #home-search-results .result-meta{font-size:10px;line-height:1.5}.field-hero .home-finder input{scroll-margin-block:100px 24px}}
+
+/* Briefing discovery in the existing mobile menu; desktop navigation stays compact. */
+.primary-nav .nav-mobile-briefing{display:none}
+@media(max-width:1020px){.primary-nav .nav-mobile-briefing{display:block}}

@@ -1,9 +1,10 @@
 import { createHash } from 'node:crypto';
-import { editorialFor } from './editorial.mjs';
+import { editorialFor, presentationFor } from './editorial.mjs';
 import { normalizeNwsGeo } from './sources.mjs';
 
 export const SCHEMA_VERSION = 1;
 export const NORMALIZATION_VERSION = 2;
+export const PRESENTATION_VERSION = 1;
 export const STALE_AFTER_MS = 14 * 60 * 60 * 1000;
 export const RETENTION_MS = 14 * 24 * 60 * 60 * 1000;
 export const MAX_EVENTS_PER_SOURCE = 120;
@@ -40,6 +41,18 @@ export function iso(value) {
   return Number.isFinite(+date) ? date.toISOString() : null;
 }
 const states = new Set('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC PR VI GU AS MP'.split(' '));
+/** Pure presentation only. Original source fields, hashes and check times survive. */
+export function presentEvent(event, {summary = event.summary, eventType = event.eventType, sourceReaderZoneId = event.sourceReaderZoneId} = {}) {
+  const context={...event,summary:plainText(summary,16000),eventType:plainText(eventType,120)};
+  const display=presentationFor(context);
+  const nws=event.source?.kind==='official' && ['nws','nws-cancellations'].includes(event.source.id);
+  const zone=nws && typeof sourceReaderZoneId==='string' && /^[A-Z]{2}Z\d{3}$/.test(sourceReaderZoneId) && states.has(sourceReaderZoneId.slice(0,2)) && !sourceReaderZoneId.endsWith('000') ? sourceReaderZoneId : null;
+  const sourceUrl=nws ? zone?`https://forecast.weather.gov/MapClick.php?zoneid=${zone}`:'https://www.weather.gov/' : event.url;
+  const sourceUrlKind=nws ? zone?'current-zone-forecast':'current-alerts-map' : event.category==='cyber'?'source-catalog':'original-notice';
+  const sourceLinkLabel=nws ? zone?`Check current NWS forecast and alerts for zone ${zone}`:'Check current NWS alerts (map)' : event.category==='recall'?'Open the original recall and remedy':event.category==='cyber'?'Open the CISA vulnerability catalog':event.category==='earthquake'?'Open the USGS earthquake record':'Read the original reporting';
+  return {...event,...display,...editorialFor({...context,eventType:display.eventType}),sourceUrl,sourceUrlKind,sourceLinkLabel,
+    sourceReaderZoneId:zone,presentationVersion:PRESENTATION_VERSION};
+}
 export function normalizeEvent(raw, source, now) {
   if (!raw || typeof raw !== 'object') return null;
   const title = plainText(raw.title, 240);
@@ -70,7 +83,8 @@ export function normalizeEvent(raw, source, now) {
     attribution:plainText(raw.attribution, 600),
   };
   event.contentHash = hash({...event,lastCheckedAt:null,status:null});
-  return {...event,...editorialFor(event),updates:[{at:iso(now),kind:'first-seen',text:'First included in this briefing. Check the original source for earlier history.'}]};
+  return presentEvent({...event,updates:[{at:iso(now),kind:'first-seen',text:'First included in this briefing. Check the original source for earlier history.'}]},
+    {summary:raw.summary,eventType:raw.eventType,sourceReaderZoneId:raw.sourceReaderZoneId});
 }
 export function emptyState() { return {schemaVersion:SCHEMA_VERSION,sources:{},snapshot:null}; }
 const retentionPriority = event => event.status === 'current' ? 0 : event.status === 'cancelled' ? 1 : 2;
@@ -117,7 +131,10 @@ export function assembleSnapshot(previous, results, now = new Date().toISOString
         events = events.map(event => ({...event,lastCheckedAt:now}));
       }
     }
-    events = events.map(event => ({...event,status:event.status !== 'cancelled' && [event.expiresAt,event.endsAt].some(at => at && +new Date(at) <= +new Date(now)) ? 'expired' : event.status}));
+    events = events.map(event => {
+      const dated={...event,status:event.status !== 'cancelled' && [event.expiresAt,event.endsAt].some(at => at && +new Date(at) <= +new Date(now)) ? 'expired' : event.status};
+      return dated.presentationVersion===PRESENTATION_VERSION?dated:presentEvent(dated);
+    });
     sources[source.id] = {
       id:source.id,name:source.name,kind:source.kind,website:source.website,
       status:success ? 'ok' : prior?.lastSuccessAt ? 'stale' : 'unavailable',
@@ -180,4 +197,27 @@ export function assembleSnapshot(previous, results, now = new Date().toISOString
     events:boundedEvents,
   };
   return {schemaVersion:SCHEMA_VERSION,sources,snapshot};
+}
+
+/** Rebuild an existing captured derivative without fetching or changing collection
+ * timestamps. Do not pass an earlier raw feed here as if it were a newer check. */
+export function refreshStoredPresentation(state) {
+  const sources=Object.fromEntries(Object.entries(state.sources || {}).map(([id,source])=>[id,{...source,
+    coverage:{...source.coverage},events:(source.events || []).map(event=>presentEvent(event))}]));
+  const byId=new Map(Object.values(sources).flatMap(source=>source.events).map(event=>[event.id,event]));
+  const candidates=(state.snapshot?.events || []).map(event=>byId.get(event.id) || presentEvent(event)).sort(retentionOrder);
+  const events=[];let bytes=0;
+  const counts=new Map(),drops=new Map();
+  for(const event of candidates) {
+    const size=Buffer.byteLength(JSON.stringify(event));
+    if(events.length>=MAX_PUBLIC_EVENTS || bytes+size>MAX_PUBLIC_EVENT_BYTES) {drops.set(event.source.id,(drops.get(event.source.id)||0)+1);continue;}
+    bytes+=size;events.push(event);counts.set(event.source.id,(counts.get(event.source.id)||0)+1);
+  }
+  for(const [id,source] of Object.entries(sources)) {
+    source.coverage={...source.coverage,publicCount:counts.get(id)||0};
+    if(drops.has(id))source.coverage={...source.coverage,status:'partial',snapshotCapped:true,publicDroppedCount:(source.coverage.publicDroppedCount||0)+drops.get(id)};
+  }
+  events.sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt));
+  return {...state,sources,snapshot:{...state.snapshot,presentationVersion:PRESENTATION_VERSION,
+    sources:(state.snapshot?.sources || []).map(source=>({...source,coverage:sources[source.id]?.coverage || source.coverage})),events}};
 }

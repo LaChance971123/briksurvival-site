@@ -385,3 +385,17 @@ test('oversized geographic code sets stay bounded with an explicit incomplete-co
  assert.equal(response.events[0].geo.countyFips.length,512);assert.equal(response.events[0].geo.sameCodes.length,512);
  assert.equal(response.events[0].geo.truncated,true);assert.equal(response.coverage.status,'partial');
 });
+
+test('NWS reader-zone evidence comes only from one explicitly typed land forecast zone',()=>{
+ const valid=at('nws',collection([alert({affectedZones:['https://api.weather.gov/zones/forecast/AZZ501']})])).events[0];
+ assert.equal(valid.sourceReaderZoneId,'AZZ501');assert.equal(valid.eventType,'Flood Warning');
+ for(const affectedZones of [
+  [],['https://api.weather.gov/zones/fire/AZZ501'],['https://api.weather.gov/zones/county/AZC001'],
+  ['https://api.weather.gov/zones/forecast/AMZ555'],['https://api.weather.gov/zones/forecast/AZZ000'],
+  ['https://api.weather.gov/zones/forecast/AZZ501?x=1'],['https://api.weather.gov.evil.test/zones/forecast/AZZ501'],
+  ['https://api.weather.gov/zones/forecast/AZZ501','https://api.weather.gov/zones/forecast/AZZ502'],
+ ]){
+  const event=at('nws',collection([alert({affectedZones,geocode:{UGC:['AZZ501']}})])).events[0];
+  assert.equal(event.sourceReaderZoneId,null,JSON.stringify(affectedZones));
+ }
+});

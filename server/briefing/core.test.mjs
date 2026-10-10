@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeEvent, assembleSnapshot, plainText, safeURL, emptyState, NORMALIZATION_VERSION, MAX_ACTIVE_NWS_EVENTS, MAX_PUBLIC_EVENTS, MAX_PUBLIC_EVENT_BYTES } from './core.mjs';
+import { normalizeEvent, assembleSnapshot, plainText, safeURL, emptyState, NORMALIZATION_VERSION, MAX_ACTIVE_NWS_EVENTS, MAX_PUBLIC_EVENTS, MAX_PUBLIC_EVENT_BYTES, presentEvent, refreshStoredPresentation, PRESENTATION_VERSION } from './core.mjs';
 import { editorialFor } from './editorial.mjs';
 import { readFileSync, existsSync } from 'node:fs';
 const now = '2026-10-10T12:00:00.000Z';
@@ -61,7 +61,7 @@ test('news cannot inherit urgent styling or authoritative safety instructions', 
 test('all mapped guides exist and no specific incident recommendations are invented', () => {
  for (const category of ['weather','earthquake','recall','cyber','news']) {
   const mapped = editorialFor({category,title:'Tornado Warning'});
-  assert.ok(mapped.guides.length>=2 && mapped.guides.length<=4);
+  assert.ok(mapped.guides.length>=(category==='news'?1:2) && mapped.guides.length<=4);
   for (const g of mapped.guides) assert.ok(existsSync(new URL('../../'+g.url.replace(/^\//,'')+'index.html',import.meta.url)),g.url);
  }
  const cyber = editorialFor({category:'cyber',title:'CVE-2026-0000'});
@@ -197,4 +197,58 @@ test('new normalization version is only acknowledged after a fresh successful so
  const refreshed=assembleSnapshot(legacy,[result([{...raw,geo:{sameCodes:['006001']}}])],now);
  assert.equal(refreshed.sources.nws.normalizationVersion,NORMALIZATION_VERSION);
  assert.deepEqual(refreshed.snapshot.events[0].geo.countyFips,['06001']);
+});
+
+test('presentation refresh preserves original source fields, evidence hashes and all collection timestamps',()=>{
+ const original=assembleSnapshot(null,[result([{...raw,title:'Wind Advisory issued October 10 by NWS State College PA',summary:'Gusty winds will blow around unsecured objects. Tree limbs could be blown down. Incomplete tail if th'}])],now);
+ // Simulate the captured legacy derivative; no access to an earlier raw feed.
+ delete original.sources.nws.events[0].presentationVersion;
+ delete original.snapshot.events[0].presentationVersion;
+ const before=structuredClone(original);const refreshed=refreshStoredPresentation(original);
+ assert.equal(refreshed.snapshot.generatedAt,before.snapshot.generatedAt);
+ assert.equal(refreshed.snapshot.lastSuccessfulAt,before.snapshot.lastSuccessfulAt);
+ assert.equal(refreshed.sources.nws.lastAttemptAt,before.sources.nws.lastAttemptAt);
+ assert.equal(refreshed.sources.nws.lastSuccessAt,before.sources.nws.lastSuccessAt);
+ const old=before.snapshot.events[0],event=refreshed.snapshot.events[0];
+ for(const key of ['id','title','summary','instructions','url','publishedAt','updatedAt','lastCheckedAt','contentHash','status'])assert.deepEqual(event[key],old[key],key);
+ assert.deepEqual(event.updates,old.updates);assert.equal(event.presentationVersion,PRESENTATION_VERSION);
+ assert.doesNotMatch(event.displaySummary,/Incomplete|if th/);
+ assert.equal(event.sourceUrl,'https://www.weather.gov/');assert.equal(event.sourceUrlKind,'current-alerts-map');
+ assert.equal(refreshed.sources.nws.coverage.publicCount,1);
+ assert.deepEqual(original,before,'The migration is pure and must not mutate stored input.');
+});
+
+test('new full-source display can use complete text without enlarging the stored original excerpt',()=>{
+ const prefix='This product covers '+ 'Example; '.repeat(100)+'. * IMPACTS...';
+ const event=normalizeEvent({...raw,summary:prefix+'Floodwater can damage buildings. Roads may become impassable.',eventType:'Flood Warning'},source,now);
+ assert.equal(event.summary.length,620);
+ assert.equal(event.displaySummary,'Floodwater can damage buildings. Roads may become impassable.');
+ const state=assembleSnapshot(null,[result([{...raw,summary:prefix+'Floodwater can damage buildings. Roads may become impassable.'}])],now);
+ const reused=assembleSnapshot(state,[result(undefined,{notModified:true})],'2026-10-10T13:00:00Z');
+ assert.equal(reused.snapshot.events[0].displaySummary,state.snapshot.events[0].displaySummary);
+});
+
+test('reader destinations never infer forecast type from old mixed zone evidence',()=>{
+ const event=normalizeEvent({...raw,geo:{zoneIds:['AZZ501'],sameCodes:[]}},source,now);
+ assert.equal(event.sourceUrl,'https://www.weather.gov/');
+ assert.equal(event.url,raw.url);
+ assert.equal(event.sourceReaderZoneId,null);
+ const future=normalizeEvent({...raw,sourceReaderZoneId:'AZZ501'},source,now);
+ assert.equal(future.sourceUrl,'https://forecast.weather.gov/MapClick.php?zoneid=AZZ501');
+ assert.equal(future.sourceUrlKind,'current-zone-forecast');assert.match(future.sourceLinkLabel,/current NWS forecast and alerts for zone AZZ501/);
+ for(const invalid of ['AZC501','AMZ501','AZZ000','AZZ501&evil=1','https://attacker.example','AZZ501#x'])assert.equal(presentEvent(event,{sourceReaderZoneId:invalid}).sourceUrl,'https://www.weather.gov/');
+ const nonNws={...event,source:{...event.source,id:'usgs'}};
+ assert.equal(presentEvent(nonNws,{sourceReaderZoneId:'AZZ501'}).sourceUrl,event.url);
+});
+
+test('the genuine captured derivative can be re-presented inside the same public budget without new check times',()=>{
+ const captured=JSON.parse(readFileSync(new URL('./bootstrap.json',import.meta.url),'utf8'));
+ const migrated=refreshStoredPresentation(captured);
+ assert.equal(migrated.snapshot.generatedAt,captured.snapshot.generatedAt);
+ assert.equal(migrated.snapshot.events.length,captured.snapshot.events.length);
+ assert.ok(migrated.snapshot.events.reduce((bytes,event)=>bytes+Buffer.byteLength(JSON.stringify(event)),0)<=MAX_PUBLIC_EVENT_BYTES);
+ for(const [id,lane] of Object.entries(captured.sources)){
+  assert.equal(migrated.sources[id].lastSuccessAt,lane.lastSuccessAt);assert.equal(migrated.sources[id].lastAttemptAt,lane.lastAttemptAt);
+  assert.equal(migrated.sources[id].events.length,lane.events.length);
+ }
 });

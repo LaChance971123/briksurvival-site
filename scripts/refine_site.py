@@ -5,7 +5,7 @@ from publication import public_pages
 from toolkit_catalog import load_catalog
 ROOT=Path(__file__).resolve().parents[1]
 LIVE_TOPICS=any(p['kind']=='topic' and p['status']=='ready' for p in load_catalog(ROOT)['products'])
-NAV='''<nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="/emergencies/">Emergency guides</a><a href="/library/">Explore topics</a><a href="/preparedness/">Start preparing</a><a class="nav-cta" href="/search/">Search</a></nav>'''
+NAV='''<nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="/emergencies/">Emergency guides</a><a href="/library/">Explore topics</a><a href="/preparedness/">Start preparing</a><a class="nav-mobile-briefing" href="/briefing/">Briefing</a><a class="nav-cta" href="/search/">Search</a></nav>'''
 for p in [ROOT/'templates/shell.html',*[ROOT/name for name in sorted(public_pages(ROOT))]]:
  s=p.read_text()
  section='/'+p.relative_to(ROOT).parts[0]+'/'

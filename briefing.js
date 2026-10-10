@@ -6,6 +6,8 @@
   const LOCATION_KEY = 'oz-briefing-broad-location-v1';
   const ZIP_KEY = 'oz-briefing-zip-v1';
   const ZIP_DATA_URL = '/briefing/zip-areas.json';
+  const RETURN_KEY = 'oz-briefing-return-v1';
+  const PAGE_SIZE = 6;
   const STATES = {AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',DC:'District of Columbia',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming',AS:'American Samoa',GU:'Guam',MP:'Northern Mariana Islands',PR:'Puerto Rico',VI:'U.S. Virgin Islands'};
   const CATEGORY_NAMES = {'severe-weather':'Severe weather','weather':'Weather','flooding':'Flooding','flood':'Flooding','earthquake':'Earthquakes','earthquakes':'Earthquakes','wildfire':'Wildfire','wildfire-smoke':'Wildfire & smoke','extreme-heat':'Extreme heat','extreme-cold':'Extreme cold','tropical-weather':'Tropical weather','utilities':'Utilities','public-health':'Public health','health':'Public health','conflict':'Civilian safety','civilian-safety':'Civilian safety','preparedness':'Preparedness','recall':'Product recalls','cyber':'Cybersecurity','news':'Reported news','other':'Other source reports'};
   const plain = (value, max = 6000) => typeof value === 'string' ? value.slice(0, max) : '';
@@ -15,6 +17,32 @@
     const date = parseDate(value);
     if (date === null) return 'Not provided';
     return new Date(date).toLocaleString('en-GB', {day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'UTC'}) + ' UTC';
+  }
+  function shortStamp(value) {
+    const date = parseDate(value);
+    return date === null ? 'date unknown' : new Date(date).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'UTC'}) + ' UTC';
+  }
+  function displayTitle(event) { return plain(event.displayTitle,500).trim() || plain(event.title,500); }
+  function displaySummary(event) { return plain(event.displaySummary,1200).trim() || 'Read the linked source for this report’s full details.'; }
+  function sourceUrl(event) { return externalUrl(event.sourceUrl) || externalUrl(event.url); }
+  function isCurrentRelevant(event, now = Date.now()) { return recordState(event,now).label === 'Stored source report' && event.relevance !== 'background'; }
+  function prioritizeEvents(events, sources = [], now = Date.now()) {
+    const sourceMap = new Map(sources.map(source => [source.id,source]));
+    const fresh = event => { const source = sourceMap.get(event.source.id); const at = parseDate(source?.lastSuccessAt); return source?.status === 'ok' && at !== null && now-at <= STALE_AFTER_MS; };
+    const base = (a,b) => Number(!isCurrentRelevant(a,now))-Number(!isCurrentRelevant(b,now)) || Number(!fresh(a))-Number(!fresh(b));
+    const latest = (a,b) => (parseDate(b.updatedAt || b.publishedAt)||0)-(parseDate(a.updatedAt || a.publishedAt)||0) || a.id.localeCompare(b.id);
+    const pool = events.slice(), selected = [], categories = new Set(), origins = new Set();
+    while (selected.length < PAGE_SIZE && pool.length) {
+      pool.sort((a,b) => base(a,b) || Number(categories.has(a.category))-Number(categories.has(b.category)) || Number(a.source.kind==='news')-Number(b.source.kind==='news') || Number(origins.has(a.source.id))-Number(origins.has(b.source.id)) || latest(a,b));
+      const next = pool.shift(); selected.push(next); categories.add(next.category); origins.add(next.source.id);
+    }
+    return selected.concat(pool.sort((a,b)=>base(a,b)||latest(a,b)));
+  }
+  function validViewState(value, now = Date.now()) {
+    if (!value || value.version !== 1 || value.path !== '/briefing/' || !Number.isFinite(value.at) || now-value.at > 86400000 || value.at > now+60000) return null;
+    const limits = {};
+    for (const key of ['all','local','products','other']) limits[key] = Number.isInteger(value.limits?.[key]) ? Math.max(PAGE_SIZE,Math.min(1000,value.limits[key])) : PAGE_SIZE;
+    return {...value,zip:/^\d{5}$/.test(value.zip || '')?value.zip:'',category:plain(value.category,80),location:plain(value.location,40),group:['all','local','products','other'].includes(value.group)?value.group:'all',includeHistory:value.includeHistory===true,limits,scrollY:Number.isFinite(value.scrollY)?Math.max(0,Math.min(1e7,value.scrollY)):0,focusHref:typeof value.focusHref==='string' && /^\/briefing\/event\/\?id=[a-zA-Z0-9_%.-]+$/.test(value.focusHref)?value.focusHref:null};
   }
   function externalUrl(value) {
     try {
@@ -106,29 +134,15 @@
   }
   function eventUrl(event) { return '/briefing/event/?id=' + encodeURIComponent(event.id); }
   function selectHomeEvents(snapshot, now = Date.now()) {
-    const sources = new Map(snapshot.sources.map(source => [source.id, source]));
-    const isCurrent = event => recordState(event,now).label === 'Stored source report';
-    const sourceOkay = event => { const source = sources.get(event.source.id); const last = parseDate(source?.lastSuccessAt); return source?.status === 'ok' && last !== null && now-last <= STALE_AFTER_MS; };
-    const current = snapshot.events.filter(isCurrent);
-    const pool = (current.length >= 3 ? current : snapshot.events).slice();
-    const selected = [], categories = new Set(), origins = new Set();
-    const base = (a,b) => Number(!isCurrent(a))-Number(!isCurrent(b)) || Number(!sourceOkay(a))-Number(!sourceOkay(b));
-    const rank = (a,b) => base(a,b) || Number(categories.has(a.category))-Number(categories.has(b.category)) || Number(origins.has(a.source.id))-Number(origins.has(b.source.id)) || (parseDate(b.updatedAt || b.publishedAt) || 0)-(parseDate(a.updatedAt || a.publishedAt) || 0) || a.id.localeCompare(b.id);
-    while (selected.length < 3 && pool.length) {
-      pool.sort(rank);
-      const eligible = pool.filter(event => !selected.some(item => item.source.kind === 'news') || event.source.kind !== 'news');
-      if (!eligible.length) break;
-      let next = eligible[0];
-      if (!selected.length) next = eligible.find(event => event.source.kind === 'official' && base(event,next) === 0) || next;
-      // One current, recently checked news report can broaden the context without
-      // displacing fresher official information or elevating an expired record.
-      if (selected.length === 1) next = eligible.find(event => event.source.kind === 'news' && base(event,next) === 0) || next;
-      selected.push(next); categories.add(next.category); origins.add(next.source.id);
-      pool.splice(pool.indexOf(next),1);
+    const records = prioritizeEvents(snapshot.events.filter(event=>isCurrentRelevant(event,now)),snapshot.sources,now);
+    const selected = [];
+    for (const event of records) {
+      if (event.source.kind === 'news' && selected.some(item=>item.source.kind==='news')) continue;
+      selected.push(event); if (selected.length === 3) break;
     }
     return selected;
   }
-  const helpers = {STALE_AFTER_MS,LOCATION_KEY,ZIP_KEY,ZIP_DATA_URL,resolveZipArea,partitionAreaEvents,STATES,stamp,externalUrl,guideUrl,categoryName,sourceKind,broadLocation,locationLabel,sourceStates,recordState,snapshotState,normalizeSnapshot,filterEvents,exactGuides,eventUrl,selectHomeEvents,nextTransitionAt};
+  const helpers = {PAGE_SIZE,RETURN_KEY,shortStamp,displayTitle,displaySummary,sourceUrl,isCurrentRelevant,prioritizeEvents,validViewState,STALE_AFTER_MS,LOCATION_KEY,ZIP_KEY,ZIP_DATA_URL,resolveZipArea,partitionAreaEvents,STATES,stamp,externalUrl,guideUrl,categoryName,sourceKind,broadLocation,locationLabel,sourceStates,recordState,snapshotState,normalizeSnapshot,filterEvents,exactGuides,eventUrl,selectHomeEvents,nextTransitionAt};
   if (typeof module !== 'undefined' && module.exports) module.exports = helpers;
   if (typeof document === 'undefined') return;
   const roots = [...document.querySelectorAll('[data-briefing]')];
@@ -138,6 +152,7 @@
   // Keep live DOM nodes stable: time changes must not reset filters, pagination,
   // section navigation, selection or focus. Detached labels are pruned on refresh.
   const timedLabels = new Set();
+  const localTimeListeners = new Set();
   function watchLabel(node, readText, hideWhenEmpty = false) {
     const update = () => {
       const text = readText();
@@ -176,14 +191,21 @@
       attribution.append(attributionLinks); return attribution;
   }
   function card(event, snapshot) {
-    const article = el('article', 'briefing-card');
-    const title = el('h3'); title.append(link(plain(event.title, 500), eventUrl(event)));
-    article.append(el('p', 'briefing-category', categoryName(event.category)),title);
+    const article = el('article', 'briefing-card'); article.setAttribute('data-record-id',event.id);
+    const title = el('h3'); title.append(link(displayTitle(event), eventUrl(event)));
+    article.append(el('p', 'briefing-category', categoryName(event.category)+(event.relevance==='background'?' · background':'')),title);
     // Required author, original story and license stay above every news excerpt.
+    const visibleSource = el('p','briefing-card-source');
+    const alias = {nws:'NWS','nws-cancellations':'NWS',usgs:'USGS',fda:'FDA',cpsc:'CPSC','cisa-kev':'CISA'}[event.source.id] || plain(event.source.name,160);
+    visibleSource.append(el('span','',event.source.kind === 'official' ? 'Official · ' : 'Reported news · '),link(alias,sourceUrl(event)),el('span','',' · checked ' + shortStamp(event.lastCheckedAt)));
+    article.append(visibleSource,el('p','briefing-card-area',excerpt(locationLabel(event),105)));
     if (event.source.kind === 'news') article.append(attributionBlock(event));
-    article.append(el('p', 'briefing-card-summary', excerpt(event.summary,220) || 'Open the original source for the available report details.'));
+    const summary=el('p','briefing-card-summary');
+    if(event.displaySummaryKind==='source-metadata')summary.append(el('span','briefing-summary-label','Source record: '));
+    summary.append(el('span','',displaySummary(event) || 'Open the original source for the available report details.'));article.append(summary);
     const meaning = plain(event.cardMeaning,420).trim();
     if (meaning) { const context = el('p','briefing-card-meaning'); context.append(el('strong','','For you: '),el('span','',meaning)); article.append(context); }
+    if(event.category==='recall')article.append(link('Check product & remedy ↗',sourceUrl(event),'briefing-source-action'));
     const guides = exactGuides(event);
     if (guides.length) {
       const actions = el('nav', 'briefing-card-guides'); actions.setAttribute('aria-label','Relevant preparedness guides');
@@ -194,21 +216,23 @@
     article.append(watchLabel(el('p', 'briefing-record-note'), () => { const state = recordState(event); return state.note ? state.label + '. Not an all-clear.' : ''; }, true));
     article.append(watchLabel(el('p', 'briefing-record-note'), () => sourceCheck(event,snapshot), true));
     const metadata = el('details','briefing-card-metadata');
-    metadata.append(el('summary','',sourceKind(event) + ' · source & dates'));
+    metadata.append(el('summary','','Source details & dates'));
     const times = el('div','briefing-card-time');
-    times.append(el('span','',locationLabel(event)),link(plain(event.source.name,160) + ' ↗',externalUrl(event.url)),timeLine('Source date',event.updatedAt || event.publishedAt),timeLine('Last checked',event.lastCheckedAt));
+    times.append(el('span','',sourceKind(event)),el('span','',locationLabel(event)),el('span','','Original headline: ' + plain(event.title,500)),link(plain(event.source.name,160) + ' ↗',sourceUrl(event)),timeLine('Source date',event.updatedAt || event.publishedAt),timeLine('Last checked',event.lastCheckedAt));
     if (event.geo?.incomplete || event.geo?.truncated) times.append(el('span','','Some source area identifiers were unavailable; the geographic list is incomplete.'));
+    if(event.sourceUrlKind && event.sourceUrlKind!=='original-notice')times.append(link('Original source data record ↗',externalUrl(event.url)),el('span','',plain(event.sourceLinkLabel,180) || 'Current source page; not this exact notice.'));
     metadata.append(times);
     const footer = el('div','briefing-card-footer'); footer.append(link('Full brief →',eventUrl(event)),metadata);
     article.append(footer);
     return article;
   }
   function updateStatus(root, snapshot) {
-    const status = root.querySelector('[data-briefing-status]');
-    const current = snapshotState(snapshot);
-    status.setAttribute('data-state', current.state);
-    const text = current.text + (snapshot.storageNote ? ' ' + plain(snapshot.storageNote, 2000) : '') + (snapshot.invalidRecords ? ' Some records could not be displayed; coverage is incomplete.' : '') + (root.getAttribute('data-briefing') === 'home' && !snapshot.events.length ? ' No source reports are available in this snapshot. This is not an all-clear.' : '');
+    const status = root.querySelector('[data-briefing-status]'), detail = root.querySelector('[data-briefing-status-detail]');
+    const current = snapshotState(snapshot); status.setAttribute('data-state',current.state);
+    const lead = current.state === 'unavailable' ? 'Unavailable; conditions unknown.' : current.state === 'stale' ? 'Out of date; verify current sources.' : current.state === 'partial' ? 'Partial coverage.' : 'Limited coverage.';
+    const text = lead + ' Checked ' + shortStamp(snapshot.lastSuccessfulAt) + '.' + (snapshot.storageStatus === 'initial-snapshot' ? ' Initial snapshot.' : '');
     if (status.textContent !== text) status.textContent = text;
+    if (detail) detail.textContent = current.text + (snapshot.storageNote ? ' ' + plain(snapshot.storageNote,2000) : '') + (snapshot.invalidRecords ? ' Some records were omitted; coverage is incomplete.' : '') + ' An absent report is not an all-clear.';
   }
   function showFailure(root) {
     const status = root.querySelector('[data-briefing-status]');
@@ -259,12 +283,16 @@
     contents.append(list, el('p', '', 'A successful check confirms access to a source, not complete coverage or current safety.'));
     wrapper.hidden = false;
   }
-  function renderHome(root, snapshot) {
-    const cards = root.querySelector('[data-briefing-cards]');
-    const records = selectHomeEvents(snapshot);
-    cards.replaceChildren(...records.map(event => card(event, snapshot)));
-    cards.hidden = !records.length;
-    root.querySelector('[data-briefing-fallback]').hidden = Boolean(records.length);
+  function renderHome(root,snapshot) {
+    const cards=root.querySelector('[data-briefing-cards]');let signature='';
+    const paint=()=>{
+      const records=selectHomeEvents(snapshot),next=records.map(event=>event.id).join('|');
+      if(next===signature&&signature)return;signature=next;
+      const active=document.activeElement,candidate=active?.closest?.('.briefing-card'),article=candidate?.parentElement===cards?candidate:null,href=article?.querySelector('h3 a')?.getAttribute('href'),y=window.scrollY||0;
+      cards.replaceChildren(...records.map(event=>card(event,snapshot)));cards.hidden=!records.length;root.querySelector('[data-briefing-fallback]').hidden=Boolean(records.length);
+      if(href){const replacement=[...(cards.querySelectorAll?.('a[href]')||[])].find(node=>node.getAttribute('href')===href);if(replacement){replacement.focus({preventScroll:true});window.scrollTo?.({top:y,behavior:'instant'});}else{const status=root.querySelector('[data-briefing-status]');status.setAttribute('tabindex','-1');status.focus();}}
+    };
+    paint();localTimeListeners.add(paint);
   }
   function option(value, label) { const node = el('option', '', label); node.value = value; return node; }
   // The same static county map is loaded at most once, with no ZIP in any request.
@@ -279,104 +307,121 @@
     }
     return zipDataRequest;
   }
+  function readReturnState() {
+    try { return validViewState(JSON.parse(sessionStorage.getItem(RETURN_KEY))); } catch { return null; }
+  }
   function renderIndex(root, snapshot) {
     const get = key => root.querySelector('[data-briefing-' + key + ']');
-    const filters = get('filters'), category = get('category'), location = get('location'), reset = get('reset');
-    const cards = get('cards'), count = get('count'), empty = get('empty'), fallback = get('fallback'), more = get('more');
-    const zipForm = get('zip-form'), zipInput = get('zip'), zipStatus = get('zip-status'), zipClear = get('zip-clear');
-    const areaHeading = get('area-heading'), areaNote = get('area-note'), areaGroups = get('area-groups');
-    let limit = 18, area = null, zipAttempt = 0;
-    const groupLimits = {products:6,other:6};
-    const resetLimits = () => { limit = 18; groupLimits.products = 6; groupLimits.other = 6; };
-    const categories = [...new Set(snapshot.events.map(event => plain(event.category, 80)).filter(Boolean))].sort((a,b) => categoryName(a).localeCompare(categoryName(b)));
-    category.replaceChildren(option('all','All categories'), ...categories.map(value => option(value,categoryName(value))));
-    const states = Object.keys(STATES).sort((a,b) => STATES[a].localeCompare(STATES[b]));
-    location.replaceChildren(option('all','All locations'), option('US','United States'), ...states.map(code => option('US:' + code, STATES[code])), option('International','International'), option('Unknown','Location unknown'));
-    category.value = 'all'; location.value = 'all';
-    try {
-      const stored = localStorage.getItem(LOCATION_KEY);
-      if (['all','US','International','Unknown',...states.map(code => 'US:' + code)].includes(stored)) location.value = stored;
-    } catch { /* Reading may be blocked in private/restricted browsing. */ }
-    function secondaryGroup(key, title, note, records) {
-      const group = el('section','briefing-area-group'), heading = el('h3','',title), grid = el('div','briefing-card-grid');
-      const tally = el('p','briefing-result-count'), button = el('button','briefing-more'); button.type = 'button';
-      let shown = groupLimits[key];
-      const paint = () => {
-        grid.replaceChildren(...records.slice(0,shown).map(event => card(event,snapshot)));
-        tally.textContent = Math.min(shown,records.length) + ' of ' + records.length + ' reports shown';
-        button.textContent = 'Show more ' + title.toLowerCase() + ' (' + Math.max(0,records.length-shown) + ' remaining)'; button.hidden = shown >= records.length;
+    const filters=get('filters'),category=get('category'),location=get('location'),reset=get('reset'),options=get('options'),historyChoice=get('history'),historyLabel=get('history-label');
+    const cards=get('cards'),count=get('count'),empty=get('empty'),fallback=get('fallback'),more=get('more'),groupNav=get('group-nav');
+    const zipForm=get('zip-form'),zipInput=get('zip'),zipStatus=get('zip-status'),zipClear=get('zip-clear'),areaHeading=get('area-heading'),areaNote=get('area-note');
+    let saved = null;
+    try { saved = validViewState(window.history?.state?.ozBriefing); } catch { /* Optional history storage. */ }
+    if (!saved) saved = readReturnState();
+    try { sessionStorage.removeItem(RETURN_KEY); } catch { /* Optional handoff. */ }
+    let area=null,zipAttempt=0,group=saved?.group || 'all',focusHref=saved?.focusHref || null,restoring=Boolean(saved),viewVersion=0;
+    let restorePosition=saved?.scrollY ?? null;
+    const limits={all:PAGE_SIZE,local:PAGE_SIZE,products:PAGE_SIZE,other:PAGE_SIZE,...saved?.limits};
+    const categories=[...new Set(snapshot.events.map(event=>plain(event.category,80)).filter(Boolean))].sort((a,b)=>categoryName(a).localeCompare(categoryName(b)));
+    category.replaceChildren(option('all','All categories'),...categories.map(value=>option(value,categoryName(value))));
+    const states=Object.keys(STATES).sort((a,b)=>STATES[a].localeCompare(STATES[b]));
+    const locations=['all','US','International','Unknown',...states.map(code=>'US:'+code)];
+    location.replaceChildren(option('all','All locations'),option('US','United States'),...states.map(code=>option('US:'+code,STATES[code])),option('International','International'),option('Unknown','Location unknown'));
+    category.value=categories.includes(saved?.category)?saved.category:'all'; location.value=locations.includes(saved?.location)?saved.location:'all';
+    historyChoice.checked=saved?.includeHistory || false; options.open=saved?.optionsOpen || false;
+    if (!saved) try { const stored=localStorage.getItem(LOCATION_KEY); if(locations.includes(stored))location.value=stored; } catch { /* No persistence needed. */ }
+    function viewState() { return {version:1,path:'/briefing/',at:Date.now(),zip:area?.zip || '',category:category.value,location:location.value,group,includeHistory:historyChoice.checked,limits:{...limits},optionsOpen:options.open,scrollY:restorePosition ?? window.scrollY ?? 0,focusHref}; }
+    function save(forReturn=false) {
+      if(restoring)return;
+      const state=viewState();
+      try { window.history.replaceState({...window.history.state,ozBriefing:state},''); } catch { /* Browsing works without history writes. */ }
+      if(forReturn)try { sessionStorage.setItem(RETURN_KEY,JSON.stringify(state)); } catch { /* Native history is the primary return path. */ }
+    }
+    function cancelRestore() { viewVersion++; restorePosition=null; restoring=false; }
+    function restoreScroll() {
+      const y=restorePosition,version=viewVersion; restorePosition=null; restoring=false;
+      if(y===null)return;
+      const apply=()=>{
+        if(version!==viewVersion)return;
+        const anchors=root.querySelectorAll?.('a[href]') || [];
+        const focused=[...anchors].find(node=>node.getAttribute('href')===focusHref);
+        focused?.focus({preventScroll:true});
+        window.scrollTo?.({top:y,behavior:'instant'}); save();
       };
-      button.addEventListener('click',() => { const firstNew = shown; shown += 18; groupLimits[key] = shown; paint(); grid.children[firstNew]?.querySelector('h3 a')?.focus(); });
-      group.append(heading,el('p','briefing-area-note',note),tally,grid,button); paint();
-      if (!records.length) group.append(el('p','briefing-area-note','No reports in this snapshot for this group and category. Coverage is incomplete; this is not an all-clear.'));
-      return group;
+      if(window.requestAnimationFrame)window.requestAnimationFrame(apply);else apply();
     }
+    function resetLimits() { for(const key of Object.keys(limits))limits[key]=PAGE_SIZE; group='all'; }
     function render() {
-      const selected = filterEvents(snapshot.events,category.value,'all');
-      const grouped = Boolean(area) || location.value.startsWith('US:');
-      const groups = grouped ? partitionAreaEvents(selected,area,location.value) : null;
-      const matches = groups ? groups.local : filterEvents(selected,'all',location.value);
-      cards.replaceChildren(...matches.slice(0,limit).map(event => card(event,snapshot)));
-      if (more) { more.hidden = matches.length <= limit; more.textContent = 'Show more reports (' + Math.max(0,matches.length-limit) + ' remaining)'; }
-      cards.hidden = !matches.length;
-      count.textContent = (matches.length > limit ? `${limit} of ${matches.length} reports shown` : `${matches.length} ${matches.length === 1 ? 'report' : 'reports'} shown`) + ` · ${snapshot.events.length} in this limited snapshot`;
-      areaHeading.hidden = !grouped; areaNote.hidden = !grouped;
-      areaHeading.textContent = area ? 'Relevant to your area' : 'Reports naming ' + (STATES[location.value.slice(3)] || 'your state');
-      areaNote.textContent = area ? 'ZIP ' + area.zip + ' overlaps ' + area.label + '. These reports name an overlapping county; they do not establish coverage at your address. Zone-only and other unmatched reports remain below. This is a limited snapshot, not a complete local alert feed.' : 'State-level source labels are broad, not address-level matches. Product notices and reports with other or unverified locations remain below. This is a limited snapshot, not a complete local alert feed.';
-      areaGroups.replaceChildren(); areaGroups.hidden = !grouped;
-      if (groups) areaGroups.append(
-        secondaryGroup('products','Product and software notices','U.S. recall notices and general software advisories are retained regardless of ZIP or state. Relevance depends on the product, lot or software you use; nationwide distribution or a local incident is not implied.',groups.products),
-        secondaryGroup('other','Other areas and unverified locations','Includes other locations, reported news, and records whose county overlap could not be verified, including zone-only reports. Some may still matter to you. Open the source to check its area and scope.',groups.other));
-      empty.replaceChildren(); empty.hidden = Boolean(matches.length);
-      if (!matches.length) empty.append(el('h3','',grouped ? 'No verified area matches in this snapshot.' : snapshot.events.length ? 'No reports match these filters.' : 'No reports are available in this snapshot.'),el('p','','This is not an all-clear. Coverage is incomplete and some location details are unknown. Check current source information' + (grouped ? ' and the other report groups below.' : '; use the planning guides below.')));
-      fallback.hidden = Boolean(matches.length || (groups && (groups.products.length || groups.other.length)));
-      const intro = root.querySelector('.briefing-fallback-intro'); if (intro) intro.textContent = 'Prepare ahead with the household essentials.';
+      const selected=filterEvents(snapshot.events,category.value,'all');
+      const current=selected.filter(event=>isCurrentRelevant(event));
+      const records=historyChoice.checked?selected:current;
+      const grouped=Boolean(area)||location.value.startsWith('US:');
+      const groups=grouped?partitionAreaEvents(records,area,location.value):{all:filterEvents(records,'all',location.value)};
+      const totals=grouped?partitionAreaEvents(selected,area,location.value):{all:filterEvents(selected,'all',location.value)};
+      if(!Object.hasOwn(groups,group))group=Object.keys(groups).find(key=>groups[key].length)||Object.keys(groups)[0];
+      const matches=prioritizeEvents(groups[group],snapshot.sources),limit=limits[group];
+      cards.replaceChildren(...matches.slice(0,limit).map(event=>card(event,snapshot)));cards.hidden=!matches.length;
+      more.hidden=matches.length<=limit;more.textContent='Show '+Math.min(PAGE_SIZE,Math.max(0,matches.length-limit))+' more ('+Math.max(0,matches.length-limit)+' remaining)';
+      const hidden=historyChoice.checked?0:Math.max(0,totals[group].length-matches.length);
+      const label={local:'area reports',products:'product/software notices',other:'other reports',all:'reports'}[group];
+      count.textContent=(historyChoice.checked?'Including history · ':'Current source records · ')+Math.min(limit,matches.length)+' of '+matches.length+' '+label+(hidden?' · '+hidden+' historical/background hidden':'');
+      historyLabel.textContent='Show history & background ('+(selected.length-current.length)+')';
+      groupNav.replaceChildren();groupNav.hidden=!grouped;
+      if(grouped)for(const [key,title] of [['local','Area'],['products','Products'],['other','Other']]){
+        const button=el('button','',title+' · '+groups[key].length);button.type='button';button.setAttribute('aria-pressed',String(group===key));button.setAttribute('data-group',key);
+        button.addEventListener('click',()=>{cancelRestore();group=key;render();save();[...groupNav.children].find(node=>node.getAttribute('data-group')===key)?.focus({preventScroll:true});});groupNav.append(button);
+      }
+      areaHeading.hidden=!grouped;areaNote.hidden=!grouped;
+      areaHeading.textContent={local:'Relevant to your area',products:'Product & software notices',other:'Other areas & reporting'}[group] || '';
+      areaNote.textContent=group==='local'?(area?area.label+' · county overlap only.':STATES[location.value.slice(3)]+' · broad state labels, not address matches.'):group==='products'?'Check your exact product, lot or software. A local incident is not implied.':'Other places or unverified locations. Some reports may still apply to you.';
+      empty.replaceChildren();empty.hidden=Boolean(matches.length);
+      if(!matches.length)empty.append(el('h3','',group==='local'?'No verified county/state matches.':'No reports in this view.'),el('p','','Not an all-clear. Check current sources'+(grouped?' or choose another report group above.':'. Try another category or include history.')));
+      fallback.hidden=Object.values(groups).some(records=>records.length);
     }
-    function clearZip(message, clearInput = true) {
-      zipAttempt++; area = null; if (clearInput) zipInput.value = ''; zipClear.hidden = true;
-      zipStatus.textContent = message;
-      try { localStorage.removeItem(ZIP_KEY); } catch { /* Filtering works without storage. */ }
+    function clearZip(message) {zipAttempt++;area=null;zipInput.value='';zipClear.hidden=true;zipStatus.textContent=message;try{localStorage.removeItem(ZIP_KEY);}catch{}}
+    async function applyZip({restore=false}={}) {
+      if(!restore){cancelRestore();resetLimits();}
+      const zip=zipInput.value.trim(),attempt=++zipAttempt,restoreGroup=restore?group:null;area=null;zipClear.hidden=false;
+      try{localStorage.removeItem(ZIP_KEY);}catch{}
+      if(!/^\d{5}$/.test(zip)){zipStatus.textContent='Enter a five-digit U.S. ZIP. Broad location browsing is available under Filters.';render();restoreScroll();save();return;}
+      zipStatus.textContent='Checking county map locally…';render();
+      try{
+        const result=resolveZipArea(await loadZipData(),zip);if(attempt!==zipAttempt)return;
+        if(result.status==='unsupported')zipStatus.textContent='CT county matching is unavailable with this mapping vintage. Choose Connecticut under Filters; no safety conclusion can be drawn.';
+        else if(result.status!=='found')zipStatus.textContent='ZIP not in this geographic lookup. Choose a state under Filters; missing data does not mean no alerts.';
+        else{area=result;location.value='all';if(restoreGroup)group=restoreGroup;zipStatus.textContent='ZIP '+zip+' · county-area estimate';try{localStorage.setItem(ZIP_KEY,zip);localStorage.removeItem(LOCATION_KEY);}catch{}}
+        render();restoreScroll();save();
+      }catch{if(attempt!==zipAttempt)return;zipStatus.textContent='County lookup unavailable. Browse by state under Filters; conditions are unknown.';render();restoreScroll();save();}
     }
-    async function applyZip() {
-      const zip = zipInput.value.trim(); const attempt = ++zipAttempt;
-      area = null; resetLimits(); zipClear.hidden = false;
-      try { localStorage.removeItem(ZIP_KEY); } catch { /* No persistence required. */ }
-      if (!/^\d{5}$/.test(zip)) { zipStatus.textContent = 'Enter a five-digit U.S. ZIP code. Broad location browsing remains available.'; render(); return; }
-      zipStatus.textContent = 'Loading the bundled county lookup. Your ZIP stays in this browser.'; render();
-      try {
-        const result = resolveZipArea(await loadZipData(),zip);
-        if (attempt !== zipAttempt) return;
-        if (result.status === 'unsupported') zipStatus.textContent = 'County matching is unavailable for this ZIP because Connecticut county boundaries changed after the mapping vintage. Browse by state or United States below; no local safety conclusion can be drawn.';
-        else if (result.status !== 'found') zipStatus.textContent = 'This ZIP is not in the bundled geographic lookup. Some postal ZIPs have no mapped area. Choose a state or United States below; missing lookup data does not mean no alerts.';
-        else {
-          area = result; location.value = 'all';
-          zipStatus.textContent = 'Using ZIP ' + zip + ' locally. County-area approximation from ' + (result.vintage || 'the bundled') + ' mapping; not your precise location. Change the ZIP or clear it at any time.';
-          try { localStorage.setItem(ZIP_KEY,zip); localStorage.removeItem(LOCATION_KEY); } catch { /* The area still works in this tab. */ }
-        }
-        render();
-      } catch { if (attempt !== zipAttempt) return; zipStatus.textContent = 'The county lookup could not be loaded. Browse by state or broad location below. Current conditions are unknown; this is not an all-clear.'; render(); }
-    }
-    category.addEventListener('change', () => { resetLimits(); render(); });
-    if (more) more.addEventListener('click', () => { const firstNew = limit; limit += 18; render(); cards.children[firstNew]?.querySelector('h3 a')?.focus(); });
-    location.addEventListener('change', () => {
-      if (area || zipInput.value) clearZip('ZIP filter cleared. Browsing by broad location.');
-      try { localStorage.setItem(LOCATION_KEY, location.value); } catch { /* Filtering still works without persistence. */ }
-      resetLimits(); render();
+    category.addEventListener('change',()=>{cancelRestore();resetLimits();render();save();});
+    historyChoice.addEventListener('change',()=>{cancelRestore();resetLimits();render();save();});
+    more.addEventListener('click',()=>{cancelRestore();const first=limits[group];limits[group]+=PAGE_SIZE;render();cards.children[first]?.querySelector('h3 a')?.focus();save();});
+    location.addEventListener('change',()=>{cancelRestore();if(area||zipInput.value)clearZip('Browsing by broad location.');try{localStorage.setItem(LOCATION_KEY,location.value);}catch{}resetLimits();render();save();});
+    zipInput.addEventListener('input',()=>{cancelRestore();zipAttempt++;zipClear.hidden=!area&&!zipInput.value;zipStatus.textContent=area?'Still using ZIP '+area.zip+'. Choose Use ZIP to apply your edit.':'';});
+    zipForm.addEventListener('submit',event=>{event.preventDefault();applyZip();});
+    zipClear.addEventListener('click',()=>{cancelRestore();clearZip('ZIP cleared.');resetLimits();render();save();zipInput.focus();});
+    reset.addEventListener('click',()=>{cancelRestore();category.value='all';location.value='all';historyChoice.checked=false;clearZip('All filters cleared.');resetLimits();try{localStorage.removeItem(LOCATION_KEY);}catch{}render();save();});
+    options.addEventListener('toggle',()=>save());
+    root.addEventListener('click',event=>{const anchor=event.target?.closest?.('a');const href=anchor?.getAttribute('href');if(href?.startsWith('/briefing/event/?id=')){focusHref=href;save(true);}});
+    window.addEventListener('pagehide',()=>save(true));
+    window.addEventListener('pageshow',event=>{if(event.persisted){try{const state=validViewState(window.history?.state?.ozBriefing);if(state){restorePosition=state.scrollY;restoreScroll();}}catch{}}});
+    let eligibility=snapshot.events.map(event=>Number(isCurrentRelevant(event))).join('');
+    localTimeListeners.add(()=>{
+      const next=snapshot.events.map(event=>Number(isCurrentRelevant(event))).join('');
+      if(next===eligibility)return;eligibility=next;
+      const active=document.activeElement,candidate=active?.closest?.('.briefing-card'),article=candidate?.parentElement===cards?candidate:null;
+      const href=article?.querySelector('h3 a')?.getAttribute('href'),groupFocus=active?.getAttribute?.('data-group');
+      const openRecords=[...(cards.querySelectorAll?.('.briefing-card-metadata[open]')||[])].map(node=>node.closest('.briefing-card')?.getAttribute('data-record-id'));
+      const y=window.scrollY||0;render();
+      for(const node of cards.querySelectorAll?.('.briefing-card')||[])if(openRecords.includes(node.getAttribute('data-record-id')))node.querySelector('.briefing-card-metadata').open=true;
+      const replacement=href?[...(cards.querySelectorAll?.('a[href]')||[])].find(node=>node.getAttribute('href')===href):null;
+      if(article&&!replacement){count.setAttribute('tabindex','-1');count.focus();}
+      else{replacement?.focus({preventScroll:true});if(groupFocus)[...groupNav.children].find(node=>node.getAttribute('data-group')===groupFocus)?.focus({preventScroll:true});window.scrollTo?.({top:y,behavior:'instant'});}
+      save();
     });
-    zipInput.addEventListener('input',() => {
-      zipAttempt++; zipClear.hidden = !area && !zipInput.value;
-      zipStatus.textContent = area ? 'Still showing ZIP ' + area.zip + '. Choose Use ZIP to apply your edit, or clear to browse all areas.' : 'Enter a five-digit U.S. ZIP and choose Use ZIP. Broad location browsing stays available.';
-    });
-    zipForm.addEventListener('submit',event => { event.preventDefault(); applyZip(); });
-    zipClear.addEventListener('click',() => { clearZip('ZIP filter cleared. No ZIP is saved in this browser.'); resetLimits(); render(); zipInput.focus(); });
-    reset.addEventListener('click', () => {
-      category.value = 'all'; location.value = 'all'; resetLimits(); clearZip('All location and category filters cleared.');
-      try { localStorage.removeItem(LOCATION_KEY); } catch { /* No persistence required. */ }
-      render();
-    });
-    filters.hidden = false; zipForm.hidden = false;
-    render(); health(root, snapshot);
-    try { const saved = localStorage.getItem(ZIP_KEY); if (/^\d{5}$/.test(saved || '')) { zipInput.value = saved; applyZip(); } } catch { /* Optional local preference only. */ }
+    filters.hidden=false;zipForm.hidden=false;render();health(root,snapshot);
+    let zip=saved?.zip || '';if(!saved)try{zip=localStorage.getItem(ZIP_KEY)||'';}catch{}
+    if(/^\d{5}$/.test(zip)){zipInput.value=zip;applyZip({restore:Boolean(saved)});}else{restoreScroll();save();}
   }
   function section(id, title) {
     const node = el('section', 'briefing-detail-section'); node.id = id;
@@ -388,6 +433,8 @@
     const group = el('div'), description = el('dd','',value); group.append(el('dt','',label),description); list.append(group); return description;
   }
   function renderDetail(root, snapshot) {
+    const back=root.querySelector('[data-briefing-back]'), returnState=readReturnState();
+    if(back&&returnState){back.textContent='← Back to your results';back.addEventListener('click',event=>{try{const previous=new URL(document.referrer);if(previous.origin===window.location.origin&&previous.pathname==='/briefing/'&&window.history.length>1){event.preventDefault();window.history.back();}}catch{ /* Direct visits use the plain /briefing/ link. */ }});}
     const id = new URLSearchParams(window.location.search).get('id');
     const event = snapshot.events.find(event => event.id === id);
     if (!event) {
@@ -396,19 +443,21 @@
     }
     const target = root.querySelector('[data-briefing-detail]');
     const header = el('header','briefing-detail-header');
-    header.append(el('p','briefing-category',categoryName(event.category)),el('span','briefing-source-kind',sourceKind(event)),el('h1','',plain(event.title, 500)));
+    header.append(el('p','briefing-category',categoryName(event.category)+(event.relevance==='background'?' · background':'')),el('span','briefing-source-kind',sourceKind(event)),el('h1','',displayTitle(event)));
     header.append(watchLabel(el('p','briefing-record-note'), () => recordState(event).note, true));
     header.append(watchLabel(el('p','briefing-record-note'), () => sourceCheck(event,snapshot), true));
     const jumps = el('nav','briefing-detail-jumps'); jumps.setAttribute('aria-label','On this page');
     for (const [id,label] of [['related-guides','Relevant guides'],['what-this-means','What this means'],['official-instructions','Official instructions'],['preparedness-steps','Preparedness next steps'],['sources-updates','Sources and updates']]) jumps.append(link(label,'#' + id));
     if (event.source.kind === 'news') header.append(attributionBlock(event));
-    const glance = section('at-a-glance','At a glance');
-    glance.append(el('p','',plain(event.summary) || 'The source did not provide a report summary. Read the original source for its available details.'));
+    const glance = section('at-a-glance',event.displaySummaryKind==='source-metadata'?'Source record at a glance':'At a glance');
+    glance.append(el('p','',displaySummary(event) || 'The source did not provide a report summary. Read the original source for its available details.'));
     header.append(glance);
+    if(event.source.kind==='official'&&event.category==='recall')header.append(link('Check the exact product & remedy ↗',sourceUrl(event),'briefing-source-action'));
     const facts = el('dl','briefing-facts');
     fact(facts,'Reported location',locationLabel(event));
     if (event.geo?.incomplete || event.geo?.truncated) fact(facts,'Geographic coverage','Some source area identifiers were unavailable; the geographic list is incomplete.');
     fact(facts,'Source',plain(event.source.name,160) + ' · ' + sourceKind(event));
+    fact(facts,'Original source headline',plain(event.title,500));
     fact(facts,'Published by source',stamp(event.publishedAt));
     fact(facts,'Updated by source',stamp(event.updatedAt));
     fact(facts,'Last source check',stamp(event.lastCheckedAt));
@@ -426,7 +475,7 @@
     } else {
       panel.append(el('p','',event.instructionsOmitted ? 'The source instructions exceeded this briefing’s display limit and were omitted in full to avoid presenting an incomplete directive. Open the original source for the complete instructions.' : event.source.kind === 'news' ? 'This reported-news record does not supply official instructions. Reporting is not an evacuation, shelter or medical order.' : 'No instruction text is included in this source record. This does not mean that no protective action is needed.'));
     }
-    panel.append(link('Read the current original source ↗',externalUrl(event.url)));
+    panel.append(link(plain(event.sourceLinkLabel,160) || 'Open the source record ↗',sourceUrl(event)));
     official.append(panel);
     const steps = section('preparedness-steps','Reviewed preparedness next steps');
     steps.append(el('p','briefing-reviewed-note','General Osprey Zero preparedness guidance, drawn from reviewed library material. These are editorial planning steps, not instructions issued for this event. Match them to your household and follow current, applicable source instructions.'));
@@ -439,7 +488,7 @@
     else related.append(el('p','','No exact guide mapping is available for this record.'));
     const sources = section('sources-updates','Sources and updates');
     const sourceList = el('ul','briefing-sources-list');
-    const original = el('li'); original.append(link(plain(event.source.name,160) + ' · original report ↗',externalUrl(event.url)),el('small','','Source date: ' + stamp(event.updatedAt || event.publishedAt) + '. Last checked: ' + stamp(event.lastCheckedAt) + '.')); sourceList.append(original);
+    const original = el('li'); original.append(link(plain(event.source.name,160) + (event.sourceUrlKind && event.sourceUrlKind!=='original-notice' ? ' · original data record ↗' : ' · original report ↗'),externalUrl(event.url)),el('small','','Source date: ' + stamp(event.updatedAt || event.publishedAt) + '. Last checked: ' + stamp(event.lastCheckedAt) + '.')); sourceList.append(original);
     for (const resource of (Array.isArray(event.resources) ? event.resources : []).slice(0,10)) {
       if (!resource || !externalUrl(resource.url) || !plain(resource.label)) continue;
       const item = el('li'); item.append(link(plain(resource.label,200) + ' ↗',externalUrl(resource.url))); sourceList.append(item);
@@ -449,6 +498,7 @@
     const rights = externalUrl(event.source.rightsUrl);
     if (rights) { const item = el('li'); item.append(link(plain(event.source.rightsLabel,180) || 'Source reuse and attribution',rights)); sourceList.append(item); }
     sources.append(facts,sourceList);
+    if(event.summary && event.displaySummary && event.summary!==event.displaySummary){const originalText=el('details','briefing-original-summary');originalText.append(el('summary','','Original source summary'),el('p','',plain(event.summary)));sources.append(originalText);}
     const updates = (Array.isArray(event.updates) ? event.updates : []).filter(update => update && plain(update.text)).slice(0,20);
     if (updates.length) {
       sources.append(el('h3','','Record history'));
@@ -459,7 +509,7 @@
     sources.append(el('p','briefing-reviewed-note','Snapshot generated: ' + stamp(snapshot.generatedAt) + '. Last successful refresh: ' + stamp(snapshot.lastSuccessfulAt) + '. Scheduled twice daily at 00:00 and 12:00 UTC. An expired, removed or unavailable record does not establish that a threat has ended.'));
     target.replaceChildren(header,related,jumps,meaning,official,steps,sources);
     target.hidden = false; root.querySelector('[data-briefing-fallback]').hidden = true;
-    document.title = plain(event.title,180) + ' — Osprey Zero briefing';
+    document.title = plain(displayTitle(event),180) + ' — Osprey Zero briefing';
   }
 
   function trackLocalTime(snapshot) {
@@ -467,6 +517,7 @@
     const clear = () => { if (timer !== null) clearTimeout(timer); timer = null; };
     const refresh = () => {
       for (const root of roots) updateStatus(root,snapshot);
+      for (const listener of localTimeListeners) listener();
       for (const binding of timedLabels) {
         if (binding.node.isConnected === false) timedLabels.delete(binding);
         else binding.update();

@@ -24,11 +24,21 @@ for route in re.findall(r"'(/(?:emergencies|preparedness)/[^']+/)'",editorial):
 seed=json.loads((R/'server/briefing/bootstrap.json').read_text())
 assert seed['schemaVersion']==1
 assert seed['snapshot']['schedule']['cron']=='0 0,12 * * *'
+def valid_guide_selection(event):
+ guides=event['guides']
+ background=event.get('category')=='news' and event['source']['kind']=='news' and event.get('relevance')=='background'
+ return len(guides)==1 and guides[0]['url']=='/emergencies/verify-information/' if background else 2<=len(guides)<=4
+# The one-guide exception is deliberately limited to background reported news.
+background={'category':'news','source':{'kind':'news'},'relevance':'background','guides':[{'url':'/emergencies/verify-information/'}]}
+assert valid_guide_selection(background)
+assert not valid_guide_selection({**background,'source':{'kind':'official'}})
+assert not valid_guide_selection({**background,'relevance':'household'})
+assert not valid_guide_selection({**background,'guides':[{'url':'/preparedness/household-emergency-plan/'}]})
 for event in seed['snapshot']['events']:
  assert event['source']['kind'] in ['official','news']
  assert event['url'].startswith('https://')
  assert event['publishedAt'] and event['lastCheckedAt']
- assert 2<=len(event['guides'])<=4
+ assert valid_guide_selection(event),event['id']
  for guide in event['guides']:assert (R/guide['url'].strip('/')/'index.html').exists(),guide
  if event['source']['kind']=='news':
   assert event['attribution'] and event['source']['rightsUrl'] and event['source']['licenseUrl']

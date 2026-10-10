@@ -110,6 +110,20 @@ function nwsGeo(properties) {
   });
   return normalizeNwsGeo({ sameCodes:properties.geocode?.SAME, zoneIds:[...list(properties.geocode?.UGC),...affected], incomplete:affected.length < list(properties.affectedZones).length });
 }
+
+function nwsReaderZone(properties) {
+  // NWS route documentation: https://www.weather.gov/media/notification/pdf2/pns20-57zone_forecast.pdf
+  // Legacy alerts HTML retirement: https://www.weather.gov/media/notification/pdf_2025/scn25-73_update_alerts_webpage_termination_aaa.pdf
+  // A single source-declared land forecast
+  // zone may link there; it is a CURRENT AREA page, never an exact CAP notice.
+  const urls = list(properties.affectedZones);
+  if (urls.length !== 1) return null;
+  try {
+    const url = new URL(scalar(urls[0]));
+    const match = url.pathname.match(/^\/zones\/forecast\/([A-Z]{2}Z\d{3})$/);
+    return url.protocol === 'https:' && url.hostname === 'api.weather.gov' && !url.username && !url.password && !url.port && !url.search && !url.hash && match && STATE_CODES.has(match[1].slice(0,2)) && !match[1].endsWith('000') ? match[1] : null;
+  } catch { return null; }
+}
 // Deliberately exact. Unrecognised tags/places are unknown, never guessed.
 const COUNTRIES = new Set(('Afghanistan|Albania|Algeria|Angola|Argentina|Armenia|Australia|Austria|Azerbaijan|Bahrain|Bangladesh|Barbados|Belarus|Belgium|Belize|Benin|Bhutan|Bolivia|Bosnia and Herzegovina|Botswana|Brazil|Bulgaria|Burkina Faso|Burundi|Cambodia|Cameroon|Canada|Cape Verde|Chad|Chile|China|Colombia|Costa Rica|Croatia|Cuba|Cyprus|Czech Republic|Democratic Republic of Congo|Denmark|Dominican Republic|Ecuador|Egypt|El Salvador|Eritrea|Estonia|Eswatini|Ethiopia|Fiji|Finland|France|Gabon|Gambia|Georgia|Germany|Ghana|Greece|Guatemala|Guinea|Guyana|Haiti|Honduras|Hungary|Iceland|India|Indonesia|Iran|Iraq|Ireland|Israel|Italy|Jamaica|Japan|Jordan|Kazakhstan|Kenya|Kosovo|Kuwait|Kyrgyzstan|Laos|Latvia|Lebanon|Lesotho|Liberia|Libya|Lithuania|Luxembourg|Madagascar|Malawi|Malaysia|Maldives|Mali|Malta|Mauritania|Mauritius|Mexico|Moldova|Mongolia|Montenegro|Morocco|Mozambique|Myanmar|Namibia|Nepal|Netherlands|New Zealand|Nicaragua|Niger|Nigeria|North Korea|North Macedonia|Norway|Oman|Pakistan|Palestine|Panama|Papua New Guinea|Paraguay|Peru|Philippines|Poland|Portugal|Qatar|Romania|Russia|Rwanda|Saudi Arabia|Senegal|Serbia|Sierra Leone|Singapore|Slovakia|Slovenia|Solomon Islands|Somalia|South Africa|South Korea|South Sudan|Spain|Sri Lanka|Sudan|Suriname|Sweden|Switzerland|Syria|Taiwan|Tajikistan|Tanzania|Thailand|Timor-Leste|Togo|Trinidad and Tobago|Tunisia|Turkey|Türkiye|Turkmenistan|Uganda|Ukraine|United Arab Emirates|United Kingdom|Uruguay|Uzbekistan|Vanuatu|Venezuela|Vietnam|Yemen|Zambia|Zimbabwe').split('|'));
 
@@ -193,6 +207,7 @@ function adaptNws(item, config, now) {
   const endsAt = iso(p.ends);
   const expired = [expiresAt, endsAt].some((date) => date && Date.parse(date) <= now);
   return event(config, { id, title, category: 'weather', summary: scalar(p.description), instructions: scalar(p.instruction),
+    eventType:scalar(p.event), sourceReaderZoneId:nwsReaderZone(p),
     location: nwsLocation(p), geo:nwsGeo(p), publishedAt, updatedAt: publishedAt, expiresAt, endsAt,
     cancelledAt: messageType === 'cancel' ? publishedAt : null,
     status: messageType === 'cancel' ? 'cancelled' : expired ? 'expired' : 'current',
