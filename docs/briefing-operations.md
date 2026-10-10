@@ -1,4 +1,4 @@
-# Twice-daily preparedness briefing
+# Daily Brief · twice-daily source snapshots
 
 This release adds `/briefing/`, `/briefing/event/?id=…`, and a compact three-card homepage block. It replaces the larger “Prepare ahead” section while retaining its three planning links. Briefing routes remain ad-free. Existing emergency guidance, search, paid-product boundaries, forms, and advertising rules remain intact.
 
@@ -14,7 +14,7 @@ This release adds `/briefing/`, `/briefing/event/?id=…`, and a compact three-c
 
 ## Editorial and safety boundaries
 
-Source text is untrusted data: adapters validate feeds/items; the core strips markup, limits fields and validates HTTPS source hosts/dates; the browser uses text-only DOM insertion and checks URLs again. XML external entities/document types are rejected. No source instructions are executed. No feed images, full news articles, model summaries, publisher-country geolocation or precise user location are used.
+Source text is untrusted data: adapters validate feeds/items; the core strips markup, limits fields and validates HTTPS source hosts/dates; the browser uses text-only DOM insertion and checks URLs again. XML external entities/document types are rejected. No source instructions are executed. No feed images, full news articles, model summaries or publisher-country geolocation are used. Optional device coordinates are handled only by the browser-local area matcher; they never enter source collection.
 
 Official instructions are separate from fixed editorial planning. Existing guides are selected deterministically in server/briefing/editorial.mjs, with exact routes checked during builds. Recall records require exact product/model/lot matching, use inventory/information-verification guides, and defer to the original remedy. KEV describes vulnerabilities, never infers household compromise, and never turns federal deadlines into consumer expiry. News cannot carry official urgency/instructions. Byline, original source, policy, license and shortened-excerpt attribution accompany news text.
 
@@ -28,7 +28,7 @@ The optional ZIP field uses a bundled Census 2020 ZCTA–county multimap in the 
 
 NWS county overlaps use source SAME identifiers and county UGC codes. Forecast-zone and marine identifiers are preserved but never reinterpreted as counties. A partial-county SAME match is still only a broad county overlap, not evidence that a whole county, ZIP or address is affected. Source scope and missing/capped coverage remain visible. Product and software notices stay separate because applicability depends on exact product identifiers, not residence; other areas and unverified locations remain accessible.
 
-No ZIP or coordinates enter a request URL, body or source lookup. The static lookup request has a fixed same-origin URL. Preferences stay in local browser storage when available and can be cleared. No GPS API or browser geolocation permission is added. The existing Permissions-Policy remains unchanged. The privacy page explains local storage and ordinary hosting requests.
+ZIP, city, state and device-area matching use fixed same-origin geographic assets. Search text and coordinates never enter a request URL, body, analytics event or source lookup. The first Daily Brief index visit without a saved manual area may request browser geolocation once; an explicit button remains available when a browser requires a gesture. Attempts are remembered when browser storage works. A prior unsuccessful request may recover once on a later visit only when the Permissions API confirms access is already granted; prompt, denied or unreadable permission states never trigger another automatic attempt. Explicit manual choices and clear/reset suppress this recovery. Manual choices win over pending callbacks. Only a validated derived area is saved locally, never coordinates. Clearing an area does not reset the automatic-prompt attempt. Homepage and detail views never request location. The browser and operating system control their own permission and location services. See the [local area data documentation](local-area-data.md) and privacy page for data vintages, limitations and ordinary hosting requests.
 
 Cards emphasize a readable headline, one or two complete source-supported sentences, a short visible source/check-time line, reviewed event-type meaning and exact guide links. Original source text and identifiers remain separate from display fields. Technical boilerplate and incomplete trailing fragments are not promoted into complete assertions. If a safe complete excerpt is unavailable, the display uses an explicit neutral fallback rather than inventing a missing clause. News keeps its required byline and license before the excerpt.
 
@@ -61,3 +61,9 @@ Deploy previews read the bundled genuine dated snapshot. Netlify does not fire s
 5. Roll back the code deploy if needed. Production storage is schema-versioned (osprey-briefing-v1); previews cannot mutate it. Never insert incidents or delete history to conceal problems.
 
 Deferred: comprehensive international hazards, additional publishers, editorial review tooling, personalized alerts, maps, accounts, push notifications, paid news APIs and AI.
+
+## Daily Brief location release check
+
+Only the static Daily Brief index aliases (`/briefing`, `/briefing/`, `/briefing/index.html`) allow same-origin geolocation. Other pages retain the global geolocation deny; camera and microphone remain blocked. This explicitly approved exception does not change visitor permission, which the browser controls. Verify actual preview CDN headers with `python scripts/verify_daily_brief_headers.py https://<preview-host>` before publication; do not infer overlapping-header behavior from TOML order alone. No location permission is requested by the shared snapshot API.
+
+The first attempt requests a fresh one-shot position (`maximumAge: 0`, no continuous watcher). An independent UI deadline releases the busy controls while a permission prompt is unanswered. It does not discard a later permission grant; only a newer manual action, retry or navigation invalidates that callback. A generic saved empty view is not treated as a completed manual location choice. Browser/OS refusal, timeout, inaccurate/out-of-coverage positions and geographic-file failures all retain a manual state fallback. Exact coordinates and browser accuracy are never saved in preference or return-navigation state.
