@@ -1,4 +1,14 @@
 /* Scheduled briefing: calm editorial context, never a simulated alert dashboard. */
+.briefing-source-body{width:100%;margin:8px 0 18px;color:#c9cec7;font-size:15px;line-height:1.75;overflow-wrap:anywhere}
+.briefing-source-body p{font-size:inherit;line-height:inherit;max-width:none;margin:0 0 14px}
+.briefing-source-body .briefing-body-label,.briefing-source-body .briefing-body-credit{font:400 11px/1.7 var(--mono);color:#b6beb4}
+.briefing-source-expanded summary{cursor:pointer;color:var(--bone);padding:10px 0;min-height:44px;text-decoration:underline;text-underline-offset:4px}
+.briefing-source-expanded[open] summary{margin-bottom:12px}
+.briefing-source-body:has(.briefing-source-expanded[open])>.briefing-source-preview{display:none}
+.briefing-source-body a,.briefing-source-expanded summary{color:#eee0cb}
+.briefing-source-body a:focus-visible,.briefing-source-expanded summary:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
+.briefing-read-source{display:inline-block;min-height:44px;padding:8px 0;font-size:13px;text-decoration:underline;text-underline-offset:4px}
+.briefing-detail .briefing-source-body{max-width:760px;font-size:17px}
 .briefing-page,.home-briefing{--briefing-quiet:#b3b6b2;--briefing-label:#d7d1c4}
 .briefing-page a,.home-briefing a{overflow-wrap:anywhere}
 .briefing-hero{padding-top:62px;padding-bottom:36px;background:linear-gradient(90deg,var(--black) 43%,transparent),url('/Assets/hero-contours.svg') right top/610px auto no-repeat}

@@ -216,13 +216,14 @@ test('KEV rejects invalid CVEs independently and never attributes catalog releas
   assert.equal(result.coverage.sourceUpdatedAt, '2026-10-09T18:00:00.000Z');
 });
 
-test('news excerpts retain multiple authors and attribution without full articles or media', () => {
+test('licensed feed text retains multiple authors and excludes media and unrelated content fields', () => {
   const input = rss(rssItem({ link: 'https://www.eff.org/deeplinks/example', title: 'Privacy and encryption',
     description: `<p>Security and privacy matter. ${'Limited source excerpt. '.repeat(100)}</p><img src="https://track.example/pixel">`,
     authors: ['Writer One', 'Writer Two'], body: 'FULL ARTICLE MUST NEVER BE STORED' }));
   const [event] = at('eff', input).events;
   assert.match(event.attribution, /Writer One, Writer Two/);
-  assert.match(event.attribution, /Shortened excerpt/);
+  assert.match(event.attribution, /Plain text; formatting/);
+  assert.equal(event.sourceText.mode,'complete');assert(event.sourceText.text.length>360);
   assert.ok(event.summary.length <= 360);
   assert.doesNotMatch(JSON.stringify(event), /FULL ARTICLE|track\.example|<img/);
   assert.equal(event.location.scope, 'Unknown');
@@ -234,6 +235,10 @@ test('Global Voices selects preparedness hazard news and excludes generic politi
   assert.equal(result.events.length, 1);
   assert.equal(result.events[0].category, 'news');
   assert.equal(result.coverage.skippedReasons['outside-topic-scope'], 1);
+});
+test('Global Voices body preserves supplied translator and notices, excluding third-party quotes',()=>{
+ const input=rss(rssItem({body:'<p>Flooding source report. '.repeat(40)+'</p><blockquote>Separately authored text.</blockquote><p>Credit: original author. Licensed CC BY 3.0.</p>'}).replace('</item>','<dc:translator>Translator Name</dc:translator></item>'));
+ const event=at('global-voices',input).events[0];assert(event.sourceText.text.length>360);assert.equal(event.sourceText.mode,'complete');assert.match(event.attribution,/Translated by Translator Name/);assert.match(event.sourceText.text,/Licensed CC BY 3.0/);assert.doesNotMatch(event.sourceText.text,/Separately authored/);
 });
 
 test('news country topic tags never become verified affected-area geography', () => {

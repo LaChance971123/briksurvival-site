@@ -1,4 +1,5 @@
 import { XMLParser, XMLValidator } from 'fast-xml-parser';
+import { sourceText } from './text.mjs';
 
 // The collector owns I/O. These adapters never follow item URLs or retrieve articles.
 const NWS_RIGHTS = 'https://www.weather.gov/documentation/services-web-api';
@@ -36,7 +37,7 @@ export const SOURCES = Object.freeze([
   source({ id: 'fda', name: 'U.S. Food and Drug Administration', kind: 'official', format: 'xml',
     url: 'https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/recalls/rss.xml',
     website: 'https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts', allowedHosts: ['www.fda.gov', 'fda.gov'],
-    rights: { label: 'FDA public-domain notice metadata, unless otherwise noted', url: 'https://www.fda.gov/about-fda/about-website/website-policies', allowedFields: ['id', 'title', 'summary', 'dates', 'url'] },
+    rights: { label: 'FDA-hosted recall metadata and short feed excerpt; announcement authorship varies', url: 'https://www.fda.gov/about-fda/about-website/website-policies', allowedFields: ['id', 'title', 'summary', 'dates', 'url'] },
     coverage: 'FDA public recall announcements supplied by its RSS feed. This is not every FDA recall or a complete enforcement/termination database; manufacturer headquarters do not establish product distribution.',
   }),
   source({ id: 'cisa-kev', name: 'CISA Known Exploited Vulnerabilities', kind: 'official', format: 'json',
@@ -47,12 +48,12 @@ export const SOURCES = Object.freeze([
   }),
   source({ id: 'eff', name: 'Electronic Frontier Foundation', kind: 'news', format: 'xml',
     url: 'https://www.eff.org/rss/updates.xml', website: 'https://www.eff.org/deeplinks', allowedHosts: ['www.eff.org', 'eff.org'],
-    rights: { label: 'Original EFF material: CC BY 4.0; shortened excerpts', url: 'https://www.eff.org/copyright', licenseUrl: 'https://creativecommons.org/licenses/by/4.0/', allowedFields: ['id', 'title', 'shortExcerpt', 'author', 'dates', 'url'] },
+    rights: { label: 'Original EFF text: CC BY 4.0; third-party material excluded', url: 'https://www.eff.org/copyright', licenseUrl: 'https://creativecommons.org/licenses/by/4.0/', allowedFields: ['id', 'title', 'sourceText', 'author', 'dates', 'url'] },
     coverage: 'Selected EFF digital-security and digital-rights reporting and analysis. This advocacy publisher is not an official alert or general world-news service. Geography remains unknown without explicit item metadata.',
   }),
   source({ id: 'global-voices', name: 'Global Voices', kind: 'news', format: 'xml',
     url: 'https://globalvoices.org/feed/', website: 'https://globalvoices.org/', allowedHosts: ['globalvoices.org', 'www.globalvoices.org'],
-    rights: { label: 'Original Global Voices text: CC BY 3.0; shortened excerpts', url: 'https://globalvoices.org/about/global-voices-attribution-policy/', licenseUrl: 'https://creativecommons.org/licenses/by/3.0/', allowedFields: ['id', 'title', 'shortExcerpt', 'author', 'dates', 'url'] },
+    rights: { label: 'Original Global Voices text: CC BY 3.0; third-party material excluded', url: 'https://globalvoices.org/about/global-voices-attribution-policy/', licenseUrl: 'https://creativecommons.org/licenses/by/3.0/', allowedFields: ['id', 'title', 'sourceText', 'author', 'dates', 'url'] },
     coverage: 'Selected recent Global Voices reporting with explicit preparedness-hazard relevance, from its limited RSS window. Country tags describe article topics, not verified incident boundaries. No comprehensive international warning coverage.',
   }),
 ]);
@@ -207,6 +208,7 @@ function adaptNws(item, config, now) {
   const endsAt = iso(p.ends);
   const expired = [expiresAt, endsAt].some((date) => date && Date.parse(date) <= now);
   return event(config, { id, title, category: 'weather', summary: scalar(p.description), instructions: scalar(p.instruction),
+    sourceText:sourceText(scalar(p.description)),
     eventType:scalar(p.event), sourceReaderZoneId:nwsReaderZone(p),
     location: nwsLocation(p), geo:nwsGeo(p), publishedAt, updatedAt: publishedAt, expiresAt, endsAt,
     cancelledAt: messageType === 'cancel' ? publishedAt : null,
@@ -233,7 +235,9 @@ function adaptUsgs(item, config) {
   if (!id || !publishedAt || !title || !url) throw new Error('Incomplete USGS event');
   // A tsunami flag is not a warning and does not describe a household's risk.
   const magnitude = typeof p.mag === 'number' && Number.isFinite(p.mag) ? `Magnitude ${p.mag}. ` : '';
-  return event(config, { id, title, category: 'earthquake', summary: `${magnitude}USGS earthquake observation. Values may be revised; the epicenter location does not describe all areas that felt shaking.`,
+  const observation=`${magnitude}${scalar(p.place) ? `Reported epicenter: ${scalar(p.place)}.` : ''}${Number.isFinite(item.geometry?.coordinates?.[2]) ? ` Depth: ${item.geometry.coordinates[2]} km.` : ''}`.trim();
+  return event(config, { id, title, category: 'earthquake', summary: observation,
+    sourceText:sourceText(observation,{kind:'metadata',mode:'metadata',modified:true}),
     location: quakeLocation(scalar(p.place)), publishedAt, updatedAt: iso(p.updated) || publishedAt, url });
 }
 
@@ -242,6 +246,7 @@ function adaptCpsc(item, config) {
   const id = scalar(item.RecallID || item.RecallNumber), title = scalar(item.Title), publishedAt = iso(item.RecallDate), url = sourceLink(item.URL, config);
   if (!id || !title || !publishedAt || !url) throw new Error('Incomplete CPSC recall');
   return event(config, { id, title, category: 'recall',
+    sourceText:sourceText(unique([scalar(item.Description),...list(item.Hazards).map(hazard=>scalar(hazard?.Name))]).join('\n\n')),
     summary: unique(list(item.Hazards).map((hazard) => scalar(hazard?.Name))).join(' ') || scalar(item.Description),
     instructions: unique(list(item.Remedies).map((remedy) => scalar(remedy?.Name))).join(' '),
     location: usRecallLocation(), publishedAt, updatedAt: iso(item.LastPublishDate) || publishedAt, url });
@@ -253,6 +258,7 @@ function adaptKev(item, config, now) {
   if (!publishedAt || !name) throw new Error('Incomplete KEV record');
   if (Date.parse(publishedAt) < now - 30 * 86400000) return { skipped: 'outside-30-day-window' };
   return event(config, { id, title: `${id}: ${name}`, category: 'cyber',
+    sourceText:sourceText(scalar(item.shortDescription)),
     summary: `Known exploited vulnerability: ${scalar(item.shortDescription)}`,
     instructions: scalar(item.requiredAction), publishedAt, updatedAt: publishedAt,
     location: { label: 'Affected software users; no incident location provided', scope: 'Unknown', codes: [], precision: 'product-only' },
@@ -279,21 +285,25 @@ function adaptRss(item, config) {
   if (!title || !url || !publishedAt) throw new Error('Incomplete RSS item');
   const id = xmlText(item.guid) || url;
   const description = xmlText(item.description);
-  // Full content:encoded is never excerpted or retained. It is inspected only for rights exceptions.
+  // Screen the whole item before extracting licensed original text. Never fetch item URLs.
   const rightsText = `${description}\n${xmlText(item['content:encoded'])}`;
   const rightsPlainText = plainExcerpt(rightsText, 100000);
   if (RESERVED_RIGHTS.test(rightsText) || RESERVED_RIGHTS.test(rightsPlainText) || THIRD_PARTY_ORIGIN.test(rightsPlainText)) return { skipped: 'rights-exception', id };
   if (config.id === 'fda') return event(config, { id, title, category: 'recall', summary: plainExcerpt(description),
+    sourceText:sourceText(description,{mode:'excerpt',maximum:240}),
     location: usRecallLocation(), publishedAt, updatedAt: iso(xmlText(item.updated)) || publishedAt, url });
   const excerpt = plainExcerpt(description, 360);
   const relevance = config.id === 'eff' ? DIGITAL_NEWS : HAZARD_NEWS;
   if (config.id === 'eff' && /(?:donor.advised|\bDAF\b|donat(?:e|ion)|fundrais|membership|join us|upcoming events)/i.test(title)) return { skipped: 'fundraising-or-events' };
   if (!relevance.test(`${title} ${excerpt}`)) return { skipped: 'outside-topic-scope' };
-  const author = plainExcerpt(unique(list(item['dc:creator'] || item.author).map(xmlText)).join(', '), 300);
+  const author = plainExcerpt(unique(list(item['dc:creator'] || item.author).map(xmlText)).join(', '), 100000);
+  const translator=plainExcerpt(unique(list(item['dc:translator'] || item.translator).map(xmlText)).join(', '),100000);
   // Do not publish a CC excerpt when its required byline is absent.
-  if (!author) return { skipped: 'missing-attribution' };
-  return event(config, { id, title, category: 'news', summary: excerpt,
-    attribution: `By ${author}, ${config.name}. Shortened excerpt; formatting removed.`,
+  if (!author || author.length>600 || translator.length>300) return { skipped: 'missing-attribution' };
+  const supplied=config.id==='global-voices'?(xmlText(item['content:encoded'])||description):description;
+  const body=sourceText(supplied,{kind:config.id==='eff'||xmlText(item['content:encoded'])?'story':'description',modified:true});
+  return event(config, { id, title, category: 'news', summary: excerpt,sourceText:body,
+    attribution: `By ${author}, ${config.name}.${translator?` Translated by ${translator}.`:''} ${body.mode==='excerpt'?'Shortened excerpt; ':''}Plain text; formatting removed; embedded media and third-party quotations excluded.`,
     location: rssLocation(item), publishedAt, updatedAt: iso(xmlText(item.updated)) || publishedAt, url });
 }
 

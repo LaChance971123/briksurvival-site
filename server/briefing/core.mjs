@@ -1,16 +1,18 @@
 import { createHash } from 'node:crypto';
 import { cisaCatalogId, editorialFor, presentationFor } from './editorial.mjs';
 import { normalizeNwsGeo } from './sources.mjs';
+import { sourceText, textExcerpt } from './text.mjs';
 
 export const SCHEMA_VERSION = 1;
-export const NORMALIZATION_VERSION = 2;
-export const PRESENTATION_VERSION = 3;
+export const NORMALIZATION_VERSION = 3;
+export const PRESENTATION_VERSION = 4;
 export const STALE_AFTER_MS = 14 * 60 * 60 * 1000;
 export const RETENTION_MS = 14 * 24 * 60 * 60 * 1000;
 export const MAX_EVENTS_PER_SOURCE = 120;
 export const MAX_ACTIVE_NWS_EVENTS = 800;
 export const MAX_PUBLIC_EVENTS = 1000;
 export const MAX_PUBLIC_EVENT_BYTES = 3 * 1024 * 1024;
+export const MAX_PUBLIC_BODY_BYTES = 512 * 1024;
 export const COVERAGE = 'Selected US weather and recall sources, significant earthquakes worldwide, CISA vulnerabilities and a limited rights-cleared news selection. Not every hazard, place or source is covered. Short-lived notices can appear and end between updates. No listed item never means all clear.';
 export const hash = value => createHash('sha256').update(typeof value === 'string' ? value : JSON.stringify(value)).digest('hex');
 export function plainText(value, limit = 1600) {
@@ -74,13 +76,14 @@ export function normalizeEvent(raw, source, now) {
   const event = {
     id: source.id + '-' + hash(sourceEventId).slice(0, 20), sourceEventId,
     source: {id:source.id,name:source.name,kind:source.kind,rightsUrl:source.rights.url,rightsLabel:source.rights.label,licenseUrl:source.rights.licenseUrl || null},
-    category, title, summary:plainText(raw.summary, 620), instructions:instructionsOmitted ? '' : instructionText,instructionsOmitted, url, location,
+    category, title, summary:textExcerpt(plainText(raw.summary,100000),620), instructions:instructionsOmitted ? '' : instructionText,instructionsOmitted, url, location,
+    ...(raw.sourceText && ['nws','nws-cancellations','usgs','cpsc','fda','cisa-kev','eff','global-voices'].includes(source.id) ? {sourceText:sourceText(raw.sourceText.text,{kind:['description','story','metadata'].includes(raw.sourceText.kind)?raw.sourceText.kind:'description',mode:['complete','excerpt','metadata'].includes(raw.sourceText.mode)?raw.sourceText.mode:'excerpt',modified:raw.sourceText.modified===true,maximum:source.id==='fda'?240:16000})} : {}),
     geo:normalizeNwsGeo(source.kind === 'official' && ['nws','nws-cancellations'].includes(source.id) ? raw.geo : undefined),
     publishedAt, updatedAt:iso(raw.updatedAt) || publishedAt, expiresAt, endsAt, cancelledAt,
     status:cancelledAt || raw.status === 'cancelled' ? 'cancelled' : [expiresAt,endsAt].some(at => at && +new Date(at) <= +new Date(now)) ? 'expired' : 'current',
     urgency: source.kind === 'official' && ['immediate','expected'].includes(raw.urgency) ? raw.urgency : 'unknown',
     lastCheckedAt:iso(now), relatedIds:Array.isArray(raw.relatedIds) ? raw.relatedIds.map(x => plainText(x,1200)).filter(Boolean).slice(0,30) : [],
-    attribution:plainText(raw.attribution, 600),
+    attribution:plainText(raw.attribution, 1200),
   };
   event.contentHash = hash({...event,lastCheckedAt:null,status:null});
   return presentEvent({...event,updates:[{at:iso(now),kind:'first-seen',text:'First included in this briefing. Check the original source for earlier history.'}]},
@@ -90,6 +93,31 @@ export function emptyState() { return {schemaVersion:SCHEMA_VERSION,sources:{},s
 const retentionPriority = event => event.status === 'current' ? 0 : event.status === 'cancelled' ? 1 : 2;
 const retentionTime = event => event.status === 'cancelled' ? event.cancelledAt || event.updatedAt : event.updatedAt;
 const retentionOrder = (a,b) => retentionPriority(a) - retentionPriority(b) || retentionTime(b).localeCompare(retentionTime(a)) || a.id.localeCompare(b.id);
+// Select records at the original budget first. Optional longer bodies can never
+// evict a current alert. Allocate their separate byte budget in retention order.
+export function boundPublicEvents(candidates) {
+  const events=[],dropped=new Map();let bytes=2;
+  for(const original of candidates) {
+    const {sourceText:body,cardMeaning,whatThisMeans,preparedness,displaySummary,displaySummaryKind,editorialReview,...base}=original,size=Buffer.byteLength(JSON.stringify(base));
+    const serializedSize=size+(events.length?1:0);
+    if(events.length>=MAX_PUBLIC_EVENTS||bytes+serializedSize>MAX_PUBLIC_EVENT_BYTES){dropped.set(original.source.id,(dropped.get(original.source.id)||0)+1);continue;}
+    bytes+=serializedSize;events.push({base,body});
+  }
+  let remaining=Math.min(MAX_PUBLIC_BODY_BYTES,MAX_PUBLIC_EVENT_BYTES-bytes);
+  const ordinal=new Map();
+  const allocation=events.map(entry=>{const rank=ordinal.get(entry.base.source.id)||0;ordinal.set(entry.base.source.id,rank+1);return {...entry,rank};}).sort((a,b)=>a.rank-b.rank);
+  const assigned=new Map();
+  for(const {base,body} of allocation){
+    if(!body){assigned.set(base.id,base);continue;}
+    let allowed=body;
+    const cost=value=>Buffer.byteLength(JSON.stringify({...base,sourceText:value}))-Buffer.byteLength(JSON.stringify(base));
+    if(cost(allowed)>remaining)allowed={...body,text:textExcerpt(body.text,320),mode:'excerpt',modified:true,budgetLimited:true};
+    const size=cost(allowed);
+    if(size>remaining){assigned.set(base.id,base);continue;}
+    remaining-=size;assigned.set(base.id,{...base,sourceText:allowed});
+  }
+  return {dropped,events:events.map(({base})=>assigned.get(base.id))};
+}
 export function assembleSnapshot(previous, results, now = new Date().toISOString()) {
   const state = previous?.schemaVersion === SCHEMA_VERSION ? previous : emptyState();
   const sources = {};
@@ -176,16 +204,13 @@ export function assembleSnapshot(previous, results, now = new Date().toISOString
     if (!old || event.status === 'cancelled' || event.updatedAt > old.updatedAt) unique.set(key,event);
   }
   const publicEvents = [...unique.values()].sort(retentionOrder);
-  let bytes = 0;
-  const boundedEvents = [];
+  const {events:boundedEvents,dropped} = boundPublicEvents(publicEvents);
   for (const event of publicEvents) {
-    const size = Buffer.byteLength(JSON.stringify(event));
     const source = sources[event.source.id];
-    if (boundedEvents.length >= MAX_PUBLIC_EVENTS || bytes + size > MAX_PUBLIC_EVENT_BYTES) {
+    if (!boundedEvents.some(item=>item.id===event.id)) {
       source.coverage = {...source.coverage,status:'partial',snapshotCapped:true,publicDroppedCount:source.coverage.publicDroppedCount + 1};
       continue;
     }
-    bytes += size; boundedEvents.push(event);
     source.coverage.publicCount += 1;
   }
   boundedEvents.sort((a,b) => b.updatedAt.localeCompare(a.updatedAt));
@@ -206,13 +231,8 @@ export function refreshStoredPresentation(state) {
     coverage:{...source.coverage},events:(source.events || []).map(event=>presentEvent(event))}]));
   const byId=new Map(Object.values(sources).flatMap(source=>source.events).map(event=>[event.id,event]));
   const candidates=(state.snapshot?.events || []).map(event=>byId.get(event.id) || presentEvent(event)).sort(retentionOrder);
-  const events=[];let bytes=0;
-  const counts=new Map(),drops=new Map();
-  for(const event of candidates) {
-    const size=Buffer.byteLength(JSON.stringify(event));
-    if(events.length>=MAX_PUBLIC_EVENTS || bytes+size>MAX_PUBLIC_EVENT_BYTES) {drops.set(event.source.id,(drops.get(event.source.id)||0)+1);continue;}
-    bytes+=size;events.push(event);counts.set(event.source.id,(counts.get(event.source.id)||0)+1);
-  }
+  const {events,dropped:drops}=boundPublicEvents(candidates),counts=new Map();
+  for(const event of events)counts.set(event.source.id,(counts.get(event.source.id)||0)+1);
   for(const [id,source] of Object.entries(sources)) {
     source.coverage={...source.coverage,publicCount:counts.get(id)||0};
     if(drops.has(id))source.coverage={...source.coverage,status:'partial',snapshotCapped:true,publicDroppedCount:(source.coverage.publicDroppedCount||0)+drops.get(id)};
