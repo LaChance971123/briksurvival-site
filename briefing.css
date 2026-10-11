@@ -336,3 +336,25 @@
 .briefing-home-card:has(.briefing-card-metadata[open]) .briefing-card-footer{grid-column:1/-1}
 .home-briefing-foot .briefing-planning-links a{padding-block:3px;min-height:26px}
 @media(max-width:700px){.home-briefing-lede{display:none}.home-briefing-foot .briefing-context summary{min-height:26px}.home-briefing .briefing-home-card .briefing-card-guides a{grid-template-columns:13px minmax(0,1fr) 11px;gap:5px}}
+
+/* Every preview shares a row height; source text and guides open on the story route.
+   Intrinsic grid rows grow for enlarged text without clipping links or focus rings. */
+.briefing-card-grid{grid-auto-rows:1fr;align-items:stretch}
+.briefing-card{height:100%;align-items:stretch}
+.briefing-card h3{font-size:23px;line-height:1.24;margin-bottom:10px}
+.briefing-preview-summary{margin:9px 0 12px;min-width:0}
+.briefing-preview-label{font:400 10px/1.6 var(--mono);color:#b6beb4;margin:0 0 5px}
+.briefing-preview-excerpt{font-size:14px;line-height:1.6;color:#c9cec7;margin:0;overflow-wrap:anywhere}
+.briefing-card .briefing-attribution{font-size:10px;line-height:1.6;margin:6px 0}
+.briefing-card .briefing-attribution-links{gap:4px 12px;margin-top:3px}
+.briefing-card .briefing-card-footer{width:100%;margin-top:auto;padding-top:10px;border-top:1px solid #3b4440}
+.briefing-story-link{display:inline-flex;align-items:center;min-height:44px;padding:6px 0;font-size:12px;font-weight:600;color:#eee0cb;text-decoration:underline;text-underline-offset:4px}
+.briefing-card a:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
+.home-briefing .briefing-home-card{display:flex;flex-direction:column;align-items:stretch;padding:14px 0 9px;height:100%}
+.home-briefing .briefing-home-card .briefing-card-footer{margin-top:auto;padding-top:5px;border:0}
+.home-briefing .briefing-home-card .briefing-preview-summary{margin:6px 0 8px}
+.home-briefing .briefing-home-card .briefing-preview-excerpt{font-size:12px;line-height:1.55}
+.home-briefing .briefing-home-card .briefing-preview-label{font-size:9px}
+.home-briefing .briefing-home-card .briefing-attribution{font-size:9px}
+@media(min-width:1100px){.home-briefing .briefing-card-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.home-briefing .briefing-home-card h3{font-size:19px}}
+@media(max-width:700px){.briefing-card h3{font-size:22px}.home-briefing .briefing-home-card h3{font-size:19px}}
