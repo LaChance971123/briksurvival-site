@@ -14,7 +14,12 @@ assert len(p.xpath('//nav[@id="primary-nav"]/a[not(contains(@class,"nav-mobile-b
 assert len(p.xpath('//nav[@id="primary-nav"]/a[@class="nav-mobile-briefing" and @href="/briefing/"]'))==1
 assert len(p.xpath('//a[contains(@class,"home-situation")]'))==6
 assert len(p.xpath('//div[@class="home-subject-grid"]/a'))==14
-text=(R/'dist/index.html').read_text();assert text.index('id="find-help"')<text.index('id="encyclopedia-title"')<text.index('id="start-title"')<text.index('id="guide-access"')
+text=(R/'dist/index.html').read_text();assert text.index('id="hero-title"')<text.index('id="start-title"')<text.index('id="find-help"')<text.index('id="encyclopedia-title"')<text.index('id="guide-access"')
+assert len(p.xpath('//*[@data-briefing="home"]'))==1, 'One prominent briefing, no duplicate lower block'
+assert hero.getnext().get('data-briefing')=='home', 'Daily Brief directly follows the search hero'
+assert p.xpath('//*[@data-briefing="home"]//a[@class="home-briefing-local" and @href="/briefing/"]')
+assert p.xpath('//*[@data-briefing-globe]/ancestor::*[@aria-hidden="true"]'), 'Globe is decorative'
+assert p.xpath('//script[contains(@src,"briefing-globe.js")]')
 topics=[x for x in load_catalog(R)['products'] if x['kind']=='topic' and x['status']!='retired']
 assert len(p.xpath('//article[@class="home-kit-card"]'))==len(topics)
 assert len(p.xpath('//*[@data-payhip-checkout]'))==sum(x['status']=='ready' for x in topics)
@@ -25,4 +30,4 @@ assert not p.xpath('//a[substring(@href,string-length(@href)-3)=".pdf"]')
 assert len(p.xpath('//form[@data-signup]//input[@type="email"]'))==1
 assert 'Email delivery is being set up' in text
 assert all(url in text for url in ['https://www.tiktok.com/@osprey_zero','https://www.instagram.com/ospreyzero/','https://www.youtube.com/@OspreyZero'])
-print('PASS: single homepage search, concise navigation, emergency-first order, actual covers, honest checkout and signup.')
+print('PASS: single homepage search, prominent Daily Brief, decorative globe, concise navigation, actual covers, honest checkout and signup.')

@@ -204,13 +204,21 @@
     if (parseDate(event.lastCheckedAt) === null || Date.now() - parseDate(event.lastCheckedAt) > STALE_AFTER_MS) return 'Source check overdue; retained report.';
     return '';
   }
-  function attributionBlock(event) {
-      const attribution = el('p', 'briefing-attribution', plain(event.attribution, 1200) || plain(event.source.name,160) + ' · Reported news; open the source for author and publisher attribution.');
+  function attributionBlock(event, preview = false) {
+      const supplied=plain(event.attribution,1200);
+      const credit=preview?supplied.split(/\s*(?:Shortened excerpt;|Plain text;)/)[0].trim():supplied;
+      const attribution = el('p', 'briefing-attribution', credit || plain(event.source.name,160) + ' · Reported news; open the source for author and publisher attribution.');
       const attributionLinks = el('span', 'briefing-attribution-links');
       attributionLinks.append(link(plain(event.source.name,160) + ' · original ↗', externalUrl(event.url)));
       const license = externalUrl(event.source.licenseUrl);
       if (license) attributionLinks.append(link('Reuse license ↗',license));
       attribution.append(attributionLinks); return attribution;
+  }
+  function previewText(value, maximum) {
+    const text=plain(value,16000).replace(/\s+/g,' ').trim();
+    if(text.length<=maximum)return text;
+    const prefix=text.slice(0,maximum-1),space=prefix.lastIndexOf(' ');
+    return (space>0?prefix.slice(0,space):'')+'…';
   }
   function sourceLine(event) {
     const line = el('p','briefing-card-source');
@@ -220,36 +228,47 @@
     line.append(el('span','',event.source.kind === 'official' ? 'Official · ' : 'Reported news · '),source,el('span','',' · checked ' + shortStamp(event.lastCheckedAt)));
     return line;
   }
-  function card(event, snapshot) {
-    const article = el('article', 'briefing-card'); article.setAttribute('data-record-id',event.id);
-    const title = el('h3'); title.append(link(displayTitle(event), eventUrl(event)));
+  function sourceDescription(event) {
+    const body=event.sourceText;
+    if(body && typeof body.text==='string' && body.text.trim())return {text:plain(body.text,16000).trim(),kind:body.kind,mode:body.mode,budgetLimited:body.budgetLimited};
+    if(event.source.id==='usgs')return {text:plain(event.title,500),kind:'metadata',mode:'metadata'};
+    const captured=plain(event.summary).trim();
+    // Old snapshots contain bounded summaries, not recoverable full feed bodies.
+    const text=captured.length>240&&event.source.id==='fda'?excerpt(captured,240):captured.replace(/\s+\S*$/,(tail)=>/[.!?…]$/.test(captured)?tail:'…');
+    return {text,kind:'description',mode:'legacy-excerpt'};
+  }
+  function descriptionBlock(event) {
+    const body=sourceDescription(event),wrapper=el('div','briefing-source-body');
+    const metadata=body.kind==='metadata';
+    const label=!body.text?'Source text unavailable':metadata?'Source observations · no narrative story supplied':body.mode==='complete'?(body.kind==='story'?'Source feed story text · plain text':'Source description · plain text'):body.mode==='legacy-excerpt'?'Stored source excerpt · full description unavailable in this snapshot':'Source excerpt';
+    wrapper.append(el('p','briefing-body-label',label));
+    if(event.source.id==='fda')wrapper.append(el('p','briefing-body-credit','FDA recall feed; announcements may be company-issued.'));
+    const paragraphs=text=>text.split(/\n\s*\n/).filter(Boolean).map(text=>el('p','briefing-source-paragraph',text));
+    if(!body.text)wrapper.append(el('p','briefing-source-paragraph','No source description or story body is available in this snapshot.'));
+    else if(body.text.length>700) {
+      wrapper.append(el('p','briefing-source-preview',excerpt(body.text,620)));
+      const expanded=el('details','briefing-source-expanded');
+      expanded.append(el('summary','','Read '+(body.mode==='complete'?'all supplied source text':'the stored source excerpt')),...paragraphs(body.text));wrapper.append(expanded);
+    } else wrapper.append(...paragraphs(body.text));
+    if(body.budgetLimited)wrapper.append(el('p','briefing-body-credit','Shortened to keep all selected report records in the snapshot.'));
+    if(!metadata || !body.text)wrapper.append(link(body.mode==='complete'?'Read original source':event.source.kind==='news'?'Read full story':'Read full source report',externalUrl(event.url),'briefing-read-source'));
+    return wrapper;
+  }
+  function card(event, snapshot, compact = false) {
+    const article = el('article', compact ? 'briefing-card briefing-home-card' : 'briefing-card'); article.setAttribute('data-record-id',event.id);
+    const fullTitle=displayTitle(event),title = el('h3'),story=link(previewText(fullTitle,96)||'Source report',eventUrl(event));story.setAttribute('aria-label',fullTitle);title.append(story);
     article.append(el('p', 'briefing-category', categoryName(event.category)+(event.relevance==='background'?' · background':'')),title);
     // Required author, original story and license stay above every news excerpt.
-    article.append(sourceLine(event),el('p','briefing-card-area',excerpt(locationLabel(event),105)));
-    if (event.source.kind === 'news') article.append(attributionBlock(event));
-    const summary=el('p','briefing-card-summary');
-    if(event.displaySummaryKind==='source-metadata')summary.append(el('span','briefing-summary-label','Source record: '));
-    summary.append(el('span','',displaySummary(event) || 'Open the original source for the available report details.'));article.append(summary);
-    const meaning = plain(event.cardMeaning,420).trim();
-    if (meaning) { const context = el('p','briefing-card-meaning'); context.append(el('strong','','For you: '),el('span','',meaning)); article.append(context); }
-    if(event.category==='recall')article.append(link('Check product & remedy ↗',sourceUrl(event),'briefing-source-action'));
-    const guides = exactGuides(event);
-    if (guides.length) {
-      const actions = el('nav', 'briefing-card-guides'); actions.setAttribute('aria-label','Relevant preparedness guides');
-      actions.append(el('span','','Prepare for this'));
-      for (const guide of guides) actions.append(readingLink(plain(guide.title,140),guide.url));
-      article.append(actions);
-    }
+    article.append(sourceLine(event),el('p','briefing-card-area',previewText(locationLabel(event),88)));
+    if (event.source.kind === 'news') article.append(attributionBlock(event,true));
+    const body=sourceDescription(event),summary=el('div','briefing-preview-summary');
+    const label=body.kind==='metadata'?'Source observations':!body.text?'Source text unavailable':body.mode==='legacy-excerpt'?'Stored source excerpt': 'Source excerpt · plain text';
+    summary.append(el('p','briefing-preview-label',label),el('p','briefing-preview-excerpt',body.text?previewText(body.text,150):'No source description is available in this snapshot.'));
+    article.append(summary);
     article.append(watchLabel(el('p', 'briefing-record-note'), () => { const state = recordState(event); return state.note ? state.label + '. Not an all-clear.' : ''; }, true));
     article.append(watchLabel(el('p', 'briefing-record-note'), () => sourceCheck(event,snapshot), true));
-    const metadata = el('details','briefing-card-metadata');
-    metadata.append(el('summary','','Source details & dates'));
-    const times = el('div','briefing-card-time');
-    times.append(el('span','',sourceKind(event)),el('span','',locationLabel(event)),el('span','','Original headline: ' + plain(event.title,500)),link(plain(event.source.name,160) + ' ↗',sourceUrl(event)),timeLine('Source date',event.updatedAt || event.publishedAt),timeLine('Last checked',event.lastCheckedAt));
-    if (event.geo?.incomplete || event.geo?.truncated) times.append(el('span','','Some source area identifiers were unavailable; the geographic list is incomplete.'));
-    if(event.sourceUrlKind && event.sourceUrlKind!=='original-notice')times.append(link(event.sourceUrlKind==='source-catalog'?'CISA catalog (search by CVE) ↗':'Original source data record ↗',externalUrl(event.url)),el('span','',plain(event.sourceLinkLabel,180) || 'Current source page; not this exact notice.'));
-    metadata.append(times);
-    const footer = el('div','briefing-card-footer'); footer.append(link('Full brief →',eventUrl(event)),metadata);
+    const footer = el('div','briefing-card-footer');
+    footer.append(link('Read story →',eventUrl(event),'briefing-story-link'));
     article.append(footer);
     return article;
   }
@@ -316,7 +335,7 @@
       const records=selectHomeEvents(snapshot),next=records.map(event=>event.id).join('|');
       if(next===signature&&signature)return;signature=next;
       const active=document.activeElement,candidate=active?.closest?.('.briefing-card'),article=candidate?.parentElement===cards?candidate:null,href=article?.querySelector('h3 a')?.getAttribute('href'),y=window.scrollY||0;
-      cards.replaceChildren(...records.map(event=>card(event,snapshot)));cards.hidden=!records.length;root.querySelector('[data-briefing-fallback]').hidden=Boolean(records.length);
+      cards.replaceChildren(...records.map(event=>card(event,snapshot,true)));cards.hidden=!records.length;root.querySelector('[data-briefing-fallback]').hidden=Boolean(records.length);
       if(href){const replacement=[...(cards.querySelectorAll?.('a[href]')||[])].find(node=>node.getAttribute('href')===href);if(replacement){replacement.focus({preventScroll:true});window.scrollTo?.({top:y,behavior:'instant'});}else{const status=root.querySelector('[data-briefing-status]');status.setAttribute('tabindex','-1');status.focus();}}
     };
     paint();localTimeListeners.add(paint);
@@ -416,7 +435,7 @@
       areaHeading.hidden=!grouped;areaNote.hidden=!grouped;
       areaHeading.textContent={local:'Relevant to your area',products:'Product & software notices',other:'Other areas & reporting'}[group] || '';
       const selectedAreaLabel=area?.label || STATES[location.value.slice(3)] || '';
-      areaNote.textContent=(grouped&&group!=='local'?'Selected area: '+selectedAreaLabel+'. ':'')+(group==='products'&&!groups.local.length?'No area reports match the current filters. Product/software notices apply by product or version. ':'')+(group==='local'?(area?area.label+' · approximate county overlap only; not your exact position or a hazard boundary. Local matches cover NWS county-coded reports only; zone-only and other reports remain in Other.':STATES[location.value.slice(3)]+' · broad state labels, not address matches.'):group==='products'?'Check your exact product, lot or software. A local incident is not implied.':'Other places or unverified locations. Some reports may still apply to you.');
+      areaNote.textContent=(grouped&&group!=='local'?'Selected area: '+selectedAreaLabel+'. ':'')+(grouped&&!historyChoice.checked&&!groups.local.length?'No current area reports match the current filters. Not an all-clear. Products and Other remain available. ':'')+(group==='local'?(area?area.label+' · approximate county overlap only; not your exact position or a hazard boundary. Local matches cover NWS county-coded reports only; zone-only and other reports remain in Other.':STATES[location.value.slice(3)]+' · broad state labels, not address matches.'):group==='products'?'Check your exact product, lot or software. A local incident is not implied.':'Other places or unverified locations. Some reports may still apply to you.');
       empty.replaceChildren();empty.hidden=Boolean(matches.length);
       if(!matches.length)empty.append(el('h3','',group==='local'?'No verified county/state matches.':'No reports in this view.'),el('p','','Not an all-clear. Check current sources'+(grouped?' or choose another report group above.':'. Try another category or include history.')));
       fallback.hidden=Object.values(groups).some(records=>records.length);
@@ -445,6 +464,11 @@
       cancelLocationWork();rememberManualLocation();zipInput.setAttribute('aria-invalid','false');area=null;zipInput.value='';zipClear.hidden=true;zipStatus.textContent=message;
       try{localStorage.removeItem(ZIP_KEY);localStorage.removeItem(AREA_KEY);}catch{}
     }
+    function areaResultsMessage() {
+      const current=filterEvents(snapshot.events,category.value,'all').filter(event=>isCurrentRelevant(event));
+      const local=partitionAreaEvents(current,area,location.value).local.length;
+      return ' Results loaded. '+local+' current area '+(local===1?'report matches':'reports match')+' these filters.'+(local===0?' Products and Other remain available. Not an all-clear.':'');
+    }
     function selectArea(result,{restore=false,restoreGroup=null,fromLocation=false,accuracyLabel=''}={}) {
       const stateSelection=result?.kind==='state' && Object.hasOwn(STATES,result.state);
       const nextArea=stateSelection?null:validArea(result);
@@ -461,7 +485,7 @@
         try{localStorage.setItem(AREA_KEY,JSON.stringify(area));localStorage.removeItem(LOCATION_KEY);if(area.zip)localStorage.setItem(ZIP_KEY,area.zip);else localStorage.removeItem(ZIP_KEY);}catch{}
       }
       zipInput.setAttribute('aria-invalid','false');zipClear.hidden=false;if(restoreGroup)group=restoreGroup;
-      render();restoreScroll();save();
+      render();zipStatus.textContent+=areaResultsMessage();restoreScroll();save();
     }
     function presentChoices(matches,{fromLocation=false,accuracyLabel=''}={}) {
       clearChoices();choices.hidden=false;zipInput.setAttribute('aria-expanded','true');
@@ -482,8 +506,21 @@
       return 'No matching city or state in this geographic lookup. Try a city with its state, or a five-digit ZIP. Missing data does not mean no alerts.';
     }
     async function applyZip({restore=false}={}) {
+      const query=zipInput.value.trim();
+      const normalized=value=>value.trim().replace(/\s+/g,' ').toLowerCase();
+      // Only a validated active selection can reuse a county label. Arbitrary
+      // county text still follows the normal public ZIP/city/state lookup.
+      if(area&&validArea(area)&&normalized(query)===normalized(area.zip||area.label)) {
+        if(!restore)cancelRestore();
+        cancelLocationWork();zipInput.value=area.zip||area.label;
+        zipInput.setAttribute('aria-invalid','false');zipClear.hidden=false;
+        const y=window.scrollY||0;
+        render();zipStatus.textContent='Using '+(area.zip?'ZIP '+area.zip:area.label)+' · approximate county-area estimate.'+areaResultsMessage();
+        window.scrollTo?.({top:y,behavior:'instant'});
+        save();return;
+      }
       if(!restore){cancelRestore();rememberManualLocation();}
-      cancelLocationWork();const query=zipInput.value.trim(),attempt=zipAttempt,restoreGroup=restore?group:null;
+      cancelLocationWork();const attempt=zipAttempt,restoreGroup=restore?group:null;
       zipInput.setAttribute('aria-invalid','false');zipClear.hidden=!query&&!area;
       if(!query || query.length>120 || (/\d/.test(query) && !/^\d{5}$/.test(query))) {
         zipInput.setAttribute('aria-invalid','true');zipStatus.textContent='Enter a five-digit U.S. ZIP, city name, or state name/code.';restoreScroll();save();zipInput.focus();return;
@@ -562,9 +599,7 @@
       if(next===eligibility)return;eligibility=next;
       const active=document.activeElement,candidate=active?.closest?.('.briefing-card'),article=candidate?.parentElement===cards?candidate:null;
       const href=article?.querySelector('h3 a')?.getAttribute('href'),groupFocus=active?.getAttribute?.('data-group');
-      const openRecords=[...(cards.querySelectorAll?.('.briefing-card-metadata[open]')||[])].map(node=>node.closest('.briefing-card')?.getAttribute('data-record-id'));
       const y=window.scrollY||0;render();
-      for(const node of cards.querySelectorAll?.('.briefing-card')||[])if(openRecords.includes(node.getAttribute('data-record-id')))node.querySelector('.briefing-card-metadata').open=true;
       const replacement=href?[...(cards.querySelectorAll?.('a[href]')||[])].find(node=>node.getAttribute('href')===href):null;
       if(article&&!replacement){count.setAttribute('tabindex','-1');count.focus();}
       else{replacement?.focus({preventScroll:true});if(groupFocus)[...groupNav.children].find(node=>node.getAttribute('data-group')===groupFocus)?.focus({preventScroll:true});window.scrollTo?.({top:y,behavior:'instant'});}
@@ -623,12 +658,9 @@
     header.append(watchLabel(el('p','briefing-record-note'), () => recordState(event).note, true));
     header.append(watchLabel(el('p','briefing-record-note'), () => sourceCheck(event,snapshot), true));
     const jumps = el('nav','briefing-detail-jumps'); jumps.setAttribute('aria-label','On this page');
-    for (const [id,label] of [['related-guides','Relevant guides'],['what-this-means','What this means'],['official-instructions','Official instructions'],['preparedness-steps','Preparedness next steps'],['sources-updates','Sources and updates']]) jumps.append(link(label,'#' + id));
+    for (const [id,label] of [['related-guides','Relevant guides'],...(event.source.kind==='official'&&(plain(event.instructions).trim()||event.instructionsOmitted)?[['official-instructions','Source instructions']]:[]),['sources-updates','Sources and updates']]) jumps.append(link(label,'#' + id));
     if (event.source.kind === 'news') header.append(attributionBlock(event));
-    const glance = section('at-a-glance',event.displaySummaryKind==='source-metadata'?'Source record at a glance':'At a glance');
-    glance.append(el('p','',displaySummary(event) || 'The source did not provide a report summary. Read the original source for its available details.'));
-    header.append(glance);
-    if(event.source.kind==='official'&&event.category==='recall')header.append(link('Check the exact product & remedy ↗',sourceUrl(event),'briefing-source-action'));
+    const body=descriptionBlock(event);
     const facts = el('dl','briefing-facts');
     fact(facts,'Reported location',locationLabel(event));
     if (event.geo?.incomplete || event.geo?.truncated) fact(facts,'Geographic coverage','Some source area identifiers were unavailable; the geographic list is incomplete.');
@@ -641,9 +673,7 @@
     if (event.expiresAt) fact(facts,'Source validity / expiry time',stamp(event.expiresAt));
     if (event.endsAt) fact(facts,'End time listed by source',stamp(event.endsAt));
     // Detailed timestamps remain available with the source history below.
-    const meaning = section('what-this-means','What this means');
-    meaning.append(el('p','',plain(event.whatThisMeans) || 'This is a stored source report. Verify its location, time and current source instructions before applying it to your situation.'), el('p','briefing-reviewed-note','Osprey Zero editorial context. It does not establish local conditions, an evacuation order or access to assistance.'));
-    const official = section('official-instructions','Official instructions');
+    const official = section('official-instructions','Source instructions');
     const panel = el('div','briefing-official-panel');
     const hasInstructions = event.source.kind === 'official' && plain(event.instructions).trim();
     if (hasInstructions) {
@@ -653,15 +683,11 @@
     }
     panel.append(link(plain(event.sourceLinkLabel,160) || 'Open the source record ↗',sourceUrl(event)));
     official.append(panel);
-    const steps = section('preparedness-steps','Reviewed preparedness next steps');
-    steps.append(el('p','briefing-reviewed-note','General Osprey Zero preparedness guidance, drawn from reviewed library material. These are editorial planning steps, not instructions issued for this event. Match them to your household and follow current, applicable source instructions.'));
-    const actions = safeTextList(event.preparedness);
-    if (actions.length) { const list = el('ol'); for (const text of actions) list.append(el('li','',text)); steps.append(list); }
-    else steps.append(el('p','','No reviewed preparedness steps are attached to this record. Use the original source and the linked guides for context.'));
     const related = section('related-guides','Prepare for this');
     const guides = exactGuides(event);
     if (guides.length) { const links = el('div','briefing-guide-links'); for (const guide of guides) links.append(readingLink(plain(guide.title,200),guide.url)); related.append(links); }
     else related.append(el('p','','No exact guide mapping is available for this record.'));
+    if(event.source.kind==='official'&&event.category==='recall')related.append(link('Check the exact product & remedy ↗',sourceUrl(event),'briefing-source-action'));
     const sources = section('sources-updates','Sources and updates');
     const sourceList = el('ul','briefing-sources-list');
     const original = el('li'); original.append(link(event.sourceUrlKind==='source-catalog'?'CISA catalog (search by CVE) ↗':plain(event.source.name,160) + (event.sourceUrlKind && event.sourceUrlKind!=='original-notice' ? ' · original data record ↗' : ' · original report ↗'),externalUrl(event.url)),el('small','','Source date: ' + stamp(event.updatedAt || event.publishedAt) + '. Last checked: ' + stamp(event.lastCheckedAt) + '.')); sourceList.append(original);
@@ -674,7 +700,6 @@
     const rights = externalUrl(event.source.rightsUrl);
     if (rights) { const item = el('li'); item.append(link(plain(event.source.rightsLabel,180) || 'Source reuse and attribution',rights)); sourceList.append(item); }
     sources.append(facts,sourceList);
-    if(event.summary && event.displaySummary && event.summary!==event.displaySummary){const originalText=el('details','briefing-original-summary');originalText.append(el('summary','','Original source summary'),el('p','',plain(event.summary)));sources.append(originalText);}
     const updates = (Array.isArray(event.updates) ? event.updates : []).filter(update => update && plain(update.text)).slice(0,20);
     if (updates.length) {
       sources.append(el('h3','','Record history'));
@@ -683,7 +708,7 @@
       sources.append(list);
     }
     sources.append(el('p','briefing-reviewed-note','Snapshot generated: ' + stamp(snapshot.generatedAt) + '. Last successful refresh: ' + stamp(snapshot.lastSuccessfulAt) + '. Scheduled twice daily at 00:00 and 12:00 UTC. An expired, removed or unavailable record does not establish that a threat has ended.'));
-    target.replaceChildren(header,related,jumps,meaning,official,steps,sources);
+    target.replaceChildren(header,body,related,jumps,...(hasInstructions||event.instructionsOmitted?[official]:[]),sources);
     target.hidden = false; root.querySelector('[data-briefing-fallback]').hidden = true;
     document.title = plain(displayTitle(event),180) + ' — Osprey Zero Daily Brief';
   }

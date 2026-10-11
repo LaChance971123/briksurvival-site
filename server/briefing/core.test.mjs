@@ -212,7 +212,7 @@ test('presentation refresh preserves original source fields, evidence hashes and
  const old=before.snapshot.events[0],event=refreshed.snapshot.events[0];
  for(const key of ['id','title','summary','instructions','url','publishedAt','updatedAt','lastCheckedAt','contentHash','status'])assert.deepEqual(event[key],old[key],key);
  assert.deepEqual(event.updates,old.updates);assert.equal(event.presentationVersion,PRESENTATION_VERSION);
- assert.doesNotMatch(event.displaySummary,/Incomplete|if th/);
+ assert.equal(event.displaySummary,undefined,'Public presentation no longer substitutes generic editorial summaries');
  assert.equal(event.sourceUrl,'https://www.weather.gov/');assert.equal(event.sourceUrlKind,'current-alerts-map');
  assert.equal(refreshed.sources.nws.coverage.publicCount,1);
  assert.deepEqual(original,before,'The migration is pure and must not mutate stored input.');
@@ -221,7 +221,7 @@ test('presentation refresh preserves original source fields, evidence hashes and
 test('new full-source display can use complete text without enlarging the stored original excerpt',()=>{
  const prefix='This product covers '+ 'Example; '.repeat(100)+'. * IMPACTS...';
  const event=normalizeEvent({...raw,summary:prefix+'Floodwater can damage buildings. Roads may become impassable.',eventType:'Flood Warning'},source,now);
- assert.equal(event.summary.length,620);
+ assert(event.summary.length<=620);assert(event.summary.endsWith('…'));
  assert.equal(event.displaySummary,'Floodwater can damage buildings. Roads may become impassable.');
  const state=assembleSnapshot(null,[result([{...raw,summary:prefix+'Floodwater can damage buildings. Roads may become impassable.'}])],now);
  const reused=assembleSnapshot(state,[result(undefined,{notModified:true})],'2026-10-10T13:00:00Z');
@@ -259,8 +259,8 @@ test('an older cached presentation is corrected without falsely refreshing a fai
  first.sources.nws.events=[legacy];first.snapshot.events=[legacy];
  const next=assembleSnapshot(first,[{source,ok:false,error:'Source unavailable'}],'2026-10-10T13:00:00Z');
  const event=next.snapshot.events[0];
- assert.equal(event.presentationVersion,PRESENTATION_VERSION);assert.equal(event.displaySummaryKind,'source-metadata');
- assert.doesNotMatch(event.displaySummary,/LOCATIONS|PLAN:|Residents may need shelter/);
+ assert.equal(event.presentationVersion,PRESENTATION_VERSION);assert.equal(event.displaySummaryKind,undefined);
+ assert.equal(event.displaySummary,undefined,'Unused editorial summaries do not consume public body space');
  assert.equal(event.lastCheckedAt,now);assert.equal(next.sources.nws.lastSuccessAt,now);
  for(const key of ['id','sourceEventId','title','summary','instructions','publishedAt','updatedAt','contentHash','updates'])assert.deepEqual(event[key],legacy[key],key);
 });
