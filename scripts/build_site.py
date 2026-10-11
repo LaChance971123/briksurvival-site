@@ -2,6 +2,7 @@
 from pathlib import Path
 import subprocess
 import sys
+import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 commands = [
@@ -25,14 +26,14 @@ commands = [
     ['node', 'scripts/verify_search_return.cjs'],
     [sys.executable, 'scripts/verify_static_preview.py'],
     [sys.executable, 'scripts/verify_audit_fixes.py'],
-    ['npm', 'test'],
+    [shutil.which('npm') or 'npm', 'test'],
     ['node', '--test', 'scripts/verify_local_area_lookup.cjs'],
     [sys.executable, 'scripts/test_local_areas.py'],
     [sys.executable, 'scripts/verify_briefing.py'],
     ['node', 'scripts/verify_briefing_ui.cjs'],
     ['node', 'scripts/verify_ads.cjs'],
     ['node', 'scripts/verify_offline_retirement.cjs'],
-    *[['node', '--check', name] for name in ('briefing.js', 'briefing/local-area-lookup.js', 'app.js', 'search.js', 'ads.js', 'offline/sw.js','planner/app/launcher.js','planner/app/sw.js')],
+    *[['node', '--check', name] for name in ('briefing.js', 'briefing-globe.js', 'briefing/local-area-lookup.js', 'app.js', 'search.js', 'ads.js', 'offline/sw.js','planner/app/launcher.js','planner/app/sw.js')],
     [sys.executable, 'scripts/verify_release.py'],
     [sys.executable, 'scripts/verify_toolkits.py'],
     [sys.executable, 'scripts/verify_planner.py'],

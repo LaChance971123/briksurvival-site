@@ -220,36 +220,40 @@
     line.append(el('span','',event.source.kind === 'official' ? 'Official · ' : 'Reported news · '),source,el('span','',' · checked ' + shortStamp(event.lastCheckedAt)));
     return line;
   }
-  function card(event, snapshot) {
-    const article = el('article', 'briefing-card'); article.setAttribute('data-record-id',event.id);
+  function card(event, snapshot, compact = false) {
+    const article = el('article', compact ? 'briefing-card briefing-home-card' : 'briefing-card'); article.setAttribute('data-record-id',event.id);
     const title = el('h3'); title.append(link(displayTitle(event), eventUrl(event)));
     article.append(el('p', 'briefing-category', categoryName(event.category)+(event.relevance==='background'?' · background':'')),title);
     // Required author, original story and license stay above every news excerpt.
     article.append(sourceLine(event),el('p','briefing-card-area',excerpt(locationLabel(event),105)));
     if (event.source.kind === 'news') article.append(attributionBlock(event));
+    if (!compact) {
     const summary=el('p','briefing-card-summary');
     if(event.displaySummaryKind==='source-metadata')summary.append(el('span','briefing-summary-label','Source record: '));
     summary.append(el('span','',displaySummary(event) || 'Open the original source for the available report details.'));article.append(summary);
     const meaning = plain(event.cardMeaning,420).trim();
     if (meaning) { const context = el('p','briefing-card-meaning'); context.append(el('strong','','For you: '),el('span','',meaning)); article.append(context); }
+    }
     if(event.category==='recall')article.append(link('Check product & remedy ↗',sourceUrl(event),'briefing-source-action'));
     const guides = exactGuides(event);
     if (guides.length) {
       const actions = el('nav', 'briefing-card-guides'); actions.setAttribute('aria-label','Relevant preparedness guides');
-      actions.append(el('span','','Prepare for this'));
-      for (const guide of guides) actions.append(readingLink(plain(guide.title,140),guide.url));
+      if (!compact) actions.append(el('span','','Prepare for this'));
+      for (const guide of compact ? guides.slice(0,1) : guides) actions.append(readingLink(plain(guide.title,140),guide.url));
       article.append(actions);
     }
     article.append(watchLabel(el('p', 'briefing-record-note'), () => { const state = recordState(event); return state.note ? state.label + '. Not an all-clear.' : ''; }, true));
     article.append(watchLabel(el('p', 'briefing-record-note'), () => sourceCheck(event,snapshot), true));
     const metadata = el('details','briefing-card-metadata');
-    metadata.append(el('summary','','Source details & dates'));
+    metadata.append(el('summary','',compact ? 'Details & dates' : 'Source details & dates'));
     const times = el('div','briefing-card-time');
     times.append(el('span','',sourceKind(event)),el('span','',locationLabel(event)),el('span','','Original headline: ' + plain(event.title,500)),link(plain(event.source.name,160) + ' ↗',sourceUrl(event)),timeLine('Source date',event.updatedAt || event.publishedAt),timeLine('Last checked',event.lastCheckedAt));
     if (event.geo?.incomplete || event.geo?.truncated) times.append(el('span','','Some source area identifiers were unavailable; the geographic list is incomplete.'));
     if(event.sourceUrlKind && event.sourceUrlKind!=='original-notice')times.append(link(event.sourceUrlKind==='source-catalog'?'CISA catalog (search by CVE) ↗':'Original source data record ↗',externalUrl(event.url)),el('span','',plain(event.sourceLinkLabel,180) || 'Current source page; not this exact notice.'));
     metadata.append(times);
-    const footer = el('div','briefing-card-footer'); footer.append(link('Full brief →',eventUrl(event)),metadata);
+    const footer = el('div','briefing-card-footer');
+    if (!compact) footer.append(link('Full brief →',eventUrl(event)));
+    footer.append(metadata);
     article.append(footer);
     return article;
   }
@@ -316,7 +320,7 @@
       const records=selectHomeEvents(snapshot),next=records.map(event=>event.id).join('|');
       if(next===signature&&signature)return;signature=next;
       const active=document.activeElement,candidate=active?.closest?.('.briefing-card'),article=candidate?.parentElement===cards?candidate:null,href=article?.querySelector('h3 a')?.getAttribute('href'),y=window.scrollY||0;
-      cards.replaceChildren(...records.map(event=>card(event,snapshot)));cards.hidden=!records.length;root.querySelector('[data-briefing-fallback]').hidden=Boolean(records.length);
+      cards.replaceChildren(...records.map(event=>card(event,snapshot,true)));cards.hidden=!records.length;root.querySelector('[data-briefing-fallback]').hidden=Boolean(records.length);
       if(href){const replacement=[...(cards.querySelectorAll?.('a[href]')||[])].find(node=>node.getAttribute('href')===href);if(replacement){replacement.focus({preventScroll:true});window.scrollTo?.({top:y,behavior:'instant'});}else{const status=root.querySelector('[data-briefing-status]');status.setAttribute('tabindex','-1');status.focus();}}
     };
     paint();localTimeListeners.add(paint);

@@ -15,7 +15,9 @@ def planning_cards():
 </div>'''
 
 
-def planning_links():
+def planning_links(compact=False):
+    if compact:
+        return '''<nav class="briefing-planning-links" aria-label="Planning essentials"><a href="/preparedness/household-emergency-plan/">Household plan</a><a href="/preparedness/budget-preparedness/">Budget</a><a href="/preparedness/preparedness-maintenance/">Upkeep</a></nav>'''
     return '''<nav class="briefing-planning-links" aria-label="Planning essentials"><span>Keep preparing</span><a href="/preparedness/household-emergency-plan/">Household plan</a><a href="/preparedness/budget-preparedness/">Budget essentials</a><a href="/preparedness/preparedness-maintenance/">Practice &amp; upkeep</a></nav>'''
 
 
@@ -36,7 +38,7 @@ def status_line():
 
 
 def homepage_section():
-    return '''<section class="home-start-band home-briefing" data-briefing="home"><div class="wrap home-start" aria-labelledby="start-title"><div class="home-section-heading"><div><p class="kicker">03 / KNOW WHAT TO PREPARE FOR</p><h2 id="start-title">Daily Brief.</h2></div><a class="text-link" href="/briefing/">View all &amp; choose your area <span aria-hidden="true">→</span></a></div>''' + status_line() + '''<div class="briefing-card-grid" data-briefing-cards hidden></div><div data-briefing-fallback>''' + planning_cards() + '''</div><noscript><p class="briefing-help">Briefing reports need JavaScript and a connection. These planning guides are always available online.</p></noscript>''' + context_details() + planning_links() + '''</div></section>'''
+    return '''<section class="wrap home-briefing" data-briefing="home" aria-labelledby="start-title"><div class="home-briefing-panel"><div class="home-briefing-intro"><p class="kicker">THE WORLD / YOUR HOUSEHOLD</p><h2 id="start-title">Daily Brief<span aria-hidden="true">.</span></h2><p class="home-briefing-lede">A little context.<br> A better plan.</p><p class="home-briefing-description">Source reports, linked to practical preparedness guides.</p><a class="home-briefing-local" href="/briefing/">Find your local brief <span aria-hidden="true">↗</span></a><div class="home-briefing-globe" aria-hidden="true"><svg data-briefing-globe viewBox="0 0 240 240" width="240" height="240" focusable="false"><circle class="globe-orbit" cx="120" cy="120" r="114"/><circle class="globe-sphere" cx="120" cy="120" r="100"/><g class="globe-grid"><ellipse cx="120" cy="120" rx="48" ry="100"/><ellipse cx="120" cy="120" rx="82" ry="100"/><path d="M20 120h200M34 70Q120 92 206 70M34 170Q120 192 206 170"/></g><path class="globe-land" data-globe-land d="M60 40 90 33 106 47 98 68 116 86 103 107 83 96 75 73 60 70ZM98 113 125 110 142 132 135 154 117 186 108 169 108 141Z"/><path class="globe-grid" data-globe-meridians d=""/></svg><span>World context · decorative globe</span></div></div><div class="home-briefing-feed"><div class="home-briefing-feed-heading"><span class="briefing-eyebrow">SELECTED SOURCE REPORTS</span><a href="/briefing/">All reports <span aria-hidden="true">→</span></a></div>''' + status_line() + '''<div class="briefing-card-grid" data-briefing-cards hidden></div><div data-briefing-fallback><p class="briefing-fallback-intro">While reports load, start with the essentials.</p>''' + planning_cards() + '''</div><noscript><p class="briefing-help">Briefing reports need JavaScript and a connection. These planning guides are always available online.</p></noscript></div><div class="home-briefing-foot"><p>Scheduled snapshots. Coverage can be incomplete or delayed; an absent report is not an all-clear.</p>''' + context_details() + planning_links(compact=True) + '''</div></div></section>'''
 
 
 def build_page(route, title, description, main, noindex=False):
