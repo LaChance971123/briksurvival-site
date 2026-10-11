@@ -210,9 +210,70 @@ const manySnapshot={...snapshot,events:Array.from({length:23},(_,i)=>({...record
  const timedOutFix=fixture(['index'],{geo:true,permissionState:'granted',areaLookup:realLookup});await resolve(timedOutFix,zipSnapshot);timedOutFix.advance(timedOutFix.geoCalls[0].options.timeout);timedOutFix.geoCalls[0].error({code:3});assert.match(get(timedOutFix,'zip-status').textContent,/device did not provide a location in time/);assert(!get(timedOutFix,'geolocate').disabled);assert.equal(timedOutFix.calls.length,1);timedOutFix.advance(120000);assert.equal(timedOutFix.geoCalls.length,1,'No internal automatic retry after a terminal native timeout');timedOutFix.geoCalls[0].success({coords:{latitude:29.651634,longitude:-82.324826,accuracy:80}});assert.equal(timedOutFix.calls.length,1,'A stale success after a terminal native timeout is ignored');get(timedOutFix,'geolocate').events.click();assert.equal(timedOutFix.geoCalls.length,2);assert.deepEqual(JSON.parse(JSON.stringify(timedOutFix.geoCalls[1].options)),{enableHighAccuracy:false,maximumAge:60000,timeout:30000});timedOutFix.geoCalls[0].error({code:3});assert(get(timedOutFix,'geolocate').disabled,'A stale error cannot stop a newer explicit attempt');timedOutFix.geoCalls[1].success({coords:{latitude:29.651634,longitude:-82.324826,accuracy:80}});timedOutFix.calls[1].resolve({ok:true,json:async()=>realCounties});await tick();assert.equal(get(timedOutFix,'cards').children[0].getAttribute('data-record-id'),localRecord.id,'An explicit retry recovers a transient native timeout into a real local card');
  const timeoutManual=fixture(['index'],{geo:true,permissionState:'granted',areaLookup:realLookup});await resolve(timeoutManual,zipSnapshot);timeoutManual.advance(20000);submit(timeoutManual,'California');timeoutManual.geoCalls[0].error({code:3});timeoutManual.geoCalls[0].success({coords:{latitude:29.651634,longitude:-82.324826,accuracy:80}});assert.equal(get(timeoutManual,'location').value,'US:CA');assert.equal(get(timeoutManual,'zip').value,'California');assert.equal(timeoutManual.calls.length,1,'A manual area prevents both late error and success from changing the selection or loading geometry');
  const realLate=fixture(['index'],{geo:true,areaLookup:realLookup});await resolve(realLate,zipSnapshot);realLate.advance(api.GEO_DEADLINE_MS+1000);realLate.geoCalls[0].success({coords:{latitude:29.651634,longitude:-82.324826,accuracy:80}});realLate.calls[1].resolve({ok:true,json:async()=>realCounties});await tick();assert.equal(get(realLate,'zip').value,'Alachua County, FL');assert.equal(get(realLate,'cards').children.length,1,'Real county matching and cards still apply after late permission grant');
- const noCountyReports=fixture(['index'],{geo:true,permissionState:'granted',areaLookup:realLookup});await resolve(noCountyReports,{...zipSnapshot,events:zipSnapshot.events.filter(event=>event.id!==localRecord.id)});noCountyReports.geoCalls[0].success({coords:{latitude:29.651634,longitude:-82.324826,accuracy:80}});noCountyReports.calls[1].resolve({ok:true,json:async()=>realCounties});await tick();assert.equal(groupButton(noCountyReports,'products').getAttribute('aria-pressed'),'true');assert.equal(get(noCountyReports,'cards').children.length,2);assert.match(get(noCountyReports,'area-note').textContent,/Selected area: Alachua County, FL/);assert.match(get(noCountyReports,'area-note').textContent,/No area reports match the current filters/);groupButton(noCountyReports,'other').events.click();assert.match(get(noCountyReports,'area-note').textContent,/Selected area: Alachua County, FL/);groupButton(noCountyReports,'local').events.click();assert.match(allText(get(noCountyReports,'empty')),/No verified county\/state matches.*Not an all-clear/);
+ const noCountyReports=fixture(['index'],{geo:true,permissionState:'granted',areaLookup:realLookup});await resolve(noCountyReports,{...zipSnapshot,events:zipSnapshot.events.filter(event=>event.id!==localRecord.id)});noCountyReports.geoCalls[0].success({coords:{latitude:29.651634,longitude:-82.324826,accuracy:80}});noCountyReports.calls[1].resolve({ok:true,json:async()=>realCounties});await tick();assert.equal(groupButton(noCountyReports,'products').getAttribute('aria-pressed'),'true');assert.equal(get(noCountyReports,'cards').children.length,2);assert.match(get(noCountyReports,'area-note').textContent,/Selected area: Alachua County, FL/);assert.match(get(noCountyReports,'area-note').textContent,/No current area reports match the current filters/);groupButton(noCountyReports,'other').events.click();assert.match(get(noCountyReports,'area-note').textContent,/Selected area: Alachua County, FL/);groupButton(noCountyReports,'local').events.click();assert.match(allText(get(noCountyReports,'empty')),/No verified county\/state matches.*Not an all-clear/);
  const restoredCounty=fixture(['index'],{geo:true,permissionState:'granted',attempted:true,storedArea:JSON.parse(realGeo.localMap.get(api.AREA_KEY)),areaLookup:realLookup});await resolve(restoredCounty,zipSnapshot);await tick();assert.equal(restoredCounty.geoCalls.length,0,'An already selected valid county is restored rather than replaced');assert.equal(get(restoredCounty,'zip').value,'Alachua County, FL');
  assert.equal(card.querySelector('.briefing-card-guides').getAttribute('aria-label'),'Relevant preparedness guides');assert.equal(card.querySelectorAll('.briefing-reading-icon').length,1);assert.match(allText(get(shown,'detail',1)),/Prepare for this/);
+ // Repeated Search (including Enter's form submit) reuses an active validated
+ // area, preserving filters, group, history, pagination, scroll and county IDs.
+ const hillsArea={kind:'geolocation',label:'Hillsborough County, FL',state:'FL',counties:[{code:'12057',name:'Hillsborough County',state:'FL'}]};
+ const hillsRecord={...localRecord,id:'test-hillsborough',geo:{countyFips:['12057'],zoneIds:[],sameCodes:[]}};
+ const hillsSnapshot={...zipSnapshot,events:[...Array.from({length:18},(_,i)=>({...hillsRecord,id:'test-hillsborough-'+i})),recallRecord,cyberRecord,unknownRecord]};
+ for(const restored of [false,true]){
+  const fx=fixture(['index'],{geo:true,areaLookup:realLookup,...(restored?{storedArea:hillsArea,attempted:true}:{})});
+  await resolve(fx,hillsSnapshot);
+  if(!restored){fx.geoCalls[0].success({coords:{latitude:27.95,longitude:-82.46,accuracy:80}});fx.calls[1].resolve({ok:true,json:async()=>realCounties});await tick();}
+  assert.equal(get(fx,'zip').value,hillsArea.label);
+  assert.equal(get(fx,'cards').children.length,6,'Location success renders results without Search');
+  assert.match(get(fx,'zip-status').textContent,/Results loaded.*18 current area reports/);
+  historyOn(fx);get(fx,'more').events.click();groupButton(fx,'other').events.click();
+  get(fx,'options').open=true;fx.window.scrollY=512;
+  const mapping=fx.localMap.get(api.AREA_KEY),requests=fx.calls.length,ids=get(fx,'cards').children.map(n=>n.getAttribute('data-record-id'));
+  const view=fx.window.history.state.ozBriefing;
+  const controls=JSON.stringify({category:view.category,group:view.group,history:view.includeHistory,limits:view.limits});
+  get(fx,'cards').querySelector('.briefing-card-metadata').open=true;
+  get(fx,'zip-status').textContent='No matching city or state in this geographic lookup.';
+  get(fx,'zip').setAttribute('aria-invalid','true');
+  submit(fx,'  HILLSBOROUGH   COUNTY, fl  ');await tick();
+  const after=fx.window.history.state.ozBriefing;
+  assert.equal(fx.calls.length,requests,'Unchanged county label does not fetch a city map');
+  assert.equal(JSON.stringify({category:after.category,group:after.group,history:after.includeHistory,limits:after.limits}),controls,'Filters, group, history and pagination remain intact');
+  assert(get(fx,'history').checked);assert(get(fx,'cards').querySelector('.briefing-card-metadata').open,'Open source details are preserved');
+  assert.equal(fx.window.scrollY,512);assert(get(fx,'options').open);
+  assert.equal(fx.localMap.get(api.AREA_KEY),mapping,'County IDs and stored mapping are preserved');
+  assert.deepEqual(get(fx,'cards').children.map(n=>n.getAttribute('data-record-id')),ids);
+  assert.equal(get(fx,'zip').getAttribute('aria-invalid'),'false');
+  assert.match(get(fx,'zip-status').textContent,/Using Hillsborough County, FL.*Results loaded/);
+  submit(fx,get(fx,'zip').value);await tick();assert.equal(fx.calls.length,requests,'Second form submit is also idempotent');
+  change(fx,'category','recall');submit(fx,hillsArea.label);await tick();
+  assert.equal(get(fx,'category').value,'recall');assert.equal(groupButton(fx,'products').getAttribute('aria-pressed'),'true');
+  assert.match(get(fx,'zip-status').textContent,/0 current area reports.*Not an all-clear/);
+  submit(fx,'Gainesville, FL');assert.equal(fx.calls.at(-1).url,'/briefing/place-areas.json');
+  fx.calls.at(-1).resolve({ok:true,json:async()=>realPlaces});await tick();assert.match(get(fx,'zip').value,/Gainesville/,'Genuine valid edits follow normal city lookup');
+  submit(fx,'Unmapped test-only city');await tick();assert.match(get(fx,'zip-status').textContent,/No matching city or state/);
+  assert.match(get(fx,'zip').value,/Unmapped/,'An invalid edit is not silently replaced by the prior selection');
+  get(fx,'zip-clear').events.click();submit(fx,hillsArea.label);await tick();
+  assert(!fx.localMap.has(api.AREA_KEY),'Clear removes the active mapping');
+  assert.match(get(fx,'zip-status').textContent,/No matching city or state/,'Old county text cannot recreate a cleared mapping');
+  submit(fx,'Florida');assert.equal(get(fx,'location').value,'US:FL');assert.equal(get(fx,'zip').value,'Florida');
+ }
+ const hillsZero=fixture(['index'],{geo:true,areaLookup:realLookup});
+ const historicalHills=[{...hillsRecord,id:'test-expired-hills',expiresAt:iso(-1000)},{...hillsRecord,id:'test-cancelled-hills',status:'cancelled'}];
+ await resolve(hillsZero,{...zipSnapshot,events:[recallRecord,cyberRecord,unknownRecord,...historicalHills]});
+ hillsZero.geoCalls[0].success({coords:{latitude:27.95,longitude:-82.46,accuracy:80}});hillsZero.calls[1].resolve({ok:true,json:async()=>realCounties});await tick();
+ assert.match(get(hillsZero,'zip-status').textContent,/Results loaded.*0 current area reports.*Products and Other.*Not an all-clear/);
+ assert.equal(get(hillsZero,'cards').children.length,2,'Products load automatically when no current local records exist');
+ assert.match(groupButton(hillsZero,'local').textContent,/0/);
+ submit(hillsZero,hillsArea.label);await tick();assert.equal(hillsZero.calls.length,2);
+ groupButton(hillsZero,'local').events.click();assert(get(hillsZero,'cards').hidden);
+ assert.match(get(hillsZero,'area-note').textContent,/No current area reports.*Not an all-clear/);
+ assert(!allText(get(hillsZero,'cards')).includes('test-expired-hills'),'Expired and cancelled notices stay out of current results');
+ const multiCity={kind:'city',label:'New York city, NY',state:'NY',counties:[{code:'36005',name:'Bronx County',state:'NY'},{code:'36047',name:'Kings County',state:'NY'}]};
+ for(const selectedArea of [multiCity,{kind:'zip',zip:'00901',label:'ZIP 00901',counties:[{code:'72127',name:'San Juan',state:'PR'}]}]){
+  const fx=fixture(['index'],{storedArea:selectedArea,areaLookup:realLookup});await resolve(fx,zipSnapshot);
+  const mapping=fx.localMap.get(api.AREA_KEY);submit(fx,' '+get(fx,'zip').value.toUpperCase()+' ');await tick();
+  assert.equal(fx.calls.length,1,'Selected city or leading-zero ZIP reuses its complete validated mapping');
+  assert.equal(fx.localMap.get(api.AREA_KEY),mapping);assert.match(get(fx,'zip-status').textContent,/Using.*Results loaded/);
+ }
  const template=fs.readFileSync('scripts/build_briefing.py','utf8'),inputMarkup=template.match(/<input id="briefing-zip"[^>]*>/)[0];assert(!/\bname=/.test(inputMarkup));assert(template.includes('data-briefing-history'));assert(template.includes('census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html'));assert(!code.includes('innerHTML'));assert(!code.includes('setInterval'));assert(code.includes('getCurrentPosition'));assert(!code.includes('watchPosition'));assert(!/fetch\([^)]*(?:latitude|longitude)/.test(code));assert(zip.calls.every(call=>!call.url.includes('32601')));
- console.log('PASS: Daily Brief unified locations, first-launch location privacy, compact current-first briefing, six-card diversity, honest group counts/history, visible sources, safe attribution, ZIP privacy/failures, local expiry regrouping/focus and private return restoration.');
+ console.log('PASS: Daily Brief locations, automatic county results, idempotent county/city/ZIP submit, preserved filters/groups/history/pagination/scroll, truthful zero-local state, clear/edit validation, location privacy, compact homepage, attribution, expiry and private return restoration.');
 })().catch(error=>{console.error(error);process.exitCode=1;});

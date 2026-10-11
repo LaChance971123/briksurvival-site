@@ -420,7 +420,7 @@
       areaHeading.hidden=!grouped;areaNote.hidden=!grouped;
       areaHeading.textContent={local:'Relevant to your area',products:'Product & software notices',other:'Other areas & reporting'}[group] || '';
       const selectedAreaLabel=area?.label || STATES[location.value.slice(3)] || '';
-      areaNote.textContent=(grouped&&group!=='local'?'Selected area: '+selectedAreaLabel+'. ':'')+(group==='products'&&!groups.local.length?'No area reports match the current filters. Product/software notices apply by product or version. ':'')+(group==='local'?(area?area.label+' · approximate county overlap only; not your exact position or a hazard boundary. Local matches cover NWS county-coded reports only; zone-only and other reports remain in Other.':STATES[location.value.slice(3)]+' · broad state labels, not address matches.'):group==='products'?'Check your exact product, lot or software. A local incident is not implied.':'Other places or unverified locations. Some reports may still apply to you.');
+      areaNote.textContent=(grouped&&group!=='local'?'Selected area: '+selectedAreaLabel+'. ':'')+(grouped&&!historyChoice.checked&&!groups.local.length?'No current area reports match the current filters. Not an all-clear. Products and Other remain available. ':'')+(group==='local'?(area?area.label+' · approximate county overlap only; not your exact position or a hazard boundary. Local matches cover NWS county-coded reports only; zone-only and other reports remain in Other.':STATES[location.value.slice(3)]+' · broad state labels, not address matches.'):group==='products'?'Check your exact product, lot or software. A local incident is not implied.':'Other places or unverified locations. Some reports may still apply to you.');
       empty.replaceChildren();empty.hidden=Boolean(matches.length);
       if(!matches.length)empty.append(el('h3','',group==='local'?'No verified county/state matches.':'No reports in this view.'),el('p','','Not an all-clear. Check current sources'+(grouped?' or choose another report group above.':'. Try another category or include history.')));
       fallback.hidden=Object.values(groups).some(records=>records.length);
@@ -449,6 +449,11 @@
       cancelLocationWork();rememberManualLocation();zipInput.setAttribute('aria-invalid','false');area=null;zipInput.value='';zipClear.hidden=true;zipStatus.textContent=message;
       try{localStorage.removeItem(ZIP_KEY);localStorage.removeItem(AREA_KEY);}catch{}
     }
+    function areaResultsMessage() {
+      const current=filterEvents(snapshot.events,category.value,'all').filter(event=>isCurrentRelevant(event));
+      const local=partitionAreaEvents(current,area,location.value).local.length;
+      return ' Results loaded. '+local+' current area '+(local===1?'report matches':'reports match')+' these filters.'+(local===0?' Products and Other remain available. Not an all-clear.':'');
+    }
     function selectArea(result,{restore=false,restoreGroup=null,fromLocation=false,accuracyLabel=''}={}) {
       const stateSelection=result?.kind==='state' && Object.hasOwn(STATES,result.state);
       const nextArea=stateSelection?null:validArea(result);
@@ -465,7 +470,7 @@
         try{localStorage.setItem(AREA_KEY,JSON.stringify(area));localStorage.removeItem(LOCATION_KEY);if(area.zip)localStorage.setItem(ZIP_KEY,area.zip);else localStorage.removeItem(ZIP_KEY);}catch{}
       }
       zipInput.setAttribute('aria-invalid','false');zipClear.hidden=false;if(restoreGroup)group=restoreGroup;
-      render();restoreScroll();save();
+      render();zipStatus.textContent+=areaResultsMessage();restoreScroll();save();
     }
     function presentChoices(matches,{fromLocation=false,accuracyLabel=''}={}) {
       clearChoices();choices.hidden=false;zipInput.setAttribute('aria-expanded','true');
@@ -486,8 +491,23 @@
       return 'No matching city or state in this geographic lookup. Try a city with its state, or a five-digit ZIP. Missing data does not mean no alerts.';
     }
     async function applyZip({restore=false}={}) {
+      const query=zipInput.value.trim();
+      const normalized=value=>value.trim().replace(/\s+/g,' ').toLowerCase();
+      // Only a validated active selection can reuse a county label. Arbitrary
+      // county text still follows the normal public ZIP/city/state lookup.
+      if(area&&validArea(area)&&normalized(query)===normalized(area.zip||area.label)) {
+        if(!restore)cancelRestore();
+        cancelLocationWork();zipInput.value=area.zip||area.label;
+        zipInput.setAttribute('aria-invalid','false');zipClear.hidden=false;
+        const y=window.scrollY||0;
+        const openRecords=[...(cards.querySelectorAll?.('.briefing-card-metadata[open]')||[])].map(node=>node.closest('.briefing-card')?.getAttribute('data-record-id'));
+        render();zipStatus.textContent='Using '+(area.zip?'ZIP '+area.zip:area.label)+' · approximate county-area estimate.'+areaResultsMessage();
+        for(const node of cards.querySelectorAll?.('.briefing-card')||[])if(openRecords.includes(node.getAttribute('data-record-id')))node.querySelector('.briefing-card-metadata').open=true;
+        window.scrollTo?.({top:y,behavior:'instant'});
+        save();return;
+      }
       if(!restore){cancelRestore();rememberManualLocation();}
-      cancelLocationWork();const query=zipInput.value.trim(),attempt=zipAttempt,restoreGroup=restore?group:null;
+      cancelLocationWork();const attempt=zipAttempt,restoreGroup=restore?group:null;
       zipInput.setAttribute('aria-invalid','false');zipClear.hidden=!query&&!area;
       if(!query || query.length>120 || (/\d/.test(query) && !/^\d{5}$/.test(query))) {
         zipInput.setAttribute('aria-invalid','true');zipStatus.textContent='Enter a five-digit U.S. ZIP, city name, or state name/code.';restoreScroll();save();zipInput.focus();return;
