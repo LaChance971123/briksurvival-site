@@ -151,11 +151,15 @@
   if(form||input.value.trim()){if(status)status.textContent='Loading the library…';}
   if(loading)return loading;
   failed=false;results.setAttribute('aria-busy','true');
-  loading=fetch('/search-index.json?v=oz19').then(r=>{if(!r.ok)throw Error('index');return r.json();}).then(d=>{
+  const controller=typeof AbortController==='function'?new AbortController():null;
+  const deadline=controller?setTimeout(()=>controller.abort(),12000):null;
+  loading=fetch('/search-index.json?v=oz19',controller?{signal:controller.signal}:{}).then(r=>{if(!r.ok)throw Error('index');return r.json();}).then(d=>{
    // Build normalized records once after loading, not on the first keystroke.
+   if(controller?.signal.aborted)throw Error('Search timed out');
+   if(deadline!==null)clearTimeout(deadline);
    prepare(d);data=d;ready=true;loading=null;
    results.setAttribute('aria-busy','false');clearTimeout(timer);render(false);
-  }).catch(()=>{loading=null;failed=true;results.setAttribute('aria-busy','false');showError();});
+  }).catch(()=>{if(deadline!==null)clearTimeout(deadline);loading=null;failed=true;results.setAttribute('aria-busy','false');showError();});
   return loading;
  }
  if(form&&typeof root.addEventListener==='function')root.addEventListener('pagehide',saveState);

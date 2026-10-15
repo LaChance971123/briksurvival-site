@@ -53,8 +53,11 @@ for (const form of document.querySelectorAll('form[data-signup]')) {
   if(!form.reportValidity())return;event.preventDefault();const button=form.querySelector('button[type="submit"]'),status=form.querySelector('[data-form-status]');
   if(form.querySelector('[name="bot-field"]')?.value)return;
   button.disabled=true;status.textContent='Submitting your request…';
-  try {const response=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()});if(!response.ok)throw Error();location.assign('/thanks/?request='+encodeURIComponent(form.dataset.signup));}
-  catch {status.textContent='The request could not be submitted. Check your connection and try again. You can still read all free guides.';button.disabled=false;}
+  const controller=typeof AbortController==='function'?new AbortController():null;
+  const deadline=controller?setTimeout(()=>controller.abort(),15000):null;
+  try {const response=await fetch('/',{...(controller?{signal:controller.signal}:{}),method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()});if(!response.ok)throw Error();location.assign('/thanks/?request='+encodeURIComponent(form.dataset.signup));}
+  catch {status.textContent=controller?.signal.aborted?'The connection timed out. Your request may have been received. Wait before trying again; all free guides remain available.':'The request could not be submitted. Check your connection and try again. You can still read all free guides.';button.disabled=false;}
+  finally {if(deadline!==null)clearTimeout(deadline);}
  });
 }
 const thanks=document.querySelector('.thanks-page h1');

@@ -744,7 +744,8 @@
   // Only one request is made. Filtering and saved broad preferences never reach a server.
   const controller = typeof AbortController === 'function' ? new AbortController() : null;
   const timeout = controller ? setTimeout(() => controller.abort(), 12000) : null;
-  const request = fetch(ENDPOINT, {credentials:'omit',headers:{Accept:'application/json'},...(controller ? {signal:controller.signal} : {})})
+  const endpoint = roots.every(root=>root.getAttribute('data-briefing')==='home') ? '/api/briefing/home' : ENDPOINT;
+  const request = fetch(endpoint, {credentials:'omit',headers:{Accept:'application/json'},...(controller ? {signal:controller.signal} : {})})
     .then(response => { if (!response.ok) throw Error('Snapshot unavailable'); return response.json(); })
     .then(normalizeSnapshot);
   request.then(snapshot => {
