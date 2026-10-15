@@ -30,8 +30,11 @@ assert(!privacy.includes('browsing hubs also load the push-subscription zone'));
 console.log('PASS: vignette coverage preserved, push prompt disabled, prior permissions retained, critical-page exclusions, no duplicate formats, delivery diagnostics.');
 
 const policies=JSON.parse(fs.readFileSync('config/security-policy.json','utf8'));
-assert(!policies.default.includes("script-src-elem 'self' https: 'unsafe-inline'"));
-assert(policies.push_hubs.includes("script-src-elem 'self' https: 'unsafe-inline'"));
-assert(policies.push_hubs.includes("script-src-attr 'none'"));
-assert(!policies.push_hubs.includes("'unsafe-eval'"));
-assert(!fs.readFileSync('netlify.toml','utf8').includes('Content-Security-Policy ='));
+for(const policy of Object.values(policies)) {
+ assert(!policy.includes("script-src 'self' https:;"));
+ assert(!/script-src[^;]*'unsafe-inline'/.test(policy));
+ assert(!policy.includes("'unsafe-eval'"));
+}
+assert(policies.advertising.includes("script-src 'self' https://n6wxm.com;"));
+assert(policies.default.includes("connect-src 'self';"));
+assert(policies.default.includes("frame-src 'none';"));

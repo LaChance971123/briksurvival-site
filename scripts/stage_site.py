@@ -16,9 +16,10 @@ for name, source in sorted(sources.items()):
     destination.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(source, destination)
 
-# Push alone needs dynamic inline script elements, on the existing five hubs.
+# Match ads.js exactly; ad-free routes never inherit remote script permissions.
 POLICIES = json.loads((ROOT / 'config/security-policy.json').read_text())
-PUSH_HUBS = {'/library', '/preparedness', '/topics', '/resources', '/about'}
+def ad_eligible(route):
+    return route in {'/topics','/resources','/about','/emergencies/disaster-scams','/emergencies/verify-information'} or any(route == prefix or route.startswith(prefix+'/') for prefix in ['/library','/preparedness','/guides'])
 headers = []
 for page in sorted(OUT.rglob('*.html')):
     relative = page.relative_to(OUT).as_posix()
@@ -29,9 +30,9 @@ for page in sorted(OUT.rglob('*.html')):
         paths.extend([canonical + '/' if canonical != '/' else '/', canonical])
     else:
         canonical = route
-    policy = POLICIES['push_hubs' if canonical in PUSH_HUBS else 'default']
+    policy = POLICIES['advertising' if ad_eligible(canonical) else 'default']
     if canonical.startswith('/planner/app'):
-        policy="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src 'self' blob:; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
+        policy="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src 'self' blob:; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'"
     for path in sorted(set(paths)):
         if path:
             headers.append(path + '\n  Content-Security-Policy: ' + policy + '\n')

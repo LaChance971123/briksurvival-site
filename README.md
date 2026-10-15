@@ -16,9 +16,9 @@ Publish only `dist`, never the source checkout. The same complete build and vali
 
 ## Free encyclopedia and paid toolkits
 
-126 original online guides in 14 subjects remain free without signup. Edit `content/guides/*.json`, taxonomy and sources, then rebuild. Guide URLs, the quick answer, practical actions, no-help fallback, household needs, decisions and source context remain. Medical content requires current source verification and qualified independent review before claiming that status.
+138 original online guides in 14 subjects remain free without signup. Edit `content/guides/*.json`, taxonomy and sources, then rebuild. Guide URLs, the quick answer, practical actions, no-help fallback, household needs, decisions and source context remain. Medical content requires current source verification and qualified independent review before claiming that status.
 
-The toolkit catalogue, complete-collection detail page, homepage feature and guide CTAs are generated from `content/toolkits.json`. The four topic kits are $4.99 USD each (US v1.0), with matching Payhip direct checkout URLs. Uploaded customer ZIPs have been downloaded from Payhip and compared byte-for-byte with the completed launch pack. The complete collection remains in development. Ready products must have verified Payhip files, a price, edition, component list and matching checkout URL. Collections must list their included ready topic products.
+The toolkit catalogue and guide CTAs are generated from `content/toolkits.json`. All toolkit purchases are currently paused while contents and delivery are redesigned. Planned products have no checkout links. A product may become ready only after its exact private sale files, edition, price and customer delivery have been verified. Collections must identify their included ready products.
 
 Premium manuscripts and finished files belong in a separate private workspace, never this public repository or deployment. Payhip will handle purchased-file delivery. The retained document-design utility requires an explicit private output path outside the repository. See [toolkit architecture](docs/toolkit-architecture.md) for product lifecycle, delivery setup and publishing boundaries.
 
@@ -32,7 +32,7 @@ Free Osprey Zero PDF downloads, the portable library and browser offline saving 
 
 The existing Netlify forms collect optional toolkit-update and Field Notes requests, with honeypots, native validation and visible submission feedback. They do not unlock guidance. Automatic newsletter delivery remains awaiting MailerLite setup and verification; do not invent a subscribe endpoint or promise an immediate email.
 
-Stripe is connected in Payhip and the four topic checkout links are enabled. Customer ZIPs match the finished files. The zero-cost customer checkout test is awaiting Payhip human verification; a successful paid charge and receipt delivery have not yet been verified. Complete customer testing before claiming end-to-end payment verification. Affiliate accounts and equipment research are later work.
+The paid planner is a separate product. Its private HTML application and customer packages were not available for this hardening review. Do not claim payment, receipt, delivery, backup restoration or mobile installation verification until those customer journeys have passed with the exact sale edition.
 
 ## Advertising
 
@@ -42,4 +42,11 @@ The supplied root advertising worker and existing browser permissions remain unc
 
 ## Current-events preparedness briefing
 
-The homepage and `/briefing/` connect twice-daily source snapshots to existing guidance. These are not live alerts or comprehensive hazard coverage. A pooled schedule updates shared JSON in Netlify Blobs; visitors read a cached snapshot without contacting upstream sources. An optional browser-local ZIP-area estimate matches official county identifiers without sending the entered ZIP to a service. Product/software notices and other or unverified locations remain separate; the approximate Census lookup and source coverage have gaps. Cards lead with the report, its conditional meaning and relevant existing guides. No API keys, GPS or AI are used. See [operations, safety and launch gates](docs/briefing-operations.md) and [source scope and reuse policies](docs/briefing-sources.md). Production publication requires approval; preview schedules are inactive.
+The homepage and `/briefing/` connect twice-daily source snapshots to existing guidance. These are not live alerts or comprehensive hazard coverage. A pooled schedule updates shared JSON in Netlify Blobs; visitors read a cached snapshot without contacting upstream sources. An optional browser-local ZIP-area estimate matches official county identifiers without sending the entered ZIP to a service. Product/software notices and other or unverified locations remain separate; the approximate Census lookup and source coverage have gaps. Cards lead with the report, its conditional meaning and relevant existing guides. An explicit device-location action may use browser geolocation to estimate a county locally; precise coordinates are not persisted or sent to the briefing API. The briefing does not use AI or source API keys. See [operations, safety and launch gates](docs/briefing-operations.md) and [source scope and reuse policies](docs/briefing-sources.md). Preview schedules are inactive. The homepage reads a compact snapshot; the full reader retains the complete bounded response. `/api/health` checks storage and freshness and returns 503 when degraded.
+
+
+## Production hardening and operations
+
+See [release and recovery runbook](docs/production-hardening.md) for rollout, monitoring, protections and the remaining account-side gates. GitHub checks production availability and source freshness twice an hour; owners must enable and verify failure notifications. The checks never submit customer forms.
+
+The planner must run on a dedicated project/origin that serves only the launcher. `python scripts/build_planner_site.py` prepares that deployment using Netlify's `URL` variable (or `PLANNER_ORIGIN`). The content-site entry is recovery-only: it pauses new imports and never automatically opens stored records. It preserves existing records so customers can export backups. Do not advertise isolation as complete until the separate project is live and migration is verified.

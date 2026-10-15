@@ -8,14 +8,15 @@ function element(){return {value:'',children:[],events:{},attrs:{},hidden:false,
  addEventListener(k,f){this.events[k]=f;},append(...children){this.children.push(...children);},
  replaceChildren(){this.children=[];},
  querySelectorAll(){return this.children.filter(x=>x.href);},querySelector(){return this.querySelectorAll()[0];}};}
-function fixture({dedicated=false}={}){
+function fixture({dedicated=false, deadlines=false}={}){
  const input=element(),results=element(),status=element(),topic=element(),category=element(),type=element(),form=dedicated?element():null;
  const requests=[],timers=new Map(),createdTags=[];let nextTimer=0;
  const document={activeElement:{tagName:'BODY'},body:element(),createElement:tag=>{createdTags.push(tag);return element();},addEventListener(){},
   querySelectorAll:s=>s==='.topic-grid,.topic-card'?[topic]:[],
   querySelector:s=>({'#global-search':input,'#search-results':results,'#search-status':status,'#global-search-form':form,'#search-category':category,'#search-type':type}[s]||null)};
  vm.runInNewContext(code,{document,URLSearchParams,location:{search:''},history:{state:null,replaceState(){}},
-  fetch:url=>new Promise((resolve,reject)=>requests.push({url,resolve,reject})),
+  ...(deadlines?{AbortController}:{}),
+  fetch:(url,options={})=>new Promise((resolve,reject)=>{requests.push({url,resolve,reject});options.signal?.addEventListener('abort',()=>reject(Error('timeout')));}),
   setTimeout:fn=>{const id=++nextTimer;timers.set(id,fn);return id;},clearTimeout:id=>timers.delete(id)});
  return {input,results,status,topic,requests,timers,document,form,createdTags,
   type(value){input.value=value;input.events.input();},
@@ -62,6 +63,7 @@ const complete=async request=>{request.resolve({ok:true,json:()=>Promise.resolve
  assert.equal(failing.results.children[0].href,'/emergencies/tornado/');
  const lateFailure=fixture();lateFailure.type('gas');lateFailure.type('');lateFailure.requests[0].reject(Error('offline'));await tick();
  assert.equal(lateFailure.results.hidden,true,'Late failure must not reopen cleared search');assert.equal(lateFailure.status.textContent,'SEARCH ALL TOPICS');
+ const stalled=fixture({deadlines:true});stalled.type('gas');stalled.flush();await tick();assert.match(stalled.status.textContent,/could not load/);assert.equal(stalled.results.attrs['aria-busy'],'false');stalled.results.children[0].events.click();assert.equal(stalled.requests.length,2);await complete(stalled.requests[1]);assert.equal(stalled.results.children[0].href,'/emergencies/gas-leak/');
  const search=fixture({dedicated:true});assert.equal(search.requests.length,1,'Dedicated search loads immediately');await complete(search.requests[0]);
  assert.equal(search.results.querySelectorAll().length,30);
  assert.equal(search.status.textContent,'Showing 30 of '+index.length+' results');

@@ -1,0 +1,6 @@
+# Separate Netlify project; use planner-host as its base directory.
+[build]
+  command = "python ../scripts/build_planner_site.py"
+  publish = "dist"
+[build.environment]
+  PYTHON_VERSION = "3.12"

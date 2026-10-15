@@ -11,6 +11,38 @@
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
 
+[build.environment]
+  NODE_VERSION = "22"
+  PYTHON_VERSION = "3.12"
+
+[[redirects]]
+  from = "https://www.briksurvival.com/*"
+  to = "https://ospreyzero.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://briksurvival.com/*"
+  to = "https://ospreyzero.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://ospreyzero.netlify.app/*"
+  to = "https://ospreyzero.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/Assets/favicon.ico"
+  status = 200
+
+[[redirects]]
+  from = "/apple-touch-icon.png"
+  to = "/Assets/apple-touch-icon.png"
+  status = 200
+
 # The Daily Brief index alone may ask for same-origin device location.
 # Keep these complete values after the global deny; verify served preview headers.
 [[headers]]

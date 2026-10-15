@@ -1,4 +1,4 @@
 {
-  "default": "default-src 'self'; base-uri 'self'; form-action 'self' https://assets.mailerlite.com; frame-ancestors 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https:; connect-src 'self' https:; frame-src https:; worker-src 'self'; object-src 'none'",
-  "push_hubs": "default-src 'self'; base-uri 'self'; form-action 'self' https://assets.mailerlite.com; frame-ancestors 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https:; connect-src 'self' https:; frame-src https:; worker-src 'self'; object-src 'none'; script-src-elem 'self' https: 'unsafe-inline'; script-src-attr 'none'"
+  "default": "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self'; script-src-attr 'none'; connect-src 'self'; frame-src 'none'; worker-src 'self'; object-src 'none'",
+  "advertising": "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://n6wxm.com; script-src-attr 'none'; connect-src 'self' https:; frame-src https:; worker-src 'self'; object-src 'none'"
 }
