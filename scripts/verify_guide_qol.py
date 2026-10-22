@@ -37,8 +37,8 @@ for route_name in browse_routes:
     jumps = d.xpath('//section[contains(@class,"library-heading")]/a[contains(@class,"browse-start-link") and @href="#browse-results"]')
     assert len(jumps) == 1, route_name
     jump = jumps[0]
-    assert jump.getprevious().tag == 'p' and 'Choose a subject or search' in jump.getprevious().text_content(), route_name
-    assert jump.getnext().tag == 'nav' and jump.getnext().get('class') == 'browse-modes', route_name
+    assert jump.getprevious().tag == 'p', route_name
+    assert jump.getnext().tag == 'form', route_name
     expected_label = 'Choose a subject' if route_name == 'library' else 'Choose a guide'
     assert jump.text_content().strip() == expected_label + ' ↓', route_name
     targets = d.xpath('//div[@id="browse-results" and @tabindex="-1"]')

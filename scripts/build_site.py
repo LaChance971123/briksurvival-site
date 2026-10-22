@@ -12,6 +12,7 @@ commands = [
     [sys.executable, 'scripts/release_paths.py'],
     [sys.executable, 'scripts/build_homepage.py'],
     [sys.executable, 'scripts/polish_release.py'],
+    [sys.executable, 'scripts/declutter_navigation.py'],
     [sys.executable, 'scripts/stage_site.py'],
     [sys.executable, 'scripts/verify_library.py'],
     [sys.executable, 'scripts/verify_navigation.py'],
