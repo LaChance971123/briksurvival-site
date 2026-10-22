@@ -60,7 +60,7 @@ for g in GUIDES:
  words=len(section_text({k:g.get(k,[]) for k in ('tldr','steps','sections','faqs','decisions','next','watch','without_help','household','pack_now')}).split())
  read_minutes=max(1,(words+199)//200)
  context=('Use this page to build and practice a household plan before disruption. Match decisions to your actual people, equipment and location; this page is not a live alert.' if g.get('urgency')=='planning' else 'Act on immediate danger. Seek qualified help when reachable and safe, but do not make your first protective step depend on a response. This page is general guidance, not a live alert.')
- action_label=g.get('action_label', 'Build your plan' if g.get('urgency')=='planning' else 'Do now')
+ action_label=g.get('action_label', ('Quick checklist' if g['category']=='firearms-tools' else 'Practical steps' if g['content_type']=='Field guide' else 'Build your plan') if g.get('urgency')=='planning' else 'Do now')
  context=g.get('intro_note', context)
  fallback_heading=g.get('fallback_heading','If help is unavailable')
  household_heading=g.get('household_heading','People & practical needs')
