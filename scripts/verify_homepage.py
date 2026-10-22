@@ -18,3 +18,7 @@ assert p.xpath('//*[@data-briefing-status and @role="status"]')
 assert p.xpath('//*[@data-briefing-fallback]//a[@href="/preparedness/household-emergency-plan/"]')
 assert p.xpath('//noscript//a[@href="/library/"]')
 print('PASS: one search, three paths, six situations, compact briefing and preserved customer access.')
+
+assert p.xpath('//section[contains(@class,"field-hero")]//div[@class="hero-editorial-lockup"]')
+assert "SKILL" in p.xpath("string(//h1)") and "PANIC." in p.xpath("string(//h1)")
+assert p.xpath('//div[@class="hero-masthead"]//img[@src="/Assets/oz-mark.webp"]')
