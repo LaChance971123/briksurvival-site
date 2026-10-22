@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict'),{rank}=require('../search.js'),index=require('../search-index.json');
+for(const [q,url] of [['first aid','/library/medical/'],['where do I start','/preparedness/'],['prepare','/preparedness/'],['help','/emergencies/'],['I have no money','/preparedness/budget-preparedness/'],['where are my saved guides','/reading-list/'],['my baby is choking','/emergencies/infant-choking/'],['no electricity','/emergencies/power-outage/']])assert.equal(rank(index,q)[0]?.url,url,q);
+assert.equal(rank(index,'first aid','','Emergency guide')[0].category_id,'medical');
+assert.deepEqual(rank(index,'I need a shelter').slice(0,2).map(x=>x.url),['/library/evacuation-shelter/','/guides/tarp-shelter/']);
+assert(rank(index,'first aid','utilities').every(x=>x.category_id==='utilities'));
+console.log('PASS: broad intentions, age-specific guidance, ambiguity and filtered first-aid relevance.');
+const fs=require('node:fs'),vm=require('node:vm'),app=fs.readFileSync('app.js','utf8');
+const disclosureCode=app.slice(app.indexOf('// Preserve the actual browsing context'),app.indexOf('// A correction link'));
+const groups=[{id:'',open:false,addEventListener(k,f){this[k]=f;}},{id:'',open:false,addEventListener(k,f){this[k]=f;}}];
+const history={state:{ozBrowse:{type:'Preparedness guide'},ozDisclosures:{open:['1']}},replaceState(s){this.state=s;}};
+vm.runInNewContext(disclosureCode,{document:{querySelectorAll:()=>groups},history,window:{addEventListener(){}}});
+assert.equal(groups[1].open,true);groups[0].open=true;groups[0].toggle();assert.equal(history.state.ozBrowse.type,'Preparedness guide');assert.deepEqual(Array.from(history.state.ozDisclosures.open),['0','1']);
+console.log('PASS: progressive disclosures restore without overwriting guide filters.');

@@ -44,9 +44,5 @@ for route_name in browse_routes:
     targets = d.xpath('//div[@id="browse-results" and @tabindex="-1"]')
     assert len(targets) == 1 and targets[0].xpath('.//a[@href]'), route_name
 
-catalog = json.loads((ROOT / 'content/toolkits.json').read_text())
-if not any(product['kind'] == 'topic' and product['status'] == 'ready' for product in catalog['products']):
-    d = html.fromstring((DIST / 'resources/index.html').read_text())
-    copy = ' '.join(d.xpath('//*[contains(@class,"reference-toolkit-note")]//text()'))
-    assert 'Purchases are paused' in copy and 'Checkout is opening soon' not in copy
-print('PASS: immediate action links, semantic ordered contents, contextual destinations, hub heading levels, immediate browse jumps and truthful reference shelf.')
+assert not html.fromstring((DIST / 'resources/index.html').read_text()).xpath('//div[@class="reference-toolkit-note"]')
+print('PASS: action links, contents, contextual destinations, heading levels and source-focused reference shelf.')

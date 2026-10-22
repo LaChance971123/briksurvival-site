@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 const app = fs.readFileSync('app.js', 'utf8');
 const guideCode = app.slice(app.indexOf('// Guide controls enhance'), app.indexOf('// Browse choices live'));
-const browseCode = app.slice(app.indexOf('// Browse choices live'), app.indexOf('// Progressive enhancement only:'));
+const browseCode = app.slice(app.indexOf('// Browse choices live'), app.indexOf('// Preserve the actual browsing context'));
 function element(props = {}) {
   return {hidden: true, open: false, children: [], attrs: {}, events: {}, ...props,
     addEventListener(name, fn) { this.events[name] = fn; },
