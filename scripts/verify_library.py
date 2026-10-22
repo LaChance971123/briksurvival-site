@@ -30,9 +30,9 @@ assert not any(item['url'].startswith(('/downloads/', '/offline/')) for item in 
 assert not any(item['content_type'] in {'Checklist', 'Shopping list', 'Full guide PDF'} for item in index)
 for guide in guides:
     text = (OUT / guide['url'].strip('/') / 'index.html').read_text()
-    assert text.index('id="quick-answer"') < text.index('class="guide-resources"') < text.index('id="do-now"'), guide['title']
+    assert text.index('id="quick-answer"') < text.index('class="guide-resources') < text.index('id="do-now"'), guide['title']
     assert 'Trusted reference' in text and 'id="without-help"' in text and 'id="household"' in text, guide['title']
-    assert text.index('id="sources"') < text.index('class="wrap guide-toolkit"'), guide['title']
+    assert text.index('id="sources"') < text.index('class="wrap guide-toolkit'), guide['title']
 assert not errors, errors
 home = (OUT / 'index.html').read_text()
 assert home.count('type="search"') == 1 and 'hero-query' not in home

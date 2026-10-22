@@ -65,7 +65,8 @@ const complete=async request=>{request.resolve({ok:true,json:()=>Promise.resolve
  assert.equal(lateFailure.results.hidden,true,'Late failure must not reopen cleared search');assert.equal(lateFailure.status.textContent,'SEARCH ALL TOPICS');
  const stalled=fixture({deadlines:true});stalled.type('gas');stalled.flush();await tick();assert.match(stalled.status.textContent,/could not load/);assert.equal(stalled.results.attrs['aria-busy'],'false');stalled.results.children[0].events.click();assert.equal(stalled.requests.length,2);await complete(stalled.requests[1]);assert.equal(stalled.results.children[0].href,'/emergencies/gas-leak/');
  const search=fixture({dedicated:true});assert.equal(search.requests.length,1,'Dedicated search loads immediately');await complete(search.requests[0]);
- assert.equal(search.results.querySelectorAll().length,30);
+ assert.equal(search.results.querySelectorAll().length,4);
+ search.results.children.at(-1).events.click();assert.equal(search.results.querySelectorAll().length,30);
  assert.equal(search.status.textContent,'Showing 30 of '+index.length+' results');
  search.results.children.at(-1).events.click();assert.equal(search.results.querySelectorAll().length,60,'Dedicated search retains batches of thirty');
  assert(search.results.querySelectorAll()[30].focused);

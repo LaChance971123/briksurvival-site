@@ -19,7 +19,7 @@ async function fixture(state=null,blocked=false){
  return {input,results,category,type,form,status,events,frames,history,document,window,requests,flushFrames(){frames.splice(0).forEach(fn=>fn());}};
 }
 (async()=>{
- const first=await fixture();assert.equal(first.results.querySelectorAll('a.search-result').length,30);
+ const first=await fixture();assert.equal(first.results.querySelectorAll('a.search-result').length,4);first.results.children.at(-1).events.click();assert.equal(first.results.querySelectorAll('a.search-result').length,30);
  first.results.children.at(-1).events.click();assert.equal(first.results.querySelectorAll('a.search-result').length,60);
  first.window.scrollY=2400;const selected=first.results.querySelectorAll('a.search-result')[45];selected.events.click();first.events.pagehide();
  assert.equal(first.history.state.ozSearch.limit,60);assert.equal(first.history.state.ozSearch.scrollY,2400);
@@ -31,7 +31,7 @@ async function fixture(state=null,blocked=false){
  assert.equal(interrupted.window.scrollY,0,'A newer query must cancel delayed scroll restoration');
  assert.equal(interrupted.results.querySelectorAll('a.search-result')[0].href,'/emergencies/tornado/');
  assert.equal(interrupted.history.state.ozSearch.limit,30);assert.equal(interrupted.history.url,'/search/');
- const blocked=await fixture(null,true);assert.equal(blocked.results.querySelectorAll('a.search-result').length,30,'Blocked history must not break results');
+ const blocked=await fixture(null,true);assert.equal(blocked.results.querySelectorAll('a.search-result').length,4,'Blocked history must not break results');
  assert.equal(first.document.events.keydown,undefined,'Do not install a global single-character shortcut');
  assert([...first.requests,...restored.requests,...interrupted.requests,...blocked.requests].every(url=>url==='/search-index.json?v=oz19'));
  console.log('PASS: expanded result/scroll/focus return, interrupted restoration, blocked history, private queries and no global character shortcut.');

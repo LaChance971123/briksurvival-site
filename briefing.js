@@ -267,8 +267,12 @@
     article.append(summary);
     article.append(watchLabel(el('p', 'briefing-record-note'), () => { const state = recordState(event); return state.note ? state.label + '. Not an all-clear.' : ''; }, true));
     article.append(watchLabel(el('p', 'briefing-record-note'), () => sourceCheck(event,snapshot), true));
+    const dates=el('p','briefing-card-dates');
+    dates.append(el('span','','Originally published: '+stamp(event.publishedAt)));
+    if(event.updatedAt&&event.updatedAt!==event.publishedAt)dates.append(el('span','','Source updated: '+stamp(event.updatedAt)));
+    article.append(dates);
     const footer = el('div','briefing-card-footer');
-    footer.append(link('Read story →',eventUrl(event),'briefing-story-link'));
+    footer.append(link('View report →',eventUrl(event),'briefing-story-link'));
     article.append(footer);
     return article;
   }
@@ -619,18 +623,7 @@
     else{
       if(location.value.startsWith('US:')){zipInput.value=STATES[location.value.slice(3)];zipClear.hidden=false;zipStatus.textContent=zipInput.value+' · broad state matches, not address-level coverage.';}
       restoreScroll();save();
-      if(!hasManualPreference){
-        const attempt=zipAttempt;
-        const launch=async()=>{
-          if(attempt!==zipAttempt)return;
-          if(!hasLocationAttempt()){startGeolocation(true);return;}
-          zipStatus.textContent='Choose Use my location to locate this device, or search an area.';
-          // A prior timeout/network failure is not a completed location choice. A granted
-          // permission can recover once on this visit without another browser prompt.
-          try{const permission=await navigator.permissions?.query({name:'geolocation'});if(attempt===zipAttempt&&permission?.state==='granted'&&locationAttemptState()!=='manual')startGeolocation(true);}catch{}
-        };
-        if(window.requestAnimationFrame)window.requestAnimationFrame(launch);else setTimeout(launch,0);
-      }
+      if(!hasManualPreference)zipStatus.textContent='Choose an area, or select Use my location. Location is never requested automatically.';
     }
   }
   function section(id, title) {

@@ -74,7 +74,7 @@ if(thanks){const type=new URLSearchParams(location.search).get('request');if(typ
   function write(paths) { try { localStorage.setItem(key, JSON.stringify(paths)); return true; } catch { return false; } }
   const save = document.querySelector('[data-save-guide]'), message = document.querySelector('[data-guide-status]');
   const current = location.pathname;
-  function sync() { if (save) { const saved = read().includes(current); save.setAttribute('aria-pressed', String(saved)); save.textContent = saved ? 'Remove from reading list' : 'Save to reading list'; } }
+  function sync() { if (save) { const saved = read().includes(current); save.setAttribute('aria-pressed', String(saved)); save.textContent = saved ? 'Remove saved guide' : 'Save guide'; } }
   if (save && valid(current)) {
     save.hidden = false; sync();
     save.addEventListener('click', () => {
@@ -98,13 +98,13 @@ if(thanks){const type=new URLSearchParams(location.search).get('request');if(typ
     if (!list || !index) return;
     const paths = read(), guides = paths.map(p => index.find(g => g.url === p && g.priority === 10)).filter(Boolean).reverse();
     list.replaceChildren();
-    status.textContent = guides.length ? `${guides.length} saved ${guides.length === 1 ? 'guide' : 'guides'} · Links saved on this device` : 'Your list is empty. Open a guide and choose “Save to reading list”.';
+    status.textContent = guides.length ? `${guides.length} saved ${guides.length === 1 ? 'guide' : 'guides'} · Links saved on this device` : 'Your list is empty. Open a guide and choose “Save guide”.';
     for (const g of guides) {
       const item = document.createElement('article'); item.className = 'reading-card';
       const content = document.createElement('div'), meta = document.createElement('p'), title = document.createElement('h2'), link = document.createElement('a'), summary = document.createElement('p'), remove = document.createElement('button');
       meta.className = 'result-meta'; meta.textContent = g.content_type + ' · ' + g.category;
       link.href = g.url; link.textContent = g.title; title.append(link); summary.textContent = g.summary;
-      content.append(meta, title, summary); remove.type = 'button'; remove.textContent = 'Remove'; remove.setAttribute('aria-label', 'Remove ' + g.title + ' from reading list');
+      content.append(meta, title, summary); remove.type = 'button'; remove.textContent = 'Remove'; remove.setAttribute('aria-label', 'Remove ' + g.title + ' from saved guides');
       remove.addEventListener('click', () => {
         const siblings = [...list.children], position = siblings.indexOf(item);
         if (!write(read().filter(p => p !== g.url))) { status.textContent = 'This browser could not update the list.'; return; }
@@ -243,4 +243,23 @@ if(thanks){const type=new URLSearchParams(location.search).get('request');if(typ
   });
   window.addEventListener('pagehide', save);
   window.addEventListener('popstate', restore);
+})();
+
+// Preserve the actual browsing context across guide visits, without URL tracking.
+(() => {
+ const groups=[...document.querySelectorAll('.subject-family,.prepare-more,.preparation-directory')];
+ if(!groups.length)return;
+ try{
+  const state=history.state?.ozDisclosures;
+  if(state&&Array.isArray(state.open))groups.forEach((group,i)=>group.open=state.open.includes(group.id||String(i)));
+  const save=()=>{try{history.replaceState({...history.state,ozDisclosures:{open:groups.flatMap((group,i)=>group.open?[group.id||String(i)]:[])}},'');}catch{}};
+  groups.forEach(group=>group.addEventListener('toggle',save));window.addEventListener('pagehide',save);
+ }catch{}
+})();
+// A correction link can supply only a public guide path, never arbitrary text.
+(() => {
+ const form=document.querySelector('form[name="private-contact"]');if(!form)return;
+ const guide=new URLSearchParams(location.search).get('guide');
+ if(!guide||!/^\/(emergencies|preparedness|guides)\/[a-z0-9-]+\/$/.test(guide))return;
+ const message=form.querySelector('textarea');if(message&&!message.value)message.value='Guide: https://ospreyzero.com'+guide+'\n\nCorrection: ';
 })();

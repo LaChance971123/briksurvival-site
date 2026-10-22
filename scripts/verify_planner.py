@@ -14,7 +14,7 @@ assert len(font_faces)==2 and all(re.search(r'font-display\s*:\s*swap', rule) fo
 code=(A/'launcher.js').read_text();worker=(A/'sw.js').read_text()
 for filename in ('launcher.css','sw.js'):
  assert (A/filename).read_bytes()==(R/'planner/app'/filename).read_bytes(), f'Published planner {filename} must match its source'
-assert "const CACHE='oz-launcher-web-5-isolation'" in worker, 'Refresh cached launcher UI for migration safeguards'
+assert "const CACHE='oz-launcher-web-6-clarity'" in worker, 'Refresh cached launcher UI for migration safeguards'
 assert "k.startsWith('oz-launcher-')&&k!==CACHE" in worker, 'UI cleanup must stay separate from imported paid app storage'
 assert 'crypto.subtle.digest' in code and 'APPROVED.includes' in code
 assert 'app.html' in code and "navigator.serviceWorker.register('./sw.js')" in code
@@ -31,4 +31,4 @@ print('PASS: paid planner file excluded, local verification, scoped worker and a
 assert 'const ISOLATED_ORIGIN = null' in code
 assert 'if(!isolated)return' in code and 'if(app&&isolated)openApp()' in code
 assert page.xpath('//section[@id="origin-notice"]')
-assert 'oz-launcher-web-5-isolation' in code, 'Offline readiness must check the current worker cache'
+assert 'oz-launcher-web-6-clarity' in code, 'Offline readiness must check the current worker cache'
