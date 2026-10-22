@@ -42,6 +42,16 @@ for name in sorted(public_pages(R)):
   if name.startswith('library/') and name!='library/index.html':
    tools=heading[0].xpath('.//div[@class="browse-tools"]')
    if tools:addlink(tools[0],'/library/','All subjects')
+ if heading:
+  for label in heading[0].xpath('.//label[@for="library-query"]'):label.text='Search all guides'
+  introductions={
+   'preparedness/index.html':'Build a workable household plan, starting with what you already have.',
+   'guides/index.html':'Choose a practical skill to learn and practise before you need it.',
+   'emergencies/severe-weather/index.html':'Choose the specific weather hazard. Different warnings call for different protective actions.'}
+  if name in introductions:
+   for intro in heading[0].xpath('./p[not(@class)]'):intro.text=introductions[name]
+  if name=='preparedness/index.html':
+   for field in heading[0].xpath('.//input[@type="search"]'):field.set('placeholder','Try: household plan, supplies, budget')
  if name=='emergencies/index.html':
   intro=heading[0].xpath('./p[not(@class)]')[0];intro.text='Find your situation, then open the guide for clear first steps.'
   choices=node('<section class="wrap situation-entry" aria-labelledby="situation-title"><h2 id="situation-title">What is happening?</h2><p>Choose a situation, or browse the full emergency collection below.</p><div class="situation-links"></div></section>')
