@@ -10,7 +10,10 @@ export default async (_request,context) => {
   const previous = await store.get('latest-state',{type:'json'}) || bootstrap;
   const state = await collectBriefing(previous);
   await saveState(store,state);
-  console.log(JSON.stringify({snapshot:state.snapshot.id,sources:state.snapshot.sources.map(({id,status}) => ({id,status})),events:state.snapshot.events.length}));
+  // Log only the normalized public source assessment, never raw feeds, credentials or SDK errors.
+  console.log(JSON.stringify({snapshot:state.snapshot.id,generatedAt:state.snapshot.generatedAt,
+    sources:state.snapshot.sources.map(({id,status,lastAttemptAt,lastSuccessAt,error}) =>
+      ({id,status,lastAttemptAt,lastSuccessAt,error,nextEligibleAt:state.sources[id]?.nextEligibleAt||null})),events:state.snapshot.events.length}));
   return new Response(null,{status:204});
 };
 // UTC: 08:00/20:00 EDT; 07:00/19:00 EST. No DST-adjusting cron service.

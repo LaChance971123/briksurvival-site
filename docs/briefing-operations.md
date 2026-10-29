@@ -54,6 +54,8 @@ Deploy previews read the bundled genuine dated snapshot. Netlify does not fire s
 
 ## Launch gates and operation
 
+For health reason codes, diagnostic logging, and the October 29 investigation and verification procedure, see [production health investigation](briefing-health-incident-2026-10-29.md).
+
 1. Review the draft PR, genuine snapshot, desktop/mobile UI and source policies. Production release requires owner approval.
 2. Check the existing Netlify plan's remaining allowance and storage/function availability. The observed Personal account does not establish remaining credits. No paid service is added, but compute, CDN requests, bandwidth, builds and storage use the shared allowance.
 3. After approved production release, verify both functions are deployed, optionally invoke the schedule through Netlify's authorized dashboard, and confirm /api/briefing changes from initial-snapshot to ok with persisted source statuses. Inspect logs; observe the next scheduled UTC run before claiming cadence is proven.
