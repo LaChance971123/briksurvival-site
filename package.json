@@ -12,7 +12,7 @@
     "build": "python scripts/build_site.py"
   },
   "dependencies": {
-    "@netlify/blobs": "11.1.4",
+    "@netlify/blobs": "11.1.6",
     "fast-xml-parser": "5.11.2"
   }
 }
