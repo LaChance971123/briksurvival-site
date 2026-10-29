@@ -14,9 +14,25 @@ export function homeView(body, now=Date.now()) {
   return {...body,view:'home',totalRecords:body.events.length,events:chosen};
 }
 export function healthView(body,now=Date.now()) {
-  const sources=body.sources.map(({id,status,lastSuccessAt})=>({id,status,lastSuccessAt,healthy:status==='ok' && time(lastSuccessAt)>0 && time(lastSuccessAt)<=now+300000 && now-time(lastSuccessAt)<=14*3600000}));
-  const healthy=body.storageStatus==='ok' && time(body.generatedAt)>0 && time(body.generatedAt)<=now+300000 && now-time(body.generatedAt)<=14*3600000 && sources.length>0 && sources.every(s=>s.healthy);
-  return {healthy,storageStatus:body.storageStatus,generatedAt:body.generatedAt,sources};
+  const freshnessLimitSeconds=14*3600;
+  const assessTime=(value,prefix)=>{
+    const at=time(value),reasons=[];
+    if(at<=0)reasons.push(`${prefix}_timestamp_invalid`);
+    else if(at>now+300000)reasons.push(`${prefix}_timestamp_future`);
+    else if(now-at>freshnessLimitSeconds*1000)reasons.push(`${prefix}_overdue`);
+    return {ageSeconds:at>0?Math.floor((now-at)/1000):null,reasons};
+  };
+  const sources=body.sources.map(({id,status,lastSuccessAt,lastAttemptAt})=>{
+    const {ageSeconds,reasons}=assessTime(lastSuccessAt,'source');
+    if(status!=='ok')reasons.unshift('source_check_failed');
+    return {id,status,lastSuccessAt,lastAttemptAt,healthy:reasons.length===0,ageSeconds,reasons};
+  });
+  const {ageSeconds:snapshotAgeSeconds,reasons}=assessTime(body.generatedAt,'snapshot');
+  if(body.storageStatus!=='ok')reasons.unshift(body.storageStatus==='initial-snapshot'?'snapshot_missing':'storage_unavailable');
+  if(!sources.length)reasons.push('sources_missing');
+  if(sources.some(s=>!s.healthy))reasons.push('sources_unhealthy');
+  return {healthy:reasons.length===0,storageStatus:body.storageStatus,generatedAt:body.generatedAt,
+    snapshotId:body.id,checkedAt:new Date(now).toISOString(),freshnessLimitSeconds,snapshotAgeSeconds,reasons,sources};
 }
 export function boundResponse(body, maxBytes=3*1024*1024) {
   let json=JSON.stringify(body);
